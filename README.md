@@ -45,7 +45,7 @@ See [the S2 solver specification](docs/models/B0-H11-PSATD.md). The periodic box
 
 Use a new or empty output directory. Outputs include metrics, a provenance manifest, field/energy-flow slices and localisation plots. Bulk outputs remain ignored. [Benchmark CI](.github/workflows/benchmark.yml) runs small checks and uploads evidence; documentation checks remain separate.
 
-The [pre-S3 literature assessment](docs/literature/pre-s3-review.md) identifies additional sources and refines the next stage. S3-A adds event-consistent Lorentz transformations with independent tensor and Maxwell controls; see [the specification](docs/models/B0-H11-Lorentz.md) and [evidence report](reports/s3-a/README.md). S3-B adds [energy-centroid and width diagnostics](docs/models/B0-H11-Centroid.md), including boost offsets, origin controls, all-space quadrature and finite-tail studies; see [the S3-B report](reports/s3-b/README.md). S3-C adds [classified perturbation and difference-energy controls](docs/models/B0-H11-Perturbations.md); see [measured results and literature alignment](reports/s3-c/README.md). S3-D adds [declared-domain helicity and selected closed-fiber linking instruments](docs/models/B0-H11-Topology.md); see [the S3-D report](reports/s3-d/README.md). A broader candidate search and topology persistence study remain pending.
+The [pre-S3 literature assessment](docs/literature/pre-s3-review.md) identifies additional sources and refines the next stage. S3-A adds event-consistent Lorentz transformations with independent tensor and Maxwell controls; see [the specification](docs/models/B0-H11-Lorentz.md) and [evidence report](reports/s3-a/README.md). S3-B adds [energy-centroid and width diagnostics](docs/models/B0-H11-Centroid.md), including boost offsets, origin controls, all-space quadrature and finite-tail studies; see [the S3-B report](reports/s3-b/README.md). S3-C adds [classified perturbation and difference-energy controls](docs/models/B0-H11-Perturbations.md); see [measured results and literature alignment](reports/s3-c/README.md). S3-D adds [declared-domain helicity and selected closed-fiber linking instruments](docs/models/B0-H11-Topology.md); see [the S3-D report](reports/s3-d/README.md). S4-A adds a [bounded Bateman candidate catalogue](docs/models/B0-Bateman-PQ.md), with [graphical results and GitHub-rendered equations](reports/s4-a/README.md). Broader searches and arbitrary-line topology certificates remain pending.
 
 For S3-A, run:
 
@@ -69,6 +69,12 @@ For S3-D, run:
 
 ```bash
 uv run --frozen python -m electron_field_topology.topology_benchmark --config experiments/configs/hopfion-s3d.json --output artifacts/s3d-local
+```
+
+For S4-A, run:
+
+```bash
+uv run --frozen python -m electron_field_topology.candidate_benchmark --config experiments/configs/bateman-s4a.json --output artifacts/s4a-local
 ```
 
 ## Development

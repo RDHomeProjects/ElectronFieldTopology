@@ -1,0 +1,55 @@
+name: Bateman candidate catalogue
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: candidates-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MPLBACKEND: Agg
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Install locked environment and verify controls
+        run: |
+          python -m pip install uv==0.13.4
+          uv sync --frozen --all-groups
+          uv run --frozen pytest -q
+          python scripts/check_docs.py
+      - name: Run bounded candidate catalogue and graphics
+        run: uv run --frozen python -m electron_field_topology.candidate_benchmark --config experiments/configs/bateman-s4a.json --output artifacts/s4a-ci
+      - name: Publish job summary
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          p=Path('artifacts/s4a-ci/metrics.json')
+          if p.exists():
+              m=json.loads(p.read_text())
+              print('## S4-A Bateman catalogue')
+              for key,value in m['acceptance'].items(): print(f'- {key}: {value}')
+              print('\nBounded unbounded-field catalogue; selected core evidence, no arbitrary-line or electron claim.')
+          else:
+              print('No experiment metrics generated; inspect job logs.')
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: bateman-catalogue-evidence
+          path: artifacts/s4a-ci
+          retention-days: 14
+          if-no-files-found: warn
