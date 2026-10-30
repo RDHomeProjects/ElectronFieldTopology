@@ -45,6 +45,8 @@ See [the S2 solver specification](docs/models/B0-H11-PSATD.md). The periodic box
 
 Use a new or empty output directory. Outputs include metrics, a provenance manifest, field/energy-flow slices and localisation plots. Bulk outputs remain ignored. [Benchmark CI](.github/workflows/benchmark.yml) runs small checks and uploads evidence; documentation checks remain separate.
 
+The [pre-S3 literature assessment](docs/literature/pre-s3-review.md) identifies additional sources and refines the next stage. S3 implementation has not started.
+
 ## Development
 
 Read [AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md) before changing this project. Software implementation should use small pull requests tied to requirement IDs and explicit experiments.

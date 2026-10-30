@@ -18,3 +18,5 @@ Read in order:
 Implemented benchmarks: [S2 periodic evolution](models/B0-H11-PSATD.md), [S2 findings](../reports/s2/README.md), [model B0-H11](models/B0-H11.md) and [S1-A findings](../reports/s1-a/README.md).
 
 Templates are available for [models](templates/model.md) and [experiment reports](templates/experiment-report.md).
+
+Before S3: read [the literature assessment](literature/pre-s3-review.md) and [scope decision](decisions/ADR-0003-pre-s3-literature.md).

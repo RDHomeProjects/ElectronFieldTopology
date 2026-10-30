@@ -17,3 +17,7 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 ## ADR-0002
 
 [Periodic Fourier reference for S2](ADR-0002-s2-solver.md): method, boundary limitations and acceptance criteria.
+
+## ADR-0003
+
+[Pre-S3 literature refinements](ADR-0003-pre-s3-literature.md): proposed next-task scope and additional acceptance requirements.

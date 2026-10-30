@@ -1,7 +1,7 @@
 # S2 result: independently propagated Maxwell fields
 
 Date: 2026-10-31 (Australia/Melbourne). Experiment S2-001, model B0-H11-PSATD.
-Status: implementation/local verification complete; submitted for maintainer review.
+Status: merged via [PR 4](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/4). Numerical evidence below is the original S2 run.
 
 ## Outcome
 
