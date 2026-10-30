@@ -45,7 +45,7 @@ See [the S2 solver specification](docs/models/B0-H11-PSATD.md). The periodic box
 
 Use a new or empty output directory. Outputs include metrics, a provenance manifest, field/energy-flow slices and localisation plots. Bulk outputs remain ignored. [Benchmark CI](.github/workflows/benchmark.yml) runs small checks and uploads evidence; documentation checks remain separate.
 
-The [pre-S3 literature assessment](docs/literature/pre-s3-review.md) identifies additional sources and refines the next stage. S3-A adds event-consistent Lorentz transformations with independent tensor and Maxwell controls; see [the specification](docs/models/B0-H11-Lorentz.md) and [evidence report](reports/s3-a/README.md). S3-B adds [energy-centroid and width diagnostics](docs/models/B0-H11-Centroid.md), including boost offsets, origin controls, all-space quadrature and finite-tail studies; see [the S3-B report](reports/s3-b/README.md). S3-C/D remain pending.
+The [pre-S3 literature assessment](docs/literature/pre-s3-review.md) identifies additional sources and refines the next stage. S3-A adds event-consistent Lorentz transformations with independent tensor and Maxwell controls; see [the specification](docs/models/B0-H11-Lorentz.md) and [evidence report](reports/s3-a/README.md). S3-B adds [energy-centroid and width diagnostics](docs/models/B0-H11-Centroid.md), including boost offsets, origin controls, all-space quadrature and finite-tail studies; see [the S3-B report](reports/s3-b/README.md). S3-C adds [classified perturbation and difference-energy controls](docs/models/B0-H11-Perturbations.md); see [measured results and literature alignment](reports/s3-c/README.md). S3-D/S4 topology instrumentation remains pending.
 
 For S3-A, run:
 
@@ -57,6 +57,12 @@ For S3-B, run:
 
 ```bash
 uv run --frozen python -m electron_field_topology.localisation_benchmark --config experiments/configs/hopfion-s3b.json --output artifacts/s3b-local
+```
+
+For S3-C, run:
+
+```bash
+uv run --frozen python -m electron_field_topology.perturbation_benchmark --config experiments/configs/hopfion-s3c.json --output artifacts/s3c-local
 ```
 
 ## Development

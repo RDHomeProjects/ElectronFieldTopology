@@ -1,6 +1,6 @@
 # Requirements and acceptance criteria
 
-S0/S1-A are complete. [S1-A evidence](../reports/s1-a/README.md) and [S2 periodic-evolution evidence](../reports/s2/README.md) map implementation to requirements. [S3-A covariance evidence](../reports/s3-a/README.md) is merged; [S3-B centroid/localisation evidence](../reports/s3-b/README.md) is implemented for review. Open-boundary isolation, topology invariants and later-model requirements remain unimplemented. Requirement presence is not acceptance evidence.
+S0/S1-A are complete. [S1-A evidence](../reports/s1-a/README.md) and [S2 periodic-evolution evidence](../reports/s2/README.md) map implementation to requirements. [S3-A covariance evidence](../reports/s3-a/README.md) is merged; [S3-B centroid/localisation evidence](../reports/s3-b/README.md) is merged. [S3-C classified-perturbation evidence](../reports/s3-c/README.md) is implemented for review. Open-boundary isolation, topology invariants and later-model requirements remain unimplemented. Requirement presence is not acceptance evidence.
 
 | ID | Requirement | Acceptance evidence | Stage |
 |---|---|---|---|
@@ -32,7 +32,7 @@ S0/S1-A are complete. [S1-A evidence](../reports/s1-a/README.md) and [S2 periodi
 
 ## Pre-S3 review additions and implementation status
 
-These refine acceptance in response to [the literature assessment](literature/pre-s3-review.md). REL-001/002 and the analytical unbounded part of BND-001 have merged [S3-A evidence](../reports/s3-a/README.md). REL-003 and the energy-localisation part of NUM-004 have [S3-B evidence](../reports/s3-b/README.md) proposed for review. NUM-006, TOP-001 and MOD-002 remain pending. S3-A does not complete open numerical boundary validation or the full S3 stage.
+These refine acceptance in response to [the literature assessment](literature/pre-s3-review.md). REL-001/002 and the analytical unbounded part of BND-001 have merged [S3-A evidence](../reports/s3-a/README.md). REL-003 and the energy-localisation part of NUM-004 have merged [S3-B evidence](../reports/s3-b/README.md). NUM-005/006 have bounded [S3-C evidence](../reports/s3-c/README.md) proposed for review; this is not an isolated long-time stability theorem. TOP-001 and MOD-002 remain pending. S3-A does not complete open numerical boundary validation or the full S3 stage.
 
 | ID | Requirement | Acceptance evidence | Stage |
 |---|---|---|---|
