@@ -22,15 +22,20 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Documentation foundation only. No field simulator, topology search, numerical findings, or electron model has been implemented. Documentation validation is provided by [the checker](scripts/check_docs.py) and [GitHub Actions](.github/workflows/docs.yml).
+S1-A adds an analytical (1,1) Hopfion evaluator, energy/flux/localisation diagnostics, independent polynomial and symbolic checks, and a reproducible benchmark. It samples a known solution at chosen times; it does not independently evolve initial fields or model an electron.
 
-Run the documentation checks with Python 3.11 or newer:
+See [the equation mapping and conventions](docs/models/B0-H11.md). Measured evidence and interpretation are kept in [reports](reports/README.md).
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run from the repository root:
 
 ```bash
+uv sync --frozen --all-groups
+uv run --frozen pytest -q
 python3 scripts/check_docs.py
+uv run --frozen eft-benchmark --config experiments/configs/hopfion-s1.json --output artifacts/s1-local
 ```
 
-Numerical installation instructions will be added with Stage S1; there is no runnable simulation command yet.
+Use a new or empty output directory. Outputs include metrics, a provenance manifest, field/energy-flow slices and localisation plots. Bulk outputs remain ignored. [Benchmark CI](.github/workflows/benchmark.yml) runs small checks and uploads evidence; documentation checks remain separate.
 
 ## Development
 
