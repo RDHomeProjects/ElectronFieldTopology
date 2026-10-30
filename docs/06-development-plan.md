@@ -15,6 +15,8 @@ Stages are evidence gates, not promised dates. S5-S7 are conditional research pa
 
 ## First implementation task: S1-A
 
+Implementation and local verification complete; see [the report](../reports/s1-a/README.md). Independent evolution remains S2.
+
 1. Verify a primary Hopfion formula and document conventions and normalisation.
 2. Create pyproject.toml, dependency lock and importable package.
 3. Evaluate E and B on a grid and at arbitrary points/times.

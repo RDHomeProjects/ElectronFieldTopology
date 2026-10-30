@@ -1,0 +1,76 @@
+{
+  "experiment_id": "S1-A-001",
+  "created_utc": "2026-10-30T13:30:50.784246+00:00",
+  "repository": "https://github.com/RDHomeProjects/ElectronFieldTopology",
+  "commit": "7306700fffbc9202dddbeb46a6fbc7044245301a",
+  "dirty_tree": false,
+  "source_sha256": {
+    "pyproject.toml": "75381e222f43fdcc402b43349ff9a22211e221282ebe837791420b8521546a78",
+    "uv.lock": "294aa2081890b72d494331ab86c0ecfc8575d011224c548adba864609d9055b8",
+    "src/electron_field_topology/__init__.py": "004283ee4c7375c92497c3cd1df3a96edd695a9d34f89752fe023935cf4785ab",
+    "src/electron_field_topology/benchmark.py": "2cff483c53e914984fa2cc4279686ac671a022327878cd916d7523deb4796d1c",
+    "src/electron_field_topology/diagnostics.py": "6f2389a32ac16b2cbc34cd1c016f5e6e9bb6d150ea24bf8c3e18eed3334bc231",
+    "src/electron_field_topology/fields.py": "1f88a4b6ba436b63c5fd94f3d0af2f510c39b051c4a5072dd72fb33f3575604a"
+  },
+  "config_sha256": "e4a4ccd37870f4698a187ceb5040abe1ccb602316c92ef9432c333df05742904",
+  "dependency_lock_sha256": "294aa2081890b72d494331ab86c0ecfc8575d011224c548adba864609d9055b8",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "cpu_count": 9,
+  "thread_environment": {
+    "OMP_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  },
+  "machine": "x86_64",
+  "precision": "float64 / complex128",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "command": [
+    "/workspace/scratch/56cf1280751f/ElectronFieldTopology/.venv/bin/eft-benchmark",
+    "--config",
+    "experiments/configs/hopfion-s1.json",
+    "--output",
+    "artifacts/s1-evidence"
+  ],
+  "configuration": {
+    "experiment_id": "S1-A-001",
+    "model_id": "B0-H11",
+    "seed": 1729,
+    "times": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "radius": 8.0,
+    "order": 64,
+    "local_radius": 2.0,
+    "local_order": 40,
+    "residual_steps": [
+      0.04,
+      0.02,
+      0.01
+    ],
+    "flux_orders": [
+      8,
+      16,
+      32
+    ],
+    "plot_extent": 4.0,
+    "plot_points": 121
+  },
+  "elapsed_seconds": 3.431800798999575,
+  "boundaries": "none imposed; finite integration spheres sample unbounded analytical solution",
+  "units": "c=epsilon_0=mu_0=l0=1, unit dimensionless amplitude",
+  "artifacts_sha256": {
+    "config.json": "e4a4ccd37870f4698a187ceb5040abe1ccb602316c92ef9432c333df05742904",
+    "field-slices.png": "84d22fd002a58f2d5db3d90da1421c7b470df8b83480e6db1de467a255b9e06e",
+    "field-slices.svg": "dd6f5bdc340fe91928f8685dac759ffe30cfb99ddf654fc300bd521d55911cff",
+    "localisation.svg": "ffb17221fd9966a666a2ec7910469ae9cff792bc322be3d979c7f7dcfc8a772d",
+    "metrics.json": "417d5678419516e0762506b0f72466feb85cca16886c221f95c6429926d82b35"
+  }
+}

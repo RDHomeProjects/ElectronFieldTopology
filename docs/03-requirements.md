@@ -1,6 +1,6 @@
 # Requirements and acceptance criteria
 
-Status for every requirement is initially planned, except the S0 documentation items recorded in STATUS.md. Requirement presence is not acceptance evidence.
+S0 is complete; S1-A implementation evidence is mapped in [the report](../reports/s1-a/README.md). Evolution, topology invariants and later-model requirements remain planned. Requirement presence is not acceptance evidence.
 
 | ID | Requirement | Acceptance evidence | Stage |
 |---|---|---|---|
