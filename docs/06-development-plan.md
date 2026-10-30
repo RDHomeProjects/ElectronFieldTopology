@@ -15,7 +15,7 @@ Stages are evidence gates, not promised dates. S5-S7 are conditional research pa
 
 ## First implementation task: S1-A
 
-Implementation and local verification complete; see [the report](../reports/s1-a/README.md). Independent evolution remains S2.
+S1-A is merged; see [the report](../reports/s1-a/README.md). S2 periodic-reference implementation and verification are complete pending review; see [S2 findings](../reports/s2/README.md). S3 is next. Open-boundary isolation remains a separate requirement before long-time isolated experiments.
 
 1. Verify a primary Hopfion formula and document conventions and normalisation.
 2. Create pyproject.toml, dependency lock and importable package.

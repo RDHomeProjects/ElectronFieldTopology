@@ -1,6 +1,6 @@
 # Requirements and acceptance criteria
 
-S0 is complete; S1-A implementation evidence is mapped in [the report](../reports/s1-a/README.md). Evolution, topology invariants and later-model requirements remain planned. Requirement presence is not acceptance evidence.
+S0/S1-A are complete. [S1-A evidence](../reports/s1-a/README.md) and [S2 periodic-evolution evidence](../reports/s2/README.md) map implementation to requirements. Open-boundary isolation, topology invariants and later-model requirements remain unimplemented. Requirement presence is not acceptance evidence.
 
 | ID | Requirement | Acceptance evidence | Stage |
 |---|---|---|---|

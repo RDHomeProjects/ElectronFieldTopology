@@ -8,9 +8,9 @@
 | docs/literature/ | Annotated source register and reading status |
 | docs/decisions/ | Architecture and physical-assumption decisions |
 | docs/templates/ | Model and experiment-report templates |
-| src/electron_field_topology/ | Future reusable field, solver and diagnostic code |
-| tests/ | Future independent numerical verification |
-| experiments/configs/ | Future versioned experiment inputs |
+| src/electron_field_topology/ | Reusable analytical fields, independent periodic solver and diagnostics |
+| tests/ | Independent analytical/symbolic/solver verification |
+| experiments/configs/ | Versioned analytical and evolution experiment inputs |
 | experiments/ | Experiment definitions and run protocol |
 | notebooks/ | Explanatory exploration using package code |
 | scripts/ | Small command-line helpers and current documentation checker |
@@ -20,7 +20,7 @@
 | .github/ISSUE_TEMPLATE/ | Research tasks |
 | .github/ | PR template and AI tool entry guidance |
 
-Git tracks files, not empty folders. Each reserved directory contains a README describing its intended role; this is not an implemented module.
+Git tracks files, not empty folders. Reserved folders contain explanatory README files. Implemented analytical and periodic-evolution modules are distinguished from planned capabilities in STATUS.md.
 
 ## Planned data flow
 
@@ -30,7 +30,7 @@ The generator must produce valid E/B fields, not merely an attractive curve. Dis
 
 ## Tool choices
 
-Start with Python 3.11+, NumPy/SciPy, SymPy, pytest and Matplotlib; add PyVista for interactive 3D inspection only when useful. Pin supported versions and resolve them in S1, rather than claiming an environment exists now.
+Implemented environment: Python 3.11+, NumPy/SciPy, SymPy, pytest and Matplotlib, with versions resolved in uv.lock. Add PyVista only when 3D inspection is useful. S2 uses a collocated periodic Fourier propagator; see ADR-0002 for boundary limitations.
 
 Dedalus is an option for custom PDEs. Meep can provide independent Maxwell/FDTD checks where its interfaces and initial conditions fit. Neither is automatically a quantum-field solver or a model of self-confined vacuum matter. Select an evolution method after analysing constraint preservation, boundaries and benchmark cost.
 

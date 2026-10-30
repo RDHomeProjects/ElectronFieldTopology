@@ -22,7 +22,7 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-S1-A adds an analytical (1,1) Hopfion evaluator, energy/flux/localisation diagnostics, independent polynomial and symbolic checks, and a reproducible benchmark. It samples a known solution at chosen times; it does not independently evolve initial fields or model an electron.
+S1-A adds an analytical (1,1) Hopfion evaluator, energy/flux/localisation diagnostics, independent polynomial and symbolic checks, and a reproducible benchmark. It samples a known solution at chosen times. S2 adds an independent periodic Fourier Maxwell solver, measured initial projection, spatial/domain studies and interior Poynting balance. Neither implementation models an electron.
 
 See [the equation mapping and conventions](docs/models/B0-H11.md). Measured evidence and interpretation are kept in [reports](reports/README.md).
 
@@ -34,6 +34,14 @@ uv run --frozen pytest -q
 python3 scripts/check_docs.py
 uv run --frozen eft-benchmark --config experiments/configs/hopfion-s1.json --output artifacts/s1-local
 ```
+
+For S2, run:
+
+```bash
+uv run --frozen python -m electron_field_topology.evolution_benchmark --config experiments/configs/hopfion-s2.json --output artifacts/s2-local
+```
+
+See [the S2 solver specification](docs/models/B0-H11-PSATD.md). The periodic box is a controlled approximation, not an absorbing free-space boundary. The [evolution workflow](.github/workflows/evolution.yml) also offers a bounded manual run.
 
 Use a new or empty output directory. Outputs include metrics, a provenance manifest, field/energy-flow slices and localisation plots. Bulk outputs remain ignored. [Benchmark CI](.github/workflows/benchmark.yml) runs small checks and uploads evidence; documentation checks remain separate.
 
