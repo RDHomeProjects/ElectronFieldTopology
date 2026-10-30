@@ -124,7 +124,7 @@ Carlos Hoyos, Nilanjan Sircar and Jacob Sonnenschein (2015), *New knotted soluti
 
 Priority: Immediate: S3-A; later S4.
 
-Full-text targeted inspection: Sections 2.1, 3 and 4.1; Appendix C located. Covariant definitions and conserved quantities offer references beyond the current polynomial implementation. Real Lorentz changes and complex conformal generation must be separated; a complex transformation is not a change of inertial observer. No new numerical implementation or electron conclusion is established by this review.
+Full-text targeted inspection: Sections 2.1, 2.2, 3 and 4.1; Appendix C located. S3-A uses the p=q momentum/energy ratio and tensor convention with an explicit [equation mapping](../models/B0-H11-Lorentz.md). Covariant definitions and conserved quantities offer references beyond the current polynomial implementation. Real Lorentz changes and complex conformal generation must be separated; a complex transformation is not a change of inertial observer. The literature review itself establishes no numerical result or electron conclusion; subsequent S3-A implementation is reported separately.
 
 ### L12 — Helicity is not a complete topology test
 

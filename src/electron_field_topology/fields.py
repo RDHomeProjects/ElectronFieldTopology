@@ -9,13 +9,19 @@ import numpy as np
 def hopfion(points, time=0.0):
     """Return E, B with shape (..., 3) for real points of shape (..., 3).
 
-    p=q=1 and unit amplitude/length only. Time is a finite real scalar.
+    p=q=1 and unit amplitude/length only. Time broadcasts with point leading axes.
     """
     points = np.asarray(points, dtype=float)
     if points.ndim < 1 or points.shape[-1] != 3:
         raise ValueError("points must have final dimension 3")
-    if not np.isfinite(points).all() or not np.isscalar(time) or not np.isfinite(time):
-        raise ValueError("points and scalar time must be finite")
+    if np.iscomplexobj(time):
+        raise ValueError("time must be real")
+    time = np.asarray(time, dtype=float)
+    if not np.isfinite(points).all() or not np.isfinite(time).all():
+        raise ValueError("points and time must be finite")
+    shape = np.broadcast_shapes(points.shape[:-1], time.shape)
+    points = np.broadcast_to(points, shape + (3,))
+    time = np.broadcast_to(time, shape)
     x, y, z = np.moveaxis(points, -1, 0)
     r2 = np.sum(points * points, axis=-1)
     denominator = r2 - (time - 1j)**2
