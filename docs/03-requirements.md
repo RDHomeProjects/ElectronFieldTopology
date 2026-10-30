@@ -30,6 +30,19 @@ S0/S1-A are complete. [S1-A evidence](../reports/s1-a/README.md) and [S2 periodi
 | CI-003 | Offer bounded manually dispatched experiments | Validated inputs, timeout, artifacts and job summary | S2 |
 | LIC-001 | Mark software/documentation licensing and third-party terms | LICENSE, documentation notice and source notices | S0+ |
 
+## Pre-S3 review additions (planned)
+
+These clarify future acceptance in response to [the literature assessment](literature/pre-s3-review.md); none is marked implemented by this documentation change.
+
+| ID | Requirement | Acceptance evidence | Stage |
+|---|---|---|---|
+| REL-002 | Transform spacetime events and full fields consistently | Declared conventions; common-event, inverse/composition, Maxwell and invariant checks | S3-A |
+| REL-003 | Distinguish energy centroid, peak and origin-dependent angular momentum | Stress-energy derivation, tail convergence and independent centroid/width checks | S3-B |
+| NUM-006 | Classify perturbations by constraints and null-family membership | Divergence and both null invariants; conserved difference-energy baseline; local redistribution | S3-C |
+| TOP-001 | Avoid helicity-only topology claims | Gauge/boundary/mean-mode treatment plus explicit tracing or theorem assumptions | S3-D/S4 |
+| MOD-002 | Check whether nonlinear terms alter the selected background | Substitution into stated equations, surviving terms, scale and well-posedness assumptions | S5 |
+| BND-001 | Establish boundary suitability for the claimed experiment | Analytical unbounded evaluation or quantified finite-domain limits; open-boundary reflection/loss tests before isolated long-time claims | S3+ |
+
 ## Acceptance rules
 
 Set tolerances from analytical accuracy, discretisation order and truncation studies before evaluating candidate physics. Document absolute and relative errors, including near-zero reference values. No universal magic tolerance is prescribed here.

@@ -31,7 +31,7 @@ A. M. Valverde, L. D. Angulo, M. R. Cabello, S. G. Garcia, J. J. Omiste and J. L
 
 Role: FDTD simulation and validation of Hopfion solutions; useful benchmark for independent numerical evolution. A simulation reference, not an electron model.
 
-Review depth: versioned PDF page 2, Eqs. (1)-(5), inspected for S1-A; (1,1) equations mapped and checked in [B0-H11](../models/B0-H11.md). FDTD reproduction remains S2.
+Review depth: versioned PDF page 2, Eqs. (1)-(5), inspected for S1-A; (1,1) equations mapped and checked in [B0-H11](../models/B0-H11.md). S2 uses an independent Fourier propagator, not a reproduction of this paper's FDTD solver; FDTD remains an optional future cross-check.
 
 ### L04 — Existence beyond torus links
 
@@ -44,14 +44,14 @@ Review depth: abstract/introduction and construction limitation checked. Stages:
 
 ### L05 — Constructive methods and a confinement limitation
 
-Benjamin Bode (2024 arXiv submission), *Totally tangential C-links and electromagnetic knots*.
-[arXiv:2409.20357v1](https://arxiv.org/abs/2409.20357v1).
+Benjamin Bode (2026), *Totally tangential C-links and electromagnetic knots*. Topology and its Applications 384, 109803 (May 2026).
+[DOI](https://doi.org/10.1016/j.topol.2026.109803); [original 2024 arXiv version](https://arxiv.org/abs/2409.20357v1).
 
-Role: proposes algorithms for Legendrian representatives and candidate Bateman fields; also states that no compact spatial subset contains an electromagnetic knot indefinitely in the Hopf-type class considered. Relevant to both search design and stop conditions.
+Role: constructive methods for Legendrian representatives and Bateman fields, with a limitation on indefinite containment in compact spatial regions for the class considered. Relevant to search design and stop conditions. Distinguish the original preprint from the final publication before implementation.
 
 Do not generalise that statement to every possible nonlinear field theory. Verify theorem assumptions and publication/version updates before using it as a formal exclusion.
 
-Review depth: arXiv metadata/abstract checked. Stages: S3-S5.
+Review depth: original preprint abstract and 2026 publisher abstract checked; publication confirmed against the author's list. Final-paper/preprint equation and theorem reconciliation remains pending. Stages: S3-S5. See the [pre-S3 assessment](pre-s3-review.md).
 
 ### L06 — Spin as Dirac-field circulation
 
@@ -112,3 +112,88 @@ B. B. Godfrey, J.-L. Vay and I. Haber (2014), *Numerical stability analysis of t
 [DOI](https://doi.org/10.1016/j.jcp.2013.10.053); [arXiv:1305.7375v2](https://arxiv.org/abs/1305.7375v2).
 
 Role: primary numerical method reference. Section 2, equations (1)-(2), inspected for the source-free vacuum specialisation and Fourier-sign conversion. [S2 model](../models/B0-H11-PSATD.md) records the implementation. Its plasma/beam stability results are not reproduced or claimed by this repository. Stage: S2.
+
+## Pre-S3 additions (2026-10-31)
+
+[Assessment and action priorities](pre-s3-review.md). These are literature findings and planned uses, not implemented capabilities. Review depth is specific to each entry.
+
+### L11 — Covariant Bateman construction and generated solutions
+
+Carlos Hoyos, Nilanjan Sircar and Jacob Sonnenschein (2015), *New knotted solutions of Maxwell's equations*. Journal of Physics A 48, 255204.
+[DOI](https://doi.org/10.1088/1751-8113/48/25/255204); [accessible text/version](https://arxiv.org/abs/1502.01382v2).
+
+Priority: Immediate: S3-A; later S4.
+
+Full-text targeted inspection: Sections 2.1, 3 and 4.1; Appendix C located. Covariant definitions and conserved quantities offer references beyond the current polynomial implementation. Real Lorentz changes and complex conformal generation must be separated; a complex transformation is not a change of inertial observer. No new numerical implementation or electron conclusion is established by this review.
+
+### L12 — Helicity is not a complete topology test
+
+William T. M. Irvine (2010), *Linked and knotted beams of light, conservation of helicity and the flow of null electromagnetic fields*. Journal of Physics A 43, 385203.
+[DOI](https://doi.org/10.1088/1751-8113/43/38/385203); [accessible text/version](https://arxiv.org/abs/1110.5408v1).
+
+Priority: Immediate: S3-C; later S4.
+
+Targeted HTML inspection: Sections 3-5, including the non-null counterexample. Conserved helicity can accompany unravelling field lines. This motivates null-condition diagnostics and explicit topology tests rather than a helicity-only acceptance rule. The journal year is 2010 although the arXiv upload is 2011; do not silently change the publication year.
+
+### L13 — Boosts and energy-centroid shifts
+
+Konstantin Y. Bliokh and Franco Nori (2012), *Relativistic Hall Effect*. Physical Review Letters 108, 120403.
+[DOI](https://doi.org/10.1103/PhysRevLett.108.120403); [accessible text/version](https://arxiv.org/abs/1112.5618v2).
+
+Priority: Immediate: S3-A/B.
+
+Full-text targeted inspection: energy centroid, angular-momentum tensor and boost discussion, Eqs. (1)-(4). Distinct centroid definitions and transverse shifts are useful warnings against simply contracting a picture. Some examples use paraxial approximations; their numerical coefficients must not be applied automatically to a non-paraxial Hopfion.
+
+### L14 — Recent centroid guidance
+
+Konstantin Y. Bliokh (2025), *On the Ehrenfest theorem and centroids of relativistic particles*. Physics Letters A 542, 130425.
+[DOI](https://doi.org/10.1016/j.physleta.2025.130425); [accessible text/version](https://arxiv.org/abs/2412.11115v1).
+
+Priority: Immediate: S3-B.
+
+Full-text targeted inspection: Section II.B, Eqs. (7)-(9), and Section III. Energy-weighted and probability-weighted centroids have different meanings. Use a Maxwell stress-energy derivation for our vector field; this paper's explicit scalar/fixed-polarisation approximations do not directly cover every Hopfion observable.
+
+### L15 — Stable topology: recent mathematical structures
+
+Benjamin Bode and Daniel Peralta-Salas (2025), *The topology of stable electromagnetic structures and Legendrian fields on the 3-sphere*. International Mathematics Research Notices 2025(11), rnaf155.
+[DOI](https://doi.org/10.1093/imrn/rnaf155); [accessible text/version](https://arxiv.org/abs/2302.01043v2).
+
+Priority: S3-C terminology; S4 construction.
+
+Targeted preprint inspection: Introduction, Section 1.1 and main construction context. Null-field topology preservation is conditional on the stated flow regularity; this is not robustness against arbitrary perturbations or stationary energy confinement. Journal metadata checked on the publisher index and author's publication list; detailed text reviewed was the 2023 v2 preprint, not an audited final-version comparison.
+
+### L16 — Null knots in nonlinear electrodynamics
+
+E. Goulart (2016), *Nonlinear electrodynamics is skilled with knots*. EPL 115, 10004.
+[DOI](https://doi.org/10.1209/0295-5075/115/10004); [accessible text/version](https://arxiv.org/abs/1602.05071v1).
+
+Priority: S5 feasibility; S6 probe-response ideas.
+
+Full-text targeted inspection: Eqs. (1)-(3), Bateman construction and null-field lemma leading to Eq. (11). Within the stated smooth, well-posed L(F,G) class, the null background can obey the same Maxwell equations. A different response to a probe does not show that the background acquires confinement or electric charge.
+
+### L17 — Nonlinear extensions: scope and effective-action limits
+
+Daniel F. W. Alves, Carlos Hoyos, Horatiu Nastase and Jacob Sonnenschein (2017), *Knotted solutions for linear and nonlinear theories: electromagnetism and fluid dynamics*. Physics Letters B 773, 412-416.
+[DOI](https://doi.org/10.1016/j.physletb.2017.08.063); [accessible text/version](https://arxiv.org/abs/1705.06750v2).
+
+Priority: S5 before selecting an extension.
+
+Full-text targeted inspection: Section III, Eqs. (15)-(18). Null configurations can remain solutions of the invariant-based nonlinear theories discussed. Derivative terms are neglected under explicit scale assumptions; this is not a general proof for every nonlinear or quantum theory. Require an explicit calculation of which proposed terms change the selected background.
+
+### L18 — Open-boundary numerical reference
+
+Jean-Pierre Berenger (1994), *A perfectly matched layer for the absorption of electromagnetic waves*. Journal of Computational Physics 114(2), 185-200.
+[DOI](https://doi.org/10.1006/jcph.1994.1159).
+
+Priority: Before long-time isolated numerical experiments.
+
+Publisher metadata and abstract-level material checked; full-text retrieval was unavailable in this review. Candidate reference for an independent absorbing-boundary implementation. It is not a drop-in PML design for our global periodic Fourier solver. Before implementation read the equations and demonstrate reflection, layer-thickness, initial-tail and energy-loss convergence.
+
+### L19 — September 2026 helicity treatment
+
+Gaetano Diglio and Renzo L. Ricca (2026), *Helicity conservation of the Riemann-Silberstein vector*. Royal Society Open Science 13(9), 260497.
+[DOI](https://doi.org/10.1098/rsos.260497); [accessible text/version](https://pmc.ncbi.nlm.nih.gov/articles/PMC13561072/).
+
+Priority: S3 diagnostic design; S4 helicity implementation.
+
+Primary article full text inspected in PMC: Sections 3-6, gauge/boundary assumptions and conservation statements. Useful current reference for electric/magnetic helicity and covariant currents. Decay assumptions for unbounded domains cannot be silently replaced by a finite periodic box. Fix potential/sign conventions independently and handle mean modes explicitly.

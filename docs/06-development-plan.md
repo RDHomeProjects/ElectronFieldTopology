@@ -15,7 +15,7 @@ Stages are evidence gates, not promised dates. S5-S7 are conditional research pa
 
 ## First implementation task: S1-A
 
-S1-A is merged; see [the report](../reports/s1-a/README.md). S2 periodic-reference implementation and verification are complete pending review; see [S2 findings](../reports/s2/README.md). S3 is next. Open-boundary isolation remains a separate requirement before long-time isolated experiments.
+S1-A is merged; see [the report](../reports/s1-a/README.md). S2 periodic-reference implementation and verification are merged via PR 4; see [S2 findings](../reports/s2/README.md). S3 is next. Open-boundary isolation remains a separate requirement before long-time isolated experiments.
 
 1. Verify a primary Hopfion formula and document conventions and normalisation.
 2. Create pyproject.toml, dependency lock and importable package.
@@ -36,3 +36,18 @@ Keep this task limited to analytical evaluation. Independently evolving fields b
 - Any changed physical theory receives its own model ID and decision before coding.
 
 S4 may catalogue valid but unconfined knots. Progress to S5 is a decision based on constraints, not a reward for running more candidates.
+
+## Pre-S3 literature checkpoint
+
+[Assessment](literature/pre-s3-review.md) completed before S3 implementation. [ADR-0003](decisions/ADR-0003-pre-s3-literature.md) records the proposed scope refinement. No S3 code is included.
+
+| Substage | Purpose | Evidence gate |
+|---|---|---|
+| S3-A | Lorentz-transform the unbounded analytical field at consistent events | Conventions, inverse/composition, local invariants and Maxwell residuals |
+| S3-B | Energy centroid, width and contained-energy diagnostics | Stress-energy relation and domain/tail convergence; distinguish peaks and centroids |
+| S3-C | Bounded, classified perturbations | Constraint/null controls, linear difference-norm baseline, local redistribution and domain limits |
+| S3-D / S4 | Helicity and topology instrumentation | Gauge/boundary/mean handling and validated tracing or invariants |
+
+Use L11-L14 immediately, L15/L19 for topology diagnostic design, L16-L17 before nonlinear extension selection, and L18 before implementing open numerical boundaries. Existing L05 now has a 2026 journal version requiring version reconciliation before S4 construction work.
+
+Global norm conservation or a persistent helicity value alone cannot satisfy a self-confinement/stability gate. No nonlinear binding term is selected merely by adding these references.
