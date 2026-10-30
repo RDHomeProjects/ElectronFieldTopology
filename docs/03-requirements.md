@@ -1,6 +1,6 @@
 # Requirements and acceptance criteria
 
-S0/S1-A are complete. [S1-A evidence](../reports/s1-a/README.md) and [S2 periodic-evolution evidence](../reports/s2/README.md) map implementation to requirements. Open-boundary isolation, topology invariants and later-model requirements remain unimplemented. Requirement presence is not acceptance evidence.
+S0/S1-A are complete. [S1-A evidence](../reports/s1-a/README.md) and [S2 periodic-evolution evidence](../reports/s2/README.md) map implementation to requirements. [S3-A covariance evidence](../reports/s3-a/README.md) is implemented for review. Open-boundary isolation, topology invariants and later-model requirements remain unimplemented. Requirement presence is not acceptance evidence.
 
 | ID | Requirement | Acceptance evidence | Stage |
 |---|---|---|---|
@@ -30,9 +30,9 @@ S0/S1-A are complete. [S1-A evidence](../reports/s1-a/README.md) and [S2 periodi
 | CI-003 | Offer bounded manually dispatched experiments | Validated inputs, timeout, artifacts and job summary | S2 |
 | LIC-001 | Mark software/documentation licensing and third-party terms | LICENSE, documentation notice and source notices | S0+ |
 
-## Pre-S3 review additions (planned)
+## Pre-S3 review additions and implementation status
 
-These clarify future acceptance in response to [the literature assessment](literature/pre-s3-review.md); none is marked implemented by this documentation change.
+These refine acceptance in response to [the literature assessment](literature/pre-s3-review.md). REL-001/002 and the analytical unbounded part of BND-001 have [S3-A evidence](../reports/s3-a/README.md) proposed for review; REL-003, NUM-006, TOP-001 and MOD-002 remain pending. S3-A does not complete open numerical boundary validation or the full S3 stage.
 
 | ID | Requirement | Acceptance evidence | Stage |
 |---|---|---|---|
