@@ -105,3 +105,10 @@ Tool documentation is an implementation reference, not evidence for the physical
 At each research stage, search for relevant corrections, later versions and counterexamples. Record search date, query scope, source version and review depth. Add primary sources for every new equation or empirical comparison. Link papers instead of copying them without permission. Citation is not endorsement.
 
 For sources with only abstract-level review, do not imply that detailed mathematical claims have been independently audited. Maintain disagreements and negative results alongside supporting literature.
+
+## L10 — Independent Fourier Maxwell propagation
+
+B. B. Godfrey, J.-L. Vay and I. Haber (2014), *Numerical stability analysis of the pseudo-spectral analytical time-domain PIC algorithm*. Journal of Computational Physics 258, 689-704.
+[DOI](https://doi.org/10.1016/j.jcp.2013.10.053); [arXiv:1305.7375v2](https://arxiv.org/abs/1305.7375v2).
+
+Role: primary numerical method reference. Section 2, equations (1)-(2), inspected for the source-free vacuum specialisation and Fourier-sign conversion. [S2 model](../models/B0-H11-PSATD.md) records the implementation. Its plasma/beam stability results are not reproduced or claimed by this repository. Stage: S2.

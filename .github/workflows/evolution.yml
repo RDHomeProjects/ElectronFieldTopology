@@ -1,0 +1,62 @@
+name: Independent Maxwell evolution
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      preset:
+        description: Bounded experiment preset
+        type: choice
+        options:
+          - standard
+        default: standard
+permissions:
+  contents: read
+concurrency:
+  group: evolution-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  evolution:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MPLBACKEND: Agg
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Install locked environment and verify solver
+        run: |
+          python -m pip install uv==0.13.4
+          uv sync --frozen --all-groups
+          uv run --frozen pytest -q
+          python scripts/check_docs.py
+      - name: Run bounded evolution and convergence study
+        run: uv run --frozen python -m electron_field_topology.evolution_benchmark --config experiments/configs/hopfion-s2.json --output artifacts/s2-ci
+      - name: Publish job summary
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          p=Path('artifacts/s2-ci/metrics.json')
+          if p.exists():
+              m=json.loads(p.read_text())
+              print('## S2 verification')
+              for key,value in m['acceptance'].items(): print(f'- {key}: {value}')
+              print('\nPeriodic numerical benchmark; not evidence of confinement.')
+          else:
+              print('No experiment metrics generated; inspect job logs.')
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: maxwell-evolution-evidence
+          path: artifacts/s2-ci
+          retention-days: 14
+          if-no-files-found: warn

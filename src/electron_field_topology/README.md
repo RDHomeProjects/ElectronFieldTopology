@@ -1,3 +1,3 @@
-# Analytical field package
+# Field package
 
-Implemented: fields.hopfion, diagnostics and benchmark CLI. See [model B0-H11](../../docs/models/B0-H11.md). No evolution solver is implemented.
+Analytical evaluator: fields.hopfion. Independent periodic solver: evolution.FourierMaxwell. Reproducible entry points: benchmark and evolution_benchmark. See [B0-H11](../../docs/models/B0-H11.md) and [B0-H11-PSATD](../../docs/models/B0-H11-PSATD.md).
