@@ -49,18 +49,18 @@ def sphere_flux(radius, order, time=0.0, center=(0, 0, 0)):
             "absolute_flux_integral": float(np.sum(weights*np.abs(integrand)))}
 
 
-def maxwell_residuals(points, time, step):
+def maxwell_residuals(points, time, step, field=hopfion):
     """Second-order centred differences at fixed points, including time."""
     if step <= 0:
         raise ValueError("step must be positive")
     derivatives = []
     for axis in range(3):
         shift = np.eye(3)[axis]*step
-        ep, bp = hopfion(points+shift, time)
-        em, bm = hopfion(points-shift, time)
+        ep, bp = field(points+shift, time)
+        em, bm = field(points-shift, time)
         derivatives.append(((ep-em)/(2*step), (bp-bm)/(2*step)))
-    ep, bp = hopfion(points, time+step)
-    em, bm = hopfion(points, time-step)
+    ep, bp = field(points, time+step)
+    em, bm = field(points, time-step)
     de, db = (ep-em)/(2*step), (bp-bm)/(2*step)
     je = np.stack([d[0] for d in derivatives], axis=-1)
     jb = np.stack([d[1] for d in derivatives], axis=-1)

@@ -1,6 +1,6 @@
 # ADR-0003: incorporate the pre-S3 literature review
 
-Date: 2026-10-31. Status: proposed for review with the documentation PR.
+Date: 2026-10-31. Status: accepted through [PR 5](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/5) and the maintainer instruction to proceed.
 
 ## Context
 
