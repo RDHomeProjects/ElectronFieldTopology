@@ -125,7 +125,7 @@ Carlos Hoyos, Nilanjan Sircar and Jacob Sonnenschein (2015), *New knotted soluti
 
 Priority: Immediate: S3-A; later S4.
 
-Full-text targeted inspection: Sections 2.1, 2.2, 3 and 4.1; Appendix C located. S3-A uses the p=q momentum/energy ratio and tensor convention with an explicit [equation mapping](../models/B0-H11-Lorentz.md). Covariant definitions and conserved quantities offer references beyond the current polynomial implementation. Real Lorentz changes and complex conformal generation must be separated; a complex transformation is not a change of inertial observer. The literature review itself establishes no numerical result or electron conclusion; subsequent S3-A implementation is reported separately.
+Full-text targeted inspection: Sections 2.1, 2.2, 3 and 4.1; Appendix C located. S3-A uses the p=q momentum/energy ratio and tensor convention with an explicit [equation mapping](../models/B0-H11-Lorentz.md). S3-D inspects Eqs. (2.7)-(2.12) and the Section 2.2 Hopfion helicity reference. The [model/report](../models/B0-H11-Topology.md) records an independently verified factor-of-two audit of the printed null-case exchange expression when interpreted away from null fields. Covariant definitions and conserved quantities offer references beyond the current polynomial implementation. Real Lorentz changes and complex conformal generation must be separated; a complex transformation is not a change of inertial observer. The literature review itself establishes no numerical result or electron conclusion; subsequent S3-A implementation is reported separately.
 
 ### L12 — Helicity is not a complete topology test
 
@@ -134,7 +134,7 @@ William T. M. Irvine (2010), *Linked and knotted beams of light, conservation of
 
 Priority: Immediate: S3-C; later S4.
 
-Targeted HTML inspection: Sections 3-5, including the non-null counterexample; abstract and Sections 2-3 rechecked for S3-C. [The S3-C report](../../reports/s3-c/README.md) quotes a short orthogonality excerpt and compares only measured constraint/null diagnostics, not an uncomputed topology change. Conserved helicity can accompany unravelling field lines. This motivates null-condition diagnostics and explicit topology tests rather than a helicity-only acceptance rule. The journal year is 2010 although the arXiv upload is 2011; do not silently change the publication year.
+Targeted HTML inspection: Sections 3-5, including the non-null counterexample; abstract and Sections 2-3 rechecked for S3-C. [The S3-C report](../../reports/s3-c/README.md) quotes a short orthogonality excerpt and compares only measured constraint/null diagnostics, not an uncomputed topology change. S3-D rechecks Eqs. (4)/(5)/(9) and the Hopf-fibration paragraph for [declared-domain helicity and selected closed-pair linking](../models/B0-H11-Topology.md), with an explicit orientation convention. Conserved helicity can accompany unravelling field lines. This motivates null-condition diagnostics and explicit topology tests rather than a helicity-only acceptance rule. The journal year is 2010 although the arXiv upload is 2011; do not silently change the publication year.
 
 ### L13 — Boosts and energy-centroid shifts
 
@@ -197,4 +197,4 @@ Gaetano Diglio and Renzo L. Ricca (2026), *Helicity conservation of the Riemann-
 
 Priority: S3 diagnostic design; S4 helicity implementation.
 
-Primary article full text inspected in PMC: Sections 3-6, gauge/boundary assumptions and conservation statements. Useful current reference for electric/magnetic helicity and covariant currents. Decay assumptions for unbounded domains cannot be silently replaced by a finite periodic box. Fix potential/sign conventions independently and handle mean modes explicitly.
+Primary article full text inspected in PMC: Sections 3-6, gauge/boundary assumptions and conservation statements. Useful current reference for electric/magnetic helicity and covariant currents. Decay assumptions for unbounded domains cannot be silently replaced by a finite periodic box. Fix potential/sign conventions independently and handle mean modes explicitly. S3-D re-retrieval on 2026-10-31 was blocked by the public text endpoints; this historical review is not a fresh equation audit. The implementation uses accessible Irvine/Hoyos equations and independent controls instead.

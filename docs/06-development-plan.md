@@ -15,7 +15,7 @@ Stages are evidence gates, not promised dates. S5-S7 are conditional research pa
 
 ## First implementation task: S1-A
 
-S1-A is merged; see [the report](../reports/s1-a/README.md). S2 periodic-reference implementation and verification are merged via PR 4; see [S2 findings](../reports/s2/README.md). S3-A covariance is merged via PR 7; see [S3-A findings](../reports/s3-a/README.md). S3-B energy-centroid/localisation diagnostics are merged via PR 9; see [S3-B findings](../reports/s3-b/README.md). S3-C classified perturbations are implemented for review; see [S3-C findings and literature alignment](../reports/s3-c/README.md). S3-D/S4 instrumentation is next after review/merge. Open-boundary isolation remains a separate requirement before long-time isolated experiments.
+S1-A is merged; see [the report](../reports/s1-a/README.md). S2 periodic-reference implementation and verification are merged via PR 4; see [S2 findings](../reports/s2/README.md). S3-A covariance is merged via PR 7; see [S3-A findings](../reports/s3-a/README.md). S3-B energy-centroid/localisation diagnostics are merged via PR 9; see [S3-B findings](../reports/s3-b/README.md). S3-C classified perturbations are merged via PR 11; see [S3-C findings and literature alignment](../reports/s3-c/README.md). S3-D instruments are implemented for review; see [S3-D helicity and selected closed-pair findings](../reports/s3-d/README.md). S4-A bounded candidate-family work is next after review/merge. Open-boundary isolation remains a separate requirement before long-time isolated experiments.
 
 1. Verify a primary Hopfion formula and document conventions and normalisation.
 2. Create pyproject.toml, dependency lock and importable package.
@@ -39,7 +39,7 @@ S4 may catalogue valid but unconfined knots. Progress to S5 is a decision based 
 
 ## Pre-S3 literature checkpoint
 
-[Assessment](literature/pre-s3-review.md) completed before S3 implementation. [ADR-0003](decisions/ADR-0003-pre-s3-literature.md) records the accepted scope refinement. The literature assessment itself introduced no numerical code. S3-A implementation and evidence are now available separately; S3-B is merged; S3-C implementation and measured evidence are proposed for review. S3-D/S4 instrumentation remains pending.
+[Assessment](literature/pre-s3-review.md) completed before S3 implementation. [ADR-0003](decisions/ADR-0003-pre-s3-literature.md) records the accepted scope refinement. The literature assessment itself introduced no numerical code. S3-A implementation and evidence are now available separately; S3-B/C are merged; S3-D instrumentation and selected closed-pair evidence are proposed for review. Broader S4 candidate and topology-persistence work remains pending.
 
 | Substage | Purpose | Evidence gate |
 |---|---|---|
