@@ -1,7 +1,7 @@
 # S1-A result: verified analytical Hopfion
 
 Date: 2026-10-31 (Australia/Melbourne). Experiment: S1-A-001. Model: B0-H11.
-Status: implementation and local verification complete; submitted for maintainer review.
+Status: merged via [PR 2](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/2). Numerical evidence below is the original S1-A run.
 
 ## Outcome
 
