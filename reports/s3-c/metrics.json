@@ -1,0 +1,3298 @@
+{
+  "experiment_id": "S3-C-perturbations-v1",
+  "calibration": [
+    {
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3
+      },
+      "physical_scale_per_unit_epsilon": 2.976756877006613
+    },
+    {
+      "seed": 29,
+      "parameters": {
+        "seed": 29,
+        "width": 0.8,
+        "center": [
+          -0.4499530296459311,
+          0.006322298571449392,
+          0.019234029629711547
+        ],
+        "axis": [
+          -0.582749642144412,
+          0.2172382728772778,
+          -0.7830775104533759
+        ],
+        "mode": "curl",
+        "images_per_axis": 3
+      },
+      "physical_scale_per_unit_epsilon": 2.976756877006613
+    },
+    {
+      "seed": 47,
+      "parameters": {
+        "seed": 47,
+        "width": 0.8,
+        "center": [
+          0.24180199464256058,
+          0.25366881711960787,
+          -0.034819461770516535
+        ],
+        "axis": [
+          -0.7672170048604584,
+          -0.5578017301770701,
+          -0.3165995850667125
+        ],
+        "mode": "curl",
+        "images_per_axis": 3
+      },
+      "physical_scale_per_unit_epsilon": 2.976756877006613
+    }
+  ],
+  "main_trials": [
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.01,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.009999999999999997,
+      "initial_delta_energy": 0.0019736563290167924,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.3159284204011255e-14,
+          "difference_energy_from_subtraction": 0.001973656329016804,
+          "standalone_delta_energy": 0.0019736563290167924,
+          "relative_difference_energy_drift": 5.995204332975845e-15,
+          "divergence_max": 1.1899293206983627e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.005067873407290893,
+            "half_e2_minus_b2_rms_over_u_rms": 0.004278802156003853,
+            "combined_null_score": 0.0066326079910205326
+          },
+          "invariant_change_over_base_core_u_rms": 0.006634264929139677,
+          "periodic_control_null_score_difference": 0.006586616958621957,
+          "delta_core_energy": 0.0013468932222886127,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6824355398082849,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.08071702204260234,
+          "response_over_initial_base_core_energy": 0.004611929244553978
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.408325626665161e-14,
+          "difference_energy_from_subtraction": 0.0019736563290168032,
+          "standalone_delta_energy": 0.0019736563290167924,
+          "relative_difference_energy_drift": 5.551115123125783e-15,
+          "divergence_max": 1.1908190668574709e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.006043095418431578,
+            "half_e2_minus_b2_rms_over_u_rms": 0.005838197298916982,
+            "combined_null_score": 0.00840259185831076
+          },
+          "invariant_change_over_base_core_u_rms": 0.008412667209447064,
+          "periodic_control_null_score_difference": 0.008350863053215056,
+          "delta_core_energy": 0.001304432666440482,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6609218875964619,
+          "delta_outward_flux": 0.00032263750894588643,
+          "total_minus_base_core_energy": 0.07666404306213792,
+          "response_over_initial_base_core_energy": 0.004380354146581449
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.507197866508067e-14,
+          "difference_energy_from_subtraction": 0.0019736563290168032,
+          "standalone_delta_energy": 0.0019736563290167924,
+          "relative_difference_energy_drift": 5.551115123125783e-15,
+          "divergence_max": 1.1914204766079814e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.005293478734711595,
+            "half_e2_minus_b2_rms_over_u_rms": 0.007257608610383291,
+            "combined_null_score": 0.008982972773884688
+          },
+          "invariant_change_over_base_core_u_rms": 0.009008248406193846,
+          "periodic_control_null_score_difference": 0.008923278014691343,
+          "delta_core_energy": 0.001216706952724584,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6164735647419961,
+          "delta_outward_flux": 0.0003561702243304809,
+          "total_minus_base_core_energy": 0.06769578624883721,
+          "response_over_initial_base_core_energy": 0.003867934773030951
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.604813991660825e-14,
+          "difference_energy_from_subtraction": 0.001973656329016801,
+          "standalone_delta_energy": 0.0019736563290167924,
+          "relative_difference_energy_drift": 4.440892098500626e-15,
+          "divergence_max": 1.1924811873836358e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.005853814123614447,
+            "half_e2_minus_b2_rms_over_u_rms": 0.00412288367766479,
+            "combined_null_score": 0.007159979721576223
+          },
+          "invariant_change_over_base_core_u_rms": 0.007195653408415355,
+          "periodic_control_null_score_difference": 0.007092796853926874,
+          "delta_core_energy": 0.0011453812008408702,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5803346732667788,
+          "delta_outward_flux": 0.0002265670884445284,
+          "total_minus_base_core_energy": 0.05945925491145587,
+          "response_over_initial_base_core_energy": 0.003397324004852398
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.05,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.049999999999999996,
+      "initial_delta_energy": 0.049341408225419825,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 8.658878440094486e-15,
+          "difference_energy_from_subtraction": 0.04934140822541989,
+          "standalone_delta_energy": 0.049341408225419825,
+          "relative_difference_energy_drift": 1.3322676295501878e-15,
+          "divergence_max": 1.1364438810597096e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.025084050946848006,
+            "half_e2_minus_b2_rms_over_u_rms": 0.021953576384568175,
+            "combined_null_score": 0.0333342035749639
+          },
+          "invariant_change_over_base_core_u_rms": 0.03368359516288842,
+          "periodic_control_null_score_difference": 0.033288212542565324,
+          "delta_core_energy": 0.03367233055721532,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6824355398082849,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.43052297465877487,
+          "response_over_initial_base_core_energy": 0.024598795235944267
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 1.295933566286367e-14,
+          "difference_energy_from_subtraction": 0.0493414082254199,
+          "standalone_delta_energy": 0.04934140822541982,
+          "relative_difference_energy_drift": 1.5543122344752192e-15,
+          "divergence_max": 1.1362853725174535e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.029897803841392553,
+            "half_e2_minus_b2_rms_over_u_rms": 0.029054874744502843,
+            "combined_null_score": 0.04169009979548066
+          },
+          "invariant_change_over_base_core_u_rms": 0.04218279323073541,
+          "periodic_control_null_score_difference": 0.041638370990384956,
+          "delta_core_energy": 0.032610816661012045,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6609218875964615,
+          "delta_outward_flux": 0.00806593772364716,
+          "total_minus_base_core_energy": 0.4094088686394848,
+          "response_over_initial_base_core_energy": 0.02339239836253655
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 1.3117553782647306e-14,
+          "difference_energy_from_subtraction": 0.04934140822541987,
+          "standalone_delta_energy": 0.049341408225419825,
+          "relative_difference_energy_drift": 8.881784197001252e-16,
+          "divergence_max": 1.1366179676412349e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.026098512679196648,
+            "half_e2_minus_b2_rms_over_u_rms": 0.036589017564798085,
+            "combined_null_score": 0.044943170453621666
+          },
+          "invariant_change_over_base_core_u_rms": 0.045696035311860575,
+          "periodic_control_null_score_difference": 0.04488347569442832,
+          "delta_core_energy": 0.03041767381811461,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6164735647419961,
+          "delta_outward_flux": 0.008904255608262024,
+          "total_minus_base_core_energy": 0.3628130702986674,
+          "response_over_initial_base_core_energy": 0.02073005379625742
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 1.3379448696500913e-14,
+          "difference_energy_from_subtraction": 0.049341408225419874,
+          "standalone_delta_energy": 0.04934140822541982,
+          "relative_difference_energy_drift": 8.881784197001252e-16,
+          "divergence_max": 1.136855016096478e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.028792949114847966,
+            "half_e2_minus_b2_rms_over_u_rms": 0.020905177783909143,
+            "combined_null_score": 0.03558174218482103
+          },
+          "invariant_change_over_base_core_u_rms": 0.03633896164290733,
+          "periodic_control_null_score_difference": 0.035514559317171686,
+          "delta_core_energy": 0.028634530021021766,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5803346732667788,
+          "delta_outward_flux": 0.0056641772111132105,
+          "total_minus_base_core_energy": 0.3202038985740785,
+          "response_over_initial_base_core_energy": 0.018295493152293917
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.09999999999999999,
+      "initial_delta_energy": 0.1973656329016793,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.472643016948954e-15,
+          "difference_energy_from_subtraction": 0.1973656329016794,
+          "standalone_delta_energy": 0.1973656329016793,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.3026434905818274e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.049538517571658704,
+            "half_e2_minus_b2_rms_over_u_rms": 0.045330901380517,
+            "combined_null_score": 0.06714875533595314
+          },
+          "invariant_change_over_base_core_u_rms": 0.06871535409880838,
+          "periodic_control_null_score_difference": 0.06710276430355457,
+          "delta_core_energy": 0.1346893222288613,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6824355398082849,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.928390610431979,
+          "response_over_initial_base_core_energy": 0.0530454630048257
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.590472158141216e-15,
+          "difference_energy_from_subtraction": 0.19736563290167944,
+          "standalone_delta_energy": 0.19736563290167927,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.3006743954217478e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05895817979531032,
+            "half_e2_minus_b2_rms_over_u_rms": 0.05775984403762555,
+            "combined_null_score": 0.08253645587270493
+          },
+          "invariant_change_over_base_core_u_rms": 0.08469786671870254,
+          "periodic_control_null_score_difference": 0.08248472706760923,
+          "delta_core_energy": 0.13044326664404818,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6609218875964615,
+          "delta_outward_flux": 0.03226375089458864,
+          "total_minus_base_core_energy": 0.8840393706009877,
+          "response_over_initial_base_core_energy": 0.0505113657991481
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.6252698013205205e-15,
+          "difference_energy_from_subtraction": 0.1973656329016794,
+          "standalone_delta_energy": 0.1973656329016793,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.3012012103354164e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05120249229953163,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0737835031847481,
+            "combined_null_score": 0.08980924540322857
+          },
+          "invariant_change_over_base_core_u_rms": 0.09308465820325129,
+          "periodic_control_null_score_difference": 0.08974955064403523,
+          "delta_core_energy": 0.12167069527245844,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6164735647419961,
+          "delta_outward_flux": 0.035617022433048096,
+          "total_minus_base_core_energy": 0.7864614882335559,
+          "response_over_initial_base_core_energy": 0.044936057420272506
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.795577195707455e-15,
+          "difference_energy_from_subtraction": 0.1973656329016794,
+          "standalone_delta_energy": 0.19736563290167927,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.2985654851341444e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05625845340907056,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04259045313068159,
+            "combined_null_score": 0.07056174797903854
+          },
+          "invariant_change_over_base_core_u_rms": 0.07376069853011563,
+          "periodic_control_null_score_difference": 0.07049456511138918,
+          "delta_core_energy": 0.11453812008408706,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5803346732667788,
+          "delta_outward_flux": 0.022656708844452842,
+          "total_minus_base_core_energy": 0.6976768571901975,
+          "response_over_initial_base_core_energy": 0.03986316912467009
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.01,
+      "seed": 29,
+      "parameters": {
+        "seed": 29,
+        "width": 0.8,
+        "center": [
+          -0.4499530296459311,
+          0.006322298571449392,
+          0.019234029629711547
+        ],
+        "axis": [
+          -0.582749642144412,
+          0.2172382728772778,
+          -0.7830775104533759
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.009999999999999998,
+      "initial_delta_energy": 0.001973656329016793,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.3419954620851204e-14,
+          "difference_energy_from_subtraction": 0.0019736563290168037,
+          "standalone_delta_energy": 0.001973656329016793,
+          "relative_difference_energy_drift": 5.551115123125783e-15,
+          "divergence_max": 1.1364438810597096e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.0036597027975379627,
+            "half_e2_minus_b2_rms_over_u_rms": 0.004344022009299277,
+            "combined_null_score": 0.005680136599025038
+          },
+          "invariant_change_over_base_core_u_rms": 0.005681366858904339,
+          "periodic_control_null_score_difference": 0.005634145566626462,
+          "delta_core_energy": 0.0013076203125646278,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6625369844485737,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.07868729510942885,
+          "response_over_initial_base_core_energy": 0.004495956717760051
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.419606432865403e-14,
+          "difference_energy_from_subtraction": 0.0019736563290168045,
+          "standalone_delta_energy": 0.0019736563290167933,
+          "relative_difference_energy_drift": 5.995204332975845e-15,
+          "divergence_max": 1.1370408446408863e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.005861102774964654,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0047319793947246044,
+            "combined_null_score": 0.00753287161252577
+          },
+          "invariant_change_over_base_core_u_rms": 0.007531375963847171,
+          "periodic_control_null_score_difference": 0.007481142807430065,
+          "delta_core_energy": 0.0012733646113981434,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6451805173358066,
+          "delta_outward_flux": 0.0002621112927224656,
+          "total_minus_base_core_energy": 0.0783505084831333,
+          "response_over_initial_base_core_energy": 0.004476713737138599
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.494683097160508e-14,
+          "difference_energy_from_subtraction": 0.001973656329016803,
+          "standalone_delta_energy": 0.0019736563290167933,
+          "relative_difference_energy_drift": 5.10702591327572e-15,
+          "divergence_max": 1.1393806587042461e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.004938301841415276,
+            "half_e2_minus_b2_rms_over_u_rms": 0.005972395756866941,
+            "combined_null_score": 0.007749602322285172
+          },
+          "invariant_change_over_base_core_u_rms": 0.007755271164143748,
+          "periodic_control_null_score_difference": 0.007689907563091827,
+          "delta_core_energy": 0.0012004457936590919,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6082344610913656,
+          "delta_outward_flux": 0.00030670307762950647,
+          "total_minus_base_core_energy": 0.07025535532769567,
+          "response_over_initial_base_core_energy": 0.004014180895466105
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.57142099527769e-14,
+          "difference_energy_from_subtraction": 0.0019736563290168015,
+          "standalone_delta_energy": 0.001973656329016793,
+          "relative_difference_energy_drift": 4.440892098500626e-15,
+          "divergence_max": 1.1377467417881845e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.0038663407002445297,
+            "half_e2_minus_b2_rms_over_u_rms": 0.004170632201013127,
+            "combined_null_score": 0.005687069840128127
+          },
+          "invariant_change_over_base_core_u_rms": 0.005699759480892271,
+          "periodic_control_null_score_difference": 0.005619886972478778,
+          "delta_core_energy": 0.0011337804515205812,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5744568772443738,
+          "delta_outward_flux": 0.00023956449813820213,
+          "total_minus_base_core_energy": 0.05982856913397505,
+          "response_over_initial_base_core_energy": 0.0034184255150439776
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.05,
+      "seed": 29,
+      "parameters": {
+        "seed": 29,
+        "width": 0.8,
+        "center": [
+          -0.4499530296459311,
+          0.006322298571449392,
+          0.019234029629711547
+        ],
+        "axis": [
+          -0.582749642144412,
+          0.2172382728772778,
+          -0.7830775104533759
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.049999999999999996,
+      "initial_delta_energy": 0.04934140822541984,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 8.805994067570024e-15,
+          "difference_energy_from_subtraction": 0.04934140822541989,
+          "standalone_delta_energy": 0.04934140822541984,
+          "relative_difference_energy_drift": 8.881784197001252e-16,
+          "divergence_max": 1.3208863690529786e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.01808628867765522,
+            "half_e2_minus_b2_rms_over_u_rms": 0.022246066139418576,
+            "combined_null_score": 0.028670564989390513
+          },
+          "invariant_change_over_base_core_u_rms": 0.028995279947833383,
+          "periodic_control_null_score_difference": 0.028624573956991937,
+          "delta_core_energy": 0.0326905078141157,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6625369844485735,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.4195888817984077,
+          "response_over_initial_base_core_energy": 0.02397405386975783
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 1.3066417421529424e-14,
+          "difference_energy_from_subtraction": 0.049341408225419894,
+          "standalone_delta_energy": 0.04934140822541984,
+          "relative_difference_energy_drift": 1.1102230246251565e-15,
+          "divergence_max": 1.3182995471373576e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.029022311415465397,
+            "half_e2_minus_b2_rms_over_u_rms": 0.023739536680856356,
+            "combined_null_score": 0.037494801795955365
+          },
+          "invariant_change_over_base_core_u_rms": 0.03786291444789259,
+          "periodic_control_null_score_difference": 0.03744307299085966,
+          "delta_core_energy": 0.03183411528495359,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6451805173358065,
+          "delta_outward_flux": 0.0065527823180616404,
+          "total_minus_base_core_energy": 0.41721983464359624,
+          "response_over_initial_base_core_energy": 0.023838693600281638
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 1.3126593649108501e-14,
+          "difference_energy_from_subtraction": 0.049341408225419894,
+          "standalone_delta_energy": 0.04934140822541984,
+          "relative_difference_energy_drift": 1.1102230246251565e-15,
+          "divergence_max": 1.3182653939398363e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.024350555314786925,
+            "half_e2_minus_b2_rms_over_u_rms": 0.03017866192926552,
+            "combined_null_score": 0.03877758605147306
+          },
+          "invariant_change_over_base_core_u_rms": 0.03933675620612706,
+          "periodic_control_null_score_difference": 0.03871789129227971,
+          "delta_core_energy": 0.030011144841477308,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6082344610913656,
+          "delta_outward_flux": 0.007667576940737664,
+          "total_minus_base_core_energy": 0.37528569251164257,
+          "response_over_initial_base_core_energy": 0.021442702128475787
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 1.3325523324952787e-14,
+          "difference_energy_from_subtraction": 0.0493414082254199,
+          "standalone_delta_energy": 0.04934140822541984,
+          "relative_difference_energy_drift": 1.3322676295501878e-15,
+          "divergence_max": 1.3194592895999518e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.01899878824623952,
+            "half_e2_minus_b2_rms_over_u_rms": 0.021341168195474283,
+            "combined_null_score": 0.028572704015773026
+          },
+          "invariant_change_over_base_core_u_rms": 0.029138688496921205,
+          "periodic_control_null_score_difference": 0.028505521148123675,
+          "delta_core_energy": 0.028344511288014535,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5744568772443737,
+          "delta_outward_flux": 0.005989112453455055,
+          "total_minus_base_core_energy": 0.3218184547002725,
+          "response_over_initial_base_core_energy": 0.0183877440608004
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 29,
+      "parameters": {
+        "seed": 29,
+        "width": 0.8,
+        "center": [
+          -0.4499530296459311,
+          0.006322298571449392,
+          0.019234029629711547
+        ],
+        "axis": [
+          -0.582749642144412,
+          0.2172382728772778,
+          -0.7830775104533759
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.09999999999999999,
+      "initial_delta_energy": 0.19736563290167936,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.461574996895553e-15,
+          "difference_energy_from_subtraction": 0.19736563290167944,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 4.440892098500626e-16,
+          "divergence_max": 1.1364438810597096e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.035685931365562557,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04581677372435357,
+            "combined_null_score": 0.058074628297874256
+          },
+          "invariant_change_over_base_core_u_rms": 0.059528735730731454,
+          "periodic_control_null_score_difference": 0.05802863726547568,
+          "delta_core_energy": 0.1307620312564628,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6625369844485735,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.9045587792250522,
+          "response_over_initial_base_core_energy": 0.051683783441914065
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.572181534395991e-15,
+          "difference_energy_from_subtraction": 0.19736563290167947,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.1359781574029932e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05732902513521557,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04773362498396292,
+            "combined_null_score": 0.07459970560976624
+          },
+          "invariant_change_over_base_core_u_rms": 0.07627488161878819,
+          "periodic_control_null_score_difference": 0.07454797680467054,
+          "delta_core_energy": 0.12733646113981437,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6451805173358065,
+          "delta_outward_flux": 0.026211129272246562,
+          "total_minus_base_core_energy": 0.8981078998570879,
+          "response_over_initial_base_core_energy": 0.05131519948703895
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.650746517767343e-15,
+          "difference_energy_from_subtraction": 0.19736563290167944,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 4.440892098500626e-16,
+          "divergence_max": 1.1379193330011915e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.047855635523082925,
+            "half_e2_minus_b2_rms_over_u_rms": 0.061136311790612956,
+            "combined_null_score": 0.07763897520367716
+          },
+          "invariant_change_over_base_core_u_rms": 0.08014678593341815,
+          "periodic_control_null_score_difference": 0.07757928044448381,
+          "delta_core_energy": 0.12004457936590923,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6082344610913656,
+          "delta_outward_flux": 0.030670307762950655,
+          "total_minus_base_core_energy": 0.8105936747062295,
+          "response_over_initial_base_core_energy": 0.04631489838481666
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.71050896362511e-15,
+          "difference_energy_from_subtraction": 0.19736563290167947,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.1364728033166025e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.037141404122514834,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04399714625176246,
+            "combined_null_score": 0.05757805813407515
+          },
+          "invariant_change_over_base_core_u_rms": 0.0600722003490949,
+          "periodic_control_null_score_difference": 0.0575108752664258,
+          "delta_core_energy": 0.11337804515205814,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5744568772443737,
+          "delta_outward_flux": 0.02395644981382022,
+          "total_minus_base_core_energy": 0.7003259319765665,
+          "response_over_initial_base_core_energy": 0.04001452933555371
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.01,
+      "seed": 47,
+      "parameters": {
+        "seed": 47,
+        "width": 0.8,
+        "center": [
+          0.24180199464256058,
+          0.25366881711960787,
+          -0.034819461770516535
+        ],
+        "axis": [
+          -0.7672170048604584,
+          -0.5578017301770701,
+          -0.3165995850667125
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.01,
+      "initial_delta_energy": 0.0019736563290167933,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.3001158650374196e-14,
+          "difference_energy_from_subtraction": 0.0019736563290168123,
+          "standalone_delta_energy": 0.0019736563290167933,
+          "relative_difference_energy_drift": 9.769962616701378e-15,
+          "divergence_max": 1.1364438810597096e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.003570883213760036,
+            "half_e2_minus_b2_rms_over_u_rms": 0.005324545313598951,
+            "combined_null_score": 0.006411083350174271
+          },
+          "invariant_change_over_base_core_u_rms": 0.006423784779320016,
+          "periodic_control_null_score_difference": 0.006365092317775696,
+          "delta_core_energy": 0.0013539509994201732,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6860115307383147,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.11914868204159035,
+          "response_over_initial_base_core_energy": 0.006807799361919543
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.463181138671237e-14,
+          "difference_energy_from_subtraction": 0.0019736563290168084,
+          "standalone_delta_energy": 0.0019736563290167933,
+          "relative_difference_energy_drift": 7.771561172376096e-15,
+          "divergence_max": 1.1369688820353041e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.006445561522840118,
+            "half_e2_minus_b2_rms_over_u_rms": 0.004377130279935484,
+            "combined_null_score": 0.007791311367943468
+          },
+          "invariant_change_over_base_core_u_rms": 0.007831072988077847,
+          "periodic_control_null_score_difference": 0.007739582562847763,
+          "delta_core_energy": 0.001308996401299316,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6632342125903006,
+          "delta_outward_flux": 0.00034104233894282694,
+          "total_minus_base_core_energy": 0.11162820143427865,
+          "response_over_initial_base_core_energy": 0.006378101591012488
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.561141256651494e-14,
+          "difference_energy_from_subtraction": 0.001973656329016806,
+          "standalone_delta_energy": 0.0019736563290167933,
+          "relative_difference_energy_drift": 6.439293542825908e-15,
+          "divergence_max": 1.1386128057045153e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.005644726442391277,
+            "half_e2_minus_b2_rms_over_u_rms": 0.00826589858720268,
+            "combined_null_score": 0.010009396388561626
+          },
+          "invariant_change_over_base_core_u_rms": 0.01008024356162024,
+          "periodic_control_null_score_difference": 0.009949701629368281,
+          "delta_core_energy": 0.001218317932007191,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6172898057759197,
+          "delta_outward_flux": 0.00035944082375561563,
+          "total_minus_base_core_energy": 0.10320263552635822,
+          "response_over_initial_base_core_energy": 0.005896689952806286
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.62118347345381e-14,
+          "difference_energy_from_subtraction": 0.0019736563290168045,
+          "standalone_delta_energy": 0.0019736563290167933,
+          "relative_difference_energy_drift": 5.773159728050814e-15,
+          "divergence_max": 1.1408744342023145e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.006776335946208891,
+            "half_e2_minus_b2_rms_over_u_rms": 0.006183123046290256,
+            "combined_null_score": 0.009173316709971834
+          },
+          "invariant_change_over_base_core_u_rms": 0.009251156893130138,
+          "periodic_control_null_score_difference": 0.009106133842322485,
+          "delta_core_energy": 0.0011505153041896372,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5829359890446498,
+          "delta_outward_flux": 0.00019707910220633133,
+          "total_minus_base_core_energy": 0.09856155024070112,
+          "response_over_initial_base_core_energy": 0.005631512219364957
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.05,
+      "seed": 47,
+      "parameters": {
+        "seed": 47,
+        "width": 0.8,
+        "center": [
+          0.24180199464256058,
+          0.25366881711960787,
+          -0.034819461770516535
+        ],
+        "axis": [
+          -0.7672170048604584,
+          -0.5578017301770701,
+          -0.3165995850667125
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.049999999999999996,
+      "initial_delta_energy": 0.04934140822541985,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 8.791421728395611e-15,
+          "difference_energy_from_subtraction": 0.04934140822541992,
+          "standalone_delta_energy": 0.04934140822541985,
+          "relative_difference_energy_drift": 1.3322676295501878e-15,
+          "divergence_max": 1.2633779149288004e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.01753189806058517,
+            "half_e2_minus_b2_rms_over_u_rms": 0.027052131534986548,
+            "combined_null_score": 0.03223639666887358
+          },
+          "invariant_change_over_base_core_u_rms": 0.032859966178405385,
+          "periodic_control_null_score_difference": 0.032190405636475,
+          "delta_core_energy": 0.033848774985504336,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6860115307383146,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.6228224301963543,
+          "response_over_initial_base_core_energy": 0.03558621102833413
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 1.2933804717621491e-14,
+          "difference_energy_from_subtraction": 0.049341408225419894,
+          "standalone_delta_energy": 0.049341408225419846,
+          "relative_difference_energy_drift": 8.881784197001252e-16,
+          "divergence_max": 1.2607556712502417e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.03155408204127073,
+            "half_e2_minus_b2_rms_over_u_rms": 0.021871829224797853,
+            "combined_null_score": 0.03839318959276457
+          },
+          "invariant_change_over_base_core_u_rms": 0.039410290133805904,
+          "periodic_control_null_score_difference": 0.03834146078766886,
+          "delta_core_energy": 0.0327249100324829,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6632342125903002,
+          "delta_outward_flux": 0.008526058473570674,
+          "total_minus_base_core_energy": 0.5843209351973222,
+          "response_over_initial_base_core_energy": 0.03338635074791688
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 1.3196100980646599e-14,
+          "difference_energy_from_subtraction": 0.049341408225419915,
+          "standalone_delta_energy": 0.049341408225419846,
+          "relative_difference_energy_drift": 1.3322676295501878e-15,
+          "divergence_max": 1.2604800648352142e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.027519905006943526,
+            "half_e2_minus_b2_rms_over_u_rms": 0.041308325875857914,
+            "combined_null_score": 0.049635903923040105
+          },
+          "invariant_change_over_base_core_u_rms": 0.051271059760667335,
+          "periodic_control_null_score_difference": 0.04957620916384676,
+          "delta_core_energy": 0.030457948300179775,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6172898057759194,
+          "delta_outward_flux": 0.008986020593890393,
+          "total_minus_base_core_energy": 0.5403795362719386,
+          "response_over_initial_base_core_energy": 0.030875670625902112
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 1.3338654962241484e-14,
+          "difference_energy_from_subtraction": 0.04934140822541988,
+          "standalone_delta_energy": 0.049341408225419846,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.2606736115495324e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.032951813159914134,
+            "half_e2_minus_b2_rms_over_u_rms": 0.031271489799332836,
+            "combined_null_score": 0.045428273847854576
+          },
+          "invariant_change_over_base_core_u_rms": 0.0470950398987678,
+          "periodic_control_null_score_difference": 0.04536109098020523,
+          "delta_core_energy": 0.028762882604740938,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5829359890446497,
+          "delta_outward_flux": 0.004926977555158284,
+          "total_minus_base_core_energy": 0.515818057287273,
+          "response_over_initial_base_core_energy": 0.02947230117107894
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 47,
+      "parameters": {
+        "seed": 47,
+        "width": 0.8,
+        "center": [
+          0.24180199464256058,
+          0.25366881711960787,
+          -0.034819461770516535
+        ],
+        "axis": [
+          -0.7672170048604584,
+          -0.5578017301770701,
+          -0.3165995850667125
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.09999999999999999,
+      "initial_delta_energy": 0.1973656329016794,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.444657913916052e-15,
+          "difference_energy_from_subtraction": 0.1973656329016795,
+          "standalone_delta_energy": 0.1973656329016794,
+          "relative_difference_energy_drift": 4.440892098500626e-16,
+          "divergence_max": 1.1364438810597096e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.03433268836213483,
+            "half_e2_minus_b2_rms_over_u_rms": 0.05514616467085209,
+            "combined_null_score": 0.06496024144102455
+          },
+          "invariant_change_over_base_core_u_rms": 0.06761809234950183,
+          "periodic_control_null_score_difference": 0.06491425040862597,
+          "delta_core_energy": 0.13539509994201734,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6860115307383146,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 1.3133424103637168,
+          "response_over_initial_base_core_energy": 0.07504045760350943
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.626869631966943e-15,
+          "difference_energy_from_subtraction": 0.1973656329016795,
+          "standalone_delta_energy": 0.19736563290167938,
+          "relative_difference_energy_drift": 4.440892098500626e-16,
+          "divergence_max": 1.1398551651576484e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.06139797535971383,
+            "half_e2_minus_b2_rms_over_u_rms": 0.043664371518499286,
+            "combined_null_score": 0.07534114890534627
+          },
+          "invariant_change_over_base_core_u_rms": 0.0794904865728621,
+          "periodic_control_null_score_difference": 0.07528942010025057,
+          "delta_core_energy": 0.1308996401299316,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6632342125903002,
+          "delta_outward_flux": 0.034104233894282694,
+          "total_minus_base_core_energy": 1.2340916904596,
+          "response_over_initial_base_core_energy": 0.07051230847797749
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.715174606104538e-15,
+          "difference_energy_from_subtraction": 0.19736563290167947,
+          "standalone_delta_energy": 0.19736563290167938,
+          "relative_difference_energy_drift": 2.220446049250313e-16,
+          "divergence_max": 1.1381274768215996e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.053192890393319696,
+            "half_e2_minus_b2_rms_over_u_rms": 0.08231182057535155,
+            "combined_null_score": 0.09800367031302752
+          },
+          "invariant_change_over_base_core_u_rms": 0.10474859104729346,
+          "periodic_control_null_score_difference": 0.09794397555383418,
+          "delta_core_energy": 0.1218317932007191,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6172898057759194,
+          "delta_outward_flux": 0.03594408237556157,
+          "total_minus_base_core_energy": 1.1416749691442263,
+          "response_over_initial_base_core_energy": 0.06523189340647982
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.807491378923206e-15,
+          "difference_energy_from_subtraction": 0.19736563290167947,
+          "standalone_delta_energy": 0.19736563290167938,
+          "relative_difference_energy_drift": 2.220446049250313e-16,
+          "divergence_max": 1.1347008516278758e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.06345457789618814,
+            "half_e2_minus_b2_rms_over_u_rms": 0.06315888728741276,
+            "combined_null_score": 0.0895294839668336
+          },
+          "invariant_change_over_base_core_u_rms": 0.09639349240873446,
+          "periodic_control_null_score_difference": 0.08946230109918425,
+          "delta_core_energy": 0.11505153041896375,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5829359890446497,
+          "delta_outward_flux": 0.019707910220633135,
+          "total_minus_base_core_energy": 1.0891618797840241,
+          "response_over_initial_base_core_energy": 0.06223145252779667
+        }
+      ]
+    },
+    {
+      "kind": "amplitude",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": null,
+      "parameters": {
+        "multiplier": 1.1
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.1,
+      "initial_delta_energy": 0.19736563290167936,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.909397825815034e-15,
+          "difference_energy_from_subtraction": 0.19736563290167994,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 2.886579864025407e-15,
+          "divergence_max": 1.3164363463754597e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.5606239074004365e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.910963414560911e-05,
+            "combined_null_score": 4.599103239857056e-05
+          },
+          "invariant_change_over_base_core_u_rms": 9.658116803694703e-06,
+          "periodic_control_null_score_difference": 5.136407792150077e-18,
+          "delta_core_energy": 0.1750179106453498,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.8867699410086132,
+          "delta_outward_flux": 9.75781955236954e-19,
+          "total_minus_base_core_energy": 3.675376123552354,
+          "response_over_initial_base_core_energy": 0.21000000000000055
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 7.090696157567085e-15,
+          "difference_energy_from_subtraction": 0.19736563290167988,
+          "standalone_delta_energy": 0.1973656329016793,
+          "relative_difference_energy_drift": 2.6645352591003757e-15,
+          "divergence_max": 1.3150279515542544e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.8137887518671454e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004210223e-05,
+            "combined_null_score": 5.172880509571597e-05
+          },
+          "invariant_change_over_base_core_u_rms": 1.0863049070111998e-05,
+          "periodic_control_null_score_difference": 1.1621292036329e-17,
+          "delta_core_energy": 0.17301782543192318,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.8766360327692644,
+          "delta_outward_flux": 0.01591562937741422,
+          "total_minus_base_core_energy": 3.633374334070396,
+          "response_over_initial_base_core_energy": 0.20760014336092383
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 7.13752300796975e-15,
+          "difference_energy_from_subtraction": 0.19736563290167983,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 2.4424906541753444e-15,
+          "divergence_max": 1.317136886941808e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456261608e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.385222776211884e-05,
+            "combined_null_score": 5.9694759193342525e-05
+          },
+          "invariant_change_over_base_core_u_rms": 1.2535899430599314e-05,
+          "periodic_control_null_score_difference": 2.6359665318553827e-18,
+          "delta_core_energy": 0.1663319388232502,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.8427603954033424,
+          "delta_outward_flux": 0.037298193200144845,
+          "total_minus_base_core_energy": 3.4929707152882585,
+          "response_over_initial_base_core_energy": 0.1995779004793569
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 7.287857555222051e-15,
+          "difference_energy_from_subtraction": 0.19736563290167983,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 2.4424906541753444e-15,
+          "divergence_max": 1.3152061565993185e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.2453711400747266e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.206937769834701e-05,
+            "combined_null_score": 6.718286764935726e-05
+          },
+          "invariant_change_over_base_core_u_rms": 1.4108402206373261e-05,
+          "periodic_control_null_score_difference": 8.212831456577696e-18,
+          "delta_core_energy": 0.1530190709999146,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.7753075788840266,
+          "delta_outward_flux": 0.06857465504388303,
+          "total_minus_base_core_energy": 3.2134004909982163,
+          "response_over_initial_base_core_energy": 0.1836040939552604
+        }
+      ]
+    },
+    {
+      "kind": "duality",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": null,
+      "parameters": {
+        "angle": 0.10004171361154003
+      },
+      "grid": 61,
+      "half_extent": 6.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.005569077338586807,
+      "initial_relative_delta_field_norm": 0.1,
+      "initial_delta_energy": 0.19736563290167936,
+      "initial_base_energy": 19.73656329016793,
+      "fixed_physical_cube_observation": null,
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.411759043263197e-15,
+          "difference_energy_from_subtraction": 0.19736563290167936,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 0.0,
+          "divergence_max": 1.361569421063154e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907400921e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145611292e-05,
+            "combined_null_score": 4.59910323985757e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.537225324280808e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9393515638880215e-05,
+            "combined_null_score": 4.599103239857138e-05
+          },
+          "invariant_change_over_base_core_u_rms": 9.186701526512198e-06,
+          "periodic_control_null_score_difference": 4.3164798992079145e-18,
+          "delta_core_energy": 0.1750179106453498,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.8867699410086132,
+          "delta_outward_flux": 4.336808689942018e-19,
+          "total_minus_base_core_energy": 3.552713678800501e-15,
+          "response_over_initial_base_core_energy": 2.0299143474519002e-16
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.722428004069232e-15,
+          "difference_energy_from_subtraction": 0.19736563290167933,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 1.1102230246251565e-16,
+          "divergence_max": 1.3601249471750736e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751866708e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004197796e-05,
+            "combined_null_score": 5.172880509570435e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.9301449199762695e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.3634288567282364e-05,
+            "combined_null_score": 5.1728805095698364e-05
+          },
+          "invariant_change_over_base_core_u_rms": 1.0332820725084342e-05,
+          "periodic_control_null_score_difference": 5.9834407394043776e-18,
+          "delta_core_energy": 0.17301782543192318,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.8766360327692644,
+          "delta_outward_flux": 0.015915629377414222,
+          "total_minus_base_core_energy": 3.552713678800501e-15,
+          "response_over_initial_base_core_energy": 2.0299143474519002e-16
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.861862489440845e-15,
+          "difference_energy_from_subtraction": 0.1973656329016793,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 3.3306690738754696e-16,
+          "divergence_max": 1.3605619951314254e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456260566e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762132044e-05,
+            "combined_null_score": 5.969475919334516e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.191221857284444e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.2506825445482063e-05,
+            "combined_null_score": 5.969475919333763e-05
+          },
+          "invariant_change_over_base_core_u_rms": 1.1924018809889272e-05,
+          "periodic_control_null_score_difference": 7.528428835196221e-18,
+          "delta_core_energy": 0.16633193882325017,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.8427603954033421,
+          "delta_outward_flux": 0.037298193200144845,
+          "total_minus_base_core_energy": 0.0,
+          "response_over_initial_base_core_energy": 0.0
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.925991653240658e-15,
+          "difference_energy_from_subtraction": 0.19736563290167927,
+          "standalone_delta_energy": 0.19736563290167936,
+          "relative_difference_energy_drift": 4.440892098500626e-16,
+          "divergence_max": 1.3584542419091504e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.245371140074376e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698339265e-05,
+            "combined_null_score": 6.718286764934905e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.356005207552697e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.114742973766151e-05,
+            "combined_null_score": 6.718286764936164e-05
+          },
+          "invariant_change_over_base_core_u_rms": 1.3419767302469607e-05,
+          "periodic_control_null_score_difference": 1.259029772798792e-17,
+          "delta_core_energy": 0.1530190709999146,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.7753075788840266,
+          "delta_outward_flux": 0.06857465504388303,
+          "total_minus_base_core_energy": 3.552713678800501e-15,
+          "response_over_initial_base_core_energy": 2.0299143474519002e-16
+        }
+      ]
+    }
+  ],
+  "analytic_null_controls": [
+    {
+      "kind": "amplitude",
+      "time": 0,
+      "e_dot_b_rms_over_u_rms": 5.846497545993774e-17,
+      "half_e2_minus_b2_rms_over_u_rms": 9.801957639375458e-17,
+      "combined_null_score": 1.1413146241042482e-16
+    },
+    {
+      "kind": "duality",
+      "time": 0,
+      "e_dot_b_rms_over_u_rms": 6.282866921684047e-17,
+      "half_e2_minus_b2_rms_over_u_rms": 9.477220394219264e-17,
+      "combined_null_score": 1.137066942427741e-16
+    },
+    {
+      "kind": "amplitude",
+      "time": 0.25,
+      "e_dot_b_rms_over_u_rms": 1.0508476728448645e-16,
+      "half_e2_minus_b2_rms_over_u_rms": 1.5805731978788333e-16,
+      "combined_null_score": 1.8980233047506e-16
+    },
+    {
+      "kind": "duality",
+      "time": 0.25,
+      "e_dot_b_rms_over_u_rms": 8.72580694826134e-17,
+      "half_e2_minus_b2_rms_over_u_rms": 1.3406451099812904e-16,
+      "combined_null_score": 1.5996019442036214e-16
+    },
+    {
+      "kind": "amplitude",
+      "time": 0.5,
+      "e_dot_b_rms_over_u_rms": 7.32114166054134e-17,
+      "half_e2_minus_b2_rms_over_u_rms": 1.0967541494917779e-16,
+      "combined_null_score": 1.318658718761065e-16
+    },
+    {
+      "kind": "duality",
+      "time": 0.5,
+      "e_dot_b_rms_over_u_rms": 8.307377949297721e-17,
+      "half_e2_minus_b2_rms_over_u_rms": 1.3736131703629093e-16,
+      "combined_null_score": 1.605284531078283e-16
+    },
+    {
+      "kind": "amplitude",
+      "time": 0.75,
+      "e_dot_b_rms_over_u_rms": 9.498944425664686e-17,
+      "half_e2_minus_b2_rms_over_u_rms": 1.1364925254809492e-16,
+      "combined_null_score": 1.4811869269247308e-16
+    },
+    {
+      "kind": "duality",
+      "time": 0.75,
+      "e_dot_b_rms_over_u_rms": 1.0018391013334595e-16,
+      "half_e2_minus_b2_rms_over_u_rms": 1.3561308603075084e-16,
+      "combined_null_score": 1.6860523405988962e-16
+    }
+  ],
+  "longitudinal_negative_control": {
+    "parameters": {
+      "seed": 11,
+      "width": 0.8,
+      "center": [
+        -0.3714297972308004,
+        -0.0007221375598850388,
+        0.10149835762335746
+      ],
+      "axis": [
+        -0.6442915638816851,
+        -0.3762033705437209,
+        -0.6658523895747738
+      ],
+      "mode": "gradient",
+      "images_per_axis": 3
+    },
+    "raw_divergence_max": 4.623663032754033,
+    "projection_removed_relative_field_norm": 1.0,
+    "remaining_energy_fraction": 1.2778055077404698e-31,
+    "projected_divergence_max": 1.2126947842696249e-16,
+    "accepted_for_vacuum_evolution": false
+  },
+  "spatial": [
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 25,
+      "half_extent": 6.1,
+      "spacing": 0.488,
+      "native_roi_half_extent": 0.976,
+      "base_initial_projection_relative_l2": 0.017021558452416576,
+      "initial_relative_delta_field_norm": 0.09995885622146884,
+      "initial_delta_energy": 0.19736563292871828,
+      "initial_base_energy": 19.752814057233454,
+      "fixed_physical_cube_observation": {
+        "half_extent": 1.2,
+        "grid": 17,
+        "initial_base_energy": 17.535674949237432,
+        "final_base_energy": 15.35024644451575,
+        "final_combined_energy": 16.04471902466642,
+        "response_over_initial_base_energy": 0.03960341316550637
+      },
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.027075506043648e-15,
+          "difference_energy_from_subtraction": 0.19736563292871823,
+          "standalone_delta_energy": 0.19736563292871828,
+          "relative_difference_energy_drift": 3.3306690738754696e-16,
+          "divergence_max": 1.9628820411820794e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.0076086291169202395,
+            "half_e2_minus_b2_rms_over_u_rms": 0.010718633412994652,
+            "combined_null_score": 0.01314459353806773
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.0483455803870533,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0450812776127105,
+            "combined_null_score": 0.06610307658615676
+          },
+          "invariant_change_over_base_core_u_rms": 0.06769994995966774,
+          "periodic_control_null_score_difference": 0.052958483048089026,
+          "delta_core_energy": 0.08671279258690864,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.4393510222634674,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.6589257015254741,
+          "response_over_initial_base_core_energy": 0.04327324860959486
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 5.118279118420596e-15,
+          "difference_energy_from_subtraction": 0.1973656329287182,
+          "standalone_delta_energy": 0.19736563292871825,
+          "relative_difference_energy_drift": 4.440892098500626e-16,
+          "divergence_max": 1.9447223520453792e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.02705674940093549,
+            "half_e2_minus_b2_rms_over_u_rms": 0.03557374145162891,
+            "combined_null_score": 0.044694057423916696
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.06640944730594968,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0638030188145695,
+            "combined_null_score": 0.0920925615961138
+          },
+          "invariant_change_over_base_core_u_rms": 0.08537488345892681,
+          "periodic_control_null_score_difference": 0.047398504172197105,
+          "delta_core_energy": 0.08755681040183041,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.4436274396031904,
+          "delta_outward_flux": -0.0003889710656103202,
+          "total_minus_base_core_energy": 0.6155413557507501,
+          "response_over_initial_base_core_energy": 0.04042409342240464
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 5.275967565205503e-15,
+          "difference_energy_from_subtraction": 0.19736563292871823,
+          "standalone_delta_energy": 0.19736563292871825,
+          "relative_difference_energy_drift": 3.3306690738754696e-16,
+          "divergence_max": 1.9222173744732306e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.015526996280827588,
+            "half_e2_minus_b2_rms_over_u_rms": 0.014438645301889784,
+            "combined_null_score": 0.021202879324719502
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.055089510859153035,
+            "half_e2_minus_b2_rms_over_u_rms": 0.07503689476865753,
+            "combined_null_score": 0.09308807540831061
+          },
+          "invariant_change_over_base_core_u_rms": 0.09297442234515514,
+          "periodic_control_null_score_difference": 0.07188519608359112,
+          "delta_core_energy": 0.0889794061220868,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.4508353597418002,
+          "delta_outward_flux": -0.001292010543696973,
+          "total_minus_base_core_energy": 0.5658248209916259,
+          "response_over_initial_base_core_energy": 0.03715908803005394
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 5.352990560735968e-15,
+          "difference_energy_from_subtraction": 0.19736563292871828,
+          "standalone_delta_energy": 0.19736563292871825,
+          "relative_difference_energy_drift": 0.0,
+          "divergence_max": 1.8945018417858194e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.023768171188300127,
+            "half_e2_minus_b2_rms_over_u_rms": 0.019093916332310754,
+            "combined_null_score": 0.03048776152067619
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.06358052514350006,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04544252389570636,
+            "combined_null_score": 0.07815053522232006
+          },
+          "invariant_change_over_base_core_u_rms": 0.0741439393697734,
+          "periodic_control_null_score_difference": 0.047662773701643874,
+          "delta_core_energy": 0.08740498971482558,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.4428582039224289,
+          "delta_outward_flux": 0.01399557531394199,
+          "total_minus_base_core_energy": 0.5175763367059574,
+          "response_over_initial_base_core_energy": 0.03399049307208484
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 49,
+      "half_extent": 6.1,
+      "spacing": 0.24897959183673468,
+      "native_roi_half_extent": 1.2448979591836733,
+      "base_initial_projection_relative_l2": 0.005567055044521359,
+      "initial_relative_delta_field_norm": 0.09999999428023475,
+      "initial_delta_energy": 0.19736563290167924,
+      "initial_base_energy": 19.736565547938298,
+      "fixed_physical_cube_observation": {
+        "half_extent": 1.2,
+        "grid": 17,
+        "initial_base_energy": 17.52774113460952,
+        "final_base_energy": 15.349850564787516,
+        "final_combined_energy": 16.04846582553292,
+        "response_over_initial_base_energy": 0.039857689326889184
+      },
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 3.9091509123114515e-15,
+          "difference_energy_from_subtraction": 0.19736563290167924,
+          "standalone_delta_energy": 0.19736563290167924,
+          "relative_difference_energy_drift": 0.0,
+          "divergence_max": 5.829497612586468e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 5.784741872121827e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.3305572556714e-05,
+            "combined_null_score": 7.866262084565359e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.049625349851690356,
+            "half_e2_minus_b2_rms_over_u_rms": 0.045468027777090386,
+            "combined_null_score": 0.06730540021306557
+          },
+          "invariant_change_over_base_core_u_rms": 0.06887966473302094,
+          "periodic_control_null_score_difference": 0.0672267375922199,
+          "delta_core_energy": 0.14140070501458718,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.7164403596295214,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.9586007447882388,
+          "response_over_initial_base_core_energy": 0.0541087212343674
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 5.243975079074978e-15,
+          "difference_energy_from_subtraction": 0.19736563290167924,
+          "standalone_delta_energy": 0.19736563290167927,
+          "relative_difference_energy_drift": 0.0,
+          "divergence_max": 5.8085729735389695e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 6.677992160387647e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 6.737377728293339e-05,
+            "combined_null_score": 9.486191962421064e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05905239245172051,
+            "half_e2_minus_b2_rms_over_u_rms": 0.057796564839543464,
+            "combined_null_score": 0.08262946182520838
+          },
+          "invariant_change_over_base_core_u_rms": 0.08480037022065483,
+          "periodic_control_null_score_difference": 0.08253459990558416,
+          "delta_core_energy": 0.1367725344588578,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6929906308814825,
+          "delta_outward_flux": 0.03602102717549134,
+          "total_minus_base_core_energy": 0.9167306655024738,
+          "response_over_initial_base_core_energy": 0.051745342674052605
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 5.368330401651557e-15,
+          "difference_energy_from_subtraction": 0.19736563290167924,
+          "standalone_delta_energy": 0.1973656329016792,
+          "relative_difference_energy_drift": 0.0,
+          "divergence_max": 5.808243546796583e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 7.158825242457574e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 9.141361812270165e-05,
+            "combined_null_score": 0.00011610911877836255
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05125039722914096,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0737888605275712,
+            "combined_null_score": 0.08984096590143105
+          },
+          "invariant_change_over_base_core_u_rms": 0.09313220315319312,
+          "periodic_control_null_score_difference": 0.08972485678265268,
+          "delta_core_energy": 0.1269206006520817,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.643073461099021,
+          "delta_outward_flux": 0.04161693097158782,
+          "total_minus_base_core_energy": 0.8210413092485069,
+          "response_over_initial_base_core_energy": 0.04634410683025433
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 5.449836723334043e-15,
+          "difference_energy_from_subtraction": 0.19736563290167927,
+          "standalone_delta_energy": 0.1973656329016792,
+          "relative_difference_energy_drift": 2.220446049250313e-16,
+          "divergence_max": 5.7831517738923144e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 9.244124847047079e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 8.243207348241418e-05,
+            "combined_null_score": 0.0001238564942075685
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.056106660648979206,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04275694045274213,
+            "combined_null_score": 0.07054157161602687
+          },
+          "invariant_change_over_base_core_u_rms": 0.0737486891701343,
+          "periodic_control_null_score_difference": 0.0704177151218193,
+          "delta_core_energy": 0.11857401296024803,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6007834860455037,
+          "delta_outward_flux": 0.026321585381595725,
+          "total_minus_base_core_energy": 0.7282790623617341,
+          "response_over_initial_base_core_energy": 0.04110809320815064
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 73,
+      "half_extent": 6.1,
+      "spacing": 0.16712328767123286,
+      "native_roi_half_extent": 1.16986301369863,
+      "base_initial_projection_relative_l2": 0.005570390561456361,
+      "initial_relative_delta_field_norm": 0.1000000028285796,
+      "initial_delta_energy": 0.19736563290167913,
+      "initial_base_energy": 19.736562173639154,
+      "fixed_physical_cube_observation": {
+        "half_extent": 1.2,
+        "grid": 17,
+        "initial_base_energy": 17.52779445556903,
+        "final_base_energy": 15.349806474212947,
+        "final_combined_energy": 16.04841656793466,
+        "response_over_initial_base_energy": 0.03985727328630017
+      },
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.70337294733893e-15,
+          "difference_energy_from_subtraction": 0.1973656329016791,
+          "standalone_delta_energy": 0.19736563290167913,
+          "relative_difference_energy_drift": 1.1102230246251565e-16,
+          "divergence_max": 1.8079189313459824e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.4888213714565564e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.8325361667125397e-05,
+            "combined_null_score": 4.493899831734857e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.049462400450372625,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04519944009445209,
+            "combined_null_score": 0.0670038688671407
+          },
+          "invariant_change_over_base_core_u_rms": 0.0685633263865841,
+          "periodic_control_null_score_difference": 0.06695892986882335,
+          "delta_core_energy": 0.12981768365626384,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6577522223483285,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.9058825285517855,
+          "response_over_initial_base_core_energy": 0.05224001899520109
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.8074237806847334e-15,
+          "difference_energy_from_subtraction": 0.19736563290167913,
+          "standalone_delta_energy": 0.19736563290167913,
+          "relative_difference_energy_drift": 0.0,
+          "divergence_max": 1.8084258819583857e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.6031226177631584e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.205202732557818e-05,
+            "combined_null_score": 4.8224285536887474e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05887743439380663,
+            "half_e2_minus_b2_rms_over_u_rms": 0.057725970615881486,
+            "combined_null_score": 0.08245507846301899
+          },
+          "invariant_change_over_base_core_u_rms": 0.08460754348549364,
+          "periodic_control_null_score_difference": 0.0824068541774821,
+          "delta_core_energy": 0.12592046295261808,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6380060251692724,
+          "delta_outward_flux": 0.02912700073467145,
+          "total_minus_base_core_energy": 0.8599889953711468,
+          "response_over_initial_base_core_energy": 0.049593451731180384
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.9789333484691746e-15,
+          "difference_energy_from_subtraction": 0.1973656329016791,
+          "standalone_delta_energy": 0.1973656329016791,
+          "relative_difference_energy_drift": 1.1102230246251565e-16,
+          "divergence_max": 1.8105776576617394e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.727408743503142e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.0002487915837576e-05,
+            "combined_null_score": 5.467683818191299e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05117126490518238,
+            "half_e2_minus_b2_rms_over_u_rms": 0.07377638979729081,
+            "combined_null_score": 0.08978560042411114
+          },
+          "invariant_change_over_base_core_u_rms": 0.09304765710954535,
+          "periodic_control_null_score_difference": 0.08973092358592923,
+          "delta_core_energy": 0.11804761824008421,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5981163817861417,
+          "delta_outward_flux": 0.03111541805270666,
+          "total_minus_base_core_energy": 0.7619693561650394,
+          "response_over_initial_base_core_energy": 0.04394090004523947
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 7.025977364601965e-15,
+          "difference_energy_from_subtraction": 0.19736563290167913,
+          "standalone_delta_energy": 0.1973656329016791,
+          "relative_difference_energy_drift": 0.0,
+          "divergence_max": 1.8115842090551684e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.0503309192506655e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.076921331969869e-05,
+            "combined_null_score": 6.494637077346866e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05640279979297896,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0424423038089227,
+            "combined_null_score": 0.0705877112328751
+          },
+          "invariant_change_over_base_core_u_rms": 0.07378375076335104,
+          "periodic_control_null_score_difference": 0.07052276486210164,
+          "delta_core_energy": 0.11178911543463924,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5664061862803074,
+          "delta_outward_flux": 0.020433895100537173,
+          "total_minus_base_core_energy": 0.6769844192131984,
+          "response_over_initial_base_core_energy": 0.039040027602354796
+        }
+      ]
+    }
+  ],
+  "domain": [
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 41,
+      "half_extent": 4.1000000000000005,
+      "spacing": 0.20000000000000004,
+      "native_roi_half_extent": 1.2000000000000002,
+      "base_initial_projection_relative_l2": 0.014061775822665082,
+      "initial_relative_delta_field_norm": 0.10003813306053529,
+      "initial_delta_energy": 0.1973656328250905,
+      "initial_base_energy": 19.72151957674577,
+      "fixed_physical_cube_observation": {
+        "half_extent": 1.2,
+        "grid": 17,
+        "initial_base_energy": 17.52110077114508,
+        "final_base_energy": 15.346432606402303,
+        "final_combined_energy": 16.044774323619542,
+        "response_over_initial_base_energy": 0.03985718285276433
+      },
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.318304119403664e-15,
+          "difference_energy_from_subtraction": 0.19736563282509043,
+          "standalone_delta_energy": 0.1973656328250905,
+          "relative_difference_energy_drift": 4.440892098500626e-16,
+          "divergence_max": 1.3471393241057525e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.00017713704816635833,
+            "half_e2_minus_b2_rms_over_u_rms": 0.00012194488891239777,
+            "combined_null_score": 0.00021505369042392134
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.049579545527853514,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04536691079742352,
+            "combined_null_score": 0.06720333273022909
+          },
+          "invariant_change_over_base_core_u_rms": 0.06873154211828292,
+          "periodic_control_null_score_difference": 0.06698827903980517,
+          "delta_core_energy": 0.13468932222886118,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.682435540073107,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.9284161187525477,
+          "response_over_initial_base_core_energy": 0.05306741817435122
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.020156769141436e-15,
+          "difference_energy_from_subtraction": 0.19736563282509031,
+          "standalone_delta_energy": 0.1973656328250905,
+          "relative_difference_energy_drift": 9.992007221626409e-16,
+          "divergence_max": 1.3416645718389166e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.00018364632034595195,
+            "half_e2_minus_b2_rms_over_u_rms": 0.00015184937526717542,
+            "combined_null_score": 0.00023829436364639317
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.058985276418676985,
+            "half_e2_minus_b2_rms_over_u_rms": 0.057786779099646725,
+            "combined_null_score": 0.0825746612036592
+          },
+          "invariant_change_over_base_core_u_rms": 0.08470872658225871,
+          "periodic_control_null_score_difference": 0.0823363668400128,
+          "delta_core_energy": 0.1304432666440479,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6609218878529344,
+          "delta_outward_flux": 0.032263750894590736,
+          "total_minus_base_core_energy": 0.8839414283526068,
+          "response_over_initial_base_core_energy": 0.05052528545395031
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.16087892985138e-15,
+          "difference_energy_from_subtraction": 0.19736563282509031,
+          "standalone_delta_energy": 0.1973656328250905,
+          "relative_difference_energy_drift": 9.992007221626409e-16,
+          "divergence_max": 1.3347741052947182e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.0001964673690168105,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0002122637330856749,
+            "combined_null_score": 0.0002892322932728194
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.051232021452963426,
+            "half_e2_minus_b2_rms_over_u_rms": 0.07378992456438428,
+            "combined_null_score": 0.08983135860808533
+          },
+          "invariant_change_over_base_core_u_rms": 0.0931020803736579,
+          "periodic_control_null_score_difference": 0.08954212631481251,
+          "delta_core_energy": 0.12167069527245629,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6164735649812111,
+          "delta_outward_flux": 0.03561702243306164,
+          "total_minus_base_core_energy": 0.7862590218652272,
+          "response_over_initial_base_core_energy": 0.04494184823367908
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.206208971941498e-15,
+          "difference_energy_from_subtraction": 0.19736563282509037,
+          "standalone_delta_energy": 0.1973656328250905,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.3295566984795202e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.00020156181956607815,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0002713949115140162,
+            "combined_null_score": 0.00033805674834632267
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.056280747809244074,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04255820549632284,
+            "combined_null_score": 0.07056006965015678
+          },
+          "invariant_change_over_base_core_u_rms": 0.0737909645224353,
+          "periodic_control_null_score_difference": 0.07022201290181046,
+          "delta_core_energy": 0.11453812008407585,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5803346734919239,
+          "delta_outward_flux": 0.02265670884451269,
+          "total_minus_base_core_energy": 0.697405536886718,
+          "response_over_initial_base_core_energy": 0.03986306411052262
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 61,
+      "half_extent": 6.1000000000000005,
+      "spacing": 0.2,
+      "native_roi_half_extent": 1.2000000000000002,
+      "base_initial_projection_relative_l2": 0.005569077338586808,
+      "initial_relative_delta_field_norm": 0.1,
+      "initial_delta_energy": 0.19736563290167924,
+      "initial_base_energy": 19.736563290167926,
+      "fixed_physical_cube_observation": {
+        "half_extent": 1.2,
+        "grid": 17,
+        "initial_base_energy": 17.527808845259102,
+        "final_base_energy": 15.349809356156419,
+        "final_combined_energy": 16.048419942831167,
+        "response_over_initial_base_energy": 0.03985726868899004
+      },
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 4.513837535974372e-15,
+          "difference_energy_from_subtraction": 0.1973656329016794,
+          "standalone_delta_energy": 0.19736563290167924,
+          "relative_difference_energy_drift": 8.881784197001252e-16,
+          "divergence_max": 1.1073638466293127e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.560623907399365e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 2.9109634145596886e-05,
+            "combined_null_score": 4.599103239855453e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.04953851757165867,
+            "half_e2_minus_b2_rms_over_u_rms": 0.045330901380516944,
+            "combined_null_score": 0.06714875533595309
+          },
+          "invariant_change_over_base_core_u_rms": 0.06871535409880836,
+          "periodic_control_null_score_difference": 0.06710276430355454,
+          "delta_core_energy": 0.13468932222886132,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6824355398082852,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.928390610431979,
+          "response_over_initial_base_core_energy": 0.05304546300482572
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 6.594502523662515e-15,
+          "difference_energy_from_subtraction": 0.19736563290167944,
+          "standalone_delta_energy": 0.1973656329016793,
+          "relative_difference_energy_drift": 8.881784197001252e-16,
+          "divergence_max": 1.1095151624165063e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 3.813788751865899e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 3.4948116004199266e-05,
+            "combined_null_score": 5.1728805095699374e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05895817979531029,
+            "half_e2_minus_b2_rms_over_u_rms": 0.05775984403762554,
+            "combined_null_score": 0.08253645587270488
+          },
+          "invariant_change_over_base_core_u_rms": 0.08469786671870248,
+          "periodic_control_null_score_difference": 0.08248472706760918,
+          "delta_core_energy": 0.1304432666440482,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6609218875964619,
+          "delta_outward_flux": 0.03226375089458874,
+          "total_minus_base_core_energy": 0.8840393706009806,
+          "response_over_initial_base_core_energy": 0.0505113657991477
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 6.706746435056678e-15,
+          "difference_energy_from_subtraction": 0.19736563290167938,
+          "standalone_delta_energy": 0.19736563290167924,
+          "relative_difference_energy_drift": 6.661338147750939e-16,
+          "divergence_max": 1.111030871668386e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.050242456259778e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 4.3852227762107154e-05,
+            "combined_null_score": 5.969475919332153e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.051202492299531624,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0737835031847481,
+            "combined_null_score": 0.08980924540322854
+          },
+          "invariant_change_over_base_core_u_rms": 0.09308465820325129,
+          "periodic_control_null_score_difference": 0.08974955064403523,
+          "delta_core_energy": 0.12167069527245844,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6164735647419963,
+          "delta_outward_flux": 0.03561702243304804,
+          "total_minus_base_core_energy": 0.7864614882335559,
+          "response_over_initial_base_core_energy": 0.04493605742027252
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 6.764427238188494e-15,
+          "difference_energy_from_subtraction": 0.1973656329016794,
+          "standalone_delta_energy": 0.1973656329016793,
+          "relative_difference_energy_drift": 8.881784197001252e-16,
+          "divergence_max": 1.1115128176564884e-14,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 4.2453711400737765e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 5.2069377698334196e-05,
+            "combined_null_score": 6.718286764934134e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05625845340907054,
+            "half_e2_minus_b2_rms_over_u_rms": 0.0425904531306816,
+            "combined_null_score": 0.07056174797903852
+          },
+          "invariant_change_over_base_core_u_rms": 0.07376069853011562,
+          "periodic_control_null_score_difference": 0.07049456511138918,
+          "delta_core_energy": 0.11453812008408706,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.580334673266779,
+          "delta_outward_flux": 0.022656708844452877,
+          "total_minus_base_core_energy": 0.6976768571901992,
+          "response_over_initial_base_core_energy": 0.0398631691246702
+        }
+      ]
+    },
+    {
+      "kind": "curl",
+      "epsilon_target_on_reference_grid": 0.1,
+      "seed": 11,
+      "parameters": {
+        "seed": 11,
+        "width": 0.8,
+        "center": [
+          -0.3714297972308004,
+          -0.0007221375598850388,
+          0.10149835762335746
+        ],
+        "axis": [
+          -0.6442915638816851,
+          -0.3762033705437209,
+          -0.6658523895747738
+        ],
+        "mode": "curl",
+        "images_per_axis": 3,
+        "physical_scale_per_unit_epsilon": 2.976756877006613
+      },
+      "grid": 81,
+      "half_extent": 8.1,
+      "spacing": 0.19999999999999998,
+      "native_roi_half_extent": 1.2,
+      "base_initial_projection_relative_l2": 0.002808721324001044,
+      "initial_relative_delta_field_norm": 0.09999497390988765,
+      "initial_delta_energy": 0.197365632901679,
+      "initial_base_energy": 19.738547394663065,
+      "fixed_physical_cube_observation": {
+        "half_extent": 1.2,
+        "grid": 17,
+        "initial_base_energy": 17.529047907259773,
+        "final_base_energy": 15.350450297373005,
+        "final_combined_energy": 16.04911039026436,
+        "response_over_initial_base_energy": 0.039857275568400984
+      },
+      "samples": [
+        {
+          "time": 0,
+          "superposition_relative_field_error": 6.361080216168863e-15,
+          "difference_energy_from_subtraction": 0.1973656329016784,
+          "standalone_delta_energy": 0.197365632901679,
+          "relative_difference_energy_drift": 2.9976021664879227e-15,
+          "divergence_max": 9.65529406901706e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 1.1717073546294585e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 1.0140244628131623e-05,
+            "combined_null_score": 1.5495624337458255e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.04953123588836561,
+            "half_e2_minus_b2_rms_over_u_rms": 0.045323531840923165,
+            "combined_null_score": 0.06713840828589916
+          },
+          "invariant_change_over_base_core_u_rms": 0.06871229618340173,
+          "periodic_control_null_score_difference": 0.0671229126615617,
+          "delta_core_energy": 0.13468932222886104,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6824355398082846,
+          "delta_outward_flux": 0.0,
+          "total_minus_base_core_energy": 0.928385900919185,
+          "response_over_initial_base_core_energy": 0.053041427805937916
+        },
+        {
+          "time": 0.25,
+          "superposition_relative_field_error": 7.391988506239703e-15,
+          "difference_energy_from_subtraction": 0.1973656329016784,
+          "standalone_delta_energy": 0.197365632901679,
+          "relative_difference_energy_drift": 2.9976021664879227e-15,
+          "divergence_max": 9.663064689778897e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 1.4902068706061355e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 1.5597733020491846e-05,
+            "combined_null_score": 2.1572225826249705e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05895342157762143,
+            "half_e2_minus_b2_rms_over_u_rms": 0.05775415781184386,
+            "combined_null_score": 0.0825290776651728
+          },
+          "invariant_change_over_base_core_u_rms": 0.08469581354457034,
+          "periodic_control_null_score_difference": 0.08250750543934655,
+          "delta_core_energy": 0.13044326664404798,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6609218875964615,
+          "delta_outward_flux": 0.032263750894588585,
+          "total_minus_base_core_energy": 0.8840571113671274,
+          "response_over_initial_base_core_energy": 0.05050879316723636
+        },
+        {
+          "time": 0.5,
+          "superposition_relative_field_error": 7.470338462891408e-15,
+          "difference_energy_from_subtraction": 0.19736563290167844,
+          "standalone_delta_energy": 0.19736563290167902,
+          "relative_difference_energy_drift": 2.7755575615628914e-15,
+          "divergence_max": 9.664334133079414e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 1.5239356752555405e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 1.8121955466890856e-05,
+            "combined_null_score": 2.3677906667939027e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05119708039062667,
+            "half_e2_minus_b2_rms_over_u_rms": 0.07378171515378322,
+            "combined_null_score": 0.08980469103314312
+          },
+          "invariant_change_over_base_core_u_rms": 0.09308132935894188,
+          "periodic_control_null_score_difference": 0.08978101312647518,
+          "delta_core_energy": 0.12167069527245819,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.6164735647419959,
+          "delta_outward_flux": 0.03561702243304804,
+          "total_minus_base_core_energy": 0.7864984228996015,
+          "response_over_initial_base_core_energy": 0.044934977229199285
+        },
+        {
+          "time": 0.75,
+          "superposition_relative_field_error": 7.488440858123506e-15,
+          "difference_energy_from_subtraction": 0.19736563290167844,
+          "standalone_delta_energy": 0.19736563290167897,
+          "relative_difference_energy_drift": 2.7755575615628914e-15,
+          "divergence_max": 9.673216413146606e-15,
+          "base_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 1.4837297964835855e-05,
+            "half_e2_minus_b2_rms_over_u_rms": 1.6892435575204072e-05,
+            "combined_null_score": 2.2483322498237274e-05
+          },
+          "perturbed_core_null_scores": {
+            "e_dot_b_rms_over_u_rms": 0.05625414806762119,
+            "half_e2_minus_b2_rms_over_u_rms": 0.04259576003559375,
+            "combined_null_score": 0.0705615188882987
+          },
+          "invariant_change_over_base_core_u_rms": 0.07375491501011322,
+          "periodic_control_null_score_difference": 0.07053903556580046,
+          "delta_core_energy": 0.11453812008408687,
+          "delta_core_fraction_of_global_initial_delta_energy": 0.5803346732667787,
+          "delta_outward_flux": 0.022656708844452804,
+          "total_minus_base_core_energy": 0.6977264796099991,
+          "response_over_initial_base_core_energy": 0.039863173988191065
+        }
+      ]
+    }
+  ],
+  "flux_time_quadrature": [
+    {
+      "intervals": 8,
+      "samples": [
+        {
+          "time": 0.0,
+          "energy": 0.1346893222288613,
+          "outward_flux": 0.0,
+          "face_fluxes": [
+            -0.0,
+            0.0,
+            -0.0,
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.09375,
+          "energy": 0.13404264702957774,
+          "outward_flux": 0.014264399572488692,
+          "face_fluxes": [
+            0.00028280214759821064,
+            0.002100017053869977,
+            0.0030764272398070914,
+            0.0028150844103137793,
+            0.003337773716996231,
+            0.0026522950039034026
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.1875,
+          "energy": 0.1322023320366844,
+          "outward_flux": 0.026325090047859635,
+          "face_fluxes": [
+            0.00039065086426213986,
+            0.004087133078995999,
+            0.0056181224549670845,
+            0.0051178663701762425,
+            0.006284058932275693,
+            0.004827258347182477
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.28125,
+          "energy": 0.12944486623122767,
+          "outward_flux": 0.03447221270575889,
+          "face_fluxes": [
+            0.00025199969489477224,
+            0.005840559373033223,
+            0.0072063474221197524,
+            0.006510677855729249,
+            0.00849999120160624,
+            0.006162637158375652
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.375,
+          "energy": 0.126160590499832,
+          "outward_flux": 0.03787665037406255,
+          "face_fluxes": [
+            -3.807393198852402e-05,
+            0.007230452600800846,
+            0.0076327915656583005,
+            0.006803196768083124,
+            0.009748649395057889,
+            0.006499633976450914
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.46875,
+          "energy": 0.1227644362279895,
+          "outward_flux": 0.03678472038225261,
+          "face_fluxes": [
+            -0.00022042817991385942,
+            0.008128145483177052,
+            0.006953415709774337,
+            0.006064043440768539,
+            0.009936027979458154,
+            0.005923515948988393
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.5625,
+          "energy": 0.11960024844595359,
+          "outward_flux": 0.03247526923577829,
+          "face_fluxes": [
+            5.806148072862345e-05,
+            0.008428718240829339,
+            0.005488294439886035,
+            0.004618031014949249,
+            0.009136337141581918,
+            0.0047458269178031216
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.65625,
+          "energy": 0.11686025881700776,
+          "outward_flux": 0.026984626422785093,
+          "face_fluxes": [
+            0.0011295329988087056,
+            0.008082186967981991,
+            0.003763199412694951,
+            0.002985365475931044,
+            0.007593329123281488,
+            0.0034310124440869116
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.75,
+          "energy": 0.11453812008408709,
+          "outward_flux": 0.02265670884445284,
+          "face_fluxes": [
+            0.003184085203181136,
+            0.007125155495561781,
+            0.002400753562118417,
+            0.0017714462627831874,
+            0.005691326336563231,
+            0.002483941984245087
+          ],
+          "half_extent": 1.2
+        }
+      ],
+      "energy_change": -0.0201512021447742,
+      "integrated_outward_flux": 0.02067293654655114,
+      "balance_defect": 0.000521734401776941,
+      "normalised_balance_defect": 0.0038736136847612964
+    },
+    {
+      "intervals": 16,
+      "samples": [
+        {
+          "time": 0.0,
+          "energy": 0.1346893222288613,
+          "outward_flux": 0.0,
+          "face_fluxes": [
+            -0.0,
+            0.0,
+            -0.0,
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.046875,
+          "energy": 0.13452604964158418,
+          "outward_flux": 0.007275992077500095,
+          "face_fluxes": [
+            0.00015365408992845924,
+            0.0010569548675863974,
+            0.0015730475727660296,
+            0.0014409593804729339,
+            0.0016939785593553715,
+            0.0013573976073909032
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.09375,
+          "energy": 0.13404264702957774,
+          "outward_flux": 0.014264399572488694,
+          "face_fluxes": [
+            0.0002828021475982111,
+            0.0021000170538699767,
+            0.0030764272398070922,
+            0.0028150844103137793,
+            0.003337773716996231,
+            0.0026522950039034035
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.140625,
+          "energy": 0.13325799079147332,
+          "outward_flux": 0.02069394765533392,
+          "face_fluxes": [
+            0.00036651285185237314,
+            0.003114990996171252,
+            0.004444268653721874,
+            0.0040592990472164,
+            0.00488286864320087,
+            0.0038260074631711527
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.1875,
+          "energy": 0.13220233203668438,
+          "outward_flux": 0.02632509004785964,
+          "face_fluxes": [
+            0.00039065086426214035,
+            0.004087133078995999,
+            0.005618122454967086,
+            0.0051178663701762425,
+            0.006284058932275693,
+            0.004827258347182477
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.234375,
+          "energy": 0.13091555330992402,
+          "outward_flux": 0.030963690970559968,
+          "face_fluxes": [
+            0.00035042416196723157,
+            0.005001017648239367,
+            0.006550239804449557,
+            0.00594561920104727,
+            0.007501052622906153,
+            0.005615337531950391
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.28125,
+          "energy": 0.12944486623122767,
+          "outward_flux": 0.0344722127057589,
+          "face_fluxes": [
+            0.0002519996948947729,
+            0.005840559373033222,
+            0.007206347422119754,
+            0.006510677855729252,
+            0.008499991201606242,
+            0.006162637158375652
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.328125,
+          "energy": 0.1278420793848681,
+          "outward_flux": 0.036777779399460996,
+          "face_fluxes": [
+            0.00011301628493981975,
+            0.006589225046493408,
+            0.00756777230315078,
+            0.006796508306562033,
+            0.009254847990828636,
+            0.0064564094674863185
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.375,
+          "energy": 0.126160590499832,
+          "outward_flux": 0.037876650374062557,
+          "face_fluxes": [
+            -3.807393198852185e-05,
+            0.007230452600800844,
+            0.007632791565658302,
+            0.006803196768083127,
+            0.009748649395057893,
+            0.006499633976450914
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.421875,
+          "energy": 0.12445227328668051,
+          "outward_flux": 0.03783482630491204,
+          "face_fluxes": [
+            -0.00016379570790934302,
+            0.007748277276314239,
+            0.007417111453323745,
+            0.006547846878276941,
+            0.009974455135611742,
+            0.006310931269294719
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.46875,
+          "energy": 0.12276443622798949,
+          "outward_flux": 0.036784720382252625,
+          "face_fluxes": [
+            -0.00022042817991385687,
+            0.008128145483177054,
+            0.006953415709774339,
+            0.0060640434407685405,
+            0.009936027979458155,
+            0.005923515948988395
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.515625,
+          "energy": 0.1211370276405607,
+          "outward_flux": 0.03491804380400824,
+          "face_fluxes": [
+            -0.0001615343923955475,
+            0.008357877109181825,
+            0.006289966992716996,
+            0.005400371608628222,
+            0.009648123461763643,
+            0.005383239024113098
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.5625,
+          "energy": 0.11960024844595356,
+          "outward_flux": 0.032475269235778294,
+          "face_fluxes": [
+            5.8061480728624536e-05,
+            0.008428718240829339,
+            0.005488294439886037,
+            0.004618031014949252,
+            0.009136337141581918,
+            0.004745826917803123
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.609375,
+          "energy": 0.1181727118659168,
+          "outward_flux": 0.029732235178126162,
+          "face_fluxes": [
+            0.00047819463238724173,
+            0.008336409995003676,
+            0.00462005368894025,
+            0.003787638302320078,
+            0.00843646175305106,
+            0.004073476806423856
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.65625,
+          "energy": 0.11686025881700773,
+          "outward_flux": 0.026984626422785103,
+          "face_fluxes": [
+            0.0011295329988087078,
+            0.008082186967981993,
+            0.0037631994126949547,
+            0.002985365475931046,
+            0.0075933291232814885,
+            0.0034310124440869133
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.703125,
+          "energy": 0.11565550074466484,
+          "outward_flux": 0.024531199635052667,
+          "face_fluxes": [
+            0.0020303366621274932,
+            0.0076736121727334974,
+            0.00299766084876254,
+            0.0022886115048919476,
+            0.006659140924096664,
+            0.002881837522440524
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.75,
+          "energy": 0.11453812008408709,
+          "outward_flux": 0.022656708844452852,
+          "face_fluxes": [
+            0.0031840852031811365,
+            0.007125155495561783,
+            0.0024007535621184206,
+            0.0017714462627831905,
+            0.005691326336563233,
+            0.0024839419842450886
+          ],
+          "half_extent": 1.2
+        }
+      ],
+      "energy_change": -0.0201512021447742,
+      "integrated_outward_flux": 0.020776829915070297,
+      "balance_defect": 0.0006256277702960979,
+      "normalised_balance_defect": 0.004644969326024554
+    },
+    {
+      "intervals": 32,
+      "samples": [
+        {
+          "time": 0.0,
+          "energy": 0.1346893222288613,
+          "outward_flux": 0.0,
+          "face_fluxes": [
+            -0.0,
+            0.0,
+            -0.0,
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.0234375,
+          "energy": 0.13464840311817358,
+          "outward_flux": 0.0036561634045278995,
+          "face_fluxes": [
+            7.840144399067557e-05,
+            0.000529342033810545,
+            0.0007909229605181126,
+            0.0007247013156745389,
+            0.0008501453205782414,
+            0.0006826503299557861
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.046875,
+          "energy": 0.13452604964158418,
+          "outward_flux": 0.007275992077500095,
+          "face_fluxes": [
+            0.00015365408992845908,
+            0.0010569548675863974,
+            0.0015730475727660296,
+            0.0014409593804729339,
+            0.0016939785593553715,
+            0.0013573976073909032
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.0703125,
+          "energy": 0.1343234675380942,
+          "outward_flux": 0.01082366801096689,
+          "face_fluxes": [
+            0.00022272367240695192,
+            0.0015810993775730938,
+            0.00233769553033303,
+            0.0021404497859339867,
+            0.002525239868426797,
+            0.0020164597762930307
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.09375,
+          "energy": 0.13404264702957774,
+          "outward_flux": 0.01426439957248869,
+          "face_fluxes": [
+            0.0002828021475982108,
+            0.0021000170538699767,
+            0.0030764272398070914,
+            0.0028150844103137793,
+            0.0033377737169962307,
+            0.0026522950039034026
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.1171875,
+          "energy": 0.1336863340906212,
+          "outward_flux": 0.017564917102916112,
+          "face_fluxes": [
+            0.0003314137614425293,
+            0.002611921452210097,
+            0.0037811577586359725,
+            0.0034571260757049584,
+            0.004125580664103186,
+            0.0032577173908193676
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.140625,
+          "energy": 0.1332579907914733,
+          "outward_flux": 0.020693947655333916,
+          "face_fluxes": [
+            0.0003665128518523728,
+            0.0031149909961712516,
+            0.004444268653721874,
+            0.004059299047216399,
+            0.004882868643200868,
+            0.003826007463171152
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.1640625,
+          "energy": 0.13276174527025345,
+          "outward_flux": 0.02362266233489336,
+          "face_fluxes": [
+            0.00038657093342749977,
+            0.0036073635411938395,
+            0.005058714460213215,
+            0.004614894031486196,
+            0.005604103555020212,
+            0.004351015813552397
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.1875,
+          "energy": 0.13220233203668438,
+          "outward_flux": 0.026325090047859632,
+          "face_fluxes": [
+            0.000390650864262139,
+            0.004087133078995999,
+            0.0056181224549670845,
+            0.005117866370176242,
+            0.006284058932275692,
+            0.004827258347182476
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.2109375,
+          "energy": 0.13158502344634576,
+          "outward_flux": 0.028778491897542547,
+          "face_fluxes": [
+            0.00037846619687939456,
+            0.004552348920562654,
+            0.006116884504558714,
+            0.005562926173591629,
+            0.006917864401264398,
+            0.005250001700685758
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.234375,
+          "energy": 0.13091555330992402,
+          "outward_flux": 0.03096369097055996,
+          "face_fluxes": [
+            0.0003504241619672306,
+            0.005001017648239366,
+            0.006550239804449555,
+            0.005945619201047268,
+            0.007501052622906152,
+            0.00561533753195039
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.2578125,
+          "energy": 0.1302000337144236,
+          "outward_flux": 0.03286535283393102,
+          "face_fluxes": [
+            0.0003076511161940201,
+            0.005431108073075948,
+            0.006914347394974095,
+            0.006262397368960149,
+            0.008029604351115893,
+            0.00592024452961092
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.28125,
+          "energy": 0.1294448662312276,
+          "outward_flux": 0.034472212705758884,
+          "face_fluxes": [
+            0.0002519996948947728,
+            0.00584055937303322,
+            0.007206347422119752,
+            0.006510677855729249,
+            0.00849999120160624,
+            0.006162637158375652
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.3046875,
+          "energy": 0.1286566487678365,
+          "outward_flux": 0.03577724596282026,
+          "face_fluxes": [
+            0.0001860373371754365,
+            0.006227292521691088,
+            0.007424410207502392,
+            0.0066888898750120445,
+            0.00890921568141613,
+            0.006341400340023172
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.328125,
+          "energy": 0.12784207938486808,
+          "outward_flux": 0.03677777939946099,
+          "face_fluxes": [
+            0.00011301628493982181,
+            0.006589225046493407,
+            0.007567772303150779,
+            0.006796508306562031,
+            0.009254847990828634,
+            0.006456409467486317
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.3515625,
+          "energy": 0.1270078584464621,
+          "outward_flux": 0.03747554144520667,
+          "face_fluxes": [
+            3.682558832822705e-05,
+            0.006924289081266355,
+            0.0076367588331211446,
+            0.006834073506637887,
+            0.009535059077040324,
+            0.006508535358812734
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.375,
+          "energy": 0.12616059049983197,
+          "outward_flux": 0.03787665037406254,
+          "face_fluxes": [
+            -3.80739319885225e-05,
+            0.007230452600800844,
+            0.0076327915656583005,
+            0.006803196768083123,
+            0.009748649395057887,
+            0.006499633976450913
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.3984375,
+          "energy": 0.1253066872878212,
+          "outward_flux": 0.03799154038650344,
+          "face_fluxes": [
+            -0.00010673041999066028,
+            0.00750574364685843,
+            0.007558382316306914,
+            0.0067065510630653314,
+            0.009895072817761162,
+            0.006432520962502259
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.421875,
+          "energy": 0.12445227328668051,
+          "outward_flux": 0.03783482630491203,
+          "face_fluxes": [
+            -0.000163795707909344,
+            0.0077482772763142384,
+            0.007417111453323741,
+            0.0065478468782769386,
+            0.009974455135611739,
+            0.006310931269294717
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.4453125,
+          "energy": 0.12360309512989143,
+          "outward_flux": 0.03742510848344021,
+          "face_fluxes": [
+            -0.00020363199593593373,
+            0.007956284884657156,
+            0.007213591460740652,
+            0.006331793141779338,
+            0.009987606598561141,
+            0.006139464393637857
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.46875,
+          "energy": 0.12276443622798949,
+          "outward_flux": 0.03678472038225261,
+          "face_fluxes": [
+            -0.000220428179913858,
+            0.008128145483177052,
+            0.006953415709774337,
+            0.006064043440768538,
+            0.00993602797945815,
+            0.005923515948988391
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.4921875,
+          "energy": 0.12194103782454449,
+          "outward_flux": 0.03593942208189356,
+          "face_fluxes": [
+            -0.00020832329662549538,
+            0.008262418437394338,
+            0.006643092793761503,
+            0.005751127938002846,
+            0.009821909680438593,
+            0.005669196528921776
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.515625,
+          "energy": 0.12113702764056067,
+          "outward_flux": 0.03491804380400822,
+          "face_fluxes": [
+            -0.00016153439239554717,
+            0.008357877109181823,
+            0.006289966992716991,
+            0.0054003716086282166,
+            0.00964812346176364,
+            0.005383239024113097
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.5390625,
+          "energy": 0.12035585715466793,
+          "outward_flux": 0.033752084247813785,
+          "face_fluxes": [
+            -7.448601860663855e-05,
+            0.008413542787157075,
+            0.005902125647803089,
+            0.005019799635379992,
+            0.009418206446280003,
+            0.005072895749800265
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.5625,
+          "energy": 0.11960024844595353,
+          "outward_flux": 0.03247526923577828,
+          "face_fluxes": [
+            5.8061480728624265e-05,
+            0.008428718240829337,
+            0.005488294439886034,
+            0.004618031014949248,
+            0.009136337141581914,
+            0.0047458269178031216
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.5859375,
+          "energy": 0.11887215139174145,
+          "outward_flux": 0.0311230767755986,
+          "face_fluxes": [
+            0.00024088769858097338,
+            0.008403020195156916,
+            0.005057721776018499,
+            0.004204161637666294,
+            0.008807303325075892,
+            0.0044099821431000255
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.609375,
+          "energy": 0.11817271186591678,
+          "outward_flux": 0.029732235178126145,
+          "face_fluxes": [
+            0.00047819463238724173,
+            0.008336409995003671,
+            0.004620053688940246,
+            0.003787638302320075,
+            0.008436461753051058,
+            0.004073476806423853
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.6328125,
+          "energy": 0.11750225142656599,
+          "outward_flux": 0.028340201312602894,
+          "face_fluxes": [
+            0.0007734984611743411,
+            0.008229221714737904,
+            0.004185200843183174,
+            0.0033781253135041996,
+            0.008029689781673038,
+            0.003744465198330237
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.65625,
+          "energy": 0.1168602588170077,
+          "outward_flux": 0.026984626422785086,
+          "face_fluxes": [
+            0.001129532998808706,
+            0.00808218696798199,
+            0.003763199412694951,
+            0.0029853654759310426,
+            0.007593329123281485,
+            0.003431012444086911
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.6796875,
+          "energy": 0.11624539343411183,
+          "outward_flux": 0.025702817162898694,
+          "face_fluxes": [
+            0.001548166933447516,
+            0.007896455687170638,
+            0.0033640677447124784,
+            0.002619037444347116,
+            0.007134122102856015,
+            0.003140967250364929
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.703125,
+          "energy": 0.1156555007446648,
+          "outward_flux": 0.024531199635052646,
+          "face_fluxes": [
+            0.0020303366621274924,
+            0.007673612172733493,
+            0.0029976608487625365,
+            0.0022886115048919436,
+            0.00665914092409666,
+            0.0028818375224405213
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.7265625,
+          "energy": 0.11508763945702763,
+          "outward_flux": 0.023504794215578613,
+          "face_fluxes": [
+            0.0025759961909050406,
+            0.007415685757720989,
+            0.002673524844292149,
+            0.002003205950185246,
+            0.006175710599079012,
+            0.002660670873396177
+          ],
+          "half_extent": 1.2
+        },
+        {
+          "time": 0.75,
+          "energy": 0.11453812008408705,
+          "outward_flux": 0.022656708844452835,
+          "face_fluxes": [
+            0.0031840852031811357,
+            0.0071251554955617784,
+            0.0024007535621184176,
+            0.001771446262783187,
+            0.00569132633656323,
+            0.002483941984245087
+          ],
+          "half_extent": 1.2
+        }
+      ],
+      "energy_change": -0.02015120214477424,
+      "integrated_outward_flux": 0.02080270607454611,
+      "balance_defect": 0.0006515039297718683,
+      "normalised_balance_defect": 0.004837086704355423
+    }
+  ],
+  "scope": "Short-time periodic linear Maxwell differences. Generic constraints do not imply null-family membership or topology preservation. No self-binding or isolated stability claim.",
+  "acceptance": {
+    "divergence_below_1e-10": true,
+    "superposition_error_below_1e-11": true,
+    "difference_energy_drift_below_1e-11": true,
+    "reference_perturbation_norm_below_1e-12": true,
+    "analytic_controls_null_below_1e-12": true,
+    "periodic_control_score_tracks_base_below_1e-12": true,
+    "generic_invariant_change_above_1e-5": true,
+    "longitudinal_negative_control_detected": true,
+    "difference_energy_quadratic_scaling_below_1e-11": true,
+    "spatial_finest_response_increment_below_0.005": true,
+    "domain_finest_response_increment_below_0.005": true,
+    "delta_poynting_balance_below_0.02": true,
+    "flux_time_quadrature_second_order": true
+  }
+}

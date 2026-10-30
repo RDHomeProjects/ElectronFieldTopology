@@ -6,9 +6,9 @@ Updated: 2026-10-30 (UTC).
 
 S1-A merged via [PR 2](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/2), S2 via [PR 4](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/4), and the pre-S3 literature assessment via [PR 5](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/5), merge commit 34ab9bf. The maintainer accepted the recommendation to proceed with S3-A.
 
-S3-A merged via [PR 7](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/7), merge commit 38e75ea, with all four final-head workflows successful. S3-B is implemented on research/s3b-energy-localisation for review: 51 tests and all 12 refined benchmark checks pass locally. The full S3 stage remains incomplete: perturbation and topology tasks are pending. No electron model or isolated long-time confinement simulation exists.
+S3-A merged via [PR 7](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/7), merge commit 38e75ea, with all four final-head workflows successful. S3-B merged via [PR 9](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/9), merge commit 73900ad, with all five final-head workflows successful. S3-C is implemented on research/s3c-classified-perturbations for review: 60 tests and all 13 benchmark checks pass locally and in the clean evidence run. The full S3 stage remains incomplete: topology instrumentation is pending. No electron model or isolated long-time confinement simulation exists.
 
-Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution, explicit initial projection, spatial/domain/time-quadrature studies, interior Poynting balance, event-consistent analytical Lorentz transformations, independent tensor/common-event controls, finite-cutoff four-momentum convergence, energy-centroid/width and observer-origin diagnostics, all-space moment quadrature with finite-tail controls, reproducible evidence and bounded workflows.
+Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution, explicit initial projection, spatial/domain/time-quadrature studies, interior Poynting balance, event-consistent analytical Lorentz transformations, independent tensor/common-event controls, finite-cutoff four-momentum convergence, energy-centroid/width and observer-origin diagnostics, all-space moment quadrature with finite-tail controls, classified perturbations with constraint/null diagnostics, independent linear difference-energy controls, local transport and domain sensitivity, reproducible evidence and bounded workflows.
 
 ## Evidence
 
@@ -18,6 +18,9 @@ Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution,
 - [S3-A model and equation mapping](models/B0-H11-Lorentz.md)
 - [S3-B report and retained coarse-resolution failure](../reports/s3-b/README.md)
 - [S3-B model and derivation](models/B0-H11-Centroid.md)
+- [S3-C report with primary-source quotations and measured alignment](../reports/s3-c/README.md)
+- [S3-C model, derivations and acceptance](models/B0-H11-Perturbations.md)
+- [S3-C issue 10](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/10)
 - [S3-B issue 8 and original acceptance](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/8)
 - [S3-A issue 6 and predeclared acceptance](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/6)
 
@@ -25,7 +28,9 @@ S3-A clean code commit c371841: maximum common-event error 5.88e-15; Maxwell res
 
 S3-B clean code commit 73da3fc: maximum boosted centroid error 2.82e-12 and velocity error 1.41e-12. Source RMS radius grows 1 to 2. In the zero-momentum frame the centroid stays at the origin while RMS radius grows 1.291 to 2.380 and radius-2 contained energy drops 91.66% to 33.45%. Coarse radial quadrature failed four criteria and is retained; doubling radial nodes passes without changing tolerances.
 
-These validate selected transformations and energy diagnostics, not particle self-binding or electron properties. Periodic S2 conservation does not imply confinement. Source-free charge remains zero.
+S3-C clean code commit b70b565: maximum superposition error 6.62e-14, global difference-energy drift 9.77e-15, periodic divergence 1.81e-14. All nine generic seeded curl trials break null conditions while meeting source-free constraints. Analytic amplitude/duality controls remain null to roundoff; periodic controls track their nonzero projected base null score. Seed 11 local difference-energy fraction falls 68.24% to 58.03% while the global norm is conserved. Finest Poynting-balance defect is .484% of initial interior difference energy; time-flux refinement ratio4.015. The remaining diagnostic error is retained explicitly.
+
+These validate selected transformations, energy and perturbation diagnostics, not particle self-binding or electron properties. Periodic S2 conservation does not imply confinement. Source-free charge remains zero.
 
 ## Literature checkpoint
 
@@ -33,9 +38,7 @@ These validate selected transformations and energy diagnostics, not particle sel
 
 ## Next task
 
-After S3-B review/merge, S3-C: bounded classified perturbations in the independent periodic Maxwell solver. Inspect the applicable primary equations, predeclare tolerances and budgets, and separate source-free constraint compatibility from null-family membership. Implement transverse-compatible perturbations, divergence and both null invariants, conserved difference-energy controls in the linear propagator, local energy redistribution and domain sensitivity. Do not infer self-binding from a conserved global perturbation norm. No broad topology sweep or nonlinear extension in this task.
-
-S3-D/S4 adds helicity/topology instrumentation with explicit gauge, mean-mode, boundary and tracing controls.
+After S3-C review/merge, S3-D/S4 topology instrumentation. Read L12/L15/L19 and the exact potential/helicity equations. Declare gauge, periodic/unbounded boundary assumptions and zero-mode treatment before coding. Build independent known controls and retained failure cases, then define field-line tracing/closure/invariant accuracy gates before making topology claims. Helicity or a conserved global norm alone cannot certify individual field-line knot preservation. No broad candidate sweep, modified dynamics or electron claim in this task.
 
 ## Open decisions
 
@@ -43,4 +46,4 @@ Open/absorbing boundaries before isolated long-time numerical studies; topology 
 
 ## Handoff prompt
 
-Read AGENTS.md, this status, reports S1/S2/S3-A/S3-B, model specifications and ADR-0002/0003. Review the final S3-B PR checks and retained coarse resolution result. Continue S3-C in a focused PR with primary equations, admissible perturbations, independent linear-norm controls and domain/error estimates. Preserve negative results; do not equate periodic conservation, field-line knots or classical angular momentum with an electron.
+Read AGENTS.md, this status, reports S1/S2/S3-A/S3-B/S3-C, model specifications and ADR-0002/0003. Review the final S3-C PR checks, literature-alignment quotations and the retained Poynting-balance residual. Continue S3-D/S4 in a focused PR with exact primary equations, potential/gauge/mean-mode conventions, known controls and topology-specific error estimates. Preserve negative results; do not equate periodic conservation, field-line knots or classical angular momentum with an electron.

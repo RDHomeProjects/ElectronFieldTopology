@@ -91,6 +91,7 @@ Discovery/context only. Metadata and abstract located; full critical appraisal a
 
 ## Background and tools
 
+- [Feynman Lectures II, Chapter 20](https://www.feynmanlectures.caltech.edu/II_20.html), vacuum equations (20.12) and the linearity paragraph before (20.25), plus Section 20-2; [Chapter 27](https://www.feynmanlectures.caltech.edu/II_27.html), local balance (27.2), energy/Poynting definitions (27.14)-(27.15). Primary teaching sources rechecked for S3-C; exact short excerpts and measured comparisons are in [the report](../../reports/s3-c/README.md).
 - [Feynman Lectures III, Chapter 19](https://www.feynmanlectures.caltech.edu/III_19.html): atomic orbitals and the distinction between orbital angular momentum and electron spin.
 - [SymPy](https://docs.sympy.org/): symbolic checks.
 - [SciPy](https://docs.scipy.org/doc/scipy/): numerical analysis.
@@ -133,7 +134,7 @@ William T. M. Irvine (2010), *Linked and knotted beams of light, conservation of
 
 Priority: Immediate: S3-C; later S4.
 
-Targeted HTML inspection: Sections 3-5, including the non-null counterexample. Conserved helicity can accompany unravelling field lines. This motivates null-condition diagnostics and explicit topology tests rather than a helicity-only acceptance rule. The journal year is 2010 although the arXiv upload is 2011; do not silently change the publication year.
+Targeted HTML inspection: Sections 3-5, including the non-null counterexample; abstract and Sections 2-3 rechecked for S3-C. [The S3-C report](../../reports/s3-c/README.md) quotes a short orthogonality excerpt and compares only measured constraint/null diagnostics, not an uncomputed topology change. Conserved helicity can accompany unravelling field lines. This motivates null-condition diagnostics and explicit topology tests rather than a helicity-only acceptance rule. The journal year is 2010 although the arXiv upload is 2011; do not silently change the publication year.
 
 ### L13 — Boosts and energy-centroid shifts
 
