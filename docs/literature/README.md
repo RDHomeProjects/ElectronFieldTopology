@@ -142,7 +142,7 @@ Konstantin Y. Bliokh and Franco Nori (2012), *Relativistic Hall Effect*. Physica
 
 Priority: Immediate: S3-A/B.
 
-Full-text targeted inspection: energy centroid, angular-momentum tensor and boost discussion, Eqs. (1)-(4). Distinct centroid definitions and transverse shifts are useful warnings against simply contracting a picture. Some examples use paraxial approximations; their numerical coefficients must not be applied automatically to a non-paraxial Hopfion.
+Full-text targeted inspection: energy centroid, angular-momentum tensor and boost discussion, Eqs. (1)-(4); Eqs. (1)-(3) rechecked for [S3-B](../models/B0-H11-Centroid.md), whose reference uses the complete conserved tensor instead of paraxial coefficients. Distinct centroid definitions and transverse shifts are useful warnings against simply contracting a picture. Some examples use paraxial approximations; their numerical coefficients must not be applied automatically to a non-paraxial Hopfion.
 
 ### L14 — Recent centroid guidance
 
@@ -151,7 +151,7 @@ Konstantin Y. Bliokh (2025), *On the Ehrenfest theorem and centroids of relativi
 
 Priority: Immediate: S3-B.
 
-Full-text targeted inspection: Section II.B, Eqs. (7)-(9), and Section III. Energy-weighted and probability-weighted centroids have different meanings. Use a Maxwell stress-energy derivation for our vector field; this paper's explicit scalar/fixed-polarisation approximations do not directly cover every Hopfion observable.
+Full-text targeted inspection: Section II.2, Eqs. (7)-(9), and Section III. Energy weighting and boost momentum rechecked for [S3-B](../models/B0-H11-Centroid.md), alongside an independent Maxwell continuity/stress-energy derivation. Energy-weighted and probability-weighted centroids have different meanings. Use a Maxwell stress-energy derivation for our vector field; this paper's explicit scalar/fixed-polarisation approximations do not directly cover every Hopfion observable.
 
 ### L15 — Stable topology: recent mathematical structures
 

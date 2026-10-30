@@ -6,4 +6,6 @@
 
 - [S3-A analytical Lorentz covariance](s3-a/README.md): common-event mapping, tensor controls, residuals and finite-cutoff four-momentum convergence.
 
+- [S3-B energy centroid and localisation](s3-b/README.md): moment derivations, width growth, observer/origin controls and finite tails.
+
 Reports distinguish software correctness, numerical findings and physical claims. Large plots and field arrays remain generated artifacts; scalar evidence is retained with its code/configuration identity.
