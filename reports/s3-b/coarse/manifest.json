@@ -1,0 +1,103 @@
+{
+  "experiment_id": "S3-B-coarse-radial-v1",
+  "created_utc": "2026-10-30T14:26:27.471480+00:00",
+  "repository": "https://github.com/RDHomeProjects/ElectronFieldTopology",
+  "commit": "73da3fc419d7065caecae2f10b36631178ab35a8",
+  "dirty_tree": false,
+  "source_sha256": {
+    "pyproject.toml": "75381e222f43fdcc402b43349ff9a22211e221282ebe837791420b8521546a78",
+    "uv.lock": "294aa2081890b72d494331ab86c0ecfc8575d011224c548adba864609d9055b8",
+    "src/electron_field_topology/__init__.py": "004283ee4c7375c92497c3cd1df3a96edd695a9d34f89752fe023935cf4785ab",
+    "src/electron_field_topology/benchmark.py": "2cff483c53e914984fa2cc4279686ac671a022327878cd916d7523deb4796d1c",
+    "src/electron_field_topology/diagnostics.py": "0f6391f2e08d3e05c9e9051c7b571e1197a3d478d12b4e3745379647d9068a54",
+    "src/electron_field_topology/evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735",
+    "src/electron_field_topology/evolution_benchmark.py": "ddc2d34acd7f5092f2257978ba7f2116181be6d07f9369b3dde2c672f2504685",
+    "src/electron_field_topology/fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+    "src/electron_field_topology/localisation.py": "e488482955998f8ee0dbec857325b89e055df2324067052a7430ba908347bfa3",
+    "src/electron_field_topology/localisation_benchmark.py": "e95bbb87aa8c9aaeb9316f736a717cf09a8773237d9228d65a01b3bc56d0d9eb",
+    "src/electron_field_topology/relativity.py": "4469cb06fa5c5e4dc991036f11b461bcace03be53656aea15c0e118a01b6e74f",
+    "src/electron_field_topology/relativity_benchmark.py": "87b67a8dac10f179b184300f67fa56b5e55a1fd19ea209ef8b8e9533b9345529"
+  },
+  "config_sha256": "9b754c69f6c441ff6ad439c4fb367d4b503aeabf0ddd657462bfac94286eb508",
+  "dependency_lock_sha256": "294aa2081890b72d494331ab86c0ecfc8575d011224c548adba864609d9055b8",
+  "configuration": {
+    "experiment_id": "S3-B-coarse-radial-v1",
+    "model_id": "B0-H11-Centroid",
+    "velocities": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.6,
+        0,
+        0
+      ],
+      [
+        0.2,
+        -0.3,
+        0.4
+      ],
+      [
+        0,
+        0,
+        -0.5
+      ]
+    ],
+    "times": [
+      0,
+      1,
+      2
+    ],
+    "orders": [
+      24,
+      40,
+      64
+    ],
+    "radii": [
+      4,
+      8,
+      12
+    ],
+    "contained_radius": 2,
+    "peak_grids": [
+      17,
+      25,
+      33
+    ],
+    "peak_half_extent": 4,
+    "seed": 271828,
+    "radial_order_multiplier": 1
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "cpu_count": 9,
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "precision": "float64 / complex128",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": null
+  },
+  "command": [
+    "/workspace/scratch/56cf1280751f/ElectronFieldTopology/src/electron_field_topology/localisation_benchmark.py",
+    "--config",
+    "experiments/configs/hopfion-s3b-coarse.json",
+    "--output",
+    "artifacts/s3b-coarse-evidence"
+  ],
+  "boundaries": "unbounded analytical evaluation; compactified all-space quadrature and separate finite diagnostic spheres",
+  "units": "c=epsilon_0=mu_0=l0=1, arbitrary dimensionless amplitude",
+  "elapsed_seconds": 20.675646669000344,
+  "artifacts_sha256": {
+    "config.json": "9b754c69f6c441ff6ad439c4fb367d4b503aeabf0ddd657462bfac94286eb508",
+    "localisation.svg": "852fbe8be9c3e5c2bee398fd9a8140126cb056c5333185aeea53658f5e37e109",
+    "metrics.json": "88f6b8c21ea71c52c15422f6e818ee4e49202d04b93b855691e38356d709e1b2"
+  }
+}
