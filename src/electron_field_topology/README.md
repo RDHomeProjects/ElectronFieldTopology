@@ -1,5 +1,3 @@
-# src/electron_field_topology
+# Analytical field package
 
-Future importable Python package. Planned responsibilities: analytical field generators, solvers, diagnostics, units and run manifests. No numerical modules exist yet.
-
-See [the root README](../../README.md) for the documentation index.
+Implemented: fields.hopfion, diagnostics and benchmark CLI. See [model B0-H11](../../docs/models/B0-H11.md). No evolution solver is implemented.

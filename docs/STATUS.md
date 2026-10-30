@@ -4,29 +4,27 @@ Updated: 2026-10-31 (Australia/Melbourne).
 
 ## Current stage
 
-S0 documentation foundation. Repository structure, requirements, staged plan, AI instructions, literature register, templates and documentation checker are supplied.
+S0 documentation foundation complete. S1-A analytical benchmark implemented and locally verified, awaiting maintainer review on the research branch. No merge is implied by completion of implementation.
 
-No simulator, numerical environment, field configuration implementation, topology search or scientific result exists yet. Future capabilities in the roadmap are planned, not implemented.
+Implemented: (1,1) Hopfion evaluator, energy/flow/flux/moment/localisation diagnostics, reproducible CLI, dependency lock, analytical plots and benchmark CI. No independent numerical evolution, topology search, charged electron model or quantum-spin derivation exists.
 
 ## Evidence
 
-- Run python3 scripts/check_docs.py for local documentation integrity.
-- GitHub Actions workflow: .github/workflows/docs.yml.
-- Hosted execution status is available in the repository Actions tab; a local pass does not establish a hosted pass.
-- Primary literature links and review-depth notes: docs/literature/README.md.
+- [S1-A result and requirement evidence](../reports/s1-a/README.md)
+- [Model B0-H11 and equation mapping](models/B0-H11.md)
+- [Research issue 1](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/1)
+- Local checks: 17 tests passed; documentation integrity and lock consistency passed.
+- Hosted checks: [analytical benchmark](https://github.com/RDHomeProjects/ElectronFieldTopology/actions/runs/41063845596) and [documentation](https://github.com/RDHomeProjects/ElectronFieldTopology/actions/runs/41063845501) passed on code commit 7306700. Check the PR for final-head status.
+- Null-field checks agree at round-off level; net electric flux is consistent with zero. Moving-sphere energy concentration decreases in the sampled interval.
 
 ## Next task
 
-S1-A: implement and independently verify one published analytical Hopfion, following docs/06-development-plan.md. First complete its equation-to-code mapping and Python dependency lock.
+S2: independently evolve the known initial fields using a validated Maxwell scheme. Specify boundary treatment, field staggering/constraints and compute budget before implementing. Compare with S1 analytical fields, resolve boundary energy flux and demonstrate spatial/time-step/domain convergence. Do not broaden to topology searches yet.
 
 ## Open decisions
 
-- Exact Hopfion equation source/version and normalisation: S1.
-- Numerical evolution method and boundary treatment: S2.
-- Topology invariants and candidate families: S3-S4.
-- Whether any extended dynamics is justified: S5.
-- Long-term artifact archive and release citation: before research publication.
+Evolution method/boundaries (S2), topology diagnostics and searches (S3-S4), any extended dynamics (S5), durable archive before research publication. No model extension has been selected.
 
 ## Handoff prompt
 
-Read AGENTS.md, this status, requirements, development plan and literature register. Continue the earliest incomplete stage. Implement S1-A in a reviewable pull request with primary equation mapping, independent verification and run provenance. Preserve negative results; make no claim that a Maxwell knot is an electron.
+Read AGENTS.md, this status, B0-H11, S1-A report and the development plan. Review the S1-A PR and exact CI evidence. Continue with S2 only after acknowledging the benchmark's limits; preserve null results and provenance. Do not claim that a Maxwell knot is an electron.

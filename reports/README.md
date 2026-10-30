@@ -1,5 +1,5 @@
-# reports
+# Research reports
 
-Store concise reviewed findings and artifact manifests here. Include negative and inconclusive outcomes. No scientific result has been generated in the documentation stage.
+- [S1-A analytical Hopfion benchmark](s1-a/README.md): measured diagnostics, verification, provenance and interpretation.
 
-See [the root README](../README.md) for the documentation index.
+Reports distinguish software correctness, numerical findings and physical claims. Large plots and field arrays remain generated artifacts; scalar evidence is retained with its code/configuration identity.

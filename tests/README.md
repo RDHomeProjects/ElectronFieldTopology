@@ -1,5 +1,3 @@
-# tests
+# Verification
 
-Future independent analytical, numerical and convergence tests. Each physics test must state its reference and error criterion. A negative research outcome is distinct from a code failure.
-
-See [the root README](../README.md) for the documentation index.
+Run `uv run --frozen pytest -q`. Tests cover independently reduced Cartesian fields, exact symbolic Maxwell identities, radial energy, null invariants, finite-difference convergence, off-centre flux, quadrature convergence and input validation.

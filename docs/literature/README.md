@@ -31,7 +31,7 @@ A. M. Valverde, L. D. Angulo, M. R. Cabello, S. G. Garcia, J. J. Omiste and J. L
 
 Role: FDTD simulation and validation of Hopfion solutions; useful benchmark for independent numerical evolution. A simulation reference, not an electron model.
 
-Review depth: arXiv metadata/abstract checked; implementation details and equation verification pending. Stages: S1-S2.
+Review depth: versioned PDF page 2, Eqs. (1)-(5), inspected for S1-A; (1,1) equations mapped and checked in [B0-H11](../models/B0-H11.md). FDTD reproduction remains S2.
 
 ### L04 — Existence beyond torus links
 

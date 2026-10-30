@@ -15,4 +15,6 @@ Read in order:
 | [Decisions](decisions/README.md) | Recorded architectural and scientific choices |
 | [Status](STATUS.md) | Implemented capability and next task |
 
+Implemented benchmark: [model B0-H11](models/B0-H11.md) and [S1-A findings](../reports/s1-a/README.md).
+
 Templates are available for [models](templates/model.md) and [experiment reports](templates/experiment-report.md).

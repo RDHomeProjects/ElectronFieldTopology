@@ -1,5 +1,3 @@
-# experiments/configs
+# Configurations
 
-Reserve this directory for validated experiment configuration files. Stage S1 defines their schema: model, units, domain, sampling, boundaries, times, seed and output budget. No configuration is executable yet.
-
-See [the root README](../../README.md) for the documentation index.
+[hopfion-s1.json](hopfion-s1.json) defines the bounded analytical benchmark. Run it with the command in the [root README](../../README.md). Times are sampled analytically, not integrated.
