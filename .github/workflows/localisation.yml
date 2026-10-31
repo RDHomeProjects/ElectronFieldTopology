@@ -1,15 +1,17 @@
 name: Energy centroid and localisation
 on:
   push:
-      paths-ignore:
-        - 'docs/**'
-        - '**/*.md'
-        - '**/*.bib'
+    paths-ignore:
+      - 'reports/**'
+      - 'docs/**'
+      - '**/*.md'
+      - '**/*.bib'
   pull_request:
-      paths-ignore:
-        - 'docs/**'
-        - '**/*.md'
-        - '**/*.bib'
+    paths-ignore:
+      - 'reports/**'
+      - 'docs/**'
+      - '**/*.md'
+      - '**/*.bib'
   workflow_dispatch:
 permissions:
   contents: read

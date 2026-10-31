@@ -2,11 +2,13 @@ name: Bounded return-map diagnosis
 on:
   push:
     paths-ignore:
+      - 'reports/**'
       - 'docs/**'
       - '**/*.md'
       - '**/*.bib'
   pull_request:
     paths-ignore:
+      - 'reports/**'
       - 'docs/**'
       - '**/*.md'
       - '**/*.bib'
