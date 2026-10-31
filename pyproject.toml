@@ -16,5 +16,10 @@ dev = ["pytest>=8,<10", "sympy>=1.13,<2"]
 [project.scripts]
 eft-benchmark = "electron_field_topology.benchmark:main"
 
+[project.optional-dependencies]
+topology = [
+    "snappy==3.3.2",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
