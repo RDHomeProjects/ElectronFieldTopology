@@ -17,3 +17,5 @@
 Reports distinguish software correctness, numerical findings and physical claims. Large plots and field arrays remain generated artifacts; scalar evidence is retained with its code/configuration identity.
 
 - [S4-B bounded off-core tracing](s4-b/README.md): closure/budget ledger, nodal guards and independent polygon invariants; no complete knot classification or binding claim.
+
+- [S4-C bounded return-map diagnosis](s4-c/README.md): independently varied numerical controls, manufactured torus targets and a subsequent explicit model-feasibility decision.

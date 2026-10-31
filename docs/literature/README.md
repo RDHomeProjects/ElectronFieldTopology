@@ -317,3 +317,13 @@ Preserved from the recovered checkpoint; no additional reading was performed dur
 Altan B. Kılıç, Anne Nijsten, Ruud Pellikaan and Alberto Ravagnani (2025), *Knot theory and error-correcting codes*. Designs, Codes and Cryptography 93, 3029–3068. [DOI and publisher full text](https://doi.org/10.1007/s10623-025-01615-x).
 
 Targeted publisher-text inspection for S4-B: Definition 2.6 (regular projections), Eq. (1), Definition 3.5 (Fox matrix), Proposition 3.7 (minor equivalence), Definition 3.10 (determinant). The implementation specialises to t=-1 and compares exact integer cofactors; it does not implement coding-theory claims or a complete knot classifier. This direct methods lookup is not recursion expansion.
+
+## S4-C targeted equation inspections
+
+The [model-feasibility audit](../models/S5-feasibility-audit.md) records targeted primary-source follow-up after the bounded return-map diagnosis. This does not complete the larger literature review or expand recursion seeds.
+
+- **L16 / Goulart:** arXiv:1602.05071v1 Eqs.(1)–(3), the null-field lemma and Eq.(11) inspected directly. The constant-invariant substitution is used for feasibility, not a new NLED solver. Other sectors and causal assumptions remain separate.
+- **L27 / Faddeev–Niemi:** hep-th/9610193v1 printed pp.2–3, Hamiltonian Eq.(2), virial Eq.(3), relaxation Eq.(4) inspected; the Hamiltonian page visually checked. Static scaling is distinguished from full stability and physical evolution. Final journal/preprint reconciliation remains pending.
+- **L07 / Faber–Kobushkin:** hep-th/0207167v4 Section II Eqs.(11)–(20) inspected. Added internal fields, elementary-charge normalization and dimensional scale are explicit inputs. No spin/statistics or finite-size dynamical certification follows.
+
+The manufactured torus control in S4-C is an explicitly differentiated geometric construction, not a new physical-model citation. [The return-map specification](../models/B0-S4C-ReturnMap.md) gives the derivation.
