@@ -1,0 +1,449 @@
+{
+  "schema": "sf-cpu-timing-v1",
+  "label": "replacement-environment",
+  "created_utc": "2026-10-31T12:28:47.664344+00:00",
+  "scope": "CPU timings; excludes file I/O, knot extraction and convergence acceptance",
+  "command": [
+    "/workspace/scratch/d83be735642a/ElectronFieldTopology/src/electron_field_topology/sf_timing.py",
+    "--label",
+    "replacement-environment",
+    "--output",
+    "artifacts/timing-reference-clean"
+  ],
+  "hardware": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "logical_cpus": 9,
+    "affinity_cpus": 9,
+    "memory": [
+      "MemTotal:       10206472 kB",
+      "MemAvailable:    9507260 kB",
+      "SwapTotal:             0 kB"
+    ],
+    "cgroup_cpu_max": "800000 100000",
+    "cgroup_memory_max": "8589934592",
+    "gpu_inventory_only": null,
+    "load_average": [
+      0.76904296875,
+      0.35400390625,
+      0.126953125
+    ]
+  },
+  "git_commit": "76bbbe115078100c71485fbf4905b62472e44665",
+  "dirty_tree": true,
+  "source_sha256": {
+    "src/electron_field_topology/sf_timing.py": "116a5b9112efd836b36a1d23c3273128a4d3bb5c443f1275b1e303c5806bf2f7",
+    "src/electron_field_topology/sf_energy.c": "407f96a06701b14d6af9445993788d62774c4a960d2541cd4aa0107369a576f2",
+    "src/electron_field_topology/skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+    "src/electron_field_topology/sf_minimize.py": "a8d5828e7a8743465a9feaf3b98e2364cdaf15a7a966769db9d15e04e0d71506"
+  },
+  "lock_sha256": "a365a979b00b8c34d9faa148d3034bd9bd6fe78ca7a1c3a9e41b39dce50cb145",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "compile_flags": [
+    "-O3",
+    "-std=c99",
+    "-shared",
+    "-fPIC",
+    "-fopenmp",
+    "-lm"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "cases": [
+    {
+      "workload": {
+        "case": "q1",
+        "n": 65,
+        "h": 0.125,
+        "seed": {
+          "kind": "axial",
+          "alpha": 1,
+          "beta": 1,
+          "scale": 1.0,
+          "cutoff": 3.6
+        },
+        "perturbation_amplitude": 0.0,
+        "perturbation_seed": 35
+      },
+      "threads": 1,
+      "steps": 3,
+      "repeats": 3,
+      "backend": "CPU float64 cell/OpenMP + SciPy DST",
+      "initial_field_sha256": "f5ec98c1d0fc24cb507db5bb73f53e16b73b30d3a0c04272a2ccdda1a4ae9715",
+      "initial_energy": 1.6093248190198088,
+      "initial_gradient_rms": 2.816774990910822,
+      "initial_diagnostics": {
+        "hopf_integral": -0.9967170118645847,
+        "unit_error": 4.440892098500626e-16,
+        "max_neighbour_angle": 0.49741997818704586,
+        "mean_topological_b": [
+          -1.0488106105097518e-18,
+          1.863922087756902e-17,
+          -6.206318924251438e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "initial_minimum_corner_cone": 0.9190861916305262,
+      "build_seconds_excluded": 0.33495485800017377,
+      "energy_gradient": {
+        "samples_seconds": [
+          0.37567277400012244,
+          0.38186839700006203,
+          0.42098422399999436
+        ],
+        "median_seconds": 0.38186839700006203,
+        "minimum_seconds": 0.37567277400012244,
+        "maximum_seconds": 0.42098422399999436
+      },
+      "hopf_diagnostics": {
+        "samples_seconds": [
+          0.1680624949999583,
+          0.15070640700014337,
+          0.14591249499994774
+        ],
+        "median_seconds": 0.15070640700014337,
+        "minimum_seconds": 0.14591249499994774,
+        "maximum_seconds": 0.1680624949999583
+      },
+      "short_solve": {
+        "samples_seconds": [
+          1.7476918439999736,
+          1.6443566159998682,
+          1.6842177869998523
+        ],
+        "median_seconds": 1.6842177869998523,
+        "seconds_per_step": 0.5614059289999508,
+        "results": [
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          }
+        ],
+        "final_energies": [
+          1.4441725117028663,
+          1.4441725117028663,
+          1.4441725117028663
+        ]
+      },
+      "worker_peak_rss_mib": 176.58984375,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_DYNAMIC": "FALSE",
+        "OMP_PROC_BIND": "FALSE",
+        "OMP_THREAD_LIMIT": "64",
+        "OMP_MAX_ACTIVE_LEVELS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "workload": {
+        "case": "q1",
+        "n": 65,
+        "h": 0.125,
+        "seed": {
+          "kind": "axial",
+          "alpha": 1,
+          "beta": 1,
+          "scale": 1.0,
+          "cutoff": 3.6
+        },
+        "perturbation_amplitude": 0.0,
+        "perturbation_seed": 35
+      },
+      "threads": 4,
+      "steps": 3,
+      "repeats": 3,
+      "backend": "CPU float64 cell/OpenMP + SciPy DST",
+      "initial_field_sha256": "f5ec98c1d0fc24cb507db5bb73f53e16b73b30d3a0c04272a2ccdda1a4ae9715",
+      "initial_energy": 1.609324819019923,
+      "initial_gradient_rms": 2.816774990910822,
+      "initial_diagnostics": {
+        "hopf_integral": -0.9967170118645847,
+        "unit_error": 4.440892098500626e-16,
+        "max_neighbour_angle": 0.49741997818704586,
+        "mean_topological_b": [
+          -1.0488106105097518e-18,
+          1.863922087756902e-17,
+          -6.206318924251438e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "initial_minimum_corner_cone": 0.9190861916305262,
+      "build_seconds_excluded": 0.31112922800002707,
+      "energy_gradient": {
+        "samples_seconds": [
+          0.13439783700005137,
+          0.13583573199980492,
+          0.13321386500001609
+        ],
+        "median_seconds": 0.13439783700005137,
+        "minimum_seconds": 0.13321386500001609,
+        "maximum_seconds": 0.13583573199980492
+      },
+      "hopf_diagnostics": {
+        "samples_seconds": [
+          0.11999112800003786,
+          0.1230795379999563,
+          0.15225586599990493
+        ],
+        "median_seconds": 0.1230795379999563,
+        "minimum_seconds": 0.11999112800003786,
+        "maximum_seconds": 0.15225586599990493
+      },
+      "short_solve": {
+        "samples_seconds": [
+          0.7534315180000704,
+          0.8920973510000749,
+          0.7230687569999645
+        ],
+        "median_seconds": 0.7534315180000704,
+        "seconds_per_step": 0.25114383933335677,
+        "results": [
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          }
+        ],
+        "final_energies": [
+          1.444172511703731,
+          1.444172511703731,
+          1.4441725117037307
+        ]
+      },
+      "worker_peak_rss_mib": 176.296875,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_DYNAMIC": "FALSE",
+        "OMP_PROC_BIND": "FALSE",
+        "OMP_THREAD_LIMIT": "64",
+        "OMP_MAX_ACTIVE_LEVELS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "workload": {
+        "case": "q1",
+        "n": 97,
+        "h": 0.08333333333333333,
+        "seed": {
+          "kind": "axial",
+          "alpha": 1,
+          "beta": 1,
+          "scale": 1.0,
+          "cutoff": 3.6
+        },
+        "perturbation_amplitude": 0.0,
+        "perturbation_seed": 35
+      },
+      "threads": 1,
+      "steps": 3,
+      "repeats": 3,
+      "backend": "CPU float64 cell/OpenMP + SciPy DST",
+      "initial_field_sha256": "186e22c9d1e8c6b870383b7905453026b6e5cd1f244f0f78c743e134f0ce6fc9",
+      "initial_energy": 1.6118792342460604,
+      "initial_gradient_rms": 2.8029792231377875,
+      "initial_diagnostics": {
+        "hopf_integral": -0.9993340636079966,
+        "unit_error": 5.551115123125783e-16,
+        "max_neighbour_angle": 0.3325649275537652,
+        "mean_topological_b": [
+          -2.0333495863675348e-18,
+          -1.4300597670188574e-18,
+          -1.2676696626340225e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "initial_minimum_corner_cone": 0.9636976735336329,
+      "build_seconds_excluded": 0.320016748000171,
+      "energy_gradient": {
+        "samples_seconds": [
+          1.2051381530000072,
+          1.1758279840000796,
+          1.209128845000123
+        ],
+        "median_seconds": 1.2051381530000072,
+        "minimum_seconds": 1.1758279840000796,
+        "maximum_seconds": 1.209128845000123
+      },
+      "hopf_diagnostics": {
+        "samples_seconds": [
+          0.7324800020001021,
+          0.7077833499999997,
+          0.6931638710000243
+        ],
+        "median_seconds": 0.7077833499999997,
+        "minimum_seconds": 0.6931638710000243,
+        "maximum_seconds": 0.7324800020001021
+      },
+      "short_solve": {
+        "samples_seconds": [
+          5.757713019999983,
+          5.908630518999871,
+          5.783458547999999
+        ],
+        "median_seconds": 5.783458547999999,
+        "seconds_per_step": 1.9278195159999996,
+        "results": [
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          }
+        ],
+        "final_energies": [
+          1.4425194389899065,
+          1.4425194389899065,
+          1.4425194389899065
+        ]
+      },
+      "worker_peak_rss_mib": 444.48828125,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_DYNAMIC": "FALSE",
+        "OMP_PROC_BIND": "FALSE",
+        "OMP_THREAD_LIMIT": "64",
+        "OMP_MAX_ACTIVE_LEVELS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    {
+      "workload": {
+        "case": "q1",
+        "n": 97,
+        "h": 0.08333333333333333,
+        "seed": {
+          "kind": "axial",
+          "alpha": 1,
+          "beta": 1,
+          "scale": 1.0,
+          "cutoff": 3.6
+        },
+        "perturbation_amplitude": 0.0,
+        "perturbation_seed": 35
+      },
+      "threads": 4,
+      "steps": 3,
+      "repeats": 3,
+      "backend": "CPU float64 cell/OpenMP + SciPy DST",
+      "initial_field_sha256": "186e22c9d1e8c6b870383b7905453026b6e5cd1f244f0f78c743e134f0ce6fc9",
+      "initial_energy": 1.6118792342464272,
+      "initial_gradient_rms": 2.8029792231377875,
+      "initial_diagnostics": {
+        "hopf_integral": -0.9993340636079966,
+        "unit_error": 5.551115123125783e-16,
+        "max_neighbour_angle": 0.3325649275537652,
+        "mean_topological_b": [
+          -2.0333495863675348e-18,
+          -1.4300597670188574e-18,
+          -1.2676696626340225e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "initial_minimum_corner_cone": 0.9636976735336329,
+      "build_seconds_excluded": 0.3023929890000545,
+      "energy_gradient": {
+        "samples_seconds": [
+          0.35609783099994274,
+          0.32724019600004794,
+          0.32834034099983
+        ],
+        "median_seconds": 0.32834034099983,
+        "minimum_seconds": 0.32724019600004794,
+        "maximum_seconds": 0.35609783099994274
+      },
+      "hopf_diagnostics": {
+        "samples_seconds": [
+          0.6853230190001796,
+          0.6810815080000339,
+          0.680545752000171
+        ],
+        "median_seconds": 0.6810815080000339,
+        "minimum_seconds": 0.680545752000171,
+        "maximum_seconds": 0.6853230190001796
+      },
+      "short_solve": {
+        "samples_seconds": [
+          2.475863044999869,
+          2.469881335999844,
+          2.3983878409999306
+        ],
+        "median_seconds": 2.469881335999844,
+        "seconds_per_step": 0.8232937786666147,
+        "results": [
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          }
+        ],
+        "final_energies": [
+          1.4425194389932217,
+          1.4425194389932217,
+          1.4425194389932214
+        ]
+      },
+      "worker_peak_rss_mib": 444.7421875,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_DYNAMIC": "FALSE",
+        "OMP_PROC_BIND": "FALSE",
+        "OMP_THREAD_LIMIT": "64",
+        "OMP_MAX_ACTIVE_LEVELS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ]
+}

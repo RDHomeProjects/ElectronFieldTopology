@@ -1,0 +1,23 @@
+name: Staged recovery integrity
+on:
+  pull_request:
+    paths:
+      - 'docs/pr36-staged-recovery.*'
+      - 'reports/s5-a/**'
+      - 'scripts/check_pr36_staged_recovery.py'
+      - '.github/workflows/staged-recovery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify transferred original Git blobs
+        run: python3 scripts/check_pr36_staged_recovery.py
+      - name: Check documentation
+        run: python3 scripts/check_docs.py
