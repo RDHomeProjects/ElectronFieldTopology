@@ -1,7 +1,15 @@
 name: Helicity and linking instruments
 on:
   push:
+      paths-ignore:
+        - 'docs/**'
+        - '**/*.md'
+        - '**/*.bib'
   pull_request:
+      paths-ignore:
+        - 'docs/**'
+        - '**/*.md'
+        - '**/*.bib'
   workflow_dispatch:
 permissions:
   contents: read
