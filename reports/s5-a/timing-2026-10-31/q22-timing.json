@@ -1,0 +1,162 @@
+{
+  "schema": "sf-cpu-timing-v1",
+  "label": "replacement-environment",
+  "created_utc": "2026-10-31T12:30:44.963604+00:00",
+  "scope": "CPU timings; excludes file I/O, knot extraction and convergence acceptance",
+  "command": [
+    "/workspace/scratch/d83be735642a/ElectronFieldTopology/src/electron_field_topology/sf_timing.py",
+    "--case",
+    "q22",
+    "--grids",
+    "129",
+    "--threads",
+    "4",
+    "--label",
+    "replacement-environment",
+    "--output",
+    "artifacts/timing-reference-q22"
+  ],
+  "hardware": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "logical_cpus": 9,
+    "affinity_cpus": 9,
+    "memory": [
+      "MemTotal:       10206472 kB",
+      "MemAvailable:    9496620 kB",
+      "SwapTotal:             0 kB"
+    ],
+    "cgroup_cpu_max": "800000 100000",
+    "cgroup_memory_max": "8589934592",
+    "gpu_inventory_only": null,
+    "load_average": [
+      1.39501953125,
+      0.7158203125,
+      0.28662109375
+    ]
+  },
+  "git_commit": "76bbbe115078100c71485fbf4905b62472e44665",
+  "dirty_tree": true,
+  "source_sha256": {
+    "src/electron_field_topology/sf_timing.py": "116a5b9112efd836b36a1d23c3273128a4d3bb5c443f1275b1e303c5806bf2f7",
+    "src/electron_field_topology/sf_energy.c": "407f96a06701b14d6af9445993788d62774c4a960d2541cd4aa0107369a576f2",
+    "src/electron_field_topology/skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+    "src/electron_field_topology/sf_minimize.py": "a8d5828e7a8743465a9feaf3b98e2364cdaf15a7a966769db9d15e04e0d71506"
+  },
+  "lock_sha256": "a365a979b00b8c34d9faa148d3034bd9bd6fe78ca7a1c3a9e41b39dce50cb145",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "compile_flags": [
+    "-O3",
+    "-std=c99",
+    "-shared",
+    "-fPIC",
+    "-fopenmp",
+    "-lm"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "cases": [
+    {
+      "workload": {
+        "case": "q22",
+        "n": 129,
+        "h": 0.12,
+        "seed": {
+          "kind": "cable",
+          "alpha": 4,
+          "beta": 1,
+          "scale": 4.0,
+          "cutoff": 7.2,
+          "amplitude": 8.0
+        },
+        "perturbation_amplitude": 0.005,
+        "perturbation_seed": 35
+      },
+      "threads": 4,
+      "steps": 3,
+      "repeats": 3,
+      "backend": "CPU float64 cell/OpenMP + SciPy DST",
+      "initial_field_sha256": "7969920612a6e9db47c8955f48c066eefecadef9ba801eda01a04d2e55932522",
+      "initial_energy": 39.31847660145256,
+      "initial_gradient_rms": 22.321697485986448,
+      "initial_diagnostics": {
+        "hopf_integral": -21.56430168743787,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 1.6169590991559877,
+        "mean_topological_b": [
+          1.2466030438129545e-07,
+          0.0004427890470785742,
+          0.006666606387797689
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "initial_minimum_corner_cone": 0.3087907671735943,
+      "build_seconds_excluded": 0.3634606680000161,
+      "energy_gradient": {
+        "samples_seconds": [
+          1.0442789759999869,
+          1.0561823440000353,
+          1.0722155099999782
+        ],
+        "median_seconds": 1.0561823440000353,
+        "minimum_seconds": 1.0442789759999869,
+        "maximum_seconds": 1.0722155099999782
+      },
+      "hopf_diagnostics": {
+        "samples_seconds": [
+          1.423095837000119,
+          1.405143093000106,
+          1.392167499999914
+        ],
+        "median_seconds": 1.405143093000106,
+        "minimum_seconds": 1.392167499999914,
+        "maximum_seconds": 1.423095837000119
+      },
+      "short_solve": {
+        "samples_seconds": [
+          5.963568587000054,
+          5.521846559000096,
+          5.545440738000025
+        ],
+        "median_seconds": 5.545440738000025,
+        "seconds_per_step": 1.8484802460000083,
+        "results": [
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          },
+          {
+            "status": "iteration_budget",
+            "iterations": 3,
+            "evaluations": 4
+          }
+        ],
+        "final_energies": [
+          31.552390647833136,
+          31.552390647833136,
+          31.552390647833136
+        ]
+      },
+      "worker_peak_rss_mib": 945.00390625,
+      "thread_environment": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "OMP_DYNAMIC": "FALSE",
+        "OMP_PROC_BIND": "FALSE",
+        "OMP_THREAD_LIMIT": "64",
+        "OMP_MAX_ACTIVE_LEVELS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    }
+  ]
+}
