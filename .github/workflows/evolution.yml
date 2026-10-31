@@ -1,7 +1,15 @@
 name: Independent Maxwell evolution
 on:
   push:
+      paths-ignore:
+        - 'docs/**'
+        - '**/*.md'
+        - '**/*.bib'
   pull_request:
+      paths-ignore:
+        - 'docs/**'
+        - '**/*.md'
+        - '**/*.bib'
   workflow_dispatch:
     inputs:
       preset:
