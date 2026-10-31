@@ -1,0 +1,48 @@
+name: Bounded off-core topology
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - '**/*.md'
+      - '**/*.bib'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - '**/*.md'
+      - '**/*.bib'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: offcore-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  offcore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MPLBACKEND: Agg
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Install locked environment and verify independent controls
+        run: |
+          python -m pip install uv==0.13.4
+          uv sync --frozen --all-groups
+          uv run --frozen pytest -q
+          python3 scripts/check_docs.py
+      - name: Run bounded off-core study
+        run: uv run --frozen python -m electron_field_topology.offcore_benchmark --config experiments/configs/offcore-s4b.json --output artifacts/s4b-ci
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: offcore-topology-evidence
+          path: artifacts/s4b-ci
+          retention-days: 14
+          if-no-files-found: warn

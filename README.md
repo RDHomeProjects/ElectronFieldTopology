@@ -22,6 +22,8 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
+S4-B now adds [bounded off-core tracing and independent polygon invariants](docs/models/B0-S4B-Offcore.md), integrating the recovered literature findings. See [the report](reports/s4-b/README.md). The comprehensive literature review remains incomplete and level 4 deferred; the maintainer explicitly authorised this bounded continuation.
+
 S1-A adds an analytical (1,1) Hopfion evaluator, energy/flux/localisation diagnostics, independent polynomial and symbolic checks, and a reproducible benchmark. It samples a known solution at chosen times. S2 adds an independent periodic Fourier Maxwell solver, measured initial projection, spatial/domain studies and interior Poynting balance. Neither implementation models an electron.
 
 See [the equation mapping and conventions](docs/models/B0-H11.md). Measured evidence and interpretation are kept in [reports](reports/README.md).

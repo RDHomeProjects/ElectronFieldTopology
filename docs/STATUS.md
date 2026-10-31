@@ -6,7 +6,7 @@ Updated: 2026-10-31 (Australia/Melbourne).
 
 The written-analysis transfer is complete: all 5,217 words in the corpus defined for PRs 18 and 19 are published in approximately 10% increments. See [the reading index and verification record](literature/recovered-transfer/README.md). Original source hashes, review depths, negative findings and limitations are preserved; no new literature review was performed.
 
-This completes publication of that prose corpus, not the scientific review or publication of the 113,295-ID citation dataset and supporting checkpoint implementation. PR 17 remains open for the wider checkpoint. Research remains stopped, S4-B paused and level 4 deferred pending a new maintainer instruction and the unfinished review/impact gate.
+This completes publication of that prose corpus, not the scientific review or publication of the 113,295-ID citation dataset and supporting checkpoint implementation. PR 17 remains open for the wider checkpoint. The maintainer has now explicitly resumed bounded S4-B under [ADR-0005](decisions/ADR-0005-s4b-resumption.md); the larger review remains incomplete and level 4 deferred. PR 29 separately published a 1,133-ID citation-data sample.
 
 ## Current stage
 
@@ -16,7 +16,14 @@ S3-A merged via [PR 7](https://github.com/RDHomeProjects/ElectronFieldTopology/p
 
 Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution, explicit initial projection, spatial/domain/time-quadrature studies, interior Poynting balance, event-consistent analytical Lorentz transformations, independent tensor/common-event controls, finite-cutoff four-momentum convergence, energy-centroid/width and observer-origin diagnostics, all-space moment quadrature with finite-tail controls, classified perturbations with constraint/null diagnostics, independent linear difference-energy controls, local transport and domain sensitivity, periodic Coulomb and unbounded Bateman helicity diagnostics, explicit mean/gauge controls, closed-curve Gauss linking and selected analytical B-fiber tracing, reproducible evidence and bounded workflows.
 
+## Bounded S4-B result for review
+
+The maintainer-authorised off-core tranche is implemented with 24 family/seed/time cases: 12 refined closures and 12 unresolved budgets. All eight core controls close; off-core higher-family trajectories remain unresolved. Independent Fox determinant/projection and signed-link checks pass with stated polygon limits. 116 tests pass; see [the measured S4-B report](../reports/s4-b/README.md). Main bibliography L20–L35 and the correction/alias mapping are integrated. Complete knot identification and the wider literature review remain open; no confinement or electron claim follows.
+
 ## Evidence
+
+- [S4-B bounded off-core report](../reports/s4-b/README.md)
+- [S4-B source and acceptance map](models/B0-S4B-Offcore.md)
 
 - [S1-A report](../reports/s1-a/README.md)
 - [S2 report and requirement mapping](../reports/s2/README.md)
@@ -54,7 +61,7 @@ These validate selected transformations, energy, perturbation, topology and boun
 
 ## Next task
 
-No further literature acquisition, substantive paper review or S4-B development is authorised by the transfer. The scientific first/second passes, source-version reconciliation and final S1–S4-A impact audit remain unfinished. A new maintainer instruction is required before resuming that work; level 4 needs its own scope decision.
+Review the bounded S4-B implementation and evidence tracked by [issue 30](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/30). Independent polygon determinants/links refine closure evidence but do not identify every knot or certify a continuum isotopy. Broader sampling, stronger knot identification and near-zero robustness remain later review decisions; do not silently enlarge the fixed search. Full literature passes/version reconciliation remain unfinished and level 4 deferred.
 
 ## Open decisions
 
@@ -62,4 +69,4 @@ Open/absorbing boundaries before isolated long-time numerical studies; topology 
 
 ## Handoff prompt
 
-Read AGENTS.md, this status, the recovered-transfer reading index and manifest, and the S1–S4-A reports/model mappings. Verify the prose using `python3 scripts/check_recovered_text_transfer.py`. All six counted source texts reconstruct exactly from the published fragments. The full citation dataset/supporting checkpoint is separately preserved; PR 17 remains open. Do not interpret transfer completion as research completion. Keep research stopped, S4-B paused and level 4 deferred until a new instruction resolves the unfinished scientific review gate. Preserve source-specific review depths and negative results.
+Read AGENTS.md, this status, ADR-0005, the B0-S4B-Offcore source/acceptance map, its report, the main bibliography and S1–S4-A evidence. The maintainer explicitly resumed bounded S4-B despite the unfinished comprehensive literature review. Keep level 4 deferred and do not claim that corpus publication closes the scientific review. Preserve field-zero and finite-budget outcomes, distinguish polygon invariants from knot identification, and retain energy/charge/quantum gates.
