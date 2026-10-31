@@ -1,0 +1,62 @@
+{
+  "experiment_id": "S4-C-returnmap-v1",
+  "model_id": "B0-Bateman-PQ",
+  "pairs": [
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "time": 0,
+  "phase": 0.17,
+  "primary_offset": [
+    0.15,
+    0,
+    0
+  ],
+  "replication_offset": [
+    0,
+    0,
+    0.2
+  ],
+  "baseline": {
+    "tolerance": 1e-11,
+    "max_step": 0.075,
+    "max_arclength": 80,
+    "samples": 128,
+    "near_zero": 1e-08,
+    "radius": 12,
+    "max_evaluations": 20000
+  },
+  "variations": {
+    "max_arclength": [
+      20,
+      40
+    ],
+    "tolerance": [
+      1e-09,
+      1e-10
+    ],
+    "max_step": [
+      0.15,
+      0.0375
+    ],
+    "near_zero": [
+      1e-06,
+      1e-10
+    ],
+    "radius": [
+      6,
+      24
+    ]
+  },
+  "return_comparison_limit": 1e-05
+}

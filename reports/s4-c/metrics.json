@@ -1,0 +1,6203 @@
+{
+  "experiment_id": "S4-C-returnmap-v1",
+  "diagnostic_cases": [
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "baseline",
+      "changed_control": null,
+      "changed_value": null,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ]
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ]
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ]
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ]
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1345980293108127,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ],
+            "plane_coordinates": [
+              0.23289298228948324,
+              0.06619592335385702
+            ],
+            "plane_residual": -6.955568476438361e-16
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ],
+            "plane_coordinates": [
+              -7.451213911600598e-05,
+              0.05015306406079367
+            ],
+            "plane_residual": 1.6617340302777204e-15
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ],
+            "plane_coordinates": [
+              0.22281349572883175,
+              0.019918326108454686
+            ],
+            "plane_residual": -4.5635932629177384e-17
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ],
+            "plane_coordinates": [
+              0.02444871365769017,
+              0.09823335708493071
+            ],
+            "plane_residual": 2.529634245051816e-15
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ],
+            "plane_coordinates": [
+              0.19301292716394933,
+              -0.02279177726284532
+            ],
+            "plane_residual": 5.753065363262068e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 5,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          5,
+          5
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "max_arclength=20",
+      "changed_control": "max_arclength",
+      "changed_value": 20,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 20,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 4039,
+        "max_arclength": 20,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 20.0,
+        "minimum_field_ratio": 1.1346191056291852,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ],
+            "plane_coordinates": [
+              0.23289298228948324,
+              0.06619592335385702
+            ],
+            "plane_residual": -6.955568476438361e-16
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 1,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          1,
+          1
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "max_arclength=40",
+      "changed_control": "max_arclength",
+      "changed_value": 40,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 40,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ]
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 8044,
+        "max_arclength": 40,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 40.0,
+        "minimum_field_ratio": 1.1345980293108127,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ],
+            "plane_coordinates": [
+              0.23289298228948324,
+              0.06619592335385702
+            ],
+            "plane_residual": -6.955568476438361e-16
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ],
+            "plane_coordinates": [
+              -7.451213911600598e-05,
+              0.05015306406079367
+            ],
+            "plane_residual": 1.6617340302777204e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 2,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          2,
+          2
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "tolerance=1e-09",
+      "changed_control": "tolerance",
+      "changed_value": 1e-09,
+      "settings": {
+        "tolerance": 1e-09,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.499191180298787,
+            "closure_gap": 0.24211782558985648,
+            "tangent_mismatch": 0.06360359500693644,
+            "position": [
+              2.7324275168179617,
+              0.8708379034910413,
+              0.6494600782096136
+            ]
+          },
+          {
+            "arclength": 30.75466173576309,
+            "closure_gap": 0.05015311941190915,
+            "tangent_mismatch": 0.015599699876336012,
+            "position": [
+              2.9227830542431823,
+              1.005369702367839,
+              0.6635025586586912
+            ]
+          },
+          {
+            "arclength": 46.36171604849243,
+            "closure_gap": 0.22370201964636574,
+            "tangent_mismatch": 0.06692549212384533,
+            "position": [
+              2.7539771995054725,
+              0.8590911928755232,
+              0.689967337088946
+            ]
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455537943,
+            "tangent_mismatch": 0.02765217211413368,
+            "position": [
+              2.8891955154356204,
+              1.0090869977326973,
+              0.6214173815438386
+            ]
+          },
+          {
+            "arclength": 77.19896256523357,
+            "closure_gap": 0.19435394300912978,
+            "tangent_mismatch": 0.0649663141154194,
+            "position": [
+              2.790202159010244,
+              0.8606310659577229,
+              0.7273519317309295
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-09,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1346143633461454,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.499191180298787,
+            "closure_gap": 0.24211782558985648,
+            "tangent_mismatch": 0.06360359500693644,
+            "position": [
+              2.7324275168179617,
+              0.8708379034910413,
+              0.6494600782096136
+            ],
+            "plane_coordinates": [
+              0.23289298228948382,
+              0.06619592335386179
+            ],
+            "plane_residual": 3.2413720231885223e-16
+          },
+          {
+            "arclength": 30.75466173576309,
+            "closure_gap": 0.05015311941190915,
+            "tangent_mismatch": 0.015599699876336012,
+            "position": [
+              2.9227830542431823,
+              1.005369702367839,
+              0.6635025586586912
+            ],
+            "plane_coordinates": [
+              -7.451213911095295e-05,
+              0.05015306406079637
+            ],
+            "plane_residual": 6.835495320008335e-16
+          },
+          {
+            "arclength": 46.36171604849243,
+            "closure_gap": 0.22370201964636574,
+            "tangent_mismatch": 0.06692549212384533,
+            "position": [
+              2.7539771995054725,
+              0.8590911928755232,
+              0.689967337088946
+            ],
+            "plane_coordinates": [
+              0.2228134957288274,
+              0.019918326108456674
+            ],
+            "plane_residual": -4.493560460103392e-16
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455537943,
+            "tangent_mismatch": 0.02765217211413368,
+            "position": [
+              2.8891955154356204,
+              1.0090869977326973,
+              0.6214173815438386
+            ],
+            "plane_coordinates": [
+              0.024448713657696526,
+              0.09823335708492827
+            ],
+            "plane_residual": 2.364906887007389e-15
+          },
+          {
+            "arclength": 77.19896256523357,
+            "closure_gap": 0.19435394300912978,
+            "tangent_mismatch": 0.0649663141154194,
+            "position": [
+              2.790202159010244,
+              0.8606310659577229,
+              0.7273519317309295
+            ],
+            "plane_coordinates": [
+              0.19301292716395185,
+              -0.022791777262843996
+            ],
+            "plane_residual": -6.512750676675794e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 5,
+        "max_position_difference": 1.2596506480537374e-14,
+        "max_arclength_difference": 2.842170943040401e-14,
+        "shared_interval_counts": [
+          5,
+          5
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "tolerance=1e-10",
+      "changed_control": "tolerance",
+      "changed_value": 1e-10,
+      "settings": {
+        "tolerance": 1e-10,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.499191180298794,
+            "closure_gap": 0.24211782558985123,
+            "tangent_mismatch": 0.06360359500693605,
+            "position": [
+              2.732427516817966,
+              0.8708379034910413,
+              0.6494600782096198
+            ]
+          },
+          {
+            "arclength": 30.754661735763086,
+            "closure_gap": 0.0501531194119154,
+            "tangent_mismatch": 0.015599699876336864,
+            "position": [
+              2.922783054243177,
+              1.0053697023678383,
+              0.6635025586586856
+            ]
+          },
+          {
+            "arclength": 46.36171604849243,
+            "closure_gap": 0.22370201964636383,
+            "tangent_mismatch": 0.0669254921238459,
+            "position": [
+              2.753977199505475,
+              0.859091192875522,
+              0.6899673370889502
+            ]
+          },
+          {
+            "arclength": 61.5260993256187,
+            "closure_gap": 0.10123009455538172,
+            "tangent_mismatch": 0.027652172114134555,
+            "position": [
+              2.889195515435613,
+              1.0090869977326962,
+              0.6214173815438399
+            ]
+          },
+          {
+            "arclength": 77.19896256523356,
+            "closure_gap": 0.1943539430091148,
+            "tangent_mismatch": 0.06496631411541484,
+            "position": [
+              2.790202159010256,
+              0.8606310659577308,
+              0.7273519317309214
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-10,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1346070761792915,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.499191180298794,
+            "closure_gap": 0.24211782558985123,
+            "tangent_mismatch": 0.06360359500693605,
+            "position": [
+              2.732427516817966,
+              0.8708379034910413,
+              0.6494600782096198
+            ],
+            "plane_coordinates": [
+              0.2328929822894803,
+              0.06619592335385506
+            ],
+            "plane_residual": -3.3693954463807135e-16
+          },
+          {
+            "arclength": 30.754661735763086,
+            "closure_gap": 0.0501531194119154,
+            "tangent_mismatch": 0.015599699876336864,
+            "position": [
+              2.922783054243177,
+              1.0053697023678383,
+              0.6635025586586856
+            ],
+            "plane_coordinates": [
+              -7.4512139106304e-05,
+              0.050153064060802624
+            ],
+            "plane_residual": 1.0692567701897813e-15
+          },
+          {
+            "arclength": 46.36171604849243,
+            "closure_gap": 0.22370201964636383,
+            "tangent_mismatch": 0.0669254921238459,
+            "position": [
+              2.753977199505475,
+              0.859091192875522,
+              0.6899673370889502
+            ],
+            "plane_coordinates": [
+              0.22281349572882594,
+              0.01991832610845178
+            ],
+            "plane_residual": -2.9847296881855216e-16
+          },
+          {
+            "arclength": 61.5260993256187,
+            "closure_gap": 0.10123009455538172,
+            "tangent_mismatch": 0.027652172114134555,
+            "position": [
+              2.889195515435613,
+              1.0090869977326962,
+              0.6214173815438399
+            ],
+            "plane_coordinates": [
+              0.02444871365770321,
+              0.09823335708492897
+            ],
+            "plane_residual": -1.4452872371065158e-15
+          },
+          {
+            "arclength": 77.19896256523356,
+            "closure_gap": 0.1943539430091148,
+            "tangent_mismatch": 0.06496631411541484,
+            "position": [
+              2.790202159010256,
+              0.8606310659577308,
+              0.7273519317309214
+            ],
+            "plane_coordinates": [
+              0.19301292716393753,
+              -0.022791777262837366
+            ],
+            "plane_residual": -1.7505880903356655e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 5,
+        "max_position_difference": 1.609057532482493e-14,
+        "max_arclength_difference": 4.263256414560601e-14,
+        "shared_interval_counts": [
+          5,
+          5
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "max_step=0.15",
+      "changed_control": "max_step",
+      "changed_value": 0.15,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.15,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.499191180323601,
+            "closure_gap": 0.24211782557937775,
+            "tangent_mismatch": 0.06360359500838884,
+            "position": [
+              2.7324275168282237,
+              0.8708379034841913,
+              0.649460078230717
+            ]
+          },
+          {
+            "arclength": 30.75466173571926,
+            "closure_gap": 0.05015311944685037,
+            "tangent_mismatch": 0.0155996998831997,
+            "position": [
+              2.9227830542126996,
+              1.0053697023659622,
+              0.6635025586280746
+            ]
+          },
+          {
+            "arclength": 46.36171604851981,
+            "closure_gap": 0.22370201959426952,
+            "tangent_mismatch": 0.06692549211816508,
+            "position": [
+              2.753977199560393,
+              0.8590911928807813,
+              0.6899673371414045
+            ]
+          },
+          {
+            "arclength": 61.52609932557933,
+            "closure_gap": 0.10123009462255289,
+            "tangent_mismatch": 0.02765217212205067,
+            "position": [
+              2.8891955153603988,
+              1.0090869977062273,
+              0.6214173814997929
+            ]
+          },
+          {
+            "arclength": 77.19896256522591,
+            "closure_gap": 0.1943539428964381,
+            "tangent_mismatch": 0.06496631408825412,
+            "position": [
+              2.7902021591255664,
+              0.8606310660060219,
+              0.7273519317873182
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 8431,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.15,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1345864620309996,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.499191180323601,
+            "closure_gap": 0.24211782557937775,
+            "tangent_mismatch": 0.06360359500838884,
+            "position": [
+              2.7324275168282237,
+              0.8708379034841913,
+              0.649460078230717
+            ],
+            "plane_coordinates": [
+              0.23289298228544267,
+              0.06619592332975255
+            ],
+            "plane_residual": -4.63112084828095e-16
+          },
+          {
+            "arclength": 30.75466173571926,
+            "closure_gap": 0.05015311944685037,
+            "tangent_mismatch": 0.0155996998831997,
+            "position": [
+              2.9227830542126996,
+              1.0053697023659622,
+              0.6635025586280746
+            ],
+            "plane_coordinates": [
+              -7.45121136833554e-05,
+              0.05015306409577541
+            ],
+            "plane_residual": -1.168794780234282e-15
+          },
+          {
+            "arclength": 46.36171604851981,
+            "closure_gap": 0.22370201959426952,
+            "tangent_mismatch": 0.06692549211816508,
+            "position": [
+              2.753977199560393,
+              0.8590911928807813,
+              0.6899673371414045
+            ],
+            "plane_coordinates": [
+              0.22281349568188102,
+              0.0199183260485247
+            ],
+            "plane_residual": 7.930835591296838e-16
+          },
+          {
+            "arclength": 61.52609932557933,
+            "closure_gap": 0.10123009462255289,
+            "tangent_mismatch": 0.02765217212205067,
+            "position": [
+              2.8891955153603988,
+              1.0090869977062273,
+              0.6214173814997929
+            ],
+            "plane_coordinates": [
+              0.024448713733634532,
+              0.09823335713525119
+            ],
+            "plane_residual": -2.6269093709852703e-15
+          },
+          {
+            "arclength": 77.19896256522591,
+            "closure_gap": 0.1943539428964381,
+            "tangent_mismatch": 0.06496631408825412,
+            "position": [
+              2.7902021591255664,
+              0.8606310660060219,
+              0.7273519317873182
+            ],
+            "plane_coordinates": [
+              0.19301292704286943,
+              -0.02279177732727061
+            ],
+            "plane_residual": 3.017891629799555e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 5,
+        "max_position_difference": 1.3715304646700118e-10,
+        "max_arclength_difference": 4.383338136904058e-11,
+        "shared_interval_counts": [
+          5,
+          5
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "max_step=0.0375",
+      "changed_control": "max_step",
+      "changed_value": 0.0375,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.0375,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "evaluation_budget",
+        "section_returns": [],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 20000,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.0375,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 0.0,
+        "minimum_field_ratio": 1.1346139281457213,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ],
+        "reason": "evaluation budget exhausted"
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 0,
+        "comparison": "insufficient_returns",
+        "repeatable": null
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "near_zero=1e-06",
+      "changed_control": "near_zero",
+      "changed_value": 1e-06,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-06,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ]
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ]
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ]
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ]
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-06,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1345980293108127,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ],
+            "plane_coordinates": [
+              0.23289298228948324,
+              0.06619592335385702
+            ],
+            "plane_residual": -6.955568476438361e-16
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ],
+            "plane_coordinates": [
+              -7.451213911600598e-05,
+              0.05015306406079367
+            ],
+            "plane_residual": 1.6617340302777204e-15
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ],
+            "plane_coordinates": [
+              0.22281349572883175,
+              0.019918326108454686
+            ],
+            "plane_residual": -4.5635932629177384e-17
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ],
+            "plane_coordinates": [
+              0.02444871365769017,
+              0.09823335708493071
+            ],
+            "plane_residual": 2.529634245051816e-15
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ],
+            "plane_coordinates": [
+              0.19301292716394933,
+              -0.02279177726284532
+            ],
+            "plane_residual": 5.753065363262068e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 5,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          5,
+          5
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "near_zero=1e-10",
+      "changed_control": "near_zero",
+      "changed_value": 1e-10,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-10,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ]
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ]
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ]
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ]
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-10,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1345980293108127,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ],
+            "plane_coordinates": [
+              0.23289298228948324,
+              0.06619592335385702
+            ],
+            "plane_residual": -6.955568476438361e-16
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ],
+            "plane_coordinates": [
+              -7.451213911600598e-05,
+              0.05015306406079367
+            ],
+            "plane_residual": 1.6617340302777204e-15
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ],
+            "plane_coordinates": [
+              0.22281349572883175,
+              0.019918326108454686
+            ],
+            "plane_residual": -4.5635932629177384e-17
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ],
+            "plane_coordinates": [
+              0.02444871365769017,
+              0.09823335708493071
+            ],
+            "plane_residual": 2.529634245051816e-15
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ],
+            "plane_coordinates": [
+              0.19301292716394933,
+              -0.02279177726284532
+            ],
+            "plane_residual": 5.753065363262068e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 5,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          5,
+          5
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "radius=6",
+      "changed_control": "radius",
+      "changed_value": 6,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 6,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ]
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ]
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ]
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ]
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 6,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1345980293108127,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ],
+            "plane_coordinates": [
+              0.23289298228948324,
+              0.06619592335385702
+            ],
+            "plane_residual": -6.955568476438361e-16
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ],
+            "plane_coordinates": [
+              -7.451213911600598e-05,
+              0.05015306406079367
+            ],
+            "plane_residual": 1.6617340302777204e-15
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ],
+            "plane_coordinates": [
+              0.22281349572883175,
+              0.019918326108454686
+            ],
+            "plane_residual": -4.5635932629177384e-17
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ],
+            "plane_coordinates": [
+              0.02444871365769017,
+              0.09823335708493071
+            ],
+            "plane_residual": 2.529634245051816e-15
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ],
+            "plane_coordinates": [
+              0.19301292716394933,
+              -0.02279177726284532
+            ],
+            "plane_residual": 5.753065363262068e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 5,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          5,
+          5
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "label": "radius=24",
+      "changed_control": "radius",
+      "changed_value": 24,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 24,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.9373721598931772,
+          0.9859963257737787,
+          0.7074020536719966
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ]
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ]
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ]
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ]
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 24,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1345980293108127,
+        "section_normal": [
+          0.5286955235790552,
+          -0.6976024768783566,
+          -0.4835616068306607
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.79697731605447,
+            -0.6040092364315414,
+            0.0
+          ],
+          [
+            -0.2920756769093966,
+            0.38538763155888683,
+            -0.8753103291972224
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.49919118029879,
+            "closure_gap": 0.2421178255898546,
+            "tangent_mismatch": 0.06360359500693687,
+            "position": [
+              2.732427516817963,
+              0.8708379034910405,
+              0.6494600782096183
+            ],
+            "plane_coordinates": [
+              0.23289298228948324,
+              0.06619592335385702
+            ],
+            "plane_residual": -6.955568476438361e-16
+          },
+          {
+            "arclength": 30.754661735763094,
+            "closure_gap": 0.05015311941190646,
+            "tangent_mismatch": 0.015599699876335337,
+            "position": [
+              2.9227830542431876,
+              1.0053697023678403,
+              0.6635025586586931
+            ],
+            "plane_coordinates": [
+              -7.451213911600598e-05,
+              0.05015306406079367
+            ],
+            "plane_residual": 1.6617340302777204e-15
+          },
+          {
+            "arclength": 46.36171604849244,
+            "closure_gap": 0.22370201964636988,
+            "tangent_mismatch": 0.0669254921238473,
+            "position": [
+              2.75397719950547,
+              0.8590911928755195,
+              0.6899673370889475
+            ],
+            "plane_coordinates": [
+              0.22281349572883175,
+              0.019918326108454686
+            ],
+            "plane_residual": -4.5635932629177384e-17
+          },
+          {
+            "arclength": 61.52609932561871,
+            "closure_gap": 0.10123009455538026,
+            "tangent_mismatch": 0.02765217211413485,
+            "position": [
+              2.889195515435625,
+              1.009086997732702,
+              0.6214173815438364
+            ],
+            "plane_coordinates": [
+              0.02444871365769017,
+              0.09823335708493071
+            ],
+            "plane_residual": 2.529634245051816e-15
+          },
+          {
+            "arclength": 77.1989625652336,
+            "closure_gap": 0.19435394300912745,
+            "tangent_mismatch": 0.0649663141154235,
+            "position": [
+              2.790202159010253,
+              0.8606310659577153,
+              0.7273519317309247
+            ],
+            "plane_coordinates": [
+              0.19301292716394933,
+              -0.02279177726284532
+            ],
+            "plane_residual": 5.753065363262068e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 5,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          5,
+          5
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "baseline",
+      "changed_control": null,
+      "changed_value": null,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ]
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ]
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ]
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16114,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5747672477366699,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ],
+            "plane_coordinates": [
+              0.04536644497482248,
+              0.1279157805297739
+            ],
+            "plane_residual": 1.5942660979494958e-15
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ],
+            "plane_coordinates": [
+              0.13055944936672942,
+              0.12218958852731947
+            ],
+            "plane_residual": 7.788393611131084e-16
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ],
+            "plane_coordinates": [
+              0.10036374557453888,
+              -0.002635207941352284
+            ],
+            "plane_residual": -2.8977687326474846e-15
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ],
+            "plane_coordinates": [
+              0.004146663375511412,
+              -0.010151299495987516
+            ],
+            "plane_residual": 5.510322107824524e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 4,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          4,
+          4
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "max_arclength=20",
+      "changed_control": "max_arclength",
+      "changed_value": 20,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 20,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 4054,
+        "max_arclength": 20,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 20.0,
+        "minimum_field_ratio": 1.5747675479445564,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ],
+            "plane_coordinates": [
+              0.04536644497482248,
+              0.1279157805297739
+            ],
+            "plane_residual": 1.5942660979494958e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 1,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          1,
+          1
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "max_arclength=40",
+      "changed_control": "max_arclength",
+      "changed_value": 40,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 40,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ]
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282386,
+            "tangent_mismatch": 0.18023523609028586,
+            "position": [
+              1.6746592125973865,
+              0.48473888033573037,
+              0.5775008133431465
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 8074,
+        "max_arclength": 40,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 40.0,
+        "minimum_field_ratio": 1.5747675479445564,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ],
+            "plane_coordinates": [
+              0.04536644497482248,
+              0.1279157805297739
+            ],
+            "plane_residual": 1.5942660979494958e-15
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282386,
+            "tangent_mismatch": 0.18023523609028586,
+            "position": [
+              1.6746592125973865,
+              0.48473888033573037,
+              0.5775008133431465
+            ],
+            "plane_coordinates": [
+              0.13055944936672936,
+              0.12218958852731937
+            ],
+            "plane_residual": 7.059382026040269e-16
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 2,
+        "max_position_difference": 1.2412670766236366e-16,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          2,
+          2
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "tolerance=1e-09",
+      "changed_control": "tolerance",
+      "changed_value": 1e-09,
+      "settings": {
+        "tolerance": 1e-09,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837621,
+            "closure_gap": 0.13572236823013986,
+            "tangent_mismatch": 0.06703677014904545,
+            "position": [
+              1.7126880617141471,
+              0.5610086411346541,
+              0.5722694182174243
+            ]
+          },
+          {
+            "arclength": 39.982564216334524,
+            "closure_gap": 0.17881852634683337,
+            "tangent_mismatch": 0.18023523608888287,
+            "position": [
+              1.6746592125952655,
+              0.48473888033676754,
+              0.5775008133378707
+            ]
+          },
+          {
+            "arclength": 59.951733903009256,
+            "closure_gap": 0.10039833538470172,
+            "tangent_mismatch": 0.16843931171355508,
+            "position": [
+              1.7336553011958673,
+              0.48750171097668454,
+              0.6915395727034668
+            ]
+          },
+          {
+            "arclength": 79.78128075138659,
+            "closure_gap": 0.010965568789339448,
+            "tangent_mismatch": 0.011975129176039746,
+            "position": [
+              1.7816225256059426,
+              0.5709655552949271,
+              0.6984062032318653
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-09,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.57476451696369,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837621,
+            "closure_gap": 0.13572236823013986,
+            "tangent_mismatch": 0.06703677014904545,
+            "position": [
+              1.7126880617141471,
+              0.5610086411346541,
+              0.5722694182174243
+            ],
+            "plane_coordinates": [
+              0.0453664449732621,
+              0.12791578052955646
+            ],
+            "plane_residual": 8.376061430109426e-16
+          },
+          {
+            "arclength": 39.982564216334524,
+            "closure_gap": 0.17881852634683337,
+            "tangent_mismatch": 0.18023523608888287,
+            "position": [
+              1.6746592125952655,
+              0.48473888033676754,
+              0.5775008133378707
+            ],
+            "plane_coordinates": [
+              0.1305594493668121,
+              0.12218958853309873
+            ],
+            "plane_residual": -9.626620676156286e-15
+          },
+          {
+            "arclength": 59.951733903009256,
+            "closure_gap": 0.10039833538470172,
+            "tangent_mismatch": 0.16843931171355508,
+            "position": [
+              1.7336553011958673,
+              0.48750171097668454,
+              0.6915395727034668
+            ],
+            "plane_coordinates": [
+              0.10036374558149176,
+              -0.0026352079372678012
+            ],
+            "plane_residual": -6.535867126758662e-16
+          },
+          {
+            "arclength": 79.78128075138659,
+            "closure_gap": 0.010965568789339448,
+            "tangent_mismatch": 0.011975129176039746,
+            "position": [
+              1.7816225256059426,
+              0.5709655552949271,
+              0.6984062032318653
+            ],
+            "plane_coordinates": [
+              0.004146663375254646,
+              -0.010151299509228223
+            ],
+            "plane_residual": 4.189755306726798e-16
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 4,
+        "max_position_difference": 1.3243197056653524e-11,
+        "max_arclength_difference": 2.6403768060845323e-11,
+        "shared_interval_counts": [
+          4,
+          4
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "tolerance=1e-10",
+      "changed_control": "tolerance",
+      "changed_value": 1e-10,
+      "settings": {
+        "tolerance": 1e-10,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837621,
+            "closure_gap": 0.13572236823014436,
+            "tangent_mismatch": 0.06703677014904773,
+            "position": [
+              1.7126880617141444,
+              0.5610086411346539,
+              0.5722694182174206
+            ]
+          },
+          {
+            "arclength": 39.982564216334545,
+            "closure_gap": 0.17881852634683804,
+            "tangent_mismatch": 0.18023523608889644,
+            "position": [
+              1.6746592125952686,
+              0.48473888033676005,
+              0.5775008133378665
+            ]
+          },
+          {
+            "arclength": 59.95173390300926,
+            "closure_gap": 0.1003983353846978,
+            "tangent_mismatch": 0.1684393117135512,
+            "position": [
+              1.733655301195872,
+              0.4875017109766867,
+              0.6915395727034737
+            ]
+          },
+          {
+            "arclength": 79.78128075138659,
+            "closure_gap": 0.010965568789332697,
+            "tangent_mismatch": 0.011975129176028752,
+            "position": [
+              1.781622525605937,
+              0.5709655552949322,
+              0.6984062032318614
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-10,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5747646674676512,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837621,
+            "closure_gap": 0.13572236823014436,
+            "tangent_mismatch": 0.06703677014904773,
+            "position": [
+              1.7126880617141444,
+              0.5610086411346539,
+              0.5722694182174206
+            ],
+            "plane_coordinates": [
+              0.04536644497326355,
+              0.12791578052956074
+            ],
+            "plane_residual": 2.8043667684224564e-16
+          },
+          {
+            "arclength": 39.982564216334545,
+            "closure_gap": 0.17881852634683804,
+            "tangent_mismatch": 0.18023523608889644,
+            "position": [
+              1.6746592125952686,
+              0.48473888033676005,
+              0.5775008133378665
+            ],
+            "plane_coordinates": [
+              0.13055944936681724,
+              0.12218958853310005
+            ],
+            "plane_residual": -2.17262326767381e-15
+          },
+          {
+            "arclength": 59.95173390300926,
+            "closure_gap": 0.1003983353846978,
+            "tangent_mismatch": 0.1684393117135512,
+            "position": [
+              1.733655301195872,
+              0.4875017109766867,
+              0.6915395727034737
+            ],
+            "plane_coordinates": [
+              0.10036374558148765,
+              -0.0026352079372753477
+            ],
+            "plane_residual": -6.22411501013766e-16
+          },
+          {
+            "arclength": 79.78128075138659,
+            "closure_gap": 0.010965568789332697,
+            "tangent_mismatch": 0.011975129176028752,
+            "position": [
+              1.781622525605937,
+              0.5709655552949322,
+              0.6984062032318614
+            ],
+            "plane_coordinates": [
+              0.004146663375252752,
+              -0.010151299509221704
+            ],
+            "plane_residual": -4.6709408331873025e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 4,
+        "max_position_difference": 1.3236719183945147e-11,
+        "max_arclength_difference": 2.6403768060845323e-11,
+        "shared_interval_counts": [
+          4,
+          4
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "max_step=0.15",
+      "changed_control": "max_step",
+      "changed_value": 0.15,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.15,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375836454,
+            "closure_gap": 0.13572236823407635,
+            "tangent_mismatch": 0.06703677014833168,
+            "position": [
+              1.712688061715751,
+              0.5610086411440416,
+              0.5722694182106799
+            ]
+          },
+          {
+            "arclength": 39.98256421636914,
+            "closure_gap": 0.17881852638289522,
+            "tangent_mismatch": 0.18023523610317543,
+            "position": [
+              1.6746592125750943,
+              0.484738880331388,
+              0.5775008133035517
+            ]
+          },
+          {
+            "arclength": 59.951733903153254,
+            "closure_gap": 0.10039833542421081,
+            "tangent_mismatch": 0.16843931178309127,
+            "position": [
+              1.7336553011791576,
+              0.4875017109409553,
+              0.6915395727081044
+            ]
+          },
+          {
+            "arclength": 79.78128075157832,
+            "closure_gap": 0.010965568858030655,
+            "tangent_mismatch": 0.011975129193331858,
+            "position": [
+              1.7816225256450913,
+              0.5709655552970495,
+              0.6984062033072265
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 10450,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.15,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5747634224478002,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375836454,
+            "closure_gap": 0.13572236823407635,
+            "tangent_mismatch": 0.06703677014833168,
+            "position": [
+              1.712688061715751,
+              0.5610086411440416,
+              0.5722694182106799
+            ],
+            "plane_coordinates": [
+              0.045366444964223984,
+              0.12791578053693864
+            ],
+            "plane_residual": 1.0975438242361221e-15
+          },
+          {
+            "arclength": 39.98256421636914,
+            "closure_gap": 0.17881852638289522,
+            "tangent_mismatch": 0.18023523610317543,
+            "position": [
+              1.6746592125750943,
+              0.484738880331388,
+              0.5775008133035517
+            ],
+            "plane_coordinates": [
+              0.13055944938104957,
+              0.12218958857066073
+            ],
+            "plane_residual": -2.9759979668438084e-15
+          },
+          {
+            "arclength": 59.951733903153254,
+            "closure_gap": 0.10039833542421081,
+            "tangent_mismatch": 0.16843931178309127,
+            "position": [
+              1.7336553011791576,
+              0.4875017109409553,
+              0.6915395727081044
+            ],
+            "plane_coordinates": [
+              0.10036374562088117,
+              -0.002635207942344809
+            ],
+            "plane_residual": 1.0269982107140292e-15
+          },
+          {
+            "arclength": 79.78128075157832,
+            "closure_gap": 0.010965568858030655,
+            "tangent_mismatch": 0.011975129193331858,
+            "position": [
+              1.7816225256450913,
+              0.5709655552970495,
+              0.6984062033072265
+            ],
+            "plane_coordinates": [
+              0.004146663354962292,
+              -0.01015129959171852
+            ],
+            "plane_residual": 3.364483280917583e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 4,
+        "max_position_difference": 9.791165148594035e-11,
+        "max_arclength_difference": 2.1813661987835076e-10,
+        "shared_interval_counts": [
+          4,
+          4
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "max_step=0.0375",
+      "changed_control": "max_step",
+      "changed_value": 0.0375,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.0375,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "evaluation_budget",
+        "section_returns": [],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 20000,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.0375,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 0.0,
+        "minimum_field_ratio": 1.5747688840788332,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ],
+        "reason": "evaluation budget exhausted"
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 0,
+        "comparison": "insufficient_returns",
+        "repeatable": null
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "near_zero=1e-06",
+      "changed_control": "near_zero",
+      "changed_value": 1e-06,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-06,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ]
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ]
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ]
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16114,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-06,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5747672477366699,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ],
+            "plane_coordinates": [
+              0.04536644497482248,
+              0.1279157805297739
+            ],
+            "plane_residual": 1.5942660979494958e-15
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ],
+            "plane_coordinates": [
+              0.13055944936672942,
+              0.12218958852731947
+            ],
+            "plane_residual": 7.788393611131084e-16
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ],
+            "plane_coordinates": [
+              0.10036374557453888,
+              -0.002635207941352284
+            ],
+            "plane_residual": -2.8977687326474846e-15
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ],
+            "plane_coordinates": [
+              0.004146663375511412,
+              -0.010151299495987516
+            ],
+            "plane_residual": 5.510322107824524e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 4,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          4,
+          4
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "near_zero=1e-10",
+      "changed_control": "near_zero",
+      "changed_value": 1e-10,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-10,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ]
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ]
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ]
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16114,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-10,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5747672477366699,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ],
+            "plane_coordinates": [
+              0.04536644497482248,
+              0.1279157805297739
+            ],
+            "plane_residual": 1.5942660979494958e-15
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ],
+            "plane_coordinates": [
+              0.13055944936672942,
+              0.12218958852731947
+            ],
+            "plane_residual": 7.788393611131084e-16
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ],
+            "plane_coordinates": [
+              0.10036374557453888,
+              -0.002635207941352284
+            ],
+            "plane_residual": -2.8977687326474846e-15
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ],
+            "plane_coordinates": [
+              0.004146663375511412,
+              -0.010151299495987516
+            ],
+            "plane_residual": 5.510322107824524e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 4,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          4,
+          4
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "radius=6",
+      "changed_control": "radius",
+      "changed_value": 6,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 6,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ]
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ]
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ]
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16114,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 6,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5747672477366699,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ],
+            "plane_coordinates": [
+              0.04536644497482248,
+              0.1279157805297739
+            ],
+            "plane_residual": 1.5942660979494958e-15
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ],
+            "plane_coordinates": [
+              0.13055944936672942,
+              0.12218958852731947
+            ],
+            "plane_residual": 7.788393611131084e-16
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ],
+            "plane_coordinates": [
+              0.10036374557453888,
+              -0.002635207941352284
+            ],
+            "plane_residual": -2.8977687326474846e-15
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ],
+            "plane_coordinates": [
+              0.004146663375511412,
+              -0.010151299495987516
+            ],
+            "plane_residual": 5.510322107824524e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 4,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          4,
+          4
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "label": "radius=24",
+      "changed_control": "radius",
+      "changed_value": 24,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 24,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          1.7799311061836978,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ]
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ]
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ]
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16114,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 24,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5747672477366699,
+        "section_normal": [
+          0.8061512946291144,
+          -0.42984631557158437,
+          -0.40663526059275384
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4705021271122788,
+            -0.8823988601436545,
+            0.0
+          ],
+          [
+            -0.3588144904412639,
+            0.19132275506774649,
+            -0.9135905892918683
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.91544375837699,
+            "closure_gap": 0.13572236823086636,
+            "tangent_mismatch": 0.06703677014976021,
+            "position": [
+              1.7126880617133355,
+              0.5610086411333185,
+              0.5722694182172253
+            ],
+            "plane_coordinates": [
+              0.04536644497482248,
+              0.1279157805297739
+            ],
+            "plane_residual": 1.5942660979494958e-15
+          },
+          {
+            "arclength": 39.982564216333515,
+            "closure_gap": 0.17881852634282394,
+            "tangent_mismatch": 0.1802352360902859,
+            "position": [
+              1.6746592125973865,
+              0.4847388803357303,
+              0.5775008133431464
+            ],
+            "plane_coordinates": [
+              0.13055944936672942,
+              0.12218958852731947
+            ],
+            "plane_residual": 7.788393611131084e-16
+          },
+          {
+            "arclength": 59.95173390299305,
+            "closure_gap": 0.10039833537785844,
+            "tangent_mismatch": 0.1684393117031392,
+            "position": [
+              1.7336553012006024,
+              0.48750171098203926,
+              0.6915395727071992
+            ],
+            "plane_coordinates": [
+              0.10036374557453888,
+              -0.002635207941352284
+            ],
+            "plane_residual": -2.8977687326474846e-15
+          },
+          {
+            "arclength": 79.78128075136019,
+            "closure_gap": 0.010965568777179052,
+            "tangent_mismatch": 0.011975129168846525,
+            "position": [
+              1.781622525601075,
+              0.5709655552972316,
+              0.6984062032197667
+            ],
+            "plane_coordinates": [
+              0.004146663375511412,
+              -0.010151299495987516
+            ],
+            "plane_residual": 5.510322107824524e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 4,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          4,
+          4
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "baseline",
+      "changed_control": null,
+      "changed_value": null,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ]
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ]
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16126,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.59014029265515,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ],
+            "plane_coordinates": [
+              0.06109359298173901,
+              0.12318368530668115
+            ],
+            "plane_residual": -2.307145656497216e-16
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ],
+            "plane_coordinates": [
+              0.14680436274864037,
+              0.10232255925853137
+            ],
+            "plane_residual": 1.7342169023863504e-15
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ],
+            "plane_coordinates": [
+              0.09136413269651673,
+              -0.019084926025280592
+            ],
+            "plane_residual": -3.5510176089742807e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 3,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          3,
+          3
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "max_arclength=20",
+      "changed_control": "max_arclength",
+      "changed_value": 20,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 20,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 4054,
+        "max_arclength": 20,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 20.0,
+        "minimum_field_ratio": 1.5901459976771242,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 0,
+        "comparison": "insufficient_returns",
+        "repeatable": null
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "max_arclength=40",
+      "changed_control": "max_arclength",
+      "changed_value": 40,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 40,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 8074,
+        "max_arclength": 40,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 40.0,
+        "minimum_field_ratio": 1.5901459976771242,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ],
+            "plane_coordinates": [
+              0.06109359298173901,
+              0.12318368530668115
+            ],
+            "plane_residual": -2.307145656497216e-16
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 1,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          1,
+          1
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "tolerance=1e-09",
+      "changed_control": "tolerance",
+      "changed_value": 1e-09,
+      "settings": {
+        "tolerance": 1e-09,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.545606639707103,
+            "closure_gap": 0.13750144518799365,
+            "tangent_mismatch": 0.0402450713710259,
+            "position": [
+              2.125052188086791,
+              1.115887494022279,
+              0.8435742258641546
+            ]
+          },
+          {
+            "arclength": 49.01654906797254,
+            "closure_gap": 0.17894531862024207,
+            "tangent_mismatch": 0.10684898268104914,
+            "position": [
+              2.087991292529312,
+              1.0382029438682276,
+              0.8628906262000846
+            ]
+          },
+          {
+            "arclength": 73.21434607905064,
+            "closure_gap": 0.09333616204482047,
+            "tangent_mismatch": 0.0957784083153755,
+            "position": [
+              2.15574247259364,
+              1.0623996460355563,
+              0.9753081239259138
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-09,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5901341037664034,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.545606639707103,
+            "closure_gap": 0.13750144518799365,
+            "tangent_mismatch": 0.0402450713710259,
+            "position": [
+              2.125052188086791,
+              1.115887494022279,
+              0.8435742258641546
+            ],
+            "plane_coordinates": [
+              0.06109359298010266,
+              0.12318368530600297
+            ],
+            "plane_residual": -1.6848163453578886e-16
+          },
+          {
+            "arclength": 49.01654906797254,
+            "closure_gap": 0.17894531862024207,
+            "tangent_mismatch": 0.10684898268104914,
+            "position": [
+              2.087991292529312,
+              1.0382029438682276,
+              0.8628906262000846
+            ],
+            "plane_coordinates": [
+              0.1468043627485846,
+              0.10232255926276444
+            ],
+            "plane_residual": 2.4012410643958976e-15
+          },
+          {
+            "arclength": 73.21434607905064,
+            "closure_gap": 0.09333616204482047,
+            "tangent_mismatch": 0.0957784083153755,
+            "position": [
+              2.15574247259364,
+              1.0623996460355563,
+              0.9753081239259138
+            ],
+            "plane_coordinates": [
+              0.09136413269999222,
+              -0.01908492602121359
+            ],
+            "plane_residual": -2.8963602045731004e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 3,
+        "max_position_difference": 5.349725334434678e-12,
+        "max_arclength_difference": 1.0672351891116705e-11,
+        "shared_interval_counts": [
+          3,
+          3
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "tolerance=1e-10",
+      "changed_control": "tolerance",
+      "changed_value": 1e-10,
+      "settings": {
+        "tolerance": 1e-10,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.54560663970711,
+            "closure_gap": 0.13750144518798954,
+            "tangent_mismatch": 0.040245071371024954,
+            "position": [
+              2.125052188086795,
+              1.115887494022287,
+              0.8435742258641551
+            ]
+          },
+          {
+            "arclength": 49.01654906797257,
+            "closure_gap": 0.1789453186202435,
+            "tangent_mismatch": 0.10684898268105399,
+            "position": [
+              2.087991292529311,
+              1.0382029438682236,
+              0.8628906262000875
+            ]
+          },
+          {
+            "arclength": 73.21434607905067,
+            "closure_gap": 0.09333616204482248,
+            "tangent_mismatch": 0.09577840831538195,
+            "position": [
+              2.155742472593646,
+              1.0623996460355511,
+              0.9753081239259149
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-10,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5901460033945605,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.54560663970711,
+            "closure_gap": 0.13750144518798954,
+            "tangent_mismatch": 0.040245071371024954,
+            "position": [
+              2.125052188086795,
+              1.115887494022287,
+              0.8435742258641551
+            ],
+            "plane_coordinates": [
+              0.06109359298009375,
+              0.12318368530600281
+            ],
+            "plane_residual": -9.39871851332755e-16
+          },
+          {
+            "arclength": 49.01654906797257,
+            "closure_gap": 0.1789453186202435,
+            "tangent_mismatch": 0.10684898268105399,
+            "position": [
+              2.087991292529311,
+              1.0382029438682236,
+              0.8628906262000875
+            ],
+            "plane_coordinates": [
+              0.1468043627485885,
+              0.10232255926276129
+            ],
+            "plane_residual": 2.4977000154432913e-15
+          },
+          {
+            "arclength": 73.21434607905067,
+            "closure_gap": 0.09333616204482248,
+            "tangent_mismatch": 0.09577840831538195,
+            "position": [
+              2.155742472593646,
+              1.0623996460355511,
+              0.9753081239259149
+            ],
+            "plane_coordinates": [
+              0.09136413269999344,
+              -0.01908492602121762
+            ],
+            "plane_residual": 4.05000955653183e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 3,
+        "max_position_difference": 5.347452345486462e-12,
+        "max_arclength_difference": 1.0700773600547109e-11,
+        "shared_interval_counts": [
+          3,
+          3
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "max_step=0.15",
+      "changed_control": "max_step",
+      "changed_value": 0.15,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.15,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.545606639705984,
+            "closure_gap": 0.13750144519030924,
+            "tangent_mismatch": 0.0402450713717873,
+            "position": [
+              2.125052188086649,
+              1.115887494024674,
+              0.8435742258608491
+            ]
+          },
+          {
+            "arclength": 49.016549067982176,
+            "closure_gap": 0.17894531865959282,
+            "tangent_mismatch": 0.10684898269560893,
+            "position": [
+              2.0879912925058157,
+              1.038202943852711,
+              0.8628906261700406
+            ]
+          },
+          {
+            "arclength": 73.21434607902357,
+            "closure_gap": 0.09333616210566335,
+            "tangent_mismatch": 0.09577840838111822,
+            "position": [
+              2.1557424725713585,
+              1.0623996459818426,
+              0.9753081239463173
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 9874,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.15,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5901312192728911,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.545606639705984,
+            "closure_gap": 0.13750144519030924,
+            "tangent_mismatch": 0.0402450713717873,
+            "position": [
+              2.125052188086649,
+              1.115887494024674,
+              0.8435742258608491
+            ],
+            "plane_coordinates": [
+              0.061093592978117214,
+              0.12318368530957241
+            ],
+            "plane_residual": 1.0201175357213951e-15
+          },
+          {
+            "arclength": 49.016549067982176,
+            "closure_gap": 0.17894531865959282,
+            "tangent_mismatch": 0.10684898269560893,
+            "position": [
+              2.0879912925058157,
+              1.038202943852711,
+              0.8628906261700406
+            ],
+            "plane_coordinates": [
+              0.14680436277393452,
+              0.10232255929521235
+            ],
+            "plane_residual": -8.705807731432816e-16
+          },
+          {
+            "arclength": 73.21434607902357,
+            "closure_gap": 0.09333616210566335,
+            "tangent_mismatch": 0.09577840838111822,
+            "position": [
+              2.1557424725713585,
+              1.0623996459818426,
+              0.9753081239463173
+            ],
+            "plane_coordinates": [
+              0.09136413275754554,
+              -0.019084926043248445
+            ],
+            "plane_residual": -3.5286108563203573e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 3,
+        "max_position_difference": 6.361885176374023e-11,
+        "max_arclength_difference": 1.6399326341343112e-11,
+        "shared_interval_counts": [
+          3,
+          3
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "max_step=0.0375",
+      "changed_control": "max_step",
+      "changed_value": 0.0375,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.0375,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "evaluation_budget",
+        "section_returns": [],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 20000,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.0375,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 0.0,
+        "minimum_field_ratio": 1.5901422422451115,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ],
+        "reason": "evaluation budget exhausted"
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 0,
+        "comparison": "insufficient_returns",
+        "repeatable": null
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "near_zero=1e-06",
+      "changed_control": "near_zero",
+      "changed_value": 1e-06,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-06,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ]
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ]
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16126,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-06,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.59014029265515,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ],
+            "plane_coordinates": [
+              0.06109359298173901,
+              0.12318368530668115
+            ],
+            "plane_residual": -2.307145656497216e-16
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ],
+            "plane_coordinates": [
+              0.14680436274864037,
+              0.10232255925853137
+            ],
+            "plane_residual": 1.7342169023863504e-15
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ],
+            "plane_coordinates": [
+              0.09136413269651673,
+              -0.019084926025280592
+            ],
+            "plane_residual": -3.5510176089742807e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 3,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          3,
+          3
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "near_zero=1e-10",
+      "changed_control": "near_zero",
+      "changed_value": 1e-10,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-10,
+        "radius": 12,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ]
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ]
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16126,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-10,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.59014029265515,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ],
+            "plane_coordinates": [
+              0.06109359298173901,
+              0.12318368530668115
+            ],
+            "plane_residual": -2.307145656497216e-16
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ],
+            "plane_coordinates": [
+              0.14680436274864037,
+              0.10232255925853137
+            ],
+            "plane_residual": 1.7342169023863504e-15
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ],
+            "plane_coordinates": [
+              0.09136413269651673,
+              -0.019084926025280592
+            ],
+            "plane_residual": -3.5510176089742807e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 3,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          3,
+          3
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "radius=6",
+      "changed_control": "radius",
+      "changed_value": 6,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 6,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ]
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ]
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16126,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 6,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.59014029265515,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ],
+            "plane_coordinates": [
+              0.06109359298173901,
+              0.12318368530668115
+            ],
+            "plane_residual": -2.307145656497216e-16
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ],
+            "plane_coordinates": [
+              0.14680436274864037,
+              0.10232255925853137
+            ],
+            "plane_residual": 1.7342169023863504e-15
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ],
+            "plane_coordinates": [
+              0.09136413269651673,
+              -0.019084926025280592
+            ],
+            "plane_residual": -3.5510176089742807e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 3,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          3,
+          3
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "label": "radius=24",
+      "changed_control": "radius",
+      "changed_value": 24,
+      "settings": {
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "max_arclength": 80,
+        "samples": 128,
+        "near_zero": 1e-08,
+        "radius": 24,
+        "max_evaluations": 20000
+      },
+      "trace": {
+        "seed": [
+          2.1962708193557816,
+          1.1445994173765797,
+          0.9576363994637103
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ]
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ]
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16126,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 24,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.59014029265515,
+        "section_normal": [
+          0.7957203114065193,
+          -0.47351472992659466,
+          -0.3776413464620315
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5113815355107508,
+            -0.8593537834551417,
+            0.0
+          ],
+          [
+            -0.3245275198712408,
+            0.19311881162610112,
+            -0.9259519498561164
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.545606639706346,
+            "closure_gap": 0.13750144518932825,
+            "tangent_mismatch": 0.040245071371411055,
+            "position": [
+              2.1250521880857343,
+              1.1158874940210037,
+              0.8435742258635267
+            ],
+            "plane_coordinates": [
+              0.06109359298173901,
+              0.12318368530668115
+            ],
+            "plane_residual": -2.307145656497216e-16
+          },
+          {
+            "arclength": 49.0165490679664,
+            "closure_gap": 0.17894531861786733,
+            "tangent_mismatch": 0.10684898268249444,
+            "position": [
+              2.0879912925306567,
+              1.0382029438673626,
+              0.8628906262040045
+            ],
+            "plane_coordinates": [
+              0.14680436274864037,
+              0.10232255925853137
+            ],
+            "plane_residual": 1.7342169023863504e-15
+          },
+          {
+            "arclength": 73.21434607903997,
+            "closure_gap": 0.09333616204225001,
+            "tangent_mismatch": 0.09577840831355218,
+            "position": [
+              2.1557424725967365,
+              1.0623996460377578,
+              0.9753081239296799
+            ],
+            "plane_coordinates": [
+              0.09136413269651673,
+              -0.019084926025280592
+            ],
+            "plane_residual": -3.5510176089742807e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "prefix_comparison": {
+        "common_returns": 3,
+        "max_position_difference": 0.0,
+        "max_arclength_difference": 0.0,
+        "shared_interval_counts": [
+          3,
+          3
+        ],
+        "repeatable": true,
+        "comparison": "repeatable_prefix"
+      }
+    }
+  ],
+  "replications": [
+    {
+      "pair": [
+        2,
+        1
+      ],
+      "trace": {
+        "seed": [
+          2.7873721598931773,
+          0.9859963257737787,
+          0.9074020536719967
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 15.028639548651752,
+            "closure_gap": 0.34258433859098614,
+            "tangent_mismatch": 0.10177874119057016,
+            "position": [
+              2.642070107407832,
+              1.081786221360138,
+              0.6123162381963562
+            ]
+          },
+          {
+            "arclength": 30.76329457370679,
+            "closure_gap": 0.08047516544013361,
+            "tangent_mismatch": 0.025581388620601504,
+            "position": [
+              2.850499188612864,
+              1.0359081068374563,
+              0.9071908459727193
+            ]
+          },
+          {
+            "arclength": 45.936502587707906,
+            "closure_gap": 0.33613986326731027,
+            "tangent_mismatch": 0.08667301255711675,
+            "position": [
+              2.5980677615523557,
+              1.032018837484057,
+              0.6334754560914352
+            ]
+          },
+          {
+            "arclength": 61.50728494005743,
+            "closure_gap": 0.152466750123057,
+            "tangent_mismatch": 0.05264122912792674,
+            "position": [
+              2.8924731221285938,
+              1.0916946996052102,
+              0.8753434916383177
+            ]
+          },
+          {
+            "arclength": 76.87610642911913,
+            "closure_gap": 0.31186501992558946,
+            "tangent_mismatch": 0.07098731376651905,
+            "position": [
+              2.579227646822687,
+              0.9874519981309525,
+              0.6751661103948516
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.1224303690514468,
+        "section_normal": [
+          0.5401897626845859,
+          -0.6852838713268767,
+          -0.48844757752497814
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.7853417139061755,
+            -0.6190625108976564,
+            0.0
+          ],
+          [
+            -0.30237958378449065,
+            0.38359825768678585,
+            -0.8725932408688373
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 15.028639548651752,
+            "closure_gap": 0.34258433859098614,
+            "tangent_mismatch": 0.10177874119057016,
+            "position": [
+              2.642070107407832,
+              1.081786221360138,
+              0.6123162381963562
+            ],
+            "plane_coordinates": [
+              0.054811829652610396,
+              0.33817109926479033
+            ],
+            "plane_residual": -2.216090394955962e-16
+          },
+          {
+            "arclength": 30.76329457370679,
+            "closure_gap": 0.08047516544013361,
+            "tangent_mismatch": 0.025581388620601504,
+            "position": [
+              2.850499188612864,
+              1.0359081068374563,
+              0.9071908459727193
+            ],
+            "plane_coordinates": [
+              -0.0804748014371775,
+              0.00024204599506946298
+            ],
+            "plane_residual": 8.638682547510642e-16
+          },
+          {
+            "arclength": 45.936502587707906,
+            "closure_gap": 0.33613986326731027,
+            "tangent_mismatch": 0.08667301255711675,
+            "position": [
+              2.5980677615523557,
+              1.032018837484057,
+              0.6334754560914352
+            ],
+            "plane_coordinates": [
+              0.12017782898577645,
+              0.3139224380282995
+            ],
+            "plane_residual": 1.9832379132213185e-15
+          },
+          {
+            "arclength": 61.50728494005743,
+            "closure_gap": 0.152466750123057,
+            "tangent_mismatch": 0.05264122912792674,
+            "position": [
+              2.8924731221285938,
+              1.0916946996052102,
+              0.8753434916383177
+            ],
+            "plane_coordinates": [
+              -0.14797407051703526,
+              0.03673941136853155
+            ],
+            "plane_residual": -2.8274871874469627e-15
+          },
+          {
+            "arclength": 76.87610642911913,
+            "closure_gap": 0.31186501992558946,
+            "tangent_mismatch": 0.07098731376651905,
+            "position": [
+              2.579227646822687,
+              0.9874519981309525,
+              0.6751661103948516
+            ],
+            "plane_coordinates": [
+              0.16256341645046896,
+              0.26614455899969053
+            ],
+            "plane_residual": -4.7592840071098996e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      }
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "trace": {
+        "seed": [
+          1.6299311061836979,
+          0.5765667409202748,
+          0.8891320715311515
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 19.962567736261352,
+            "closure_gap": 0.16942033361856507,
+            "tangent_mismatch": 0.2555752582714034,
+            "position": [
+              1.6568444545408427,
+              0.7111701244250315,
+              0.7898302574857663
+            ]
+          },
+          {
+            "arclength": 40.09069997520819,
+            "closure_gap": 0.32517036829654455,
+            "tangent_mismatch": 0.24192977753634332,
+            "position": [
+              1.5376023724572196,
+              0.6586640523675098,
+              0.588347755451155
+            ]
+          },
+          {
+            "arclength": 60.49933948902452,
+            "closure_gap": 0.33037920798671483,
+            "tangent_mismatch": 0.18988306095296142,
+            "position": [
+              1.4771827730324842,
+              0.5365237848046319,
+              0.598933984950665
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16330,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5212611076258449,
+        "section_normal": [
+          0.8192359719562732,
+          -0.4373978879946916,
+          -0.37085780270966884
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.4709839092858443,
+            -0.8821418010693198,
+            0.0
+          ],
+          [
+            -0.32714917002291777,
+            0.17466805770935823,
+            -0.9286896630033934
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.962567736261352,
+            "closure_gap": 0.16942033361856507,
+            "tangent_mismatch": 0.2555752582714034,
+            "position": [
+              1.6568444545408427,
+              0.7111701244250315,
+              0.7898302574857663
+            ],
+            "plane_coordinates": [
+              -0.13141502517613024,
+              0.10692680020174052
+            ],
+            "plane_residual": -1.0369671990337121e-15
+          },
+          {
+            "arclength": 40.09069997520819,
+            "closure_gap": 0.32517036829654455,
+            "tangent_mismatch": 0.24192977753634332,
+            "position": [
+              1.5376023724572196,
+              0.6586640523675098,
+              0.588347755451155
+            ],
+            "plane_coordinates": [
+              -0.028936122233104267,
+              0.32388033167857117
+            ],
+            "plane_residual": -8.313478951054254e-15
+          },
+          {
+            "arclength": 60.49933948902452,
+            "closure_gap": 0.33037920798671483,
+            "tangent_mismatch": 0.18988306095296142,
+            "position": [
+              1.4771827730324842,
+              0.5365237848046319,
+              0.598933984950665
+            ],
+            "plane_coordinates": [
+              0.10726557251244809,
+              0.31248122827380487
+            ],
+            "plane_residual": 6.891605317525021e-16
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      }
+    },
+    {
+      "pair": [
+        3,
+        2
+      ],
+      "trace": {
+        "seed": [
+          2.0462708193557817,
+          1.1445994173765797,
+          1.1576363994637102
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 24.357175166188263,
+            "closure_gap": 0.1901622906423783,
+            "tangent_mismatch": 0.1899474430726102,
+            "position": [
+              2.0931464946500786,
+              1.3026022335600163,
+              1.0627708212692821
+            ]
+          },
+          {
+            "arclength": 49.27806135702089,
+            "closure_gap": 0.3451279980283252,
+            "tangent_mismatch": 0.18502089830365295,
+            "position": [
+              1.9303816231506914,
+              1.2172058573454692,
+              0.8407589245605203
+            ]
+          },
+          {
+            "arclength": 74.01640042574614,
+            "closure_gap": 0.3163174678558606,
+            "tangent_mismatch": 0.10373239238474043,
+            "position": [
+              1.8751284105892643,
+              1.074215030246593,
+              0.9010958482039263
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16234,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.5587668460889434,
+        "section_normal": [
+          0.7878112029753326,
+          -0.47159078985140274,
+          -0.3961762680851662
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            -0.5136178397822798,
+            -0.8580190642738565,
+            0.0
+          ],
+          [
+            -0.33992679082994287,
+            0.20348319898690842,
+            -0.9181744739460527
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 24.357175166188263,
+            "closure_gap": 0.1901622906423783,
+            "tangent_mismatch": 0.1899474430726102,
+            "position": [
+              2.0931464946500786,
+              1.3026022335600163,
+              1.0627708212692821
+            ],
+            "plane_coordinates": [
+              -0.15964561157733878,
+              0.10331977296942649
+            ],
+            "plane_residual": -1.6766179855246925e-15
+          },
+          {
+            "arclength": 49.27806135702089,
+            "closure_gap": 0.3451279980283252,
+            "tangent_mismatch": 0.18502089830365295,
+            "position": [
+              1.9303816231506914,
+              1.2172058573454692,
+              0.8407589245605203
+            ],
+            "plane_coordinates": [
+              -0.0027749510733992354,
+              0.34511684205436843
+            ],
+            "plane_residual": -6.876667324960598e-15
+          },
+          {
+            "arclength": 74.01640042574614,
+            "closure_gap": 0.3163174678558606,
+            "tangent_mismatch": 0.10373239238474043,
+            "position": [
+              1.8751284105892643,
+              1.074215030246593,
+              0.9010958482039263
+            ],
+            "plane_coordinates": [
+              0.14829294027055467,
+              0.2794028352337483
+            ],
+            "plane_residual": 3.632704050564266e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      }
+    }
+  ],
+  "closed_controls": [
+    {
+      "label": "offcore_hopfion",
+      "trace": {
+        "seed": [
+          2.449390002119934,
+          0.39470598069370566,
+          0.39470598069370566
+        ],
+        "closed": true,
+        "status": "closed_candidate",
+        "section_returns": [
+          {
+            "arclength": 9.25779710850981,
+            "closure_gap": 1.0998634957252448e-14,
+            "tangent_mismatch": 3.2468092250081424e-15,
+            "position": [
+              2.449390002119936,
+              0.39470598069369883,
+              0.3947059806937141
+            ]
+          },
+          {
+            "arclength": 18.51559421701962,
+            "closure_gap": 2.155241446323363e-14,
+            "tangent_mismatch": 5.55555424028711e-15,
+            "position": [
+              2.4493900021199395,
+              0.3947059806936945,
+              0.3947059806937233
+            ]
+          },
+          {
+            "arclength": 27.773391325529435,
+            "closure_gap": 2.796054312693394e-14,
+            "tangent_mismatch": 8.24335923115108e-15,
+            "position": [
+              2.449390002119942,
+              0.39470598069368995,
+              0.39470598069372737
+            ]
+          },
+          {
+            "arclength": 37.03118843403926,
+            "closure_gap": 3.573232581978686e-14,
+            "tangent_mismatch": 9.829236515324921e-15,
+            "position": [
+              2.449390002119948,
+              0.39470598069368923,
+              0.39470598069373425
+            ]
+          },
+          {
+            "arclength": 46.2889855425491,
+            "closure_gap": 4.4350630715356545e-14,
+            "tangent_mismatch": 1.3842215079502172e-14,
+            "position": [
+              2.4493900021199515,
+              0.3947059806936821,
+              0.394705980693739
+            ]
+          },
+          {
+            "arclength": 55.54678265105894,
+            "closure_gap": 5.2914212378738593e-14,
+            "tangent_mismatch": 1.6677382853692214e-14,
+            "position": [
+              2.4493900021199546,
+              0.394705980693677,
+              0.3947059806937452
+            ]
+          },
+          {
+            "arclength": 64.80457975956878,
+            "closure_gap": 6.120926965189722e-14,
+            "tangent_mismatch": 1.6204027382415373e-14,
+            "position": [
+              2.449390002119955,
+              0.394705980693677,
+              0.39470598069375556
+            ]
+          },
+          {
+            "arclength": 74.06237686807863,
+            "closure_gap": 6.977027421677341e-14,
+            "tangent_mismatch": 1.8096039312958498e-14,
+            "position": [
+              2.449390002119955,
+              0.39470598069367174,
+              0.39470598069376295
+            ]
+          }
+        ],
+        "accepted_return": {
+          "arclength": 9.25779710850981,
+          "closure_gap": 1.0998634957252448e-14,
+          "tangent_mismatch": 3.2468092250081424e-15,
+          "position": [
+            2.449390002119936,
+            0.39470598069369883,
+            0.3947059806937141
+          ]
+        },
+        "endpoint_correction": 1.0998634957252448e-14,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 0.7071067811865472,
+        "section_normal": [
+          0.3724461220180271,
+          -0.6838250647133887,
+          -0.6274290135652499
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            0.0,
+            -0.676069644298823,
+            0.7368377270862716
+          ],
+          [
+            -0.9280538164318559,
+            -0.2744323540098593,
+            -0.25179951723320365
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 9.25779710850981,
+            "closure_gap": 1.0998634957252448e-14,
+            "tangent_mismatch": 3.2468092250081424e-15,
+            "position": [
+              2.449390002119936,
+              0.39470598069369883,
+              0.3947059806937141
+            ],
+            "plane_coordinates": [
+              1.0833328721086473e-14,
+              -1.8993733920143833e-15
+            ],
+            "plane_residual": 3.661231331473692e-17
+          },
+          {
+            "arclength": 18.51559421701962,
+            "closure_gap": 2.155241446323363e-14,
+            "tangent_mismatch": 5.55555424028711e-15,
+            "position": [
+              2.4493900021199395,
+              0.3947059806936945,
+              0.3947059806937233
+            ],
+            "plane_coordinates": [
+              2.0550472197150437e-14,
+              -6.3285215790928725e-15
+            ],
+            "plane_residual": -1.4609846994766287e-15
+          },
+          {
+            "arclength": 27.773391325529435,
+            "closure_gap": 2.796054312693394e-14,
+            "tangent_mismatch": 8.24335923115108e-15,
+            "position": [
+              2.449390002119942,
+              0.39470598069368995,
+              0.39470598069372737
+            ],
+            "plane_coordinates": [
+              2.6613781213674586e-14,
+              -8.572531829930102e-15
+            ],
+            "plane_residual": 1.0158488386436866e-16
+          },
+          {
+            "arclength": 37.03118843403926,
+            "closure_gap": 3.573232581978686e-14,
+            "tangent_mismatch": 9.829236515324921e-15,
+            "position": [
+              2.449390002119948,
+              0.39470598069368923,
+              0.39470598069373425
+            ],
+            "plane_coordinates": [
+              3.2173599571299144e-14,
+              -1.5465524475693038e-14
+            ],
+            "plane_residual": -1.5735792985566137e-15
+          },
+          {
+            "arclength": 46.2889855425491,
+            "closure_gap": 4.4350630715356545e-14,
+            "tangent_mismatch": 1.3842215079502172e-14,
+            "position": [
+              2.4493900021199515,
+              0.3947059806936821,
+              0.394705980693739
+            ],
+            "plane_coordinates": [
+              4.0494996420645256e-14,
+              -1.8014755380974747e-14
+            ],
+            "plane_residual": 1.6131640665154622e-15
+          },
+          {
+            "arclength": 55.54678265105894,
+            "closure_gap": 5.2914212378738593e-14,
+            "tangent_mismatch": 1.6677382853692214e-14,
+            "position": [
+              2.4493900021199546,
+              0.394705980693677,
+              0.3947059806937452
+            ],
+            "plane_coordinates": [
+              4.848790247888968e-14,
+              -2.1049715639869046e-14
+            ],
+            "plane_residual": 2.3972184590872795e-15
+          },
+          {
+            "arclength": 64.80457975956878,
+            "closure_gap": 6.120926965189722e-14,
+            "tangent_mismatch": 1.6204027382415373e-14,
+            "position": [
+              2.449390002119955,
+              0.394705980693677,
+              0.39470598069375556
+            ],
+            "plane_coordinates": [
+              5.613670934261077e-14,
+              -2.407568068807045e-14
+            ],
+            "plane_residual": -3.950462619488224e-15
+          },
+          {
+            "arclength": 74.06237686807863,
+            "closure_gap": 6.977027421677341e-14,
+            "tangent_mismatch": 1.8096039312958498e-14,
+            "position": [
+              2.449390002119955,
+              0.39470598069367174,
+              0.39470598069376295
+            ],
+            "plane_coordinates": [
+              6.51420632446838e-14,
+              -2.4487476960767248e-14
+            ],
+            "plane_residual": -4.976568356334051e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      }
+    },
+    {
+      "label": "trefoil_core",
+      "trace": {
+        "seed": [
+          1.6299311061836979,
+          0.5765667409202748,
+          0.6891320715311514
+        ],
+        "closed": true,
+        "status": "closed_candidate",
+        "section_returns": [
+          {
+            "arclength": 19.869176531592057,
+            "closure_gap": 5.5080154829229797e-14,
+            "tangent_mismatch": 9.17020192315518e-14,
+            "position": [
+              1.6299311061836699,
+              0.5765667409202287,
+              0.6891320715311401
+            ]
+          },
+          {
+            "arclength": 39.73835306318409,
+            "closure_gap": 8.346226657533712e-14,
+            "tangent_mismatch": 1.0795942787387167e-13,
+            "position": [
+              1.6299311061837047,
+              0.5765667409202249,
+              0.6891320715312179
+            ]
+          },
+          {
+            "arclength": 59.607529594776004,
+            "closure_gap": 7.739504775285147e-14,
+            "tangent_mismatch": 3.9507953598236274e-14,
+            "position": [
+              1.6299311061837332,
+              0.5765667409202794,
+              0.6891320715312201
+            ]
+          },
+          {
+            "arclength": 79.47670612636797,
+            "closure_gap": 1.5224635321310414e-14,
+            "tangent_mismatch": 8.803200524481499e-15,
+            "position": [
+              1.6299311061836899,
+              0.576566740920272,
+              0.6891320715311388
+            ]
+          }
+        ],
+        "accepted_return": {
+          "arclength": 19.869176531592057,
+          "closure_gap": 5.5080154829229797e-14,
+          "tangent_mismatch": 9.17020192315518e-14,
+          "position": [
+            1.6299311061836699,
+            0.5765667409202287,
+            0.6891320715311401
+          ]
+        },
+        "endpoint_correction": 5.5080154829229797e-14,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.609932341437989,
+        "section_normal": [
+          0.8272586699252578,
+          -0.37822718549177264,
+          -0.41543626368970915
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            0.4487744597820351,
+            -0.0,
+            0.8936450549560169
+          ],
+          [
+            -0.3380008539646548,
+            -0.9257128043594149,
+            0.16973870084394987
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 19.869176531592057,
+            "closure_gap": 5.5080154829229797e-14,
+            "tangent_mismatch": 9.17020192315518e-14,
+            "position": [
+              1.6299311061836699,
+              0.5765667409202287,
+              0.6891320715311401
+            ],
+            "plane_coordinates": [
+              -2.2675523622182787e-14,
+              5.0185820113198536e-14
+            ],
+            "plane_residual": -1.013678468467669e-15
+          },
+          {
+            "arclength": 39.73835306318409,
+            "closure_gap": 8.346226657533712e-14,
+            "tangent_mismatch": 1.0795942787387167e-13,
+            "position": [
+              1.6299311061837047,
+              0.5765667409202249,
+              0.6891320715312179
+            ],
+            "plane_coordinates": [
+              6.251859079599468e-14,
+              5.5210079932416674e-14
+            ],
+            "plane_residual": -3.036909717421221e-15
+          },
+          {
+            "arclength": 59.607529594776004,
+            "closure_gap": 7.739504775285147e-14,
+            "tangent_mismatch": 3.9507953598236274e-14,
+            "position": [
+              1.6299311061837332,
+              0.5765667409202794,
+              0.6891320715312201
+            ],
+            "plane_coordinates": [
+              7.725781872341537e-14,
+              -4.481997075377472e-15
+            ],
+            "plane_residual": -1.0651596041700493e-15
+          },
+          {
+            "arclength": 79.47670612636797,
+            "closure_gap": 1.5224635321310414e-14,
+            "tangent_mismatch": 8.803200524481499e-15,
+            "position": [
+              1.6299311061836899,
+              0.576566740920272,
+              0.6891320715311388
+            ],
+            "plane_coordinates": [
+              -1.4897782715161118e-14,
+              3.1229096751051155e-15
+            ],
+            "plane_residual": -3.0500163913342883e-16
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      }
+    }
+  ],
+  "manufactured_torus_controls": [
+    {
+      "omega": 0.5,
+      "trace": {
+        "seed": [
+          2.477668244562803,
+          0.0,
+          0.14776010333066977
+        ],
+        "closed": true,
+        "status": "closed_candidate",
+        "section_returns": [
+          {
+            "arclength": 12.081114901720362,
+            "closure_gap": 1.0000000000000007,
+            "tangent_mismatch": 0.2625697067555348,
+            "position": [
+              1.5223317554371962,
+              9.8879238130678e-17,
+              -0.14776010333066997
+            ]
+          },
+          {
+            "arclength": 25.33461010797641,
+            "closure_gap": 1.9688859266251634e-15,
+            "tangent_mismatch": 8.569533971325427e-16,
+            "position": [
+              2.477668244562803,
+              -1.4988010832439613e-15,
+              0.1477601033306685
+            ]
+          },
+          {
+            "arclength": 37.41572500969678,
+            "closure_gap": 0.9999999999999999,
+            "tangent_mismatch": 0.2625697067555342,
+            "position": [
+              1.522331755437197,
+              1.6792123247455493e-15,
+              -0.14776010333066963
+            ]
+          },
+          {
+            "arclength": 50.669220215952826,
+            "closure_gap": 2.2175384837706715e-15,
+            "tangent_mismatch": 9.323973278041923e-16,
+            "position": [
+              2.4776682445628033,
+              -2.1510571102112408e-15,
+              0.14776010333066947
+            ]
+          },
+          {
+            "arclength": 62.750335117673195,
+            "closure_gap": 0.9999999999999999,
+            "tangent_mismatch": 0.2625697067555339,
+            "position": [
+              1.5223317554371971,
+              2.7547408798511697e-15,
+              -0.14776010333067022
+            ]
+          },
+          {
+            "arclength": 76.00383032392925,
+            "closure_gap": 5.320389830700927e-15,
+            "tangent_mismatch": 2.349294700517394e-15,
+            "position": [
+              2.4776682445628033,
+              5.051514762044462e-15,
+              0.14776010333067138
+            ]
+          }
+        ],
+        "accepted_return": {
+          "arclength": 25.33461010797641,
+          "closure_gap": 1.9688859266251634e-15,
+          "tangent_mismatch": 8.569533971325427e-16,
+          "position": [
+            2.477668244562803,
+            -1.4988010832439613e-15,
+            0.1477601033306685
+          ]
+        },
+        "endpoint_correction": 1.9688859266251634e-15,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.52069116887013,
+        "section_normal": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 12.081114901720362,
+            "closure_gap": 1.0000000000000007,
+            "tangent_mismatch": 0.2625697067555348,
+            "position": [
+              1.5223317554371962,
+              9.8879238130678e-17,
+              -0.14776010333066997
+            ],
+            "plane_coordinates": [
+              0.2955202066613397,
+              0.9553364891256066
+            ],
+            "plane_residual": 9.8879238130678e-17
+          },
+          {
+            "arclength": 25.33461010797641,
+            "closure_gap": 1.9688859266251634e-15,
+            "tangent_mismatch": 8.569533971325427e-16,
+            "position": [
+              2.477668244562803,
+              -1.4988010832439613e-15,
+              0.1477601033306685
+            ],
+            "plane_coordinates": [
+              1.27675647831893e-15,
+              0.0
+            ],
+            "plane_residual": -1.4988010832439613e-15
+          },
+          {
+            "arclength": 37.41572500969678,
+            "closure_gap": 0.9999999999999999,
+            "tangent_mismatch": 0.2625697067555342,
+            "position": [
+              1.522331755437197,
+              1.6792123247455493e-15,
+              -0.14776010333066963
+            ],
+            "plane_coordinates": [
+              0.2955202066613394,
+              0.955336489125606
+            ],
+            "plane_residual": 1.6792123247455493e-15
+          },
+          {
+            "arclength": 50.669220215952826,
+            "closure_gap": 2.2175384837706715e-15,
+            "tangent_mismatch": 9.323973278041923e-16,
+            "position": [
+              2.4776682445628033,
+              -2.1510571102112408e-15,
+              0.14776010333066947
+            ],
+            "plane_coordinates": [
+              3.0531133177191805e-16,
+              -4.440892098500626e-16
+            ],
+            "plane_residual": -2.1510571102112408e-15
+          },
+          {
+            "arclength": 62.750335117673195,
+            "closure_gap": 0.9999999999999999,
+            "tangent_mismatch": 0.2625697067555339,
+            "position": [
+              1.5223317554371971,
+              2.7547408798511697e-15,
+              -0.14776010333067022
+            ],
+            "plane_coordinates": [
+              0.29552020666134,
+              0.9553364891256058
+            ],
+            "plane_residual": 2.7547408798511697e-15
+          },
+          {
+            "arclength": 76.00383032392925,
+            "closure_gap": 5.320389830700927e-15,
+            "tangent_mismatch": 2.349294700517394e-15,
+            "position": [
+              2.4776682445628033,
+              5.051514762044462e-15,
+              0.14776010333067138
+            ],
+            "plane_coordinates": [
+              -1.609823385706477e-15,
+              -4.440892098500626e-16
+            ],
+            "plane_residual": 5.051514762044462e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "analytic_check": {
+        "return_count": 6,
+        "max_wrapped_angle_error": 4.287501758288913e-15,
+        "max_torus_equation_error": 9.43689570931383e-16,
+        "known_control_type": "periodic",
+        "scope": "analytic manufactured control only; no Maxwell rotation number assigned"
+      }
+    },
+    {
+      "omega": 1.4142135623730951,
+      "trace": {
+        "seed": [
+          2.477668244562803,
+          0.0,
+          0.14776010333066977
+        ],
+        "closed": false,
+        "status": "unresolved_budget",
+        "section_returns": [
+          {
+            "arclength": 13.329190222913263,
+            "closure_gap": 0.9639025328498732,
+            "tangent_mismatch": 0.6758226600034278,
+            "position": [
+              1.514213834533834,
+              -7.7021722333370235e-16,
+              0.11837145534998597
+            ]
+          },
+          {
+            "arclength": 26.366527621661167,
+            "closure_gap": 0.5132883971570646,
+            "tangent_mismatch": 0.28864771017981905,
+            "position": [
+              2.35615085539131,
+              -3.656797087359109e-15,
+              -0.350936701135744
+            ]
+          },
+          {
+            "arclength": 40.272418839269115,
+            "closure_gap": 0.69057097734799,
+            "tangent_mismatch": 0.4377308732001572,
+            "position": [
+              1.8744773081929342,
+              -1.1522900689175941e-15,
+              0.4839876587698383
+            ]
+          },
+          {
+            "arclength": 52.982532444242615,
+            "closure_gap": 0.8810248207123897,
+            "tangent_mismatch": 0.5569343292197743,
+            "position": [
+              1.8593003561637735,
+              9.645062526431047e-16,
+              -0.4797953837047191
+            ]
+          },
+          {
+            "arclength": 66.87798212144794,
+            "closure_gap": 0.22141584737647785,
+            "tangent_mismatch": 0.12472046881822398,
+            "position": [
+              2.3670241151232414,
+              -1.7763568394002505e-15,
+              0.3395486694393023
+            ]
+          },
+          {
+            "arclength": 79.93303697805077,
+            "closure_gap": 0.9989311250656104,
+            "tangent_mismatch": 0.6998781289826305,
+            "position": [
+              1.5107275715771533,
+              3.282096816548119e-15,
+              -0.10301694416551833
+            ]
+          }
+        ],
+        "accepted_return": null,
+        "endpoint_correction": 0.0,
+        "function_evaluations": 16039,
+        "max_arclength": 80,
+        "tolerance": 1e-11,
+        "max_step": 0.075,
+        "near_zero_floor": 1e-08,
+        "observation_radius": 12,
+        "evaluated_arclength": 80.0,
+        "minimum_field_ratio": 1.6583123981123717,
+        "section_normal": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "return_map": {
+        "basis": [
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "returns": [
+          {
+            "arclength": 13.329190222913263,
+            "closure_gap": 0.9639025328498732,
+            "tangent_mismatch": 0.6758226600034278,
+            "position": [
+              1.514213834533834,
+              -7.7021722333370235e-16,
+              0.11837145534998597
+            ],
+            "plane_coordinates": [
+              0.029388647980683802,
+              0.9634544100289688
+            ],
+            "plane_residual": -7.7021722333370235e-16
+          },
+          {
+            "arclength": 26.366527621661167,
+            "closure_gap": 0.5132883971570646,
+            "tangent_mismatch": 0.28864771017981905,
+            "position": [
+              2.35615085539131,
+              -3.656797087359109e-15,
+              -0.350936701135744
+            ],
+            "plane_coordinates": [
+              0.49869680446641373,
+              0.12151738917149268
+            ],
+            "plane_residual": -3.656797087359109e-15
+          },
+          {
+            "arclength": 40.272418839269115,
+            "closure_gap": 0.69057097734799,
+            "tangent_mismatch": 0.4377308732001572,
+            "position": [
+              1.8744773081929342,
+              -1.1522900689175941e-15,
+              0.4839876587698383
+            ],
+            "plane_coordinates": [
+              -0.3362275554391685,
+              0.6031909363698686
+            ],
+            "plane_residual": -1.1522900689175941e-15
+          },
+          {
+            "arclength": 52.982532444242615,
+            "closure_gap": 0.8810248207123897,
+            "tangent_mismatch": 0.5569343292197743,
+            "position": [
+              1.8593003561637735,
+              9.645062526431047e-16,
+              -0.4797953837047191
+            ],
+            "plane_coordinates": [
+              0.6275554870353889,
+              0.6183678883990293
+            ],
+            "plane_residual": 9.645062526431047e-16
+          },
+          {
+            "arclength": 66.87798212144794,
+            "closure_gap": 0.22141584737647785,
+            "tangent_mismatch": 0.12472046881822398,
+            "position": [
+              2.3670241151232414,
+              -1.7763568394002505e-15,
+              0.3395486694393023
+            ],
+            "plane_coordinates": [
+              -0.1917885661086325,
+              0.11064412943956148
+            ],
+            "plane_residual": -1.7763568394002505e-15
+          },
+          {
+            "arclength": 79.93303697805077,
+            "closure_gap": 0.9989311250656104,
+            "tangent_mismatch": 0.6998781289826305,
+            "position": [
+              1.5107275715771533,
+              3.282096816548119e-15,
+              -0.10301694416551833
+            ],
+            "plane_coordinates": [
+              0.2507770474961881,
+              0.9669406729856496
+            ],
+            "plane_residual": 3.282096816548119e-15
+          }
+        ],
+        "angular_interpretation": "not_assigned"
+      },
+      "analytic_check": {
+        "return_count": 6,
+        "max_wrapped_angle_error": 1.2006490476736768e-14,
+        "max_torus_equation_error": 8.854028621385623e-15,
+        "known_control_type": "irrational_linear_torus_flow_analytic_target",
+        "scope": "analytic manufactured control only; no Maxwell rotation number assigned"
+      }
+    }
+  ],
+  "status_counts": {
+    "unresolved_budget": 30,
+    "evaluation_budget": 3
+  },
+  "comparison_counts": {
+    "repeatable_prefix": 29,
+    "insufficient_returns": 4
+  },
+  "max_section_plane_residual": 9.626620676156286e-15,
+  "acceptance": {
+    "exactly_33_diagnostic_and_3_replication_runs": true,
+    "one_control_changes_per_variant": true,
+    "closed_Maxwell_controls_close": true,
+    "manufactured_periodic_control_closes": true,
+    "manufactured_irrational_control_not_falsely_closed": true,
+    "manufactured_return_angles_below_1e-6": true,
+    "manufactured_torus_residual_below_1e-7": true,
+    "section_plane_residual_below_1e-9": true,
+    "every_return_position_retained": true,
+    "unresolved_endpoints_not_corrected": true
+  },
+  "Maxwell_angular_interpretation": "not_assigned: no invariant surface or angular coordinate certified",
+  "scope": "three selected Maxwell snapshot seeds and three replications; no complete orbit classification or new dynamics"
+}

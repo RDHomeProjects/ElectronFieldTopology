@@ -55,3 +55,7 @@ Global norm conservation or a persistent helicity value alone cannot satisfy a s
 ## Post-S4-B priority assessment
 
 See [the direction assessment](post-s4b-direction.md). Recommend a bounded return-map/control-sensitivity follow-up (proposed S4-C) before broader sampling or more families, followed by a focused S5 model-feasibility decision for the particle objective. Preserve S4 as the Maxwell reference; more knot examples alone do not supply a binding or charge mechanism. This recommendation does not authorise a broad search, new dynamics, level 4, or progression to S6/S7.
+
+## S4-C diagnosis and model-feasibility decision
+
+The maintainer authorised [the bounded return-map diagnosis](models/B0-S4C-ReturnMap.md) followed by [ADR-0006](decisions/ADR-0006-model-feasibility.md). The candidate comparison is [equation-mapped](models/S5-feasibility-audit.md). The decision retains B0 as a reference, rejects the unchanged/null-preserving route as an electron-binding fix, conditionally advances only a small static-energy mechanism reference, and defers a charged internal-field solver. No extended dynamics are implemented; physical charge, causal/stability and quantum gates remain explicit.

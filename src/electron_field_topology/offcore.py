@@ -21,7 +21,8 @@ def field_ratio(points, time, p, q):
 
 
 def trace_line(field, seed, *, ratio=None, tolerance=1e-9, max_step=.15,
-               max_arclength=40., samples=256, near_zero=1e-8, radius=12., max_evaluations=20000):
+               max_arclength=40., samples=256, near_zero=1e-8, radius=12., max_evaluations=20000,
+               section_normal=None):
     seed = np.asarray(seed, dtype=float)
     numbers = [tolerance, max_step, max_arclength, near_zero, radius]
     if (seed.shape != (3,) or not np.isfinite(seed).all() or not np.isfinite(numbers).all()
@@ -30,6 +31,11 @@ def trace_line(field, seed, *, ratio=None, tolerance=1e-9, max_step=.15,
             or isinstance(samples, bool) or not isinstance(samples, int) or not 32 <= samples <= 512
             or isinstance(max_evaluations, bool) or not isinstance(max_evaluations, int) or not 10 <= max_evaluations <= 30000):
         raise ValueError('invalid bounded off-core trace settings')
+    normal = None if section_normal is None else np.array(section_normal, dtype=float, copy=True)
+    if normal is not None:
+        if normal.shape != (3,) or not np.isfinite(normal).all() or np.linalg.norm(normal) == 0:
+            raise ValueError('finite nonzero section normal required')
+        normal /= np.linalg.norm(normal)
     calls = 0; minimum_ratio = np.inf
     def magnitude(x):
         return float(ratio(x) if ratio is not None else np.linalg.norm(field(x)))
@@ -43,6 +49,7 @@ def trace_line(field, seed, *, ratio=None, tolerance=1e-9, max_step=.15,
             'accepted_return': None, 'endpoint_correction': 0., 'function_evaluations': 0,
             'max_arclength': max_arclength, 'tolerance': tolerance, 'max_step': max_step,
             'near_zero_floor': near_zero, 'observation_radius': radius,
+            'evaluated_arclength': 0.,
             'minimum_field_ratio': value if np.isfinite(value) else None}
     if not np.isfinite(value):
         meta['status'] = 'invalid_field'; return seed[None, :], meta
@@ -53,13 +60,18 @@ def trace_line(field, seed, *, ratio=None, tolerance=1e-9, max_step=.15,
     try: initial = direction(seed)
     except ValueError:
         meta['status'] = 'invalid_field'; return seed[None, :], meta
+    if normal is None: normal = initial.copy()
+    if abs(np.dot(normal, initial)) < 1e-8:
+        raise ValueError('section must be transverse at the seed')
+    if np.dot(normal, initial) < 0: normal *= -1
+    meta['section_normal'] = normal.tolist()
     def rhs(s, x):
         nonlocal calls, minimum_ratio
         calls += 1
         if calls > max_evaluations: raise _EvaluationBudget('evaluation budget exhausted')
         minimum_ratio = min(minimum_ratio, magnitude(x))
         return direction(x)
-    def section(s, x): return float(np.dot(x-seed, initial))
+    def section(s, x): return float(np.dot(x-seed, normal))
     section.direction = 1
     def zero(s, x): return magnitude(x)-near_zero
     zero.terminal = True; zero.direction = -1
@@ -70,19 +82,22 @@ def trace_line(field, seed, *, ratio=None, tolerance=1e-9, max_step=.15,
                           atol=tolerance*.1, max_step=min(max_step, .05), dense_output=True, events=[zero, escape])
         if not first.success:
             meta['status'] = 'solver_failure'; points = first.y.T
+            meta['evaluated_arclength'] = float(first.t[-1])
         elif first.status == 1:
             meta['status'] = 'near_zero_guard' if len(first.t_events[0]) else 'observation_radius'
             points = first.y.T
+            meta['evaluated_arclength'] = float(first.t[-1])
         else:
             rest = solve_ivp(rhs, (.05, max_arclength), first.y[:, -1], method='DOP853', rtol=tolerance,
                              atol=tolerance*.1, max_step=max_step, dense_output=True, events=[section, zero, escape])
             for length, x in zip(rest.t_events[0], rest.y_events[0]):
                 row = {'arclength': float(length), 'closure_gap': float(np.linalg.norm(x-seed)),
-                       'tangent_mismatch': float(np.linalg.norm(direction(x)-initial))}
+                       'tangent_mismatch': float(np.linalg.norm(direction(x)-initial)), 'position': x.tolist()}
                 meta['section_returns'].append(row)
                 if length > .5 and row['closure_gap'] < 1e-6 and row['tangent_mismatch'] < 1e-6 and meta['accepted_return'] is None:
                     meta['accepted_return'] = row
             accepted = meta['accepted_return']
+            meta['evaluated_arclength'] = float(rest.t[-1])
             meta['closed'] = bool(first.success and rest.success and accepted is not None)
             if meta['closed']: meta['status'] = 'closed_candidate'
             elif len(rest.t_events[1]): meta['status'] = 'near_zero_guard'

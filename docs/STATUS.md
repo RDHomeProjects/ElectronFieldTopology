@@ -20,8 +20,14 @@ Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution,
 
 The maintainer-authorised off-core tranche is merged via [PR 31](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/31), merge commit `0be60b6`, with all nine final-head CI workflows successful. It contains 24 family/seed/time cases: 12 refined closures and 12 unresolved budgets. All eight core controls close; off-core higher-family trajectories remain unresolved. Independent Fox determinant/projection and signed-link checks pass with stated polygon limits. 116 tests pass; see [the measured S4-B report](../reports/s4-b/README.md). Main bibliography L20–L35 and the correction/alias mapping are integrated. Complete knot identification and the wider literature review remain open; no confinement or electron claim follows.
 
+## Bounded S4-C and feasibility decision for review
+
+The authorised return-map diagnosis contains 33 independently controlled diagnostic runs, three replication seeds and manufactured/Maxwell controls. Results: 30 arclength-unresolved and 3 evaluation-limited diagnostic runs; 29 comparable prefixes match (including three self-checks). All ten instrument checks and 123 tests pass. See [the report](../reports/s4-c/README.md). [ADR-0006](decisions/ADR-0006-model-feasibility.md) records the no-go/conditional-go/defer model-feasibility decision. No extended physical dynamics or validated electron model is introduced.
+
 ## Evidence
 
+- [S4-C bounded return-map report and retained outputs](../reports/s4-c/README.md)
+- [S4-C primary-equation feasibility audit](models/S5-feasibility-audit.md)
 - [S4-B bounded off-core report](../reports/s4-b/README.md)
 - [S4-B source and acceptance map](models/B0-S4B-Offcore.md)
 
@@ -61,12 +67,12 @@ These validate selected transformations, energy, perturbation, topology and boun
 
 ## Next task
 
-[The post-S4-B direction assessment](post-s4b-direction.md) recommends a compact return-map study with independently varied budgets, tolerances, guard floors and observation radii, then a focused S5 model-feasibility decision. These are recommendations, not new implemented stages. Defer broad family searches and universal knot-identification work until they answer a concrete decision need. The 24 S4-B cases represent 12 initial seeds observed at two related times; the six unresolved off-core initial seeds do not establish quasiperiodicity. Full literature/version reconciliation remains unfinished and level 4 deferred.
+The authorised [S4-C return-map diagnosis](../reports/s4-c/README.md) independently varies numerical controls and is followed by [ADR-0006's model-feasibility decision](decisions/ADR-0006-model-feasibility.md). The next recommended feasibility target is a bounded, fixed-coupling Skyrme–Faddeev static-energy specification/validation as a neutral mechanism reference. A charged internal-field implementation remains deferred; no candidate is selected as an electron model. New dynamics, broad optimisation and S6/S7 work remain gated. Level 4 and the unfinished literature/version review remain separate.
 
 ## Open decisions
 
-Open/absorbing boundaries before isolated long-time numerical studies; topology instruments and candidate families (S3-D/S4); any extended dynamics (S5); durable archive before research publication. No model extension has been selected.
+Open/absorbing boundaries before isolated long-time numerical studies; topology instruments and candidate families (S3-D/S4); any extended dynamics (S5); durable archive before research publication. No model extension has been accepted as an electron model. A static-energy mechanism reference is proposed in ADR-0006; no new physical dynamics are implemented.
 
 ## Handoff prompt
 
-Read AGENTS.md, this status, the post-S4-B direction assessment, ADR-0005, the B0-S4B-Offcore source/acceptance map, its merged report, the main bibliography and S1–S4-A evidence. The maintainer explicitly resumed bounded S4-B despite the unfinished comprehensive literature review. Keep level 4 deferred and do not claim that corpus publication closes the scientific review. Preserve field-zero and finite-budget outcomes, distinguish polygon invariants from knot identification, and retain energy/charge/quantum gates.
+Read AGENTS.md, this status, the post-S4-B direction assessment, ADR-0005/0006, the S4-C return-map report and S5 equation audit, the B0-S4B-Offcore source/acceptance map, its merged report, the main bibliography and S1–S4-A evidence. The maintainer explicitly resumed bounded S4-B despite the unfinished comprehensive literature review. Keep level 4 deferred and do not claim that corpus publication closes the scientific review. Preserve field-zero and finite-budget outcomes, distinguish polygon invariants from knot identification, and retain energy/charge/quantum gates.
