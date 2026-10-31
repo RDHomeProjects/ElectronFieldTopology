@@ -2,7 +2,7 @@
 
 A [frozen 1% citation-dataset sample](citation-sample-01/README.md) publishes 1,133 complete records with their incident citation edges and reproducible integrity checks.
 
-The recovered written-analysis corpus is now published: [reading index, source provenance and completeness checks](recovered-transfer/README.md). This transfer is complete; the scientific review remains incomplete and S4-B remains paused.
+The recovered written-analysis corpus is now published: [reading index, source provenance and completeness checks](recovered-transfer/README.md). This transfer is complete; the scientific review remains incomplete and S4-B has resumed in a bounded study; see the source map below.
 
 Last checked: 2026-10-31. This is a scoped starting bibliography, not an exhaustive systematic review or a claim to identify the latest result in every subfield.
 
@@ -202,3 +202,118 @@ Gaetano Diglio and Renzo L. Ricca (2026), *Helicity conservation of the Riemann-
 Priority: S3 diagnostic design; S4 helicity implementation.
 
 Primary article full text inspected in PMC: Sections 3-6, gauge/boundary assumptions and conservation statements. Useful current reference for electric/magnetic helicity and covariant currents. Decay assumptions for unbounded domains cannot be silently replaced by a finite periodic box. Fix potential/sign conventions independently and handle mean modes explicitly. S3-D re-retrieval on 2026-10-31 was blocked by the public text endpoints; this historical review is not a fresh equation audit. The implementation uses accessible Irvine/Hoyos equations and independent controls instead.
+
+## Recovered sources integrated for S4-B
+
+The maintainer resumed bounded S4-B on 31 October 2026. [The source/equation map and impact dispositions](../models/B0-S4B-Offcore.md) identify what is implemented, retained as a limit, or deferred. The following recovered entries retain their actual review depths; abstract-only entries supply no implemented equations. L01–L19 remain the frozen recursion seeds.
+
+### L20 — Field-line transport
+
+William A. Newcomb (1958), *Motion of magnetic lines of force*. Annals of Physics 3(4), 347–385. [DOI](https://doi.org/10.1016/0003-4916(58)90024-1).
+
+Role: transport/observer assumptions for topology tracking. Review: publisher abstract only; original full-text assessment pending. Stages: S3/S4. [Impact LR3-02](recovered-transfer/README.md).
+
+### L21 — Helicity and corrected vortex arguments
+
+H. K. Moffatt (1969), *The degree of knottedness of tangled vortex lines*. Journal of Fluid Mechanics 35(1), 117–129. [DOI](https://doi.org/10.1017/S0022112069000991). Read with [2017 corrigendum](https://doi.org/10.1017/jfm.2017.667), JFM 830, 821–822.
+
+Role: winding/closure validation. Review: original targeted text/PDF pp. 118–121; correction full HTML. Full audit pending. Stage: S4. [Impact LR3-03](recovered-transfer/README.md).
+
+### L22 — Relative helicity and boundaries
+
+Mitchell A. Berger and George B. Field (1984), *The topological properties of magnetic helicity*. Journal of Fluid Mechanics 147, 133–148. [DOI](https://doi.org/10.1017/S0022112084002019).
+
+Role: reference-field requirements for open subvolumes. Review: targeted text/PDF inspection; not a full audit. Stages: S3/S4 and boundaries. [Impact LR3-04](recovered-transfer/README.md).
+
+### L23 — Conditional magnetic-energy minimisation
+
+L. Woltjer (1958), *A theorem on force-free magnetic fields*. PNAS 44(6), 489–491. [DOI](https://doi.org/10.1073/pnas.44.6.489).
+
+Role: boundary/model applicability checks. Review: three original scanned pages; targeted argument. Stages: interpretation/S5. [Impact LR3-05](recovered-transfer/README.md).
+
+## Level-3 continuation: batch 2
+
+[Assessments, precise locations and impacts](recovered-transfer/README.md). The larger review remains incomplete; S4-B resumes under ADR-0005 and level 4 remains deferred. The frozen seeds remain L01–L19.
+
+### L24 — Initial conditions for null persistence
+
+H. Kedia, D. Peralta-Salas and W. T. M. Irvine (2018), *When do knots in light stay knotted?* J. Phys. A 51, 025204. [DOI](https://doi.org/10.1088/1751-8121/aa9749).
+
+Role: persistence/transport acceptance. Review: targeted journal text/PDF; theorem hypotheses retained. Online date: 2017. S3/S4.
+
+### L25 — Normalised Hopf integral
+
+J. H. C. Whitehead (1947), *An Expression of Hopf's Invariant as an Integral*. PNAS 33(5), 117–123. [DOI](https://doi.org/10.1073/pnas.33.5.117).
+
+Role: map/normalisation discipline. Review: targeted primary text; equation transcription not audited. S3/S4.
+
+### L26 — Scaling limitations
+
+G. H. Derrick (1964), *Comments on Nonlinear Wave Equations as Models for Elementary Particles*. J. Math. Phys. 5, 1252–1254. [DOI](https://doi.org/10.1063/1.1704233).
+
+Role: model-specific feasibility. Review: targeted proof/discussion and scan; no universal exclusion inferred. S5.
+
+### L27 — Unit-vector knot solitons
+
+L. Faddeev and A. J. Niemi (1997), *Stable knot-like structures in classical field theory*. Nature 387, 58–61. [DOI](https://doi.org/10.1038/387058a0).
+
+Role: extension-energy comparison. Review: related 1996 preprint *Knots and Particles*, targeted text/PDF; final-version reconciliation pending. S5.
+
+### L28 — Writhe and curve geometry
+
+F. Brock Fuller (1971), *The Writhing Number of a Space Curve*. PNAS 68(4), 815–819. [DOI](https://doi.org/10.1073/pnas.68.4.815).
+
+Role: optional geometry diagnostic. Review: original pp. 816–817 scans. S4; not a complete knot classifier.
+
+### L29 — Constrained toroidal energy minima
+
+A. Y. K. Chui and H. K. Moffatt (1992), *Minimum Energy Magnetic Fields with Toroidal Topology*. In *Topological Aspects of the Dynamics of Fluids and Plasmas*, 195–218. [DOI](https://doi.org/10.1007/978-94-017-3550-6_9).
+
+Role: constraint-class comparison. Review: targeted chapter assumptions; no stability reproduction. S5.
+
+### L30 — Quantum numbers in a specified microscopic model
+
+Victor M. Yakovenko (1989), *Spin, Statistics and Charge of Solitons in (2+1)-Dimensional Theories*. Fizika 21, supplement 3, 231. [1997 author upload](https://arxiv.org/abs/cond-mat/9703195v1).
+
+Role: conditional quantum comparison. Review: targeted HTML; dimensional/microscopic assumptions explicit. S7.
+
+### L31 — Global gauge topology
+
+H. C. Tze and Z. F. Ezawa (1976), *Global signatures of gauge invariance: Vortices and monopoles*. Phys. Rev. D 14, 1006. [DOI](https://doi.org/10.1103/PhysRevD.14.1006).
+
+Role: possible later-model comparison. Review: publisher abstract only; full-text assessment pending. S5.
+
+
+### L32 — Quantum spin/statistics of nonlinear topological configurations
+
+D. Finkelstein and J. Rubinstein (1968), *Connection between Spin, Statistics, and Kinks*. J. Math. Phys. 9, 1762. [DOI](https://doi.org/10.1063/1.1664510).
+
+Printed in L01 reference 50 and present in the index graph. Indexed-abstract review only; direct publisher retrieval was unavailable. Its conditional quantum treatment of nonlinear kink fields is relevant to a future configuration-space/quantisation analysis. It is not a claim that classical Maxwell circulation already yields fermionic electrons. Full assumptions and mathematical construction remain to be read.
+
+Preserved from the recovered checkpoint; no additional reading was performed during consolidation. Historical labels are mapped in [the alias register](bibliography-aliases.json).
+
+
+### L33 — Additional Bateman-pulse benchmarks
+
+John Lekner (2025), *Bateman electromagnetic pulses*. Physica Scripta 100, 065533. [DOI](https://doi.org/10.1088/1402-4896/add221).
+
+Reached through L19 reference 26. Indexed-abstract review only: pulse families, conserved observables, zero-momentum-frame treatment and linkage are potentially useful independent analytical comparisons. Obtain and map the equations before generating a new candidate or treating linkage as unique to a particular construction. No numerical reproduction is claimed.
+
+Preserved from the recovered checkpoint; no additional reading was performed during consolidation. Historical labels are mapped in [the alias register](bibliography-aliases.json).
+
+
+### L34 — RS-vector review and correction queue
+
+I. Bialynicki-Birula and Z. Bialynicka-Birula (2013), *The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism*. J. Phys. A 46, 053001. [DOI](https://doi.org/10.1088/1751-8113/46/5/053001); [arXiv](https://arxiv.org/abs/1211.2655).
+
+Reached through L05/L15/L19; indexed abstract and bibliography review only. Useful convention/history and photon-wave-function reading, not a primary proof of an electron model. L19's bibliography explicitly lists a corrigendum, so both the review and correction must be inspected before importing formulas. The correction's content is not audited here.
+
+Preserved from the recovered checkpoint; no additional reading was performed during consolidation. Historical labels are mapped in [the alias register](bibliography-aliases.json).
+
+
+
+### L35 — Independent Fox-colouring polygon invariant
+
+Altan B. Kılıç, Anne Nijsten, Ruud Pellikaan and Alberto Ravagnani (2025), *Knot theory and error-correcting codes*. Designs, Codes and Cryptography 93, 3029–3068. [DOI and publisher full text](https://doi.org/10.1007/s10623-025-01615-x).
+
+Targeted publisher-text inspection for S4-B: Definition 2.6 (regular projections), Eq. (1), Definition 3.5 (Fox matrix), Proposition 3.7 (minor equivalence), Definition 3.10 (determinant). The implementation specialises to t=-1 and compares exact integer cofactors; it does not implement coding-theory claims or a complete knot classifier. This direct methods lookup is not recursion expansion.

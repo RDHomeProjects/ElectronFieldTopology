@@ -1,6 +1,6 @@
 # B0-Bateman-PQ: bounded S4-A catalogue
 
-[Issue 14](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/14). SRCH-001/002, SCI-004/005, NUM-003, TOP-001, REP-001/002. This work is stacked on unmerged [PR 13](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/13); no prerequisite PR is merged by this task.
+[Issue 14](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/14). SRCH-001/002, SCI-004/005, NUM-003, TOP-001, REP-001/002. S3-D and S4-A were merged via PRs 13 and 15. The current off-core extension is specified in [B0-S4B-Offcore](B0-S4B-Offcore.md).
 
 ## Sources inspected and version pinning
 

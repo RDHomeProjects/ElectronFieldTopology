@@ -21,3 +21,7 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 ## ADR-0003
 
 [Pre-S3 literature refinements](ADR-0003-pre-s3-literature.md): proposed next-task scope and additional acceptance requirements.
+
+## ADR-0005
+
+[Resume bounded S4-B with recorded literature limits](ADR-0005-s4b-resumption.md): maintainer-authorised scope, preserved review gaps and unchanged later-stage gates.
