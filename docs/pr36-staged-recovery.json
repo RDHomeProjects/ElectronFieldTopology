@@ -1,12 +1,12 @@
 {
   "source_commit": "979a0996299a00d13523ef5277c9b02ef4ad747b",
   "base_commit": "5d95ca3f5b39539a55b2286c8623df320c83240c",
-  "completed_stage": 1,
+  "completed_stage": 2,
   "measurement": "Added plus deleted text lines; indivisible evidence.zip in stage 10; administrative records excluded.",
   "stages": [
     {
       "stage": 1,
-      "label": "Static functional, independent controls, CUDA kernels and workflow filters",
+      "label": "Static functional, independent controls, CPU timing and workflow filters",
       "lines": 2528,
       "percent": 10.17,
       "files": {
@@ -62,9 +62,9 @@
     },
     {
       "stage": 2,
-      "label": "Bounded timing, checkpoint campaign, topology analysis and run guides",
-      "lines": 2030,
-      "percent": 8.16,
+      "label": "CUDA validation, bounded checkpoint campaign and timing records",
+      "lines": 2902,
+      "percent": 11.67,
       "files": {
         ".github/workflows/static-energy.yml": "8e7288930a9582c096cf828ae55dbc7fc3f3ebd1",
         "docs/static-gpu-continuation.md": "f4bbd4469cdeb8155de2445aa5a615d701f61ce2",
@@ -74,6 +74,11 @@
         "reports/s5-a/gpu-continuation-2026-11-01/README.md": "68b0d0083e7f24e9eafb5c4b3370adaf116429dc",
         "reports/s5-a/gpu-validation-2026-10-31/README.md": "db86e10caae7a0719b51756ce8cc8f66297b57d2",
         "reports/s5-a/gpu-validation-2026-10-31/offline-compile.json": "e0b7787bcafdaad9d5e7d8dc43733e2fef7a87e2",
+        "reports/s5-a/timing-2026-10-31/README.md": "586bb39b14e85b92a22785fb9645d5d92bb41595",
+        "reports/s5-a/timing-2026-10-31/historical-context.json": "1eafa50ca7288fe00a164fb59518d6d87671170a",
+        "reports/s5-a/timing-2026-10-31/q18-timing.json": "53c62e8026f92ba5ef208bc5b681eadb7a08decf",
+        "reports/s5-a/timing-2026-10-31/q22-timing.json": "e8286baf91f1ed2b9f84d4ac909e47a408026b37",
+        "reports/s5-a/timing-2026-10-31/timing.json": "9b8748a1fb81ac02a92beef9afa25908357efcda",
         "scripts/analyse_static_fields.py": "e2ce274beed9026396577c96be8066da663ffb39",
         "scripts/check_static_scaling.py": "31e04e63318bb77b5281729307fa224237ec8a71",
         "scripts/match_static_cable_diagrams.py": "d8241cd98a368f8c83e2d7ffad14b85b4719c268",
@@ -90,9 +95,9 @@
     },
     {
       "stage": 3,
-      "label": "Historical simple-reference records",
-      "lines": 2535,
-      "percent": 10.19,
+      "label": "Recovered numerical records tranche 3",
+      "lines": 2471,
+      "percent": 9.94,
       "files": {
         "reports/s5-a/cases/q1-129/config.json": "eb2995802a4c624f2488d0b8b1b393776e83c58b",
         "reports/s5-a/cases/q1-129/history.json": "140086854d8cb7c9765c21049055dd71f861d38e",
@@ -125,17 +130,17 @@
         "reports/s5-a/cases/q2-97/config.json": "561697b73b19143e175558ba7328428e1802946d",
         "reports/s5-a/cases/q2-97/history.json": "2b0ee3a719ae9b1ef3a4bf0a3d59c1258a12c445",
         "reports/s5-a/cases/q2-97/manifest.json": "01531f1ffe89ee13a1af4b59701531e0dc8cf765",
-        "reports/s5-a/cases/q2-97/result.json": "10c6a32ced440a1a560dd2bfdd9bc9c0260b3c31",
-        "reports/s5-a/cases/q2-domain/config.json": "60cdb0a8c46203e5032673dff8dad216a230c117",
-        "reports/s5-a/cases/q2-domain/history.json": "52a1c0c8fba961ea3aa411ea21e1319b41ff33b1"
+        "reports/s5-a/cases/q2-97/result.json": "10c6a32ced440a1a560dd2bfdd9bc9c0260b3c31"
       }
     },
     {
       "stage": 4,
-      "label": "Historical target and timing records",
-      "lines": 2472,
-      "percent": 9.94,
+      "label": "Recovered numerical records tranche 4",
+      "lines": 2809,
+      "percent": 11.3,
       "files": {
+        "reports/s5-a/cases/q2-domain/config.json": "60cdb0a8c46203e5032673dff8dad216a230c117",
+        "reports/s5-a/cases/q2-domain/history.json": "52a1c0c8fba961ea3aa411ea21e1319b41ff33b1",
         "reports/s5-a/cases/q2-domain/manifest.json": "77dcd572a23bf9c0d3cb55757dc4b45ae5b12908",
         "reports/s5-a/cases/q2-domain/result.json": "020b862b0908e714f560f00e7657d80ea8646983",
         "reports/s5-a/cases/q22-129/config.json": "89154b4055e7b43884afe91f4d6d5fae7b1459b1",
@@ -148,56 +153,51 @@
         "reports/s5-a/cases/q22-97/result.json": "b2720f934dfc92fd31dc24de8c4f7627ac010b0b",
         "reports/s5-a/interruption-2026-10-31.md": "677625e7f133c0ac0e680d770e31470256873618",
         "reports/s5-a/interruption-observations.json": "ecd2f5ed447cbbdda84157bdcbf7d9865429259c",
-        "reports/s5-a/timing-2026-10-31/README.md": "586bb39b14e85b92a22785fb9645d5d92bb41595",
-        "reports/s5-a/timing-2026-10-31/historical-context.json": "1eafa50ca7288fe00a164fb59518d6d87671170a",
-        "reports/s5-a/timing-2026-10-31/q18-timing.json": "53c62e8026f92ba5ef208bc5b681eadb7a08decf",
-        "reports/s5-a/timing-2026-10-31/q22-timing.json": "e8286baf91f1ed2b9f84d4ac909e47a408026b37",
-        "reports/s5-a/timing-2026-10-31/timing.json": "9b8748a1fb81ac02a92beef9afa25908357efcda",
         "reports/s5-a/workstation-2026-11-01/records/SUMMARY.md": "91c06bdcc9d40080ad373d2b5f55275661949952",
         "reports/s5-a/workstation-2026-11-01/records/campaign.json": "00b4026e3ee92bbf8f2a5d81fe36eb22ecabf499",
         "reports/s5-a/workstation-2026-11-01/records/cases/q1-control-1/config.json": "6d3adb48262f7f5a0e91cd8306f372e2ea745629",
         "reports/s5-a/workstation-2026-11-01/records/cases/q1-control-1/history.json": "2ec647025c372ed2e5fc0d0339835bf267f12f95",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q1-control-1/manifest.json": "7b200b5345ab07cd07c6ca0bc1995d2362e56a1b"
+        "reports/s5-a/workstation-2026-11-01/records/cases/q1-control-1/manifest.json": "7b200b5345ab07cd07c6ca0bc1995d2362e56a1b",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q1-control-1/result.json": "260e76e22b9e9d979eb5607b4b8a76ee176f8441",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-129-1/config.json": "de0abc2bbb5dc4d4babad52d5dfaa05151ff129e",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-129-1/history.json": "b2e43d4691196a171decc804ef32d9a181635f2f"
       }
     },
     {
       "stage": 5,
-      "label": "Workstation controls and Q18 continuation records",
-      "lines": 2699,
-      "percent": 10.85,
+      "label": "Recovered numerical records tranche 5",
+      "lines": 2202,
+      "percent": 8.86,
       "files": {
-        "reports/s5-a/workstation-2026-11-01/records/cases/q1-control-1/result.json": "260e76e22b9e9d979eb5607b4b8a76ee176f8441",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-129-1/config.json": "de0abc2bbb5dc4d4babad52d5dfaa05151ff129e",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-129-1/history.json": "b2e43d4691196a171decc804ef32d9a181635f2f",
         "reports/s5-a/workstation-2026-11-01/records/cases/q18-129-1/manifest.json": "9131f04e37dc55fc8540ce67d66931c3c66f73c3",
         "reports/s5-a/workstation-2026-11-01/records/cases/q18-129-1/result.json": "fea20dfc6c3784b344629e7734e4db9e4dd39bf3",
         "reports/s5-a/workstation-2026-11-01/records/cases/q18-193-1/config.json": "61ee2a18a779c01063847d152d8c51312344aa53",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-193-1/history.json": "9cdc8188d6fac7d376281c7444e5ca8bd4cb0acb"
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-193-1/history.json": "9cdc8188d6fac7d376281c7444e5ca8bd4cb0acb",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-193-1/manifest.json": "182ac1042090bd79a96c9671211f90ec490786dc",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-193-1/result.json": "c5c7ed80027aa6cafae4168e76e669d144ae162c",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-97-1/config.json": "59223ba751de04a7333a495cb829fa0759587f76"
       }
     },
     {
       "stage": 6,
-      "label": "Workstation Q18 fine-grid and alternate-seed records",
-      "lines": 2258,
-      "percent": 9.08,
+      "label": "Recovered numerical records tranche 6",
+      "lines": 2377,
+      "percent": 9.56,
       "files": {
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-193-1/manifest.json": "182ac1042090bd79a96c9671211f90ec490786dc",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-193-1/result.json": "c5c7ed80027aa6cafae4168e76e669d144ae162c",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-97-1/config.json": "59223ba751de04a7333a495cb829fa0759587f76",
         "reports/s5-a/workstation-2026-11-01/records/cases/q18-97-1/history.json": "a4419872b8764855ead5d65de2e72af491d55da4",
         "reports/s5-a/workstation-2026-11-01/records/cases/q18-97-1/manifest.json": "f917b9237e9454d5422938f09fb589454fe119bf",
         "reports/s5-a/workstation-2026-11-01/records/cases/q18-97-1/result.json": "7501e3fb6c51647a3c53490ee281d81253a27c22",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-source-193-1/config.json": "2f52511c6245479a11fc59167e40f0d42d7e96a3"
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-source-193-1/config.json": "2f52511c6245479a11fc59167e40f0d42d7e96a3",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-source-193-1/history.json": "36ada79b2da55dda646d9c75873f48387111ed48",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q18-source-193-1/manifest.json": "eca1589a27582ca58b9b0991ccaa302b8e36bf50"
       }
     },
     {
       "stage": 7,
-      "label": "Workstation Q22 continuation records",
-      "lines": 2539,
-      "percent": 10.21,
+      "label": "Recovered numerical records tranche 7",
+      "lines": 2340,
+      "percent": 9.41,
       "files": {
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-source-193-1/history.json": "36ada79b2da55dda646d9c75873f48387111ed48",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q18-source-193-1/manifest.json": "eca1589a27582ca58b9b0991ccaa302b8e36bf50",
         "reports/s5-a/workstation-2026-11-01/records/cases/q18-source-193-1/result.json": "b298052bbb932a1e3a0d4af90ec3607f51ae3a60",
         "reports/s5-a/workstation-2026-11-01/records/cases/q2-control-1/config.json": "e38f29d204bc29236e19db180f79c473d112017d",
         "reports/s5-a/workstation-2026-11-01/records/cases/q2-control-1/history.json": "aeaca545029b4ae3ccf4aae3bc5bc0f28cb452b4",
@@ -205,47 +205,39 @@
         "reports/s5-a/workstation-2026-11-01/records/cases/q2-control-1/result.json": "98bb32305e813fc0cf308f11d945ee17073ea220",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-1/config.json": "7639f44b18698c219c1f990b82a64f0cf6bd75b8",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-1/history.json": "c9ffa56e7cba8840428cfc7027d554edaa50d41a",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-1/manifest.json": "bcde80956be2bd4b7820975f814a007c71b60438"
+        "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-1/manifest.json": "bcde80956be2bd4b7820975f814a007c71b60438",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-1/result.json": "d6de5f59d2c797c4797f803f62f9f4e2373fbd76",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-cont-1/config.json": "c8048ac61e69e552a298e2cbb7973a8dfe4e8cba",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-cont-1/history.json": "cd0c44b13f403ab86b0f9a28fd17beaf48cbd235"
       }
     },
     {
       "stage": 8,
-      "label": "Workstation Q22 fine-grid and comparison records",
-      "lines": 2230,
-      "percent": 8.97,
+      "label": "Recovered numerical records tranche 8",
+      "lines": 2491,
+      "percent": 10.02,
       "files": {
-        "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-1/result.json": "d6de5f59d2c797c4797f803f62f9f4e2373fbd76",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-cont-1/config.json": "c8048ac61e69e552a298e2cbb7973a8dfe4e8cba",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-cont-1/history.json": "cd0c44b13f403ab86b0f9a28fd17beaf48cbd235",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-cont-1/manifest.json": "00622d7dc306977f44118431c04a5a92191da670",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-129-cont-1/result.json": "c8fb9692fc3fc2cb11f320d6b8471de57690c412",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-161-1/config.json": "55c1ffbba68397399e70320d9adfd61bf4afd258",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-161-1/history.json": "7ecb38a2d72a601fe0e06dc5dfea90ea4251a804",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-161-1/manifest.json": "6120f72d27d39121675326e9c501314b4372c987",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-161-1/result.json": "29a39f3d3970be32ac856d4b1b52e2fdf0eab396",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q22-193-1/config.json": "132f015146459af72183a62f275ffe247e74f832"
+        "reports/s5-a/workstation-2026-11-01/records/cases/q22-193-1/config.json": "132f015146459af72183a62f275ffe247e74f832",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q22-193-1/history.json": "d19a43bff0c6183c31cc1d584dbd97adf61f3345",
+        "reports/s5-a/workstation-2026-11-01/records/cases/q22-193-1/manifest.json": "5c837c36b4a43cccebf60211be4ea6344c833b85"
       }
     },
     {
       "stage": 9,
-      "label": "Workstation configuration, provenance and campaign summary",
-      "lines": 2380,
-      "percent": 9.57,
+      "label": "Recovered numerical records tranche 9",
+      "lines": 2439,
+      "percent": 9.81,
       "files": {
-        "reports/s5-a/workstation-2026-11-01/records/cases/q22-193-1/history.json": "d19a43bff0c6183c31cc1d584dbd97adf61f3345",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q22-193-1/manifest.json": "5c837c36b4a43cccebf60211be4ea6344c833b85",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-193-1/result.json": "78ac3ef45e3ebf072697497cbc08e9b7b1296bb8",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-comparison-1/config.json": "2233f590fb608469ea346caaa3a564a61c300343",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-comparison-1/history.json": "af8d2e92d03668df967b05fea697cfb876449a38",
-        "reports/s5-a/workstation-2026-11-01/records/cases/q22-comparison-1/manifest.json": "8f0efd3a876d28f79d1d5772e9388a1ed4674954"
-      }
-    },
-    {
-      "stage": 10,
-      "label": "Original evidence archive, scientific assessments and milestone decision",
-      "lines": 3195,
-      "percent": 12.85,
-      "files": {
+        "reports/s5-a/workstation-2026-11-01/records/cases/q22-comparison-1/manifest.json": "8f0efd3a876d28f79d1d5772e9388a1ed4674954",
         "reports/s5-a/workstation-2026-11-01/records/cases/q22-comparison-1/result.json": "ea8c79427471b39bfb9b103c195ef8bc4fd906fb",
         "reports/s5-a/workstation-2026-11-01/records/configs/q1-control-1.json": "6d3adb48262f7f5a0e91cd8306f372e2ea745629",
         "reports/s5-a/workstation-2026-11-01/records/configs/q18-129-1.json": "de0abc2bbb5dc4d4babad52d5dfaa05151ff129e",
@@ -254,7 +246,15 @@
         "reports/s5-a/workstation-2026-11-01/records/configs/q18-source-193-1.json": "2f52511c6245479a11fc59167e40f0d42d7e96a3",
         "reports/s5-a/workstation-2026-11-01/records/configs/q2-control-1.json": "e38f29d204bc29236e19db180f79c473d112017d",
         "reports/s5-a/workstation-2026-11-01/records/configs/q22-129-1.json": "7639f44b18698c219c1f990b82a64f0cf6bd75b8",
-        "reports/s5-a/workstation-2026-11-01/records/configs/q22-129-cont-1.json": "c8048ac61e69e552a298e2cbb7973a8dfe4e8cba",
+        "reports/s5-a/workstation-2026-11-01/records/configs/q22-129-cont-1.json": "c8048ac61e69e552a298e2cbb7973a8dfe4e8cba"
+      }
+    },
+    {
+      "stage": 10,
+      "label": "Original evidence archive, scientific assessments and milestone decision",
+      "lines": 2307,
+      "percent": 9.28,
+      "files": {
         "reports/s5-a/workstation-2026-11-01/records/configs/q22-161-1.json": "55c1ffbba68397399e70320d9adfd61bf4afd258",
         "reports/s5-a/workstation-2026-11-01/records/configs/q22-193-1.json": "132f015146459af72183a62f275ffe247e74f832",
         "reports/s5-a/workstation-2026-11-01/records/configs/q22-comparison-1.json": "2233f590fb608469ea346caaa3a564a61c300343",
@@ -275,5 +275,9 @@
         "scripts/check_workstation_evidence.py": "843ea1d6f9248edd6452489e37b0217356da273c"
       }
     }
-  ]
+  ],
+  "validation": {
+    "stage1": "137 local tests passed; documentation/prose transfer passed",
+    "stage2": "154 local tests passed, one actual-GPU test skipped; three-step CPU smoke passed"
+  }
 }
