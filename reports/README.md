@@ -12,4 +12,6 @@
 
 - [S3-D helicity and linking instruments](s3-d/README.md): periodic gauge/mean controls, unbounded analytical helicity and explicitly traced closed-pair linking.
 
+- [S4-A bounded Bateman catalogue](s4-a/README.md): four candidate families, admissibility ledger, invariant checks, independent core traces, rendered equations and three graphical comparisons.
+
 Reports distinguish software correctness, numerical findings and physical claims. Large plots and field arrays remain generated artifacts; scalar evidence is retained with its code/configuration identity.
