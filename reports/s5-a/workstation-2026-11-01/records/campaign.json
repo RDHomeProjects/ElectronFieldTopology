@@ -1,0 +1,332 @@
+{
+  "campaign_id": "gpu-continuation-2026-11-01",
+  "started_epoch": 1793454231.9551437,
+  "started_utc": "2026-10-31T13:43:51.955145+00:00",
+  "plan_sha256": "533915558ccf45fa1d993c450661cd29084e2ab85058ccdb24964517676a22cb",
+  "source_sha256": {
+    "src/electron_field_topology/__init__.py": "004283ee4c7375c92497c3cd1df3a96edd695a9d34f89752fe023935cf4785ab",
+    "src/electron_field_topology/benchmark.py": "2cff483c53e914984fa2cc4279686ac671a022327878cd916d7523deb4796d1c",
+    "src/electron_field_topology/candidate_benchmark.py": "df4779e29e5b8254002bfe612dc4a1a8c83987ea0104f49c81c33590c63a8559",
+    "src/electron_field_topology/candidates.py": "4f3a0ffbbefcf533d9ea2838d5409b8b452cafebbaf301717e5ca0d171318428",
+    "src/electron_field_topology/diagnostics.py": "0f6391f2e08d3e05c9e9051c7b571e1197a3d478d12b4e3745379647d9068a54",
+    "src/electron_field_topology/evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735",
+    "src/electron_field_topology/evolution_benchmark.py": "ddc2d34acd7f5092f2257978ba7f2116181be6d07f9369b3dde2c672f2504685",
+    "src/electron_field_topology/fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+    "src/electron_field_topology/helicity.py": "147ec319e90894a6e586df1a26c82085c834052ab651fa5a963928d97502b7e1",
+    "src/electron_field_topology/knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+    "src/electron_field_topology/linking.py": "9c3b97f6d3f347099301710745739fcd772e4a4526b9514d2e0a2037625034cf",
+    "src/electron_field_topology/localisation.py": "e488482955998f8ee0dbec857325b89e055df2324067052a7430ba908347bfa3",
+    "src/electron_field_topology/localisation_benchmark.py": "e95bbb87aa8c9aaeb9316f736a717cf09a8773237d9228d65a01b3bc56d0d9eb",
+    "src/electron_field_topology/offcore.py": "3d1ce9d354f6f7b183d05b1ec27d34d0c6943311b9146236cda4bcee58786c65",
+    "src/electron_field_topology/offcore_benchmark.py": "fc185d27803f1a32e4f37ba88cdcf7ade02738c40e531eb7d7222b2aabfe2522",
+    "src/electron_field_topology/perturbation_benchmark.py": "987b4ea741c05fb4519aaad9932deefbb0f5b5a89a5821b2f1f9fc312f642238",
+    "src/electron_field_topology/perturbations.py": "a59ab8cd9c22ceca3f70b11af915bd565b8eb822ebfdc0812cd18968b3a6138f",
+    "src/electron_field_topology/relativity.py": "4469cb06fa5c5e4dc991036f11b461bcace03be53656aea15c0e118a01b6e74f",
+    "src/electron_field_topology/relativity_benchmark.py": "87b67a8dac10f179b184300f67fa56b5e55a1fd19ea209ef8b8e9533b9345529",
+    "src/electron_field_topology/return_map.py": "423b3aa03af0f670a4dddadeb448588945fb72567a977e9a347f9c310c96b98e",
+    "src/electron_field_topology/returnmap_benchmark.py": "a5205c7aeb589c64074eb1be5d9877fe6e18e3d23ea76b335da8314352fb8f9f",
+    "src/electron_field_topology/sf_campaign.py": "8bff22649225807a1b2892345567044befb4f1dc5bfd8ea7a68024f596c5f265",
+    "src/electron_field_topology/sf_checkpoints.py": "154e6e6496a9477c6db1b9ef1ca10dbc2b8b8ececffaea5ff4da2da298667437",
+    "src/electron_field_topology/sf_energy.c": "407f96a06701b14d6af9445993788d62774c4a960d2541cd4aa0107369a576f2",
+    "src/electron_field_topology/sf_energy_gpu.cu": "80cc91edc4e8a1c8dd50af22c9789840428e6a3d045a930d7e76dbe199c03f0f",
+    "src/electron_field_topology/sf_gpu.py": "9de84ee6fa11e2fee46249cf06d65e62f36d39fed930fc75f6fa4ca489fa93e3",
+    "src/electron_field_topology/sf_gpu_relax.py": "3ab1862dacf07838f6b00a7c3cd177fa9d8a794795b7cd63ad1bf0b091915ee1",
+    "src/electron_field_topology/sf_gpu_timing.py": "fbadfb79d14a38351a24de65450e88b5867942a36771d0b162de476586b5f942",
+    "src/electron_field_topology/sf_minimize.py": "a8d5828e7a8743465a9feaf3b98e2364cdaf15a7a966769db9d15e04e0d71506",
+    "src/electron_field_topology/sf_relax.py": "676c496218ce2dafe2af12dc9a46a51ae5230d1f8e47dd675236c2ea59b3dc22",
+    "src/electron_field_topology/sf_timing.py": "116a5b9112efd836b36a1d23c3273128a4d3bb5c443f1275b1e303c5806bf2f7",
+    "src/electron_field_topology/sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+    "src/electron_field_topology/skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+    "src/electron_field_topology/topology_benchmark.py": "09d74f16ce98208de4a7b72aced7ebfc0c39ffdfd2986457868f909a349b8729",
+    "scripts/analyse_static_fields.py": "40178e5886017a12c1803df275054804434ee2ec8be7baab02a6e8d5e4e558c8",
+    "scripts/check_docs.py": "a3dc44e742c05dbaf56c0d68b2d258df61d0ada0ccf99aa52899c9859c32be6b",
+    "scripts/check_recovered_text_transfer.py": "1ff3da502039da555b6e6c39e97e864764a662c20729e3af60971c89e18cb924",
+    "scripts/check_static_scaling.py": "469c24cef1ef806a3cd5fb6cf3274ad31553ee2eabe3f7303ca0423242a12858",
+    "scripts/match_static_cable_diagrams.py": "ec7923491cedbe50aa2905112821ee8aae27ddea3b4894abc836d867ea780b30",
+    "scripts/polish_static_field.py": "68d00f7e9e1d14969c61a2d1b1387f75b793b093ee373d8c0be5da9b1eadcbe2",
+    "scripts/static_knot_references.py": "1e957d051ac8654a2084ce9b529d744127281b54755b9ce2d44654280414f8b7",
+    "experiments/configs/sf-j2015/ci-smoke.json": "36de35b4be0f37e4ceffc1af0828f37bc84e190a952ec23db48f01e388fc08b1",
+    "experiments/configs/sf-j2015/gpu-continuation.json": "533915558ccf45fa1d993c450661cd29084e2ab85058ccdb24964517676a22cb",
+    "experiments/configs/sf-j2015/q1-129.json": "ed5c3a929e79469f812320f6a819fa892b2a6bb9843186198b9a5c9d6cc28582",
+    "experiments/configs/sf-j2015/q1-65.json": "5fb4faddc13e5d9111a18031b5b8501ac08f9001ad3c897b336e6d2d197077c0",
+    "experiments/configs/sf-j2015/q1-97.json": "53ebb0a397b58efc1fa95d58338c15b5e89058400e315f1662decb63683f5ada",
+    "experiments/configs/sf-j2015/q1-cell-pilot.json": "9c447aa8a25d4ab71e0a1ab109878f9d02a63eb3e43614d7a37d4c7907044ba3",
+    "experiments/configs/sf-j2015/q1-cg-pilot.json": "753ccc699887df04e67ec5bc0ca932c1d22ebce811f0b37e348dab7d871cb968",
+    "experiments/configs/sf-j2015/q1-domain.json": "fdc90b096d14b159dee237ed850cb58daa660daaa5370fd35b9ab6f17b1c2ff0",
+    "experiments/configs/sf-j2015/q1-fine-pilot.json": "6ab4c84e119ca44b0c4a1768d26b803c4002dc3bfbaaadd2fb54e962e26b97e1",
+    "experiments/configs/sf-j2015/q1-pilot.json": "964ccd89c5b1f0c48dd02c6d277f444457a725394fd31a9f6d89e9258e70aa16",
+    "experiments/configs/sf-j2015/q18-129.json": "199a4f96d68d822600c4aedb0d6290331d380a32bf0c241c021188a3bd9fcc6c",
+    "experiments/configs/sf-j2015/q18-193.json": "d3c96cfe397e194f9bad7f44b9d0595cd04d24d7a409a3896e259884bc64b8c6",
+    "experiments/configs/sf-j2015/q18-97.json": "d5cc335624e3ff409297f7c6d083792db870b19dbbe76497651f3be4a78e6132",
+    "experiments/configs/sf-j2015/q18-comparison.json": "4e0e93745dcb7a04d5aeda261683da5bae6315001fd79feb4507ced3fa25e7b3",
+    "experiments/configs/sf-j2015/q18-source-193.json": "fa121f9f5c158620bb1cd798c2e4d2f53270a65f8ff54a981e57c08523e9f6e9",
+    "experiments/configs/sf-j2015/q2-129.json": "cd8b52a230c2d30802b10e272ddbf8e8ec5f5197d2c4bad3d40afdda40e04115",
+    "experiments/configs/sf-j2015/q2-65.json": "374090ac02327a51c89d8e4558e6a7b232e0609bb9b68a8fbf5c31e6b60a74c9",
+    "experiments/configs/sf-j2015/q2-97.json": "bb7a33e9869d32118986939d72b253d3d132bc9f74bc5fa41c728e472cc28bb8",
+    "experiments/configs/sf-j2015/q2-domain.json": "d65a86ccdbd393dd83a68bbfe09170449ba122f22f52f47cda8168dfcbfe894a",
+    "experiments/configs/sf-j2015/q2-pilot.json": "f311efa23a41ebf3a4b325bf23ccc654ba56d8e50fff79aea3e9f0d76934c5b8",
+    "experiments/configs/sf-j2015/q22-129.json": "84444ba56e1c46cf6887182814766fd3d00b1d4ceaaae4feccdd799a612dd540",
+    "experiments/configs/sf-j2015/q22-193.json": "e8a5f59c31fc1c41a901b55df234dde745e683f0f4fc235596c1750d668159fb",
+    "experiments/configs/sf-j2015/q22-97.json": "251d3ebd79332867bc295003e48a075a5b9d6e2365c6d68b8c47e806318e9652",
+    "experiments/configs/sf-j2015/q22-comparison.json": "4deea384b8603a278d8825cfb41a99685bb87bcab15d461de73a9bd477512de5",
+    "uv.lock": "1256a2e134796077174a1a10bbfa53b3c33239a616ed93b20e08220da063079e"
+  },
+  "stages": {
+    "q1-control": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q1-control-1",
+      "attempts": 1,
+      "config_sha256": "30a5288c4b5d992496b9a09992f35367dbd8de365635ea20ee74df15a1c7d204",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 7.934022556000855,
+      "solver_status": "gradient_stationary"
+    },
+    "q2-control": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q2-control-1",
+      "attempts": 1,
+      "config_sha256": "f6af6d53fffa1e4e7426161cde7ab2e52c1e1cec2c28d9e81372c4978f748a81",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 6.778337046998786,
+      "solver_status": "gradient_stationary"
+    },
+    "q22-129": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q22-129-1",
+      "attempts": 1,
+      "config_sha256": "0b8b4687f4abb06e4893f7d4cc570fb510f6fdf33b8019b068d8ea21041b6e44",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 289.6120497429947,
+      "solver_status": "residual_not_stationary"
+    },
+    "q18-97": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q18-97-1",
+      "attempts": 1,
+      "config_sha256": "292e77aecd5a454f4577f367641a544e37ca155b916b736a60a0e95d43bf069a",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 262.2626829469955,
+      "solver_status": "gradient_stationary"
+    },
+    "q18-129": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q18-129-1",
+      "attempts": 1,
+      "config_sha256": "15475cb5bea90dc5b7f13afc0e71168b0e5f2fb44749d6e286670bbb3689422a",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 908.2397447339899,
+      "solver_status": "time_budget"
+    },
+    "q22-129-cont": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q22-129-cont-1",
+      "attempts": 1,
+      "config_sha256": "c72fbe4f9fb4ea118abf7c5f1b4e87bcc681eb3195555075bfab7180cfe52453",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 15.75348829900031,
+      "solver_status": "gradient_stationary"
+    },
+    "q22-161": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q22-161-1",
+      "attempts": 1,
+      "config_sha256": "83c177220a73f8a0013e572c2a4af6aa7c04a2357e76e3fb3ac7049900137d30",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 915.1037479730003,
+      "solver_status": "time_budget"
+    },
+    "q22-193": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q22-193-1",
+      "attempts": 1,
+      "config_sha256": "1d046916e2dc9cd606703cd377fb4f81d417e155599cb4cdadb0c28cd61f58db",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 1225.8824836150015,
+      "solver_status": "time_budget"
+    },
+    "q18-193": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q18-193-1",
+      "attempts": 1,
+      "config_sha256": "c3ace3e3caaf7554758514dfd0b51f1fbfbabc8a393ff3e1e7917a42d0bde607",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 598.5820076730015,
+      "solver_status": "gradient_stationary"
+    },
+    "q18-source-193": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q18-source-193-1",
+      "attempts": 1,
+      "config_sha256": "4cd8a6bd5473b2fa3d2d1820d668980bab435055cc1551ad54c973680b80c7fb",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 1225.6816870439943,
+      "solver_status": "time_budget"
+    },
+    "q22-comparison": {
+      "status": "completed",
+      "directory": "/home/rd/ElectronFieldTopology-timing/artifacts/gpu-continuation-20261101-004351/cases/q22-comparison-1",
+      "attempts": 1,
+      "config_sha256": "5f9fc5dd1dd7c4f6b5dca079874b043cca03411c85149d072e140d78584ff8a9",
+      "resume_checkpoint": null,
+      "returncode": 0,
+      "wall_seconds": 550.9949357849982,
+      "solver_status": "time_budget"
+    },
+    "q18-comparison": {
+      "status": "campaign_budget"
+    },
+    "q22-domain": {
+      "status": "campaign_budget"
+    },
+    "q18-domain": {
+      "status": "campaign_budget"
+    }
+  },
+  "analysis": {
+    "references": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "04d3720fc0fc3c16a0cc2ce93426c0ded9f54c35cb5300459047e2453a4e05b7"
+    },
+    "q22-129-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "45f648332f9913b24d710668f007e327cea5b83435f1898cfc0f05d84e806be6"
+    },
+    "q22-129-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "991f4395a9d68d4fa98df1851b62e3f3d05617e98cab96804a9cdcc893798f91"
+    },
+    "q22-129-witness-primary": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "b7d37dd972c1558d4e7e2e162af924f0d2a0f870e524913e437992de9cdb9544"
+    },
+    "q22-129-witness-secondary": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "d1eb4e619ef762ec2110449112625b7d5883281b456084741a6870cd7ec757c5"
+    },
+    "q18-97-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "695dc5a6df8d1f83617faddcce695b7fea61369357a216a8fccd3162877e491c"
+    },
+    "q18-97-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "072e0debadf6748effb3949bd5ea72b266d65df6f99285f900f937f341c057aa"
+    },
+    "q18-129-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "af1e4231d824e713202d9101c0be3892a84273640623f541d7230ca2465d35eb"
+    },
+    "q18-129-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "0d96131039f1e03b339a4c7bc3588bad3093c1f0b9bcc18aa671ef1f749e4abb"
+    },
+    "q22-129-cont-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "790e4e769c4aee34ebefaced360fa2d9f44ed8bccba9b69bf568f1673b46b3d1"
+    },
+    "q22-129-cont-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "3321b548ea27f0b49186932b64185361d39809aa3b8d64ba0da1eef1d5034032"
+    },
+    "q22-129-cont-witness-primary": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "665365ae6501fce312ff8d766cbd1ea859a4a106f105eaab3410a3cb1e6b8b10"
+    },
+    "q22-129-cont-witness-secondary": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "8cd2a03327b60b3e87893fb9e557bf4e68bcc416ec2a1d88f873e11406d63c85"
+    },
+    "q22-161-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "5e3bf5e7747ce83ab0ce400f2d9f261d9a96775377d248db353fa3d06939bc78"
+    },
+    "q22-161-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "c3a2fd1589d501b31c8e548cbee5379991ac4a0882fd3c1edb838f63f8b975a4"
+    },
+    "q22-161-witness-primary": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "aa4cc5dda688d8b9db2cb230d39bfcdf97b93488e78960d092f2c4e3214e2cb0"
+    },
+    "q22-161-witness-secondary": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "1b6db7ef6ba96e6747ce951efffddcb2f415f6875d78841bdbb11b5fce92298e"
+    },
+    "q22-193-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "5cb2762c9cf3f13f4fcfdb2df63166f3e4b96ae997127c498e970c95a2fd5985"
+    },
+    "q22-193-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "7c092b60825d184bd58d58cf3c35e4ee164743939b90baef23a6749862e50fc9"
+    },
+    "q22-193-witness-primary": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "25bcd62c9e800075eae6c5aa26cb9640737697d9963e7ddec030fa6a37ea36ad"
+    },
+    "q22-193-witness-secondary": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "915a0ea80ae31af10baaf70d06725e6652bae07cf7cac29928e1c282af4c6b3c"
+    },
+    "q18-193-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "064cec2a447e7759c5cb070b583d3014626737694a7382878b9a829f7d798f78"
+    },
+    "q18-193-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "fa49653a070a751801b3fe12817464b26eaf76d3a36e8f8b9fe3c6d01047a076"
+    },
+    "q18-source-193-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "f68eed1cea4b42eb09642e9f5973e085dfb3f308eb74aa2fe6be5d4ae606a89f"
+    },
+    "q18-source-193-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "5d923db07840cd7606cc755c19f241ee321086ae203bf8735cd33ad33a340594"
+    },
+    "q22-comparison-topology": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "57471e973e080430f4f3133fdfcb8a2cc1bab3f3bafacea3a0ab38d7d179e8cb"
+    },
+    "q22-comparison-scaling": {
+      "returncode": 0,
+      "status": "completed",
+      "signature": "bac207cee76fd37d2c586ed7ab57e0ff3100b6a39c86fa27c8d03a85e3746753"
+    }
+  }
+}
