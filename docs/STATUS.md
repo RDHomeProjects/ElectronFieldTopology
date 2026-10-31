@@ -16,9 +16,9 @@ S3-A merged via [PR 7](https://github.com/RDHomeProjects/ElectronFieldTopology/p
 
 Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution, explicit initial projection, spatial/domain/time-quadrature studies, interior Poynting balance, event-consistent analytical Lorentz transformations, independent tensor/common-event controls, finite-cutoff four-momentum convergence, energy-centroid/width and observer-origin diagnostics, all-space moment quadrature with finite-tail controls, classified perturbations with constraint/null diagnostics, independent linear difference-energy controls, local transport and domain sensitivity, periodic Coulomb and unbounded Bateman helicity diagnostics, explicit mean/gauge controls, closed-curve Gauss linking and selected analytical B-fiber tracing, reproducible evidence and bounded workflows.
 
-## Bounded S4-B result for review
+## Bounded S4-B merged result
 
-The maintainer-authorised off-core tranche is implemented with 24 family/seed/time cases: 12 refined closures and 12 unresolved budgets. All eight core controls close; off-core higher-family trajectories remain unresolved. Independent Fox determinant/projection and signed-link checks pass with stated polygon limits. 116 tests pass; see [the measured S4-B report](../reports/s4-b/README.md). Main bibliography L20–L35 and the correction/alias mapping are integrated. Complete knot identification and the wider literature review remain open; no confinement or electron claim follows.
+The maintainer-authorised off-core tranche is merged via [PR 31](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/31), merge commit `0be60b6`, with all nine final-head CI workflows successful. It contains 24 family/seed/time cases: 12 refined closures and 12 unresolved budgets. All eight core controls close; off-core higher-family trajectories remain unresolved. Independent Fox determinant/projection and signed-link checks pass with stated polygon limits. 116 tests pass; see [the measured S4-B report](../reports/s4-b/README.md). Main bibliography L20–L35 and the correction/alias mapping are integrated. Complete knot identification and the wider literature review remain open; no confinement or electron claim follows.
 
 ## Evidence
 
@@ -61,7 +61,7 @@ These validate selected transformations, energy, perturbation, topology and boun
 
 ## Next task
 
-Review the bounded S4-B implementation and evidence tracked by [issue 30](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/30). Independent polygon determinants/links refine closure evidence but do not identify every knot or certify a continuum isotopy. Broader sampling, stronger knot identification and near-zero robustness remain later review decisions; do not silently enlarge the fixed search. Full literature passes/version reconciliation remain unfinished and level 4 deferred.
+[The post-S4-B direction assessment](post-s4b-direction.md) recommends a compact return-map study with independently varied budgets, tolerances, guard floors and observation radii, then a focused S5 model-feasibility decision. These are recommendations, not new implemented stages. Defer broad family searches and universal knot-identification work until they answer a concrete decision need. The 24 S4-B cases represent 12 initial seeds observed at two related times; the six unresolved off-core initial seeds do not establish quasiperiodicity. Full literature/version reconciliation remains unfinished and level 4 deferred.
 
 ## Open decisions
 
@@ -69,4 +69,4 @@ Open/absorbing boundaries before isolated long-time numerical studies; topology 
 
 ## Handoff prompt
 
-Read AGENTS.md, this status, ADR-0005, the B0-S4B-Offcore source/acceptance map, its report, the main bibliography and S1–S4-A evidence. The maintainer explicitly resumed bounded S4-B despite the unfinished comprehensive literature review. Keep level 4 deferred and do not claim that corpus publication closes the scientific review. Preserve field-zero and finite-budget outcomes, distinguish polygon invariants from knot identification, and retain energy/charge/quantum gates.
+Read AGENTS.md, this status, the post-S4-B direction assessment, ADR-0005, the B0-S4B-Offcore source/acceptance map, its merged report, the main bibliography and S1–S4-A evidence. The maintainer explicitly resumed bounded S4-B despite the unfinished comprehensive literature review. Keep level 4 deferred and do not claim that corpus publication closes the scientific review. Preserve field-zero and finite-budget outcomes, distinguish polygon invariants from knot identification, and retain energy/charge/quantum gates.
