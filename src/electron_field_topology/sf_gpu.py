@@ -91,7 +91,7 @@ def normalize_array(v, xp):
     return v/r
 
 
-def minimize_array(engine, initial, maxiter, callback, expired, xp, length=.5):
+def minimize_array(engine, initial, maxiter, callback, expired, xp, length=.5, strict_continuity=False):
     """Port of sf_minimize.minimize_static: identical controls and stop rules."""
     u = initial.copy(); n = len(u); h = engine.h; m = n-4
     k = xp.arange(1, m+1)
@@ -107,6 +107,7 @@ def minimize_array(engine, initial, maxiter, callback, expired, xp, length=.5):
     for iteration in range(1, maxiter+1):
         if expired():
             return u, {"status": "time_budget", "iterations": iteration-1, "evaluations": evaluations}
+        accepted_margin = engine.minimum_corner_cone
         g = projected(g/(K*h**3))
         z = xp.zeros_like(g)
         z[2:-2, 2:-2, 2:-2] = dst1n(dst1n(g[2:-2, 2:-2, 2:-2], xp)/divisor[..., None], xp)
@@ -121,8 +122,11 @@ def minimize_array(engine, initial, maxiter, callback, expired, xp, length=.5):
         alpha = min(alpha*1.5, .1/max(maximum, 1e-30))
         accepted = False
         for _ in range(20):
+            if strict_continuity and expired():
+                return u, {"status": "time_budget", "iterations": iteration-1, "evaluations": evaluations}
             trial = normalize_array(u+alpha*direction, xp)
-            if float(xp.max(xp.linalg.norm(trial-u, axis=-1))) > min(.2, .5*engine.minimum_corner_cone):
+            margin = accepted_margin if strict_continuity else engine.minimum_corner_cone
+            if float(xp.max(xp.linalg.norm(trial-u, axis=-1))) > min(.2, .5*margin):
                 alpha *= .5; continue
             p, gg = engine.evaluate(trial); evaluations += 1; e = float(sum(p))
             if engine.minimum_corner_cone > 0 and e <= energy+1e-4*alpha*dot:

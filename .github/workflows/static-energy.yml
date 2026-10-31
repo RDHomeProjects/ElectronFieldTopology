@@ -9,6 +9,7 @@ on:
       - 'tests/test_sf_minimize.py'
       - 'tests/test_sf_timing.py'
       - 'tests/test_sf_gpu.py'
+      - 'tests/test_sf_gpu_relax.py'
       - 'experiments/configs/sf-j2015/**'
       - 'pyproject.toml'
       - 'uv.lock'
@@ -37,7 +38,7 @@ jobs:
           uv sync --frozen --all-groups --extra topology
       - name: Verify independent energy, gradient and topology controls
         run: |
-          uv run --frozen --extra topology pytest -q tests/test_skyrme.py tests/test_sf_topology.py tests/test_sf_minimize.py tests/test_sf_timing.py tests/test_sf_gpu.py
+          uv run --frozen --extra topology pytest -q tests/test_skyrme.py tests/test_sf_topology.py tests/test_sf_minimize.py tests/test_sf_timing.py tests/test_sf_gpu.py tests/test_sf_gpu_relax.py
           python3 scripts/check_docs.py
       - name: Three-step static instrument smoke test
         run: |

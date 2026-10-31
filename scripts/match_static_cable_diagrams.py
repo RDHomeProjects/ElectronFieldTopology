@@ -14,9 +14,9 @@ from spherogram import Link
 from electron_field_topology.sf_topology import canonical_gauss
 
 
-def run(reference,topology,phase,output,seconds=120):
+def run(reference,topology,phase,output,seconds=120,target_name='primary'):
     refs=json.loads(Path(reference).read_text())['cable']['diagrams']
-    targets=json.loads(Path(topology).read_text())['phases'][phase]['targets']['primary']
+    targets=json.loads(Path(topology).read_text())['phases'][phase]['targets'][target_name]
     out=Path(output);out.parent.mkdir(parents=True,exist_ok=True);start=time.monotonic()
     if targets.get('components')!=1:
         result={'matched':False,'reason':'not a single extracted component'};out.write_text(json.dumps(result,indent=2)+'\n');return result
@@ -52,5 +52,6 @@ def run(reference,topology,phase,output,seconds=120):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--reference',required=True);p.add_argument('--topology',required=True)
-    p.add_argument('--phase',default='final');p.add_argument('--output',required=True);a=p.parse_args()
-    run(a.reference,a.topology,a.phase,a.output)
+    p.add_argument('--phase',default='final');p.add_argument('--output',required=True)
+    p.add_argument('--target',choices=['primary','secondary'],default='primary');a=p.parse_args()
+    run(a.reference,a.topology,a.phase,a.output,target_name=a.target)

@@ -21,7 +21,10 @@ def run(checkpoint,output):
         old=axis/scale+(n-1)/2;coords=np.array(np.meshgrid(old,old,old,indexing='ij'))
         u=np.stack([map_coordinates(field[...,i],coords,order=1,mode='constant',cval=NORTH[i]) for i in range(3)],axis=-1)
         u=normalize(u);parts,_=eng.evaluate(u)
-        rows.append({'scale':scale,'e2':float(parts[0]),'e4':float(parts[1]),'energy':float(sum(parts))})
+        if eng.minimum_corner_cone<=0:raise ValueError('dilated field has unresolved cell hemisphere')
+        rows.append({'scale':scale,'e2':float(parts[0]),'e4':float(parts[1]),'energy':float(sum(parts)),
+                     'minimum_corner_cone':eng.minimum_corner_cone,
+                     'minimum_quadrature_interpolant_norm':eng.minimum_interpolant_norm})
     base=rows[2];e=base['energy'];algebra=(base['e2']-base['e4'])/e
     comparisons=[]
     for a,b in [(0,4),(1,3)]:

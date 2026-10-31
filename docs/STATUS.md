@@ -1,6 +1,6 @@
 # Project status
 
-Updated: 2026-10-31 (Australia/Melbourne).
+Updated: 2026-11-01 (Australia/Melbourne).
 
 ## Recovered analysis publication
 
@@ -70,6 +70,15 @@ These validate selected transformations, energy, perturbation, topology and boun
 [Assessment](literature/pre-s3-review.md): nine additional references L11-L19, updated 2026 publication details for L05, source-specific review depth and S3 subdivisions. [ADR-0003](decisions/ADR-0003-pre-s3-literature.md) is accepted. S3-A maps the inspected Feynman component tables and Hoyos et al. covariant/conserved-quantity passages; S1/S2 numerical findings are unchanged.
 
 ## Next task
+
+The user supplied successful RTX 2080 Super Max-Q device checks and paired
+Q22/Q18 short-solve speedups around 4.5x against twelve CPU threads. A
+[checkpointed GPU continuation campaign](static-gpu-continuation.md) is now
+prepared with float64 atomic fields, restart, endpoint CPU audits and bounded
+topology/scaling/mesh/domain/same-charge evidence collection. Read the
+[preparation and recovery record](../reports/s5-a/gpu-continuation-2026-11-01/README.md).
+Actual long-run workstation execution and the final scientific assessment remain
+pending. No reproduction is accepted on the strength of timing measurements.
 
 A bounded CPU [timing harness](static-timing.md) now supports the requested local
 workstation comparison. It uses the unchanged energy/minimisation implementation;

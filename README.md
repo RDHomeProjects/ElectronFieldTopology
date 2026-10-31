@@ -24,7 +24,9 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 An experimental [paired CPU/GPU timing harness](docs/static-gpu-timing.md) is
 available for the local workstation. Actual device checks precede every GPU
-timing study; no GPU speedup or completed reproduction is yet established.
+timing study. The user reports about 4.5x short-solve speedup; completed
+reproductions remain unestablished. Use the [checkpointed continuation guide](docs/static-gpu-continuation.md)
+to run the bounded remaining analysis locally.
 
 S5-A adds an experimental [static Skyrme–Faddeev reference](docs/models/SF-J2015-static.md), Jennings bibliography integration and validated simple controls. [Draft PR 36](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/36) retains interrupted cable/hyperbolic reproduction attempts; see [the partial report and recovery record](reports/s5-a/README.md). No physical-time solver or electron model is claimed.
 

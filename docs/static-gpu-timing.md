@@ -1,5 +1,8 @@
 # Paired CPU and GPU timing on the ZBook
 
+After successful timings, use the [checkpointed continuation workflow](static-gpu-continuation.md)
+for the bounded remaining scientific analysis.
+
 This experimental float64 CUDA/CuPy backend implements the existing
 [SF-J2015 functional](models/SF-J2015-static.md), not a different energy model.
 It supplies the requested GPU counterpart to the [CPU timing harness](static-timing.md)

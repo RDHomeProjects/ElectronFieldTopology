@@ -134,7 +134,16 @@ def run(config,output):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--config',required=True);p.add_argument('--output',required=True)
-    a=p.parse_args();run(a.config,a.output)
+    p.add_argument('--backend',choices=['cpu','gpu'],default='cpu')
+    p.add_argument('--resume-checkpoint',help='GPU: continue a saved field into a new output directory')
+    a=p.parse_args()
+    if a.backend=='gpu':
+        from .sf_gpu_relax import run as gpu_run
+        result=gpu_run(a.config,a.output,a.resume_checkpoint)
+        if result['status']=='interrupted':raise SystemExit(130)
+    else:
+        if a.resume_checkpoint:p.error('--resume-checkpoint currently requires --backend gpu')
+        run(a.config,a.output)
 
 
 if __name__=='__main__':main()
