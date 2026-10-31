@@ -17,6 +17,7 @@ dev = ["pytest>=8,<10", "sympy>=1.13,<2"]
 eft-benchmark = "electron_field_topology.benchmark:main"
 
 [project.optional-dependencies]
+gpu = ["cupy-cuda12x[ctk]==14.2.0"]
 topology = [
     "snappy==3.3.2",
 ]

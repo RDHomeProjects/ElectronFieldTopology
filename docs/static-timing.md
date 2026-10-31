@@ -1,5 +1,7 @@
 # Quick local CPU timing harness
 
+For the experimental paired CUDA comparison, see [GPU timing](static-gpu-timing.md).
+
 This harness times the existing SF-J2015 implementation described in the
 [model specification](models/SF-J2015-static.md), supporting REP-001/002 and
 SW-001 under [draft PR 36](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/36).

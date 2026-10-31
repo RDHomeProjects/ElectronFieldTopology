@@ -77,6 +77,14 @@ the replacement-environment reference and approximate older history rates are
 recorded in [the timing report](../reports/s5-a/timing-2026-10-31/README.md).
 It supplies no GPU backend or additional reproduction acceptance.
 
+The requested experimental [GPU timing counterpart](static-gpu-timing.md) now
+adds float64 CUDA energy/gradient, device-array minimisation and diagnostics, with
+mandatory on-device CPU parity checks before timing ratios. CPU validation and
+offline compilation are recorded in [the validation report](../reports/s5-a/gpu-validation-2026-10-31/README.md).
+No actual GPU execution or speedup was measured in this environment; first-device
+validation remains pending on the workstation. Production reproductions remain
+unfinished.
+
 Restore and audit S5-A checkpoint/job state using the [recovery record](../reports/s5-a/interruption-2026-10-31.md), then complete bounded source-mapped cable/hyperbolic attempts and energy comparisons. The static functional/simple references are validated to their stated limits; non-torus reproductions remain unfinished. GPU acceleration requires a separately validated backend and benchmark. No blanket exclusion of other models or acceptance of an electron theory follows.
 
 ## Open decisions
