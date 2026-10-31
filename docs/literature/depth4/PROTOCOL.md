@@ -1,25 +1,35 @@
 # Recursive literature checkpoint protocol
 
-Requested: 2026-10-31 (Australia/Melbourne). Baseline: `ae0a1908b5081d4fe24948a5892a76d0220bd4d0`, after S3-D PR 13 and S4-A PR 15 merged. S4-B is paused for this checkpoint.
+Requested: 2026-10-31 (Australia/Melbourne). Baseline: `ae0a1908b5081d4fe24948a5892a76d0220bd4d0`, after S3-D PR 13 and S4-A PR 15 merged. Maintainer scope clarification: continue applicability review through level 3; undertake no level-4 collection, screening or substantive review. S4-B remains paused.
 
-## Scope and graph
+## Active scope and retained graph
 
-The 19 papers L01–L19 in [the register](../README.md) form depth 0; [frozen identities](seeds.json) specify the seed set. Follow backward references, not papers citing the seed. Include reference levels 1–4. Do not discard an edge because its target appears inapplicable. Expand each deduplicated work at its shortest depth; retain all parent edges and a traceable seed path. Depth-4 works are screened but their references are not traversed. Books, proceedings, historical sources and inaccessible records remain in the ledger. Tools/teaching websites outside L01–L19 are not extra seeds.
+The 19 papers L01–L19 in [the register](../README.md) form depth 0; [frozen identities](seeds.json) specify the seed set. Follow backward references, not citing papers. Levels 1–3 are the active scope. The original four-level objective is deferred at level 4, not completed or abandoned. Existing corpus, edges, unknowns, notes and access gaps must be retained; a supplemental acquisition must never replace a larger existing checkpoint. Keep this directory/branch name for continuity.
 
-OpenAlex supplies a first citation-index traversal; publisher/Crossref and available primary bibliographies provide identity and coverage checks. An index reference list can be incomplete, wrong or version-merged. No zero-reference index record is treated as proof that the paper has no references. Record missing records, API failures, uncertain matches, raw unparsed references and bibliography discrepancies; never label an index-only closure as the entire published literature. Graph inclusion is not endorsement.
+Do not prune the level-1–3 graph by apparent relevance. Expand each deduplicated work at its shortest known depth; retain all parent edges and traceable seed paths. Do not retrieve or expand level-3 bibliographies to discover level 4. Keep any previously encountered level-4 IDs deferred without further work. Newly promoted bibliography entries are not additional recursion seeds.
 
-## Two passes
+OpenAlex supplies an initial citation-index traversal. Publisher/Crossref and available primary bibliographies check identity and coverage. An index can omit, misidentify or merge references. A zero-reference index record is not proof of an empty bibliography. Record missing records, uncertain matches, API failures and bibliography discrepancies. Index closure is never described as complete published-bibliography coverage. Graph inclusion is not endorsement. Later corrections/version checks are supplementary source verification, not extra recursion seeds; do not expand their bibliographies automatically.
 
-Pass 1 retains one record per discovered work, its ID/title/year/source, minimum depth, parent relationships, content summary, applicability/reason, access and review depth. Separate automated metadata/abstract screening from substantive AI reading. Title-only records cannot receive a claimed content review. Unknown is an explicit disposition, not rejection. No citation-count ranking.
+## Applicability review through level 3
 
-Pass 2 examines potentially applicable works for the specific transferable aspect, version and section/page/equation/theorem, assumptions/domain, limitations, proposed use and effect on existing results. Do not claim a full-text or equation audit from an abstract. Unretrieved potentially applicable works remain pending and prevent an unqualified completion claim.
+Pass 1 records every encountered identity, source, shortest known depth or qualified path bound, parent relationships, content summary, applicability/reason, access and review depth. Distinguish unreviewed, title-only, abstract-based, targeted full-text and equation-audited records. A priority flag is not a content summary or an applicability decision. Unknown is not rejection. No citation-count ranking.
 
-## Development audit
+Pass 2 examines retained sources for transferable aspects, exact version and section/page/equation/theorem, assumptions/domain, limitations, proposed use and effects on existing work. Inaccessible potentially applicable papers remain pending. An abstract cannot establish a full-text or equation audit. [Current review notes and pending work](LEVEL3_REVIEW.md) distinguish incremental progress from completion.
 
-Assess S1–S4-A source mappings, Maxwell/null and integral instruments, Lorentz/centroid treatment, helicity/link orientation/gauge, tracing and closure, and confinement/charge/spin language. Maintain an action matrix distinguishing corrections required now, additional validation, future extensions and no-change findings. No numerical result is rerun or revised just to agree with a paper. Review theorem hypotheses before invoking a no-go conclusion.
+## Main bibliography and development audit
 
-## Reproduction and integrity
+When a paper influences a method, interpretation, diagnostic, validation requirement or roadmap choice, add it to both [the main literature register](../README.md) and [references.bib](../references.bib), with its role, review depth, limitations and a link to the impact record. Include relevant corrections. Record no-change findings and counterevidence as well as proposed changes. Promotion does not expand the frozen seed set.
 
-`python scripts/collect_literature.py --depth 4` uses a checkpointed ignored cache, at most three concurrent public API requests and bounded retries. No API key/account, paid service or network collection in CI. Bibliographic graph artifacts record retrieval dates, provider, depth and gaps. Link primary papers rather than redistributing PDFs or complete abstracts. Local text/PDF inspection stays in ignored artifacts. Review notes disclose AI assistance and never imply specialist certification.
+Audit S1–S4-A source mappings, Maxwell/null and integral instruments, Lorentz/centroid treatment, helicity/link orientation/gauge, tracing/closure, and confinement/charge/spin language. The [impact matrix](LEVEL3_REVIEW.md) separates immediate corrections, validation proposals, later extensions and no-change findings. Review theorem hypotheses before applying exclusions. Do not rerun or revise numerical results merely to agree with a paper.
 
-Completion requires graph/gap accounting, an assessed first-pass row for every discovered item, pass-two notes or explicit access-blocked status for every retained item, a development-impact assessment, documentation integrity and human review. A large corpus or an access gap must be reported honestly; draft status is retained until the acceptance evidence supports completion.
+## Collection and reproduction
+
+`python scripts/collect_literature.py --depth 3 --max-new-records 1000` resumes an ignored cache with at most three concurrent requests, bounded retries and a non-seed metadata budget per invocation. The collector rejects depth 4 before output/network activity and omits bibliography fields when retrieving depth-3 records. It checkpoints the full current frontier before budgeting and stops at an unfinished acquisition frontier. Failed cache entries are retried on restart; HTTP 429 stops that request. Provenance includes request URLs and retrieval timestamps. No API keys, paid services, network collection in CI or recurring jobs are introduced.
+
+The [supplemental acquisition manifest](acquisition-supplement.json) identifies the new partial snapshot and its limitations. Preserve earlier independent checkpoints separately until identity/edge reconciliation is possible. Do not interpret missing earlier bytes as proof that earlier work never occurred. Link primary papers; do not redistribute PDFs or complete abstracts. AI assists extraction and assessment; specialist certification is not claimed.
+
+## Gates
+
+S4-B remains paused until the level-3 corpus and gaps are reconciled, every encountered work has a documented first-pass disposition (with unresolved cases visible), retained sources have pass-two findings or explicit access-blocked treatment, influential papers are in the main bibliography, and the development-impact report identifies proposed changes and their disposition for maintainer review. Partial batches and metadata-only screening do not satisfy this gate.
+
+Neither collection completion nor finishing a batch authorises level 4 or resumes S4-B automatically. Level 4 requires a later explicit maintainer scope decision after the level-3 results are assessed. The draft PR remains open while the level-3 review is incomplete.

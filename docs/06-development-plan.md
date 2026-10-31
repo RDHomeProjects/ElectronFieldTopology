@@ -15,7 +15,7 @@ Stages are evidence gates, not promised dates. S5-S7 are conditional research pa
 
 ## First implementation task: S1-A
 
-S1-A is merged; see [the report](../reports/s1-a/README.md). S2 periodic-reference implementation and verification are merged via PR 4; see [S2 findings](../reports/s2/README.md). S3-A covariance is merged via PR 7; see [S3-A findings](../reports/s3-a/README.md). S3-B energy-centroid/localisation diagnostics are merged via PR 9; see [S3-B findings](../reports/s3-b/README.md). S3-C classified perturbations are merged via PR 11; see [S3-C findings and literature alignment](../reports/s3-c/README.md). S3-D instruments are implemented for review; see [S3-D helicity and selected closed-pair findings](../reports/s3-d/README.md). S4-A bounded candidate-family work is implemented as a stacked review branch; see [its graphical report](../reports/s4-a/README.md). S4-B controlled off-core sampling/classification is next after prerequisite review/merge. Open-boundary isolation remains a separate requirement before long-time isolated experiments.
+S1-A is merged; see [the report](../reports/s1-a/README.md). S2 periodic-reference implementation and verification are merged via PR 4; see [S2 findings](../reports/s2/README.md). S3-A covariance is merged via PR 7; see [S3-A findings](../reports/s3-a/README.md). S3-B energy-centroid/localisation diagnostics are merged via PR 9; see [S3-B findings](../reports/s3-b/README.md). S3-C classified perturbations are merged via PR 11; see [S3-C findings and literature alignment](../reports/s3-c/README.md). S3-D instruments are merged via PR 13; see [S3-D helicity and selected closed-pair findings](../reports/s3-d/README.md). S4-A bounded candidate-family work is merged via PR 15; see [its graphical report](../reports/s4-a/README.md). S4-B controlled off-core sampling/classification is paused for the level-3 literature applicability review and development-impact assessment. No level-4 work is authorised. Open-boundary isolation remains a separate requirement before long-time isolated experiments.
 
 1. Verify a primary Hopfion formula and document conventions and normalisation.
 2. Create pyproject.toml, dependency lock and importable package.
@@ -39,7 +39,7 @@ S4 may catalogue valid but unconfined knots. Progress to S5 is a decision based 
 
 ## Pre-S3 literature checkpoint
 
-[Assessment](literature/pre-s3-review.md) completed before S3 implementation. [ADR-0003](decisions/ADR-0003-pre-s3-literature.md) records the accepted scope refinement. The literature assessment itself introduced no numerical code. S3-A implementation and evidence are now available separately; S3-B/C are merged; S3-D instrumentation and selected closed-pair evidence are proposed for review. S4-A provides a bounded regular monomial catalogue and request ledger, with selected core traces and graphical reports; broader S4 search and arbitrary-line topology work remain pending.
+[Assessment](literature/pre-s3-review.md) completed before S3 implementation. [ADR-0003](decisions/ADR-0003-pre-s3-literature.md) records the accepted scope refinement. The literature assessment itself introduced no numerical code. S3-A implementation and evidence are now available separately; S3-B/C are merged; S3-D instrumentation and selected closed-pair evidence are merged via PR 13. S4-A provides a bounded regular monomial catalogue and request ledger, with selected core traces and graphical reports; broader S4 search and arbitrary-line topology work remain pending.
 
 | Substage | Purpose | Evidence gate |
 |---|---|---|
@@ -51,3 +51,7 @@ S4 may catalogue valid but unconfined knots. Progress to S5 is a decision based 
 Use L11-L14 immediately, L15/L19 for topology diagnostic design, L16-L17 before nonlinear extension selection, and L18 before implementing open numerical boundaries. Existing L05 now has a 2026 journal version requiring version reconciliation before S4 construction work.
 
 Global norm conservation or a persistent helicity value alone cannot satisfy a self-confinement/stability gate. No nonlinear binding term is selected merely by adding these references.
+
+## Active level-3 literature gate
+
+[Protocol](literature/depth4/PROTOCOL.md) and [progress/impact register](literature/depth4/LEVEL3_REVIEW.md). Preserve the corpus and all unknowns. Finish applicability review through level 3 and identify/dispose proposed development changes for maintainer review before resuming S4-B. Influential papers and corrections belong in the main bibliography; additions do not become new recursion seeds. Level 4 remains deferred until a later explicit scope decision, with no automatic collection or review.

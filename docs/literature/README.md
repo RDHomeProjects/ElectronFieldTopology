@@ -198,3 +198,31 @@ Gaetano Diglio and Renzo L. Ricca (2026), *Helicity conservation of the Riemann-
 Priority: S3 diagnostic design; S4 helicity implementation.
 
 Primary article full text inspected in PMC: Sections 3-6, gauge/boundary assumptions and conservation statements. Useful current reference for electric/magnetic helicity and covariant currents. Decay assumptions for unbounded domains cannot be silently replaced by a finite periodic box. Fix potential/sign conventions independently and handle mean modes explicitly. S3-D re-retrieval on 2026-10-31 was blocked by the public text endpoints; this historical review is not a fresh equation audit. The implementation uses accessible Irvine/Hoyos equations and independent controls instead.
+
+## Level-3 applicability continuation (2026-10-31)
+
+The [active protocol](depth4/PROTOCOL.md) holds level 4 and S4-B. [Review notes and development impacts](depth4/LEVEL3_REVIEW.md) remain incomplete. The additions below influence the approach; they do not enlarge the frozen L01–L19 recursion seed set.
+
+### L20 — Field-line transport
+
+William A. Newcomb (1958), *Motion of magnetic lines of force*. Annals of Physics 3(4), 347–385. [DOI](https://doi.org/10.1016/0003-4916(58)90024-1).
+
+Role: transport/observer assumptions for topology tracking. Review: publisher abstract only; original full-text assessment pending. Stages: S3/S4. [Impact LR3-02](depth4/LEVEL3_REVIEW.md).
+
+### L21 — Helicity and corrected vortex arguments
+
+H. K. Moffatt (1969), *The degree of knottedness of tangled vortex lines*. Journal of Fluid Mechanics 35(1), 117–129. [DOI](https://doi.org/10.1017/S0022112069000991). Read with [2017 corrigendum](https://doi.org/10.1017/jfm.2017.667), JFM 830, 821–822.
+
+Role: winding/closure validation. Review: original abstract/references; correction full HTML. Original equation audit pending. Stage: S4. [Impact LR3-03](depth4/LEVEL3_REVIEW.md).
+
+### L22 — Relative helicity and boundaries
+
+Mitchell A. Berger and George B. Field (1984), *The topological properties of magnetic helicity*. Journal of Fluid Mechanics 147, 133–148. [DOI](https://doi.org/10.1017/S0022112084002019).
+
+Role: reference-field requirements for open subvolumes. Review: targeted text/PDF inspection; not a full audit. Stages: S3/S4 and boundaries. [Impact LR3-04](depth4/LEVEL3_REVIEW.md).
+
+### L23 — Conditional magnetic-energy minimisation
+
+L. Woltjer (1958), *A theorem on force-free magnetic fields*. PNAS 44(6), 489–491. [DOI](https://doi.org/10.1073/pnas.44.6.489).
+
+Role: boundary/model applicability checks. Review: three original scanned pages; targeted argument. Stages: interpretation/S5. [Impact LR3-05](depth4/LEVEL3_REVIEW.md).

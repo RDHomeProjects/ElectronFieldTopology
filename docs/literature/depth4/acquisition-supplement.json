@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-31",
+  "provider": "OpenAlex",
+  "kind": "partial acquisition supplement, not the earlier larger checkpoint",
+  "baseline_commit": "ae0a1908b5081d4fe24948a5892a76d0220bd4d0",
+  "seed_sha256": "b1bb295badb55a3d8d62714766b95a44ff61304697e13c467dc44288f126f220",
+  "max_depth": 3,
+  "level4": "deferred",
+  "level3_review_complete": false,
+  "s4b": "paused",
+  "snapshot": "checkpoint-supplement.json.gz",
+  "sha256": "58aa04d549237c881d59bd8a5787482d8337b8401389994dbdfadcac40a932f0",
+  "uncompressed_sha256": "c14672c92592bcb48708f77d33290fadf1c2343bbbb3fe69aa0c4df41ae73710",
+  "metadata_records": 217,
+  "encountered_work_ids": 4127,
+  "edges": 5560,
+  "depth_counts": {
+    "0": 17,
+    "1": 393,
+    "2": 3717
+  },
+  "unresolved_seeds": [
+    "L01",
+    "L06"
+  ],
+  "acquisition_complete": false,
+  "printed_bibliography_coverage": "not established",
+  "gap": "HTTP 429 on two seed title searches and final two level-1 batches; deeper metadata not acquired in this run",
+  "historical_checkpoint": {
+    "status": "previously reported; bytes not located/recounted in this continuation; preserve and reconcile",
+    "reported_ids": 113295,
+    "reported_metadata_records": 93657,
+    "reported_edges": 243005,
+    "reported_queued_ids": 19487,
+    "reported_unresolved": 151
+  },
+  "reproduce": "python scripts/export_literature_checkpoint.py --graph artifacts/literature-depth4/graph.json --output docs/literature/depth4"
+}
