@@ -6,7 +6,7 @@ Updated: 2026-10-31 (Australia/Melbourne).
 
 S1-A merged via [PR 2](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/2), S2 via [PR 4](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/4), and the pre-S3 literature assessment via [PR 5](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/5), merge commit 34ab9bf. The maintainer accepted the recommendation to proceed with S3-A.
 
-S3-A merged via [PR 7](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/7), merge commit 38e75ea, with all four final-head workflows successful. S3-B merged via [PR 9](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/9), merge commit 73900ad, with all five final-head workflows successful. S3-C merged via [PR 11](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/11), merge commit 1de7714, with all six final-head workflows successful. S3-D bounded helicity/linking instruments are implemented on research/s3d-helicity-and-linking for review: 76 tests and all 13 benchmark checks pass locally and in the clean evidence run. Broader S4 candidate and topology-persistence work remains pending. No electron model or isolated long-time confinement simulation exists.
+S3-A merged via [PR 7](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/7), merge commit 38e75ea, with all four final-head workflows successful. S3-B merged via [PR 9](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/9), merge commit 73900ad, with all five final-head workflows successful. S3-C merged via [PR 11](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/11), merge commit 1de7714, with all six final-head workflows successful. S3-D bounded helicity/linking instruments are implemented on research/s3d-helicity-and-linking for review: 76 tests and all 13 benchmark checks pass locally and in the clean evidence run. S4-A is implemented on research/s4a-bateman-catalogue, stacked on unmerged PR 13, for review. It admits four known monomial families, retains an explicit invalid/deferred request ledger, and includes four graphics with GitHub-formatted equations. 91 tests and 12 clean-run experiment checks pass locally. Broader S4 search and arbitrary-line topology work remain pending. No electron model or isolated long-time confinement simulation exists.
 
 Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution, explicit initial projection, spatial/domain/time-quadrature studies, interior Poynting balance, event-consistent analytical Lorentz transformations, independent tensor/common-event controls, finite-cutoff four-momentum convergence, energy-centroid/width and observer-origin diagnostics, all-space moment quadrature with finite-tail controls, classified perturbations with constraint/null diagnostics, independent linear difference-energy controls, local transport and domain sensitivity, periodic Coulomb and unbounded Bateman helicity diagnostics, explicit mean/gauge controls, closed-curve Gauss linking and selected analytical B-fiber tracing, reproducible evidence and bounded workflows.
 
@@ -22,6 +22,9 @@ Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution,
 - [S3-C model, derivations and acceptance](models/B0-H11-Perturbations.md)
 - [S3-D report, traced curves and literature alignment](../reports/s3-d/README.md)
 - [S3-D model and convention audit](models/B0-H11-Topology.md)
+- [S4-A graphical report and equation displays](../reports/s4-a/README.md)
+- [S4-A model/source mapping](models/B0-Bateman-PQ.md)
+- [S4-A issue 14](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/14)
 - [S3-D issue 12](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/12)
 - [S3-C issue 10](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/10)
 - [S3-B issue 8 and original acceptance](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/8)
@@ -35,7 +38,9 @@ S3-C clean code commit b70b565: maximum superposition error 6.62e-14, global dif
 
 S3-D clean code commit 851c482: two selected unbounded analytical B fibers at t=0 close with maximum original gap 6.44e-14. Gauss-link estimates 1.001608577, 1.000401732 and 1.000100407 converge toward +1. Known signed/reversed/unlinked controls pass. Unbounded He=Hm=pi² is recovered to 7.55e-15 relative error; periodic gauge/optical-helicity checks pass at roundoff. Nonzero mean, longitudinal and open-trajectory controls are explicitly rejected. A factor-of-two mismatch in the printed non-null extension of Hoyos Eq.(2.12) is documented and independently checked; null conclusions are unaffected.
 
-These validate selected transformations, energy, perturbation and topology instruments, not particle self-binding or electron properties. Periodic S2 conservation does not imply confinement. Source-free charge remains zero.
+S4-A clean code commit ff0d6ea: families (1,1),(2,1),(2,3),(3,2) pass null/Maxwell and independent all-space integral references at times 0/.75. Sixteen default core traces, two trefoil refinements and a separate return-section guard close; the guard retains an early .817 gap before a later closure. Largest integral reference error is 5.37e-13. Parameterised core-pair absolute Gauss estimates converge toward 1,2,6,6 under the calibrated convention. The report retains a v1 preprint linked-ring count discrepancy and distinguishes parameterised curves from independent ODE samples. Four graphics were visually inspected.
+
+These validate selected transformations, energy, perturbation, topology and bounded family instruments, not particle self-binding or electron properties. Periodic S2 conservation does not imply confinement. Source-free charge remains zero.
 
 ## Literature checkpoint
 
@@ -43,7 +48,7 @@ These validate selected transformations, energy, perturbation and topology instr
 
 ## Next task
 
-After S3-D review/merge, S4-A: specify and implement a small published Bateman (p,q) candidate family. Reinspect L02/L11 construction equations and any theorem assumptions; declare parameters, physical/periodic domain distinctions, budgets, admissibility tests and rejection ledger before candidate generation. Validate the (1,1) baseline and finite selected higher-order cases. Expand seed/time/closure and tracing controls before assigning knot types or claiming persistence. A helicity value alone is not a per-line topology certificate. No broad optimisation sweep, model extension, fitted electron property or interaction law in this task.
+Review/merge the S3-D prerequisite PR 13, then review the stacked S4-A PR and retarget it to main as appropriate. S4-B next: controlled off-core seed/time sampling, explicit periodic versus quasi-periodic/failed closure status, and independent knot/link classification gates. Reinspect published assumptions and the v1 ring-count convention before expanding numerical topology claims. Preserve budgets and a result/deferral ledger; no broad optimisation, fitted electron property or modified dynamics yet.
 
 ## Open decisions
 
@@ -51,4 +56,4 @@ Open/absorbing boundaries before isolated long-time numerical studies; topology 
 
 ## Handoff prompt
 
-Read AGENTS.md, this status, reports S1/S2/S3-A/S3-B/S3-C/S3-D, model specifications and ADR-0002/0003. Review final S3-D checks, the two selected traced fibers, mean/domain qualifications and source-normalisation audit. Continue S4-A with verified primary construction equations, bounded candidate parameters, constraint/null checks and a rejection ledger. Preserve the distinction between selected linking evidence, whole-fibration topology and energy confinement. Preserve negative results; do not equate periodic conservation, field-line knots or classical angular momentum with an electron.
+Read AGENTS.md, this status, reports S1/S2/S3-A/S3-B/S3-C/S3-D/S4-A, model specifications and ADR-0002/0003. Review PR 13 and the stacked S4-A checks/graphics, regular monomial generator, request ledger and tracer guard. Continue S4-B only with controlled seed/time sampling and independent topology gates; do not call the gallery an arbitrary-line knot certificate. Preserve the distinction between selected linking evidence, whole-fibration topology and energy confinement. Preserve negative results; do not equate periodic conservation, field-line knots or classical angular momentum with an electron.

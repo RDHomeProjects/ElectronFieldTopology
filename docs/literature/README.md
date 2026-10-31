@@ -22,7 +22,7 @@ H. Kedia, I. Bialynicki-Birula, D. Peralta-Salas and W. T. M. Irvine (2013), *Ty
 
 Role: primary construction of null Maxwell fields encoding torus knots and links with topology preserved during evolution. Candidate source for valid field families. Knot preservation is not a demonstration of charged, self-bound electrons.
 
-Review depth: publisher metadata/abstract checked; equation extraction pending. Stages: S1, S4.
+Review depth: arXiv:1302.0342v1 Eqs. (5), (9)-(11), unnumbered coprime core parametrisation and time-flow discussion inspected for [S4-A](../models/B0-Bateman-PQ.md), including PDF visual checks. The report separates source-provided core labels from numerical invariants and retains the v1 special-case ring-count convention discrepancy. This is not an audited comparison with a later journal text. Stages: S1, S4.
 
 ### L03 — Numerical reproduction benchmark
 
@@ -123,7 +123,7 @@ Role: primary numerical method reference. Section 2, equations (1)-(2), inspecte
 Carlos Hoyos, Nilanjan Sircar and Jacob Sonnenschein (2015), *New knotted solutions of Maxwell's equations*. Journal of Physics A 48, 255204.
 [DOI](https://doi.org/10.1088/1751-8113/48/25/255204); [accessible text/version](https://arxiv.org/abs/1502.01382v2).
 
-Priority: Immediate: S3-A; later S4.
+Priority: S3-A and S4. S4-A rechecks Eqs. (2.21)-(2.22), the following momentum/helicity ratios and Eq. (4.48) for independent monomial-family integral references; see [the graphical report](../../reports/s4-a/README.md).
 
 Full-text targeted inspection: Sections 2.1, 2.2, 3 and 4.1; Appendix C located. S3-A uses the p=q momentum/energy ratio and tensor convention with an explicit [equation mapping](../models/B0-H11-Lorentz.md). S3-D inspects Eqs. (2.7)-(2.12) and the Section 2.2 Hopfion helicity reference. The [model/report](../models/B0-H11-Topology.md) records an independently verified factor-of-two audit of the printed null-case exchange expression when interpreted away from null fields. Covariant definitions and conserved quantities offer references beyond the current polynomial implementation. Real Lorentz changes and complex conformal generation must be separated; a complex transformation is not a change of inertial observer. The literature review itself establishes no numerical result or electron conclusion; subsequent S3-A implementation is reported separately.
 
