@@ -20,3 +20,14 @@ for stage in ledger["stages"]:
 assert len(seen) == 191, "Original change-set coverage mismatch"
 assert len(ledger["stages"]) == 10
 print(f"Stage {ledger['completed_stage']}/10: {count}/191 original files verified byte-exact; no scientific acceptance implied.")
+if ledger['completed_stage'] == 10:
+    import subprocess
+    bundle = ledger['source_bundle']
+    path = root / bundle['path']
+    data = path.read_bytes()
+    assert len(data) == bundle['bytes'], 'Source bundle length mismatch'
+    assert hashlib.sha256(data).hexdigest() == bundle['sha256'], 'Source bundle SHA-256 mismatch'
+    heads = subprocess.check_output(['git', 'bundle', 'list-heads', str(path)], text=True)
+    assert f"{ledger['source_commit']} HEAD" in heads, 'Original commit absent from bundle'
+    subprocess.run(['git', 'bundle', 'verify', str(path)], check=True, capture_output=True)
+    print('Exact original source commit retained in verified complete-history Git bundle.')

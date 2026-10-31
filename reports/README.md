@@ -19,3 +19,5 @@ Reports distinguish software correctness, numerical findings and physical claims
 - [S4-B bounded off-core tracing](s4-b/README.md): closure/budget ledger, nodal guards and independent polygon invariants; no complete knot classification or binding claim.
 
 - [S4-C bounded return-map diagnosis](s4-c/README.md): independently varied numerical controls, manufactured torus targets and a subsequent explicit model-feasibility decision.
+
+- [S5-A static validation and interrupted Jennings attempts](s5-a/README.md) — draft; non-torus reproductions unfinished.

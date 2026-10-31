@@ -22,6 +22,10 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
+The [workstation GPU continuation record](reports/s5-a/workstation-2026-11-01/README.md) preserves the exact evidence and partial scientific outcome. Q22 retains a cable-compatible core but needs finer-grid stationarity and domain checks. Q18 reaches a stationary linked alternative rather than the target hyperbolic knot. Neither target is a completed reproduction. The [tightened milestone decision](docs/decisions/ADR-0007-tightened-milestones.md) prioritises bounded Q22 closure, then a charged relativistic equation audit.
+
+S5-A provides a [static Skyrme–Faddeev reference](docs/models/SF-J2015-static.md), independent simple controls, a [paired CPU/GPU timing harness](docs/static-gpu-timing.md) and a [checkpointed local campaign](docs/static-gpu-continuation.md). Maintainer-reported RTX 2080 Super Max-Q float64 timings show about 4.5x short-solve speedup over twelve CPU threads after numerical checks; raw timing artifacts have not been independently retrieved. No physical-time solver or electron model is claimed.
+
 S4-C adds [bounded return-section diagnosis](docs/models/B0-S4C-ReturnMap.md), followed by [a source-mapped model-feasibility decision](docs/decisions/ADR-0006-model-feasibility.md). No extended physical dynamics or electron-model claim is introduced.
 
 S4-B now adds [bounded off-core tracing and independent polygon invariants](docs/models/B0-S4B-Offcore.md), integrating the recovered literature findings. See [the report](reports/s4-b/README.md). The comprehensive literature review remains incomplete and level 4 deferred; the maintainer explicitly authorised this bounded continuation.
