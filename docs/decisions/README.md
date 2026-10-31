@@ -29,3 +29,7 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 ## ADR-0006
 
 [Model-feasibility decision after bounded return-map diagnosis](ADR-0006-model-feasibility.md): no-go, conditional-go and defer dispositions with a fixed-coupling static-energy validation target and unchanged electron/quantum gates.
+
+## ADR-0007
+
+[Tightened milestones after workstation continuation](ADR-0007-tightened-milestones.md): bounded Q22 closure, preserved Q18 alternative, then a charged relativistic equation audit rather than a larger Q catalogue.

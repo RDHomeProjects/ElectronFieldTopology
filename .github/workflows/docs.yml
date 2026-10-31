@@ -17,3 +17,5 @@ jobs:
         run: python3 scripts/check_docs.py
       - name: Verify recovered textual transfer offline
         run: python3 scripts/check_recovered_text_transfer.py --allow-incomplete
+      - name: Verify retained workstation transfer offline
+        run: python3 scripts/check_workstation_evidence.py

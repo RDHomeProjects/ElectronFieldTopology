@@ -1,0 +1,108 @@
+{
+  "model_id": "SF-J2015-static",
+  "campaign_id": "gpu-continuation-2026-11-01",
+  "wall_seconds": 7200,
+  "analysis_reserve_seconds": 1200,
+  "analysis_job_seconds": 180,
+  "domain_relative_energy_limit": 0.02,
+  "stages": [
+    {
+      "id": "q1-control",
+      "config": "q1-65.json",
+      "iterations": 900,
+      "seconds": 300
+    },
+    {
+      "id": "q2-control",
+      "config": "q2-65.json",
+      "iterations": 900,
+      "seconds": 300
+    },
+    {
+      "id": "q22-129",
+      "config": "q22-129.json",
+      "iterations": 3000,
+      "seconds": 900
+    },
+    {
+      "id": "q18-97",
+      "config": "q18-97.json",
+      "iterations": 3000,
+      "seconds": 600
+    },
+    {
+      "id": "q18-129",
+      "config": "q18-129.json",
+      "from": "q18-97",
+      "iterations": 3000,
+      "seconds": 900
+    },
+    {
+      "id": "q22-129-cont",
+      "config": "q22-129.json",
+      "from": "q22-129",
+      "iterations": 3000,
+      "seconds": 600,
+      "skip_if_source_stationary": true
+    },
+    {
+      "id": "q22-161",
+      "config": "q22-129.json",
+      "from": "q22-129-cont",
+      "n": 161,
+      "h": 0.096,
+      "iterations": 3000,
+      "seconds": 900
+    },
+    {
+      "id": "q22-193",
+      "config": "q22-193.json",
+      "from": "q22-161",
+      "iterations": 3000,
+      "seconds": 1200
+    },
+    {
+      "id": "q18-193",
+      "config": "q18-193.json",
+      "from": "q18-129",
+      "iterations": 3000,
+      "seconds": 1200
+    },
+    {
+      "id": "q18-source-193",
+      "config": "q18-source-193.json",
+      "iterations": 3000,
+      "seconds": 1200
+    },
+    {
+      "id": "q22-comparison",
+      "config": "q22-comparison.json",
+      "iterations": 3000,
+      "seconds": 600
+    },
+    {
+      "id": "q18-comparison",
+      "config": "q18-comparison.json",
+      "iterations": 3000,
+      "seconds": 600
+    },
+    {
+      "id": "q22-domain",
+      "config": "q22-129.json",
+      "from": "q22-129-cont",
+      "n": 193,
+      "h": 0.12,
+      "iterations": 3000,
+      "seconds": 600
+    },
+    {
+      "id": "q18-domain",
+      "config": "q18-129.json",
+      "from": "q18-129",
+      "n": 193,
+      "h": 0.12,
+      "iterations": 3000,
+      "seconds": 600
+    }
+  ]
+}

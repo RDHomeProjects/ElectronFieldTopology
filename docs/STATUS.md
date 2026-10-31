@@ -1,6 +1,6 @@
 # Project status
 
-Updated: 2026-10-31 (Australia/Melbourne).
+Updated: 2026-11-01 (Australia/Melbourne).
 
 ## Recovered analysis publication
 
@@ -23,6 +23,12 @@ The maintainer-authorised off-core tranche is merged via [PR 31](https://github.
 ## Bounded S4-C and feasibility decision for review
 
 The authorised return-map diagnosis contains 33 independently controlled diagnostic runs, three replication seeds and manufactured/Maxwell controls. Results: 30 arclength-unresolved and 3 evaluation-limited diagnostic runs; 29 comparable prefixes match (including three self-checks). All ten instrument checks and 123 tests pass. See [the report](../reports/s4-c/README.md). [ADR-0006](decisions/ADR-0006-model-feasibility.md) records the no-go/conditional-go/defer model-feasibility decision. No extended physical dynamics or validated electron model is introduced.
+
+## S5-A static reference — recorded partial workstation result
+
+[PR 36](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/36) contains the validated static reference, checkpointed GPU backend and [measured workstation results](../reports/s5-a/workstation-2026-11-01/README.md), recorded for maintainer-authorised merge. The unchanged evidence archive covers eleven cases and 27 analysis jobs. Q22 at 129³ is stationary and cable-compatible; 161³/193³ retain cable evidence but fail the 1e-3 residual gate. Q18 at 193³ is stationary as a three-component link, not the published hyperbolic target. Both domain studies and Q18 comparator were unrun because the fixed physics budget ended. Neither target is a completed reproduction. Preserve the lower-energy nonstationary Q22 comparison and the Q18 negative result.
+
+[ADR-0007](decisions/ADR-0007-tightened-milestones.md) records the tightened scope: bounded Q22 closure, then a charge-capable relativistic equation audit. The neutral fixed-coupling static model establishes no electric charge, physical-time stability or electron properties; level 4 remains deferred. Historical interrupted records remain linked in [the S5-A index](../reports/s5-a/README.md).
 
 ## Evidence
 
@@ -67,7 +73,11 @@ These validate selected transformations, energy, perturbation, topology and boun
 
 ## Next task
 
-The authorised [S4-C return-map diagnosis](../reports/s4-c/README.md) independently varies numerical controls and is followed by [ADR-0006's model-feasibility decision](decisions/ADR-0006-model-feasibility.md). The next recommended feasibility target is a bounded, fixed-coupling Skyrme–Faddeev static-energy specification/validation as a neutral mechanism reference. A charged internal-field implementation remains deferred; no candidate is selected as an electron model. New dynamics, broad optimisation and S6/S7 work remain gated. Level 4 and the unfinished literature/version review remain separate.
+Following the authorised evidence merge in PR 36, work on a new focused branch: resume existing Q22 161³/193³ checkpoints without overwriting the original campaign, enforce final independently measured stationarity, and run a matched-spacing larger-domain study plus a stationary same-charge comparison within a declared budget. Publish an accepted/partial/failed ledger without extending indefinitely. Full fields remain on the workstation; they are not contained in the small evidence ZIP. Keep Q18's stationary link as a separate outcome; defer wider Q surveys.
+
+Next perform the charged relativistic feasibility audit specified in ADR-0007: action/fields, electric flux and source/topology map, finite-energy scales, causal dynamics/stability, supplied inputs versus predictions, and falsifiable interaction tests. No new dynamics implementation is selected by this decision. Faber–Kobushkin stays on the analytical audit queue.
+
+The [timing harness](static-timing.md), [GPU timing guide](static-gpu-timing.md) and [original campaign guide](static-gpu-continuation.md) remain available. Maintainer-reported RTX 2080 Super Max-Q float64 tests passed numerical checks and measured about 4.5x short-solve speedup over twelve CPU threads; raw timing artifacts have not been independently retrieved. Long-run outcomes are in the workstation report, separate from timing claims.
 
 ## Open decisions
 
@@ -75,4 +85,4 @@ Open/absorbing boundaries before isolated long-time numerical studies; topology 
 
 ## Handoff prompt
 
-Read AGENTS.md, this status, the post-S4-B direction assessment, ADR-0005/0006, the S4-C return-map report and S5 equation audit, the B0-S4B-Offcore source/acceptance map, its merged report, the main bibliography and S1–S4-A evidence. The maintainer explicitly resumed bounded S4-B despite the unfinished comprehensive literature review. Keep level 4 deferred and do not claim that corpus publication closes the scientific review. Preserve field-zero and finite-budget outcomes, distinguish polygon invariants from knot identification, and retain energy/charge/quantum gates.
+Read AGENTS.md, this status, the post-S4-B direction assessment, ADR-0005/0006/0007 and the workstation S5-A gate assessment, the S4-C return-map report and S5 equation audit, the B0-S4B-Offcore source/acceptance map, its merged report, the main bibliography and S1–S4-A evidence. The maintainer explicitly resumed bounded S4-B despite the unfinished comprehensive literature review. Keep level 4 deferred and do not claim that corpus publication closes the scientific review. Preserve field-zero and finite-budget outcomes, distinguish polygon invariants from knot identification, and retain energy/charge/quantum gates.
