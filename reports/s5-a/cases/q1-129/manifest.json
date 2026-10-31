@@ -1,0 +1,68 @@
+{
+  "model_id": "SF-J2015-static",
+  "github_base_commit": "5d95ca3f5b39539a55b2286c8623df320c83240c",
+  "local_code_commit": "0a27cc3b009c5bb0886d986f89bb7bc256ef9890",
+  "dirty_tree": false,
+  "source_sha256": {
+    "src/electron_field_topology/__init__.py": "004283ee4c7375c92497c3cd1df3a96edd695a9d34f89752fe023935cf4785ab",
+    "src/electron_field_topology/benchmark.py": "2cff483c53e914984fa2cc4279686ac671a022327878cd916d7523deb4796d1c",
+    "src/electron_field_topology/candidate_benchmark.py": "df4779e29e5b8254002bfe612dc4a1a8c83987ea0104f49c81c33590c63a8559",
+    "src/electron_field_topology/candidates.py": "4f3a0ffbbefcf533d9ea2838d5409b8b452cafebbaf301717e5ca0d171318428",
+    "src/electron_field_topology/diagnostics.py": "0f6391f2e08d3e05c9e9051c7b571e1197a3d478d12b4e3745379647d9068a54",
+    "src/electron_field_topology/evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735",
+    "src/electron_field_topology/evolution_benchmark.py": "ddc2d34acd7f5092f2257978ba7f2116181be6d07f9369b3dde2c672f2504685",
+    "src/electron_field_topology/fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+    "src/electron_field_topology/helicity.py": "147ec319e90894a6e586df1a26c82085c834052ab651fa5a963928d97502b7e1",
+    "src/electron_field_topology/knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+    "src/electron_field_topology/linking.py": "9c3b97f6d3f347099301710745739fcd772e4a4526b9514d2e0a2037625034cf",
+    "src/electron_field_topology/localisation.py": "e488482955998f8ee0dbec857325b89e055df2324067052a7430ba908347bfa3",
+    "src/electron_field_topology/localisation_benchmark.py": "e95bbb87aa8c9aaeb9316f736a717cf09a8773237d9228d65a01b3bc56d0d9eb",
+    "src/electron_field_topology/offcore.py": "3d1ce9d354f6f7b183d05b1ec27d34d0c6943311b9146236cda4bcee58786c65",
+    "src/electron_field_topology/offcore_benchmark.py": "fc185d27803f1a32e4f37ba88cdcf7ade02738c40e531eb7d7222b2aabfe2522",
+    "src/electron_field_topology/perturbation_benchmark.py": "987b4ea741c05fb4519aaad9932deefbb0f5b5a89a5821b2f1f9fc312f642238",
+    "src/electron_field_topology/perturbations.py": "a59ab8cd9c22ceca3f70b11af915bd565b8eb822ebfdc0812cd18968b3a6138f",
+    "src/electron_field_topology/relativity.py": "4469cb06fa5c5e4dc991036f11b461bcace03be53656aea15c0e118a01b6e74f",
+    "src/electron_field_topology/relativity_benchmark.py": "87b67a8dac10f179b184300f67fa56b5e55a1fd19ea209ef8b8e9533b9345529",
+    "src/electron_field_topology/return_map.py": "423b3aa03af0f670a4dddadeb448588945fb72567a977e9a347f9c310c96b98e",
+    "src/electron_field_topology/returnmap_benchmark.py": "a5205c7aeb589c64074eb1be5d9877fe6e18e3d23ea76b335da8314352fb8f9f",
+    "src/electron_field_topology/sf_energy.c": "407f96a06701b14d6af9445993788d62774c4a960d2541cd4aa0107369a576f2",
+    "src/electron_field_topology/sf_minimize.py": "a8d5828e7a8743465a9feaf3b98e2364cdaf15a7a966769db9d15e04e0d71506",
+    "src/electron_field_topology/sf_relax.py": "770e57ee698612f4a93ef2ad440cac713b35460cd188ccf5855290b3be45f1eb",
+    "src/electron_field_topology/sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+    "src/electron_field_topology/skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+    "src/electron_field_topology/topology_benchmark.py": "09d74f16ce98208de4a7b72aced7ebfc0c39ffdfd2986457868f909a349b8729"
+  },
+  "dependency_lock_sha256": "a365a979b00b8c34d9faa148d3034bd9bd6fe78ca7a1c3a9e41b39dce50cb145",
+  "config_sha256": "ed5c3a929e79469f812320f6a819fa892b2a6bb9843186198b9a5c9d6cc28582",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "compile_flags": [
+    "-O3",
+    "-std=c99",
+    "-shared",
+    "-fPIC",
+    "-fopenmp",
+    "-lm"
+  ],
+  "threads": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "snappy": "3.3.2",
+    "spherogram": "2.4.1"
+  },
+  "initial_checkpoint_sha256": "61f95d1ac063db5db080dd002a51f44783d433cb72799963d97e2c074a0bfbc0",
+  "artifacts_sha256": {
+    "config.json": "ed5c3a929e79469f812320f6a819fa892b2a6bb9843186198b9a5c9d6cc28582",
+    "final.npz": "9cd0c5165257f282ad971a652d6a329d48cce56c892c505a1478a0ca6f55fcb2",
+    "history.json": "3a1f6cdefcb2c5869b81931cf8bd5979c19b5416b3ad66df3b95755a7bb129a9",
+    "initial.npz": "bd47d96272a70473a2942c00702b178e2b057c2554a4cf74ac22038c8e3685e4",
+    "latest.npz": "9cd0c5165257f282ad971a652d6a329d48cce56c892c505a1478a0ca6f55fcb2",
+    "result.json": "adb4c35dc3dec5033ae0b9d39ab5100f2cfb6d929ed95fd14807e7ccaf20d5ae"
+  },
+  "source_unchanged_during_run": true
+}

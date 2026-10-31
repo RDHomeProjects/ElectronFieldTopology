@@ -1,0 +1,112 @@
+{
+  "status": "gradient_stationary",
+  "message": "Projected Sobolev CG: gradient_stationary",
+  "config": {
+    "model_id": "SF-J2015-static",
+    "case": "Q1-reference-97",
+    "n": 97,
+    "h": 0.16,
+    "expected_q": 1,
+    "iterations": 900,
+    "seconds": 600,
+    "record_every": 50,
+    "maxcor": 4,
+    "solver": "sobolev_cg",
+    "discretisation": "cell",
+    "seed": {
+      "kind": "axial",
+      "alpha": 1,
+      "beta": 1,
+      "scale": 1.2,
+      "cutoff": 7.2,
+      "amplitude": 1.0
+    },
+    "initial_checkpoint": "artifacts/s5a-final/q1-65/final.npz"
+  },
+  "initial": {
+    "iteration": 0,
+    "elapsed_seconds": 4.676911168000515,
+    "e2": 0.6130896846213421,
+    "e4": 0.6217242003854194,
+    "energy": 1.2348138850067616,
+    "virial_residual": 0.006992564522409857,
+    "minimum_quadrature_interpolant_norm": 0.9667560042023529,
+    "minimum_corner_cone": 0.9317135022311683,
+    "tangent_gradient_rms": 0.3303048551510178,
+    "hopf_integral": -0.9968689989870844,
+    "unit_error": 2.220446049250313e-16,
+    "max_neighbour_angle": 0.4435900225757699,
+    "mean_topological_b": [
+      6.745806323907625e-19,
+      5.294427120884802e-19,
+      -1.3607348210839581e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+  },
+  "final": {
+    "iteration": 25,
+    "elapsed_seconds": 56.08347072799734,
+    "e2": 0.6113657096756645,
+    "e4": 0.621706096029179,
+    "energy": 1.2330718057048435,
+    "virial_residual": 0.00838587526344729,
+    "minimum_quadrature_interpolant_norm": 0.9676354072475808,
+    "minimum_corner_cone": 0.9351019138000635,
+    "tangent_gradient_rms": 0.00042529178889937405,
+    "hopf_integral": -0.9970338634038584,
+    "unit_error": 2.220446049250313e-16,
+    "max_neighbour_angle": 0.4442994737017653,
+    "mean_topological_b": [
+      -2.210182424728429e-19,
+      4.565739426363012e-20,
+      -1.2856636731816048e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+  },
+  "evaluations": 40,
+  "elapsed_seconds": 56.66224251099993,
+  "history": [
+    {
+      "iteration": 0,
+      "elapsed_seconds": 4.676911168000515,
+      "e2": 0.6130896846213421,
+      "e4": 0.6217242003854194,
+      "energy": 1.2348138850067616,
+      "virial_residual": 0.006992564522409857,
+      "minimum_quadrature_interpolant_norm": 0.9667560042023529,
+      "minimum_corner_cone": 0.9317135022311683,
+      "tangent_gradient_rms": 0.3303048551510178,
+      "hopf_integral": -0.9968689989870844,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.4435900225757699,
+      "mean_topological_b": [
+        6.745806323907625e-19,
+        5.294427120884802e-19,
+        -1.3607348210839581e-05
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+    },
+    {
+      "iteration": 25,
+      "elapsed_seconds": 56.08347072799734,
+      "e2": 0.6113657096756645,
+      "e4": 0.621706096029179,
+      "energy": 1.2330718057048435,
+      "virial_residual": 0.00838587526344729,
+      "minimum_quadrature_interpolant_norm": 0.9676354072475808,
+      "minimum_corner_cone": 0.9351019138000635,
+      "tangent_gradient_rms": 0.00042529178889937405,
+      "hopf_integral": -0.9970338634038584,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.4442994737017653,
+      "mean_topological_b": [
+        -2.210182424728429e-19,
+        4.565739426363012e-20,
+        -1.2856636731816048e-05
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+    }
+  ],
+  "reproduction_status": "not_certified: topology, stationary and convergence gates must be assessed separately",
+  "scope": "static energy minimisation, not physical evolution"
+}
