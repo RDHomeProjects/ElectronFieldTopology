@@ -72,8 +72,32 @@ def read(path):
 def code_hashes():
     paths = [p for folder in (ROOT / "src", ROOT / "scripts") for p in folder.rglob("*")
              if p.suffix in (".py", ".c", ".cu")]
-    paths += [ROOT / "uv.lock", PLAN]
+    paths += [ROOT / "uv.lock", *PLAN.parent.glob("*.json")]
     return {str(p.relative_to(ROOT)): sha(p) for p in sorted(paths)}
+
+
+def study_plan(fresh_seed=False):
+    plan = read(PLAN)
+    if not fresh_seed: return plan
+    plan["campaign_id"] += "-fresh-seed"
+    plan["initialization_mode"] = "fresh_seed"
+    stages = [
+        {"id": "q1-control-fresh", "seed_config": "q1-65.json", "n": 65, "h": .24},
+        {"id": "q2-control-fresh", "seed_config": "q2-65.json", "n": 65, "h": .24},
+        {"id": "q22-129-fresh", "seed_config": "q22-129.json", "n": 129, "h": .12}]
+    for stage in plan["stages"]:
+        stage = dict(stage)
+        if stage["id"] == "q22-161-polish":
+            stage.pop("source_case"); stage["from"] = "q22-129-fresh"
+        elif stage["id"] == "q22-193-polish":
+            stage.pop("source_case"); stage["from"] = "q22-161-polish"
+        elif stage["id"] == "q22-domain-161":
+            stage.pop("source_case"); stage["from"] = "q22-129-fresh"
+        elif stage["id"] == "q22-comparison-129":
+            stage.pop("source_case"); stage.pop("optional", None); stage["seed_config"] = "q22-comparison.json"
+        stages.append(stage)
+    plan["stages"] = stages
+    return plan
 
 
 def validate_plan(plan):
@@ -87,11 +111,12 @@ def validate_plan(plan):
         raise ValueError("Invalid checkpoint/progress controls")
     seen = set()
     for stage in plan["stages"]:
-        if stage["id"] in seen or bool(stage.get("from")) == bool(stage.get("source_case")):
+        if stage["id"] in seen or sum(bool(stage.get(k)) for k in ("from", "source_case", "seed_config")) != 1:
             raise ValueError("Unique ordered stage with exactly one input required")
         if stage.get("from") and stage["from"] not in seen:
             raise ValueError("Dependency must precede its refinement")
-        if stage["n"] not in (129, 161, 193) or stage["h"] not in (.08, .096, .12):
+        if ((stage["n"] not in (129, 161, 193) or stage["h"] not in (.08, .096, .12))
+                and not (stage["id"] in ("q1-control-fresh", "q2-control-fresh") and stage["n"] == 65 and stage["h"] == .24)):
             raise ValueError("Reviewed Q22 meshes only")
         seen.add(stage["id"])
 
@@ -100,10 +125,29 @@ def published_case(name):
     return read(RECORD / "cases" / name / "result.json")
 
 
-def preflight(source):
+def preflight(source, fresh_seed=False):
     """Verify immutable published provenance before touching large fields."""
     source = Path(source).resolve()
-    plan = read(PLAN); validate_plan(plan)
+    plan = study_plan(fresh_seed); validate_plan(plan)
+    if fresh_seed:
+        manifest = read(RECORD / "cases" / REFERENCE / "manifest.json")
+        for path, expected in manifest["source_sha256"].items():
+            if sha(ROOT / path) != expected: raise ValueError("Historical numerical source changed: " + path)
+        if sha(ROOT / "uv.lock") != manifest["lock_sha256"]:
+            raise ValueError("Historical dependency lock changed")
+        original = read(RECORD / "campaign.json")["source_sha256"]
+        seeds = {}
+        for stage in plan["stages"]:
+            if "seed_config" not in stage: continue
+            path = PLAN.parent / stage["seed_config"]; key = str(path.relative_to(ROOT))
+            if sha(path) != original[key]: raise ValueError("Preserved seed configuration changed: " + key)
+            config = read(path); validate(config)
+            if config["n"] != stage["n"] or config["h"] != stage["h"]:
+                raise ValueError("Fresh seed geometry differs from preserved configuration")
+            seeds[stage["seed_config"]] = {"sha256": sha(path), "path": key}
+        return {"mode": "fresh_seed", "source_campaign": None, "inputs": {}, "seed_configs": seeds,
+                "controls": "fresh Q1/Q2 controls must pass before Q22",
+                "scope": "fresh calculation; original fields unavailable; historical scalars are context only"}
     inputs = {}
     for stage in plan["stages"]:
         if "source_case" not in stage: continue
@@ -144,7 +188,9 @@ def prepare_config(stage, template, checkpoint, plan, length):
     c = dict(template)
     c.update(case=stage["id"], n=stage["n"], h=stage["h"], iterations=plan["pass_iterations"],
              seconds=plan["pass_seconds"], precondition_length=length,
-             initial_checkpoint=str(checkpoint), prepared_at=timestamp())
+             prepared_at=timestamp(), initialization="fresh_seed" if checkpoint is None else "checkpoint_continuation")
+    c.pop("initial_checkpoint", None)
+    if checkpoint is not None: c["initial_checkpoint"] = str(checkpoint)
     validate(c)
     return c
 
@@ -249,7 +295,8 @@ def summarize(out, state):
                 results[key] = r
             else: row["execution"] = "audit_or_execution_unresolved"
             analysis = out / "analysis" / case.name
-            row["topology"] = topology_gate(analysis, checkpoint_sha)
+            row["topology"] = ({"status": "not_applicable_low_q_control"} if key in ("q1-control-fresh", "q2-control-fresh")
+                               else topology_gate(analysis, checkpoint_sha))
             scaling = analysis / "scaling.json"
             try: scale = read(scaling) if scaling.exists() else {}
             except (OSError, ValueError): scale = {}
@@ -259,7 +306,9 @@ def summarize(out, state):
                  and abs(d["difference_from_e2_minus_e4"]) < .05 for d in differences) else "fail")
                  if scale_valid else "unresolved")
         rows[key] = row
-    base = published_case(REFERENCE)
+    historical = published_case(REFERENCE)
+    fresh_seed = state.get("initialization_mode") == "fresh_seed"
+    base = results.get("q22-129-fresh") if fresh_seed else historical
     comparisons = {}
     specifications = [
         ("mesh_129_161", base, results.get("q22-161-polish"), "mesh"),
@@ -274,7 +323,11 @@ def summarize(out, state):
     for name, a, b, kind in specifications:
         comparisons[name] = compare_energy(a, b, kind) if a and b else {"status": "unresolved", "reason": "missing audited endpoint"}
     report = {"campaign_id": state["campaign_id"], "stages": rows, "comparisons": comparisons,
-              "historical_reference": {"case": REFERENCE, "final": base["final"]},
+              "historical_reference": {"case": REFERENCE, "final": historical["final"],
+                                       "use": "context_only" if fresh_seed else "comparison_reference"},
+              "initialization_mode": "fresh_seed" if fresh_seed else "checkpoint_continuation",
+              "comparison_reference": {"case": "q22-129-fresh" if fresh_seed else REFERENCE,
+                                       "available": base is not None},
               "disposition": "partial_pending_scientific_review",
               "source_unchanged": state["source_sha256"] == code_hashes(),
               "scope": "Q22 static closure only; no reproduction automatically certified; Q18 retained unchanged",
@@ -282,7 +335,7 @@ def summarize(out, state):
               "generated_at": timestamp(), "study_started_at": state.get("started_at"),
               "timestamp_policy": "UTC and Australia/Melbourne ISO 8601; file times cover raw fields/curves/history; elapsed history samples remain unchanged"}
     atomic_json(out / "summary.json", report)
-    lines = ["# Checkpointed Q22 convergence study", "", "Generated: " + report["generated_at"]["melbourne"] + " (Melbourne); " + report["generated_at"]["utc"] + " (UTC).", "", report["disposition"], "",
+    lines = ["# Checkpointed Q22 convergence study", "", "Initialization: " + report["initialization_mode"] + ".", "", "Generated: " + report["generated_at"]["melbourne"] + " (Melbourne); " + report["generated_at"]["utc"] + " (UTC).", "", report["disposition"], "",
              "| Stage | Execution | Solver | Energy | CPU residual |", "|---|---|---|---:|---:|"]
     for key, row in rows.items():
         f = row.get("final", {})
@@ -326,7 +379,9 @@ def analyse(out, state, plan, key):
              (case.name + "-topology", [sys.executable, "scripts/analyse_static_fields.py", "--case", str(case),
                  "--phases", "final", "--output", str(folder)]),
              (case.name + "-scaling", [sys.executable, "scripts/check_static_scaling.py", "--checkpoint", str(case / "final.npz"), "--output", str(folder)])]
-    if not key.startswith("q22-comparison"):
+    if key in ("q1-control-fresh", "q2-control-fresh"):
+        tasks = [tasks[-1]]
+    elif not key.startswith("q22-comparison"):
         for target in ("primary", "secondary"):
             tasks.append((case.name + "-witness-" + target, [sys.executable, "scripts/match_static_cable_diagrams.py",
                 "--reference", str(refs / "references.json"), "--topology", str(folder / "topology.json"),
@@ -362,15 +417,15 @@ def analyse(out, state, plan, key):
             atomic_json(out / "campaign.json", state)
 
 
-def run(source, output, resume=False):
-    receipt = preflight(source)
+def run(source, output, resume=False, fresh_seed=False):
+    receipt = preflight(source, fresh_seed=True) if fresh_seed else preflight(source)
     out = Path(output).resolve(); old = Path(source).resolve()
-    if out.is_relative_to(old) or old.is_relative_to(out):
+    if not fresh_seed and (out.is_relative_to(old) or old.is_relative_to(out)):
         raise ValueError("Use a new output tree separate from the original campaign")
     if subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT, text=True).strip():
         raise ValueError("Commit the reviewed run tooling before computation to record clean provenance")
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
-    plan = read(PLAN); validate_plan(plan)
+    plan = study_plan(fresh_seed); validate_plan(plan)
     if not resume: out.mkdir(parents=True, exist_ok=False)
     with (out / "run.lock").open("a") as lock:
         try: fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -384,7 +439,8 @@ def run(source, output, resume=False):
             for folder in ("cases", "configs", "logs", "analysis"): (out / folder).mkdir()
             state = {"campaign_id": plan["campaign_id"], "started_utc": datetime.now(timezone.utc).isoformat(),
                      "started_at": timestamp(), "overall_wall_seconds": None, "git_commit": commit, "source_sha256": code_hashes(),
-                     "source_inputs": receipt, "stages": {}, "analysis": {}}
+                     "source_inputs": receipt, "stages": {}, "analysis": {},
+                     "initialization_mode": "fresh_seed" if fresh_seed else "checkpoint_continuation"}
             atomic_json(out / "plan.json", plan)
         def save():
             state["updated_at"] = timestamp()
@@ -399,6 +455,16 @@ def run(source, output, resume=False):
                     continue
                 if job["status"] in ("numerical_fault", "audit_incomplete", "optional_checkpoint_missing", "dependency_unresolved"):
                     continue
+                if fresh_seed and key.startswith("q22"):
+                    controls_ok = True
+                    for control in ("q1-control-fresh", "q2-control-fresh"):
+                        control_job = state["stages"].get(control, {})
+                        try:
+                            result = endpoint(out / control_job["directory"])
+                            controls_ok = controls_ok and all(basic_gates(result).values())
+                        except (OSError, ValueError, KeyError): controls_ok = False
+                    if not controls_ok:
+                        job["status"] = "fresh_control_failure"; save(); continue
                 if stage.get("from"):
                     dependency = state["stages"].get(stage["from"], {})
                     if not dependency.get("directory"):
@@ -408,6 +474,9 @@ def run(source, output, resume=False):
                         job["status"] = "dependency_unresolved"; save(); continue
                     checkpoint = out / dependency["directory"] / "final.npz"
                     template = previous["config"]
+                elif stage.get("seed_config"):
+                    checkpoint = None
+                    template = read(PLAN.parent / stage["seed_config"])
                 else:
                     entry = receipt["inputs"][stage["source_case"]]
                     if entry["status"] != "verified":
@@ -436,7 +505,9 @@ def run(source, output, resume=False):
                     length = plan["precondition_lengths"][job["option_index"]]
                     c = prepare_config(stage, template, checkpoint, plan, length); atomic_json(config, c)
                     attempt = {"status": "running", "directory": str(case.relative_to(out)),
-                               "input_sha256": sha(checkpoint), "config_sha256": sha(config), "precondition_length": length,
+                               "input_sha256": sha(checkpoint) if checkpoint is not None else None,
+                               "initialization": "fresh_seed" if checkpoint is None else "checkpoint_continuation",
+                               "config_sha256": sha(config), "precondition_length": length,
                                "started_at": timestamp()}
                     job["attempts"].append(attempt); job.update(attempt); job["status"] = "running"; save()
                     print("RUN", case.name, "precondition length", length, "checkpoint interval", c["seconds"], "s; no overall time cap", flush=True)
@@ -493,14 +564,17 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--source-campaign", type=Path, default=DEFAULT_SOURCE)
     p.add_argument("--output", type=Path)
+    p.add_argument("--fresh-seed", action="store_true", help="Recompute controls and Q22 from preserved seeds; no old fields required")
     mode = p.add_mutually_exclusive_group()
     mode.add_argument("--preflight", action="store_true", help="Verify original field hashes; no solver run")
     mode.add_argument("--collect", action="store_true", help="Rebuild evidence only; no solver run")
     mode.add_argument("--resume", action="store_true", help="Continue the same study from audited pass endpoints")
     a = p.parse_args()
     os.environ["OMP_NUM_THREADS"] = "12"; os.environ["OPENBLAS_NUM_THREADS"] = "1"
+    if a.resume and a.output and (a.output / "campaign.json").exists():
+        a.fresh_seed = read(a.output / "campaign.json").get("initialization_mode") == "fresh_seed"
     if a.preflight:
-        print(json.dumps({"verified_at": timestamp(), **preflight(a.source_campaign)}, indent=2)); return
+        print(json.dumps({"verified_at": timestamp(), **preflight(a.source_campaign, a.fresh_seed)}, indent=2)); return
     if not a.output: p.error("--output is required for a run or collection")
     if a.collect:
         with (a.output / "run.lock").open("a") as lock:
@@ -508,7 +582,7 @@ def main():
             except BlockingIOError: p.error("Study is running; use its current evidence snapshot")
             summarize(a.output.resolve(), read(a.output / "campaign.json"))
         return
-    run(a.source_campaign, a.output, a.resume)
+    run(a.source_campaign, a.output, a.resume, a.fresh_seed)
 
 
 if __name__ == "__main__": main()

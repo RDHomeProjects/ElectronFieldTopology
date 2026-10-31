@@ -30,7 +30,7 @@ Continue a stage until its CPU tangent-gradient RMS is below the unchanged 1e-3 
 
 Use preconditioning lengths 0.5, then 0.25 and 1.0 only if needed. This changes the optimiser metric, not the energy functional or coefficients. A plateau is less than 0.5% best residual improvement **and** less than 1e-8 relative energy decrease over the most recent three passes at the same option. These are practical progress controls, not acceptance tolerances or proof that no minimum exists. Slow progress that exceeds either control continues without a fixed pass count. After all options stall, preserve the partial outcome for assessment; any additional strategy should be motivated by its residual/energy history rather than a blind catalogue expansion.
 
-The original campaign is read-only. Original final fields must match the SHA-256 hashes in the published manifests; required missing or modified inputs stop preflight. A missing optional comparator is recorded and blocks its refinements, while the cable/domain study remains possible. Numerical source and lockfile hashes must still match the original validated implementation. New orchestration and the new plan are separately hashed. Each new pass performs the existing device validation and independent CPU endpoint audit.
+The original campaign is read-only. Original final fields must match the SHA-256 hashes in the published manifests; in checkpoint-continuation mode, required missing or modified inputs stop preflight. A missing optional comparator is recorded and blocks its refinements, while the cable/domain study remains possible. Numerical source and lockfile hashes must still match the original validated implementation. New orchestration and the new plan are separately hashed. Each new pass performs the existing device validation and independent CPU endpoint audit.
 
 Every pass has its own field and scalar records. Checkpoints, failures and all optimiser options remain preserved. Disk availability is checked against eight uncompressed field arrays before starting each pass; insufficient space pauses the study without deleting results. Full 3-D fields can accumulate substantial disk usage. The small evidence archive deliberately excludes those bulk fields, whose absolute workstation paths and hashes are retained.
 
@@ -76,3 +76,23 @@ The signed diagram words, input membership and common-diagram witnesses require 
 After the Q22 ledger is assessed, proceed to the charge-capable relativistic equation audit in ADR-0007. More minimisation time is not evidence for physical-time stability, electric charge, quantum spin or an electron model.
 
 AI assisted orchestration, verification and reporting. No new GPU result has been produced in the review environment.
+
+
+## Fresh calculation when historical fields are unavailable
+
+Added: 1 November 2026, Australia/Melbourne, after the maintainer's search found no Q22 `final.npz`, `latest.npz` or `previous.npz` files in the searched home/media/mount locations. This establishes that those searches found no usable checkpoint; it is not proof that every possible backup was searched.
+
+Use `--fresh-seed` to make a **new calculation with new provenance**. No historical field file or campaign path is required. Preflight checks the unchanged historical numerical source and lockfile, and verifies the preserved Q1, Q2, Q22 cable and comparator seed configurations against their published campaign hashes. This does not regenerate byte-identical historical trajectories or certify the earlier results again.
+
+The runtime plan first solves fresh Q1 and Q2 controls at 65³ and h=0.24. Both must satisfy all existing basic gates before any Q22 solve starts. It then solves a fresh Q22 cable seed at 129³, refines this new endpoint to 161³ and then 193³, runs the same larger-domain studies, and independently solves/refines the preserved comparator seed. There are eleven stages in total. A new seed is used only on the first pass of the two controls, the coarse cable and the coarse comparator. Every later pass continues its own audited endpoint, and every refinement starts from a newly measured dependency field. The original seed parameters, field equations, coefficients and scientific acceptance thresholds stay fixed.
+
+The new coarse Q22 endpoint becomes the reference for all fresh-study mesh, domain and same-grid comparator comparisons. Historical scalar records are explicitly marked **context only** and cannot fill a missing fresh reference or gate. If the fresh relaxation reaches another basin or core topology, preserve and report that outcome. The procedure does not impose a cable topology or assume the original result will repeat.
+
+```bash
+uv run --frozen --extra topology --extra gpu --python 3.12.14 \
+  python -m electron_field_topology.sf_q22_closure --fresh-seed --preflight
+```
+
+Start a new, dated output directory with `--fresh-seed --output <new-directory>`. The handoff's `RUN-FRESH.sh` creates this directory and prints its path. It writes `artifacts/q22-fresh-latest.txt` so `RUN-FRESH.sh <repo> resume` can continue it. The module also infers fresh mode from a saved study when `--resume` is used. `--collect` remains metadata/evidence export only. Existing no-overall-cap, progress-option, locking, timestamp and preservation rules continue to apply. Fresh controls receive scaling audits; the cable-identification search is not misapplied to low-charge controls.
+
+No new physical result was obtained while preparing this mode. Fresh and historical results must remain distinguishable in any subsequent assessment or publication.

@@ -168,6 +168,9 @@ def synthetic_endpoint(argv, log, seconds, *, residual=.0008, status=None):
     config = closure.read(argv[argv.index('--config') + 1])
     closure.atomic_json(case / 'config.json', config)
     r = reference_result(); r['config'] = config
+    if config['expected_q'] != 22:
+        r['initial']['hopf_integral'] = -config['expected_q'] * .999
+        r['final']['hopf_integral'] = -config['expected_q'] * .999
     r['final']['cpu_tangent_gradient_rms'] = residual
     r['final']['tangent_gradient_rms'] = residual
     r['status'] = status or ('gradient_stationary' if residual < .001 else 'time_budget')
@@ -178,7 +181,7 @@ def synthetic_endpoint(argv, log, seconds, *, residual=.0008, status=None):
     manifest = {'source_unchanged_during_run': True, 'device_validation': {'passed': True},
         'source_sha256': {p: h for p, h in closure.code_hashes().items() if p.startswith('src/')},
         'lock_sha256': closure.sha(closure.ROOT / 'uv.lock'), 'git_commit': 'fixed-test-commit',
-        'initial_checkpoint_sha256': closure.sha(config['initial_checkpoint']),
+        'initial_checkpoint_sha256': closure.sha(config['initial_checkpoint']) if config.get('initial_checkpoint') else None,
         'artifacts_sha256': {p.name: closure.sha(p) for p in case.iterdir()}}
     closure.atomic_json(case / 'manifest.json', manifest)
     return {'status': 'completed', 'returncode': 0}
@@ -323,3 +326,95 @@ def test_concurrent_resume_is_rejected(tmp_path, monkeypatch):
         fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
         with pytest.raises(ValueError, match='already running'):
             fake_run(tmp_path, monkeypatch, synthetic_endpoint, resume=True, out=out)
+
+
+def test_fresh_preflight_requires_no_historical_field_and_verifies_preserved_seed_files(tmp_path):
+    receipt = closure.preflight(tmp_path / 'absent-historical-campaign', fresh_seed=True)
+    assert receipt['mode'] == 'fresh_seed'
+    assert receipt['source_campaign'] is None
+    assert receipt['inputs'] == {}
+    assert set(receipt['seed_configs']) == {'q1-65.json', 'q2-65.json', 'q22-129.json', 'q22-comparison.json'}
+    plan = closure.study_plan(True)
+    closure.validate_plan(plan)
+    assert len(plan['stages']) == 11
+    assert not any('source_case' in s for s in plan['stages'])
+    assert next(s for s in plan['stages'] if s['id'] == 'q22-193-polish')['from'] == 'q22-161-polish'
+
+
+def test_fresh_first_pass_drops_checkpoint_inherited_from_any_template():
+    plan = closure.study_plan(True)
+    template = reference()['config']
+    template['initial_checkpoint'] = '/missing/old.npz'
+    stage = next(s for s in plan['stages'] if s['id'] == 'q22-129-fresh')
+    config = closure.prepare_config(stage, template, None, plan, .5)
+    assert 'initial_checkpoint' not in config
+    assert config['initialization'] == 'fresh_seed'
+    assert config['seed'] == closure.read(closure.PLAN.parent / 'q22-129.json')['seed']
+
+
+def run_fresh(tmp_path, monkeypatch, executor, *, resume=False):
+    def git_output(args, **kwargs):
+        return '' if args[1] == 'status' else 'fixed-test-commit\n'
+    monkeypatch.setattr(closure.subprocess, 'check_output', git_output)
+    monkeypatch.setattr(closure, 'execute', executor)
+    out = tmp_path / 'fresh-study'
+    closure.run(tmp_path / 'missing', out, resume=resume, fresh_seed=True)
+    return out
+
+
+def test_fresh_end_to_end_uses_new_reference_and_can_resume_without_old_files(tmp_path, monkeypatch):
+    calls = []
+    def executor(argv, log, seconds):
+        outcome = synthetic_endpoint(argv, log, seconds)
+        if '-m' in argv:
+            calls.append(argv)
+            case = Path(argv[argv.index('--output') + 1])
+            result = closure.read(case / 'result.json')
+            if result['config']['case'] == 'q22-129-fresh':
+                result['final']['energy'] = 13.0  # Distinct synthetic observation, not a physics result.
+                closure.atomic_json(case / 'result.json', result)
+                manifest = closure.read(case / 'manifest.json')
+                manifest['artifacts_sha256']['result.json'] = closure.sha(case / 'result.json')
+                closure.atomic_json(case / 'manifest.json', manifest)
+        return outcome
+    out = run_fresh(tmp_path, monkeypatch, executor)
+    state = closure.read(out / 'campaign.json')
+    report = closure.read(out / 'summary.json')
+    assert len(calls) == 11
+    assert state['initialization_mode'] == 'fresh_seed'
+    assert report['historical_reference']['use'] == 'context_only'
+    assert report['comparison_reference'] == {'case': 'q22-129-fresh', 'available': True}
+    assert report['comparisons']['mesh_129_161']['first_energy'] == 13.0
+    assert report['historical_reference']['final']['energy'] != 13.0
+    assert all(row['artifact_audit'] for row in report['stages'].values())
+    for key in ('q1-control-fresh', 'q2-control-fresh', 'q22-129-fresh', 'q22-comparison-129'):
+        job = state['stages'][key]
+        assert job['input_sha256'] is None
+        assert job['attempts'][0]['initialization'] == 'fresh_seed'
+        assert 'initial_checkpoint' not in closure.read(out / job['directory'] / 'config.json')
+    count = len(calls)
+    run_fresh(tmp_path, monkeypatch, executor, resume=True)
+    assert len(calls) == count
+
+
+def test_failed_fresh_controls_prevent_q22_calculation(tmp_path, monkeypatch):
+    calls = []
+    def executor(argv, log, seconds):
+        outcome = synthetic_endpoint(argv, log, seconds)
+        if '-m' in argv:
+            calls.append(argv)
+            case = Path(argv[argv.index('--output') + 1])
+            result = closure.read(case / 'result.json')
+            assert result['config']['expected_q'] in (1, 2)
+            result['final']['virial_residual'] = .2
+            closure.atomic_json(case / 'result.json', result)
+            manifest = closure.read(case / 'manifest.json')
+            manifest['artifacts_sha256']['result.json'] = closure.sha(case / 'result.json')
+            closure.atomic_json(case / 'manifest.json', manifest)
+        return outcome
+    out = run_fresh(tmp_path, monkeypatch, executor)
+    report = closure.read(out / 'summary.json')
+    assert len(calls) == 2
+    assert all(row['execution'] == 'fresh_control_failure' for key, row in report['stages'].items() if key.startswith('q22'))
+    assert report['comparison_reference']['available'] is False
+    assert all(row['status'] == 'unresolved' for row in report['comparisons'].values())
