@@ -2,11 +2,17 @@
 
 Updated: 2026-10-31 (Australia/Melbourne).
 
+## Recovered analysis publication
+
+The written-analysis transfer is complete: all 5,217 words in the corpus defined for PRs 18 and 19 are published in approximately 10% increments. See [the reading index and verification record](literature/recovered-transfer/README.md). Original source hashes, review depths, negative findings and limitations are preserved; no new literature review was performed.
+
+This completes publication of that prose corpus, not the scientific review or publication of the 113,295-ID citation dataset and supporting checkpoint implementation. PR 17 remains open for the wider checkpoint. Research remains stopped, S4-B paused and level 4 deferred pending a new maintainer instruction and the unfinished review/impact gate.
+
 ## Current stage
 
 S1-A merged via [PR 2](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/2), S2 via [PR 4](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/4), and the pre-S3 literature assessment via [PR 5](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/5), merge commit 34ab9bf. The maintainer accepted the recommendation to proceed with S3-A.
 
-S3-A merged via [PR 7](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/7), merge commit 38e75ea, with all four final-head workflows successful. S3-B merged via [PR 9](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/9), merge commit 73900ad, with all five final-head workflows successful. S3-C merged via [PR 11](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/11), merge commit 1de7714, with all six final-head workflows successful. S3-D bounded helicity/linking instruments are implemented on research/s3d-helicity-and-linking for review: 76 tests and all 13 benchmark checks pass locally and in the clean evidence run. S4-A is implemented on research/s4a-bateman-catalogue, stacked on unmerged PR 13, for review. It admits four known monomial families, retains an explicit invalid/deferred request ledger, and includes four graphics with GitHub-formatted equations. 91 tests and 12 clean-run experiment checks pass locally. Broader S4 search and arbitrary-line topology work remain pending. No electron model or isolated long-time confinement simulation exists.
+S3-A merged via [PR 7](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/7), merge commit 38e75ea, with all four final-head workflows successful. S3-B merged via [PR 9](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/9), merge commit 73900ad, with all five final-head workflows successful. S3-C merged via [PR 11](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/11), merge commit 1de7714, with all six final-head workflows successful. S3-D bounded helicity/linking instruments merged via PR 13: 76 tests and all 13 benchmark checks pass locally and in the clean evidence run. S4-A merged via PR 15. It admits four known monomial families, retains an explicit invalid/deferred request ledger, and includes four graphics with GitHub-formatted equations. 91 tests and 12 clean-run experiment checks pass locally. Broader S4 search and arbitrary-line topology work remain pending. No electron model or isolated long-time confinement simulation exists.
 
 Implemented: analytical Hopfion, independent periodic Fourier Maxwell evolution, explicit initial projection, spatial/domain/time-quadrature studies, interior Poynting balance, event-consistent analytical Lorentz transformations, independent tensor/common-event controls, finite-cutoff four-momentum convergence, energy-centroid/width and observer-origin diagnostics, all-space moment quadrature with finite-tail controls, classified perturbations with constraint/null diagnostics, independent linear difference-energy controls, local transport and domain sensitivity, periodic Coulomb and unbounded Bateman helicity diagnostics, explicit mean/gauge controls, closed-curve Gauss linking and selected analytical B-fiber tracing, reproducible evidence and bounded workflows.
 
@@ -48,7 +54,7 @@ These validate selected transformations, energy, perturbation, topology and boun
 
 ## Next task
 
-Review/merge the S3-D prerequisite PR 13, then review the stacked S4-A PR and retarget it to main as appropriate. S4-B next: controlled off-core seed/time sampling, explicit periodic versus quasi-periodic/failed closure status, and independent knot/link classification gates. Reinspect published assumptions and the v1 ring-count convention before expanding numerical topology claims. Preserve budgets and a result/deferral ledger; no broad optimisation, fitted electron property or modified dynamics yet.
+No further literature acquisition, substantive paper review or S4-B development is authorised by the transfer. The scientific first/second passes, source-version reconciliation and final S1–S4-A impact audit remain unfinished. A new maintainer instruction is required before resuming that work; level 4 needs its own scope decision.
 
 ## Open decisions
 
@@ -56,4 +62,4 @@ Open/absorbing boundaries before isolated long-time numerical studies; topology 
 
 ## Handoff prompt
 
-Read AGENTS.md, this status, reports S1/S2/S3-A/S3-B/S3-C/S3-D/S4-A, model specifications and ADR-0002/0003. Review PR 13 and the stacked S4-A checks/graphics, regular monomial generator, request ledger and tracer guard. Continue S4-B only with controlled seed/time sampling and independent topology gates; do not call the gallery an arbitrary-line knot certificate. Preserve the distinction between selected linking evidence, whole-fibration topology and energy confinement. Preserve negative results; do not equate periodic conservation, field-line knots or classical angular momentum with an electron.
+Read AGENTS.md, this status, the recovered-transfer reading index and manifest, and the S1–S4-A reports/model mappings. Verify the prose using `python3 scripts/check_recovered_text_transfer.py`. All six counted source texts reconstruct exactly from the published fragments. The full citation dataset/supporting checkpoint is separately preserved; PR 17 remains open. Do not interpret transfer completion as research completion. Keep research stopped, S4-B paused and level 4 deferred until a new instruction resolves the unfinished scientific review gate. Preserve source-specific review depths and negative results.
