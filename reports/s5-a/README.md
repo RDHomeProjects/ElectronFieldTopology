@@ -1,0 +1,9 @@
+# S5-A — static energy validation and Jennings reproduction attempts
+
+Work in progress in [PR 36](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/36), following [issue 35](https://github.com/RDHomeProjects/ElectronFieldTopology/issues/35). [Model/source map](../../docs/models/SF-J2015-static.md). This checkpoint retains completed scalar evidence while finer experiments continue; it does not claim completed cable/hyperbolic reproduction.
+
+The full local suite passed 135 tests before experiments; an additional minimiser-residual regression passed separately. All eleven initial-head hosted workflows passed. Both Q=1 and Q=2 simple controls reached the declared tangent-gradient residual at three meshes (65,97,129), with independent larger-box checks. The finest energies are 1.2318521 and 2.0050617; signed Hopf integrals -0.999039 and -1.998803. Source charges refer to magnitudes under the declared orientation convention.
+
+The initial Q=18 hyperbolic-target pass reached its 900-second budget at E=11.587298 without stationarity and changed from one knotted preimage to three closed components. The initial Q=22 cable-target pass rejected the 97³ seed's nonpositive hemisphere margin, then reached its 129³ budget at E=12.593387, without stationarity. These are retained findings, not successful reproductions. Later polishing, finer meshes, source-map alternatives and topology/energy comparisons are in progress. No tolerance or coupling is adjusted to make a result pass.
+
+Completed case configurations, histories, original float64 scalar results and manifests are retained under `cases/`. Large float32 field checkpoints are supplied separately for recovery. No extended physical-time solver, electric-charge mechanism or electron model is claimed. Level 4 remains deferred. AI assisted implementation and analysis; primary sources and independent controls are identified in the model map and main bibliography.
