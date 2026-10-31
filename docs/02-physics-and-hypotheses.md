@@ -36,7 +36,7 @@ These are baseline deductions, not a blanket impossibility result for every exte
 
 | ID | Question | Evidence needed | Present status |
 |---|---|---|---|
-| H01 | Can known linked Maxwell fields be reproduced? | Equation residuals, analytical comparison, convergence | Fields reproduced in S1-A and independently evolved on the S2 periodic domain; topology not independently traced |
+| H01 | Can known linked Maxwell fields be reproduced? | Equation residuals, analytical comparison, convergence | Fields reproduced in S1-A and independently evolved in S2; two selected analytical t=0 B fibers explicitly traced and linked in S3-D, without a whole-fibration or persistence certificate |
 | H02 | Does topology persistence imply stationary energy confinement? | Localisation about fixed and moving centres, radiation flux | Not assumed; test separately |
 | H03 | Can full field structure yield robust charge-like interactions? | Force law and external-field tests under explicit dynamics | Baseline net charge constrained to zero |
 | H04 | Can a justified extension support finite-energy stable structures? | Equations/action, admissible data, perturbation and stability analysis | No extension selected |
