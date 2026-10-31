@@ -1,0 +1,89 @@
+{
+  "review_date": "2026-10-31",
+  "active_max_depth": 3,
+  "level4": "deferred",
+  "s4b": "paused",
+  "complete": false,
+  "records": [
+    {
+      "id": "L20",
+      "openalex_id": "W2048404657",
+      "doi": "10.1016/0003-4916(58)90024-1",
+      "discovered_depth": 1,
+      "parent": "L12",
+      "edge_evidence": "printed reference 19",
+      "review_depth": "publisher abstract",
+      "summary": "Distinguishes flux-preserving and line-preserving field transport.",
+      "applicability": "potentially_applicable",
+      "reason": "Transport and observer assumptions for topology tracking.",
+      "pass2_status": "pending original full text",
+      "notes": "LEVEL3_REVIEW.md",
+      "bibliography_key": "newcomb1958"
+    },
+    {
+      "id": "L21",
+      "openalex_id": "W2012393256",
+      "doi": "10.1017/S0022112069000991",
+      "discovered_depth": 1,
+      "parent": "L12",
+      "edge_evidence": "printed reference 22",
+      "review_depth": "publisher abstract and references; correction full HTML",
+      "summary": "Relates helicity to linkage under fluid assumptions; a later correction affects vortex pitch arguments.",
+      "applicability": "applicable_with_limits",
+      "reason": "Use precise vector-field and winding evidence.",
+      "pass2_status": "original audit pending; correction implications recorded",
+      "notes": "LEVEL3_REVIEW.md",
+      "bibliography_key": "moffatt1969",
+      "correction_doi": "10.1017/jfm.2017.667"
+    },
+    {
+      "id": "L22",
+      "openalex_id": "W1966310941",
+      "doi": "10.1017/S0022112084002019",
+      "discovered_depth": 1,
+      "parent": "L19",
+      "edge_evidence": "OpenAlex index; printed reconciliation pending",
+      "review_depth": "targeted full text and PDF visual inspection",
+      "summary": "Develops relative helicity for suitable open subvolumes.",
+      "applicability": "applicable",
+      "reason": "Reference-field and gauge treatment before open-boundary helicity extensions.",
+      "pass2_status": "targeted applicable aspects recorded; not a whole-paper audit",
+      "locations": [
+        "p.134 Eq.(3)",
+        "pp.140-142 Section 3"
+      ],
+      "notes": "LEVEL3_REVIEW.md",
+      "bibliography_key": "bergerfield1984"
+    },
+    {
+      "id": "L23",
+      "openalex_id": "W2034039186",
+      "doi": "10.1073/pnas.44.6.489",
+      "discovered_depth": 1,
+      "parent": "L19",
+      "edge_evidence": "OpenAlex index; printed path L12 to Moffatt1969 to Woltjer1958a also verified",
+      "review_depth": "three original page scans; targeted variational argument",
+      "summary": "Derives a conditional magnetic-energy minimum at fixed helicity in a closed conducting system.",
+      "applicability": "applicable_with_limits",
+      "reason": "Do not apply conducting-boundary equilibrium results as free-space binding evidence.",
+      "pass2_status": "targeted applicable aspects recorded",
+      "locations": [
+        "pp.489-491 Eqs.(2)-(10)"
+      ],
+      "notes": "LEVEL3_REVIEW.md",
+      "bibliography_key": "woltjer1958"
+    }
+  ],
+  "supplementary_corrections": [
+    {
+      "doi": "10.1017/jfm.2017.667",
+      "for": "L21",
+      "review_depth": "full HTML",
+      "locations": [
+        "pp.821-822"
+      ],
+      "bibliography_key": "moffatt2017corrigendum",
+      "recursion_seed": false
+    }
+  ]
+}

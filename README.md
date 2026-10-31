@@ -22,6 +22,8 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
+S3-D and S4-A are merged via PRs 13 and 15. S4-B is paused for the [level-3 literature applicability review and development-impact assessment](docs/literature/depth4/LEVEL3_REVIEW.md). Level 4 is deferred with no collection or review authorised. Influential papers are added to the main bibliography as qualified findings become available; the review remains incomplete.
+
 S1-A adds an analytical (1,1) Hopfion evaluator, energy/flux/localisation diagnostics, independent polynomial and symbolic checks, and a reproducible benchmark. It samples a known solution at chosen times. S2 adds an independent periodic Fourier Maxwell solver, measured initial projection, spatial/domain studies and interior Poynting balance. Neither implementation models an electron.
 
 See [the equation mapping and conventions](docs/models/B0-H11.md). Measured evidence and interpretation are kept in [reports](reports/README.md).
