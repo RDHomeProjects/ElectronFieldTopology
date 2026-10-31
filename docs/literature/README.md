@@ -1,5 +1,7 @@
 # Literature register
 
+A [frozen 1% citation-dataset sample](citation-sample-01/README.md) publishes 1,133 complete records with their incident citation edges and reproducible integrity checks.
+
 The recovered written-analysis corpus is now published: [reading index, source provenance and completeness checks](recovered-transfer/README.md). This transfer is complete; the scientific review remains incomplete and S4-B remains paused.
 
 Last checked: 2026-10-31. This is a scoped starting bibliography, not an exhaustive systematic review or a claim to identify the latest result in every subfield.

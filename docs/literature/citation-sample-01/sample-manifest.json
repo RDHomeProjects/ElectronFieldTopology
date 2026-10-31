@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-31",
+  "timezone": "Australia/Melbourne",
+  "recovery_commit": "1ed3395fd537cc68eb97787fbcc0dae0df72a931",
+  "source_path": "docs/literature/recovered-level3/data",
+  "source_manifest_sha256": "2473f9d7a42051ef1f3cfb3ebbcf86eb8bc08b641f9df0f9aec19b7827a9b349",
+  "full_dataset_ids": 113295,
+  "selected_ids": 1133,
+  "percentage": 1.000044132574253,
+  "selection": "First round(N/100) unique IDs in ascending Python string order across every frozen ledger shard; no relevance, review-status or metadata-status filter.",
+  "first_id": "W1000361025",
+  "last_id": "W1495603779",
+  "depth_counts": {
+    "3": 1027,
+    "2": 104,
+    "1": 2
+  },
+  "metadata_status_counts": {
+    "acquired": 1128,
+    "unresolved": 5
+  },
+  "screen_status_counts": {
+    "no_direct_topic_signal": 521,
+    "content_unassessed": 585,
+    "potential_topic_match": 22,
+    "awaiting_metadata": 5
+  },
+  "incident_edges": 4497,
+  "internal_edges": 32,
+  "external_endpoint_ids": 3469,
+  "edge_rule": "All original frozen graph edges with either endpoint among selected IDs; external endpoints are identifiers, not additional sampled records.",
+  "records_uncompressed_sha256": "4cf11ca6be9ae1d73512c82f4ba5ea2d0f5efef6262ab5c631988fffcdbc0b54",
+  "edges_uncompressed_sha256": "f17d35f76ff6c1e8dc3e94333220455f517fcdf9d1d84fccb59ebbbadd1400c1",
+  "research_complete": false,
+  "s4b": "paused",
+  "level4": "deferred",
+  "files": [
+    {
+      "path": "records.jsonl.gz",
+      "bytes": 272869,
+      "sha256": "aa198e17d26ef50c6ff9d85a9bb78042d9ec308b4cd98c0d6ef870d2623f43b6"
+    },
+    {
+      "path": "edges.csv.gz",
+      "bytes": 33748,
+      "sha256": "db6fd6bffdbe7ea67a36425a4bd3907cdcd5411afbc40594acdcc50c873a2b18"
+    },
+    {
+      "path": "selected-ids.txt",
+      "bytes": 13086,
+      "sha256": "0bf213e2ef6e4ddf034ecb975a0506f316129324a59505f71603244d5dc0278a"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 6614,
+      "sha256": "2473f9d7a42051ef1f3cfb3ebbcf86eb8bc08b641f9df0f9aec19b7827a9b349"
+    }
+  ]
+}
