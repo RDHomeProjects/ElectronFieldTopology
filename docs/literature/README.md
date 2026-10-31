@@ -327,3 +327,21 @@ The [model-feasibility audit](../models/S5-feasibility-audit.md) records targete
 - **L07 / Faber–Kobushkin:** hep-th/0207167v4 Section II Eqs.(11)–(20) inspected. Added internal fields, elementary-charge normalization and dimensional scale are explicit inputs. No spin/statistics or finite-size dynamical certification follows.
 
 The manufactured torus control in S4-C is an explicitly differentiated geometric construction, not a new physical-model citation. [The return-map specification](../models/B0-S4C-ReturnMap.md) gives the derivation.
+
+### L36 — Cable and hyperbolic Hopfions in static Skyrme–Faddeev theory
+
+Paul Jennings (2015), *Cabling in the Skyrme–Faddeev model*. Journal of Physics A: Mathematical and Theoretical 48(31), 315401. [DOI](https://doi.org/10.1088/1751-8113/48/31/315401); [inspected arXiv:1412.8597v2](https://arxiv.org/html/1412.8597v2), 21 July 2015.
+
+Targeted full-text inspection: Section 2 Eqs. (2.1)–(2.7), Section 3 Eqs. (3.7)–(3.13), Section 4 numerical method/Table 1 and conclusion. This supplies an exact energy normalization, homogeneous rational-map construction, charge qualifications and selected static numerical targets. Q=22 cable C(3,2)^(2,3), E=12.509; Q=18 hyperbolic H4.851 / 10_139, E=10.838, reached from a K(7,2) seed. These are not universal/global minima claims. The reported Q=22 lower-energy competing link has E=12.446; a competing K(5,4) has E=12.455. Core preimages may reconnect during relaxation while the full field retains Hopf degree. A Hopf degree is not electric charge.
+
+Role: direct S5-A static-energy and non-torus reproduction reference, filling the gap left by PR 34. The source uses 301³ nodes, h=.06, fixed north-pole faces and damped minimisation. Exact raw initial/final checkpoints and all profile/scaling choices are not supplied in this inspection. [Our model map](../models/SF-J2015-static.md) declares numerical differences, independent controls and reproduction gates. No claim of physical-time stability, charge, spin/statistics or an electron model follows. This targeted source addition does not restart level-4 recursion or complete the wider review.
+
+### L37 — Rational-map and low-charge static references
+
+Paul Sutcliffe (2007), *Knots in the Skyrme–Faddeev model*. Proceedings of the Royal Society A 463, 3001–3020. [DOI](https://doi.org/10.1098/rspa.2007.0038); [inspected arXiv:0705.1468v1](https://arxiv.org/html/0705.1468v1).
+
+Targeted inspection: Section 2, energy Eq. (2.1), boundary/charge definitions and minimisation conventions; Section 3 axial rational maps; Table 2 low-charge energies. Source reports E=1.204 for Q=1 and E=1.967 for Q=2, explicitly noting about 1% underestimation in its finite-difference results. These rounded finite-grid values are comparison references, not exact energies to enforce by tuning coefficients. Source minimisation is distinguished from the complete physical dynamics. This paper is Jennings reference 13, directly relevant to the authorised validation.
+
+### L38 — Bracket state-sum convention
+
+Louis H. Kauffman, *Knots*, [author-hosted essay](https://homepages.math.uic.edu/~kauffman/Tots/Knots.htm), undated online text. Targeted inspection: Sections IV–V, bracket state weights, loop factor d=-A²-A^-2 and writhe normalization. This is the named author's mathematical exposition; no date or journal edition is inferred from the host. Our exact bounded state sum retains integer coefficients in A and is checked against trefoil and figure-eight references. It is an invariant, not a unique knot identifier. Optional SnapPy 3.3.2/Spherogram 2.4.1 supply diagram simplification and numerical complement tests; [official software conventions](https://snappy.computop.org/spherogram.html) are recorded separately from primary physics results.
