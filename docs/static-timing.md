@@ -11,9 +11,16 @@ thresholds. AI assisted its implementation and reporting.
 From a checkout of `research/s5a-jennings-static`, with GCC/OpenMP and uv installed:
 
 ```bash
-uv sync --frozen --all-groups
-uv run --frozen python -m electron_field_topology.sf_timing --label zbook --output artifacts/timing-zbook
+uv python install 3.12.14
+uv sync --frozen --all-groups --python 3.12.14
+uv run --frozen --python 3.12.14 python -m electron_field_topology.sf_timing --label zbook --output artifacts/timing-zbook
 ```
+
+The reference uses **Python 3.12.14, NumPy 2.5.4 and SciPy 1.18.1**. Pin the
+interpreter as above for a controlled comparison. The universal lockfile also
+supports Python 3.11, which selects older compatible NumPy/SciPy versions;
+`same_lock: true` therefore does not guarantee `same_versions: true`. A version
+mismatch deliberately withholds ratios even when the numerical checks pass.
 
 The default quick run uses a fixed Q=1 seed at 65³ and 97³, one and four OpenMP
 threads, three repetitions and three optimisation steps. It needs no recovered
@@ -23,8 +30,8 @@ requires a new output directory; completed cases are saved as they finish.
 The two target precursor workloads can also be timed independently:
 
 ```bash
-uv run --frozen python -m electron_field_topology.sf_timing --case q22 --grids 129 --threads 4 --label zbook --output artifacts/timing-zbook-q22 --compare reports/s5-a/timing-2026-10-31/q22-timing.json
-uv run --frozen python -m electron_field_topology.sf_timing --case q18 --grids 97 --threads 4 --label zbook --output artifacts/timing-zbook-q18 --compare reports/s5-a/timing-2026-10-31/q18-timing.json
+uv run --frozen --python 3.12.14 python -m electron_field_topology.sf_timing --case q22 --grids 129 --threads 4 --label zbook --output artifacts/timing-zbook-q22 --compare reports/s5-a/timing-2026-10-31/q22-timing.json
+uv run --frozen --python 3.12.14 python -m electron_field_topology.sf_timing --case q18 --grids 97 --threads 4 --label zbook --output artifacts/timing-zbook-q18 --compare reports/s5-a/timing-2026-10-31/q18-timing.json
 ```
 
 These use the committed perturbed cable/torus precursor configurations with
@@ -63,7 +70,7 @@ can still change timings. Use matching command options for comparisons.
 Supply an earlier `timing.json` using `--compare`:
 
 ```bash
-uv run --frozen python -m electron_field_topology.sf_timing --label zbook --output artifacts/timing-zbook-comparison --compare reports/s5-a/timing-2026-10-31/timing.json
+uv run --frozen --python 3.12.14 python -m electron_field_topology.sf_timing --label zbook --output artifacts/timing-zbook-comparison --compare reports/s5-a/timing-2026-10-31/timing.json
 ```
 
 The checked-in reference is from the **replacement execution environment**, not
