@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "provenance": "Recorded execution-tool output before the environment became unavailable. These rounded observations do not replace missing complete result files or field checkpoints.",
+  "endpoint_observations": [
+    {
+      "case": "q18-129",
+      "status": "time_budget",
+      "iteration": 208,
+      "energy_rounded": 11.5480886,
+      "tangent_gradient_rms_rounded": 0.041126,
+      "elapsed_seconds_rounded": 909,
+      "complete_result_json_preserved": false
+    },
+    {
+      "case": "q22-129-polish",
+      "status": "time_budget",
+      "iteration": 187,
+      "energy_rounded": 12.5929624,
+      "tangent_gradient_rms_rounded": 0.007025,
+      "elapsed_seconds_rounded": 603,
+      "complete_result_json_preserved": false
+    }
+  ],
+  "development_observations": [
+    {
+      "case": "centred-node Q1 development",
+      "iteration": 50,
+      "energy": 1.1626514538476385,
+      "hopf_integral": -0.45186481487075286,
+      "status": "charge_resolution_lost",
+      "scope": "Development output; no clean source manifest retained"
+    },
+    {
+      "case": "forward-node Q1 h=.15 development",
+      "iteration": 50,
+      "energy": 1.1050849960156937,
+      "hopf_integral": -0.8774896360437556,
+      "status": "charge_resolution_lost",
+      "scope": "Development output"
+    },
+    {
+      "case": "forward-node Q1 h=.075 development",
+      "iteration": 300,
+      "energy": 0.8216497211514713,
+      "hopf_integral": -0.8884091233519179,
+      "status": "charge_resolution_lost",
+      "scope": "Development output"
+    },
+    {
+      "case": "trust-limited L-BFGS Q1 65 development",
+      "iteration": 2,
+      "energy": 1.5624619545416745,
+      "tangent_gradient_rms": 0.44293810150603385,
+      "status": "optimizer reported success; independent residual failed",
+      "scope": "Return flag explicitly rejected as stationarity evidence"
+    }
+  ],
+  "topology_observations": [
+    {
+      "case": "q18-97",
+      "phase": "initial",
+      "primary_components": 1,
+      "secondary_components": 1,
+      "description": "Seven-crossing simplified knot diagrams were observed"
+    },
+    {
+      "case": "q18-97",
+      "phase": "iteration-200",
+      "primary_components": 3,
+      "secondary_components": 3,
+      "description": "Each extracted component had a zero-crossing simplified diagram; complete field/link audit files not durably confirmed"
+    },
+    {
+      "case": "q22-129",
+      "phase": "initial and iteration-200",
+      "primary_components": 1,
+      "secondary_components": 1,
+      "description": "All nine sampled projection/resolution diagrams per target matched the independent cable Jones polynomial"
+    },
+    {
+      "case": "q22-129",
+      "phase": "iteration-200",
+      "finite_diagram_match_reported": true,
+      "attempts": 291,
+      "reference_words": 106,
+      "seconds": 15.610331796997343,
+      "description": "Bounded documented diagram-move search reported a match. Full witness file not durably confirmed; repeat before stronger claims."
+    }
+  ],
+  "tests": {
+    "local_passed": 136,
+    "local_seconds": 16.28,
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 uv run --frozen --extra topology pytest -q"
+  },
+  "backup": {
+    "confirmed_archive_name": "S5A-field-checkpoints.zip",
+    "confirmed_size_bytes": 39275371,
+    "confirmed_contents": [
+      "q1-129/final.npz",
+      "q2-129/final.npz"
+    ],
+    "replacement_size_bytes": 82223333,
+    "replacement_status": "not confirmed; metadata still showed the earlier archive"
+  },
+  "unverified_stages": [
+    "q18-comparison completion",
+    "q22-comparison completion",
+    "q18-source-193 completion",
+    "q22-193 completion"
+  ]
+}

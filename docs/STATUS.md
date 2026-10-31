@@ -24,6 +24,10 @@ The maintainer-authorised off-core tranche is merged via [PR 31](https://github.
 
 The authorised return-map diagnosis contains 33 independently controlled diagnostic runs, three replication seeds and manufactured/Maxwell controls. Results: 30 arclength-unresolved and 3 evaluation-limited diagnostic runs; 29 comparable prefixes match (including three self-checks). All ten instrument checks and 123 tests pass. See [the report](../reports/s4-c/README.md). [ADR-0006](decisions/ADR-0006-model-feasibility.md) records the no-go/conditional-go/defer model-feasibility decision. No extended physical dynamics or validated electron model is introduced.
 
+## S5-A static reference — draft and interrupted
+
+[PR 36](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/36) integrates Jennings (L36) and supporting references, a separate SF-J2015 static unit-vector energy, independent gradient/analytic controls and three-mesh Q=1/Q=2 references. **136 local tests passed.** The first cable/hyperbolic target attempts are budget-limited; later reproduction work was interrupted when the execution environment became unavailable. Neither target is accepted as a completed reproduction. Read [the measured partial report](../reports/s5-a/README.md) and [the recovery record](../reports/s5-a/interruption-2026-10-31.md) before running further numerics. Preserve all failed/inconclusive results. No physical-time solver or electron model is introduced; level 4 stays deferred.
+
 ## Evidence
 
 - [S4-C bounded return-map report and retained outputs](../reports/s4-c/README.md)
@@ -67,7 +71,7 @@ These validate selected transformations, energy, perturbation, topology and boun
 
 ## Next task
 
-The authorised [S4-C return-map diagnosis](../reports/s4-c/README.md) independently varies numerical controls and is followed by [ADR-0006's model-feasibility decision](decisions/ADR-0006-model-feasibility.md). The next recommended feasibility target is a bounded, fixed-coupling Skyrme–Faddeev static-energy specification/validation as a neutral mechanism reference. A charged internal-field implementation remains deferred; no candidate is selected as an electron model. New dynamics, broad optimisation and S6/S7 work remain gated. Level 4 and the unfinished literature/version review remain separate.
+Restore and audit S5-A checkpoint/job state using the [recovery record](../reports/s5-a/interruption-2026-10-31.md), then complete bounded source-mapped cable/hyperbolic attempts and energy comparisons. The static functional/simple references are validated to their stated limits; non-torus reproductions remain unfinished. GPU acceleration requires a separately validated backend and benchmark. No blanket exclusion of other models or acceptance of an electron theory follows.
 
 ## Open decisions
 

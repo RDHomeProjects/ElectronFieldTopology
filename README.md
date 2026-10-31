@@ -22,6 +22,8 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
+S5-A adds an experimental [static Skyrme–Faddeev reference](docs/models/SF-J2015-static.md), Jennings bibliography integration and validated simple controls. [Draft PR 36](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/36) retains interrupted cable/hyperbolic reproduction attempts; see [the partial report and recovery record](reports/s5-a/README.md). No physical-time solver or electron model is claimed.
+
 S4-C adds [bounded return-section diagnosis](docs/models/B0-S4C-ReturnMap.md), followed by [a source-mapped model-feasibility decision](docs/decisions/ADR-0006-model-feasibility.md). No extended physical dynamics or electron-model claim is introduced.
 
 S4-B now adds [bounded off-core tracing and independent polygon invariants](docs/models/B0-S4B-Offcore.md), integrating the recovered literature findings. See [the report](reports/s4-b/README.md). The comprehensive literature review remains incomplete and level 4 deferred; the maintainer explicitly authorised this bounded continuation.
