@@ -1,0 +1,21 @@
+{
+  "batch": 4,
+  "words": 473,
+  "cumulative_words": 2514,
+  "fragments": [
+    {
+      "source": "depth4/BATCH2_REVIEW.md",
+      "start_word": 1123,
+      "end_word": 1172,
+      "text": "Maintainer instruction after this batch: stop further literature review and consolidate existing work for merge. Full-text gaps, L01 identity issues and the final impact/disposition report remain unfinished and suspended. Keep level 4 deferred and S4-B paused.\n\nAI assisted source extraction, assessment and documentation; specialist scientific certification is not claimed.\n",
+      "sha256": "28d4f94f432505e795db7092e9472d18d63acb9b898137cd12d6c7bc06619bd3"
+    },
+    {
+      "source": "recovered-level3/SECOND-PASS.md",
+      "start_word": 0,
+      "end_word": 424,
+      "text": "> Historical recovered record, preserved for provenance. Local L20–L25 labels may differ from the main register; consult [the alias mapping](../depth4/bibliography-aliases.json). The [consolidation decision](../depth4/CONSOLIDATION.md) supersedes operational instructions below: research is stopped, level 4 deferred, S4-B paused. Historical validation statements apply to that earlier workspace.\n\n# Second-pass notes: initial source audits\n\n**Work in progress, not the completed corpus review.** This file records targeted audits already possible from the seed papers and one directly cited primary paper. It does not certify that every potentially applicable level-3 paper has been reviewed. Prior project source inspections are identified as carry-forward evidence. New PDF retrieval alone does not upgrade an entry to a fresh equation audit. URLs, retrieval hashes and bibliography coverage accompany the checkpoint.\n\n## A01 — Initial nullness versus global null transport\n\nSource: Kedia, Peralta-Salas and Irvine, *When do knots in light stay knotted?*, J. Phys. A 51 (2018), 025204, [DOI](https://doi.org/10.1088/1751-8121/aa9749), [author-hosted journal PDF](https://irvinelab.uchicago.edu/papers/Kedia_2018_J._Phys._A__Math._Theor._51_025204.pdf). Reached from L05 reference 17, L15 reference 17 and L19 reference 33. Fresh targeted inspection: journal pp. 2–6, Sections 2–3, Eqs. (4), (9)–(10); Appendix C is referenced by the authors, not independently reproved here.\n\nApplicable aspect: for analytic initial fields with a smooth normalised Poynting flow, their initial-data criterion includes both $\\mathbf F\\cdot\\mathbf F=0$ and $\\mathbf F\\cdot(\\nabla\\times\\mathbf F)=0$. Initial nullness alone is insufficient; the source explicitly requires the flow to be “initially shear-free”. Transport uses energy-normalised electric/magnetic fields for generally compressible flow.\n\nImpact: current Bateman fields are analytical globally null constructions, and S3-C already separates generic non-null perturbations. No existing result is invalidated by this targeted check. Before a more general initial-data generator claims persistence, add a source-mapped shear-free diagnostic and state analyticity/smooth-flow assumptions, including treatment of zeros. This is a proposed next validation task, not a newly implemented instrument.\n\n## A02 — Non-containment of transported closed field lines\n\nSource: Bode, [arXiv:2409.20357v1](https://arxiv.org/abs/2409.20357v1), freshly inspected Theorem 1.8 (PDF p. 5), Section 6/proof (pp. 21–22) and Remark 6.1 (p. 25). The [journal abstract](https://doi.org/10.1016/j.topol.2026.109803) is accessible; the attempted journal-PDF endpoint returned a non-PDF payload. Version reconciliation is pending.\n\nApplicable aspect: closed electric/magnetic field-line sets in this Hopf-type Bateman class eventually leave every fixed compact set. This is not an energy-containment theorem for arbitrary moving regions or nonlinear theories.\n\nImpact: retain independent S3-B energy localisation and do not infer confinement from knot persistence.\n\n## A03 — Constructive existence is not a turnkey polynomial generator\n\nSame source, Theorems 1.5–1.6 and Remark 1.7, pp. 4–5. Trigonometric Legendrian representatives lead to candidate linear systems, with different guarantees for homogeneous and inhomogeneous problems. General polynomial solvability, extra zeros and regularity remain qualifications.\n\n",
+      "sha256": "f1d2d8ac17676c63e990061ddc25787094f6eb33ad349fd6d1e417cdb112f72b"
+    }
+  ]
+}
