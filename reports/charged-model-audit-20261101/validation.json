@@ -1,0 +1,78 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-01T02:02:44.258584+00:00",
+    "melbourne": "2026-11-01T13:02:44.258584+11:00"
+  },
+  "scope": "documentation and retained-evidence integrity; algebra evidence is in verification.json",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check_docs.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T02:02:44.050975+00:00",
+        "melbourne": "2026-11-01T13:02:44.050975+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T02:02:44.114952+00:00",
+        "melbourne": "2026-11-01T13:02:44.114952+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Documentation checks passed: 89 Markdown files; local targets and fences.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_pr36_staged_recovery.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T02:02:44.114992+00:00",
+        "melbourne": "2026-11-01T13:02:44.114992+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T02:02:44.166553+00:00",
+        "melbourne": "2026-11-01T13:02:44.166553+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Stage 10/10: 191/191 original files verified byte-exact; no scientific acceptance implied.\nExact original source commit retained in verified complete-history Git bundle.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_workstation_evidence.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T02:02:44.166587+00:00",
+        "melbourne": "2026-11-01T13:02:44.166587+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T02:02:44.226927+00:00",
+        "melbourne": "2026-11-01T13:02:44.226927+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Workstation transfer verified: 163 hashed members, 11 case results; no scientific acceptance implied.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_recovered_text_transfer.py",
+        "--allow-incomplete"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T02:02:44.226962+00:00",
+        "melbourne": "2026-11-01T13:02:44.226962+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T02:02:44.258533+00:00",
+        "melbourne": "2026-11-01T13:02:44.258533+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Recovered prose integrity: 5217/5217 words (100.00%), 9/9 further batches; complete=True; no overlaps. Research incomplete; S4-B paused; level 4 deferred.\n",
+      "stderr": ""
+    }
+  ]
+}
