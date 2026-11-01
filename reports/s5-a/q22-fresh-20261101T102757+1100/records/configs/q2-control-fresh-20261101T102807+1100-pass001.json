@@ -1,0 +1,27 @@
+{
+  "model_id": "SF-J2015-static",
+  "case": "q2-control-fresh",
+  "n": 65,
+  "h": 0.24,
+  "expected_q": 2,
+  "iterations": 3000,
+  "seconds": 1800,
+  "record_every": 50,
+  "maxcor": 4,
+  "solver": "sobolev_cg",
+  "discretisation": "cell",
+  "seed": {
+    "kind": "axial",
+    "alpha": 2,
+    "beta": 1,
+    "scale": 1.6,
+    "cutoff": 7.2,
+    "amplitude": 1.0
+  },
+  "precondition_length": 0.5,
+  "prepared_at": {
+    "utc": "2026-10-31T23:28:07+00:00",
+    "melbourne": "2026-11-01T10:28:07+11:00"
+  },
+  "initialization": "fresh_seed"
+}

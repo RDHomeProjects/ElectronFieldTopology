@@ -1,0 +1,68 @@
+{
+  "model_id": "SF-J2015-static",
+  "campaign_id": "q22-convergence-study-2026-11-01",
+  "overall_wall_seconds": null,
+  "pass_seconds": 1800,
+  "pass_iterations": 3000,
+  "audit_grace_seconds": 300,
+  "analysis_job_seconds": 900,
+  "precondition_lengths": [
+    0.5,
+    0.25,
+    1.0
+  ],
+  "stall_window_passes": 3,
+  "stall_relative_residual_improvement": 0.005,
+  "stall_relative_energy_drop": 1e-08,
+  "stages": [
+    {
+      "id": "q22-161-polish",
+      "source_case": "q22-161-1",
+      "n": 161,
+      "h": 0.096
+    },
+    {
+      "id": "q22-193-polish",
+      "source_case": "q22-193-1",
+      "n": 193,
+      "h": 0.08
+    },
+    {
+      "id": "q22-domain-161",
+      "source_case": "q22-129-cont-1",
+      "n": 161,
+      "h": 0.12
+    },
+    {
+      "id": "q22-domain-193",
+      "from": "q22-domain-161",
+      "n": 193,
+      "h": 0.12
+    },
+    {
+      "id": "q22-domain-fine-193",
+      "from": "q22-161-polish",
+      "n": 193,
+      "h": 0.096
+    },
+    {
+      "id": "q22-comparison-129",
+      "source_case": "q22-comparison-1",
+      "n": 129,
+      "h": 0.12,
+      "optional": true
+    },
+    {
+      "id": "q22-comparison-161",
+      "from": "q22-comparison-129",
+      "n": 161,
+      "h": 0.096
+    },
+    {
+      "id": "q22-comparison-193",
+      "from": "q22-comparison-161",
+      "n": 193,
+      "h": 0.08
+    }
+  ]
+}

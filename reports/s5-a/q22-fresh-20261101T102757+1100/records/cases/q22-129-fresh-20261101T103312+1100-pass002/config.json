@@ -1,0 +1,31 @@
+{
+  "model_id": "SF-J2015-static",
+  "case": "q22-129-fresh",
+  "n": 129,
+  "h": 0.12,
+  "expected_q": 22,
+  "iterations": 3000,
+  "seconds": 1800,
+  "record_every": 50,
+  "maxcor": 4,
+  "solver": "sobolev_cg",
+  "discretisation": "cell",
+  "published_energy": 12.509,
+  "seed": {
+    "kind": "cable",
+    "alpha": 4,
+    "beta": 1,
+    "scale": 4.0,
+    "cutoff": 7.2,
+    "amplitude": 8.0
+  },
+  "perturbation_amplitude": 0.005,
+  "perturbation_seed": 35,
+  "precondition_length": 0.5,
+  "prepared_at": {
+    "utc": "2026-10-31T23:33:12+00:00",
+    "melbourne": "2026-11-01T10:33:12+11:00"
+  },
+  "initialization": "checkpoint_continuation",
+  "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T102816+1100-pass001/final.npz"
+}
