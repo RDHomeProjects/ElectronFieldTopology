@@ -2,6 +2,8 @@
 import hashlib
 import json
 import os
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 import numpy as np
 from scipy.ndimage import map_coordinates
@@ -10,6 +12,11 @@ from .skyrme import NORTH, normalize, set_boundary
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def timestamp():
+    now = datetime.now(timezone.utc)
+    return {"utc": now.isoformat(), "melbourne": now.astimezone(ZoneInfo("Australia/Melbourne")).isoformat()}
 
 
 def atomic_json(path, value):
@@ -21,10 +28,12 @@ def atomic_json(path, value):
 
 def checkpoint(path, field, h, q, iteration, elapsed, config_sha):
     path = Path(path); temp = path.with_name(path.name+".tmp")
+    written = timestamp()
     with temp.open("wb") as f:
         np.savez_compressed(f, field=np.asarray(field, dtype=np.float64), h=float(h),
                             expected_q=q, model_id="SF-J2015-static", iteration=iteration,
-                            elapsed_seconds=elapsed, config_sha256=config_sha)
+                            elapsed_seconds=elapsed, config_sha256=config_sha,
+                            written_utc=written['utc'], written_melbourne=written['melbourne'])
         f.flush(); os.fsync(f.fileno())
     if path.name == "latest.npz" and path.exists():
         os.replace(path, path.with_name("previous.npz"))

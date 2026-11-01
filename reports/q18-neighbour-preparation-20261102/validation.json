@@ -1,0 +1,101 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-01T15:15:12.557278+00:00",
+    "melbourne": "2026-11-02T02:15:12.557278+11:00"
+  },
+  "targeted_tests": {
+    "argv": [
+      "uv",
+      "run",
+      "--frozen",
+      "--extra",
+      "topology",
+      "--python",
+      "3.12.14",
+      "pytest",
+      "-q",
+      "tests/test_sf_q_basin.py",
+      "tests/test_sf_gpu_relax.py",
+      "tests/test_sf_q22_closure.py",
+      "tests/test_sf_gpu.py",
+      "tests/test_skyrme.py",
+      "tests/test_sf_topology.py",
+      "tests/test_sf_minimize.py",
+      "tests/test_sf_timing.py"
+    ],
+    "observed_result": "62 passed, 1 skipped in 37.28s",
+    "skip": "real CUDA device unavailable in preparation host",
+    "scope": "orchestration, recovery, admission, numerical regression; no relaxed research solve"
+  },
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "scripts/check_docs.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T15:10:09.802501+00:00",
+        "melbourne": "2026-11-02T02:10:09.802501+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:10:09.901627+00:00",
+        "melbourne": "2026-11-02T02:10:09.901627+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Documentation checks passed: 92 Markdown files; local targets and fences.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check_pr36_staged_recovery.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T15:10:09.901663+00:00",
+        "melbourne": "2026-11-02T02:10:09.901663+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:10:10.351638+00:00",
+        "melbourne": "2026-11-02T02:10:10.351638+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Stage 10/10: 191/191 original archived files verified byte-exact; no scientific acceptance implied.\nExact original commit and complete-history bundle verified; current development files may evolve.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check_workstation_evidence.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T15:10:10.351669+00:00",
+        "melbourne": "2026-11-02T02:10:10.351669+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:10:10.407567+00:00",
+        "melbourne": "2026-11-02T02:10:10.407567+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Workstation transfer verified: 163 hashed members, 11 case results; no scientific acceptance implied.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check_recovered_text_transfer.py",
+        "--allow-incomplete"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T15:10:10.407605+00:00",
+        "melbourne": "2026-11-02T02:10:10.407605+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:10:10.446060+00:00",
+        "melbourne": "2026-11-02T02:10:10.446060+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Recovered prose integrity: 5217/5217 words (100.00%), 9/9 further batches; complete=True; no overlaps. Research incomplete; S4-B paused; level 4 deferred.\n",
+      "stderr": ""
+    }
+  ]
+}

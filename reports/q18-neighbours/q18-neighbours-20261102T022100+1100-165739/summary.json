@@ -1,0 +1,4968 @@
+{
+  "generated_at": {
+    "utc": "2026-11-01T21:35:14.595630+00:00",
+    "melbourne": "2026-11-02T08:35:14.595630+11:00"
+  },
+  "started_at": {
+    "utc": "2026-11-01T15:21:05.659516+00:00",
+    "melbourne": "2026-11-02T02:21:05.659516+11:00"
+  },
+  "git_commit": "c28323ee925371559218c2bc699e6d2804b796bf",
+  "stages": {
+    "q1-control": {
+      "execution": "stationary",
+      "q": 1,
+      "role": "control",
+      "n": 65,
+      "h": 0.24,
+      "branch": "q1-control",
+      "final": {
+        "iteration": 79,
+        "recorded_at": {
+          "utc": "2026-11-01T15:21:23.412068+00:00",
+          "melbourne": "2026-11-02T02:21:23.412068+11:00"
+        },
+        "elapsed_seconds": 17.284985391015653,
+        "e2": 0.6146156287260783,
+        "e4": 0.6212982408596578,
+        "energy": 1.2359138695857361,
+        "virial_residual": 0.005407020908195966,
+        "tangent_gradient_rms": 0.0006385459766903151,
+        "minimum_corner_cone": 0.8564491937384945,
+        "minimum_quadrature_interpolant_norm": 0.9299757066696358,
+        "hopf_integral": -0.9859280474051433,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.6598644037083105,
+        "mean_topological_b": [
+          -2.0698559439529546e-19,
+          1.494177259541039e-18,
+          -6.0289717696142355e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0006385459766903154,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.893685705084863e-14
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.199321047545791e-18
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.3306690738754696e-16
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "d5a2b7fa382fbe7aea779f361b95e20b62f2a79e6843b863b0594621c14d4ef3",
+      "energy_per_Q_three_quarters": 1.2359138695857361,
+      "scaling_gate": true
+    },
+    "q2-control": {
+      "execution": "stationary",
+      "q": 2,
+      "role": "control",
+      "n": 65,
+      "h": 0.24,
+      "branch": "q2-control",
+      "final": {
+        "iteration": 64,
+        "recorded_at": {
+          "utc": "2026-11-01T15:21:32.414320+00:00",
+          "melbourne": "2026-11-02T02:21:32.414320+11:00"
+        },
+        "elapsed_seconds": 6.256169799977215,
+        "e2": 1.0096782483006301,
+        "e4": 1.0021754967627492,
+        "energy": 2.0118537450633793,
+        "virial_residual": 0.0037292728441572563,
+        "tangent_gradient_rms": 0.0006731626733685983,
+        "minimum_corner_cone": 0.8580896638221308,
+        "minimum_quadrature_interpolant_norm": 0.9510698017794197,
+        "hopf_integral": -1.9822697097298394,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.5781281353085997,
+        "mean_topological_b": [
+          1.47477236006648e-18,
+          9.573083740782415e-19,
+          -6.362501988136457e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0006731626733685903,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.3078427230084344e-13
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.4293680984916318e-18
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 6.661338147750939e-16
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "198fb65bf19c294012f2d907df5c31010a3d8b1bcca2a971cd0648449b06ff55",
+      "energy_per_Q_three_quarters": 1.1962553939871208,
+      "scaling_gate": true
+    },
+    "q22-control": {
+      "execution": "stationary",
+      "q": 22,
+      "role": "control",
+      "n": 129,
+      "h": 0.12,
+      "branch": "q22-control",
+      "final": {
+        "iteration": 1,
+        "recorded_at": {
+          "utc": "2026-11-01T15:21:48.617193+00:00",
+          "melbourne": "2026-11-02T02:21:48.617193+11:00"
+        },
+        "elapsed_seconds": 13.54609500200604,
+        "e2": 6.086426631631119,
+        "e4": 6.504953118097102,
+        "energy": 12.591379749728222,
+        "virial_residual": 0.033239128259555245,
+        "tangent_gradient_rms": 0.0008785457369861418,
+        "minimum_corner_cone": 0.9434863304963936,
+        "minimum_quadrature_interpolant_norm": 0.982615022851002,
+        "hopf_integral": -21.978746112318746,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3972506539593539,
+        "mean_topological_b": [
+          1.5720981165145304e-09,
+          -3.1357807721205483e-06,
+          -4.5211652138228176e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008785457369861495,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.646771690706373e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.245865741520614e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "f9be16e9c26f6e30d57d02a99d00296af6532776730b12a4e7df8b5a1d92542a",
+      "energy_per_Q_three_quarters": 1.2395279144286715,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-baseline-97": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "screen",
+      "n": 97,
+      "h": 0.16,
+      "branch": "q18-baseline",
+      "final": {
+        "iteration": 1412,
+        "recorded_at": {
+          "utc": "2026-11-01T15:27:13.240703+00:00",
+          "melbourne": "2026-11-02T02:27:13.240703+11:00"
+        },
+        "elapsed_seconds": 293.4092240680184,
+        "e2": 5.346848860411369,
+        "e4": 5.598071070301589,
+        "energy": 10.944919930712958,
+        "virial_residual": 0.022953316376966362,
+        "tangent_gradient_rms": 0.0008841913323492335,
+        "minimum_corner_cone": 0.8931337770621317,
+        "minimum_quadrature_interpolant_norm": 0.9679992883094182,
+        "hopf_integral": -17.951160963067853,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.514178108740578,
+        "mean_topological_b": [
+          8.656336822375564e-10,
+          2.012526095442352e-05,
+          -0.0001018921723812561
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008841913323492336,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.055778266680136e-13
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.3552527156068805e-20
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "c2e838f065cb08ad940ce2cb57b8dfd6ef6f460584f9a8290efa8f6987547f76",
+      "energy_per_Q_three_quarters": 1.2524436925542621,
+      "source_energy_relative_difference": 0.009865282405698348,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q17-neighbour-129": {
+      "execution": "stationary",
+      "q": 17,
+      "role": "screen",
+      "n": 129,
+      "h": 0.12,
+      "branch": "q17-neighbour",
+      "final": {
+        "iteration": 385,
+        "recorded_at": {
+          "utc": "2026-11-01T15:55:21.277344+00:00",
+          "melbourne": "2026-11-02T02:55:21.277344+11:00"
+        },
+        "elapsed_seconds": 201.07491404298344,
+        "e2": 5.367663763752101,
+        "e4": 5.634247691962487,
+        "energy": 11.001911455714588,
+        "virial_residual": 0.024230692028694455,
+        "tangent_gradient_rms": 0.0009666328844385233,
+        "minimum_corner_cone": 0.9465833230719094,
+        "minimum_quadrature_interpolant_norm": 0.9825374462760921,
+        "hopf_integral": -16.985621297093182,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.40642473395068907,
+        "mean_topological_b": [
+          -3.48930819916441e-07,
+          2.1520039803050206e-05,
+          -1.5253579809242362e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009666328844385231,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.915001573455811e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.697147210377437e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "3e3ce644e184fc8702b13bb001e30708b785019f55ced3ecf2c28f75c9638216",
+      "energy_per_Q_three_quarters": 1.314109195701922,
+      "source_energy_relative_difference": 0.004557291427555484,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q19-neighbour-129": {
+      "execution": "stationary",
+      "q": 19,
+      "role": "screen",
+      "n": 129,
+      "h": 0.12,
+      "branch": "q19-neighbour",
+      "final": {
+        "iteration": 1119,
+        "recorded_at": {
+          "utc": "2026-11-01T16:29:16.908004+00:00",
+          "melbourne": "2026-11-02T03:29:16.908004+11:00"
+        },
+        "elapsed_seconds": 558.8047030929883,
+        "e2": 5.881533965467619,
+        "e4": 6.181696605111691,
+        "energy": 12.06323057057931,
+        "virial_residual": 0.024882442384557484,
+        "tangent_gradient_rms": 0.0009307418044617944,
+        "minimum_corner_cone": 0.9450713141367144,
+        "minimum_quadrature_interpolant_norm": 0.9831807178019982,
+        "hopf_integral": -18.984885372840694,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3898046255937137,
+        "mean_topological_b": [
+          1.7003582578642252e-05,
+          8.951479388968568e-06,
+          -1.611153866935734e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009307418044618039,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.6219026949547697e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 6.5975263912739445e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "cb95e199902bc6ab5ee95fe7ca212c2017d098619e18aca81005c60d04fa50b4",
+      "energy_per_Q_three_quarters": 1.325557062871196,
+      "source_energy_relative_difference": 0.004599481227457669,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale35-97": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "screen",
+      "n": 97,
+      "h": 0.16,
+      "branch": "q18-scale35",
+      "final": {
+        "iteration": 1401,
+        "recorded_at": {
+          "utc": "2026-11-01T16:34:37.785998+00:00",
+          "melbourne": "2026-11-02T03:34:37.785998+11:00"
+        },
+        "elapsed_seconds": 290.64722622101544,
+        "e2": 5.345700204544459,
+        "e4": 5.599457812798708,
+        "energy": 10.945158017343166,
+        "virial_residual": 0.02318446274162118,
+        "tangent_gradient_rms": 0.0009835898317239373,
+        "minimum_corner_cone": 0.8948181109676955,
+        "minimum_quadrature_interpolant_norm": 0.9680259788572763,
+        "hopf_integral": -17.951200314656766,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.5166679015387532,
+        "mean_topological_b": [
+          -1.137380539539352e-09,
+          1.7959673065351048e-05,
+          -0.00010195682244191761
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009835898317239373,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.029132914089132e-13
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.3552527156068805e-20
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.552713678800501e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "357d7899149e2e4363eeac1c6fa2a3ae7374db64763f626d864c486c02a97d6c",
+      "energy_per_Q_three_quarters": 1.2524709371663902,
+      "source_energy_relative_difference": 0.009887250170065233,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale45-97": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "screen",
+      "n": 97,
+      "h": 0.16,
+      "branch": "q18-scale45",
+      "final": {
+        "iteration": 1282,
+        "recorded_at": {
+          "utc": "2026-11-01T16:39:40.085486+00:00",
+          "melbourne": "2026-11-02T03:39:40.085486+11:00"
+        },
+        "elapsed_seconds": 267.56178067901055,
+        "e2": 5.346330775383079,
+        "e4": 5.598769573154489,
+        "energy": 10.945100348537569,
+        "virial_residual": 0.023064091669578898,
+        "tangent_gradient_rms": 0.0009704093414450721,
+        "minimum_corner_cone": 0.8944470363446192,
+        "minimum_quadrature_interpolant_norm": 0.968043337574878,
+        "hopf_integral": -17.9512097150391,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.515676333739199,
+        "mean_topological_b": [
+          1.7448901333244213e-10,
+          1.85103504484808e-05,
+          -0.00010191438135819474
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009704093414450721,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.72715225139109e-13
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.3552527156068805e-20
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "870cd03c8e428fea8852a80db67c012ec997f665a10dd1b8d9cac464f66777c4",
+      "energy_per_Q_three_quarters": 1.2524643380380016,
+      "source_energy_relative_difference": 0.009881929187817813,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-ell025-97": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "screen",
+      "n": 97,
+      "h": 0.16,
+      "branch": "q18-ell025",
+      "final": {
+        "iteration": 2209,
+        "recorded_at": {
+          "utc": "2026-11-01T16:48:02.212879+00:00",
+          "melbourne": "2026-11-02T03:48:02.212879+11:00"
+        },
+        "elapsed_seconds": 466.37782329297625,
+        "e2": 5.346925643042408,
+        "e4": 5.597963535594117,
+        "energy": 10.944889178636526,
+        "virial_residual": 0.022936540375549208,
+        "tangent_gradient_rms": 0.0008899591991676259,
+        "minimum_corner_cone": 0.8930459683672227,
+        "minimum_quadrature_interpolant_norm": 0.9680841646172509,
+        "hopf_integral": -17.951161350002828,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.5097527193962748,
+        "mean_topological_b": [
+          3.3647078159638453e-09,
+          2.0477261330071017e-05,
+          -0.00010182905953737288
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008899591991676261,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.993605777301127e-13
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.3552527156068805e-20
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "c335d57d9be11049d6df52601dcdfac623d7cf3351e3e03d9dcf7bb6bf7f79bc",
+      "energy_per_Q_three_quarters": 1.2524401735477821,
+      "source_energy_relative_difference": 0.00986244497476718,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-baseline-129": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 129,
+      "h": 0.12,
+      "branch": "q18-baseline",
+      "final": {
+        "iteration": 2089,
+        "recorded_at": {
+          "utc": "2026-11-01T17:05:51.741888+00:00",
+          "melbourne": "2026-11-02T04:05:51.741888+11:00"
+        },
+        "elapsed_seconds": 1033.750684328028,
+        "e2": 5.349757807237511,
+        "e4": 5.57080884649349,
+        "energy": 10.920566653731,
+        "virial_residual": 0.020241718792170658,
+        "tangent_gradient_rms": 0.0009829311996619233,
+        "minimum_corner_cone": 0.9305794501478395,
+        "minimum_quadrature_interpolant_norm": 0.9814340612283624,
+        "hopf_integral": -17.98384984981468,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.384458215729575,
+        "mean_topological_b": [
+          -1.7704712684103653e-09,
+          1.8181071250911283e-05,
+          -3.0243450339686147e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009829311996619268,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.8900436771218665e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.69688251258142e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "0e276c540f49466487b6643d07e23943fe1f4656a4403e0cb1c17cc3b16bef10",
+      "energy_per_Q_three_quarters": 1.249656910344601,
+      "source_energy_relative_difference": 0.007618255557390819,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-baseline-161": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 161,
+      "h": 0.096,
+      "branch": "q18-baseline",
+      "final": {
+        "iteration": 247,
+        "recorded_at": {
+          "utc": "2026-11-01T17:11:10.593540+00:00",
+          "melbourne": "2026-11-02T04:11:10.593540+11:00"
+        },
+        "elapsed_seconds": 275.04379457701,
+        "e2": 5.341785011609807,
+        "e4": 5.569305667992244,
+        "energy": 10.91109067960205,
+        "virial_residual": 0.02085223769680326,
+        "tangent_gradient_rms": 0.0009914866916378628,
+        "minimum_corner_cone": 0.9544846962232276,
+        "minimum_quadrature_interpolant_norm": 0.9880130883769291,
+        "hopf_integral": -17.993243453565725,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3095715168144737,
+        "mean_topological_b": [
+          -1.3369340574017094e-09,
+          7.880660743416899e-06,
+          -1.254458873746081e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009914866916378592,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 4.7695181137896725e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.770610476516934e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 7.105427357601002e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "450fcb9c36d9d545787a7197f2d83f2358a63cc543f7fd4522755a11aad42690",
+      "energy_per_Q_three_quarters": 1.248572560335305,
+      "source_energy_relative_difference": 0.006743926887068798,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-baseline-193": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 193,
+      "h": 0.08,
+      "branch": "q18-baseline",
+      "final": {
+        "iteration": 281,
+        "recorded_at": {
+          "utc": "2026-11-01T17:20:53.146642+00:00",
+          "melbourne": "2026-11-02T04:20:53.146642+11:00"
+        },
+        "elapsed_seconds": 523.5075079500093,
+        "e2": 5.336916957060342,
+        "e4": 5.568634092246196,
+        "energy": 10.905551049306538,
+        "virial_residual": 0.02124763197551477,
+        "tangent_gradient_rms": 0.0008279567756003108,
+        "minimum_corner_cone": 0.9679659470505945,
+        "minimum_quadrature_interpolant_norm": 0.9916329932950807,
+        "hopf_integral": -17.996702576791556,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.25966075668135197,
+        "mean_topological_b": [
+          -1.1472878430540763e-09,
+          4.017623617153982e-06,
+          -6.025944506870223e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.000827956775600311,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.558487252230407e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 3.3881317890172014e-21
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 1.7763568394002505e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "f79dff6dede9a4e5215bfc22a400dff2e82ba9f18acb67b34553e407fd60c2ba",
+      "energy_per_Q_three_quarters": 1.2479386520868556,
+      "source_energy_relative_difference": 0.006232796577462559,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-baseline-domain": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "domain",
+      "n": 193,
+      "h": 0.096,
+      "branch": "q18-baseline",
+      "final": {
+        "iteration": 386,
+        "recorded_at": {
+          "utc": "2026-11-01T17:33:30.857384+00:00",
+          "melbourne": "2026-11-02T04:33:30.857384+11:00"
+        },
+        "elapsed_seconds": 674.8217737269879,
+        "e2": 5.395755210674007,
+        "e4": 5.482680985221034,
+        "energy": 10.878436195895041,
+        "virial_residual": 0.007990649849086555,
+        "tangent_gradient_rms": 0.0008406837361106796,
+        "minimum_corner_cone": 0.9548376461896728,
+        "minimum_quadrature_interpolant_norm": 0.9880115282907134,
+        "hopf_integral": -17.99354106418866,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.31001329093892677,
+        "mean_topological_b": [
+          -2.220040459994213e-09,
+          4.326048458211952e-06,
+          -7.039264359358423e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008406837361106804,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.1046275005810458e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.137122476199323e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 1.7763568394002505e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "8e44ded9cd394daabb52d39433e722d1bd34b29af90f9884ab1874cffff79ed0",
+      "energy_per_Q_three_quarters": 1.244835858521919,
+      "source_energy_relative_difference": 0.0037309647439603346,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q17-neighbour-161": {
+      "execution": "stationary",
+      "q": 17,
+      "role": "refinement",
+      "n": 161,
+      "h": 0.096,
+      "branch": "q17-neighbour",
+      "final": {
+        "iteration": 268,
+        "recorded_at": {
+          "utc": "2026-11-01T17:39:51.015631+00:00",
+          "melbourne": "2026-11-02T04:39:51.015631+11:00"
+        },
+        "elapsed_seconds": 295.3373534880229,
+        "e2": 5.362059314242189,
+        "e4": 5.6311721615089265,
+        "energy": 10.993231475751116,
+        "virial_residual": 0.02447986725835319,
+        "tangent_gradient_rms": 0.0009345187292182866,
+        "minimum_corner_cone": 0.9657983909679528,
+        "minimum_quadrature_interpolant_norm": 0.9887147205718386,
+        "hopf_integral": -16.99401849618634,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3276602634612623,
+        "mean_topological_b": [
+          -1.3478373136315357e-07,
+          9.125706815611287e-06,
+          -6.251089982070105e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009345187292182827,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 6.496136961686716e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 4.785405279741776e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.552713678800501e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "cb6f58cb273e3cb6ee31ad2cc7690772eee80ec41c55937f12d414faf8fab033",
+      "energy_per_Q_three_quarters": 1.3130724266337086,
+      "source_energy_relative_difference": 0.0037647439509784987,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q17-neighbour-193": {
+      "execution": "stationary",
+      "q": 17,
+      "role": "refinement",
+      "n": 193,
+      "h": 0.08,
+      "branch": "q17-neighbour",
+      "final": {
+        "iteration": 119,
+        "recorded_at": {
+          "utc": "2026-11-01T17:44:52.782295+00:00",
+          "melbourne": "2026-11-02T04:44:52.782295+11:00"
+        },
+        "elapsed_seconds": 245.35121273700497,
+        "e2": 5.35849794170008,
+        "e4": 5.629830386800788,
+        "energy": 10.988328328500868,
+        "virial_residual": 0.024692786472073434,
+        "tangent_gradient_rms": 0.0007247702555208158,
+        "minimum_corner_cone": 0.9762305513083955,
+        "minimum_quadrature_interpolant_norm": 0.992133857013784,
+        "hopf_integral": -16.997088015057443,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.2738019969266672,
+        "mean_topological_b": [
+          -6.202993343982701e-08,
+          4.498245293797742e-06,
+          -3.0123967020627938e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0007247702555208159,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.212274725048701e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 3.3881317890172014e-21
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 1.0658141036401503e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "ad996655efef7a78bbbcab063ae1741c7a81ebdbb83f51f0df3c532ce8945718",
+      "energy_per_Q_three_quarters": 1.3124867765023323,
+      "source_energy_relative_difference": 0.00331704971702597,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q17-neighbour-domain": {
+      "execution": "stationary",
+      "q": 17,
+      "role": "domain",
+      "n": 193,
+      "h": 0.096,
+      "branch": "q17-neighbour",
+      "final": {
+        "iteration": 164,
+        "recorded_at": {
+          "utc": "2026-11-01T17:51:13.623682+00:00",
+          "melbourne": "2026-11-02T04:51:13.623682+11:00"
+        },
+        "elapsed_seconds": 299.70992242501234,
+        "e2": 5.451567769470287,
+        "e4": 5.5102819781821655,
+        "energy": 10.961849747652453,
+        "virial_residual": 0.005356231846222136,
+        "tangent_gradient_rms": 0.0006904320506267024,
+        "minimum_corner_cone": 0.9674525653315256,
+        "minimum_quadrature_interpolant_norm": 0.9891797591699167,
+        "hopf_integral": -16.994504882248734,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3203182619524339,
+        "mean_topological_b": [
+          -6.82953534731372e-08,
+          4.94639188614361e-06,
+          -3.3912259672782356e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0006904320506266978,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.6063594898696465e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.911330442324455e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 1.4210854715202004e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "8a164d420d225c0def79ff3ba35f1c2ebf7da34903e6537a1dbf505854c81b8f",
+      "energy_per_Q_three_quarters": 1.3093240763913467,
+      "source_energy_relative_difference": 0.0008993560676089147,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q19-neighbour-161": {
+      "execution": "stationary",
+      "q": 19,
+      "role": "refinement",
+      "n": 161,
+      "h": 0.096,
+      "branch": "q19-neighbour",
+      "final": {
+        "iteration": 152,
+        "recorded_at": {
+          "utc": "2026-11-01T17:55:31.735497+00:00",
+          "melbourne": "2026-11-02T04:55:31.735497+11:00"
+        },
+        "elapsed_seconds": 175.7849620830093,
+        "e2": 5.875653777660063,
+        "e4": 6.178341240468382,
+        "energy": 12.053995018128445,
+        "virial_residual": 0.025110966310596256,
+        "tangent_gradient_rms": 0.0008780931761042958,
+        "minimum_corner_cone": 0.9645326393835677,
+        "minimum_quadrature_interpolant_norm": 0.9891667768712182,
+        "hopf_integral": -18.993722766554505,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3132844409799156,
+        "mean_topological_b": [
+          7.164500485762564e-06,
+          3.793484441934654e-06,
+          -6.644767102737714e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.000878093176104299,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.837108574269223e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.066890706290508e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.552713678800501e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "7b9e7a5b6a7fdc849d5c160c1c34f3a438babaaafa5334c1ca50a1ed49e05a8f",
+      "energy_per_Q_three_quarters": 1.3245422226334058,
+      "source_energy_relative_difference": 0.003830364600969842,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q19-neighbour-193": {
+      "execution": "stationary",
+      "q": 19,
+      "role": "refinement",
+      "n": 193,
+      "h": 0.08,
+      "branch": "q19-neighbour",
+      "final": {
+        "iteration": 192,
+        "recorded_at": {
+          "utc": "2026-11-01T18:02:40.329116+00:00",
+          "melbourne": "2026-11-02T05:02:40.329116+11:00"
+        },
+        "elapsed_seconds": 364.2136434679851,
+        "e2": 5.87214766677248,
+        "e4": 6.1765760127927845,
+        "energy": 12.048723679565263,
+        "virial_residual": 0.02526643934383005,
+        "tangent_gradient_rms": 0.0008449358971448546,
+        "minimum_corner_cone": 0.9753160273847855,
+        "minimum_quadrature_interpolant_norm": 0.992448799871354,
+        "hopf_integral": -18.996948677498082,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.2614598209462118,
+        "mean_topological_b": [
+          3.521218455185278e-06,
+          1.876383962288088e-06,
+          -3.207081008156404e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008449358971448546,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.0269118888572848e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.6940658945086007e-21
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 2.1316282072803006e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "e59cf12d3325e6fa544967fdb2d6a04b7b986dd37ac3844f0a26e16292360bd4",
+      "energy_per_Q_three_quarters": 1.3239629864145235,
+      "source_energy_relative_difference": 0.00339137904440909,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q19-neighbour-domain": {
+      "execution": "stationary",
+      "q": 19,
+      "role": "domain",
+      "n": 193,
+      "h": 0.096,
+      "branch": "q19-neighbour",
+      "final": {
+        "iteration": 2,
+        "recorded_at": {
+          "utc": "2026-11-01T18:10:27.310809+00:00",
+          "melbourne": "2026-11-02T05:10:27.310809+11:00"
+        },
+        "elapsed_seconds": 47.056360663991654,
+        "e2": 5.963164800960215,
+        "e4": 6.052558516434577,
+        "energy": 12.015723317394793,
+        "virial_residual": 0.007439728188893072,
+        "tangent_gradient_rms": 0.0006885518510072402,
+        "minimum_corner_cone": 0.9661285018720935,
+        "minimum_quadrature_interpolant_norm": 0.9896219072143412,
+        "hopf_integral": -18.994143179063677,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3059962066360655,
+        "mean_topological_b": [
+          3.817214632157208e-06,
+          2.3135847310239744e-06,
+          -3.7100935751475467e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0006885518510072417,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.5292656030396756e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.066845211356818e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 1.7763568394002505e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "df4ef94d4c0f919c05dc60f4e165c67d89c94032019ddb3d1eb070bf82d9d6db",
+      "energy_per_Q_three_quarters": 1.3203367717868215,
+      "source_energy_relative_difference": 0.0006431809955690776,
+      "preimage_components": {
+        "primary": 1,
+        "secondary": 1
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale35-129": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 129,
+      "h": 0.12,
+      "branch": "q18-scale35",
+      "final": {
+        "iteration": 104,
+        "recorded_at": {
+          "utc": "2026-11-01T18:13:03.449319+00:00",
+          "melbourne": "2026-11-02T05:13:03.449319+11:00"
+        },
+        "elapsed_seconds": 62.05158270901302,
+        "e2": 5.331079428712984,
+        "e4": 5.595230595404713,
+        "energy": 10.926310024117697,
+        "virial_residual": 0.024175697569322738,
+        "tangent_gradient_rms": 0.0008511914712476732,
+        "minimum_corner_cone": 0.9383595330368089,
+        "minimum_quadrature_interpolant_norm": 0.9816398392839617,
+        "hopf_integral": -17.98395864723446,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3930374608228271,
+        "mean_topological_b": [
+          -4.0741586589374483e-10,
+          6.177538915331656e-06,
+          -3.385410389464009e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008511914712476759,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.0374812947920873e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.246924532704682e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 7.105427357601002e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "6640e83351089c96d927709efaa9f821ddadd78f70eb0ad355af8a87cb18fc64",
+      "energy_per_Q_three_quarters": 1.2503141328789233,
+      "source_energy_relative_difference": 0.00814818454675198,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale35-161": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 161,
+      "h": 0.096,
+      "branch": "q18-scale35",
+      "final": {
+        "iteration": 2,
+        "recorded_at": {
+          "utc": "2026-11-01T18:18:19.282627+00:00",
+          "melbourne": "2026-11-02T05:18:19.282627+11:00"
+        },
+        "elapsed_seconds": 25.760620921006193,
+        "e2": 5.322707902023728,
+        "e4": 5.593892060824569,
+        "energy": 10.916599962848297,
+        "virial_residual": 0.024841448777434633,
+        "tangent_gradient_rms": 0.0008836705315973314,
+        "minimum_corner_cone": 0.9595923839085285,
+        "minimum_quadrature_interpolant_norm": 0.9879802510308496,
+        "hopf_integral": -17.993268578123658,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3167230041965588,
+        "mean_topological_b": [
+          -1.3845371097675997e-10,
+          2.899762362755679e-06,
+          -1.4272378432258691e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008836705315973327,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 4.977351863999502e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.629592725688894e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "b32bb1d84b3cb26ce4fcf9dc10e61c1dde1053091d2c184d60b78be2bb8c6d4d",
+      "energy_per_Q_three_quarters": 1.2492029959251436,
+      "source_energy_relative_difference": 0.007252257136768558,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale35-193": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 193,
+      "h": 0.08,
+      "branch": "q18-scale35",
+      "final": {
+        "iteration": 162,
+        "recorded_at": {
+          "utc": "2026-11-01T18:25:08.186192+00:00",
+          "melbourne": "2026-11-02T05:25:08.186192+11:00"
+        },
+        "elapsed_seconds": 317.06048537499737,
+        "e2": 5.31803917522623,
+        "e4": 5.592955527737875,
+        "energy": 10.910994702964103,
+        "virial_residual": 0.025196268534248355,
+        "tangent_gradient_rms": 0.0009704677638440225,
+        "minimum_corner_cone": 0.9712179824599028,
+        "minimum_quadrature_interpolant_norm": 0.9915744221621339,
+        "hopf_integral": -17.9967035001883,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.2648727774604284,
+        "mean_topological_b": [
+          -4.672708097173198e-11,
+          1.5579380723936952e-06,
+          -7.002748758256933e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009704677638440226,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.945733043219661e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 3.3881317890172014e-21
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 1.4210854715202004e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "48b85321f2826d74f886e86bb4bbb71e3122954fa9441c23fb314b871b73d067",
+      "energy_per_Q_three_quarters": 1.2485615775838923,
+      "source_energy_relative_difference": 0.006735071319810322,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale35-domain": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "domain",
+      "n": 193,
+      "h": 0.096,
+      "branch": "q18-scale35",
+      "final": {
+        "iteration": 250,
+        "recorded_at": {
+          "utc": "2026-11-01T18:34:42.318971+00:00",
+          "melbourne": "2026-11-02T05:34:42.318971+11:00"
+        },
+        "elapsed_seconds": 458.75524469002266,
+        "e2": 5.393908109118355,
+        "e4": 5.486250993980489,
+        "energy": 10.880159103098844,
+        "virial_residual": 0.008487273392521753,
+        "tangent_gradient_rms": 0.000913065554308804,
+        "minimum_corner_cone": 0.9605901762769407,
+        "minimum_quadrature_interpolant_norm": 0.9881129858677101,
+        "hopf_integral": -17.99360059755752,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3153271186840574,
+        "mean_topological_b": [
+          -1.0631431294214825e-10,
+          1.489535237620742e-06,
+          -8.042134819123842e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009130655543087984,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.1442402580996713e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.34874836411489e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 2.1316282072803006e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "c1e58b9177cb96110168955d7db0e60f6849f2e32434655ff52e895f0a982c3e",
+      "energy_per_Q_three_quarters": 1.2450330133913854,
+      "source_energy_relative_difference": 0.003889933853002847,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale45-129": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 129,
+      "h": 0.12,
+      "branch": "q18-scale45",
+      "final": {
+        "iteration": 578,
+        "recorded_at": {
+          "utc": "2026-11-01T18:41:43.175005+00:00",
+          "melbourne": "2026-11-02T05:41:43.175005+11:00"
+        },
+        "elapsed_seconds": 298.1705793260189,
+        "e2": 5.333636210463869,
+        "e4": 5.591502740695233,
+        "energy": 10.925138951159102,
+        "virial_residual": 0.023603043529620844,
+        "tangent_gradient_rms": 0.0009704492552935726,
+        "minimum_corner_cone": 0.935522206586708,
+        "minimum_quadrature_interpolant_norm": 0.9813673526898987,
+        "hopf_integral": -17.98385415362685,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.38486525828126666,
+        "mean_topological_b": [
+          9.115711958578284e-11,
+          9.148130562518941e-06,
+          -3.370296506420079e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009704492552935773,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.9628743075372768e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.422126200315807e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "2e6c6fb4d1f5d702bce5937a08d9e98b3930a14b8b9b3081a7773e34bad27067",
+      "energy_per_Q_three_quarters": 1.2501801252342994,
+      "source_energy_relative_difference": 0.008040132050110997,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale45-161": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 161,
+      "h": 0.096,
+      "branch": "q18-scale45",
+      "final": {
+        "iteration": 27,
+        "recorded_at": {
+          "utc": "2026-11-01T19:14:59.809832+00:00",
+          "melbourne": "2026-11-02T06:14:59.809832+11:00"
+        },
+        "elapsed_seconds": 52.19610084500164,
+        "e2": 5.341621165755196,
+        "e4": 5.569489480102978,
+        "energy": 10.911110645858173,
+        "virial_residual": 0.020884062286938655,
+        "tangent_gradient_rms": 0.0009269083348674884,
+        "minimum_corner_cone": 0.9543313376556739,
+        "minimum_quadrature_interpolant_norm": 0.9880109882301923,
+        "hopf_integral": -17.993245643338046,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.31048836263033236,
+        "mean_topological_b": [
+          -1.4823998834528974e-09,
+          7.926849485187317e-06,
+          -1.2515378491084309e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009269083348674842,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 4.7410964043592685e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.348483666318873e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.552713678800501e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "a1188b8714901a5df8bf9914eb4a8a5613f38b77c793d9b3cd6f97ee0cd06fdc",
+      "energy_per_Q_three_quarters": 1.248574845104102,
+      "source_energy_relative_difference": 0.006745769132512811,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale45-193": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 193,
+      "h": 0.08,
+      "branch": "q18-scale45",
+      "final": {
+        "iteration": 225,
+        "recorded_at": {
+          "utc": "2026-11-01T19:24:04.556984+00:00",
+          "melbourne": "2026-11-02T06:24:04.556984+11:00"
+        },
+        "elapsed_seconds": 432.60916914697737,
+        "e2": 5.336880878519202,
+        "e4": 5.568698810102288,
+        "energy": 10.90557968862149,
+        "virial_residual": 0.021256818821374222,
+        "tangent_gradient_rms": 0.0009194279138674151,
+        "minimum_corner_cone": 0.9679627532656647,
+        "minimum_quadrature_interpolant_norm": 0.9916385407594519,
+        "hopf_integral": -17.99670259221143,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.2596496063145572,
+        "mean_topological_b": [
+          -8.89812319405184e-10,
+          4.00031405500295e-06,
+          -6.0363301540067915e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009194279138674153,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.65441052155802e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 3.3881317890172014e-21
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 2.4868995751603507e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "8f16787e711ef74c38fc0edd44c2ceb30b575c301802b44cd3429b533565f0b9",
+      "energy_per_Q_three_quarters": 1.2479419293268534,
+      "source_energy_relative_difference": 0.006235439068231295,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-scale45-domain": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "domain",
+      "n": 193,
+      "h": 0.096,
+      "branch": "q18-scale45",
+      "final": {
+        "iteration": 309,
+        "recorded_at": {
+          "utc": "2026-11-01T19:35:51.256307+00:00",
+          "melbourne": "2026-11-02T06:35:51.256307+11:00"
+        },
+        "elapsed_seconds": 565.1210122969933,
+        "e2": 5.39669841660197,
+        "e4": 5.481875137138079,
+        "energy": 10.878573553740049,
+        "virial_residual": 0.007829769235399972,
+        "tangent_gradient_rms": 0.0009970077666578406,
+        "minimum_corner_cone": 0.9547380657353475,
+        "minimum_quadrature_interpolant_norm": 0.9880574615765654,
+        "hopf_integral": -17.993550509360645,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3110080638599078,
+        "mean_topological_b": [
+          -1.1297216268481938e-09,
+          4.298767766187549e-06,
+          -7.04319738884963e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009970077666578573,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.1263878718636988e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.770676650965938e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 2.4868995751603507e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "6bd1e0822506c87c37dd48f1073375c9b085a866c27838865c4d233ca5592dc8",
+      "energy_per_Q_three_quarters": 1.244851576587258,
+      "source_energy_relative_difference": 0.0037436384702020267,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-ell025-129": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 129,
+      "h": 0.12,
+      "branch": "q18-ell025",
+      "final": {
+        "iteration": 105,
+        "recorded_at": {
+          "utc": "2026-11-01T19:39:25.529878+00:00",
+          "melbourne": "2026-11-02T06:39:25.529878+11:00"
+        },
+        "elapsed_seconds": 65.38974783400772,
+        "e2": 5.333276590778007,
+        "e4": 5.592833560499768,
+        "energy": 10.926110151277776,
+        "virial_residual": 0.023755661084142288,
+        "tangent_gradient_rms": 0.0009276521764421477,
+        "minimum_corner_cone": 0.9376275985853878,
+        "minimum_quadrature_interpolant_norm": 0.9816709928782141,
+        "hopf_integral": -17.983957704503283,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3884704590759286,
+        "mean_topological_b": [
+          1.1350301526102274e-09,
+          6.948326067843393e-06,
+          -3.378776371448278e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009276521764421445,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.0605739337042905e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 9.071722865093557e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.552713678800501e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "985aa609e1b29dbb41fb8fba4ed99573f32cca5617623441144d15b58cb9c48e",
+      "energy_per_Q_three_quarters": 1.250291261128444,
+      "source_energy_relative_difference": 0.008129742690328146,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-ell025-161": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 161,
+      "h": 0.096,
+      "branch": "q18-ell025",
+      "final": {
+        "iteration": 249,
+        "recorded_at": {
+          "utc": "2026-11-01T19:45:49.923651+00:00",
+          "melbourne": "2026-11-02T06:45:49.923651+11:00"
+        },
+        "elapsed_seconds": 277.40046173799783,
+        "e2": 5.323057862442516,
+        "e4": 5.59330219713885,
+        "energy": 10.916360059581365,
+        "virial_residual": 0.024755901529570596,
+        "tangent_gradient_rms": 0.0008865974365927554,
+        "minimum_corner_cone": 0.9590048752382314,
+        "minimum_quadrature_interpolant_norm": 0.988011970451997,
+        "hopf_integral": -17.993260484682406,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3132121276634049,
+        "mean_topological_b": [
+          5.271442111943644e-10,
+          3.2315942273102208e-06,
+          -1.4244234747685076e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008865974365927622,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.013767179207207e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.348417491869868e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.552713678800501e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "34c1d23d10c1dc34a632cf5184213331c50244006b6a7a5499d7dc3935d2a1a8",
+      "energy_per_Q_three_quarters": 1.2491755434325358,
+      "source_energy_relative_difference": 0.007230121755062337,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-ell025-193": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "refinement",
+      "n": 193,
+      "h": 0.08,
+      "branch": "q18-ell025",
+      "final": {
+        "iteration": 227,
+        "recorded_at": {
+          "utc": "2026-11-01T19:55:23.493065+00:00",
+          "melbourne": "2026-11-02T06:55:23.493065+11:00"
+        },
+        "elapsed_seconds": 441.85892248598975,
+        "e2": 5.319031453927225,
+        "e4": 5.591865782873762,
+        "energy": 10.910897236800988,
+        "virial_residual": 0.025005673046420304,
+        "tangent_gradient_rms": 0.0008469564948209444,
+        "minimum_corner_cone": 0.971041813856499,
+        "minimum_quadrature_interpolant_norm": 0.9916162429488563,
+        "hopf_integral": -17.996704828185425,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.2621510645237276,
+        "mean_topological_b": [
+          2.6370980868785104e-10,
+          1.6475818533182996e-06,
+          -6.986187790235202e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008469564948209444,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.812506280264643e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 3.3881317890172014e-21
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 1.4210854715202004e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "6e0edc1983d009855e83c3b199d55d5013cda060e5e9539f2ddf3553dfe68e22",
+      "energy_per_Q_three_quarters": 1.2485504243838685,
+      "source_energy_relative_difference": 0.006726078317123898,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    },
+    "q18-ell025-domain": {
+      "execution": "stationary",
+      "q": 18,
+      "role": "domain",
+      "n": 193,
+      "h": 0.096,
+      "branch": "q18-ell025",
+      "final": {
+        "iteration": 346,
+        "recorded_at": {
+          "utc": "2026-11-01T20:08:32.817104+00:00",
+          "melbourne": "2026-11-02T07:08:32.817104+11:00"
+        },
+        "elapsed_seconds": 629.2781319959904,
+        "e2": 5.397533522929521,
+        "e4": 5.482969286971202,
+        "energy": 10.880502809900722,
+        "virial_residual": 0.007852188959864852,
+        "tangent_gradient_rms": 0.0009966604869103533,
+        "minimum_corner_cone": 0.9599709048042205,
+        "minimum_quadrature_interpolant_norm": 0.9882228199980769,
+        "hopf_integral": -17.993627630442226,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.31097854808197883,
+        "mean_topological_b": [
+          2.870732644904247e-10,
+          1.7005760626303537e-06,
+          -7.97543673558593e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009966604869103533,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.170352703638855e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 6.192604937816986e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 2.1316282072803006e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "solver_status": "gradient_stationary",
+      "checkpoint_sha256": "40bb994f17da18ddbdd8475de54c8f6f5f7d44d2dfb9462ba2df1fdd8b871889",
+      "energy_per_Q_three_quarters": 1.2450723442790324,
+      "source_energy_relative_difference": 0.003921646973678096,
+      "preimage_components": {
+        "primary": 3,
+        "secondary": 3
+      },
+      "topology_scope": "finite diagrams; identity and cross-mesh consistency require scientific review",
+      "scaling_gate": true
+    }
+  },
+  "comparisons": {
+    "q18-baseline-129__q18-baseline-161": {
+      "status": "pass",
+      "relative_energy_change": 0.0008677181715394423,
+      "first_energy": 10.920566653731,
+      "second_energy": 10.91109067960205,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-baseline-161__q18-baseline-193": {
+      "status": "pass",
+      "relative_energy_change": 0.0005077063749335875,
+      "first_energy": 10.91109067960205,
+      "second_energy": 10.905551049306538,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-baseline-161__q18-baseline-domain": {
+      "status": "pass",
+      "relative_energy_change": 0.0029927790599390833,
+      "first_energy": 10.91109067960205,
+      "second_energy": 10.878436195895041,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q17-neighbour-129__q17-neighbour-161": {
+      "status": "pass",
+      "relative_energy_change": 0.0007889519924251531,
+      "first_energy": 11.001911455714588,
+      "second_energy": 10.993231475751116,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q17-neighbour-161__q17-neighbour-193": {
+      "status": "pass",
+      "relative_energy_change": 0.00044601510129787267,
+      "first_energy": 10.993231475751116,
+      "second_energy": 10.988328328500868,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q17-neighbour-161__q17-neighbour-domain": {
+      "status": "pass",
+      "relative_energy_change": 0.0028546408913416896,
+      "first_energy": 10.993231475751116,
+      "second_energy": 10.961849747652453,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q19-neighbour-129__q19-neighbour-161": {
+      "status": "pass",
+      "relative_energy_change": 0.0007655952853450523,
+      "first_energy": 12.06323057057931,
+      "second_energy": 12.053995018128445,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q19-neighbour-161__q19-neighbour-193": {
+      "status": "pass",
+      "relative_energy_change": 0.00043731049790992585,
+      "first_energy": 12.053995018128445,
+      "second_energy": 12.048723679565263,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q19-neighbour-161__q19-neighbour-domain": {
+      "status": "pass",
+      "relative_energy_change": 0.003175022113091483,
+      "first_energy": 12.053995018128445,
+      "second_energy": 12.015723317394793,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-scale35-129__q18-scale35-161": {
+      "status": "pass",
+      "relative_energy_change": 0.0008886862305725595,
+      "first_energy": 10.926310024117697,
+      "second_energy": 10.916599962848297,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-scale35-161__q18-scale35-193": {
+      "status": "pass",
+      "relative_energy_change": 0.0005134620580830432,
+      "first_energy": 10.916599962848297,
+      "second_energy": 10.910994702964103,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-scale35-161__q18-scale35-domain": {
+      "status": "pass",
+      "relative_energy_change": 0.0033381144196425083,
+      "first_energy": 10.916599962848297,
+      "second_energy": 10.880159103098844,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-baseline-193__q18-scale35-193": {
+      "status": "eligible",
+      "relative_energy_change": 0.0004991635574353853,
+      "first_energy": 10.905551049306538,
+      "second_energy": 10.910994702964103,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-scale45-129__q18-scale45-161": {
+      "status": "pass",
+      "relative_energy_change": 0.0012840390738866347,
+      "first_energy": 10.925138951159102,
+      "second_energy": 10.911110645858173,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-scale45-161__q18-scale45-193": {
+      "status": "pass",
+      "relative_energy_change": 0.0005069105626550127,
+      "first_energy": 10.911110645858173,
+      "second_energy": 10.90557968862149,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-scale45-161__q18-scale45-domain": {
+      "status": "pass",
+      "relative_energy_change": 0.0029820146797315513,
+      "first_energy": 10.911110645858173,
+      "second_energy": 10.878573553740049,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-baseline-193__q18-scale45-193": {
+      "status": "eligible",
+      "relative_energy_change": 2.6261226802824345e-06,
+      "first_energy": 10.905551049306538,
+      "second_energy": 10.90557968862149,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-ell025-129__q18-ell025-161": {
+      "status": "pass",
+      "relative_energy_change": 0.0008923662274510925,
+      "first_energy": 10.926110151277776,
+      "second_energy": 10.916360059581365,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-ell025-161__q18-ell025-193": {
+      "status": "pass",
+      "relative_energy_change": 0.0005004253020751216,
+      "first_energy": 10.916360059581365,
+      "second_energy": 10.910897236800988,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-ell025-161__q18-ell025-domain": {
+      "status": "pass",
+      "relative_energy_change": 0.003284725813818339,
+      "first_energy": 10.916360059581365,
+      "second_energy": 10.880502809900722,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "q18-baseline-193__q18-ell025-193": {
+      "status": "eligible",
+      "relative_energy_change": 0.0004902262591113676,
+      "first_energy": 10.905551049306538,
+      "second_energy": 10.910897236800988,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    }
+  },
+  "analysis": {
+    "q1-control-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "9aca94ba6a052361dbfa80ca9c560280fd639d978e325349bcf8f87d14fb52d4",
+      "started_at": {
+        "utc": "2026-11-01T15:21:24.117215+00:00",
+        "melbourne": "2026-11-02T02:21:24.117215+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:21:25.649823+00:00",
+        "melbourne": "2026-11-02T02:21:25.649823+11:00"
+      },
+      "log": "logs/q1-control-pass0001-scaling-1793546484117240824.log"
+    },
+    "q2-control-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "f4210dde3aad813790d14fcf868f58d6efdec92b185184693787c9efb5bdf146",
+      "started_at": {
+        "utc": "2026-11-01T15:21:33.125276+00:00",
+        "melbourne": "2026-11-02T02:21:33.125276+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:21:34.407082+00:00",
+        "melbourne": "2026-11-02T02:21:34.407082+11:00"
+      },
+      "log": "logs/q2-control-pass0001-scaling-1793546493125297427.log"
+    },
+    "q22-control-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "2d76ec3c152b757e4ad3d83afa6bfccf4fb38bb2bcc0b73205e245a4c9fdda2a",
+      "started_at": {
+        "utc": "2026-11-01T15:21:55.452421+00:00",
+        "melbourne": "2026-11-02T02:21:55.452421+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:22:10.119048+00:00",
+        "melbourne": "2026-11-02T02:22:10.119048+11:00"
+      },
+      "log": "logs/q22-control-pass0001-topology-1793546515452446247.log"
+    },
+    "q22-control-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "7e6cd2eacb7076aa8d65685d9be6ada5ec7cd83bd5da8769cb18c95801c0286b",
+      "started_at": {
+        "utc": "2026-11-01T15:22:10.130387+00:00",
+        "melbourne": "2026-11-02T02:22:10.130387+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:22:10.602278+00:00",
+        "melbourne": "2026-11-02T02:22:10.602278+11:00"
+      },
+      "log": "logs/q22-control-pass0001-links-1793546530130405851.log"
+    },
+    "q22-control-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "d3e47eb06be1804bc3ff5c70aeaf467cf324236962a4f7038e45ad0bc01ed474",
+      "started_at": {
+        "utc": "2026-11-01T15:22:10.760340+00:00",
+        "melbourne": "2026-11-02T02:22:10.760340+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:22:18.574966+00:00",
+        "melbourne": "2026-11-02T02:22:18.574966+11:00"
+      },
+      "log": "logs/q22-control-pass0001-scaling-1793546530760385410.log"
+    },
+    "q18-baseline-97-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "64773e52812721f4987ff52aea75bd78a40c004d0726d97175a111f7482ad38d",
+      "started_at": {
+        "utc": "2026-11-01T15:27:17.216069+00:00",
+        "melbourne": "2026-11-02T02:27:17.216069+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:27:34.783044+00:00",
+        "melbourne": "2026-11-02T02:27:34.783044+11:00"
+      },
+      "log": "logs/q18-baseline-97-pass0001-topology-1793546837216094676.log"
+    },
+    "q18-baseline-97-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "9eaf86137e6c36f14f8c96da94dfcab127195e3b0652a5e2884159b3c9fb4057",
+      "started_at": {
+        "utc": "2026-11-01T15:27:34.795232+00:00",
+        "melbourne": "2026-11-02T02:27:34.795232+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:27:38.375291+00:00",
+        "melbourne": "2026-11-02T02:27:38.375291+11:00"
+      },
+      "log": "logs/q18-baseline-97-pass0001-links-1793546854795252130.log"
+    },
+    "q18-baseline-97-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "17a5e892a16c76425df678731fc17f8c358d272589c67370cd51ba0d54fab220",
+      "started_at": {
+        "utc": "2026-11-01T15:27:38.432221+00:00",
+        "melbourne": "2026-11-02T02:27:38.432221+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:27:41.819299+00:00",
+        "melbourne": "2026-11-02T02:27:41.819299+11:00"
+      },
+      "log": "logs/q18-baseline-97-pass0001-scaling-1793546858432244530.log"
+    },
+    "q17-neighbour-129-pass0002-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "0ef8deb3e51902c7fe1a872424074f6c600f23bfad833314b8e6f653be6e28ee",
+      "started_at": {
+        "utc": "2026-11-01T15:55:29.055413+00:00",
+        "melbourne": "2026-11-02T02:55:29.055413+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:55:38.856430+00:00",
+        "melbourne": "2026-11-02T02:55:38.856430+11:00"
+      },
+      "log": "logs/q17-neighbour-129-pass0002-topology-1793548529055439441.log"
+    },
+    "q17-neighbour-129-pass0002-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "076a81ffcc35fb263f5cedb2f287d55d6cb3c560e284551c8dd18f2910f904fb",
+      "started_at": {
+        "utc": "2026-11-01T15:55:38.869357+00:00",
+        "melbourne": "2026-11-02T02:55:38.869357+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:55:39.341869+00:00",
+        "melbourne": "2026-11-02T02:55:39.341869+11:00"
+      },
+      "log": "logs/q17-neighbour-129-pass0002-links-1793548538869381973.log"
+    },
+    "q17-neighbour-129-pass0002-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "2bee87b4fcfac546b4f6bb354d3aee8f238ddeef9343522af20609644c96a541",
+      "started_at": {
+        "utc": "2026-11-01T15:55:39.477404+00:00",
+        "melbourne": "2026-11-02T02:55:39.477404+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T15:55:46.330861+00:00",
+        "melbourne": "2026-11-02T02:55:46.330861+11:00"
+      },
+      "log": "logs/q17-neighbour-129-pass0002-scaling-1793548539477429902.log"
+    },
+    "q19-neighbour-129-pass0002-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "41e7eb4ce5628708204936d5d02b323200dc5d6aaffd5263c20bd14b20a7663b",
+      "started_at": {
+        "utc": "2026-11-01T16:29:26.429726+00:00",
+        "melbourne": "2026-11-02T03:29:26.429726+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:29:36.331544+00:00",
+        "melbourne": "2026-11-02T03:29:36.331544+11:00"
+      },
+      "log": "logs/q19-neighbour-129-pass0002-topology-1793550566429788675.log"
+    },
+    "q19-neighbour-129-pass0002-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "97fc1f08563453bbdae50515ad7b1d0648ee5640ce4946a848f770727e89497d",
+      "started_at": {
+        "utc": "2026-11-01T16:29:36.344973+00:00",
+        "melbourne": "2026-11-02T03:29:36.344973+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:29:36.816899+00:00",
+        "melbourne": "2026-11-02T03:29:36.816899+11:00"
+      },
+      "log": "logs/q19-neighbour-129-pass0002-links-1793550576344999946.log"
+    },
+    "q19-neighbour-129-pass0002-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "4f5b1f35de88b4eb820ae8fc552dda060bdc8c3eea76d92f5ac618d24fb715ec",
+      "started_at": {
+        "utc": "2026-11-01T16:29:36.955761+00:00",
+        "melbourne": "2026-11-02T03:29:36.955761+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:29:44.006410+00:00",
+        "melbourne": "2026-11-02T03:29:44.006410+11:00"
+      },
+      "log": "logs/q19-neighbour-129-pass0002-scaling-1793550576955785292.log"
+    },
+    "q18-scale35-97-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "acf7362a44aa88f1477f822c3af04fb177ac653969d9503e89216330eb53d966",
+      "started_at": {
+        "utc": "2026-11-01T16:34:43.802822+00:00",
+        "melbourne": "2026-11-02T03:34:43.802822+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:35:02.145263+00:00",
+        "melbourne": "2026-11-02T03:35:02.145263+11:00"
+      },
+      "log": "logs/q18-scale35-97-pass0001-topology-1793550883802848879.log"
+    },
+    "q18-scale35-97-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "16939c19f79272f07609f035a1ae4d2405e133eaca2db9d4698c10fbb88e8298",
+      "started_at": {
+        "utc": "2026-11-01T16:35:02.157965+00:00",
+        "melbourne": "2026-11-02T03:35:02.157965+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:35:05.738246+00:00",
+        "melbourne": "2026-11-02T03:35:05.738246+11:00"
+      },
+      "log": "logs/q18-scale35-97-pass0001-links-1793550902157992637.log"
+    },
+    "q18-scale35-97-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "3b5c719154556893ec8dd36c1ab88107f821b9080640c65eb37f877d9caea497",
+      "started_at": {
+        "utc": "2026-11-01T16:35:05.793993+00:00",
+        "melbourne": "2026-11-02T03:35:05.793993+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:35:09.131324+00:00",
+        "melbourne": "2026-11-02T03:35:09.131324+11:00"
+      },
+      "log": "logs/q18-scale35-97-pass0001-scaling-1793550905794017088.log"
+    },
+    "q18-scale45-97-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "f42a3962a04071985fb7db1b5226faf1fc6be353494a3d166adc95bcb18d513e",
+      "started_at": {
+        "utc": "2026-11-01T16:39:46.243258+00:00",
+        "melbourne": "2026-11-02T03:39:46.243258+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:40:04.813977+00:00",
+        "melbourne": "2026-11-02T03:40:04.813977+11:00"
+      },
+      "log": "logs/q18-scale45-97-pass0001-topology-1793551186243285938.log"
+    },
+    "q18-scale45-97-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "e0135cae7696b7cc5ed652bcbe54780e4fa6ee74f7c55d9c695cecb339a240e6",
+      "started_at": {
+        "utc": "2026-11-01T16:40:04.828499+00:00",
+        "melbourne": "2026-11-02T03:40:04.828499+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:40:08.460109+00:00",
+        "melbourne": "2026-11-02T03:40:08.460109+11:00"
+      },
+      "log": "logs/q18-scale45-97-pass0001-links-1793551204828532613.log"
+    },
+    "q18-scale45-97-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "c29ed91ab08b201ac02c3e40e22a6879659fb6d60255de9df399e3fbdfac6d49",
+      "started_at": {
+        "utc": "2026-11-01T16:40:08.524216+00:00",
+        "melbourne": "2026-11-02T03:40:08.524216+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:40:11.962619+00:00",
+        "melbourne": "2026-11-02T03:40:11.962619+11:00"
+      },
+      "log": "logs/q18-scale45-97-pass0001-scaling-1793551208524242671.log"
+    },
+    "q18-ell025-97-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "eed30cd3fbff8816f48bff75a827b18f239c3d7a94013224bf76525337314ed2",
+      "started_at": {
+        "utc": "2026-11-01T16:48:08.840481+00:00",
+        "melbourne": "2026-11-02T03:48:08.840481+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:48:26.658766+00:00",
+        "melbourne": "2026-11-02T03:48:26.658766+11:00"
+      },
+      "log": "logs/q18-ell025-97-pass0001-topology-1793551688840509278.log"
+    },
+    "q18-ell025-97-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "24ae4b967f88fb0ad6a797b19cf888164bcc496e25afc13c21bfbf047e124f6b",
+      "started_at": {
+        "utc": "2026-11-01T16:48:26.671317+00:00",
+        "melbourne": "2026-11-02T03:48:26.671317+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:48:30.200446+00:00",
+        "melbourne": "2026-11-02T03:48:30.200446+11:00"
+      },
+      "log": "logs/q18-ell025-97-pass0001-links-1793551706671342900.log"
+    },
+    "q18-ell025-97-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "d6c500b56a6b3db7d50e8580532adddbe6277d1e7fbe0ed925806397b086b4e9",
+      "started_at": {
+        "utc": "2026-11-01T16:48:30.255056+00:00",
+        "melbourne": "2026-11-02T03:48:30.255056+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T16:48:33.644610+00:00",
+        "melbourne": "2026-11-02T03:48:33.644610+11:00"
+      },
+      "log": "logs/q18-ell025-97-pass0001-scaling-1793551710255082088.log"
+    },
+    "q18-baseline-129-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "745cbb7c61f82e4e5a0669ba710de097333057aa7150adc975d495cae213d0be",
+      "started_at": {
+        "utc": "2026-11-01T17:06:03.146271+00:00",
+        "melbourne": "2026-11-02T04:06:03.146271+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:06:18.950682+00:00",
+        "melbourne": "2026-11-02T04:06:18.950682+11:00"
+      },
+      "log": "logs/q18-baseline-129-pass0001-topology-1793552763146299030.log"
+    },
+    "q18-baseline-129-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "a16d4e895aba0d8b5e2e7ed1342a63db0b77f603445c60ba23d7669a0d4363d8",
+      "started_at": {
+        "utc": "2026-11-01T17:06:18.963786+00:00",
+        "melbourne": "2026-11-02T04:06:18.963786+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:06:22.592287+00:00",
+        "melbourne": "2026-11-02T04:06:22.592287+11:00"
+      },
+      "log": "logs/q18-baseline-129-pass0001-links-1793552778963807680.log"
+    },
+    "q18-baseline-129-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "7b8a05a83c1e9567d5aa0dbaa8787b6f5b3643270177fb6fc87fc01cca75b90a",
+      "started_at": {
+        "utc": "2026-11-01T17:06:22.735280+00:00",
+        "melbourne": "2026-11-02T04:06:22.735280+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:06:29.679955+00:00",
+        "melbourne": "2026-11-02T04:06:29.679955+11:00"
+      },
+      "log": "logs/q18-baseline-129-pass0001-scaling-1793552782735304068.log"
+    },
+    "q18-baseline-161-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "afd2233659150b2c64f72d87d1de71f6078308d2c0d931273f09cf47f98efe09",
+      "started_at": {
+        "utc": "2026-11-01T17:11:28.218455+00:00",
+        "melbourne": "2026-11-02T04:11:28.218455+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:11:45.532852+00:00",
+        "melbourne": "2026-11-02T04:11:45.532852+11:00"
+      },
+      "log": "logs/q18-baseline-161-pass0001-topology-1793553088218483030.log"
+    },
+    "q18-baseline-161-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "0b4a12d958280dab42f8aa94cfcef786a44a00b0fee75abcaa764cda5839ca38",
+      "started_at": {
+        "utc": "2026-11-01T17:11:45.545037+00:00",
+        "melbourne": "2026-11-02T04:11:45.545037+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:11:49.178028+00:00",
+        "melbourne": "2026-11-02T04:11:49.178028+11:00"
+      },
+      "log": "logs/q18-baseline-161-pass0001-links-1793553105545062421.log"
+    },
+    "q18-baseline-161-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "47abc64787765caba5f6931792467a7a20a5e5356fa1f2dac0ac49385e6ea52e",
+      "started_at": {
+        "utc": "2026-11-01T17:11:49.461878+00:00",
+        "melbourne": "2026-11-02T04:11:49.461878+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:12:01.873798+00:00",
+        "melbourne": "2026-11-02T04:12:01.873798+11:00"
+      },
+      "log": "logs/q18-baseline-161-pass0001-scaling-1793553109461901607.log"
+    },
+    "q18-baseline-193-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "07e59a29d2b60f69e2589219bd479bac7188b1e5a4bff8ebca06061adf53861c",
+      "started_at": {
+        "utc": "2026-11-01T17:21:22.835847+00:00",
+        "melbourne": "2026-11-02T04:21:22.835847+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:21:41.905744+00:00",
+        "melbourne": "2026-11-02T04:21:41.905744+11:00"
+      },
+      "log": "logs/q18-baseline-193-pass0001-topology-1793553682835872760.log"
+    },
+    "q18-baseline-193-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "ec7ae4e0fc7d6778193f7951afa49a33e1a385cb4a0eb553c9087e540e0271d2",
+      "started_at": {
+        "utc": "2026-11-01T17:21:41.918734+00:00",
+        "melbourne": "2026-11-02T04:21:41.918734+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:21:45.499015+00:00",
+        "melbourne": "2026-11-02T04:21:45.499015+11:00"
+      },
+      "log": "logs/q18-baseline-193-pass0001-links-1793553701918762178.log"
+    },
+    "q18-baseline-193-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "7ad6b960a33c900132b36eae8bb54947d2904d9912916044201036257799072a",
+      "started_at": {
+        "utc": "2026-11-01T17:21:45.920783+00:00",
+        "melbourne": "2026-11-02T04:21:45.920783+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:22:05.963853+00:00",
+        "melbourne": "2026-11-02T04:22:05.963853+11:00"
+      },
+      "log": "logs/q18-baseline-193-pass0001-scaling-1793553705920810940.log"
+    },
+    "q18-baseline-domain-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "0a06c0b7f5e960485095a4357206aaa804b0a87b8d4779c75966ede0842f3f83",
+      "started_at": {
+        "utc": "2026-11-01T17:34:00.791590+00:00",
+        "melbourne": "2026-11-02T04:34:00.791590+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:34:19.812354+00:00",
+        "melbourne": "2026-11-02T04:34:19.812354+11:00"
+      },
+      "log": "logs/q18-baseline-domain-pass0001-topology-1793554440791616530.log"
+    },
+    "q18-baseline-domain-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "dba66b70d3cc40d114edb961e0f42670dd3cd8a7a687f49f6a4c18420b428773",
+      "started_at": {
+        "utc": "2026-11-01T17:34:19.826058+00:00",
+        "melbourne": "2026-11-02T04:34:19.826058+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:34:23.505097+00:00",
+        "melbourne": "2026-11-02T04:34:23.505097+11:00"
+      },
+      "log": "logs/q18-baseline-domain-pass0001-links-1793554459826083048.log"
+    },
+    "q18-baseline-domain-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "548a1913ce49454ba94f03f457cb8070bfd98b2775f64cc6264a5383e2f02ea3",
+      "started_at": {
+        "utc": "2026-11-01T17:34:23.921043+00:00",
+        "melbourne": "2026-11-02T04:34:23.921043+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:34:44.060669+00:00",
+        "melbourne": "2026-11-02T04:34:44.060669+11:00"
+      },
+      "log": "logs/q18-baseline-domain-pass0001-scaling-1793554463921071179.log"
+    },
+    "q17-neighbour-161-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "c026c119b2d9fec073640b0c0c81c1dfcfefb85868e5d6f4bed96853073d82c2",
+      "started_at": {
+        "utc": "2026-11-01T17:40:13.879704+00:00",
+        "melbourne": "2026-11-02T04:40:13.879704+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:40:20.572327+00:00",
+        "melbourne": "2026-11-02T04:40:20.572327+11:00"
+      },
+      "log": "logs/q17-neighbour-161-pass0001-topology-1793554813879728923.log"
+    },
+    "q17-neighbour-161-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "71ac3fb78752cc035fceeaa8eabe01bc4b4e99a45a2103c4ebbccff7b52b8119",
+      "started_at": {
+        "utc": "2026-11-01T17:40:20.585245+00:00",
+        "melbourne": "2026-11-02T04:40:20.585245+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:40:21.057393+00:00",
+        "melbourne": "2026-11-02T04:40:21.057393+11:00"
+      },
+      "log": "logs/q17-neighbour-161-pass0001-links-1793554820585270825.log"
+    },
+    "q17-neighbour-161-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "1124d7cf3c44bc1b54301c785140f238519342ccecec93b6db71b94cb831584c",
+      "started_at": {
+        "utc": "2026-11-01T17:40:21.311894+00:00",
+        "melbourne": "2026-11-02T04:40:21.311894+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:40:33.620927+00:00",
+        "melbourne": "2026-11-02T04:40:33.620927+11:00"
+      },
+      "log": "logs/q17-neighbour-161-pass0001-scaling-1793554821311918500.log"
+    },
+    "q17-neighbour-193-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "a12708f440f309d6eb7668fa30bd00b7e2d90baac2b4563e5bbb576e82bec22c",
+      "started_at": {
+        "utc": "2026-11-01T17:45:26.890483+00:00",
+        "melbourne": "2026-11-02T04:45:26.890483+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:45:36.190851+00:00",
+        "melbourne": "2026-11-02T04:45:36.190851+11:00"
+      },
+      "log": "logs/q17-neighbour-193-pass0001-topology-1793555126890511275.log"
+    },
+    "q17-neighbour-193-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "ca5edf86df55fa4e76d1e38edfb0a10903249ef67c9472f1c798e2ad20685129",
+      "started_at": {
+        "utc": "2026-11-01T17:45:36.205573+00:00",
+        "melbourne": "2026-11-02T04:45:36.205573+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:45:36.678580+00:00",
+        "melbourne": "2026-11-02T04:45:36.678580+11:00"
+      },
+      "log": "logs/q17-neighbour-193-pass0001-links-1793555136205606313.log"
+    },
+    "q17-neighbour-193-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "d0cdfecc3056a9ea09594b896e00b79e6b825d82f0f0e16a2a633686082424db",
+      "started_at": {
+        "utc": "2026-11-01T17:45:37.109512+00:00",
+        "melbourne": "2026-11-02T04:45:37.109512+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:45:57.600465+00:00",
+        "melbourne": "2026-11-02T04:45:57.600465+11:00"
+      },
+      "log": "logs/q17-neighbour-193-pass0001-scaling-1793555137109537145.log"
+    },
+    "q17-neighbour-domain-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "f4fee369e0155bcf340dcde7ee15643807a959077d0a6b10fbf01696388221ca",
+      "started_at": {
+        "utc": "2026-11-01T17:51:49.359117+00:00",
+        "melbourne": "2026-11-02T04:51:49.359117+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:51:58.054839+00:00",
+        "melbourne": "2026-11-02T04:51:58.054839+11:00"
+      },
+      "log": "logs/q17-neighbour-domain-pass0001-topology-1793555509359142955.log"
+    },
+    "q17-neighbour-domain-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "8b404bc9d16ddc4f7d67c98c2a40a386c5319255ccc3ee6308b7358623d94c31",
+      "started_at": {
+        "utc": "2026-11-01T17:51:58.068866+00:00",
+        "melbourne": "2026-11-02T04:51:58.068866+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:51:58.541464+00:00",
+        "melbourne": "2026-11-02T04:51:58.541464+11:00"
+      },
+      "log": "logs/q17-neighbour-domain-pass0001-links-1793555518068884387.log"
+    },
+    "q17-neighbour-domain-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "c5f34f65d5fb949dbc0cb23b5ea8a1471098366c7d28254280e7dec940acb410",
+      "started_at": {
+        "utc": "2026-11-01T17:51:58.965794+00:00",
+        "melbourne": "2026-11-02T04:51:58.965794+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:52:19.114640+00:00",
+        "melbourne": "2026-11-02T04:52:19.114640+11:00"
+      },
+      "log": "logs/q17-neighbour-domain-pass0001-scaling-1793555518965817912.log"
+    },
+    "q19-neighbour-161-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "f0aba120b9ee27fb6673616529026b607050debd239686a95e5b72466a2c9ff8",
+      "started_at": {
+        "utc": "2026-11-01T17:55:58.162221+00:00",
+        "melbourne": "2026-11-02T04:55:58.162221+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:56:04.804325+00:00",
+        "melbourne": "2026-11-02T04:56:04.804325+11:00"
+      },
+      "log": "logs/q19-neighbour-161-pass0001-topology-1793555758162245059.log"
+    },
+    "q19-neighbour-161-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "8197af494654e4f9d7eda730fe89b91422335d0959bd7e80ef1211d58ebe165b",
+      "started_at": {
+        "utc": "2026-11-01T17:56:04.817688+00:00",
+        "melbourne": "2026-11-02T04:56:04.817688+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:56:05.290954+00:00",
+        "melbourne": "2026-11-02T04:56:05.290954+11:00"
+      },
+      "log": "logs/q19-neighbour-161-pass0001-links-1793555764817709851.log"
+    },
+    "q19-neighbour-161-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "dbbf6dcb0c1e4461d312e786bc62d18c88bccf27c89ea9da30bc9e3a962cfa8d",
+      "started_at": {
+        "utc": "2026-11-01T17:56:05.533600+00:00",
+        "melbourne": "2026-11-02T04:56:05.533600+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T17:56:17.692165+00:00",
+        "melbourne": "2026-11-02T04:56:17.692165+11:00"
+      },
+      "log": "logs/q19-neighbour-161-pass0001-scaling-1793555765533622904.log"
+    },
+    "q19-neighbour-193-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "db2eb06f5a005febfd75d78aef5139c42920121db08e8946d4e5b4cc4b2d6461",
+      "started_at": {
+        "utc": "2026-11-01T18:03:19.339867+00:00",
+        "melbourne": "2026-11-02T05:03:19.339867+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:03:28.340374+00:00",
+        "melbourne": "2026-11-02T05:03:28.340374+11:00"
+      },
+      "log": "logs/q19-neighbour-193-pass0001-topology-1793556199339903831.log"
+    },
+    "q19-neighbour-193-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "948f5dc4d7537ef1fcfe38e0a592d6f154310f66245aae043c8ccc4821d40818",
+      "started_at": {
+        "utc": "2026-11-01T18:03:28.353926+00:00",
+        "melbourne": "2026-11-02T05:03:28.353926+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:03:28.826838+00:00",
+        "melbourne": "2026-11-02T05:03:28.826838+11:00"
+      },
+      "log": "logs/q19-neighbour-193-pass0001-links-1793556208353945094.log"
+    },
+    "q19-neighbour-193-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "6a6bb38bda50e5593f9e6c1f078b46523ffcfd9aad63922b46f239ba1059865d",
+      "started_at": {
+        "utc": "2026-11-01T18:03:29.262252+00:00",
+        "melbourne": "2026-11-02T05:03:29.262252+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:03:49.700258+00:00",
+        "melbourne": "2026-11-02T05:03:49.700258+11:00"
+      },
+      "log": "logs/q19-neighbour-193-pass0001-scaling-1793556209262276006.log"
+    },
+    "q19-neighbour-domain-pass0002-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "bac75acba0a43326353530b915b6919a42f2ae3026568a5ab53911091ffa6a34",
+      "started_at": {
+        "utc": "2026-11-01T18:11:09.910654+00:00",
+        "melbourne": "2026-11-02T05:11:09.910654+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:11:19.008409+00:00",
+        "melbourne": "2026-11-02T05:11:19.008409+11:00"
+      },
+      "log": "logs/q19-neighbour-domain-pass0002-topology-1793556669910721782.log"
+    },
+    "q19-neighbour-domain-pass0002-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "1781661006a6541dd4c9a241cfc42515c5517916771d4a3df6ca1960c7cf1c51",
+      "started_at": {
+        "utc": "2026-11-01T18:11:19.031410+00:00",
+        "melbourne": "2026-11-02T05:11:19.031410+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:11:19.503917+00:00",
+        "melbourne": "2026-11-02T05:11:19.503917+11:00"
+      },
+      "log": "logs/q19-neighbour-domain-pass0002-links-1793556679031436068.log"
+    },
+    "q19-neighbour-domain-pass0002-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "dcbe5404bb89a51af1ddbd9d8e12102caf602381121628fc7edd08a074a67be2",
+      "started_at": {
+        "utc": "2026-11-01T18:11:19.935360+00:00",
+        "melbourne": "2026-11-02T05:11:19.935360+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:11:40.124346+00:00",
+        "melbourne": "2026-11-02T05:11:40.124346+11:00"
+      },
+      "log": "logs/q19-neighbour-domain-pass0002-scaling-1793556679935383166.log"
+    },
+    "q18-scale35-129-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "61cb11a1bd31fe4b9a4a9887df315a9f34e1cb3046f31e5d28d9cbbf7fab30d9",
+      "started_at": {
+        "utc": "2026-11-01T18:13:30.383164+00:00",
+        "melbourne": "2026-11-02T05:13:30.383164+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:13:46.397288+00:00",
+        "melbourne": "2026-11-02T05:13:46.397288+11:00"
+      },
+      "log": "logs/q18-scale35-129-pass0001-topology-1793556810383188987.log"
+    },
+    "q18-scale35-129-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "8c28047208a0ecb1e0832c22f16f4872f435b9428e9e4ccf245d6f72e93a9fac",
+      "started_at": {
+        "utc": "2026-11-01T18:13:46.412110+00:00",
+        "melbourne": "2026-11-02T05:13:46.412110+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:13:49.943603+00:00",
+        "melbourne": "2026-11-02T05:13:49.943603+11:00"
+      },
+      "log": "logs/q18-scale35-129-pass0001-links-1793556826412155275.log"
+    },
+    "q18-scale35-129-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "fe6cb5b9426e46d5aa088846114accca473bc8cdb6c66bf4ba254e89797d9fa6",
+      "started_at": {
+        "utc": "2026-11-01T18:13:50.078843+00:00",
+        "melbourne": "2026-11-02T05:13:50.078843+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:13:56.978772+00:00",
+        "melbourne": "2026-11-02T05:13:56.978772+11:00"
+      },
+      "log": "logs/q18-scale35-129-pass0001-scaling-1793556830078870007.log"
+    },
+    "q18-scale35-161-pass0002-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "60ddec31cfc14bbafa1adbd64c674b8250ad44103a9b2c7f14c8d3363ad7704e",
+      "started_at": {
+        "utc": "2026-11-01T18:18:52.529363+00:00",
+        "melbourne": "2026-11-02T05:18:52.529363+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:19:09.996796+00:00",
+        "melbourne": "2026-11-02T05:19:09.996796+11:00"
+      },
+      "log": "logs/q18-scale35-161-pass0002-topology-1793557132529387164.log"
+    },
+    "q18-scale35-161-pass0002-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "877cea65cbca5a7e066d854f766be4fb20f22614475a7750e4e22b7d6adbe2e3",
+      "started_at": {
+        "utc": "2026-11-01T18:19:10.011781+00:00",
+        "melbourne": "2026-11-02T05:19:10.011781+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:19:13.642672+00:00",
+        "melbourne": "2026-11-02T05:19:13.642672+11:00"
+      },
+      "log": "logs/q18-scale35-161-pass0002-links-1793557150011809102.log"
+    },
+    "q18-scale35-161-pass0002-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "bb31455865bf610286b1c704fbadd313aacda4d61a8e808bf23b6a3d2a25799e",
+      "started_at": {
+        "utc": "2026-11-01T18:19:13.897090+00:00",
+        "melbourne": "2026-11-02T05:19:13.897090+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:19:26.160435+00:00",
+        "melbourne": "2026-11-02T05:19:26.160435+11:00"
+      },
+      "log": "logs/q18-scale35-161-pass0002-scaling-1793557153897115649.log"
+    },
+    "q18-scale35-193-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "7489573d438f8c692d34fa9f84af096752b356d174438fb3c933a3f2e459d80e",
+      "started_at": {
+        "utc": "2026-11-01T18:25:54.862595+00:00",
+        "melbourne": "2026-11-02T05:25:54.862595+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:26:13.424745+00:00",
+        "melbourne": "2026-11-02T05:26:13.424745+11:00"
+      },
+      "log": "logs/q18-scale35-193-pass0001-topology-1793557554862620306.log"
+    },
+    "q18-scale35-193-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "08c965e195717acf9abd6230cd9ae38b65d3b4565df215803e262d1ae36ba87e",
+      "started_at": {
+        "utc": "2026-11-01T18:26:13.451549+00:00",
+        "melbourne": "2026-11-02T05:26:13.451549+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:26:17.083263+00:00",
+        "melbourne": "2026-11-02T05:26:17.083263+11:00"
+      },
+      "log": "logs/q18-scale35-193-pass0001-links-1793557573451606166.log"
+    },
+    "q18-scale35-193-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "8830b6fa6d4f8e2e007449e413af92d37eb479b3ade32d48a1fc84f0e4d42bed",
+      "started_at": {
+        "utc": "2026-11-01T18:26:17.501574+00:00",
+        "melbourne": "2026-11-02T05:26:17.501574+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:26:37.545848+00:00",
+        "melbourne": "2026-11-02T05:26:37.545848+11:00"
+      },
+      "log": "logs/q18-scale35-193-pass0001-scaling-1793557577501599520.log"
+    },
+    "q18-scale35-domain-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "0b1e87a6f33f6542071367381269679224b49aa811917d59a9000a8a52e251d0",
+      "started_at": {
+        "utc": "2026-11-01T18:35:33.852472+00:00",
+        "melbourne": "2026-11-02T05:35:33.852472+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:35:53.020872+00:00",
+        "melbourne": "2026-11-02T05:35:53.020872+11:00"
+      },
+      "log": "logs/q18-scale35-domain-pass0001-topology-1793558133852496979.log"
+    },
+    "q18-scale35-domain-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "012ac5f1df6313aa607a8554b90677952a140e3ebc1f98cd4142059752555038",
+      "started_at": {
+        "utc": "2026-11-01T18:35:53.034204+00:00",
+        "melbourne": "2026-11-02T05:35:53.034204+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:35:56.665056+00:00",
+        "melbourne": "2026-11-02T05:35:56.665056+11:00"
+      },
+      "log": "logs/q18-scale35-domain-pass0001-links-1793558153034229802.log"
+    },
+    "q18-scale35-domain-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "4ce20235105b3b41c43f36ba52138e8763de111cd65ee4fa215784cfddf3dfef",
+      "started_at": {
+        "utc": "2026-11-01T18:35:57.078540+00:00",
+        "melbourne": "2026-11-02T05:35:57.078540+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:36:17.267951+00:00",
+        "melbourne": "2026-11-02T05:36:17.267951+11:00"
+      },
+      "log": "logs/q18-scale35-domain-pass0001-scaling-1793558157078572226.log"
+    },
+    "q18-scale45-129-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "5696b2d46122613f8902eb9525afd8c0ff92a491f60f3e92ad46801ed7d0ab4e",
+      "started_at": {
+        "utc": "2026-11-01T18:42:16.463039+00:00",
+        "melbourne": "2026-11-02T05:42:16.463039+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:42:31.970339+00:00",
+        "melbourne": "2026-11-02T05:42:31.970339+11:00"
+      },
+      "log": "logs/q18-scale45-129-pass0001-topology-1793558536463065497.log"
+    },
+    "q18-scale45-129-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "61f95f0bdeb54ca56eb678590585796b63b132d4b11d164f1af39ee022c689b5",
+      "started_at": {
+        "utc": "2026-11-01T18:42:31.987626+00:00",
+        "melbourne": "2026-11-02T05:42:31.987626+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:42:35.519906+00:00",
+        "melbourne": "2026-11-02T05:42:35.519906+11:00"
+      },
+      "log": "logs/q18-scale45-129-pass0001-links-1793558551987657845.log"
+    },
+    "q18-scale45-129-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "a62d9690dc8aab707fdd5e5202444f70d3ee59a6af6608ebb8fe9445495570a6",
+      "started_at": {
+        "utc": "2026-11-01T18:42:35.656234+00:00",
+        "melbourne": "2026-11-02T05:42:35.656234+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T18:42:42.552684+00:00",
+        "melbourne": "2026-11-02T05:42:42.552684+11:00"
+      },
+      "log": "logs/q18-scale45-129-pass0001-scaling-1793558555656257795.log"
+    },
+    "q18-scale45-161-pass0002-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "c88b1bae2ce92b1db0f5b5425247a99a172d7dee0ee48b46b49a42bf7ca0c0e2",
+      "started_at": {
+        "utc": "2026-11-01T19:15:43.455200+00:00",
+        "melbourne": "2026-11-02T06:15:43.455200+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:16:01.717840+00:00",
+        "melbourne": "2026-11-02T06:16:01.717840+11:00"
+      },
+      "log": "logs/q18-scale45-161-pass0002-topology-1793560543455227975.log"
+    },
+    "q18-scale45-161-pass0002-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "57d7a2334166fbeb2cf7f3f62e5e0e6e50c12b84592cfbf72028276d87eb34cc",
+      "started_at": {
+        "utc": "2026-11-01T19:16:01.733743+00:00",
+        "melbourne": "2026-11-02T06:16:01.733743+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:16:05.415307+00:00",
+        "melbourne": "2026-11-02T06:16:05.415307+11:00"
+      },
+      "log": "logs/q18-scale45-161-pass0002-links-1793560561733773427.log"
+    },
+    "q18-scale45-161-pass0002-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "27209cae12dcc2a91f372f9f32115da7557d885bf5e756b43cc862935a0b44e1",
+      "started_at": {
+        "utc": "2026-11-01T19:16:05.670497+00:00",
+        "melbourne": "2026-11-02T06:16:05.670497+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:16:18.739337+00:00",
+        "melbourne": "2026-11-02T06:16:18.739337+11:00"
+      },
+      "log": "logs/q18-scale45-161-pass0002-scaling-1793560565670524849.log"
+    },
+    "q18-scale45-193-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "fd275dacfa9b11a9dfb73e9417f85a8e84b6d60aa664a1cb4fd63c94d5edb79b",
+      "started_at": {
+        "utc": "2026-11-01T19:25:04.208945+00:00",
+        "melbourne": "2026-11-02T06:25:04.208945+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:25:24.024611+00:00",
+        "melbourne": "2026-11-02T06:25:24.024611+11:00"
+      },
+      "log": "logs/q18-scale45-193-pass0001-topology-1793561104208972168.log"
+    },
+    "q18-scale45-193-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "82cb52794b9afed63b5d363d34e96ebcbedc98d32b88c215452b57f7b95da1c6",
+      "started_at": {
+        "utc": "2026-11-01T19:25:24.041615+00:00",
+        "melbourne": "2026-11-02T06:25:24.041615+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:25:27.774179+00:00",
+        "melbourne": "2026-11-02T06:25:27.774179+11:00"
+      },
+      "log": "logs/q18-scale45-193-pass0001-links-1793561124041635069.log"
+    },
+    "q18-scale45-193-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "505f58cc067c3bf634b7eb4c710fda787fa39e5f0f636e2fee3968b446ee42b8",
+      "started_at": {
+        "utc": "2026-11-01T19:25:28.202446+00:00",
+        "melbourne": "2026-11-02T06:25:28.202446+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:25:49.352539+00:00",
+        "melbourne": "2026-11-02T06:25:49.352539+11:00"
+      },
+      "log": "logs/q18-scale45-193-pass0001-scaling-1793561128202471959.log"
+    },
+    "q18-scale45-domain-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "09f62c2c437167e91ba62f3abc6dacd9ea35345916eac3becb7efcb60a9633a7",
+      "started_at": {
+        "utc": "2026-11-01T19:36:53.403243+00:00",
+        "melbourne": "2026-11-02T06:36:53.403243+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:37:15.634547+00:00",
+        "melbourne": "2026-11-02T06:37:15.634547+11:00"
+      },
+      "log": "logs/q18-scale45-domain-pass0001-topology-1793561813403270534.log"
+    },
+    "q18-scale45-domain-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "f75e7188fac1af0509478cfa78af074ce1d4817b808b65f645db64a957779772",
+      "started_at": {
+        "utc": "2026-11-01T19:37:15.659853+00:00",
+        "melbourne": "2026-11-02T06:37:15.659853+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:37:19.295059+00:00",
+        "melbourne": "2026-11-02T06:37:19.295059+11:00"
+      },
+      "log": "logs/q18-scale45-domain-pass0001-links-1793561835659929653.log"
+    },
+    "q18-scale45-domain-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "9942c8b93b109c453bccbabb5ab7bfa7ad80a8f9d8382b4c8c34580a684b5be1",
+      "started_at": {
+        "utc": "2026-11-01T19:37:19.726694+00:00",
+        "melbourne": "2026-11-02T06:37:19.726694+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:37:42.027973+00:00",
+        "melbourne": "2026-11-02T06:37:42.027973+11:00"
+      },
+      "log": "logs/q18-scale45-domain-pass0001-scaling-1793561839726720137.log"
+    },
+    "q18-ell025-129-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "7be556171cee3dc0a5cc3d7ff4fd177f5870863f84c7dd023a2762e705ece9cc",
+      "started_at": {
+        "utc": "2026-11-01T19:40:07.825144+00:00",
+        "melbourne": "2026-11-02T06:40:07.825144+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:40:23.740322+00:00",
+        "melbourne": "2026-11-02T06:40:23.740322+11:00"
+      },
+      "log": "logs/q18-ell025-129-pass0001-topology-1793562007825172253.log"
+    },
+    "q18-ell025-129-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "dd26ba0e11bda3536728a5234d5ab4b2bf09f38d38cd7b55a577652ac9c1c9e7",
+      "started_at": {
+        "utc": "2026-11-01T19:40:23.757117+00:00",
+        "melbourne": "2026-11-02T06:40:23.757117+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:40:27.338543+00:00",
+        "melbourne": "2026-11-02T06:40:27.338543+11:00"
+      },
+      "log": "logs/q18-ell025-129-pass0001-links-1793562023757143565.log"
+    },
+    "q18-ell025-129-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "112c2bc9478add36513d2c8f297682fe5b57f0a56796e90cb52f3b64b61d9c63",
+      "started_at": {
+        "utc": "2026-11-01T19:40:27.479994+00:00",
+        "melbourne": "2026-11-02T06:40:27.479994+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:40:34.782422+00:00",
+        "melbourne": "2026-11-02T06:40:34.782422+11:00"
+      },
+      "log": "logs/q18-ell025-129-pass0001-scaling-1793562027480020051.log"
+    },
+    "q18-ell025-161-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "4e67d159224cac5b7150715292c40515ea05de19664c3d27d4d6b875793ef69c",
+      "started_at": {
+        "utc": "2026-11-01T19:46:42.611549+00:00",
+        "melbourne": "2026-11-02T06:46:42.611549+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:47:01.283548+00:00",
+        "melbourne": "2026-11-02T06:47:01.283548+11:00"
+      },
+      "log": "logs/q18-ell025-161-pass0001-topology-1793562402611579693.log"
+    },
+    "q18-ell025-161-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "35c8d52c4c234705a88bb4a0f465659f2cdec30f4a6f3089b71b197db1bbe7f7",
+      "started_at": {
+        "utc": "2026-11-01T19:47:01.297063+00:00",
+        "melbourne": "2026-11-02T06:47:01.297063+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:47:04.978870+00:00",
+        "melbourne": "2026-11-02T06:47:04.978870+11:00"
+      },
+      "log": "logs/q18-ell025-161-pass0001-links-1793562421297084789.log"
+    },
+    "q18-ell025-161-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "8c2a328cb20e3db8404a96fc126f6616c57d78696fe5e9b059a8a7c8cd4c8d9b",
+      "started_at": {
+        "utc": "2026-11-01T19:47:05.236875+00:00",
+        "melbourne": "2026-11-02T06:47:05.236875+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:47:18.204942+00:00",
+        "melbourne": "2026-11-02T06:47:18.204942+11:00"
+      },
+      "log": "logs/q18-ell025-161-pass0001-scaling-1793562425237494684.log"
+    },
+    "q18-ell025-193-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "65d09bae216d37697211bf70c54607c1c600bb219f46acc56b90f13b48ab3cc8",
+      "started_at": {
+        "utc": "2026-11-01T19:56:30.981782+00:00",
+        "melbourne": "2026-11-02T06:56:30.981782+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:56:51.708523+00:00",
+        "melbourne": "2026-11-02T06:56:51.708523+11:00"
+      },
+      "log": "logs/q18-ell025-193-pass0001-topology-1793562990981808802.log"
+    },
+    "q18-ell025-193-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "9b9d920118f28ed02ea846d183fe3b3f62710ad13a5205a5c659c6834014c751",
+      "started_at": {
+        "utc": "2026-11-01T19:56:51.723740+00:00",
+        "melbourne": "2026-11-02T06:56:51.723740+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:56:55.455530+00:00",
+        "melbourne": "2026-11-02T06:56:55.455530+11:00"
+      },
+      "log": "logs/q18-ell025-193-pass0001-links-1793563011723767367.log"
+    },
+    "q18-ell025-193-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "0c1cbb5007abc1d39b03db8198f54d20224d4fa765b79b5ca13c2f841c908f5d",
+      "started_at": {
+        "utc": "2026-11-01T19:56:55.908273+00:00",
+        "melbourne": "2026-11-02T06:56:55.908273+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T19:57:16.898740+00:00",
+        "melbourne": "2026-11-02T06:57:16.898740+11:00"
+      },
+      "log": "logs/q18-ell025-193-pass0001-scaling-1793563015908297184.log"
+    },
+    "q18-ell025-domain-pass0001-topology": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "24323332d87645b3c1a9fa751299abecabb2e38bcfc6f405812101bd86c0d48c",
+      "started_at": {
+        "utc": "2026-11-01T20:09:47.547512+00:00",
+        "melbourne": "2026-11-02T07:09:47.547512+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T20:10:08.065333+00:00",
+        "melbourne": "2026-11-02T07:10:08.065333+11:00"
+      },
+      "log": "logs/q18-ell025-domain-pass0001-topology-1793563787547540128.log"
+    },
+    "q18-ell025-domain-pass0001-links": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "e72c7a4bf677230f8cde7be3b76be4630a8bd6aea20845c96897dc5f02fa9386",
+      "started_at": {
+        "utc": "2026-11-01T20:10:08.080567+00:00",
+        "melbourne": "2026-11-02T07:10:08.080567+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T20:10:11.711321+00:00",
+        "melbourne": "2026-11-02T07:10:11.711321+11:00"
+      },
+      "log": "logs/q18-ell025-domain-pass0001-links-1793563808080596426.log"
+    },
+    "q18-ell025-domain-pass0001-scaling": {
+      "status": "completed",
+      "returncode": 0,
+      "signature": "be95ea11213e3b2c55a419b155605979a2c765e5e435c263b43bd67931280cec",
+      "started_at": {
+        "utc": "2026-11-01T20:10:12.144816+00:00",
+        "melbourne": "2026-11-02T07:10:12.144816+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T20:10:33.597085+00:00",
+        "melbourne": "2026-11-02T07:10:33.597085+11:00"
+      },
+      "log": "logs/q18-ell025-domain-pass0001-scaling-1793563812144843151.log"
+    }
+  },
+  "solver_wall_seconds": 15146.215292380191,
+  "overall_wall_seconds_cap": null,
+  "disposition": "partial_pending_scientific_review",
+  "scope": "static neutral unit-vector model; linked outcomes retained; no automatic reproduction, dynamics, electric charge or electron acceptance",
+  "fields_location": "/home/rd/ElectronFieldTopology-q18-study/artifacts/q18-neighbours-20261102T022100+1100-165739",
+  "historical_inputs": {
+    "recorded_at": {
+      "utc": "2026-11-01T15:21:05.655125+00:00",
+      "melbourne": "2026-11-02T02:21:05.655125+11:00"
+    },
+    "roots": [
+      "/home/rd/ElectronFieldTopology-q22-study/artifacts"
+    ],
+    "verified_fields": [
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T102816+1100-pass001/final.npz",
+        "sha256": "8a8d80705d88f0c5483e215f24c2f87b1fce90fc408e4b415dddc647ab53cf7c",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-129-fresh",
+          "n": 129,
+          "h": 0.12,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-10-31T23:28:16+00:00",
+            "melbourne": "2026-11-01T10:28:16+11:00"
+          },
+          "initialization": "fresh_seed"
+        },
+        "final": {
+          "iteration": 659,
+          "elapsed_seconds": 289.3892541489913,
+          "e2": 6.086424847760592,
+          "e4": 6.504955119322281,
+          "energy": 12.591379967082872,
+          "virial_residual": 0.03323942829585285,
+          "tangent_gradient_rms": 0.001064128276191527,
+          "minimum_corner_cone": 0.943483500129805,
+          "minimum_quadrature_interpolant_norm": 0.9826182350333466,
+          "hopf_integral": -21.978746077342734,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.39729544109556064,
+          "mean_topological_b": [
+            1.5719529105054997e-09,
+            -3.1347566846268836e-06,
+            -4.5211788069905006e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0010641282761915272,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 2.659206188582175e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 7.697081035928433e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 0.0
+            }
+          }
+        },
+        "stationary": false,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-129-fresh-20261101T102816+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz",
+        "sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-129-fresh",
+          "n": 129,
+          "h": 0.12,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-10-31T23:33:12+00:00",
+            "melbourne": "2026-11-01T10:33:12+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T102816+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 2,
+          "elapsed_seconds": 13.330462879996048,
+          "e2": 6.086426150001956,
+          "e4": 6.504953659577227,
+          "energy": 12.591379809579184,
+          "virial_residual": 0.033239209356298385,
+          "tangent_gradient_rms": 0.0008815516255655435,
+          "minimum_corner_cone": 0.9434859681893566,
+          "minimum_quadrature_interpolant_norm": 0.982615496863479,
+          "hopf_integral": -21.978746103682425,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.39725681443482974,
+          "mean_topological_b": [
+            1.5720602367367442e-09,
+            -3.135512696496189e-06,
+            -4.5211687607131584e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0008815516255655406,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 2.603250948141067e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 8.246924532704682e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 0.0
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-129-fresh-20261101T103312+1100-pass002/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-161-polish-20261101T103417+1100-pass001/final.npz",
+        "sha256": "345b13e359afe8c6dd1ef334b79d435b9511a325f19cfb03b1a5ec3defe7f0bf",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-161-polish",
+          "n": 161,
+          "h": 0.096,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-10-31T23:34:17+00:00",
+            "melbourne": "2026-11-01T10:34:17+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz"
+        },
+        "final": {
+          "iteration": 1436,
+          "elapsed_seconds": 1307.1463858839998,
+          "e2": 6.090235159402306,
+          "e4": 6.484766994852434,
+          "energy": 12.57500215425474,
+          "virial_residual": 0.031374295655022054,
+          "tangent_gradient_rms": 0.000971246375222929,
+          "minimum_corner_cone": 0.9629114181477298,
+          "minimum_quadrature_interpolant_norm": 0.9887575609364163,
+          "hopf_integral": -21.991030883458812,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.31891378238331913,
+          "mean_topological_b": [
+            -2.1553781133557887e-09,
+            -7.637113498283229e-06,
+            -1.774825163814987e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0009712463752229241,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 6.02717875608505e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 5.629857423484911e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 0.0
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-161-polish-20261101T103417+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-193-polish-20261101T105708+1100-pass001/final.npz",
+        "sha256": "7b5c26cc7c4d259be9f50b9349adf5c6799cddf4474b3248711bd7c6e60091ae",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-193-polish",
+          "n": 193,
+          "h": 0.08,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-10-31T23:57:08+00:00",
+            "melbourne": "2026-11-01T10:57:08+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-161-polish-20261101T103417+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 150,
+          "elapsed_seconds": 277.6963767440029,
+          "e2": 6.0851606566859875,
+          "e4": 6.482906164843532,
+          "energy": 12.56806682152952,
+          "virial_residual": 0.03164731010788338,
+          "tangent_gradient_rms": 0.0017771306971236364,
+          "minimum_corner_cone": 0.9740620029673323,
+          "minimum_quadrature_interpolant_norm": 0.9921729838344787,
+          "hopf_integral": -21.995609533627164,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.2663020521190355,
+          "mean_topological_b": [
+            -1.1936336235361578e-09,
+            -3.82297524497041e-06,
+            -8.6976995628097e-06
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0017771306971236364,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 1.0380141191035364e-11
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 3.3881317890172014e-21
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 1.7763568394002505e-14
+            }
+          }
+        },
+        "stationary": false,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-193-polish-20261101T105708+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-193-polish-20261101T110207+1100-pass002/final.npz",
+        "sha256": "d8deef4e84c6bbeabfd13162eccdb4cf2b71ad41fcc19b733db0b8afdae4a5a0",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-193-polish",
+          "n": 193,
+          "h": 0.08,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:02:07+00:00",
+            "melbourne": "2026-11-01T11:02:07+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-193-polish-20261101T105708+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 2,
+          "elapsed_seconds": 40.19655115199566,
+          "e2": 6.085162621059463,
+          "e4": 6.482904092516383,
+          "energy": 12.568066713575845,
+          "virial_residual": 0.03164698919264057,
+          "tangent_gradient_rms": 0.0008157910134323499,
+          "minimum_corner_cone": 0.9740627055972733,
+          "minimum_quadrature_interpolant_norm": 0.992172138967673,
+          "hopf_integral": -21.995609532376335,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.2662778422304367,
+          "mean_topological_b": [
+            -1.1938143490384737e-09,
+            -3.823081917055115e-06,
+            -8.69766340289211e-06
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.00081579101343235,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 1.0457412713549274e-11
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 3.3881317890172014e-21
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 2.1316282072803006e-14
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-193-polish-20261101T110207+1100-pass002/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-129-20261101T111822+1100-pass001/final.npz",
+        "sha256": "b7c1b31831e561d9350d661732489c4b018547fd63904e7da6cb0eda5fbbab01",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-comparison-129",
+          "n": 129,
+          "h": 0.12,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.455,
+          "seed": {
+            "kind": "torus54",
+            "alpha": 3,
+            "beta": 2,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 4.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:18:22+00:00",
+            "melbourne": "2026-11-01T11:18:22+11:00"
+          },
+          "initialization": "fresh_seed"
+        },
+        "final": {
+          "iteration": 3000,
+          "elapsed_seconds": 1278.5411625650013,
+          "e2": 6.082061264440891,
+          "e4": 6.436519139652038,
+          "energy": 12.51858040409293,
+          "virial_residual": 0.02831454236578276,
+          "tangent_gradient_rms": 0.003603064538972043,
+          "minimum_corner_cone": 0.9280225361938257,
+          "minimum_quadrature_interpolant_norm": 0.9798387030794439,
+          "hopf_integral": -21.977580475773458,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.3988605635254548,
+          "mean_topological_b": [
+            2.2309587918258056e-05,
+            -1.6286552675148837e-05,
+            -4.038267021111764e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0036030645389721126,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 2.348343741687131e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 8.796966552827943e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 0.0
+            }
+          }
+        },
+        "stationary": false,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-comparison-129-20261101T111822+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-129-20261101T113955+1100-pass002/final.npz",
+        "sha256": "86d209ed36cca3697992a7c49ca012d20dbf215bdba57ee3ed58a7db940ec0d9",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-comparison-129",
+          "n": 129,
+          "h": 0.12,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.455,
+          "seed": {
+            "kind": "torus54",
+            "alpha": 3,
+            "beta": 2,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 4.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:39:55+00:00",
+            "melbourne": "2026-11-01T11:39:55+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-129-20261101T111822+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 1224,
+          "elapsed_seconds": 536.6179260979989,
+          "e2": 6.094749783869283,
+          "e4": 6.418463056251568,
+          "energy": 12.51321284012085,
+          "virial_residual": 0.025869716796023023,
+          "tangent_gradient_rms": 0.0009056919734132243,
+          "minimum_corner_cone": 0.9265259679428057,
+          "minimum_quadrature_interpolant_norm": 0.9798828813849885,
+          "hopf_integral": -21.97757327326755,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.3874885530082687,
+          "mean_topological_b": [
+            2.9797318887799416e-05,
+            -2.107855791721956e-05,
+            -3.28731924167828e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0009056919734132301,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 1.958433415438776e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 7.697411908173454e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 0.0
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-comparison-129-20261101T113955+1100-pass002/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-161-20261101T114939+1100-pass001/final.npz",
+        "sha256": "e46d170f53b604bea7cd33014163f78a3589306a265b735c225b43af1fb2b70c",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-comparison-161",
+          "n": 161,
+          "h": 0.096,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.455,
+          "seed": {
+            "kind": "torus54",
+            "alpha": 3,
+            "beta": 2,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 4.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:49:39+00:00",
+            "melbourne": "2026-11-01T11:49:39+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-129-20261101T113955+1100-pass002/final.npz"
+        },
+        "final": {
+          "iteration": 242,
+          "elapsed_seconds": 238.6355307159829,
+          "e2": 6.084313133139499,
+          "e4": 6.416993069244924,
+          "energy": 12.501306202384423,
+          "virial_residual": 0.026611614076133223,
+          "tangent_gradient_rms": 0.0009110811887253001,
+          "minimum_corner_cone": 0.9519817007722268,
+          "minimum_quadrature_interpolant_norm": 0.9869515530988268,
+          "hopf_integral": -21.99055443211575,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.31196973394114963,
+          "mean_topological_b": [
+            1.2750051897109199e-05,
+            -9.057633800552177e-06,
+            -1.3684637934374174e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0009110811887252954,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 4.704681089151563e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 5.9112311806509485e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 3.552713678800501e-15
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-comparison-161-20261101T114939+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-193-20261101T115437+1100-pass001/final.npz",
+        "sha256": "9a3a0bd8e8cf74a40202ffabf568dd26a4289e0b4700111d9db649ec35aa8b85",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-comparison-193",
+          "n": 193,
+          "h": 0.08,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.455,
+          "seed": {
+            "kind": "torus54",
+            "alpha": 3,
+            "beta": 2,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 4.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:54:37+00:00",
+            "melbourne": "2026-11-01T11:54:37+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-161-20261101T114939+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 186,
+          "elapsed_seconds": 324.5334669970034,
+          "e2": 6.079695752708002,
+          "e4": 6.414806887623819,
+          "energy": 12.49450264033182,
+          "virial_residual": 0.026820686229965685,
+          "tangent_gradient_rms": 0.0025115234525712373,
+          "minimum_corner_cone": 0.966173154299595,
+          "minimum_quadrature_interpolant_norm": 0.9908732014902505,
+          "hopf_integral": -21.995377895296066,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.26057203515159894,
+          "mean_topological_b": [
+            6.305596065865276e-06,
+            -4.494159111195568e-06,
+            -6.65311561270214e-06
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0025115234525712373,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 8.520295580183301e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 1.6940658945086007e-21
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 2.1316282072803006e-14
+            }
+          }
+        },
+        "stationary": false,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-comparison-193-20261101T115437+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-193-20261101T120031+1100-pass002/final.npz",
+        "sha256": "2a121cf37a52f3f49b0ff97bf974ffb88d4a3f0ff5d0d679bf2ea0b013558e67",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-comparison-193",
+          "n": 193,
+          "h": 0.08,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.455,
+          "seed": {
+            "kind": "torus54",
+            "alpha": 3,
+            "beta": 2,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 4.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T01:00:31+00:00",
+            "melbourne": "2026-11-01T12:00:31+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-193-20261101T115437+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 3,
+          "elapsed_seconds": 41.05756771200686,
+          "e2": 6.079698107865452,
+          "e4": 6.414804424692228,
+          "energy": 12.49450253255768,
+          "virial_residual": 0.026820300844596995,
+          "tangent_gradient_rms": 0.001236003426616769,
+          "minimum_corner_cone": 0.9661731901601789,
+          "minimum_quadrature_interpolant_norm": 0.9908721713523148,
+          "hopf_integral": -21.99537790502679,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.2605721351259248,
+          "mean_topological_b": [
+            6.305632465394941e-06,
+            -4.494220073351127e-06,
+            -6.653014167125877e-06
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.001236003426616769,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 8.535394613318203e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 1.6940658945086007e-21
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 2.4868995751603507e-14
+            }
+          }
+        },
+        "stationary": false,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-comparison-193-20261101T120031+1100-pass002/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-193-20261101T120141+1100-pass003/final.npz",
+        "sha256": "6f8c668dba903715f69c70396e8cedfc620603b9670d3e8947ef0b3e8bbf1554",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-comparison-193",
+          "n": 193,
+          "h": 0.08,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.455,
+          "seed": {
+            "kind": "torus54",
+            "alpha": 3,
+            "beta": 2,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 4.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T01:01:41+00:00",
+            "melbourne": "2026-11-01T12:01:41+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-193-20261101T120031+1100-pass002/final.npz"
+        },
+        "final": {
+          "iteration": 2,
+          "elapsed_seconds": 41.87814929598244,
+          "e2": 6.079699144195125,
+          "e4": 6.414803335491408,
+          "energy": 12.494502479686533,
+          "virial_residual": 0.026820130840831232,
+          "tangent_gradient_rms": 0.0007712506736608308,
+          "minimum_corner_cone": 0.9661733009642743,
+          "minimum_quadrature_interpolant_norm": 0.9908715536133756,
+          "hopf_integral": -21.995377911378664,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.26057206030333696,
+          "mean_topological_b": [
+            6.3056475082525795e-06,
+            -4.494249080905586e-06,
+            -6.652961601427497e-06
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0007712506736608309,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 8.525624650701502e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 1.6940658945086007e-21
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 1.7763568394002505e-14
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-comparison-193-20261101T120141+1100-pass003/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-161-20261101T110406+1100-pass001/final.npz",
+        "sha256": "ceb79570ad643f5675edfdd160702f7d66dfb4ca4edae7a7e5f954ce5b08e203",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-domain-161",
+          "n": 161,
+          "h": 0.12,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:04:06+00:00",
+            "melbourne": "2026-11-01T11:04:06+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz"
+        },
+        "final": {
+          "iteration": 142,
+          "elapsed_seconds": 135.63423031399725,
+          "e2": 6.22005786700088,
+          "e4": 6.3095034297434225,
+          "energy": 12.529561296744301,
+          "virial_residual": 0.0071387625331929576,
+          "tangent_gradient_rms": 0.0028331664021763944,
+          "minimum_corner_cone": 0.9465137885869688,
+          "minimum_quadrature_interpolant_norm": 0.9834059020339458,
+          "hopf_integral": -21.980730036410783,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.38848242370319735,
+          "mean_topological_b": [
+            7.661732037987819e-10,
+            -1.4148531035282545e-06,
+            -2.14534036364985e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0028331664021763988,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 9.181100324440195e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 7.147303713601189e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 3.552713678800501e-15
+            }
+          }
+        },
+        "stationary": false,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-domain-161-20261101T110406+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-161-20261101T110635+1100-pass002/final.npz",
+        "sha256": "e115a2c27d0ca55bb2af9dcc0edebb8971c9f51ebf2cb7454635bc4cc5b65580",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-domain-161",
+          "n": 161,
+          "h": 0.12,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:06:35+00:00",
+            "melbourne": "2026-11-01T11:06:35+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-161-20261101T110406+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 2,
+          "elapsed_seconds": 22.481522244997905,
+          "e2": 6.220065373519342,
+          "e4": 6.3094957421520625,
+          "energy": 12.529561115671404,
+          "virial_residual": 0.007137549975383055,
+          "tangent_gradient_rms": 0.0004838440624602741,
+          "minimum_corner_cone": 0.9465088981888825,
+          "minimum_quadrature_interpolant_norm": 0.9834113679069492,
+          "hopf_integral": -21.980729994795468,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.3885011781431916,
+          "mean_topological_b": [
+            7.662511122113098e-10,
+            -1.4148670399995094e-06,
+            -2.1453457052519783e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.00048384406246025494,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 9.29656351900121e-12
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 7.146840492458159e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 3.552713678800501e-15
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-domain-161-20261101T110635+1100-pass002/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-193-20261101T110801+1100-pass001/final.npz",
+        "sha256": "9d87757260806456801f7d059e126524f395094c0b579d2c4976065a2c0cf562",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-domain-193",
+          "n": 193,
+          "h": 0.12,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:08:01+00:00",
+            "melbourne": "2026-11-01T11:08:01+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-161-20261101T110635+1100-pass002/final.npz"
+        },
+        "final": {
+          "iteration": 95,
+          "elapsed_seconds": 170.25884044000122,
+          "e2": 6.246243864256052,
+          "e4": 6.265487532690351,
+          "energy": 12.511731396946402,
+          "virial_residual": 0.0015380499967410637,
+          "tangent_gradient_rms": 0.0006703846779042743,
+          "minimum_corner_cone": 0.9469262723460601,
+          "minimum_quadrature_interpolant_norm": 0.983580461501795,
+          "hopf_integral": -21.98098793743973,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.38677953861128994,
+          "mean_topological_b": [
+            4.396355762458648e-10,
+            -8.103120521724304e-07,
+            -1.2285550759610043e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0006703846779042784,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 2.2720492154348904e-11
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 7.148958074826295e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 2.1316282072803006e-14
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-domain-193-20261101T110801+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-fine-193-20261101T111216+1100-pass001/final.npz",
+        "sha256": "22f6b027b67d8256455e6e5fc9850b0d6ef6ffe925d3f106ba1dd9e185689cb8",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-domain-fine-193",
+          "n": 193,
+          "h": 0.096,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:12:16+00:00",
+            "melbourne": "2026-11-01T11:12:16+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-161-polish-20261101T103417+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 121,
+          "elapsed_seconds": 213.88455271700514,
+          "e2": 6.199400024908946,
+          "e4": 6.325372221898844,
+          "energy": 12.524772246807789,
+          "virial_residual": 0.010057843329007832,
+          "tangent_gradient_rms": 0.001425956344931283,
+          "minimum_corner_cone": 0.9644440318128511,
+          "minimum_quadrature_interpolant_norm": 0.9891940633093517,
+          "hopf_integral": -21.991728503917965,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.31269619021787703,
+          "mean_topological_b": [
+            -1.0095289792625171e-09,
+            -4.098008868192419e-06,
+            -9.656854730079252e-06
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0014259563449312742,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 1.546140993013978e-11
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 5.066845211356818e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 2.4868995751603507e-14
+            }
+          }
+        },
+        "stationary": false,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-domain-fine-193-20261101T111216+1100-pass001/manifest.json"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-fine-193-20261101T111614+1100-pass002/final.npz",
+        "sha256": "58a1be5532f01ffb1d65517d3f58da2836b90a199f287130335a2230b4442711",
+        "config": {
+          "model_id": "SF-J2015-static",
+          "case": "q22-domain-fine-193",
+          "n": 193,
+          "h": 0.096,
+          "expected_q": 22,
+          "iterations": 3000,
+          "seconds": 1800,
+          "record_every": 50,
+          "maxcor": 4,
+          "solver": "sobolev_cg",
+          "discretisation": "cell",
+          "published_energy": 12.509,
+          "seed": {
+            "kind": "cable",
+            "alpha": 4,
+            "beta": 1,
+            "scale": 4.0,
+            "cutoff": 7.2,
+            "amplitude": 8.0
+          },
+          "perturbation_amplitude": 0.005,
+          "perturbation_seed": 35,
+          "precondition_length": 0.5,
+          "prepared_at": {
+            "utc": "2026-11-01T00:16:14+00:00",
+            "melbourne": "2026-11-01T11:16:14+11:00"
+          },
+          "initialization": "checkpoint_continuation",
+          "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-fine-193-20261101T111216+1100-pass001/final.npz"
+        },
+        "final": {
+          "iteration": 2,
+          "elapsed_seconds": 41.77734121099638,
+          "e2": 6.199408923327169,
+          "e4": 6.325363163455502,
+          "energy": 12.524772086782672,
+          "virial_residual": 0.01005640974986294,
+          "tangent_gradient_rms": 0.0006181045034668573,
+          "minimum_corner_cone": 0.964441174248612,
+          "minimum_quadrature_interpolant_norm": 0.9891944422705451,
+          "hopf_integral": -21.991728525563293,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.3127019049166968,
+          "mean_topological_b": [
+            -1.0129964501293671e-09,
+            -4.097974315879922e-06,
+            -9.656869886125768e-06
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "cpu_tangent_gradient_rms": 0.0006181045034668618,
+          "cpu_endpoint_audit": {
+            "endpoint_energy": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 1.539213201340317e-11
+            },
+            "endpoint_gradient": {
+              "passed": true,
+              "rtol": 1e-11,
+              "atol": 1e-13,
+              "maximum_absolute_error": 5.066911385805822e-19
+            },
+            "endpoint_hopf": {
+              "passed": true,
+              "rtol": 1e-09,
+              "atol": 1e-10,
+              "maximum_absolute_error": 2.4868995751603507e-14
+            }
+          }
+        },
+        "stationary": true,
+        "record": "reports/s5-a/q22-fresh-20261101T102757+1100/evidence.zip:cases/q22-domain-fine-193-20261101T111614+1100-pass002/manifest.json"
+      }
+    ],
+    "unmatched_fields": [
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q1-control-fresh-20261101T102758+1100-pass001/final.npz",
+        "sha256": "047d0d2895e4d03f164800a16af6d46315b3e278f80e7ae233821e84752b0669",
+        "disposition": "not matched to a committed endpoint; not reused"
+      },
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q2-control-fresh-20261101T102807+1100-pass001/final.npz",
+        "sha256": "7ec617fdb1e95802955e2d8ff7e23b9531831468999c9985dc72f90fab09d7ed",
+        "disposition": "not matched to a committed endpoint; not reused"
+      }
+    ],
+    "historical_q18": "no verified field found; fresh reconstruction",
+    "scope": "exact committed checkpoint hashes; missing fields are not fabricated; original files remain in place"
+  },
+  "source_unchanged": true
+}

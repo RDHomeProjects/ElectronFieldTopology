@@ -1,0 +1,42 @@
+# Q18 basin and neighbouring-Q study
+
+{"utc": "2026-11-01T21:35:14.595630+00:00", "melbourne": "2026-11-02T08:35:14.595630+11:00"}
+
+static neutral unit-vector model; linked outcomes retained; no automatic reproduction, dynamics, electric charge or electron acceptance
+
+| Stage | State | Energy | CPU residual |
+|---|---|---:|---:|
+| q1-control | stationary | 1.2359138695857361 | 0.0006385459766903154 |
+| q2-control | stationary | 2.0118537450633793 | 0.0006731626733685903 |
+| q22-control | stationary | 12.591379749728222 | 0.0008785457369861495 |
+| q18-baseline-97 | stationary | 10.944919930712958 | 0.0008841913323492336 |
+| q17-neighbour-129 | stationary | 11.001911455714588 | 0.0009666328844385231 |
+| q19-neighbour-129 | stationary | 12.06323057057931 | 0.0009307418044618039 |
+| q18-scale35-97 | stationary | 10.945158017343166 | 0.0009835898317239373 |
+| q18-scale45-97 | stationary | 10.945100348537569 | 0.0009704093414450721 |
+| q18-ell025-97 | stationary | 10.944889178636526 | 0.0008899591991676261 |
+| q18-baseline-129 | stationary | 10.920566653731 | 0.0009829311996619268 |
+| q18-baseline-161 | stationary | 10.91109067960205 | 0.0009914866916378592 |
+| q18-baseline-193 | stationary | 10.905551049306538 | 0.000827956775600311 |
+| q18-baseline-domain | stationary | 10.878436195895041 | 0.0008406837361106804 |
+| q17-neighbour-161 | stationary | 10.993231475751116 | 0.0009345187292182827 |
+| q17-neighbour-193 | stationary | 10.988328328500868 | 0.0007247702555208159 |
+| q17-neighbour-domain | stationary | 10.961849747652453 | 0.0006904320506266978 |
+| q19-neighbour-161 | stationary | 12.053995018128445 | 0.000878093176104299 |
+| q19-neighbour-193 | stationary | 12.048723679565263 | 0.0008449358971448546 |
+| q19-neighbour-domain | stationary | 12.015723317394793 | 0.0006885518510072417 |
+| q18-scale35-129 | stationary | 10.926310024117697 | 0.0008511914712476759 |
+| q18-scale35-161 | stationary | 10.916599962848297 | 0.0008836705315973327 |
+| q18-scale35-193 | stationary | 10.910994702964103 | 0.0009704677638440226 |
+| q18-scale35-domain | stationary | 10.880159103098844 | 0.0009130655543087984 |
+| q18-scale45-129 | stationary | 10.925138951159102 | 0.0009704492552935773 |
+| q18-scale45-161 | stationary | 10.911110645858173 | 0.0009269083348674842 |
+| q18-scale45-193 | stationary | 10.90557968862149 | 0.0009194279138674153 |
+| q18-scale45-domain | stationary | 10.878573553740049 | 0.0009970077666578573 |
+| q18-ell025-129 | stationary | 10.926110151277776 | 0.0009276521764421445 |
+| q18-ell025-161 | stationary | 10.916360059581365 | 0.0008865974365927622 |
+| q18-ell025-193 | stationary | 10.910897236800988 | 0.0008469564948209444 |
+| q18-ell025-domain | stationary | 10.880502809900722 | 0.0009966604869103533 |
+
+Mesh/domain entries are energy-only diagnostics; topology consistency and independent scaling need separate review.
+Full float64 fields stay in this campaign. Keep the entire directory for restart and later topology assessment.
