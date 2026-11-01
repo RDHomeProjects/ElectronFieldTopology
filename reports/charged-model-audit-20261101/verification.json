@@ -1,0 +1,431 @@
+{
+  "started_at": {
+    "utc": "2026-11-01T01:57:19.955279+00:00",
+    "melbourne": "2026-11-01T12:57:19.955279+11:00"
+  },
+  "completed_at": {
+    "utc": "2026-11-01T01:57:21.206922+00:00",
+    "melbourne": "2026-11-01T12:57:21.206922+11:00"
+  },
+  "disposition": "analytic_audit_complete; charged_dynamics_deferred; additional_Q_followup_required",
+  "scope": "symbolic identities, one-dimensional quadrature and local principal-symbol crosschecks; no GPU or field evolution",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "provenance": {
+    "base_commit": "42376b46fb52771a7d22138c29689d519c290619",
+    "verification_script_sha256": "6c4b6dcd6a58a85f65386b0e4a3aac563413f50ef3c9ad406ef555fbcc5e4e67"
+  },
+  "checks": [
+    {
+      "name": "m3_radial_equation",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.049286+00:00",
+        "melbourne": "2026-11-01T12:57:20.049286+11:00"
+      }
+    },
+    {
+      "name": "integral_profile_gradient",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.099827+00:00",
+        "melbourne": "2026-11-01T12:57:20.099827+11:00"
+      }
+    },
+    {
+      "name": "quadrature_profile_gradient",
+      "passed": true,
+      "detail": {
+        "value": 0.19634954084936207,
+        "absolute_error": 0.0,
+        "quad_error_estimate": 5.899299345325769e-14
+      },
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.103749+00:00",
+        "melbourne": "2026-11-01T12:57:20.103749+11:00"
+      }
+    },
+    {
+      "name": "integral_angular_curvature",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.447585+00:00",
+        "melbourne": "2026-11-01T12:57:20.447585+11:00"
+      }
+    },
+    {
+      "name": "quadrature_angular_curvature",
+      "passed": true,
+      "detail": {
+        "value": 0.39269908169872425,
+        "absolute_error": 1.1102230246251565e-16,
+        "quad_error_estimate": 5.457354769327869e-15
+      },
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.448416+00:00",
+        "melbourne": "2026-11-01T12:57:20.448416+11:00"
+      }
+    },
+    {
+      "name": "integral_potential",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.450924+00:00",
+        "melbourne": "2026-11-01T12:57:20.450924+11:00"
+      }
+    },
+    {
+      "name": "quadrature_potential",
+      "passed": true,
+      "detail": {
+        "value": 0.19634954084936207,
+        "absolute_error": 0.0,
+        "quad_error_estimate": 5.899299345325769e-14
+      },
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.451424+00:00",
+        "melbourne": "2026-11-01T12:57:20.451424+11:00"
+      }
+    },
+    {
+      "name": "total_energy_pi_over_four",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.451554+00:00",
+        "melbourne": "2026-11-01T12:57:20.451554+11:00"
+      }
+    },
+    {
+      "name": "derrick_E4_equals_3E0",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.451641+00:00",
+        "melbourne": "2026-11-01T12:57:20.451641+11:00"
+      }
+    },
+    {
+      "name": "dilation_stationarity",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.454811+00:00",
+        "melbourne": "2026-11-01T12:57:20.454811+11:00"
+      }
+    },
+    {
+      "name": "dilation_second_derivative",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.457532+00:00",
+        "melbourne": "2026-11-01T12:57:20.457532+11:00"
+      }
+    },
+    {
+      "name": "radial_second_variation_W",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.535745+00:00",
+        "melbourne": "2026-11-01T12:57:20.535745+11:00"
+      }
+    },
+    {
+      "name": "radial_second_variation_positive",
+      "passed": true,
+      "detail": {
+        "W": "(14*rho**4 + rho**2 + 2)/(rho**6 + 2*rho**4 + rho**2)",
+        "domain": "rho>0; fixed boundary, fixed n",
+        "not_full_stability": true
+      },
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.536114+00:00",
+        "melbourne": "2026-11-01T12:57:20.536114+11:00"
+      }
+    },
+    {
+      "name": "vibration_eq20_is_half_W",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.568719+00:00",
+        "melbourne": "2026-11-01T12:57:20.568719+11:00"
+      }
+    },
+    {
+      "name": "vibration_printed_eq21_is_twice_eq20",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.586466+00:00",
+        "melbourne": "2026-11-01T12:57:20.586466+11:00"
+      }
+    },
+    {
+      "name": "hedgehog_unit_quaternion",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.592362+00:00",
+        "melbourne": "2026-11-01T12:57:20.592362+11:00"
+      }
+    },
+    {
+      "name": "projected_core_gauss_balance",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.599519+00:00",
+        "melbourne": "2026-11-01T12:57:20.599519+11:00"
+      }
+    },
+    {
+      "name": "projected_core_total_charge_in_units_e0",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.604448+00:00",
+        "melbourne": "2026-11-01T12:57:20.604448+11:00"
+      }
+    },
+    {
+      "name": "oriented_unit_sphere_degree",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.671072+00:00",
+        "melbourne": "2026-11-01T12:57:20.671072+11:00"
+      }
+    },
+    {
+      "name": "maxwell_counterexample_div_E",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.672780+00:00",
+        "melbourne": "2026-11-01T12:57:20.672780+11:00"
+      }
+    },
+    {
+      "name": "maxwell_counterexample_div_B",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.672847+00:00",
+        "melbourne": "2026-11-01T12:57:20.672847+11:00"
+      }
+    },
+    {
+      "name": "maxwell_counterexample_faraday",
+      "passed": true,
+      "detail": [
+        "0",
+        "0",
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.676156+00:00",
+        "melbourne": "2026-11-01T12:57:20.676156+11:00"
+      }
+    },
+    {
+      "name": "maxwell_counterexample_ampere",
+      "passed": true,
+      "detail": [
+        "0",
+        "0",
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.677961+00:00",
+        "melbourne": "2026-11-01T12:57:20.677961+11:00"
+      }
+    },
+    {
+      "name": "maxwell_counterexample_dot_formula",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.678320+00:00",
+        "melbourne": "2026-11-01T12:57:20.678320+11:00"
+      }
+    },
+    {
+      "name": "maxwell_counterexample_nonzero_dot",
+      "passed": true,
+      "detail": "E.B=2 at the selected dimensionless event; this is not an experiment",
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.680747+00:00",
+        "melbourne": "2026-11-01T12:57:20.680747+11:00"
+      }
+    },
+    {
+      "name": "pullback_area_pfaffian",
+      "passed": true,
+      "detail": [
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:20.698786+00:00",
+        "melbourne": "2026-11-01T12:57:20.698786+11:00"
+      }
+    },
+    {
+      "name": "generic_static_principal_symbol",
+      "passed": true,
+      "detail": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:21.099919+00:00",
+        "melbourne": "2026-11-01T12:57:21.099919+11:00"
+      }
+    },
+    {
+      "name": "isotropic_static_symbol",
+      "passed": true,
+      "detail": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:21.115747+00:00",
+        "melbourne": "2026-11-01T12:57:21.115747+11:00"
+      }
+    },
+    {
+      "name": "constant_vacuum_kinetic_hessian_zero",
+      "passed": true,
+      "detail": "No quadratic derivative action about a constant vacuum",
+      "checked_at": {
+        "utc": "2026-11-01T01:57:21.118218+00:00",
+        "melbourne": "2026-11-01T12:57:21.118218+11:00"
+      }
+    },
+    {
+      "name": "time_dependent_local_jet_symbol",
+      "passed": true,
+      "detail": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "checked_at": {
+        "utc": "2026-11-01T01:57:21.191973+00:00",
+        "melbourne": "2026-11-01T12:57:21.191973+11:00"
+      }
+    },
+    {
+      "name": "local_jet_negative_speed_squared",
+      "passed": true,
+      "detail": {
+        "squared_speeds_over_c2": [
+          -3,
+          -3,
+          1
+        ],
+        "scope": "allowed first jet; not a constructed global on-shell solution or observed instability"
+      },
+      "checked_at": {
+        "utc": "2026-11-01T01:57:21.198990+00:00",
+        "melbourne": "2026-11-01T12:57:21.198990+11:00"
+      }
+    },
+    {
+      "name": "static_numeric_crosscheck_128",
+      "passed": true,
+      "detail": {
+        "min_squared_speed_over_c2": 0.014939167979207305,
+        "max_squared_speed_over_c2": 1.0000000000000016,
+        "seed": 20261101,
+        "proof": false
+      },
+      "checked_at": {
+        "utc": "2026-11-01T01:57:21.206909+00:00",
+        "melbourne": "2026-11-01T12:57:21.206909+11:00"
+      }
+    }
+  ],
+  "passed": 32,
+  "failed": 0,
+  "energy": {
+    "dimensionless_total": 0.7853981633974484,
+    "exact": "pi/4",
+    "illustrative_r0_fm_from_rounded_source_inputs": 2.213255098419424
+  },
+  "not_established": [
+    "general Maxwell equivalence",
+    "full constrained strong hyperbolicity",
+    "full nonradial stability",
+    "unique finite-core electromagnetic observable",
+    "electron identification",
+    "new Q simulations"
+  ]
+}

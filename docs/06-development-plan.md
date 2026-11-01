@@ -2,6 +2,12 @@
 
 Stages are evidence gates, not promised dates. S5-S7 are conditional research paths, not guaranteed outcomes. Do not run a broad search before validating the diagnostics.
 
+## Current analytical milestone and requested Q follow-up
+
+Recorded: 2026-11-01T02:02:43+00:00 (UTC); 2026-11-01T13:02:43+11:00 (Australia/Melbourne). Following merged PR 48, the [charge-capable relativistic equation audit](../reports/charged-model-audit-20261101/README.md) is complete as an analytical tranche: finite energy and charge flux checked; general Maxwell equivalence and unrestricted causal evolution not established, with explicit counterexamples/degeneracies recorded. [ADR-0008](decisions/ADR-0008-charged-model-audit.md) defers charged dynamics and does not accept an electron model. The [source supplement](literature/charged-model-audit-sources.md) includes restricted vibration evidence and a normalization discrepancy.
+
+**Next requested work: return to Q18 basin diagnosis and assess more Q values.** The [post-audit plan](plans/post-audit-q-assessment.md) prioritizes Q17/Q19 same-family controls, the retained Q22 control and optional Q20/Q24 extensions. Preserve the Q18 linked alternative and failed hyperbolic reproduction. This is a specific next scientific comparison, not a blanket catalogue; it does not wait for resolution of the charged theory. All outputs require UTC/Melbourne timestamps and resumable work without an arbitrary two-hour overall cap. Historical stage descriptions below remain historical; no new Q simulation has been performed in this audit.
+
 | Stage | Deliverables | Exit gate |
 |---|---|---|
 | S0 Documentation foundation | Folder structure, purpose, hypotheses, requirements, AI workflow, literature, templates and documentation CI | Navigable documents, checks pass, no simulated results claimed |
