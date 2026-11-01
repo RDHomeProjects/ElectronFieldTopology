@@ -1,0 +1,220 @@
+{
+  "status": "gradient_stationary",
+  "message": "Bounded GPU continuation",
+  "config": {
+    "model_id": "SF-J2015-static",
+    "case": "q22-domain-fine-193",
+    "n": 193,
+    "h": 0.096,
+    "expected_q": 22,
+    "iterations": 3000,
+    "seconds": 1800,
+    "record_every": 50,
+    "maxcor": 4,
+    "solver": "sobolev_cg",
+    "discretisation": "cell",
+    "published_energy": 12.509,
+    "seed": {
+      "kind": "cable",
+      "alpha": 4,
+      "beta": 1,
+      "scale": 4.0,
+      "cutoff": 7.2,
+      "amplitude": 8.0
+    },
+    "perturbation_amplitude": 0.005,
+    "perturbation_seed": 35,
+    "precondition_length": 0.5,
+    "prepared_at": {
+      "utc": "2026-11-01T00:16:14+00:00",
+      "melbourne": "2026-11-01T11:16:14+11:00"
+    },
+    "initialization": "checkpoint_continuation",
+    "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-domain-fine-193-20261101T111216+1100-pass001/final.npz"
+  },
+  "initial": {
+    "iteration": 0,
+    "elapsed_seconds": 4.225032807997195,
+    "e2": 6.199400024908946,
+    "e4": 6.325372221898844,
+    "energy": 12.524772246807789,
+    "virial_residual": 0.010057843329007832,
+    "tangent_gradient_rms": 0.0014259563449312833,
+    "minimum_corner_cone": 0.9644440318128511,
+    "minimum_quadrature_interpolant_norm": 0.9891940633093519,
+    "hopf_integral": -21.991728503917965,
+    "unit_error": 2.220446049250313e-16,
+    "max_neighbour_angle": 0.31269619021787776,
+    "mean_topological_b": [
+      -1.0095289789946696e-09,
+      -4.09800886819304e-06,
+      -9.65685473007948e-06
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "cpu_tangent_gradient_rms": 0.0014259563449312593,
+    "cpu_endpoint_audit": {
+      "endpoint_energy": {
+        "passed": true,
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "maximum_absolute_error": 1.546140993013978e-11
+      },
+      "endpoint_gradient": {
+        "passed": true,
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "maximum_absolute_error": 6.192869635613003e-19
+      },
+      "endpoint_hopf": {
+        "passed": true,
+        "rtol": 1e-09,
+        "atol": 1e-10,
+        "maximum_absolute_error": 2.4868995751603507e-14
+      }
+    }
+  },
+  "final": {
+    "iteration": 2,
+    "elapsed_seconds": 41.77734121099638,
+    "e2": 6.199408923327169,
+    "e4": 6.325363163455502,
+    "energy": 12.524772086782672,
+    "virial_residual": 0.01005640974986294,
+    "tangent_gradient_rms": 0.0006181045034668573,
+    "minimum_corner_cone": 0.964441174248612,
+    "minimum_quadrature_interpolant_norm": 0.9891944422705451,
+    "hopf_integral": -21.991728525563293,
+    "unit_error": 2.220446049250313e-16,
+    "max_neighbour_angle": 0.3127019049166968,
+    "mean_topological_b": [
+      -1.0129964501293671e-09,
+      -4.097974315879922e-06,
+      -9.656869886125768e-06
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "cpu_tangent_gradient_rms": 0.0006181045034668618,
+    "cpu_endpoint_audit": {
+      "endpoint_energy": {
+        "passed": true,
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "maximum_absolute_error": 1.539213201340317e-11
+      },
+      "endpoint_gradient": {
+        "passed": true,
+        "rtol": 1e-11,
+        "atol": 1e-13,
+        "maximum_absolute_error": 5.066911385805822e-19
+      },
+      "endpoint_hopf": {
+        "passed": true,
+        "rtol": 1e-09,
+        "atol": 1e-10,
+        "maximum_absolute_error": 2.4868995751603507e-14
+      }
+    }
+  },
+  "iterations": 2,
+  "evaluations": 3,
+  "elapsed_seconds": 51.20628228300484,
+  "history": [
+    {
+      "iteration": 0,
+      "elapsed_seconds": 4.225032807997195,
+      "e2": 6.199400024908946,
+      "e4": 6.325372221898844,
+      "energy": 12.524772246807789,
+      "virial_residual": 0.010057843329007832,
+      "tangent_gradient_rms": 0.0014259563449312833,
+      "minimum_corner_cone": 0.9644440318128511,
+      "minimum_quadrature_interpolant_norm": 0.9891940633093519,
+      "hopf_integral": -21.991728503917965,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.31269619021787776,
+      "mean_topological_b": [
+        -1.0095289789946696e-09,
+        -4.09800886819304e-06,
+        -9.65685473007948e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "cpu_tangent_gradient_rms": 0.0014259563449312593,
+      "cpu_endpoint_audit": {
+        "endpoint_energy": {
+          "passed": true,
+          "rtol": 1e-11,
+          "atol": 1e-13,
+          "maximum_absolute_error": 1.546140993013978e-11
+        },
+        "endpoint_gradient": {
+          "passed": true,
+          "rtol": 1e-11,
+          "atol": 1e-13,
+          "maximum_absolute_error": 6.192869635613003e-19
+        },
+        "endpoint_hopf": {
+          "passed": true,
+          "rtol": 1e-09,
+          "atol": 1e-10,
+          "maximum_absolute_error": 2.4868995751603507e-14
+        }
+      }
+    },
+    {
+      "iteration": 2,
+      "elapsed_seconds": 41.77734121099638,
+      "e2": 6.199408923327169,
+      "e4": 6.325363163455502,
+      "energy": 12.524772086782672,
+      "virial_residual": 0.01005640974986294,
+      "tangent_gradient_rms": 0.0006181045034668573,
+      "minimum_corner_cone": 0.964441174248612,
+      "minimum_quadrature_interpolant_norm": 0.9891944422705451,
+      "hopf_integral": -21.991728525563293,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3127019049166968,
+      "mean_topological_b": [
+        -1.0129964501293671e-09,
+        -4.097974315879922e-06,
+        -9.656869886125768e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "cpu_tangent_gradient_rms": 0.0006181045034668618,
+      "cpu_endpoint_audit": {
+        "endpoint_energy": {
+          "passed": true,
+          "rtol": 1e-11,
+          "atol": 1e-13,
+          "maximum_absolute_error": 1.539213201340317e-11
+        },
+        "endpoint_gradient": {
+          "passed": true,
+          "rtol": 1e-11,
+          "atol": 1e-13,
+          "maximum_absolute_error": 5.066911385805822e-19
+        },
+        "endpoint_hopf": {
+          "passed": true,
+          "rtol": 1e-09,
+          "atol": 1e-10,
+          "maximum_absolute_error": 2.4868995751603507e-14
+        }
+      }
+    }
+  ],
+  "reproduction_status": "not_certified: remaining topology, scaling and convergence gates",
+  "scope": "static unit-vector minimisation; no physical time or electric charge",
+  "record_timestamps": {
+    "execution_started": {
+      "utc": "2026-11-01T00:16:15+00:00",
+      "melbourne": "2026-11-01T11:16:15+11:00"
+    },
+    "execution_finished": {
+      "utc": "2026-11-01T00:17:08+00:00",
+      "melbourne": "2026-11-01T11:17:08+11:00"
+    },
+    "metadata_recorded": {
+      "utc": "2026-11-01T00:17:09+00:00",
+      "melbourne": "2026-11-01T11:17:09+11:00"
+    }
+  }
+}

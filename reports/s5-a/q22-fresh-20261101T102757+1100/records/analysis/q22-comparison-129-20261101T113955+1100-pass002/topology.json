@@ -1,0 +1,3017 @@
+{
+  "case": "q22-comparison-129",
+  "config": {
+    "model_id": "SF-J2015-static",
+    "case": "q22-comparison-129",
+    "n": 129,
+    "h": 0.12,
+    "expected_q": 22,
+    "iterations": 3000,
+    "seconds": 1800,
+    "record_every": 50,
+    "maxcor": 4,
+    "solver": "sobolev_cg",
+    "discretisation": "cell",
+    "published_energy": 12.455,
+    "seed": {
+      "kind": "torus54",
+      "alpha": 3,
+      "beta": 2,
+      "scale": 4.0,
+      "cutoff": 7.2,
+      "amplitude": 4.0
+    },
+    "perturbation_amplitude": 0.005,
+    "perturbation_seed": 35,
+    "precondition_length": 0.5,
+    "prepared_at": {
+      "utc": "2026-11-01T00:39:55+00:00",
+      "melbourne": "2026-11-01T11:39:55+11:00"
+    },
+    "initialization": "checkpoint_continuation",
+    "initial_checkpoint": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-comparison-129-20261101T111822+1100-pass001/final.npz"
+  },
+  "phases": {
+    "final": {
+      "checkpoint_sha256": "86d209ed36cca3697992a7c49ca012d20dbf215bdba57ee3ed58a7db940ec0d9",
+      "stored_unit_error": 2.220446049250313e-16,
+      "fixed_boundary_error": 0.0,
+      "targets": {
+        "primary": {
+          "status": "closed_components",
+          "components": 3,
+          "vertices": 2644,
+          "target": [
+            6.999999999405e-06,
+            1.0999999999064999e-05,
+            -0.999999999915
+          ],
+          "components_data": [
+            {
+              "vertices": 654,
+              "diagrams": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                }
+              ]
+            },
+            {
+              "vertices": 1428,
+              "diagrams": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "dt_code": "[(4, 6, 2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      15,
+                      13,
+                      0,
+                      12
+                    ],
+                    [
+                      0,
+                      5,
+                      1,
+                      6
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ],
+                    [
+                      2,
+                      13,
+                      3,
+                      14
+                    ],
+                    [
+                      14,
+                      3,
+                      15,
+                      4
+                    ],
+                    [
+                      6,
+                      11,
+                      7,
+                      12
+                    ],
+                    [
+                      8,
+                      9,
+                      9,
+                      10
+                    ],
+                    [
+                      7,
+                      11,
+                      8,
+                      10
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "dt_code": "[(4, 6, 2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      13,
+                      11,
+                      0,
+                      10
+                    ],
+                    [
+                      0,
+                      5,
+                      1,
+                      6
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ],
+                    [
+                      2,
+                      11,
+                      3,
+                      12
+                    ],
+                    [
+                      12,
+                      3,
+                      13,
+                      4
+                    ],
+                    [
+                      6,
+                      9,
+                      7,
+                      10
+                    ],
+                    [
+                      7,
+                      9,
+                      8,
+                      8
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "dt_code": "[(4, 6, 2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      11,
+                      9,
+                      0,
+                      8
+                    ],
+                    [
+                      0,
+                      5,
+                      1,
+                      6
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ],
+                    [
+                      2,
+                      9,
+                      3,
+                      10
+                    ],
+                    [
+                      10,
+                      3,
+                      11,
+                      4
+                    ],
+                    [
+                      6,
+                      7,
+                      7,
+                      8
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                }
+              ]
+            },
+            {
+              "vertices": 562,
+              "diagrams": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      5,
+                      4,
+                      0,
+                      5
+                    ],
+                    [
+                      0,
+                      4,
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      2,
+                      2,
+                      3
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      5,
+                      4,
+                      0,
+                      5
+                    ],
+                    [
+                      0,
+                      4,
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      2,
+                      2,
+                      3
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      7,
+                      4,
+                      0,
+                      5
+                    ],
+                    [
+                      0,
+                      4,
+                      1,
+                      3
+                    ],
+                    [
+                      1,
+                      2,
+                      2,
+                      3
+                    ],
+                    [
+                      6,
+                      6,
+                      7,
+                      5
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                }
+              ]
+            }
+          ],
+          "pairwise_link_checks": [
+            {
+              "first": 0,
+              "second": 1,
+              "observations": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": 2,
+                  "crossings": 4
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": 2,
+                  "crossings": 4
+                }
+              ]
+            },
+            {
+              "first": 0,
+              "second": 2,
+              "observations": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": -1,
+                  "crossings": 2
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": -1,
+                  "crossings": 4
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": -1,
+                  "crossings": 2
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": -1,
+                  "crossings": 2
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": -1,
+                  "crossings": 4
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": -1,
+                  "crossings": 2
+                }
+              ]
+            },
+            {
+              "first": 1,
+              "second": 2,
+              "observations": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": 2,
+                  "crossings": 4
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": 2,
+                  "crossings": 4
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": 2,
+                  "crossings": 4
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": 2,
+                  "crossings": 4
+                }
+              ]
+            }
+          ]
+        },
+        "secondary": {
+          "status": "closed_components",
+          "components": 3,
+          "vertices": 2636,
+          "target": [
+            0.0069999999747125015,
+            0.010999999960262501,
+            -0.9999149963878072
+          ],
+          "components_data": [
+            {
+              "vertices": 652,
+              "diagrams": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                }
+              ]
+            },
+            {
+              "vertices": 1428,
+              "diagrams": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "dt_code": "[(4, 6, 2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      19,
+                      17,
+                      0,
+                      16
+                    ],
+                    [
+                      0,
+                      5,
+                      1,
+                      6
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ],
+                    [
+                      2,
+                      17,
+                      3,
+                      18
+                    ],
+                    [
+                      18,
+                      3,
+                      19,
+                      4
+                    ],
+                    [
+                      6,
+                      15,
+                      7,
+                      16
+                    ],
+                    [
+                      7,
+                      15,
+                      8,
+                      14
+                    ],
+                    [
+                      8,
+                      13,
+                      9,
+                      14
+                    ],
+                    [
+                      9,
+                      13,
+                      10,
+                      12
+                    ],
+                    [
+                      10,
+                      11,
+                      11,
+                      12
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "dt_code": "[(4, 6, 2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      29,
+                      27,
+                      0,
+                      26
+                    ],
+                    [
+                      0,
+                      5,
+                      1,
+                      6
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ],
+                    [
+                      2,
+                      27,
+                      3,
+                      28
+                    ],
+                    [
+                      28,
+                      3,
+                      29,
+                      4
+                    ],
+                    [
+                      6,
+                      25,
+                      7,
+                      26
+                    ],
+                    [
+                      7,
+                      25,
+                      8,
+                      24
+                    ],
+                    [
+                      8,
+                      23,
+                      9,
+                      24
+                    ],
+                    [
+                      10,
+                      21,
+                      11,
+                      22
+                    ],
+                    [
+                      9,
+                      23,
+                      10,
+                      22
+                    ],
+                    [
+                      11,
+                      21,
+                      12,
+                      20
+                    ],
+                    [
+                      12,
+                      19,
+                      13,
+                      20
+                    ],
+                    [
+                      13,
+                      19,
+                      14,
+                      18
+                    ],
+                    [
+                      14,
+                      17,
+                      15,
+                      18
+                    ],
+                    [
+                      15,
+                      17,
+                      16,
+                      16
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      5,
+                      2,
+                      0,
+                      3
+                    ],
+                    [
+                      3,
+                      0,
+                      4,
+                      1
+                    ],
+                    [
+                      1,
+                      4,
+                      2,
+                      5
+                    ]
+                  ],
+                  "dt_code": "[(4, 6, 2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "pd": [
+                    [
+                      29,
+                      27,
+                      0,
+                      26
+                    ],
+                    [
+                      0,
+                      5,
+                      1,
+                      6
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ],
+                    [
+                      2,
+                      27,
+                      3,
+                      28
+                    ],
+                    [
+                      28,
+                      3,
+                      29,
+                      4
+                    ],
+                    [
+                      6,
+                      25,
+                      7,
+                      26
+                    ],
+                    [
+                      7,
+                      25,
+                      8,
+                      24
+                    ],
+                    [
+                      8,
+                      23,
+                      9,
+                      24
+                    ],
+                    [
+                      10,
+                      21,
+                      11,
+                      22
+                    ],
+                    [
+                      9,
+                      23,
+                      10,
+                      22
+                    ],
+                    [
+                      11,
+                      21,
+                      12,
+                      20
+                    ],
+                    [
+                      12,
+                      19,
+                      13,
+                      20
+                    ],
+                    [
+                      13,
+                      19,
+                      14,
+                      18
+                    ],
+                    [
+                      14,
+                      17,
+                      15,
+                      18
+                    ],
+                    [
+                      15,
+                      17,
+                      16,
+                      16
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "simplified_pd": [
+                    [
+                      2,
+                      5,
+                      3,
+                      0
+                    ],
+                    [
+                      0,
+                      3,
+                      1,
+                      4
+                    ],
+                    [
+                      4,
+                      1,
+                      5,
+                      2
+                    ]
+                  ],
+                  "dt_code": "[(-4, -6, -2)]",
+                  "crossings": 3,
+                  "components": 1,
+                  "canonical_gauss": [
+                    [
+                      0,
+                      0,
+                      -1
+                    ],
+                    [
+                      1,
+                      1,
+                      -1
+                    ],
+                    [
+                      2,
+                      0,
+                      -1
+                    ],
+                    [
+                      0,
+                      1,
+                      -1
+                    ],
+                    [
+                      1,
+                      0,
+                      -1
+                    ],
+                    [
+                      2,
+                      1,
+                      -1
+                    ]
+                  ],
+                  "jones_A": {
+                    "4": 1,
+                    "12": 1,
+                    "16": -1
+                  },
+                  "solution_type": "contains flat tetrahedra",
+                  "volume": 0.0
+                }
+              ]
+            },
+            {
+              "vertices": 556,
+              "diagrams": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      2
+                    ],
+                    [
+                      5,
+                      3,
+                      0,
+                      2
+                    ],
+                    [
+                      4,
+                      3,
+                      5,
+                      4
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "pd": [
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "simplified_pd": [],
+                  "dt_code": "[]",
+                  "crossings": 0,
+                  "components": 0,
+                  "canonical_gauss": null,
+                  "jones_A": {
+                    "0": 1
+                  },
+                  "solution_type": "contains degenerate tetrahedra",
+                  "volume": -2.631228568361621e-14
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                },
+                {
+                  "segments": 512,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "crossings": 0,
+                  "diagram": "unknot",
+                  "pd": []
+                }
+              ]
+            }
+          ],
+          "pairwise_link_checks": [
+            {
+              "first": 0,
+              "second": 1,
+              "observations": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": 2,
+                  "crossings": 4
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": 2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": 2,
+                  "crossings": 4
+                }
+              ]
+            },
+            {
+              "first": 0,
+              "second": 2,
+              "observations": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": 1,
+                  "crossings": 2
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": 1,
+                  "crossings": 4
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": 1,
+                  "crossings": 2
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": 1,
+                  "crossings": 2
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": 1,
+                  "crossings": 4
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": 1,
+                  "crossings": 2
+                }
+              ]
+            },
+            {
+              "first": 1,
+              "second": 2,
+              "observations": [
+                {
+                  "segments": 256,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": -2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": -2,
+                  "crossings": 4
+                },
+                {
+                  "segments": 256,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": -2,
+                  "crossings": 4
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    0.37,
+                    0.53,
+                    1.0
+                  ],
+                  "linking_number": -2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    1.0,
+                    -0.41,
+                    0.67
+                  ],
+                  "linking_number": -2,
+                  "crossings": 6
+                },
+                {
+                  "segments": 384,
+                  "view": [
+                    -0.71,
+                    1.0,
+                    0.29
+                  ],
+                  "linking_number": -2,
+                  "crossings": 4
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "scope": "finite polygon/checkpoint diagnostics; no continuum isotopy or expert certificate",
+  "analysis_sha256": "40178e5886017a12c1803df275054804434ee2ec8be7baab02a6e8d5e4e558c8",
+  "record_timestamps": {
+    "execution_started": {
+      "utc": "2026-11-01T00:49:07+00:00",
+      "melbourne": "2026-11-01T11:49:07+11:00"
+    },
+    "execution_finished": {
+      "utc": "2026-11-01T00:49:22+00:00",
+      "melbourne": "2026-11-01T11:49:22+11:00"
+    }
+  }
+}

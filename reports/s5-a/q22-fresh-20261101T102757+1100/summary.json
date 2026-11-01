@@ -1,0 +1,1343 @@
+{
+  "campaign_id": "q22-convergence-study-2026-11-01-fresh-seed",
+  "stages": {
+    "q1-control-fresh": {
+      "execution": "stationary",
+      "passes": 1,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q1-control-fresh-20261101T102758+1100-pass001",
+          "input_sha256": null,
+          "initialization": "fresh_seed",
+          "config_sha256": "944489955fc692eea17fbee28b3b27ed2b6935fe09976084949bd9e3426458a4",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-10-31T23:27:58+00:00",
+            "melbourne": "2026-11-01T10:27:58+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 7.684800981005537,
+          "finished_at": {
+            "utc": "2026-10-31T23:28:06+00:00",
+            "melbourne": "2026-11-01T10:28:06+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 1.2359138695857361,
+          "residual": 0.0006385459766903154
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 79,
+        "elapsed_seconds": 6.757932062988402,
+        "e2": 0.6146156287260783,
+        "e4": 0.6212982408596578,
+        "energy": 1.2359138695857361,
+        "virial_residual": 0.005407020908195966,
+        "tangent_gradient_rms": 0.0006385459766903151,
+        "minimum_corner_cone": 0.8564491937384945,
+        "minimum_quadrature_interpolant_norm": 0.9299757066696358,
+        "hopf_integral": -0.9859280474051433,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.6598644037083105,
+        "mean_topological_b": [
+          -2.0698559439529546e-19,
+          1.494177259541039e-18,
+          -6.0289717696142355e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0006385459766903154,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.893685705084863e-14
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.199321047545791e-18
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.3306690738754696e-16
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "not_applicable_low_q_control"
+      },
+      "independent_scaling": "pass"
+    },
+    "q2-control-fresh": {
+      "execution": "stationary",
+      "passes": 1,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q2-control-fresh-20261101T102807+1100-pass001",
+          "input_sha256": null,
+          "initialization": "fresh_seed",
+          "config_sha256": "d69a63fa3482d151fbd7eed6319355eb0375e2df42be5ab848155b19da37904e",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-10-31T23:28:07+00:00",
+            "melbourne": "2026-11-01T10:28:07+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 7.031617097003618,
+          "finished_at": {
+            "utc": "2026-10-31T23:28:14+00:00",
+            "melbourne": "2026-11-01T10:28:14+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 2.0118537450633793,
+          "residual": 0.0006731626733685903
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 64,
+        "elapsed_seconds": 6.140333149000071,
+        "e2": 1.0096782483006301,
+        "e4": 1.0021754967627492,
+        "energy": 2.0118537450633793,
+        "virial_residual": 0.0037292728441572563,
+        "tangent_gradient_rms": 0.0006731626733685983,
+        "minimum_corner_cone": 0.8580896638221308,
+        "minimum_quadrature_interpolant_norm": 0.9510698017794197,
+        "hopf_integral": -1.9822697097298394,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.5781281353085997,
+        "mean_topological_b": [
+          1.47477236006648e-18,
+          9.573083740782415e-19,
+          -6.362501988136457e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0006731626733685903,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.3078427230084344e-13
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.4293680984916318e-18
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 6.661338147750939e-16
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "not_applicable_low_q_control"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-129-fresh": {
+      "execution": "stationary",
+      "passes": 2,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-129-fresh-20261101T102816+1100-pass001",
+          "input_sha256": null,
+          "initialization": "fresh_seed",
+          "config_sha256": "e0fae10f1a657011ef6d76ee02128bf1ff05c55df095e90b5b7c0d82ea0d7e15",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-10-31T23:28:16+00:00",
+            "melbourne": "2026-11-01T10:28:16+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 293.3660484590073,
+          "finished_at": {
+            "utc": "2026-10-31T23:33:10+00:00",
+            "melbourne": "2026-11-01T10:33:10+11:00"
+          },
+          "solver_status": "residual_not_stationary",
+          "energy": 12.591379967082872,
+          "residual": 0.0010641282761915272
+        },
+        {
+          "status": "completed",
+          "directory": "cases/q22-129-fresh-20261101T103312+1100-pass002",
+          "input_sha256": "8a8d80705d88f0c5483e215f24c2f87b1fce90fc408e4b415dddc647ab53cf7c",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "d74d234a11e781e46e91cc59a99fddbb075ec8d83a10e36b91a4806760e5fa43",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-10-31T23:33:12+00:00",
+            "melbourne": "2026-11-01T10:33:12+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 16.805204086995218,
+          "finished_at": {
+            "utc": "2026-10-31T23:33:29+00:00",
+            "melbourne": "2026-11-01T10:33:29+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.591379809579184,
+          "residual": 0.0008815516255655406
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 2,
+        "elapsed_seconds": 13.330462879996048,
+        "e2": 6.086426150001956,
+        "e4": 6.504953659577227,
+        "energy": 12.591379809579184,
+        "virial_residual": 0.033239209356298385,
+        "tangent_gradient_rms": 0.0008815516255655435,
+        "minimum_corner_cone": 0.9434859681893566,
+        "minimum_quadrature_interpolant_norm": 0.982615496863479,
+        "hopf_integral": -21.978746103682425,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.39725681443482974,
+        "mean_topological_b": [
+          1.5720602367367442e-09,
+          -3.135512696496189e-06,
+          -4.5211687607131584e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0008815516255655406,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.603250948141067e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.246924532704682e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "finite_diagram_candidate_requires_review",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          },
+          "secondary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-161-polish": {
+      "execution": "stationary",
+      "passes": 1,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-161-polish-20261101T103417+1100-pass001",
+          "input_sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "2f8ef4acaa093d3707a3b79b3a7c9b57394b53ac3faaf04939a116e8b55d7c8e",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-10-31T23:34:17+00:00",
+            "melbourne": "2026-11-01T10:34:17+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 1314.3774243340013,
+          "finished_at": {
+            "utc": "2026-10-31T23:56:11+00:00",
+            "melbourne": "2026-11-01T10:56:11+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.57500215425474,
+          "residual": 0.0009712463752229241
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 1436,
+        "elapsed_seconds": 1307.1463858839998,
+        "e2": 6.090235159402306,
+        "e4": 6.484766994852434,
+        "energy": 12.57500215425474,
+        "virial_residual": 0.031374295655022054,
+        "tangent_gradient_rms": 0.000971246375222929,
+        "minimum_corner_cone": 0.9629114181477298,
+        "minimum_quadrature_interpolant_norm": 0.9887575609364163,
+        "hopf_integral": -21.991030883458812,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.31891378238331913,
+        "mean_topological_b": [
+          -2.1553781133557887e-09,
+          -7.637113498283229e-06,
+          -1.774825163814987e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009712463752229241,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 6.02717875608505e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.629857423484911e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "finite_diagram_candidate_requires_review",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          },
+          "secondary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-193-polish": {
+      "execution": "stationary",
+      "passes": 2,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-193-polish-20261101T105708+1100-pass001",
+          "input_sha256": "345b13e359afe8c6dd1ef334b79d435b9511a325f19cfb03b1a5ec3defe7f0bf",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "10ad7d7b64e99d10446331345df9dbb047817d1f4af615cb8ce703abeb6d4e07",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-10-31T23:57:08+00:00",
+            "melbourne": "2026-11-01T10:57:08+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 289.4169949700008,
+          "finished_at": {
+            "utc": "2026-11-01T00:01:57+00:00",
+            "melbourne": "2026-11-01T11:01:57+11:00"
+          },
+          "solver_status": "residual_not_stationary",
+          "energy": 12.56806682152952,
+          "residual": 0.0017771306971236364
+        },
+        {
+          "status": "completed",
+          "directory": "cases/q22-193-polish-20261101T110207+1100-pass002",
+          "input_sha256": "7b5c26cc7c4d259be9f50b9349adf5c6799cddf4474b3248711bd7c6e60091ae",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "a4c501940096ec8d3ebf5d9b9932d126c2a5ad80fe6b0febe86938a8a3b65fc6",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:02:07+00:00",
+            "melbourne": "2026-11-01T11:02:07+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 52.36889221999445,
+          "finished_at": {
+            "utc": "2026-11-01T00:02:59+00:00",
+            "melbourne": "2026-11-01T11:02:59+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.568066713575845,
+          "residual": 0.00081579101343235
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 2,
+        "elapsed_seconds": 40.19655115199566,
+        "e2": 6.085162621059463,
+        "e4": 6.482904092516383,
+        "energy": 12.568066713575845,
+        "virial_residual": 0.03164698919264057,
+        "tangent_gradient_rms": 0.0008157910134323499,
+        "minimum_corner_cone": 0.9740627055972733,
+        "minimum_quadrature_interpolant_norm": 0.992172138967673,
+        "hopf_integral": -21.995609532376335,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.2662778422304367,
+        "mean_topological_b": [
+          -1.1938143490384737e-09,
+          -3.823081917055115e-06,
+          -8.69766340289211e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.00081579101343235,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.0457412713549274e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 3.3881317890172014e-21
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 2.1316282072803006e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "finite_diagram_candidate_requires_review",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          },
+          "secondary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-domain-161": {
+      "execution": "stationary",
+      "passes": 2,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-domain-161-20261101T110406+1100-pass001",
+          "input_sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "8288bf63519df28192b264c71add8cfc054d4e374110086e514e73bce0438874",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:04:06+00:00",
+            "melbourne": "2026-11-01T11:04:06+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 141.3607891950087,
+          "finished_at": {
+            "utc": "2026-11-01T00:06:28+00:00",
+            "melbourne": "2026-11-01T11:06:28+11:00"
+          },
+          "solver_status": "residual_not_stationary",
+          "energy": 12.529561296744301,
+          "residual": 0.0028331664021763988
+        },
+        {
+          "status": "completed",
+          "directory": "cases/q22-domain-161-20261101T110635+1100-pass002",
+          "input_sha256": "ceb79570ad643f5675edfdd160702f7d66dfb4ca4edae7a7e5f954ce5b08e203",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "64939e1af679edaad11d562be8694efabe5adb953700fe871bec5058cd2b9c58",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:06:35+00:00",
+            "melbourne": "2026-11-01T11:06:35+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 28.332310163998045,
+          "finished_at": {
+            "utc": "2026-11-01T00:07:03+00:00",
+            "melbourne": "2026-11-01T11:07:03+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.529561115671404,
+          "residual": 0.00048384406246025494
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 2,
+        "elapsed_seconds": 22.481522244997905,
+        "e2": 6.220065373519342,
+        "e4": 6.3094957421520625,
+        "energy": 12.529561115671404,
+        "virial_residual": 0.007137549975383055,
+        "tangent_gradient_rms": 0.0004838440624602741,
+        "minimum_corner_cone": 0.9465088981888825,
+        "minimum_quadrature_interpolant_norm": 0.9834113679069492,
+        "hopf_integral": -21.980729994795468,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3885011781431916,
+        "mean_topological_b": [
+          7.662511122113098e-10,
+          -1.4148670399995094e-06,
+          -2.1453457052519783e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.00048384406246025494,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 9.29656351900121e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.146840492458159e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.552713678800501e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "finite_diagram_candidate_requires_review",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          },
+          "secondary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-domain-193": {
+      "execution": "stationary",
+      "passes": 1,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-domain-193-20261101T110801+1100-pass001",
+          "input_sha256": "e115a2c27d0ca55bb2af9dcc0edebb8971c9f51ebf2cb7454635bc4cc5b65580",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "4c08a926993b85b0e9da3bd763ebab7d1397cc4788daff7499ff590f70d794be",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:08:01+00:00",
+            "melbourne": "2026-11-01T11:08:01+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 182.2197433639958,
+          "finished_at": {
+            "utc": "2026-11-01T00:11:03+00:00",
+            "melbourne": "2026-11-01T11:11:03+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.511731396946402,
+          "residual": 0.0006703846779042784
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 95,
+        "elapsed_seconds": 170.25884044000122,
+        "e2": 6.246243864256052,
+        "e4": 6.265487532690351,
+        "energy": 12.511731396946402,
+        "virial_residual": 0.0015380499967410637,
+        "tangent_gradient_rms": 0.0006703846779042743,
+        "minimum_corner_cone": 0.9469262723460601,
+        "minimum_quadrature_interpolant_norm": 0.983580461501795,
+        "hopf_integral": -21.98098793743973,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.38677953861128994,
+        "mean_topological_b": [
+          4.396355762458648e-10,
+          -8.103120521724304e-07,
+          -1.2285550759610043e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0006703846779042784,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 2.2720492154348904e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.148958074826295e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 2.1316282072803006e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "finite_diagram_candidate_requires_review",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          },
+          "secondary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-domain-fine-193": {
+      "execution": "stationary",
+      "passes": 2,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-domain-fine-193-20261101T111216+1100-pass001",
+          "input_sha256": "345b13e359afe8c6dd1ef334b79d435b9511a325f19cfb03b1a5ec3defe7f0bf",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "c99c09d6b0c80f8e9d835d3fa480eeb7f9421875d0c70ae69fe08082b5662184",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:12:17+00:00",
+            "melbourne": "2026-11-01T11:12:17+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 225.80507411599683,
+          "finished_at": {
+            "utc": "2026-11-01T00:16:02+00:00",
+            "melbourne": "2026-11-01T11:16:02+11:00"
+          },
+          "solver_status": "residual_not_stationary",
+          "energy": 12.524772246807789,
+          "residual": 0.0014259563449312742
+        },
+        {
+          "status": "completed",
+          "directory": "cases/q22-domain-fine-193-20261101T111614+1100-pass002",
+          "input_sha256": "22f6b027b67d8256455e6e5fc9850b0d6ef6ffe925d3f106ba1dd9e185689cb8",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "6fa1c9d449b326f144bd52b113af9703add18e6c1aeeb2fe94fe2e62bf3aeddc",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:16:15+00:00",
+            "melbourne": "2026-11-01T11:16:15+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 53.318073469999945,
+          "finished_at": {
+            "utc": "2026-11-01T00:17:08+00:00",
+            "melbourne": "2026-11-01T11:17:08+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.524772086782672,
+          "residual": 0.0006181045034668618
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 2,
+        "elapsed_seconds": 41.77734121099638,
+        "e2": 6.199408923327169,
+        "e4": 6.325363163455502,
+        "energy": 12.524772086782672,
+        "virial_residual": 0.01005640974986294,
+        "tangent_gradient_rms": 0.0006181045034668573,
+        "minimum_corner_cone": 0.964441174248612,
+        "minimum_quadrature_interpolant_norm": 0.9891944422705451,
+        "hopf_integral": -21.991728525563293,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3127019049166968,
+        "mean_topological_b": [
+          -1.0129964501293671e-09,
+          -4.097974315879922e-06,
+          -9.656869886125768e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0006181045034668618,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.539213201340317e-11
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.066911385805822e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 2.4868995751603507e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "finite_diagram_candidate_requires_review",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          },
+          "secondary": {
+            "single_component_nine_diagrams": true,
+            "consistent_jones": true,
+            "common_diagram_found": true
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-comparison-129": {
+      "execution": "stationary",
+      "passes": 2,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-comparison-129-20261101T111822+1100-pass001",
+          "input_sha256": null,
+          "initialization": "fresh_seed",
+          "config_sha256": "9f8464e2a6247243af759fed7ae13aa86a26ce3260fd5c58f185c022220641e1",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:18:22+00:00",
+            "melbourne": "2026-11-01T11:18:22+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 1282.1688242170057,
+          "finished_at": {
+            "utc": "2026-11-01T00:39:44+00:00",
+            "melbourne": "2026-11-01T11:39:44+11:00"
+          },
+          "solver_status": "iteration_budget",
+          "energy": 12.51858040409293,
+          "residual": 0.0036030645389721126
+        },
+        {
+          "status": "completed",
+          "directory": "cases/q22-comparison-129-20261101T113955+1100-pass002",
+          "input_sha256": "b7c1b31831e561d9350d661732489c4b018547fd63904e7da6cb0eda5fbbab01",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "f39650eec244c9a01ddf68188584ea2224731ad279a937089254ec631987d5e0",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:39:55+00:00",
+            "melbourne": "2026-11-01T11:39:55+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 540.2672578089987,
+          "finished_at": {
+            "utc": "2026-11-01T00:48:55+00:00",
+            "melbourne": "2026-11-01T11:48:55+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.51321284012085,
+          "residual": 0.0009056919734132301
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 1224,
+        "elapsed_seconds": 536.6179260979989,
+        "e2": 6.094749783869283,
+        "e4": 6.418463056251568,
+        "energy": 12.51321284012085,
+        "virial_residual": 0.025869716796023023,
+        "tangent_gradient_rms": 0.0009056919734132243,
+        "minimum_corner_cone": 0.9265259679428057,
+        "minimum_quadrature_interpolant_norm": 0.9798828813849885,
+        "hopf_integral": -21.97757327326755,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3874885530082687,
+        "mean_topological_b": [
+          2.9797318887799416e-05,
+          -2.107855791721956e-05,
+          -3.28731924167828e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009056919734132301,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.958433415438776e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 7.697411908173454e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 0.0
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "unresolved",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": false,
+            "consistent_jones": false,
+            "common_diagram_found": false
+          },
+          "secondary": {
+            "single_component_nine_diagrams": false,
+            "consistent_jones": false,
+            "common_diagram_found": false
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-comparison-161": {
+      "execution": "stationary",
+      "passes": 1,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-comparison-161-20261101T114939+1100-pass001",
+          "input_sha256": "86d209ed36cca3697992a7c49ca012d20dbf215bdba57ee3ed58a7db940ec0d9",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "5778b951d3e0d09bef26254cfb2a366c832d12285371f02febbac882c95e7809",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:49:39+00:00",
+            "melbourne": "2026-11-01T11:49:39+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 244.98043553999742,
+          "finished_at": {
+            "utc": "2026-11-01T00:53:44+00:00",
+            "melbourne": "2026-11-01T11:53:44+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.501306202384423,
+          "residual": 0.0009110811887252954
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 242,
+        "elapsed_seconds": 238.6355307159829,
+        "e2": 6.084313133139499,
+        "e4": 6.416993069244924,
+        "energy": 12.501306202384423,
+        "virial_residual": 0.026611614076133223,
+        "tangent_gradient_rms": 0.0009110811887253001,
+        "minimum_corner_cone": 0.9519817007722268,
+        "minimum_quadrature_interpolant_norm": 0.9869515530988268,
+        "hopf_integral": -21.99055443211575,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.31196973394114963,
+        "mean_topological_b": [
+          1.2750051897109199e-05,
+          -9.057633800552177e-06,
+          -1.3684637934374174e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0009110811887252954,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 4.704681089151563e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 5.9112311806509485e-19
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 3.552713678800501e-15
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "unresolved",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": false,
+            "consistent_jones": false,
+            "common_diagram_found": false
+          },
+          "secondary": {
+            "single_component_nine_diagrams": false,
+            "consistent_jones": false,
+            "common_diagram_found": false
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    },
+    "q22-comparison-193": {
+      "execution": "stationary",
+      "passes": 3,
+      "attempts": [
+        {
+          "status": "completed",
+          "directory": "cases/q22-comparison-193-20261101T115437+1100-pass001",
+          "input_sha256": "e46d170f53b604bea7cd33014163f78a3589306a265b735c225b43af1fb2b70c",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "7040a3e7d69537ebfd22f879c82b28d6c5847a697c1779170d606aa348d19ac7",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T00:54:37+00:00",
+            "melbourne": "2026-11-01T11:54:37+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 336.73081340800854,
+          "finished_at": {
+            "utc": "2026-11-01T01:00:14+00:00",
+            "melbourne": "2026-11-01T12:00:14+11:00"
+          },
+          "solver_status": "residual_not_stationary",
+          "energy": 12.49450264033182,
+          "residual": 0.0025115234525712373
+        },
+        {
+          "status": "completed",
+          "directory": "cases/q22-comparison-193-20261101T120031+1100-pass002",
+          "input_sha256": "9a3a0bd8e8cf74a40202ffabf568dd26a4289e0b4700111d9db649ec35aa8b85",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "8a90f842f9d367ec1575ae01238eb19ef0cae02f14213d91059e5229bfc80a38",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T01:00:31+00:00",
+            "melbourne": "2026-11-01T12:00:31+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 54.07594426602009,
+          "finished_at": {
+            "utc": "2026-11-01T01:01:26+00:00",
+            "melbourne": "2026-11-01T12:01:26+11:00"
+          },
+          "solver_status": "residual_not_stationary",
+          "energy": 12.49450253255768,
+          "residual": 0.001236003426616769
+        },
+        {
+          "status": "completed",
+          "directory": "cases/q22-comparison-193-20261101T120141+1100-pass003",
+          "input_sha256": "2a121cf37a52f3f49b0ff97bf974ffb88d4a3f0ff5d0d679bf2ea0b013558e67",
+          "initialization": "checkpoint_continuation",
+          "config_sha256": "c0e85ead8f25c6b4ad783f0e6581a6ee550c31fa36749da4c2720768db84fe40",
+          "precondition_length": 0.5,
+          "started_at": {
+            "utc": "2026-11-01T01:01:42+00:00",
+            "melbourne": "2026-11-01T12:01:42+11:00"
+          },
+          "returncode": 0,
+          "wall_seconds": 53.924175040010596,
+          "finished_at": {
+            "utc": "2026-11-01T01:02:36+00:00",
+            "melbourne": "2026-11-01T12:02:36+11:00"
+          },
+          "solver_status": "gradient_stationary",
+          "energy": 12.494502479686533,
+          "residual": 0.0007712506736608309
+        }
+      ],
+      "option_index": 0,
+      "solver_status": "gradient_stationary",
+      "final": {
+        "iteration": 2,
+        "elapsed_seconds": 41.87814929598244,
+        "e2": 6.079699144195125,
+        "e4": 6.414803335491408,
+        "energy": 12.494502479686533,
+        "virial_residual": 0.026820130840831232,
+        "tangent_gradient_rms": 0.0007712506736608308,
+        "minimum_corner_cone": 0.9661733009642743,
+        "minimum_quadrature_interpolant_norm": 0.9908715536133756,
+        "hopf_integral": -21.995377911378664,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.26057206030333696,
+        "mean_topological_b": [
+          6.3056475082525795e-06,
+          -4.494249080905586e-06,
+          -6.652961601427497e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "cpu_tangent_gradient_rms": 0.0007712506736608309,
+        "cpu_endpoint_audit": {
+          "endpoint_energy": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 8.525624650701502e-12
+          },
+          "endpoint_gradient": {
+            "passed": true,
+            "rtol": 1e-11,
+            "atol": 1e-13,
+            "maximum_absolute_error": 1.6940658945086007e-21
+          },
+          "endpoint_hopf": {
+            "passed": true,
+            "rtol": 1e-09,
+            "atol": 1e-10,
+            "maximum_absolute_error": 1.7763568394002505e-14
+          }
+        }
+      },
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "source_energy": true,
+        "endpoint_cpu_audit": true,
+        "completed_without_numerical_fault": true
+      },
+      "artifact_audit": true,
+      "topology": {
+        "status": "unresolved",
+        "targets": {
+          "primary": {
+            "single_component_nine_diagrams": false,
+            "consistent_jones": false,
+            "common_diagram_found": false
+          },
+          "secondary": {
+            "single_component_nine_diagrams": false,
+            "consistent_jones": false,
+            "common_diagram_found": false
+          }
+        },
+        "reason": "stored diagram words/membership require review; random-seed replay is limited; no continuum certificate"
+      },
+      "independent_scaling": "pass"
+    }
+  },
+  "comparisons": {
+    "mesh_129_161": {
+      "status": "pass",
+      "relative_energy_change": 0.0013007037808504694,
+      "first_energy": 12.591379809579184,
+      "second_energy": 12.57500215425474,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "mesh_161_193": {
+      "status": "pass",
+      "relative_energy_change": 0.0005515260032419177,
+      "first_energy": 12.57500215425474,
+      "second_energy": 12.568066713575845,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "domain_129_161_h012": {
+      "status": "pass",
+      "relative_energy_change": 0.004909604415296077,
+      "first_energy": 12.591379809579184,
+      "second_energy": 12.529561115671404,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "domain_129_193_h012": {
+      "status": "pass",
+      "relative_energy_change": 0.0063256302198260676,
+      "first_energy": 12.591379809579184,
+      "second_energy": 12.511731396946402,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "domain_161_193_h012": {
+      "status": "pass",
+      "relative_energy_change": 0.001423012231665597,
+      "first_energy": 12.529561115671404,
+      "second_energy": 12.511731396946402,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "domain_161_193_h0096": {
+      "status": "pass",
+      "relative_energy_change": 0.003994438080877198,
+      "first_energy": 12.57500215425474,
+      "second_energy": 12.524772086782672,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "same_mesh_comparator_129": {
+      "status": "eligible",
+      "relative_energy_change": 0.006207974871734568,
+      "first_energy": 12.591379809579184,
+      "second_energy": 12.51321284012085,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "same_mesh_comparator_161": {
+      "status": "eligible",
+      "relative_energy_change": 0.0058605120672191435,
+      "first_energy": 12.57500215425474,
+      "second_energy": 12.501306202384423,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    },
+    "same_mesh_comparator_193": {
+      "status": "eligible",
+      "relative_energy_change": 0.0058532657063197725,
+      "first_energy": 12.568066713575845,
+      "second_energy": 12.494502479686533,
+      "reason": "stationary scalar comparison; core topology assessed separately"
+    }
+  },
+  "historical_reference": {
+    "case": "q22-129-cont-1",
+    "final": {
+      "iteration": 2,
+      "elapsed_seconds": 12.31945112500398,
+      "e2": 6.086426150001956,
+      "e4": 6.504953659577227,
+      "energy": 12.591379809579184,
+      "virial_residual": 0.033239209356298385,
+      "tangent_gradient_rms": 0.0008815516255655435,
+      "minimum_corner_cone": 0.9434859681893566,
+      "minimum_quadrature_interpolant_norm": 0.982615496863479,
+      "hopf_integral": -21.978746103682425,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.39725681443482974,
+      "mean_topological_b": [
+        1.5720602367367442e-09,
+        -3.135512696496189e-06,
+        -4.5211687607131584e-05
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "cpu_tangent_gradient_rms": 0.0008815516255655406,
+      "cpu_endpoint_audit": {
+        "endpoint_energy": {
+          "passed": true,
+          "rtol": 1e-11,
+          "atol": 1e-13,
+          "maximum_absolute_error": 2.603250948141067e-12
+        },
+        "endpoint_gradient": {
+          "passed": true,
+          "rtol": 1e-11,
+          "atol": 1e-13,
+          "maximum_absolute_error": 8.246924532704682e-19
+        },
+        "endpoint_hopf": {
+          "passed": true,
+          "rtol": 1e-09,
+          "atol": 1e-10,
+          "maximum_absolute_error": 0.0
+        }
+      }
+    },
+    "use": "context_only"
+  },
+  "initialization_mode": "fresh_seed",
+  "comparison_reference": {
+    "case": "q22-129-fresh",
+    "available": true
+  },
+  "disposition": "partial_pending_scientific_review",
+  "source_unchanged": true,
+  "scope": "Q22 static closure only; no reproduction automatically certified; Q18 retained unchanged",
+  "topology_limit": "finite diagrams only; witness inputs/words need review; no deterministic move trace or continuum proof",
+  "generated_at": {
+    "utc": "2026-11-01T01:03:51+00:00",
+    "melbourne": "2026-11-01T12:03:51+11:00"
+  },
+  "study_started_at": {
+    "utc": "2026-10-31T23:27:58+00:00",
+    "melbourne": "2026-11-01T10:27:58+11:00"
+  },
+  "timestamp_policy": "UTC and Australia/Melbourne ISO 8601; file times cover raw fields/curves/history; elapsed history samples remain unchanged"
+}
