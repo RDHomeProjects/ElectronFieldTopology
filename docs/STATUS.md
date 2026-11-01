@@ -1,6 +1,10 @@
 # Project status
 
-Updated: 2026-11-01 (Australia/Melbourne).
+Updated: 2026-11-01T15:07:15+00:00 UTC; 2026-11-02T02:07:15+11:00 Australia/Melbourne.
+
+## Current next run after PR49
+
+PR48 merged the fresh Q22 assessment; PR49 merged the charged-model audit and explicit return to Q18/additional-Q comparisons. The [Q18/Q17/Q19 run tooling](plans/q18-neighbour-run.md) is prepared for local workstation execution, with [measured initial-seed admission](../reports/q18-neighbour-preparation-20261102/README.md). It includes one-factor Q18 controls, three fine meshes, matched-spacing domains, UTC/Melbourne timestamps and resumable passes without an overall time cap. Research results from this new campaign are not yet available. Preserve the existing Q18 linked alternative and failed hyperbolic reproduction. Charged dynamics remains deferred under ADR-0008. The records below are historical and do not override this current next step.
 
 ## Recovered analysis publication
 

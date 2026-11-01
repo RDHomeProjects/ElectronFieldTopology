@@ -20,7 +20,11 @@ def validate(c):
     if isinstance(h,bool) or not isinstance(h,(int,float)) or not np.isfinite(h) or not .04<=h<=.5 or (n-1)*h/2>12:raise ValueError('bounded spacing/box required')
     if isinstance(iters,bool) or not isinstance(iters,int) or not 1<=iters<=3000:raise ValueError('iteration budget required')
     if isinstance(seconds,bool) or not isinstance(seconds,(int,float)) or not 1<=seconds<=1800:raise ValueError('wall-clock budget required')
-    if c.get('expected_q') not in [1,2,18,22] or isinstance(c.get('expected_q'),bool):raise ValueError('selected charge only')
+    if c.get('expected_q') not in [1,2,17,18,19,22] or isinstance(c.get('expected_q'),bool):raise ValueError('selected charge only')
+    if c['expected_q'] in (17,19):
+        seed=c.get('seed',{});pair=(5,1) if c['expected_q']==17 else (6,1)
+        if seed.get('kind')!='torus72' or (seed.get('alpha'),seed.get('beta'))!=pair:
+            raise ValueError('Q17/Q19 require the reviewed K(7,2) numerator')
     if c.get('discretisation','forward') not in ['forward','cell'] or c.get('solver','lbfgs') not in ['lbfgs','sobolev_cg']:raise ValueError('declared method required')
     if not isinstance(c.get('record_every',50),int) or not 1<=c.get('record_every',50)<=100:raise ValueError('record budget')
     amplitude=c.get('perturbation_amplitude',0)

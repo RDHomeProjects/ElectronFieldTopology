@@ -1,0 +1,21 @@
+{
+  "campaign_id": "q18-neighbour-basin-study-20261102",
+  "model_id": "SF-J2015-static",
+  "overall_wall_seconds": null,
+  "pass_seconds": 1800,
+  "pass_iterations": 3000,
+  "audit_grace_seconds": 600,
+  "analysis_job_seconds": 3600,
+  "stall_window_passes": 3,
+  "stall_relative_residual_improvement": 0.005,
+  "stall_relative_energy_drop": 1e-8,
+  "source_energies": {"17": 10.952, "18": 10.838, "19": 12.008},
+  "branches": [
+    {"id": "q18-baseline", "q": 18, "scale": 4.0, "length": 0.5, "changed_input": "historical reconstructed seed and mesh sequence"},
+    {"id": "q17-neighbour", "q": 17, "scale": 4.0, "length": 0.5, "changed_input": "K72 numerator alpha=5,beta=1"},
+    {"id": "q19-neighbour", "q": 19, "scale": 4.0, "length": 0.5, "changed_input": "K72 numerator alpha=6,beta=1"},
+    {"id": "q18-scale35", "q": 18, "scale": 3.5, "length": 0.5, "changed_input": "seed radial scale only"},
+    {"id": "q18-scale45", "q": 18, "scale": 4.5, "length": 0.5, "changed_input": "seed radial scale only"},
+    {"id": "q18-ell025", "q": 18, "scale": 4.0, "length": 0.25, "changed_input": "fixed optimizer precondition length only"}
+  ]
+}
