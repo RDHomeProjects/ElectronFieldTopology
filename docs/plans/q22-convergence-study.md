@@ -96,3 +96,8 @@ uv run --frozen --extra topology --extra gpu --python 3.12.14 \
 Start a new, dated output directory with `--fresh-seed --output <new-directory>`. The handoff's `RUN-FRESH.sh` creates this directory and prints its path. It writes `artifacts/q22-fresh-latest.txt` so `RUN-FRESH.sh <repo> resume` can continue it. The module also infers fresh mode from a saved study when `--resume` is used. `--collect` remains metadata/evidence export only. Existing no-overall-cap, progress-option, locking, timestamp and preservation rules continue to apply. Fresh controls receive scaling audits; the cable-identification search is not misapplied to low-charge controls.
 
 No new physical result was obtained while preparing this mode. Fresh and historical results must remain distinguishable in any subsequent assessment or publication.
+
+
+## Recorded outcome and next task
+
+Assessment recorded: 2026-11-01T12:35:36+11:00 (Australia/Melbourne); 2026-11-01T01:35:36+00:00 (UTC). The fresh study was published in [PR 47](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/47). See the [scientific assessment and numerical gate ledger](../../reports/s5-a/q22-fresh-20261101T102757+1100/ASSESSMENT.md). All eleven final endpoints satisfy the declared scalar gates; cable evidence is supported at the finite-diagram level, and the stationary three-component linked comparator is lower in energy on each matched grid. The narrowed Q22 milestone is supported with these stated limits; Q18 remains incomplete. The recommended next task is the ADR-0007 charge-capable relativistic equation audit, rather than a wider Q catalogue or another physical-time simulator. Raw generated summaries and all intermediate failures remain unchanged.

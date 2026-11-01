@@ -1,0 +1,1164 @@
+{
+  "assessed_at": {
+    "utc": "2026-11-01T01:35:36+00:00",
+    "melbourne": "2026-11-01T12:35:36+11:00"
+  },
+  "source_merge": "31732a6b5c1558927fe47ae7fc7f6d81a4b30d2c",
+  "source_run_commit": "90181ce13722ef74dfb606b6eb2b848166b958d7",
+  "assessment_code_sha256": "fc87fb8ef4ebbb0d2f5a2c03db94cc1fc0de7d652ff61a793155a31f2c733342",
+  "scope": "retained records/finite curves only; full-field endpoint quantities are reported workstation audits, not recomputed here",
+  "archive": {
+    "bytes": 1627128,
+    "sha256": "fe4f75db8d1823242e5448ee414d7f83d6e1301007f2f604f8e240a3c6eaa4c5",
+    "git_blob": "790d3104850b5b6d32d97672dbcfe398a99fab92",
+    "hashed_members": 217,
+    "entries": 218
+  },
+  "provenance": {
+    "source_and_lock_hashes_checked": 70,
+    "passes": 18,
+    "analysis_tasks": 33,
+    "cpu_endpoint_audits": 36,
+    "pass_solver_statuses": {
+      "gradient_stationary": 11,
+      "residual_not_stationary": 6,
+      "iteration_budget": 1
+    },
+    "bulk_checkpoint_files_absent": 81,
+    "worst_recorded_energy_increase": 0.0,
+    "elapsed_to_final_summary_seconds": 5753.0
+  },
+  "stages": {
+    "q1-control-fresh": {
+      "n": 65,
+      "h": 0.24,
+      "half_width": 7.68,
+      "energy": 1.2359138695857361,
+      "cpu_residual": 0.0006385459766903154,
+      "hopf_integral": -0.9859280474051433,
+      "relative_hopf_error": 0.014071952594856718,
+      "virial_residual": 0.005407020908195966,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.8564491937384945,
+      "passes": 1,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": null
+      },
+      "max_dilation_derivative": 0.012594865760893104,
+      "max_dilation_identity_defect": 0.007187844852762277,
+      "relative_source_energy_error": null
+    },
+    "q2-control-fresh": {
+      "n": 65,
+      "h": 0.24,
+      "half_width": 7.68,
+      "energy": 2.0118537450633793,
+      "cpu_residual": 0.0006731626733685903,
+      "hopf_integral": -1.9822697097298394,
+      "relative_hopf_error": 0.008865145135080299,
+      "virial_residual": 0.0037292728441572563,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.8580896638221308,
+      "passes": 1,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": null
+      },
+      "max_dilation_derivative": 0.004804756771277325,
+      "max_dilation_identity_defect": 0.008534029615502597,
+      "relative_source_energy_error": null
+    },
+    "q22-129-fresh": {
+      "n": 129,
+      "h": 0.12,
+      "half_width": 7.68,
+      "energy": 12.591379809579184,
+      "cpu_residual": 0.0008815516255655406,
+      "hopf_integral": -21.978746103682425,
+      "relative_hopf_error": 0.0009660861962533896,
+      "virial_residual": 0.033239209356298385,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.9434859681893566,
+      "passes": 2,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.04148269038049674,
+      "max_dilation_identity_defect": 0.00824348102443622,
+      "relative_source_energy_error": 0.0065856431033003175
+    },
+    "q22-161-polish": {
+      "n": 161,
+      "h": 0.096,
+      "half_width": 7.68,
+      "energy": 12.57500215425474,
+      "cpu_residual": 0.0009712463752229241,
+      "hopf_integral": -21.991030883458812,
+      "relative_hopf_error": 0.0004076871155085371,
+      "virial_residual": 0.031374295655022054,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.9629114181477298,
+      "passes": 1,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.03716575949612185,
+      "max_dilation_identity_defect": 0.005791463841555877,
+      "relative_source_energy_error": 0.005276373351566053
+    },
+    "q22-193-polish": {
+      "n": 193,
+      "h": 0.08,
+      "half_width": 7.68,
+      "energy": 12.568066713575845,
+      "cpu_residual": 0.00081579101343235,
+      "hopf_integral": -21.995609532376335,
+      "relative_hopf_error": 0.00019956671016659172,
+      "virial_residual": 0.03164698919264057,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.9740627055972733,
+      "passes": 2,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.03593139935114549,
+      "max_dilation_identity_defect": 0.004284410159399503,
+      "relative_source_energy_error": 0.004721937291217934
+    },
+    "q22-domain-161": {
+      "n": 161,
+      "h": 0.12,
+      "half_width": 9.6,
+      "energy": 12.529561115671404,
+      "cpu_residual": 0.00048384406246025494,
+      "hopf_integral": -21.980729994795468,
+      "relative_hopf_error": 0.0008759093274787491,
+      "virial_residual": 0.007137549975383055,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.9465088981888825,
+      "passes": 2,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.01476236100749485,
+      "max_dilation_identity_defect": 0.007624811032870291,
+      "relative_source_energy_error": 0.0016437057855467135
+    },
+    "q22-domain-193": {
+      "n": 193,
+      "h": 0.12,
+      "half_width": 11.52,
+      "energy": 12.511731396946402,
+      "cpu_residual": 0.0006703846779042784,
+      "hopf_integral": -21.98098793743973,
+      "relative_hopf_error": 0.00086418466183053,
+      "virial_residual": 0.0015380499967410637,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.9469262723460601,
+      "passes": 1,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.009065218598001515,
+      "max_dilation_identity_defect": 0.007527168603050846,
+      "relative_source_energy_error": 0.000218354540443024
+    },
+    "q22-domain-fine-193": {
+      "n": 193,
+      "h": 0.096,
+      "half_width": 9.216000000000001,
+      "energy": 12.524772086782672,
+      "cpu_residual": 0.0006181045034668618,
+      "hopf_integral": -21.991728525563293,
+      "relative_hopf_error": 0.00037597611075942695,
+      "virial_residual": 0.01005640974986294,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.964441174248612,
+      "passes": 2,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.015513569025243071,
+      "max_dilation_identity_defect": 0.005457159276648893,
+      "relative_source_energy_error": 0.0012608591240444347
+    },
+    "q22-comparison-129": {
+      "n": 129,
+      "h": 0.12,
+      "half_width": 7.68,
+      "energy": 12.51321284012085,
+      "cpu_residual": 0.0009056919734132301,
+      "hopf_integral": -21.97757327326755,
+      "relative_hopf_error": 0.001019396669656881,
+      "virial_residual": 0.025869716796023023,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.9265259679428057,
+      "passes": 2,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.034089166700699794,
+      "max_dilation_identity_defect": 0.00821944990485975,
+      "relative_source_energy_error": null
+    },
+    "q22-comparison-161": {
+      "n": 161,
+      "h": 0.096,
+      "half_width": 7.68,
+      "energy": 12.501306202384423,
+      "cpu_residual": 0.0009110811887252954,
+      "hopf_integral": -21.99055443211575,
+      "relative_hopf_error": 0.00042934399473860583,
+      "virial_residual": 0.026611614076133223,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.9519817007722268,
+      "passes": 1,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.03239801044268326,
+      "max_dilation_identity_defect": 0.005786396366927259,
+      "relative_source_energy_error": null
+    },
+    "q22-comparison-193": {
+      "n": 193,
+      "h": 0.08,
+      "half_width": 7.68,
+      "energy": 12.494502479686533,
+      "cpu_residual": 0.0007712506736608309,
+      "hopf_integral": -21.995377911378664,
+      "relative_hopf_error": 0.00021009493733343214,
+      "virial_residual": 0.026820130840831232,
+      "unit_error": 2.220446049250313e-16,
+      "minimum_corner_cone": 0.9661733009642743,
+      "passes": 3,
+      "gates": {
+        "initial_charge": true,
+        "final_charge": true,
+        "resolved_cells": true,
+        "unit_norm": true,
+        "stationary": true,
+        "virial": true,
+        "endpoint_cpu_audit": true,
+        "source_energy": true
+      },
+      "max_dilation_derivative": 0.031182878305097347,
+      "max_dilation_identity_defect": 0.004362747464952764,
+      "relative_source_energy_error": null
+    }
+  },
+  "comparisons": {
+    "mesh_129_161": {
+      "first": "q22-129-fresh",
+      "second": "q22-161-polish",
+      "relative_change": 0.0013007037808504694,
+      "limit": 0.02,
+      "pass": true
+    },
+    "mesh_161_193": {
+      "first": "q22-161-polish",
+      "second": "q22-193-polish",
+      "relative_change": 0.0005515260032419177,
+      "limit": 0.02,
+      "pass": true
+    },
+    "domain_129_161_h012": {
+      "first": "q22-129-fresh",
+      "second": "q22-domain-161",
+      "relative_change": 0.004909604415296077,
+      "limit": 0.02,
+      "pass": true
+    },
+    "domain_129_193_h012": {
+      "first": "q22-129-fresh",
+      "second": "q22-domain-193",
+      "relative_change": 0.0063256302198260676,
+      "limit": 0.02,
+      "pass": true
+    },
+    "domain_161_193_h012": {
+      "first": "q22-domain-161",
+      "second": "q22-domain-193",
+      "relative_change": 0.001423012231665597,
+      "limit": 0.02,
+      "pass": true
+    },
+    "domain_161_193_h0096": {
+      "first": "q22-161-polish",
+      "second": "q22-domain-fine-193",
+      "relative_change": 0.003994438080877198,
+      "limit": 0.02,
+      "pass": true
+    },
+    "same_mesh_129": {
+      "cable_energy": 12.591379809579184,
+      "comparator_energy": 12.51321284012085,
+      "absolute_gap": 0.07816696945833357,
+      "relative_gap": 0.006207974871734568,
+      "scope": "same geometry, independently audited stationary endpoints; not a global-minimum or Hessian proof"
+    },
+    "same_mesh_161": {
+      "cable_energy": 12.57500215425474,
+      "comparator_energy": 12.501306202384423,
+      "absolute_gap": 0.07369595187031663,
+      "relative_gap": 0.0058605120672191435,
+      "scope": "same geometry, independently audited stationary endpoints; not a global-minimum or Hessian proof"
+    },
+    "same_mesh_193": {
+      "cable_energy": 12.568066713575845,
+      "comparator_energy": 12.494502479686533,
+      "absolute_gap": 0.07356423388931255,
+      "relative_gap": 0.0058532657063197725,
+      "scope": "same geometry, independently audited stationary endpoints; not a global-minimum or Hessian proof"
+    }
+  },
+  "topology": {
+    "checked": true,
+    "software": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "snappy": "3.3.2",
+      "spherogram": "2.4.1"
+    },
+    "cable_endpoints": {
+      "q22-129-fresh": {
+        "primary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        },
+        "secondary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        }
+      },
+      "q22-161-polish": {
+        "primary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        },
+        "secondary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        }
+      },
+      "q22-193-polish": {
+        "primary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        },
+        "secondary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        }
+      },
+      "q22-domain-161": {
+        "primary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        },
+        "secondary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        }
+      },
+      "q22-domain-193": {
+        "primary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        },
+        "secondary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        }
+      },
+      "q22-domain-fine-193": {
+        "primary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        },
+        "secondary": {
+          "components": 1,
+          "projection_checks": 9,
+          "stored_witness_inputs_and_output_words_verified": true,
+          "limit": "No explicit certified move trace; saved random seed is not a deterministic replay certificate"
+        }
+      }
+    },
+    "comparator_endpoints": {
+      "q22-comparison-129": {
+        "primary": {
+          "components": [
+            "unknot_finite_diagram",
+            "trefoil_compatible_three_crossing_diagram",
+            "unknot_finite_diagram"
+          ],
+          "pairwise": [
+            {
+              "first": 0,
+              "second": 1,
+              "signed_diagram_link": 2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 2.000023135754982,
+                  "minimum_polygon_separation": 0.21198896975778,
+                  "minimum_nonadjacent_self_separation": 0.03151408577297566,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 2.000012889275354,
+                  "minimum_polygon_separation": 0.2062637991315198,
+                  "minimum_nonadjacent_self_separation": 0.026467688782677613,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 2.31357549820288e-05
+            },
+            {
+              "first": 0,
+              "second": 2,
+              "signed_diagram_link": -1,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": -1.000096385560205,
+                  "minimum_polygon_separation": 2.6135286924921632,
+                  "minimum_nonadjacent_self_separation": 0.03151408577297566,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": -1.0000426622289558,
+                  "minimum_polygon_separation": 2.6144606161608146,
+                  "minimum_nonadjacent_self_separation": 0.026467688782677613,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 9.638556020497013e-05
+            },
+            {
+              "first": 1,
+              "second": 2,
+              "signed_diagram_link": 2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 2.000166604915687,
+                  "minimum_polygon_separation": 0.2158009513445702,
+                  "minimum_nonadjacent_self_separation": 0.07389776785433315,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 2.000068225344481,
+                  "minimum_polygon_separation": 0.21529371643035775,
+                  "minimum_nonadjacent_self_separation": 0.050108345591650304,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.00016660491568698532
+            }
+          ],
+          "scope": "finite polygons; orientation-dependent signs"
+        },
+        "secondary": {
+          "components": [
+            "unknot_finite_diagram",
+            "trefoil_compatible_three_crossing_diagram",
+            "unknot_finite_diagram"
+          ],
+          "pairwise": [
+            {
+              "first": 0,
+              "second": 1,
+              "signed_diagram_link": 2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 2.00011433665755,
+                  "minimum_polygon_separation": 0.1650959073127546,
+                  "minimum_nonadjacent_self_separation": 0.05767413575730651,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 1.9999985132781664,
+                  "minimum_polygon_separation": 0.1769953376558357,
+                  "minimum_nonadjacent_self_separation": 0.017555522839531382,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.00011433665754978506
+            },
+            {
+              "first": 0,
+              "second": 2,
+              "signed_diagram_link": 1,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 1.0000965416617869,
+                  "minimum_polygon_separation": 2.6199980441526605,
+                  "minimum_nonadjacent_self_separation": 0.05767413575730651,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 1.0000426418867066,
+                  "minimum_polygon_separation": 2.6190743062157655,
+                  "minimum_nonadjacent_self_separation": 0.017555522839531382,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 9.654166178685308e-05
+            },
+            {
+              "first": 1,
+              "second": 2,
+              "signed_diagram_link": -2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": -2.00015813487036,
+                  "minimum_polygon_separation": 0.21064188160455488,
+                  "minimum_nonadjacent_self_separation": 0.07445264642924937,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": -2.000055559720429,
+                  "minimum_polygon_separation": 0.21349201744252871,
+                  "minimum_nonadjacent_self_separation": 0.05052114091275907,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.00015813487036009377
+            }
+          ],
+          "scope": "finite polygons; orientation-dependent signs"
+        }
+      },
+      "q22-comparison-161": {
+        "primary": {
+          "components": [
+            "unknot_finite_diagram",
+            "trefoil_compatible_three_crossing_diagram",
+            "unknot_finite_diagram"
+          ],
+          "pairwise": [
+            {
+              "first": 0,
+              "second": 1,
+              "signed_diagram_link": -2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": -2.0001319061892375,
+                  "minimum_polygon_separation": 0.2073513496428792,
+                  "minimum_nonadjacent_self_separation": 0.06519130724374698,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": -2.0000342409323806,
+                  "minimum_polygon_separation": 0.20980726504196942,
+                  "minimum_nonadjacent_self_separation": 0.04720979005510428,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.0001319061892375295
+            },
+            {
+              "first": 0,
+              "second": 2,
+              "signed_diagram_link": -1,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": -1.0000962786616139,
+                  "minimum_polygon_separation": 2.605507634900735,
+                  "minimum_nonadjacent_self_separation": 0.06519130724374698,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": -1.0000426588137528,
+                  "minimum_polygon_separation": 2.6051284541098116,
+                  "minimum_nonadjacent_self_separation": 0.04720979005510428,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 9.627866161387999e-05
+            },
+            {
+              "first": 1,
+              "second": 2,
+              "signed_diagram_link": -2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": -2.0001905382339644,
+                  "minimum_polygon_separation": 0.2071633489031385,
+                  "minimum_nonadjacent_self_separation": 0.07469512076122486,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": -2.000081428165751,
+                  "minimum_polygon_separation": 0.2047834864666128,
+                  "minimum_nonadjacent_self_separation": 0.05015769882757196,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.00019053823396442127
+            }
+          ],
+          "scope": "finite polygons; orientation-dependent signs"
+        },
+        "secondary": {
+          "components": [
+            "unknot_finite_diagram",
+            "trefoil_compatible_three_crossing_diagram",
+            "unknot_finite_diagram"
+          ],
+          "pairwise": [
+            {
+              "first": 0,
+              "second": 1,
+              "signed_diagram_link": 2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 2.0000557883574475,
+                  "minimum_polygon_separation": 0.18521041406402133,
+                  "minimum_nonadjacent_self_separation": 0.06555339768991021,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 2.0001191778800083,
+                  "minimum_polygon_separation": 0.18521041406402133,
+                  "minimum_nonadjacent_self_separation": 0.04094458594848331,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.0001191778800082588
+            },
+            {
+              "first": 0,
+              "second": 2,
+              "signed_diagram_link": 1,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 1.0000963379817638,
+                  "minimum_polygon_separation": 2.6105953221787335,
+                  "minimum_nonadjacent_self_separation": 0.06555339768991021,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 1.0000427029673666,
+                  "minimum_polygon_separation": 2.6102288452816973,
+                  "minimum_nonadjacent_self_separation": 0.04094458594848331,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 9.633798176378328e-05
+            },
+            {
+              "first": 1,
+              "second": 2,
+              "signed_diagram_link": -2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": -2.000148619642064,
+                  "minimum_polygon_separation": 0.20173430425820676,
+                  "minimum_nonadjacent_self_separation": 0.07531957643568138,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": -2.0000827605764124,
+                  "minimum_polygon_separation": 0.19683322280108181,
+                  "minimum_nonadjacent_self_separation": 0.05070411449305439,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.00014861964206414058
+            }
+          ],
+          "scope": "finite polygons; orientation-dependent signs"
+        }
+      },
+      "q22-comparison-193": {
+        "primary": {
+          "components": [
+            "unknot_finite_diagram",
+            "trefoil_compatible_three_crossing_diagram",
+            "unknot_finite_diagram"
+          ],
+          "pairwise": [
+            {
+              "first": 0,
+              "second": 1,
+              "signed_diagram_link": 2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 2.0002145521197803,
+                  "minimum_polygon_separation": 0.20443528687185053,
+                  "minimum_nonadjacent_self_separation": 0.07213533795699546,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 2.00007130463051,
+                  "minimum_polygon_separation": 0.20349983998296264,
+                  "minimum_nonadjacent_self_separation": 0.047708315921575595,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.00021455211978027577
+            },
+            {
+              "first": 0,
+              "second": 2,
+              "signed_diagram_link": 1,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 1.0000965776680264,
+                  "minimum_polygon_separation": 2.6043731548290254,
+                  "minimum_nonadjacent_self_separation": 0.07213533795699546,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 1.0000428464786433,
+                  "minimum_polygon_separation": 2.6036261811169528,
+                  "minimum_nonadjacent_self_separation": 0.047708315921575595,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 9.657766802639856e-05
+            },
+            {
+              "first": 1,
+              "second": 2,
+              "signed_diagram_link": -2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": -2.0001786413187754,
+                  "minimum_polygon_separation": 0.20807266964217935,
+                  "minimum_nonadjacent_self_separation": 0.07565570508289984,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": -2.000082469226174,
+                  "minimum_polygon_separation": 0.20723344105567984,
+                  "minimum_nonadjacent_self_separation": 0.05083373247797395,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.00017864131877542988
+            }
+          ],
+          "scope": "finite polygons; orientation-dependent signs"
+        },
+        "secondary": {
+          "components": [
+            "unknot_finite_diagram",
+            "trefoil_compatible_three_crossing_diagram",
+            "unknot_finite_diagram"
+          ],
+          "pairwise": [
+            {
+              "first": 0,
+              "second": 1,
+              "signed_diagram_link": -2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": -2.0001201163432825,
+                  "minimum_polygon_separation": 0.19486169595721275,
+                  "minimum_nonadjacent_self_separation": 0.06965384789770736,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": -2.0000669919371923,
+                  "minimum_polygon_separation": 0.18842679940769766,
+                  "minimum_nonadjacent_self_separation": 0.046387351722639955,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.00012011634328246146
+            },
+            {
+              "first": 0,
+              "second": 2,
+              "signed_diagram_link": 1,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 1.0000967881829605,
+                  "minimum_polygon_separation": 2.608940708998218,
+                  "minimum_nonadjacent_self_separation": 0.06965384789770736,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 1.00004292444615,
+                  "minimum_polygon_separation": 2.608724866709685,
+                  "minimum_nonadjacent_self_separation": 0.046387351722639955,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 9.678818296054992e-05
+            },
+            {
+              "first": 1,
+              "second": 2,
+              "signed_diagram_link": 2,
+              "gauss_cross_checks": [
+                {
+                  "linking_integral": 2.0001748326219726,
+                  "minimum_polygon_separation": 0.2051842782931424,
+                  "minimum_nonadjacent_self_separation": 0.07602706372110764,
+                  "segments": [
+                    256,
+                    256
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "linking_integral": 2.0000809923545475,
+                  "minimum_polygon_separation": 0.20156205650278877,
+                  "minimum_nonadjacent_self_separation": 0.050379236727168236,
+                  "segments": [
+                    384,
+                    384
+                  ],
+                  "input_closure_gaps": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "maximum_gauss_difference": 0.0001748326219725982
+            }
+          ],
+          "scope": "finite polygons; orientation-dependent signs"
+        }
+      }
+    },
+    "cable_witnesses": 12,
+    "cable_projection_checks": 108,
+    "comparator_pair_projection_checks": 108,
+    "scope": "stored input membership, recomputed common words and independent polygon Gauss linking; no field re-extraction or formal continuum isotopy"
+  },
+  "disposition": "bounded_Q22_numerical_benchmark_supported_with_finite_diagram_limits"
+}
