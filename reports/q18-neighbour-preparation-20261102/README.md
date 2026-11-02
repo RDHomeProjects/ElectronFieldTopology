@@ -1,0 +1,13 @@
+# Q18/Q17/Q19 run preparation
+
+Prepared: 2026-11-01T15:07:15+00:00 UTC; 2026-11-02T02:07:15+11:00 Australia/Melbourne. Source baseline: merged PR49 `05aa61013712282421ffc5c2c0b27a20bb949446`. Implementation and exact controls are in the [run specification](../../docs/plans/q18-neighbour-run.md), following the [recorded Q follow-up](../../docs/plans/post-audit-q-assessment.md).
+
+The [seed admission ledger](seed-admission.json) contains actual CPU evaluation of all six initial screen fields. These are not relaxed research outcomes. The Hopf magnitude errors are .77% (Q18 baseline), .51% (Q17), .84% (Q19), .55% (Q18 scale 3.5), 1.66% (Q18 scale 4.5) and .77% (Q18 ell .25). Every cell has a positive hemisphere margin; the smallest is .563. All pass the original 5% initial-charge gate without coefficient/tolerance changes. The identical baseline/ell-.25 starting field is an intentional optimizer-only control. The separately recorded algebraic degrees are 18,17,19,18,18,18.
+
+The [independent finite-variation checks](gradient-admission.json) on the new Q17/Q19 starting fields also pass, with best absolute derivative errors 2.33e-10 and 1.35e-10. These validate the initial-field gradient, not convergence of a relaxation.
+
+The implementation adds restricted Q17/Q19 admission, a 31-stage resumable GPU study, optional exact-hash historical-field inventory, fresh fallbacks, three fine meshes and matched-spacing domains, fixed one-factor Q18 branches, interrupted rolling recovery, timestamps, and small replay-evidence collection. Full fields are kept on the workstation. New solver acceptance still comes from independent CPU endpoints, not a script's status alone.
+
+Validation covers original archive authenticity versus legitimate live edits, rejection of modified manifests/bundles, admitted rational maps, configuration-preserving checkpoint recovery, corrupt latest/previous fallback, complete synthetic orchestration, interrupted/resumed attempts, control failures blocking research, frozen-plan changes, evidence hash integrity and duplicate-run prevention. Synthetic executor fixtures are explicitly marked; they are not CUDA measurements. See validation.json for exact commands, timestamps and observed outcomes.
+
+No research GPU calculation has been performed in this preparation environment. The workstation's existing CUDA validation repeats before each numerical pass, and final CPU audits repeat. Preserve the Q18 linked result and unsuccessful hyperbolic reproduction. Additional source-grounded Q20/Q24 options remain in the follow-up plan for a later decision based on these results.

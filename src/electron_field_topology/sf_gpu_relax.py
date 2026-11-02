@@ -10,7 +10,7 @@ import subprocess
 import tempfile
 import time
 import numpy as np
-from .sf_checkpoints import atomic_json, checkpoint, load_field, sha
+from .sf_checkpoints import atomic_json, checkpoint, load_field, sha, timestamp
 from .sf_relax import validate
 from .sf_gpu import cupy_module, GPUEnergy, minimize_array, diagnostics_array
 from .sf_gpu_timing import make_seed, agreement, validate_device
@@ -28,7 +28,7 @@ def run(config, output, resume_checkpoint=None, _runtime=None):
     sources = lambda: {str(p.relative_to(root)): sha(p) for p in sorted((root/"src").rglob("*"))
                        if p.suffix in (".py", ".c", ".cu")}
     source_hashes = sources()
-    manifest = {"model_id": "SF-J2015-static", "backend": "cuda-float64" if _runtime is None else "host-test-double",
+    manifest = {"model_id": "SF-J2015-static", "started_at": timestamp(), "backend": "cuda-float64" if _runtime is None else "host-test-double",
                 "source_sha256": source_hashes, "config_sha256": config_sha,
                 "lock_sha256": sha(root/"uv.lock"), "hardware": hardware(),
                 "git_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip(),
@@ -72,7 +72,7 @@ def run(config, output, resume_checkpoint=None, _runtime=None):
             tangent = g-field*xp.sum(g*field, axis=-1, keepdims=True)
             residual = float(xp.sqrt(xp.mean(tangent[2:-2, 2:-2, 2:-2]**2))/(K*h**3))
             diag = diagnostics_array(field, h, xp)
-            rec = {"iteration": index, "elapsed_seconds": time.monotonic()-start,
+            rec = {"iteration": index, "recorded_at": timestamp(), "elapsed_seconds": time.monotonic()-start,
                    "e2": float(p[0]), "e4": float(p[1]), "energy": float(sum(p)),
                    "virial_residual": float(abs(p[0]-p[1])/sum(p)) if float(sum(p)) else None,
                    "tangent_gradient_rms": residual, "minimum_corner_cone": eng.minimum_corner_cone,
@@ -133,7 +133,7 @@ def run(config, output, resume_checkpoint=None, _runtime=None):
         final = row(last, iteration, audit=True)
         if status == "gradient_stationary" and final["cpu_tangent_gradient_rms"] >= 1e-3:
             status = "residual_not_stationary"
-        report = {"status": status, "message": message, "config": c, "initial": initial, "final": final,
+        report = {"status": status, "started_at": manifest['started_at'], "completed_at": timestamp(), "message": message, "config": c, "initial": initial, "final": final,
                   "iterations": iteration, "evaluations": evaluations, "elapsed_seconds": time.monotonic()-start,
                   "history": history, "reproduction_status": "not_certified: remaining topology, scaling and convergence gates",
                   "scope": "static unit-vector minimisation; no physical time or electric charge"}
@@ -141,11 +141,12 @@ def run(config, output, resume_checkpoint=None, _runtime=None):
         if not manifest["source_unchanged_during_run"]:
             report["status"] = "source_changed"
         atomic_json(out/"result.json", report)
+        manifest['completed_at'] = timestamp()
         manifest["artifacts_sha256"] = {p.name: sha(p) for p in out.iterdir() if p.is_file() and p.name != "manifest.json"}
         atomic_json(out/"manifest.json", manifest); print("FINAL", status, flush=True)
         return report
     except BaseException as error:
         # An existing latest/previous pair survives setup/audit faults or a second interrupt.
-        atomic_json(out/"error.json", {"type": type(error).__name__, "message": str(error),
+        atomic_json(out/"error.json", {"recorded_at": timestamp(), "type": type(error).__name__, "message": str(error),
                     "iteration": iteration, "elapsed_seconds": time.monotonic()-start})
         raise

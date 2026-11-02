@@ -1,0 +1,101 @@
+{
+  "validated_at": {
+    "utc": "2026-11-01T21:50:17.643889+00:00",
+    "melbourne": "2026-11-02T08:50:17.643889+11:00"
+  },
+  "independent_assessment": {
+    "script": "verify_assessment.py",
+    "script_sha256": "2900070354ca05090e414f1e63b7c861824bf9425ce2f293606d2873f611f1c2",
+    "assessed_at": {
+      "utc": "2026-11-01T21:44:23.805272+00:00",
+      "melbourne": "2026-11-02T08:44:23.805272+11:00"
+    },
+    "finished_at": {
+      "utc": "2026-11-01T21:45:24.287800+00:00",
+      "melbourne": "2026-11-02T08:45:24.287800+11:00"
+    },
+    "archive_hash_members": 504,
+    "scalar_endpoints": 31,
+    "component_diagrams_replayed": 1350,
+    "gauss_samples_recomputed": 360,
+    "scope": "real retained data; no GPU solve or full-field replay"
+  },
+  "figures": {
+    "visually_inspected": [
+      "energy-convergence.png",
+      "core-preimages.png"
+    ],
+    "render_script_sha256": "8fa96210874a18f27755e38d2824896756d0d5518e752d8adc61f49a884eb228"
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check_docs.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T21:50:17.644372+00:00",
+        "melbourne": "2026-11-02T08:50:17.644372+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T21:50:17.751536+00:00",
+        "melbourne": "2026-11-02T08:50:17.751536+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Documentation checks passed: 95 Markdown files; local targets and fences.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_pr36_staged_recovery.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T21:50:17.751571+00:00",
+        "melbourne": "2026-11-02T08:50:17.751571+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T21:50:18.199172+00:00",
+        "melbourne": "2026-11-02T08:50:18.199172+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Stage 10/10: 191/191 original archived files verified byte-exact; no scientific acceptance implied.\nExact original commit and complete-history bundle verified; current development files may evolve.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_workstation_evidence.py"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T21:50:18.199203+00:00",
+        "melbourne": "2026-11-02T08:50:18.199203+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T21:50:18.248221+00:00",
+        "melbourne": "2026-11-02T08:50:18.248221+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Workstation transfer verified: 163 hashed members, 11 case results; no scientific acceptance implied.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check_recovered_text_transfer.py",
+        "--allow-incomplete"
+      ],
+      "started_at": {
+        "utc": "2026-11-01T21:50:18.248251+00:00",
+        "melbourne": "2026-11-02T08:50:18.248251+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-01T21:50:18.276472+00:00",
+        "melbourne": "2026-11-02T08:50:18.276472+11:00"
+      },
+      "exit_code": 0,
+      "stdout": "Recovered prose integrity: 5217/5217 words (100.00%), 9/9 further batches; complete=True; no overlaps. Research incomplete; S4-B paused; level 4 deferred.\n",
+      "stderr": ""
+    }
+  ]
+}
