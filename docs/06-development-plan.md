@@ -2,6 +2,42 @@
 
 Stages are evidence gates, not promised dates. S5-S7 are conditional research paths, not guaranteed outcomes. Do not run a broad search before validating the diagnostics.
 
+## Current gate: physical-time solver after assessed admission
+
+Updated: 2026-11-02T10:46:38.389761+00:00 UTC; 2026-11-02T21:46:38.389761+11:00 Australia/Melbourne.
+
+The [workstation admission assessment](../reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md)
+is complete within its read-only scope: 31 endpoints, positive curvature in 24 trial
+directions, all numerical consistency gates passed, substantial domain sensitivity
+retained. It does not close nonlinear physical-time evolution or full stability.
+Implement the consistent action/constraint evolution, verify simple waves and low-Q
+controls with spatial/time/domain convergence, then assess a provisional larger-domain
+Q17 free-flight reference. Keep Q19 as a comparison, Q18's linked finding and Q22's
+cable regression. High speeds require contracted-field resolution and verified boundaries.
+The assessment's precise next gates and curvature-baseline recording gap are authoritative.
+
+**Return afterwards to Q18 fresh fine-grid/conditioning and additional Q values**,
+including the optional Q20/Q24 comparisons already recorded. Charged/electron-model
+acceptance remains deferred; this recommendation does not launch a new campaign.
+
+## Current priority: neutral physical-time dynamics admission
+
+Updated: 2026-11-02T08:48:53.481631+00:00 UTC; 2026-11-02T19:48:53.481631+11:00 Australia/Melbourne.
+
+The maintainer has requested motion-at-speed assessment after merged PR50. Follow
+[ADR-0009](decisions/ADR-0009-neutral-dynamics-admission.md): specify the complete
+[neutral relativistic action](models/SF-relativistic.md), execute read-only admission
+on the 31 retained endpoints, validate low-Q physical-time evolution, then run one
+selected higher-Q free-flight benchmark with mesh/time/domain controls. The present
+[workstation package](plans/sf-dynamics-admission.md) implements admission diagnostics,
+not nonlinear time evolution. Charged dynamics stays deferred under ADR-0008.
+
+**Return to Q18 fresh fine-start/conditioning controls and additional Q values after
+this dynamics tranche.** The historical next-task wording below is superseded in
+priority only: Q18's linked outcome and unsuccessful hyperbolic reproduction remain
+recorded, and optional Q20/Q24 comparisons remain available. No static stationarity
+or boost identity establishes electron behaviour.
+
 ## Current analytical milestone and requested Q follow-up
 
 Assessment update: 2026-11-01T21:45:24.287800+00:00 UTC; 2026-11-02T08:45:24.287800+11:00 Australia/Melbourne. The [Q18/neighbour campaign assessment](../reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md) supports bounded Q17/Q19 torus-branch benchmarks and a repeatable three-component Q18 linked outcome, while preserving unsuccessful hyperbolic reproduction. All four Q18 branches inherit a 97-grid start; a fresh fine-grid/conditioning comparison is the next focused diagnostic before attributing this result solely to Q. The optional additional-Q controls remain available in the follow-up plan. Scalar stationarity and finite diagrams do not establish charged particles or physical-time stability.

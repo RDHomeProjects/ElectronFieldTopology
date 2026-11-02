@@ -22,6 +22,16 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
+The [31-endpoint neutral-dynamics assessment](reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md)
+finds positive curvature in the sampled trial directions and significant finite-domain
+stress sensitivity. Physical-time solver implementation and low-Q verification are
+next; no evolved moving-soliton trajectory is claimed.
+
+The [neutral dynamics specification](docs/models/SF-relativistic.md) and
+[workstation admission run](docs/plans/sf-dynamics-admission.md) prepare motion-at-speed
+assessment of the retained static fields. These tools assess stress, boosts and selected
+perturbations; a nonlinear physical-time soliton solver remains to be implemented.
+
 The [Q18/Q17/Q19 assessment](reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md) audits 31 stationary workstation endpoints. Q17/Q19 support the selected K(7,2) branches within tested finite-grid/domain/diagram limits. Four Q18 coarse-start branches retain three-component links; the published hyperbolic local minimum remains unreproduced. Fresh fine-grid Q18 starts remain a specific unresolved control.
 
 The merged [fresh Q22 assessment](reports/s5-a/q22-fresh-20261101T102757+1100/ASSESSMENT.md) supports its bounded numerical benchmark. The subsequent [charged-model equation audit](reports/charged-model-audit-20261101/README.md) defers charged dynamics. Earlier [partial workstation records](reports/s5-a/workstation-2026-11-01/README.md) remain historical evidence. Static neutral knots do not establish electron properties.
