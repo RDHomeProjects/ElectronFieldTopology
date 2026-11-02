@@ -35,3 +35,5 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 [Tightened milestones after workstation continuation](ADR-0007-tightened-milestones.md): bounded Q22 closure, preserved Q18 alternative, then a charged relativistic equation audit rather than a larger Q catalogue.
 
 - [ADR-0009: neutral dynamics admission before free flight](ADR-0009-neutral-dynamics-admission.md).
+
+- [ADR-0010: physical-time reference and offline renderer](ADR-0010-physical-time-and-offline-renderer.md).

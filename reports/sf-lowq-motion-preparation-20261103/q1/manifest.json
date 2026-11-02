@@ -1,0 +1,30 @@
+{
+  "started_at": {
+    "utc": "2026-11-02T15:13:27.465290+00:00",
+    "melbourne": "2026-11-03T02:13:27.465290+11:00"
+  },
+  "config_sha256": "03630dbce350208851706ada29b5c83acd23599fa09c45eb217d044860bab871",
+  "code_sha256": "624ef325f80b6cc5fd52fe4832a056890541d03b00ef3fb2200ca90686c322fb",
+  "code_hashes": {
+    "sf_readmission.py": "44f6e84f5b1f5b492576f332e862f5ec983a9fc263dd943cdbe2edaaaf282141",
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+  },
+  "model": "SF-relativistic-neutral-v1",
+  "scheme": "D4-action-projected-RK4-v1",
+  "config": {
+    "q": 1,
+    "nodes": 49,
+    "length": 12.0,
+    "seed_scale": 1.6,
+    "seed_cutoff": 4.8,
+    "relative_force_l2": 0.001,
+    "acceleration_max": 0.01,
+    "charge_relative_error": 0.05,
+    "iterations_per_pass": 100,
+    "checkpoint_every": 25,
+    "stagnation_relative_energy": 1e-10
+  },
+  "scope": "Dissipative readmission to the time lattice action; optimization iteration is not physical time."
+}

@@ -1,0 +1,20 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-02T12:43:33.279143+00:00",
+    "melbourne": "2026-11-02T23:43:33.279143+11:00"
+  },
+  "targeted_tests": {
+    "passed": 38,
+    "seconds": 8.5,
+    "command": "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 uv run --frozen pytest -q tests/test_sf_time.py tests/test_sf_renderer.py tests/test_sf_dynamics.py"
+  },
+  "numerical_controls": "control-verification.json",
+  "export_independence": "export-invariance.json",
+  "basic_renderer": "render-verification.json",
+  "economy_renderer": "economy-render-verification.json",
+  "browser_controls": "browser-control-verification.json",
+  "documentation_files_checked": 107,
+  "whitespace_check_passed": true,
+  "native_browser_tested": false,
+  "scope": "CPU reference solver and basic offline visualization; stationary soliton motion, isolated confinement and electron acceptance remain open."
+}

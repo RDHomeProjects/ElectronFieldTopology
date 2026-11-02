@@ -1,0 +1,118 @@
+{
+  "started_at": {
+    "utc": "2026-11-02T12:28:18.697206+00:00",
+    "melbourne": "2026-11-02T23:28:18.697206+11:00"
+  },
+  "model_id": "SF-relativistic-neutral-v1",
+  "scheme": "D4-action-projected-RK4-v1",
+  "physics": {
+    "case_id": "wave-renderer-trial",
+    "grid": [
+      25,
+      25,
+      25
+    ],
+    "lengths": [
+      6.283185307179586,
+      6.283185307179586,
+      6.283185307179586
+    ],
+    "boundary": "periodic",
+    "dt": 0.02,
+    "steps": 75,
+    "diagnostic_every": 1,
+    "checkpoint_every": 15,
+    "initial": {
+      "kind": "wave",
+      "modes": [
+        {
+          "amplitude": 0.35,
+          "wave_numbers": [
+            1,
+            0,
+            0
+          ],
+          "phase": 0.0
+        },
+        {
+          "amplitude": 0.2,
+          "wave_numbers": [
+            0,
+            1,
+            0
+          ],
+          "phase": 1.1
+        },
+        {
+          "amplitude": 0.12,
+          "wave_numbers": [
+            0,
+            0,
+            1
+          ],
+          "phase": 0.6
+        }
+      ]
+    }
+  },
+  "physics_sha256": "19759e0ad8178539eb24213f7e6a7c674b5b69aa9c613e7e405e678ae983dd3a",
+  "physics_source_sha256": {
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+    "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+    "sf_time_run.py": "fe49c7f3c66e821e84a06d7f6b462f1b5f811a457129c75c11e5b6abf4af8251",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+  },
+  "code_sha256": "06b975e2de53a2c87a952359ec168f80ca1813449c87c178a3d12866e22e0f23",
+  "git_commit": "59b152b0fcf60e03866f443aa68cab65106ef245",
+  "git_worktree_dirty": true,
+  "preview_profile_sha256": "3e89f002cb6e0f70ea1eab0425735bb898ca44951743b2aa888ece388b5a14d9",
+  "preview_profile": {
+    "export": {
+      "enabled": true,
+      "every_steps": 3,
+      "grid": [
+        17,
+        17,
+        17
+      ],
+      "fields": [
+        "field",
+        "energy_density",
+        "energy_flux"
+      ],
+      "case_ids": [],
+      "solver_grids": [],
+      "vtk": true
+    },
+    "presentation": {
+      "frame_stride": 1,
+      "max_frames": 26,
+      "grid": [
+        17,
+        17,
+        17
+      ],
+      "colors": 16,
+      "colormap": "viridis",
+      "color_field": "field",
+      "component": 0,
+      "iso_fraction": 0.3,
+      "fps": 10,
+      "elevation": 24.0,
+      "azimuth": -55.0,
+      "width": 1100,
+      "height": 650,
+      "max_triangles": 12000
+    }
+  },
+  "initial": {
+    "kind": "wave"
+  },
+  "preview_source_sha256": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "scope": "Neutral physical-time reference; no charged model, full soliton stability or electron claim."
+}

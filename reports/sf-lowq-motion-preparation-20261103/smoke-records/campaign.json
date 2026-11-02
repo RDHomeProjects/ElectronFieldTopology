@@ -1,0 +1,571 @@
+{
+  "started_at": {
+    "utc": "2026-11-02T15:19:56.797721+00:00",
+    "melbourne": "2026-11-03T02:19:56.797721+11:00"
+  },
+  "config_sha256": "a0bc550b76b4ff7a3954dc1bfbb93bbfb40979616e1492f951fdfde7cffc93f3",
+  "source_sha256": {
+    "sf_lowq_motion.py": "6e3939923cd02ee895da3d330aa5f996e27696fdb7a07746bd040a4c97bc0227",
+    "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+    "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+    "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+  },
+  "seeds": {
+    "q1-n17-L8": {
+      "started_at": {
+        "utc": "2026-11-02T15:19:56.801902+00:00",
+        "melbourne": "2026-11-03T02:19:56.801902+11:00"
+      },
+      "finished_at": {
+        "utc": "2026-11-02T15:19:56.948376+00:00",
+        "melbourne": "2026-11-03T02:19:56.948376+11:00"
+      },
+      "status": "topology_unresolved",
+      "reason": null,
+      "q_label": 1,
+      "initial": {
+        "recorded_at": {
+          "utc": "2026-11-02T15:19:56.854876+00:00",
+          "melbourne": "2026-11-03T02:19:56.854876+11:00"
+        },
+        "iteration": 0,
+        "pass_index": 0,
+        "energy": 1.4205150027171844,
+        "relative_force_l2": 0.8217947553502909,
+        "acceleration_max": 6.114678899499532,
+        "acceleration_rms": 0.7935344228517747,
+        "minimum_corner_cone": 0.17301839231237792,
+        "hopf_integral": -0.6990441989417764,
+        "unit_error": 4.440892098500626e-16,
+        "max_neighbour_angle": 1.7065099725075048,
+        "mean_topological_b": [
+          -7.429984269656914e-19,
+          6.2890839494776745e-18,
+          -0.0037757328636349678
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "final": {
+        "energy": 1.4205150027171844,
+        "relative_force_l2": 0.8217947553502909,
+        "acceleration_max": 6.114678899499532,
+        "acceleration_rms": 0.7935344228517747,
+        "minimum_corner_cone": 0.17301839231237792,
+        "hopf_integral": -0.6990441989417764,
+        "unit_error": 4.440892098500626e-16,
+        "max_neighbour_angle": 1.7065099725075048,
+        "mean_topological_b": [
+          -7.429984269656914e-19,
+          6.2890839494776745e-18,
+          -0.0037757328636349678
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "iterations": 0,
+      "passes": 0,
+      "wall_seconds": 0.14649630600024466,
+      "field_sha256": "38af07175665583abf24a5ca7e9eaf51db728c860ad7838f6dd49f75083d3dbe",
+      "scope": "Finite lattice stationarity and approximate Hopf quadrature only; no integer certificate or stability proof."
+    }
+  },
+  "seed_configs": {
+    "q1-n17-L8": {
+      "q": 1,
+      "nodes": 17,
+      "length": 8.0,
+      "seed_scale": 1.1,
+      "seed_cutoff": 3.2
+    }
+  },
+  "cases": {
+    "q1-n17-L8-b0-a0-dt0.01": {
+      "id": "q1-n17-L8-b0-a0-dt0.01",
+      "beta": 0.0,
+      "axis": 0,
+      "q": 1,
+      "seed_id": "q1-n17-L8",
+      "physical": {
+        "case_id": "q1-n17-L8-b0-a0-dt0.01",
+        "grid": [
+          17,
+          17,
+          17
+        ],
+        "lengths": [
+          8.0,
+          8.0,
+          8.0
+        ],
+        "boundary": "fixed",
+        "dt": 0.01,
+        "steps": 2,
+        "diagnostic_every": 5,
+        "checkpoint_every": 10,
+        "initial": {
+          "kind": "lattice_checkpoint",
+          "path": "/workspace/scratch/a825e53302cb/sf-motion/artifacts/lowq-smoke-verified/readmission/q1-n17-L8/latest.npz",
+          "sha256": "38af07175665583abf24a5ca7e9eaf51db728c860ad7838f6dd49f75083d3dbe",
+          "expected_q": 1
+        }
+      },
+      "status": "complete",
+      "attempts": [
+        "/workspace/scratch/a825e53302cb/sf-motion/artifacts/lowq-smoke-verified/cases/q1-n17-L8-b0-a0-dt0.01/attempt-001"
+      ],
+      "result": {
+        "started_at": {
+          "utc": "2026-11-02T15:19:57.011310+00:00",
+          "melbourne": "2026-11-03T02:19:57.011310+11:00"
+        },
+        "finished_at": {
+          "utc": "2026-11-02T15:19:57.358426+00:00",
+          "melbourne": "2026-11-03T02:19:57.358426+11:00"
+        },
+        "status": "complete",
+        "step": 2,
+        "time": 0.02,
+        "physics_sha256": "9b6ec460a3e2946b3bbeb0713182a5de43b17c910e704f2443de8452733749c0",
+        "state_sha256": "22cdb9b9c4e177596ae4997c2d3fa8a4b8c43fd2b3f5b7bac2d53ca72e55a160",
+        "initial": {
+          "energy": 1.4205150027171847,
+          "continuum_energy": 1.2969153769796917,
+          "momentum": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "centroid": [
+            1.6565306138397174e-17,
+            -1.6165814791355632e-17,
+            5.6670284098109386e-18
+          ],
+          "rms_radius": 1.9885652590381182,
+          "source_power": 0.0,
+          "source_force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boundary": "fixed_reflecting"
+        },
+        "final": {
+          "energy": 1.4205150026283897,
+          "continuum_energy": 1.2974450823945087,
+          "momentum": [
+            -1.9405066266912483e-18,
+            2.353791274855344e-19,
+            -1.62165038582779e-19
+          ],
+          "unit_error": 2.220446049250313e-16,
+          "tangency_error": 6.938893903907228e-18,
+          "centroid": [
+            3.2293552478412123e-17,
+            -1.5719524252627017e-17,
+            -1.4381217248900394e-18
+          ],
+          "rms_radius": 1.98893549111903,
+          "source_power": 0.0,
+          "source_force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boundary": "fixed_reflecting"
+        },
+        "max_energy_balance_relative_defect": 6.250899934591099e-11,
+        "max_unit_error": 4.440892098500626e-16,
+        "max_tangency_error": 6.938893903907228e-18,
+        "wall_seconds": 0.3474372340001537,
+        "preview_frames": 2,
+        "scope": "Neutral physical-time reference; no charged model, full soliton stability or electron claim."
+      },
+      "initial": {
+        "continuum_energy": 1.2969153769796917,
+        "centroid": [
+          1.6565306138397174e-17,
+          -1.6165814791355632e-17,
+          5.6670284098109386e-18
+        ],
+        "radius_99": 3.082207001484488,
+        "boundary_shell_width": 1.0,
+        "boundary_shell_energy_fraction": 0.020875308195181356,
+        "initial_light_cone_clearance": 0.917792998515512,
+        "hopf_integral": -0.6990441989417764,
+        "minimum_corner_cone": 0.17301839231237792,
+        "mean_topological_b": [
+          -7.429984269656914e-19,
+          6.2890839494776745e-18,
+          -0.0037757328636349678
+        ],
+        "topology_scope": "Anisotropic-grid Coulomb quadrature, periodic auxiliary inversion of a fixed-box field; not an exact integer certificate.",
+        "rest_continuum_energy": 1.2969153769796917,
+        "rest_integrated_stress": [
+          [
+            -0.09260036111527424,
+            -3.317046368716232e-18,
+            -1.3077262263320338e-18
+          ],
+          [
+            -4.175103979174639e-18,
+            -0.09260036111527448,
+            -1.1000309176412969e-17
+          ],
+          [
+            3.970986409679216e-18,
+            -9.565435363764184e-18,
+            -0.1395376272290527
+          ]
+        ],
+        "finite_box_tensor_energy": 1.2969153769796917,
+        "finite_box_tensor_momentum": [
+          0.0,
+          -0.0,
+          -0.0
+        ]
+      },
+      "assessment": {
+        "time": 0.02,
+        "fitted_centroid_velocity": [
+          7.864123170007479e-16,
+          2.231452693643057e-17,
+          -3.552575067350489e-16
+        ],
+        "expected_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "speed_absolute_error": 8.632208098363273e-16,
+        "speed_relative_error": null,
+        "translated_static_field_relative_l2": 0.0005658003279006029,
+        "max_energy_relative_drift": 6.250899934591099e-11,
+        "max_momentum_drift_over_initial_energy": 1.3807985668505442e-18,
+        "final": {
+          "continuum_energy": 1.2974450823945087,
+          "centroid": [
+            3.2293552478412123e-17,
+            -1.5719524252627017e-17,
+            -1.4381217248900394e-18
+          ],
+          "radius_99": 3.082207001484488,
+          "boundary_shell_width": 1.0,
+          "boundary_shell_energy_fraction": 0.020947731591961474,
+          "initial_light_cone_clearance": 0.917792998515512,
+          "hopf_integral": -0.6989351602384618,
+          "minimum_corner_cone": 0.17284970844364123,
+          "mean_topological_b": [
+            1.5156026109433707e-18,
+            -3.021270136573194e-18,
+            -0.003800046569265024
+          ],
+          "topology_scope": "Anisotropic-grid Coulomb quadrature, periodic auxiliary inversion of a fixed-box field; not an exact integer certificate."
+        },
+        "checks": {
+          "energy": true,
+          "momentum": true,
+          "constraints": true,
+          "shape": true,
+          "speed": true,
+          "topology": false,
+          "tail": false,
+          "initial_particle_relations": true,
+          "initial_boundary_clearance": true
+        },
+        "bounded_case_gates_pass": false,
+        "scope": "Bounded fixed-box motion diagnostics. Case pass is insufficient without temporal, spatial and domain convergence.",
+        "rest_admitted": false,
+        "initial_particle_energy_relative_defect": 0.0,
+        "initial_particle_momentum_scaled_defect": 0.0,
+        "initial_tensor_energy_relative_defect": 0.0,
+        "initial_tensor_momentum_scaled_defect": 0.0,
+        "initial_light_cone_margin_after_observation": 0.897792998515512
+      },
+      "final_checkpoint_sha256": "e23d1ec01c59278ec0225d292c2843e59fe23f9fea702c05099e77f600ae52a6"
+    },
+    "q1-n17-L8-b0-a0-dt0.005": {
+      "id": "q1-n17-L8-b0-a0-dt0.005",
+      "beta": 0.0,
+      "axis": 0,
+      "q": 1,
+      "seed_id": "q1-n17-L8",
+      "physical": {
+        "case_id": "q1-n17-L8-b0-a0-dt0.005",
+        "grid": [
+          17,
+          17,
+          17
+        ],
+        "lengths": [
+          8.0,
+          8.0,
+          8.0
+        ],
+        "boundary": "fixed",
+        "dt": 0.005,
+        "steps": 4,
+        "diagnostic_every": 5,
+        "checkpoint_every": 10,
+        "initial": {
+          "kind": "lattice_checkpoint",
+          "path": "/workspace/scratch/a825e53302cb/sf-motion/artifacts/lowq-smoke-verified/readmission/q1-n17-L8/latest.npz",
+          "sha256": "38af07175665583abf24a5ca7e9eaf51db728c860ad7838f6dd49f75083d3dbe",
+          "expected_q": 1
+        }
+      },
+      "status": "complete",
+      "attempts": [
+        "/workspace/scratch/a825e53302cb/sf-motion/artifacts/lowq-smoke-verified/cases/q1-n17-L8-b0-a0-dt0.005/attempt-001"
+      ],
+      "result": {
+        "started_at": {
+          "utc": "2026-11-02T15:19:57.441991+00:00",
+          "melbourne": "2026-11-03T02:19:57.441991+11:00"
+        },
+        "finished_at": {
+          "utc": "2026-11-02T15:19:58.051448+00:00",
+          "melbourne": "2026-11-03T02:19:58.051448+11:00"
+        },
+        "status": "complete",
+        "step": 4,
+        "time": 0.02,
+        "physics_sha256": "aad7a9000be3642d8fda6e24bf08a68251247d8e8508ffd5e0e1d2dd6767f2a8",
+        "state_sha256": "fb8146281d13b304b39eaebe5eb1cb4652ef1ff10f0820ab76ff373bb2514c0c",
+        "initial": {
+          "energy": 1.4205150027171847,
+          "continuum_energy": 1.2969153769796917,
+          "momentum": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "centroid": [
+            1.6565306138397174e-17,
+            -1.6165814791355632e-17,
+            5.6670284098109386e-18
+          ],
+          "rms_radius": 1.9885652590381182,
+          "source_power": 0.0,
+          "source_force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boundary": "fixed_reflecting"
+        },
+        "final": {
+          "energy": 1.420515002712397,
+          "continuum_energy": 1.297445082491345,
+          "momentum": [
+            2.218604240225449e-18,
+            -2.3572825070823983e-20,
+            2.3037216736820036e-19
+          ],
+          "unit_error": 2.220446049250313e-16,
+          "tangency_error": 6.938893903907228e-18,
+          "centroid": [
+            5.721555171745225e-17,
+            -1.7214035688045755e-17,
+            -2.3549771437180003e-18
+          ],
+          "rms_radius": 1.9889354911946384,
+          "source_power": 0.0,
+          "source_force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boundary": "fixed_reflecting"
+        },
+        "max_energy_balance_relative_defect": 3.3704154917304524e-12,
+        "max_unit_error": 4.440892098500626e-16,
+        "max_tangency_error": 6.938893903907228e-18,
+        "wall_seconds": 0.609746155999801,
+        "preview_frames": 3,
+        "scope": "Neutral physical-time reference; no charged model, full soliton stability or electron claim."
+      },
+      "initial": {
+        "continuum_energy": 1.2969153769796917,
+        "centroid": [
+          1.6565306138397174e-17,
+          -1.6165814791355632e-17,
+          5.6670284098109386e-18
+        ],
+        "radius_99": 3.082207001484488,
+        "boundary_shell_width": 1.0,
+        "boundary_shell_energy_fraction": 0.020875308195181356,
+        "initial_light_cone_clearance": 0.917792998515512,
+        "hopf_integral": -0.6990441989417764,
+        "minimum_corner_cone": 0.17301839231237792,
+        "mean_topological_b": [
+          -7.429984269656914e-19,
+          6.2890839494776745e-18,
+          -0.0037757328636349678
+        ],
+        "topology_scope": "Anisotropic-grid Coulomb quadrature, periodic auxiliary inversion of a fixed-box field; not an exact integer certificate.",
+        "rest_continuum_energy": 1.2969153769796917,
+        "rest_integrated_stress": [
+          [
+            -0.09260036111527424,
+            -3.317046368716232e-18,
+            -1.3077262263320338e-18
+          ],
+          [
+            -4.175103979174639e-18,
+            -0.09260036111527448,
+            -1.1000309176412969e-17
+          ],
+          [
+            3.970986409679216e-18,
+            -9.565435363764184e-18,
+            -0.1395376272290527
+          ]
+        ],
+        "finite_box_tensor_energy": 1.2969153769796917,
+        "finite_box_tensor_momentum": [
+          0.0,
+          -0.0,
+          -0.0
+        ]
+      },
+      "assessment": {
+        "time": 0.02,
+        "fitted_centroid_velocity": [
+          2.032512278952754e-15,
+          -5.2411044834506313e-17,
+          -4.0110027767644693e-16
+        ],
+        "expected_velocity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "speed_absolute_error": 2.072374125119903e-15,
+        "speed_relative_error": null,
+        "translated_static_field_relative_l2": 0.0005658003374236855,
+        "max_energy_relative_drift": 3.3704154917304524e-12,
+        "max_momentum_drift_over_initial_energy": 1.5703158717214638e-18,
+        "final": {
+          "continuum_energy": 1.297445082491345,
+          "centroid": [
+            5.721555171745225e-17,
+            -1.7214035688045755e-17,
+            -2.3549771437180003e-18
+          ],
+          "radius_99": 3.082207001484488,
+          "boundary_shell_width": 1.0,
+          "boundary_shell_energy_fraction": 0.02094773159409338,
+          "initial_light_cone_clearance": 0.917792998515512,
+          "hopf_integral": -0.6989351602381978,
+          "minimum_corner_cone": 0.1728497084436225,
+          "mean_topological_b": [
+            8.797234720381106e-19,
+            1.3368582850062954e-17,
+            -0.0038000465693289113
+          ],
+          "topology_scope": "Anisotropic-grid Coulomb quadrature, periodic auxiliary inversion of a fixed-box field; not an exact integer certificate."
+        },
+        "checks": {
+          "energy": true,
+          "momentum": true,
+          "constraints": true,
+          "shape": true,
+          "speed": true,
+          "topology": false,
+          "tail": false,
+          "initial_particle_relations": true,
+          "initial_boundary_clearance": true
+        },
+        "bounded_case_gates_pass": false,
+        "scope": "Bounded fixed-box motion diagnostics. Case pass is insufficient without temporal, spatial and domain convergence.",
+        "rest_admitted": false,
+        "initial_particle_energy_relative_defect": 0.0,
+        "initial_particle_momentum_scaled_defect": 0.0,
+        "initial_tensor_energy_relative_defect": 0.0,
+        "initial_tensor_momentum_scaled_defect": 0.0,
+        "initial_light_cone_margin_after_observation": 0.897792998515512
+      },
+      "final_checkpoint_sha256": "2570efb2c064caa95a3acd3d35f507bd04de00f865ffbfc9cce1589c8c977ca8"
+    },
+    "q1-n17-L8-b0.1-a0-dt0.01": {
+      "id": "q1-n17-L8-b0.1-a0-dt0.01",
+      "beta": 0.1,
+      "axis": 0,
+      "q": 1,
+      "seed_id": "q1-n17-L8",
+      "physical": {
+        "case_id": "q1-n17-L8-b0.1-a0-dt0.01",
+        "grid": [
+          19,
+          17,
+          17
+        ],
+        "lengths": [
+          8.0,
+          8.0,
+          8.0
+        ],
+        "boundary": "fixed",
+        "dt": 0.01,
+        "steps": 2,
+        "diagnostic_every": 5,
+        "checkpoint_every": 10,
+        "initial": {
+          "kind": "boosted_lattice_checkpoint",
+          "path": "/workspace/scratch/a825e53302cb/sf-motion/artifacts/lowq-smoke-verified/readmission/q1-n17-L8/latest.npz",
+          "sha256": "38af07175665583abf24a5ca7e9eaf51db728c860ad7838f6dd49f75083d3dbe",
+          "expected_q": 1,
+          "beta": 0.1,
+          "axis": 0
+        }
+      },
+      "status": "skipped_unadmitted_rest"
+    },
+    "q1-n17-L8-b0.1-a0-dt0.005": {
+      "id": "q1-n17-L8-b0.1-a0-dt0.005",
+      "beta": 0.1,
+      "axis": 0,
+      "q": 1,
+      "seed_id": "q1-n17-L8",
+      "physical": {
+        "case_id": "q1-n17-L8-b0.1-a0-dt0.005",
+        "grid": [
+          19,
+          17,
+          17
+        ],
+        "lengths": [
+          8.0,
+          8.0,
+          8.0
+        ],
+        "boundary": "fixed",
+        "dt": 0.005,
+        "steps": 4,
+        "diagnostic_every": 5,
+        "checkpoint_every": 10,
+        "initial": {
+          "kind": "boosted_lattice_checkpoint",
+          "path": "/workspace/scratch/a825e53302cb/sf-motion/artifacts/lowq-smoke-verified/readmission/q1-n17-L8/latest.npz",
+          "sha256": "38af07175665583abf24a5ca7e9eaf51db728c860ad7838f6dd49f75083d3dbe",
+          "expected_q": 1,
+          "beta": 0.1,
+          "axis": 0
+        }
+      },
+      "status": "skipped_unadmitted_rest"
+    }
+  },
+  "status": "complete_pending_review",
+  "updated_at": {
+    "utc": "2026-11-02T15:19:58.101568+00:00",
+    "melbourne": "2026-11-03T02:19:58.101568+11:00"
+  }
+}

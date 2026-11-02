@@ -1,5 +1,7 @@
 # Research reports
 
+- [Physical-time solver and offline renderer verification](sf-time-renderer-20261102/README.md): actual wave/manufactured evolution, constraints, conservation/flux controls and independent display export.
+
 - [Assessed neutral SF dynamics admission](sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md): all 31 endpoints, finite-domain stress sensitivity, sampled positive curvature and explicit replay limits.
 
 - [Neutral SF dynamics admission preparation](sf-dynamics-admission-20261102/README.md): action/stress validation and a separate read-only workstation campaign; physical-time evolution pending.
@@ -27,3 +29,5 @@ Reports distinguish software correctness, numerical findings and physical claims
 - [S4-C bounded return-map diagnosis](s4-c/README.md): independently varied numerical controls, manufactured torus targets and a subsequent explicit model-feasibility decision.
 
 - [S5-A static validation and interrupted Jennings attempts](s5-a/README.md) — draft; non-torus reproductions unfinished.
+
+- [Low-Q stationary readmission and motion preparation](sf-lowq-motion-preparation-20261103/README.md)

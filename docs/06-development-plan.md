@@ -1,6 +1,35 @@
 # Staged development plan
 
+Current implementation update (UTC 2026-11-02T15:29:15.448567+00:00; Australia/Melbourne 2026-11-03T02:29:15.448567+11:00): the [stationary low-Q campaign](plans/sf-lowq-motion.md)
+is prepared for local execution. It gates boosted Q1/Q2 trajectories on measured
+readmission and compares time step, spatial mesh and box size. Full workstation
+results/review precede Q17/Q19 and the retained Q18/additional-Q return tranche.
+
+
 Stages are evidence gates, not promised dates. S5-S7 are conditional research paths, not guaranteed outcomes. Do not run a broad search before validating the diagnostics.
+
+## Current gate: stationary low-Q readmission after verified wave evolution
+
+Updated: 2026-11-02T12:37:39.053069+00:00 UTC; 2026-11-02T23:37:39.053069+11:00 Australia/Melbourne.
+
+[Physical-time solver and renderer delivery](../reports/sf-time-renderer-20261102/README.md)
+now supplies the initial CPU reference: constrained nonlinear evolution, analytical
+and independently manufactured wave controls, checkpoint/resume and offline display.
+The [renderer-owned profile](offline-renderer.md) determines only optional display
+exports and presentation. The physical calculation keeps its own grid, precision,
+steps, time resolution and scientific diagnostics; export-on/off state equality is tested.
+
+Next establish stationary Q1/Q2 readmission and boost benchmarks in the actual time
+solver's lattice action, then a refined provisional larger-domain Q17 moving reference
+with Q19 comparison. Quantify boundaries, energy/momentum/flux, centroid/localization,
+constraints and perturbations before high-speed or isolated-stability claims. The
+first renderer does not require concurrent solver/render execution. Its basic trial
+is a wave control, not a moving electron or an accepted soliton result.
+
+Keep **Q18 fresh fine-start/conditioning and additional-Q assessment** after this
+motion tranche, including optional Q20/Q24. Preserve unsuccessful hyperbolic reproduction
+and all finite-domain/partial findings. Charged dynamics remains deferred under ADR-0008.
+Older preparation and assessment priorities below are historical checkpoints.
 
 ## Current gate: physical-time solver after assessed admission
 
