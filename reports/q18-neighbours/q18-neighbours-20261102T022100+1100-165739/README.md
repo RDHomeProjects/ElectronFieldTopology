@@ -1,5 +1,7 @@
 # Q18 and neighbouring-Q workstation results
 
+Scientific assessment recorded: 2026-11-01T21:45:24.287800+00:00 UTC; 2026-11-02T08:45:24.287800+11:00 Australia/Melbourne. Read [ASSESSMENT.md](ASSESSMENT.md) for independently checked provenance, scalar/convergence gates, replayed diagrams/Gauss links, plotted finite curves and unresolved controls. The original evidence below remains intact; a stationary ledger is not by itself a hyperbolic reproduction claim.
+
 Published: 2026-11-01T21:35:15.268756+00:00 UTC; 2026-11-02T08:35:15.268756+11:00 Australia/Melbourne.
 
 Run commit: `c28323ee925371559218c2bc699e6d2804b796bf`.

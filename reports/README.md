@@ -1,5 +1,7 @@
 # Research reports
 
+- [Q18 basin and Q17/Q19 assessment](q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md): 31 stationary endpoints, finite torus-branch checks, robust tested Q18 links, unreproduced hyperbolic target and remaining start-grid confound.
+
 - [S1-A analytical Hopfion benchmark](s1-a/README.md): measured diagnostics, verification, provenance and interpretation.
 
 - [S2 independent Maxwell evolution](s2/README.md): periodic solver verification, convergence, boundary transport and limitations.

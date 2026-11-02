@@ -1,10 +1,12 @@
 # Project status
 
-Updated: 2026-11-01T15:07:15+00:00 UTC; 2026-11-02T02:07:15+11:00 Australia/Melbourne.
+Updated: 2026-11-01T21:45:24.287800+00:00 UTC; 2026-11-02T08:45:24.287800+11:00 Australia/Melbourne.
 
-## Current next run after PR49
+## Q18 and neighbouring-Q assessment for PR50
 
-PR48 merged the fresh Q22 assessment; PR49 merged the charged-model audit and explicit return to Q18/additional-Q comparisons. The [Q18/Q17/Q19 run tooling](plans/q18-neighbour-run.md) is prepared for local workstation execution, with [measured initial-seed admission](../reports/q18-neighbour-preparation-20261102/README.md). It includes one-factor Q18 controls, three fine meshes, matched-spacing domains, UTC/Melbourne timestamps and resumable passes without an overall time cap. Research results from this new campaign are not yet available. Preserve the existing Q18 linked alternative and failed hyperbolic reproduction. Charged dynamics remains deferred under ADR-0008. The records below are historical and do not override this current next step.
+PR48 merged the fresh Q22 assessment; PR49 merged the charged-model audit and return to Q18/additional-Q comparisons. [PR50](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/50) publishes the 31-stage campaign. Its [scientific assessment](../reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md) authenticates 36 passes, 72 recorded CPU endpoint audits, 89 analysis jobs and 504 hashed archive members, and replays 1,350 component diagrams and 360 Gauss samples from retained curves. All final scalar/dilation gates and all 18 mesh/domain energy comparisons pass. Q17/Q19 support their selected K(7,2) branches within the declared numerical limits. Q18 consistently retains three individually unknotted components with absolute pairwise links 1,2,2 in four tested branches; the hyperbolic target remains unreproduced.
+
+All Q18 branches start at 97 cubed and refine a coarse linked state; Q17/Q19 start at 129 cubed. Fresh finer-grid Q18 starts, and the earlier incomplete amplitude-1 fresh-193 conditioning attempt, remain specific unresolved controls. The assessment recommends those controls before attributing the difference solely to Q or running a wider catalogue. The [recorded post-audit plan](plans/post-audit-q-assessment.md) retains optional Q20/Q24 comparisons. Charged dynamics remains deferred under ADR-0008. No new run is launched by this assessment; historical records below do not override this current finding.
 
 ## Recovered analysis publication
 

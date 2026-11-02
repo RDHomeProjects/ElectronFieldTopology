@@ -22,7 +22,9 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-The [workstation GPU continuation record](reports/s5-a/workstation-2026-11-01/README.md) preserves the exact evidence and partial scientific outcome. Q22 retains a cable-compatible core but needs finer-grid stationarity and domain checks. Q18 reaches a stationary linked alternative rather than the target hyperbolic knot. Neither target is a completed reproduction. The [tightened milestone decision](docs/decisions/ADR-0007-tightened-milestones.md) prioritises bounded Q22 closure, then a charged relativistic equation audit.
+The [Q18/Q17/Q19 assessment](reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md) audits 31 stationary workstation endpoints. Q17/Q19 support the selected K(7,2) branches within tested finite-grid/domain/diagram limits. Four Q18 coarse-start branches retain three-component links; the published hyperbolic local minimum remains unreproduced. Fresh fine-grid Q18 starts remain a specific unresolved control.
+
+The merged [fresh Q22 assessment](reports/s5-a/q22-fresh-20261101T102757+1100/ASSESSMENT.md) supports its bounded numerical benchmark. The subsequent [charged-model equation audit](reports/charged-model-audit-20261101/README.md) defers charged dynamics. Earlier [partial workstation records](reports/s5-a/workstation-2026-11-01/README.md) remain historical evidence. Static neutral knots do not establish electron properties.
 
 S5-A provides a [static Skyrme–Faddeev reference](docs/models/SF-J2015-static.md), independent simple controls, a [paired CPU/GPU timing harness](docs/static-gpu-timing.md) and a [checkpointed local campaign](docs/static-gpu-continuation.md). Maintainer-reported RTX 2080 Super Max-Q float64 timings show about 4.5x short-solve speedup over twelve CPU threads after numerical checks; raw timing artifacts have not been independently retrieved. No physical-time solver or electron model is claimed.
 
