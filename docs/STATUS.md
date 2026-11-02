@@ -1,6 +1,26 @@
 # Project status
 
-Updated: 2026-11-01T21:45:24.287800+00:00 UTC; 2026-11-02T08:45:24.287800+11:00 Australia/Melbourne.
+Updated: 2026-11-02T10:46:38.389761+00:00 UTC; 2026-11-02T21:46:38.389761+11:00 Australia/Melbourne.
+
+## Neutral dynamics admission: workstation assessment complete
+
+Assessed: 2026-11-02T10:46:38.389761+00:00 UTC; 2026-11-02T21:46:38.389761+11:00 Australia/Melbourne.
+
+The [31-endpoint assessment](../reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md)
+authenticates all 36 archive members, replays 558 formal boost rows and checks 24
+positive reported trial directions at three amplitudes. All recorded numerical
+consistency gates pass. Integrated stress remains sensitive to box size: at matched
+h=.096, Q17/Q18-baseline/Q19 stress norms fall by 77%/63%/70% on the larger domain,
+while energies change by about .3%. This is not a physical-time trajectory or full
+stability result. The omitted native central curvature energy and the resulting
+absolute-replay limitation are explicitly recorded.
+
+**Next implementation:** independently validated neutral physical-time evolution,
+starting with vacuum/wave controls and Q1/Q2, then a provisional larger-domain Q17
+free-flight reference with Q19 comparison and proper boundary/resolution checks.
+Retain the observed linked Q18 alternative; its published hyperbolic target remains
+unreproduced. Return to fresh fine-start/conditioning and additional-Q controls after
+this dynamics tranche. Charged dynamics stays deferred under ADR-0008.
 
 ## Neutral dynamics: specification and workstation admission prepared
 

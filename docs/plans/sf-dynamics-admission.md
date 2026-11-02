@@ -63,3 +63,17 @@ Scientific stress/curvature findings remain data regardless of those software ch
 Only then choose the first higher-Q moving candidate and finish the physical-time
 solver validation gates. This instrument does not establish a run duration in physical
 seconds, a new solution, causality for arbitrary data, or electron behaviour.
+
+
+## Completed workstation tranche
+
+Assessed: 2026-11-02T10:46:38.389761+00:00 UTC; 2026-11-02T21:46:38.389761+11:00 Australia/Melbourne.
+
+The [retained result and assessment](../../reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md)
+record 31/31 endpoints with zero numerical failures and about 74 minutes of admission
+analysis. The next step is physical-time solver implementation and low-Q verification,
+not a repeat of this entire admission campaign. Preserve all stress/domain findings.
+Future curvature output must explicitly record the native central energy used in its
+finite differences; this run omits it, limiting independent absolute replay. Actual
+moving evolution, enlarged-domain perturbation coverage and Q18/additional-Q follow-up
+remain open as described in the assessment.

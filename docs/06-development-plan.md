@@ -2,6 +2,24 @@
 
 Stages are evidence gates, not promised dates. S5-S7 are conditional research paths, not guaranteed outcomes. Do not run a broad search before validating the diagnostics.
 
+## Current gate: physical-time solver after assessed admission
+
+Updated: 2026-11-02T10:46:38.389761+00:00 UTC; 2026-11-02T21:46:38.389761+11:00 Australia/Melbourne.
+
+The [workstation admission assessment](../reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md)
+is complete within its read-only scope: 31 endpoints, positive curvature in 24 trial
+directions, all numerical consistency gates passed, substantial domain sensitivity
+retained. It does not close nonlinear physical-time evolution or full stability.
+Implement the consistent action/constraint evolution, verify simple waves and low-Q
+controls with spatial/time/domain convergence, then assess a provisional larger-domain
+Q17 free-flight reference. Keep Q19 as a comparison, Q18's linked finding and Q22's
+cable regression. High speeds require contracted-field resolution and verified boundaries.
+The assessment's precise next gates and curvature-baseline recording gap are authoritative.
+
+**Return afterwards to Q18 fresh fine-grid/conditioning and additional Q values**,
+including the optional Q20/Q24 comparisons already recorded. Charged/electron-model
+acceptance remains deferred; this recommendation does not launch a new campaign.
+
 ## Current priority: neutral physical-time dynamics admission
 
 Updated: 2026-11-02T08:48:53.481631+00:00 UTC; 2026-11-02T19:48:53.481631+11:00 Australia/Melbourne.

@@ -1,0 +1,862 @@
+{
+  "assessed_at": {
+    "utc": "2026-11-02T10:41:22.656985+00:00",
+    "melbourne": "2026-11-02T21:41:22.656985+11:00"
+  },
+  "verification_started_at": {
+    "utc": "2026-11-02T10:41:22.639000+00:00",
+    "melbourne": "2026-11-02T21:41:22.639000+11:00"
+  },
+  "archive_sha256": "d46a8daddc4c975c89e9dd757ff638b319281138376314d298965074ab785804",
+  "archive_members": 36,
+  "hashed_members": 35,
+  "run_commit": "c515631f4420bf5295ac52195cb9eb7b8b6142ca",
+  "expected_run_tree": "f0decf05a33947b8ebcc761e2e1838471b66cb4f",
+  "source_tree_verification": "Reconstructed from the exact saved handoff; UPDATE.sh compares the workstation run commit tree before applying.",
+  "endpoint_count": 31,
+  "boost_rows_replayed": 558,
+  "curvature_directions": 24,
+  "curvature_amplitude_records_checked": 72,
+  "base_free_curvature_differences_replayed": 54,
+  "native_baseline_consistency": [
+    {
+      "stage": "q1-control",
+      "inferred_native_baseline": 1.235913869585119,
+      "native_baseline_spread": 0.0,
+      "difference_from_original_energy": -6.17061957086662e-13,
+      "scope": "Inferred from recorded second variations, not an independent E0 calculation."
+    },
+    {
+      "stage": "q2-control",
+      "inferred_native_baseline": 2.0118537450624467,
+      "native_baseline_spread": 0.0,
+      "difference_from_original_energy": -9.325873406851315e-13,
+      "scope": "Inferred from recorded second variations, not an independent E0 calculation."
+    },
+    {
+      "stage": "q22-control",
+      "inferred_native_baseline": 12.591379749699932,
+      "native_baseline_spread": 0.0,
+      "difference_from_original_energy": -2.829025902428839e-11,
+      "scope": "Inferred from recorded second variations, not an independent E0 calculation."
+    },
+    {
+      "stage": "q18-baseline-193",
+      "inferred_native_baseline": 10.905551049188,
+      "native_baseline_spread": 0.0,
+      "difference_from_original_energy": -1.1853806825001811e-10,
+      "scope": "Inferred from recorded second variations, not an independent E0 calculation."
+    },
+    {
+      "stage": "q17-neighbour-193",
+      "inferred_native_baseline": 10.988328328376248,
+      "native_baseline_spread": 0.0,
+      "difference_from_original_energy": -1.2462031406812457e-10,
+      "scope": "Inferred from recorded second variations, not an independent E0 calculation."
+    },
+    {
+      "stage": "q19-neighbour-193",
+      "inferred_native_baseline": 12.04872367945157,
+      "native_baseline_spread": 0.0,
+      "difference_from_original_energy": -1.1369394314897363e-10,
+      "scope": "Inferred from recorded second variations, not an independent E0 calculation."
+    }
+  ],
+  "positive_trial_directions": 24,
+  "maximum_curvature_epsilon_relative_spread": 7.524919719337846e-07,
+  "numerical_maxima": {
+    "published_energy_relative_error": 2.886579864025407e-15,
+    "stress_trace_relative_error": 1.1396179801844336e-15,
+    "direct_boost_relative_error": 2.1224541565413364e-15,
+    "tensor_symmetry_over_energy": 2.5720517111515446e-17,
+    "mass_squared_identity_error": 2.6645352591003757e-15,
+    "curvature_difference_replay_absolute_error": 0.0
+  },
+  "metrics": [
+    {
+      "stage": "q1-control",
+      "n": 65,
+      "h": 0.24,
+      "energy": 1.2359138695857372,
+      "stress_over_energy": 0.004044042319055993,
+      "outer_energy_fraction": 0.0029224135527083847,
+      "max_beta09_energy_defect": 0.00231000898017375,
+      "max_beta09_momentum_scaled_defect": 0.002566676644637353,
+      "kinetic_condition": 1.644626934258871,
+      "rms_radius": 1.864828919933485
+    },
+    {
+      "stage": "q2-control",
+      "n": 65,
+      "h": 0.24,
+      "energy": 2.01185374506338,
+      "stress_over_energy": 0.002298872268966959,
+      "outer_energy_fraction": 0.0013189179837846765,
+      "max_beta09_energy_defect": 0.0015396958632258873,
+      "max_beta09_momentum_scaled_defect": 0.0017107731813620069,
+      "kinetic_condition": 2.962180218260311,
+      "rms_radius": 2.1763062732631417
+    },
+    {
+      "stage": "q22-control",
+      "n": 129,
+      "h": 0.12,
+      "energy": 12.591379749728212,
+      "stress_over_energy": 0.022240400513034334,
+      "outer_energy_fraction": 0.012905125631205936,
+      "max_beta09_energy_defect": 0.013073634248924826,
+      "max_beta09_momentum_scaled_defect": 0.01452626027661889,
+      "kinetic_condition": 3.817073834719185,
+      "rms_radius": 3.5823725153781796
+    },
+    {
+      "stage": "q18-baseline-97",
+      "n": 97,
+      "h": 0.16,
+      "energy": 10.944919930712963,
+      "stress_over_energy": 0.020183195810969393,
+      "outer_energy_fraction": 0.01001946880731329,
+      "max_beta09_energy_defect": 0.016257316087011642,
+      "max_beta09_momentum_scaled_defect": 0.01806445456317628,
+      "kinetic_condition": 5.631163854956,
+      "rms_radius": 3.5442216394566834
+    },
+    {
+      "stage": "q17-neighbour-129",
+      "n": 129,
+      "h": 0.12,
+      "energy": 11.001911455714595,
+      "stress_over_energy": 0.015999481500732847,
+      "outer_energy_fraction": 0.009663598033501707,
+      "max_beta09_energy_defect": 0.010833528739507825,
+      "max_beta09_momentum_scaled_defect": 0.01203725728865016,
+      "kinetic_condition": 4.364066560839279,
+      "rms_radius": 3.7418744295715847
+    },
+    {
+      "stage": "q19-neighbour-129",
+      "n": 129,
+      "h": 0.12,
+      "energy": 12.063230570579304,
+      "stress_over_energy": 0.015295873104220151,
+      "outer_energy_fraction": 0.00994830764634214,
+      "max_beta09_energy_defect": 0.00853470097809228,
+      "max_beta09_momentum_scaled_defect": 0.009504172914742103,
+      "kinetic_condition": 4.521277667188071,
+      "rms_radius": 3.9161087386766678
+    },
+    {
+      "stage": "q18-scale35-97",
+      "n": 97,
+      "h": 0.16,
+      "energy": 10.945158017343164,
+      "stress_over_energy": 0.020406133169872217,
+      "outer_energy_fraction": 0.010101529726228011,
+      "max_beta09_energy_defect": 0.016441033944652128,
+      "max_beta09_momentum_scaled_defect": 0.018268321784991874,
+      "kinetic_condition": 5.636887252227293,
+      "rms_radius": 3.544180873286552
+    },
+    {
+      "stage": "q18-scale45-97",
+      "n": 97,
+      "h": 0.16,
+      "energy": 10.94510034853757,
+      "stress_over_energy": 0.02030703322532725,
+      "outer_energy_fraction": 0.01007637565712593,
+      "max_beta09_energy_defect": 0.01636160549402521,
+      "max_beta09_momentum_scaled_defect": 0.01818005466366932,
+      "kinetic_condition": 5.6206822051060135,
+      "rms_radius": 3.54466962221553
+    },
+    {
+      "stage": "q18-ell025-97",
+      "n": 97,
+      "h": 0.16,
+      "energy": 10.94488917863653,
+      "stress_over_energy": 0.020189302628869654,
+      "outer_energy_fraction": 0.010071007228869274,
+      "max_beta09_energy_defect": 0.016261019000177512,
+      "max_beta09_momentum_scaled_defect": 0.01806875624998256,
+      "kinetic_condition": 5.642522472406494,
+      "rms_radius": 3.5455268145682757
+    },
+    {
+      "stage": "q18-baseline-129",
+      "n": 129,
+      "h": 0.12,
+      "energy": 10.920566653731004,
+      "stress_over_energy": 0.01534759543032281,
+      "outer_energy_fraction": 0.008673319641523607,
+      "max_beta09_energy_defect": 0.011862946179555411,
+      "max_beta09_momentum_scaled_defect": 0.01319154840585468,
+      "kinetic_condition": 5.367364730810933,
+      "rms_radius": 3.546236767136272
+    },
+    {
+      "stage": "q18-baseline-161",
+      "n": 161,
+      "h": 0.096,
+      "energy": 10.911090679602054,
+      "stress_over_energy": 0.015171138099147137,
+      "outer_energy_fraction": 0.008252447017780315,
+      "max_beta09_energy_defect": 0.01152446588330247,
+      "max_beta09_momentum_scaled_defect": 0.012816246011051356,
+      "kinetic_condition": 5.088648671366721,
+      "rms_radius": 3.539465215866187
+    },
+    {
+      "stage": "q18-baseline-193",
+      "n": 193,
+      "h": 0.08,
+      "energy": 10.905551049306558,
+      "stress_over_energy": 0.014994626129020491,
+      "outer_energy_fraction": 0.007926851521931871,
+      "max_beta09_energy_defect": 0.0111723067379228,
+      "max_beta09_momentum_scaled_defect": 0.012426429277348243,
+      "kinetic_condition": 5.058152504377247,
+      "rms_radius": 3.5350630279961326
+    },
+    {
+      "stage": "q18-baseline-domain",
+      "n": 193,
+      "h": 0.096,
+      "energy": 10.878436195895041,
+      "stress_over_energy": 0.005627886486817517,
+      "outer_energy_fraction": 0.003003183475409717,
+      "max_beta09_energy_defect": 0.00400093172663496,
+      "max_beta09_momentum_scaled_defect": 0.004447079887982605,
+      "kinetic_condition": 5.06832750322382,
+      "rms_radius": 3.5938327176283758
+    },
+    {
+      "stage": "q17-neighbour-161",
+      "n": 161,
+      "h": 0.096,
+      "energy": 10.993231475751113,
+      "stress_over_energy": 0.015967821991284572,
+      "outer_energy_fraction": 0.009237998703085684,
+      "max_beta09_energy_defect": 0.010772839571409953,
+      "max_beta09_momentum_scaled_defect": 0.011969823118857265,
+      "kinetic_condition": 4.3225479217527,
+      "rms_radius": 3.737205250131827
+    },
+    {
+      "stage": "q17-neighbour-193",
+      "n": 193,
+      "h": 0.08,
+      "energy": 10.988328328500884,
+      "stress_over_energy": 0.015993259717362436,
+      "outer_energy_fraction": 0.00897049341556449,
+      "max_beta09_energy_defect": 0.010777599276128536,
+      "max_beta09_momentum_scaled_defect": 0.011975110783904848,
+      "kinetic_condition": 4.311844368648972,
+      "rms_radius": 3.7341446853866747
+    },
+    {
+      "stage": "q17-neighbour-domain",
+      "n": 193,
+      "h": 0.096,
+      "energy": 10.961849747652458,
+      "stress_over_energy": 0.0036420148802257793,
+      "outer_energy_fraction": 0.002539709846359076,
+      "max_beta09_energy_defect": 0.0025687829573544096,
+      "max_beta09_momentum_scaled_defect": 0.0028542088502662155,
+      "kinetic_condition": 4.23186838202461,
+      "rms_radius": 3.833521110323785
+    },
+    {
+      "stage": "q19-neighbour-161",
+      "n": 161,
+      "h": 0.096,
+      "energy": 12.05399501812845,
+      "stress_over_energy": 0.01529300077299374,
+      "outer_energy_fraction": 0.009534491124200597,
+      "max_beta09_energy_defect": 0.008497661551946756,
+      "max_beta09_momentum_scaled_defect": 0.009461184113828753,
+      "kinetic_condition": 4.484970443055402,
+      "rms_radius": 3.911606562629786
+    },
+    {
+      "stage": "q19-neighbour-193",
+      "n": 193,
+      "h": 0.08,
+      "energy": 12.048723679565278,
+      "stress_over_energy": 0.015306338533759296,
+      "outer_energy_fraction": 0.009267880443562502,
+      "max_beta09_energy_defect": 0.008443700643641305,
+      "max_beta09_momentum_scaled_defect": 0.009400677252512873,
+      "kinetic_condition": 4.460883021965114,
+      "rms_radius": 3.90868839274009
+    },
+    {
+      "stage": "q19-neighbour-domain",
+      "n": 193,
+      "h": 0.096,
+      "energy": 12.015723317394809,
+      "stress_over_energy": 0.004576313572717503,
+      "outer_energy_fraction": 0.0029901337036978195,
+      "max_beta09_energy_defect": 0.002586580767906632,
+      "max_beta09_momentum_scaled_defect": 0.0028809205535180473,
+      "kinetic_condition": 4.3132444755687676,
+      "rms_radius": 3.9954426269661294
+    },
+    {
+      "stage": "q18-scale35-129",
+      "n": 129,
+      "h": 0.12,
+      "energy": 10.926310024117683,
+      "stress_over_energy": 0.020158123965108316,
+      "outer_energy_fraction": 0.010615427841613225,
+      "max_beta09_energy_defect": 0.01614009527049931,
+      "max_beta09_momentum_scaled_defect": 0.017934003370174065,
+      "kinetic_condition": 5.656930570678125,
+      "rms_radius": 3.532094038938998
+    },
+    {
+      "stage": "q18-scale35-161",
+      "n": 161,
+      "h": 0.096,
+      "energy": 10.916599962848306,
+      "stress_over_energy": 0.020188600588085078,
+      "outer_energy_fraction": 0.010092337849939039,
+      "max_beta09_energy_defect": 0.016095419883491946,
+      "max_beta09_momentum_scaled_defect": 0.017884602710400266,
+      "kinetic_condition": 5.40726917865319,
+      "rms_radius": 3.523266286060216
+    },
+    {
+      "stage": "q18-scale35-193",
+      "n": 193,
+      "h": 0.08,
+      "energy": 10.910994702964112,
+      "stress_over_energy": 0.020057509107608326,
+      "outer_energy_fraction": 0.009754446419733394,
+      "max_beta09_energy_defect": 0.015921957279513732,
+      "max_beta09_momentum_scaled_defect": 0.017692307125785577,
+      "kinetic_condition": 5.243813852201083,
+      "rms_radius": 3.518406935677785
+    },
+    {
+      "stage": "q18-scale35-domain",
+      "n": 193,
+      "h": 0.096,
+      "energy": 10.88015910309887,
+      "stress_over_energy": 0.006790252653757765,
+      "outer_energy_fraction": 0.003280740117329426,
+      "max_beta09_energy_defect": 0.0053480455345882305,
+      "max_beta09_momentum_scaled_defect": 0.005942889114673341,
+      "kinetic_condition": 5.171839096329132,
+      "rms_radius": 3.5949708496217707
+    },
+    {
+      "stage": "q18-scale45-129",
+      "n": 129,
+      "h": 0.12,
+      "energy": 10.925138951159111,
+      "stress_over_energy": 0.01965240584877238,
+      "outer_energy_fraction": 0.010223050610373298,
+      "max_beta09_energy_defect": 0.015714902459037505,
+      "max_beta09_momentum_scaled_defect": 0.017463129323859926,
+      "kinetic_condition": 5.648973117293551,
+      "rms_radius": 3.531707101587807
+    },
+    {
+      "stage": "q18-scale45-161",
+      "n": 161,
+      "h": 0.096,
+      "energy": 10.911110645858166,
+      "stress_over_energy": 0.015188025668362892,
+      "outer_energy_fraction": 0.00821442551825019,
+      "max_beta09_energy_defect": 0.011522961958901679,
+      "max_beta09_momentum_scaled_defect": 0.012814929762162145,
+      "kinetic_condition": 5.190581625055188,
+      "rms_radius": 3.5388536588591064
+    },
+    {
+      "stage": "q18-scale45-193",
+      "n": 193,
+      "h": 0.08,
+      "energy": 10.905579688621488,
+      "stress_over_energy": 0.01504490357820041,
+      "outer_energy_fraction": 0.007935367516263742,
+      "max_beta09_energy_defect": 0.011225760199216284,
+      "max_beta09_momentum_scaled_defect": 0.012485998493966852,
+      "kinetic_condition": 5.033468506581594,
+      "rms_radius": 3.5350996751192847
+    },
+    {
+      "stage": "q18-scale45-domain",
+      "n": 193,
+      "h": 0.096,
+      "energy": 10.878573553740079,
+      "stress_over_energy": 0.005570357452602212,
+      "outer_energy_fraction": 0.0029704105293582176,
+      "max_beta09_energy_defect": 0.003966777315616898,
+      "max_beta09_momentum_scaled_defect": 0.004409248912021534,
+      "kinetic_condition": 5.250272010370077,
+      "rms_radius": 3.595783623260036
+    },
+    {
+      "stage": "q18-ell025-129",
+      "n": 129,
+      "h": 0.12,
+      "energy": 10.92611015127778,
+      "stress_over_energy": 0.01987334178455944,
+      "outer_energy_fraction": 0.010600188297437658,
+      "max_beta09_energy_defect": 0.01591518094737876,
+      "max_beta09_momentum_scaled_defect": 0.017684486153524574,
+      "kinetic_condition": 5.576676588566128,
+      "rms_radius": 3.5344601201263357
+    },
+    {
+      "stage": "q18-ell025-161",
+      "n": 161,
+      "h": 0.096,
+      "energy": 10.916360059581375,
+      "stress_over_energy": 0.02008518812199657,
+      "outer_energy_fraction": 0.010010683108780892,
+      "max_beta09_energy_defect": 0.01600076773514103,
+      "max_beta09_momentum_scaled_defect": 0.01778010825405085,
+      "kinetic_condition": 5.392792804005922,
+      "rms_radius": 3.524135478778187
+    },
+    {
+      "stage": "q18-ell025-193",
+      "n": 193,
+      "h": 0.08,
+      "energy": 10.910897236800999,
+      "stress_over_energy": 0.019915386434361356,
+      "outer_energy_fraction": 0.009735054945843376,
+      "max_beta09_energy_defect": 0.015806709433226818,
+      "max_beta09_momentum_scaled_defect": 0.017564613595366502,
+      "kinetic_condition": 5.223684028675146,
+      "rms_radius": 3.520223260548269
+    },
+    {
+      "stage": "q18-ell025-domain",
+      "n": 193,
+      "h": 0.096,
+      "energy": 10.880502809900726,
+      "stress_over_energy": 0.00640813330051557,
+      "outer_energy_fraction": 0.0031674835914855546,
+      "max_beta09_energy_defect": 0.005061730868921366,
+      "max_beta09_momentum_scaled_defect": 0.005624798546602169,
+      "kinetic_condition": 5.167252012435999,
+      "rms_radius": 3.6001137816261193
+    }
+  ],
+  "matched_domain_comparisons": [
+    {
+      "branch": "q17-neighbour",
+      "spacing": 0.096,
+      "small_side": 15.36,
+      "large_side": 18.432,
+      "small_stress_over_energy": 0.015967821991284572,
+      "large_stress_over_energy": 0.0036420148802257793,
+      "stress_relative_reduction": 0.7719153631463556,
+      "energy_relative_change": 0.0028546408913409094,
+      "small_tail_fraction": 0.009237998703085684,
+      "large_tail_fraction": 0.002539709846359076
+    },
+    {
+      "branch": "q18-baseline",
+      "spacing": 0.096,
+      "small_side": 15.36,
+      "large_side": 18.432,
+      "small_stress_over_energy": 0.015171138099147137,
+      "large_stress_over_energy": 0.005627886486817517,
+      "stress_relative_reduction": 0.6290399276548742,
+      "energy_relative_change": 0.0029927790599394433,
+      "small_tail_fraction": 0.008252447017780315,
+      "large_tail_fraction": 0.003003183475409717
+    },
+    {
+      "branch": "q18-scale35",
+      "spacing": 0.096,
+      "small_side": 15.36,
+      "large_side": 18.432,
+      "small_stress_over_energy": 0.020188600588085078,
+      "large_stress_over_energy": 0.006790252653757765,
+      "stress_relative_reduction": 0.6636590721515765,
+      "energy_relative_change": 0.0033381144196408252,
+      "small_tail_fraction": 0.010092337849939039,
+      "large_tail_fraction": 0.003280740117329426
+    },
+    {
+      "branch": "q18-scale45",
+      "spacing": 0.096,
+      "small_side": 15.36,
+      "large_side": 18.432,
+      "small_stress_over_energy": 0.015188025668362892,
+      "large_stress_over_energy": 0.005570357452602212,
+      "stress_relative_reduction": 0.6332401870899236,
+      "energy_relative_change": 0.00298201467972814,
+      "small_tail_fraction": 0.00821442551825019,
+      "large_tail_fraction": 0.0029704105293582176
+    },
+    {
+      "branch": "q18-ell025",
+      "spacing": 0.096,
+      "small_side": 15.36,
+      "large_side": 18.432,
+      "small_stress_over_energy": 0.02008518812199657,
+      "large_stress_over_energy": 0.00640813330051557,
+      "stress_relative_reduction": 0.6809522887416914,
+      "energy_relative_change": 0.0032847258138190005,
+      "small_tail_fraction": 0.010010683108780892,
+      "large_tail_fraction": 0.0031674835914855546
+    },
+    {
+      "branch": "q19-neighbour",
+      "spacing": 0.096,
+      "small_side": 15.36,
+      "large_side": 18.432,
+      "small_stress_over_energy": 0.01529300077299374,
+      "large_stress_over_energy": 0.004576313572717503,
+      "stress_relative_reduction": 0.7007576445821595,
+      "energy_relative_change": 0.0031750221130906198,
+      "small_tail_fraction": 0.009534491124200597,
+      "large_tail_fraction": 0.0029901337036978195
+    }
+  ],
+  "curvature_probes": [
+    {
+      "stage": "q1-control",
+      "direction": 0,
+      "first_variation": -5.254890179720666e-05,
+      "second_variations": [
+        1.4344360468321327,
+        1.4344362897489304,
+        1.434436278202611
+      ],
+      "finest_epsilon_curvature": 1.434436278202611,
+      "rayleigh_frequency_squared": 2.518322337331885,
+      "relative_epsilon_spread": 1.6934652275877794e-07
+    },
+    {
+      "stage": "q1-control",
+      "direction": 1,
+      "first_variation": 2.614859418841705e-05,
+      "second_variations": [
+        1.4310404227169116,
+        1.4310406641904194,
+        1.4310406832862554
+      ],
+      "finest_epsilon_curvature": 1.4310406832862554,
+      "rayleigh_frequency_squared": 2.4772815312825456,
+      "relative_epsilon_spread": 1.8208381279639815e-07
+    },
+    {
+      "stage": "q1-control",
+      "direction": 2,
+      "first_variation": -0.0003102847701934778,
+      "second_variations": [
+        1.4901331675254426,
+        1.490133464621124,
+        1.4901334957073686
+      ],
+      "finest_epsilon_curvature": 1.4901334957073686,
+      "rayleigh_frequency_squared": 3.479581280096016,
+      "relative_epsilon_spread": 2.2023659425453544e-07
+    },
+    {
+      "stage": "q1-control",
+      "direction": 3,
+      "first_variation": -1.2685165418080402e-17,
+      "second_variations": [
+        0.9451112599201394,
+        0.9451112559233366,
+        0.9451112035208098
+      ],
+      "finest_epsilon_curvature": 0.9451112035208098,
+      "rayleigh_frequency_squared": 0.7058970489365759,
+      "relative_epsilon_spread": 5.967480448357331e-08
+    },
+    {
+      "stage": "q2-control",
+      "direction": 0,
+      "first_variation": 8.510640464911688e-06,
+      "second_variations": [
+        2.010070094149441,
+        2.0100704141157166,
+        2.0100704034575756
+      ],
+      "finest_epsilon_curvature": 2.0100704034575756,
+      "rayleigh_frequency_squared": 3.1392844886531095,
+      "relative_epsilon_spread": 1.5918162540476562e-07
+    },
+    {
+      "stage": "q2-control",
+      "direction": 1,
+      "first_variation": -2.424720029036728e-05,
+      "second_variations": [
+        2.009593590868164,
+        2.009593879748195,
+        2.009593998764103
+      ],
+      "finest_epsilon_curvature": 2.009593998764103,
+      "rayleigh_frequency_squared": 3.1438222401410796,
+      "relative_epsilon_spread": 2.0297430202226808e-07
+    },
+    {
+      "stage": "q2-control",
+      "direction": 2,
+      "first_variation": -0.00032928189778348634,
+      "second_variations": [
+        1.8782148014651057,
+        1.878215212691714,
+        1.8782153645702238
+      ],
+      "finest_epsilon_curvature": 1.8782153645702238,
+      "rayleigh_frequency_squared": 2.877256707549504,
+      "relative_epsilon_spread": 2.998085995419008e-07
+    },
+    {
+      "stage": "q2-control",
+      "direction": 3,
+      "first_variation": 2.3310346708438345e-18,
+      "second_variations": [
+        2.1780913475044628,
+        2.1780915284708158,
+        2.1780916057423383
+      ],
+      "finest_epsilon_curvature": 2.1780916057423383,
+      "rayleigh_frequency_squared": 1.4644317226685006,
+      "relative_epsilon_spread": 1.1856153104258379e-07
+    },
+    {
+      "stage": "q22-control",
+      "direction": 0,
+      "first_variation": -1.071000636210059e-05,
+      "second_variations": [
+        6.785504284678723,
+        6.785505465956021,
+        6.785505959783222
+      ],
+      "finest_epsilon_curvature": 6.785505959783222,
+      "rayleigh_frequency_squared": 5.410228910590157,
+      "relative_epsilon_spread": 2.468650841193795e-07
+    },
+    {
+      "stage": "q22-control",
+      "direction": 1,
+      "first_variation": 1.4390993911213387e-06,
+      "second_variations": [
+        6.742427949291141,
+        6.742429125239369,
+        6.742430230133323
+      ],
+      "finest_epsilon_curvature": 6.742430230133323,
+      "rayleigh_frequency_squared": 5.446889293818451,
+      "relative_epsilon_spread": 3.382819108155341e-07
+    },
+    {
+      "stage": "q22-control",
+      "direction": 2,
+      "first_variation": 3.514414803699842e-05,
+      "second_variations": [
+        6.962162930612692,
+        6.962164011525829,
+        6.962163979551406
+      ],
+      "finest_epsilon_curvature": 6.962163979551406,
+      "rayleigh_frequency_squared": 5.836093704975146,
+      "relative_epsilon_spread": 1.5525533942975287e-07
+    },
+    {
+      "stage": "q22-control",
+      "direction": 3,
+      "first_variation": -7.0362065790532495e-06,
+      "second_variations": [
+        12.620845288857652,
+        12.620847204658503,
+        12.62084762743143
+      ],
+      "finest_epsilon_curvature": 12.62084762743143,
+      "rayleigh_frequency_squared": 4.234264009660991,
+      "relative_epsilon_spread": 1.8529451017121356e-07
+    },
+    {
+      "stage": "q18-baseline-193",
+      "direction": 0,
+      "first_variation": 1.5932625174451893e-05,
+      "second_variations": [
+        5.71371730995196,
+        5.713718238098409,
+        5.713718707056614
+      ],
+      "finest_epsilon_curvature": 5.713718707056614,
+      "rayleigh_frequency_squared": 5.074806691764106,
+      "relative_epsilon_spread": 2.44517577048872e-07
+    },
+    {
+      "stage": "q18-baseline-193",
+      "direction": 1,
+      "first_variation": -2.8844623292473854e-06,
+      "second_variations": [
+        5.240515990934114,
+        5.240516376403548,
+        5.240512848558865
+      ],
+      "finest_epsilon_curvature": 5.240512848558865,
+      "rayleigh_frequency_squared": 4.6674797757904845,
+      "relative_epsilon_spread": 6.731864628710464e-07
+    },
+    {
+      "stage": "q18-baseline-193",
+      "direction": 2,
+      "first_variation": -1.9799079598700442e-05,
+      "second_variations": [
+        5.513765172437957,
+        5.51376545132598,
+        5.5137644210390135
+      ],
+      "finest_epsilon_curvature": 5.5137644210390135,
+      "rayleigh_frequency_squared": 5.08834490813701,
+      "relative_epsilon_spread": 1.8685723503243617e-07
+    },
+    {
+      "stage": "q18-baseline-193",
+      "direction": 3,
+      "first_variation": 5.8595355198731895e-06,
+      "second_variations": [
+        10.233411323667951,
+        10.233412140792097,
+        10.233410591808934
+      ],
+      "finest_epsilon_curvature": 10.233410591808934,
+      "rayleigh_frequency_squared": 3.6103807392109566,
+      "relative_epsilon_spread": 1.5136526728778095e-07
+    },
+    {
+      "stage": "q17-neighbour-193",
+      "direction": 0,
+      "first_variation": 1.4930859357239738e-05,
+      "second_variations": [
+        4.539262976166469,
+        4.53926386967396,
+        4.539264736536097
+      ],
+      "finest_epsilon_curvature": 4.539264736536097,
+      "rayleigh_frequency_squared": 4.647350672817258,
+      "relative_epsilon_spread": 3.8780942069243185e-07
+    },
+    {
+      "stage": "q17-neighbour-193",
+      "direction": 1,
+      "first_variation": -1.5342790592289469e-06,
+      "second_variations": [
+        4.083215944916674,
+        4.0832169645455,
+        4.083215316086353
+      ],
+      "finest_epsilon_curvature": 4.083215316086353,
+      "rayleigh_frequency_squared": 4.184568671640101,
+      "relative_epsilon_spread": 4.037157861747181e-07
+    },
+    {
+      "stage": "q17-neighbour-193",
+      "direction": 2,
+      "first_variation": -1.8510636715842388e-05,
+      "second_variations": [
+        3.872397583037923,
+        3.872398480098127,
+        3.8724000148704363
+      ],
+      "finest_epsilon_curvature": 3.8724000148704363,
+      "rayleigh_frequency_squared": 3.998725980085079,
+      "relative_epsilon_spread": 6.27991040130266e-07
+    },
+    {
+      "stage": "q17-neighbour-193",
+      "direction": 3,
+      "first_variation": 9.463600443559447e-06,
+      "second_variations": [
+        10.740004732667785,
+        10.740006445075778,
+        10.740006246123812
+      ],
+      "finest_epsilon_curvature": 10.740006246123812,
+      "rayleigh_frequency_squared": 3.6302695155939815,
+      "relative_epsilon_spread": 1.59441989345078e-07
+    },
+    {
+      "stage": "q19-neighbour-193",
+      "direction": 0,
+      "first_variation": 1.2890246966660996e-06,
+      "second_variations": [
+        3.891613959083884,
+        3.8916138436206893,
+        3.8916122377941065
+      ],
+      "finest_epsilon_curvature": 3.8916122377941065,
+      "rayleigh_frequency_squared": 4.156959211594789,
+      "relative_epsilon_spread": 4.4230743220585214e-07
+    },
+    {
+      "stage": "q19-neighbour-193",
+      "direction": 1,
+      "first_variation": 4.559490321864158e-06,
+      "second_variations": [
+        4.103616291217804,
+        4.10361651859148,
+        4.103616390693787
+      ],
+      "finest_epsilon_curvature": 4.103616390693787,
+      "rayleigh_frequency_squared": 4.2952438335139185,
+      "relative_epsilon_spread": 5.540811974342951e-08
+    },
+    {
+      "stage": "q19-neighbour-193",
+      "direction": 2,
+      "first_variation": -2.479790396613372e-05,
+      "second_variations": [
+        3.7675688275840002,
+        3.767569118906522,
+        3.7675662838410062
+      ],
+      "finest_epsilon_curvature": 3.7675662838410062,
+      "rayleigh_frequency_squared": 3.938663867630105,
+      "relative_epsilon_spread": 7.524919719337846e-07
+    },
+    {
+      "stage": "q19-neighbour-193",
+      "direction": 3,
+      "first_variation": 1.3331043270072975e-05,
+      "second_variations": [
+        11.64805145226211,
+        11.648052968382672,
+        11.648052421264765
+      ],
+      "finest_epsilon_curvature": 11.648052421264765,
+      "rayleigh_frequency_squared": 4.005577779927379,
+      "relative_epsilon_spread": 1.3016085748780954e-07
+    }
+  ],
+  "kinetic_range": {
+    "minimum_tangent_eigenvalue": 1.0,
+    "maximum_tangent_eigenvalue": 14.814578963781372,
+    "maximum_local_condition": 5.656930570678125
+  },
+  "runtime": {
+    "started_at": {
+      "utc": "2026-11-02T09:08:21.744804+00:00",
+      "melbourne": "2026-11-02T20:08:21.744804+11:00"
+    },
+    "finished_at": {
+      "utc": "2026-11-02T10:22:31.593216+00:00",
+      "melbourne": "2026-11-02T21:22:31.593216+11:00"
+    },
+    "wall_seconds": 4449.848412,
+    "endpoint_seconds_sum": 4449.644173328939
+  },
+  "disposition": "numerical_admission_consistent; significant_finite_domain_sensitivity; physical_time_evolution_pending",
+  "limits": [
+    "Bulk fields absent: field integrals, metric extrema, centroids and tails authenticated as records, not recomputed.",
+    "Native C curvature E0 omitted: base-free direction differences and quotient arithmetic replayed; no independent absolute second-variation replay or field perturbation rerun.",
+    "Boost curves are kinematic identities on contracted boxes, not evolved trajectories.",
+    "Four positive trial directions per selected endpoint do not establish full stability.",
+    "No electric charge, spin/statistics, electron-model acceptance or publication priority established."
+  ]
+}

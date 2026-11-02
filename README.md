@@ -22,6 +22,11 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
+The [31-endpoint neutral-dynamics assessment](reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md)
+finds positive curvature in the sampled trial directions and significant finite-domain
+stress sensitivity. Physical-time solver implementation and low-Q verification are
+next; no evolved moving-soliton trajectory is claimed.
+
 The [neutral dynamics specification](docs/models/SF-relativistic.md) and
 [workstation admission run](docs/plans/sf-dynamics-admission.md) prepare motion-at-speed
 assessment of the retained static fields. These tools assess stress, boosts and selected
