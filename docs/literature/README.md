@@ -345,3 +345,19 @@ Targeted inspection: Section 2, energy Eq. (2.1), boundary/charge definitions an
 ### L38 — Bracket state-sum convention
 
 Louis H. Kauffman, *Knots*, [author-hosted essay](https://homepages.math.uic.edu/~kauffman/Tots/Knots.htm), undated online text. Targeted inspection: Sections IV–V, bracket state weights, loop factor d=-A²-A^-2 and writhe normalization. This is the named author's mathematical exposition; no date or journal edition is inferred from the host. Our exact bounded state sum retains integer coefficients in A and is checked against trefoil and figure-eight references. It is an invariant, not a unique knot identifier. Optional SnapPy 3.3.2/Spherogram 2.4.1 supply diagram simplification and numerical complement tests; [official software conventions](https://snappy.computop.org/spherogram.html) are recorded separately from primary physics results.
+
+
+### L39 — Physical-time Hopfion motion and scattering
+
+J. Hietarinta, J. Palmu, J. Jäykkä and P. Pakkanen (2011),
+*Scattering of knotted vortices (Hopfions) in the Faddeev–Skyrme model*.
+[arXiv:1108.5551v1](https://arxiv.org/pdf/1108.5551v1), 29 August 2011.
+
+Targeted primary PDF inspection, recorded 2026-11-02T08:48:53.481631+00:00 UTC; 2026-11-02T19:48:53.481631+11:00 Australia/Melbourne.
+Section 1.3 Eq. (3), Section 2 and Section 3.2: relativistic unit-vector dynamics,
+constrained evolution, boundary effects and Lorentz-boosted relaxed initial fields.
+The [new explicit convention map](../models/SF-relativistic.md) derives the Lorentzian
+completion of Jennings' fixed static normalization rather than silently copying the
+compact signs in Eq. (3). The paper's CFL values/smoothing are not adopted as validation.
+Role: S5 neutral evolution-method reference; moving/scattering Hopfions are prior art.
+No electron identification or complete literature-priority claim follows.

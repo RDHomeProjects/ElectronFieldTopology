@@ -1,0 +1,22 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-02T08:53:20.196899+00:00",
+    "melbourne": "2026-11-02T19:53:20.196899+11:00"
+  },
+  "tests": {
+    "command": "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 uv run --frozen pytest -q tests/test_sf_dynamics.py",
+    "returncode": 0,
+    "stdout": "...........                                                              [100%]\n11 passed in 1.81s\n"
+  },
+  "checks": {
+    "docs": {
+      "returncode": 0,
+      "stdout": "Documentation checks passed: 100 Markdown files; local targets and fences.\n"
+    },
+    "whitespace": {
+      "returncode": 0,
+      "stdout": ""
+    }
+  },
+  "scope": "Preparation controls only; no workstation field analysis or physical-time simulation."
+}

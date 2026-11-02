@@ -2,6 +2,22 @@
 
 Updated: 2026-11-01T21:45:24.287800+00:00 UTC; 2026-11-02T08:45:24.287800+11:00 Australia/Melbourne.
 
+## Neutral dynamics: specification and workstation admission prepared
+
+Prepared: 2026-11-02T08:48:53.481631+00:00 UTC; 2026-11-02T19:48:53.481631+11:00 Australia/Melbourne.
+
+PR50 is merged at 4193a72. The next maintainer-requested tranche is
+[neutral relativistic SF dynamics](models/SF-relativistic.md), following
+[ADR-0009](decisions/ADR-0009-neutral-dynamics-admission.md). This change provides
+full action/constraint/stress conventions and read-only admission tools for the 31
+published workstation endpoints: independent cell integration, integrated stress,
+kinetic conditioning, boost defects and selected trial curvatures. Small instrument
+validation is recorded in the [preparation report](../reports/sf-dynamics-admission-20261102/README.md).
+No new workstation-field result or nonlinear physical-time trajectory is claimed.
+The [local run plan](plans/sf-dynamics-admission.md) is next; physical-time solver
+implementation and low-Q verification follow. Retain Q18 fine-start/conditioning
+and additional-Q follow-up after the dynamics tranche. Charged dynamics remains deferred.
+
 ## Q18 and neighbouring-Q assessment for PR50
 
 PR48 merged the fresh Q22 assessment; PR49 merged the charged-model audit and return to Q18/additional-Q comparisons. [PR50](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/50) publishes the 31-stage campaign. Its [scientific assessment](../reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md) authenticates 36 passes, 72 recorded CPU endpoint audits, 89 analysis jobs and 504 hashed archive members, and replays 1,350 component diagrams and 360 Gauss samples from retained curves. All final scalar/dilation gates and all 18 mesh/domain energy comparisons pass. Q17/Q19 support their selected K(7,2) branches within the declared numerical limits. Q18 consistently retains three individually unknotted components with absolute pairwise links 1,2,2 in four tested branches; the hyperbolic target remains unreproduced.

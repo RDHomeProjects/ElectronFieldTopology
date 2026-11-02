@@ -2,6 +2,24 @@
 
 Stages are evidence gates, not promised dates. S5-S7 are conditional research paths, not guaranteed outcomes. Do not run a broad search before validating the diagnostics.
 
+## Current priority: neutral physical-time dynamics admission
+
+Updated: 2026-11-02T08:48:53.481631+00:00 UTC; 2026-11-02T19:48:53.481631+11:00 Australia/Melbourne.
+
+The maintainer has requested motion-at-speed assessment after merged PR50. Follow
+[ADR-0009](decisions/ADR-0009-neutral-dynamics-admission.md): specify the complete
+[neutral relativistic action](models/SF-relativistic.md), execute read-only admission
+on the 31 retained endpoints, validate low-Q physical-time evolution, then run one
+selected higher-Q free-flight benchmark with mesh/time/domain controls. The present
+[workstation package](plans/sf-dynamics-admission.md) implements admission diagnostics,
+not nonlinear time evolution. Charged dynamics stays deferred under ADR-0008.
+
+**Return to Q18 fresh fine-start/conditioning controls and additional Q values after
+this dynamics tranche.** The historical next-task wording below is superseded in
+priority only: Q18's linked outcome and unsuccessful hyperbolic reproduction remain
+recorded, and optional Q20/Q24 comparisons remain available. No static stationarity
+or boost identity establishes electron behaviour.
+
 ## Current analytical milestone and requested Q follow-up
 
 Assessment update: 2026-11-01T21:45:24.287800+00:00 UTC; 2026-11-02T08:45:24.287800+11:00 Australia/Melbourne. The [Q18/neighbour campaign assessment](../reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md) supports bounded Q17/Q19 torus-branch benchmarks and a repeatable three-component Q18 linked outcome, while preserving unsuccessful hyperbolic reproduction. All four Q18 branches inherit a 97-grid start; a fresh fine-grid/conditioning comparison is the next focused diagnostic before attributing this result solely to Q. The optional additional-Q controls remain available in the follow-up plan. Scalar stationarity and finite diagrams do not establish charged particles or physical-time stability.

@@ -1,5 +1,7 @@
 # Research reports
 
+- [Neutral SF dynamics admission preparation](sf-dynamics-admission-20261102/README.md): action/stress validation and a separate read-only workstation campaign; physical-time evolution pending.
+
 - [Q18 basin and Q17/Q19 assessment](q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md): 31 stationary endpoints, finite torus-branch checks, robust tested Q18 links, unreproduced hyperbolic target and remaining start-grid confound.
 
 - [S1-A analytical Hopfion benchmark](s1-a/README.md): measured diagnostics, verification, provenance and interpretation.
