@@ -1,0 +1,95 @@
+{
+  "started_at": {
+    "utc": "2026-11-03T05:32:06.772101+00:00",
+    "melbourne": "2026-11-03T16:32:06.772101+11:00"
+  },
+  "model_id": "SF-relativistic-neutral-v1",
+  "scheme": "D4-action-projected-RK4-v1",
+  "physics": {
+    "case_id": "q1-n101-L20-b0-a0-dt0.01",
+    "grid": [
+      101,
+      101,
+      101
+    ],
+    "lengths": [
+      20.0,
+      20.0,
+      20.0
+    ],
+    "boundary": "fixed",
+    "dt": 0.01,
+    "steps": 100,
+    "diagnostic_every": 5,
+    "checkpoint_every": 10,
+    "initial": {
+      "kind": "lattice_checkpoint",
+      "path": "/home/rd/ElectronFieldTopology-lowq-motion/artifacts/lowq-motion-2026-11-03T104629-568611+1100-30672/readmission/q1-n101-L20/latest.npz",
+      "sha256": "c75c4cda7c6a3c36b1933fd5292a7ebb3a59b0f0a368ace9a153fae5990ad24b",
+      "expected_q": 1
+    }
+  },
+  "physics_sha256": "61ca129135fb614c1665126dfe218ea78588e092048716ab16fed63714e36320",
+  "physics_source_sha256": {
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+    "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+    "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+  },
+  "code_sha256": "bb270697b2f6de091c6eaef749b8d58b5b06387aafdfa0109caa71ab30e919a6",
+  "git_commit": "0eb911649ec085a34d6505963a5ecd0c6764b717",
+  "git_worktree_dirty": false,
+  "preview_profile_sha256": "2e4ffb89bf1007cf79e7561e2b103b92249c504935c8bd23e9169e2c0ff3b854",
+  "preview_profile": {
+    "export": {
+      "enabled": true,
+      "every_steps": 5,
+      "grid": [
+        33,
+        33,
+        33
+      ],
+      "fields": [
+        "field",
+        "energy_density",
+        "energy_flux"
+      ],
+      "case_ids": [],
+      "solver_grids": [],
+      "vtk": true
+    },
+    "presentation": {
+      "frame_stride": 1,
+      "max_frames": 21,
+      "grid": [
+        33,
+        33,
+        33
+      ],
+      "colors": 16,
+      "colormap": "viridis",
+      "color_field": "field",
+      "component": 0,
+      "iso_fraction": 0.15,
+      "fps": 10,
+      "elevation": 24.0,
+      "azimuth": -55.0,
+      "width": 1100,
+      "height": 650,
+      "max_triangles": 12000
+    }
+  },
+  "initial": {
+    "kind": "lattice_checkpoint",
+    "path": "/home/rd/ElectronFieldTopology-lowq-motion/artifacts/lowq-motion-2026-11-03T104629-568611+1100-30672/readmission/q1-n101-L20/latest.npz",
+    "sha256": "c75c4cda7c6a3c36b1933fd5292a7ebb3a59b0f0a368ace9a153fae5990ad24b",
+    "scope": "Rest snapshot imported into a different, explicitly tested time discretization; re-admission required."
+  },
+  "preview_source_sha256": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "scope": "Neutral physical-time reference; no charged model, full soliton stability or electron claim."
+}
