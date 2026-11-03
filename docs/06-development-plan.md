@@ -1,10 +1,30 @@
 # Staged development plan
 
-Current implementation update (UTC 2026-11-02T15:29:15.448567+00:00; Australia/Melbourne 2026-11-03T02:29:15.448567+11:00): the [stationary low-Q campaign](plans/sf-lowq-motion.md)
-is prepared for local execution. It gates boosted Q1/Q2 trajectories on measured
-readmission and compares time step, spatial mesh and box size. Full workstation
-results/review precede Q17/Q19 and the retained Q18/additional-Q return tranche.
+## Current priority: diagnose low-Q motion before new production
 
+Updated: UTC 2026-11-03T23:43:39.658706+00:00; Melbourne 2026-11-04T10:43:39.658706+11:00.
+
+The [merged PR52 assessment](../reports/sf-motion/lowq-motion-2026-11-03T104629-568611+1100-30672/ASSESSMENT.md) establishes six bounded case passes
+and leaves global motion acceptance open. Follow [ADR-0011](decisions/ADR-0011-motion-diagnostics-and-spin-methods.md)
+and the [local diagnostic plan](plans/sf-motion-diagnostics.md):
+
+1. Authenticate retained fields; replay endpoints; compare common physical times and
+   coordinates; measure initial transport defects, face diagnostics and kinetic/inertia matrices.
+2. Use those results to select a focused third-physical-resolution and matched-spacing
+   larger-domain control. Diagnostic resampling alone does not close NUM-003.
+3. After adequate low-Q motion control, assess Q17/Q19 free flight. Preserve Q18 fresh
+   fine-start/conditioning and additional Q values, including optional Q20/Q24.
+4. In parallel, retain the charged-theory feasibility work. For the conditional spin-method
+   route, first establish converged Q1/Q2 inertia/symmetry controls, then map closed field
+   configuration loops and explicit quantization assumptions before a quantum spectrum.
+   The [supplied papers](literature/soliton-quantization-methods.md), now L41-L43, guide
+   this route; they do not derive charge, Born probabilities or detector outcomes here.
+5. External-field and Stern-Gerlach benchmarks follow a justified coupling and apparatus/
+   detector model. Renderer settings continue to affect only display exports.
+
+All outputs require UTC/Melbourne stamps. Computation remains local, resumable and
+without an arbitrary overall runtime cap. Lower dated sections preserve historical
+stage decisions; this section defines the current order.
 
 Stages are evidence gates, not promised dates. S5-S7 are conditional research paths, not guaranteed outcomes. Do not run a broad search before validating the diagnostics.
 

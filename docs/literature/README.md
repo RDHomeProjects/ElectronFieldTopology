@@ -377,3 +377,36 @@ clutter control, not new physical dynamics. The current basic offline surface/sl
 renderer does not reproduce the paper's particle-advection/texture method. An internal
 SF unit-vector field is not a fluid velocity. See [the renderer map](../offline-renderer.md).
 This is a targeted maintainer-requested methods reference, not renewed corpus traversal.
+
+## Maintainer-supplied quantization methods (UTC 2026-11-03T23:43:39.658706+00:00; Melbourne 2026-11-04T10:43:39.658706+11:00)
+
+See the [targeted applicability and equation map](soliton-quantization-methods.md).
+This records a scoped review, not renewed level-4 citation collection.
+
+### L41 - Fermionic quantization of Hopf solitons
+
+S. Krusch and J. M. Speight, Commun. Math. Phys.264 (2006),391-410.
+[hep-th/0503067v2](https://arxiv.org/abs/hep-th/0503067v2);
+[DOI](https://doi.org/10.1007/s00220-005-1469-4).
+Sections2,4,5 and Tables1-2 inspected. Conditional fermionic quantization for odd Q,
+configuration-loop constraints and kinetic metrics. Current use: a classical finite-box
+metric derived from our action; future Q1/Q2 method controls. No classical-emergence proof.
+
+### L42 - FR constraints from ADHM data and rational maps
+
+J. Cork and D. Harland, Phys.Lett.B850 (2024),138542.
+[arXiv:2401.16494v2](https://arxiv.org/abs/2401.16494v2);
+[DOI](https://doi.org/10.1016/j.physletb.2024.138542).
+Theorems1-2 and Sections2-3 inspected. Determinant/resultant methods for specified
+Skyrme configuration loops. Transfer to our S2 field requires an explicit lift and
+boundary/topology correspondence. Not implemented in the current audit.
+
+### L43 - Quantization of skyrmions using instantons
+
+J. Cork and C. Halcrow, Phys.Rev.D110 (2024),016027.
+[arXiv:2403.17080v2](https://arxiv.org/abs/2403.17080v2);
+[DOI](https://doi.org/10.1103/PhysRevD.110.016027).
+Sections3.1-3.3,4.6,5 inspected. Deformable configuration families, kinetic metrics and
+inertia-approximation limits. The worked Be8 model is not an electron model; its
+Skyrme normalization is not copied into SF. Current use: quantify inertia sensitivity
+before a future quantum spectrum. No ADHM field generator or quantum solver is added.

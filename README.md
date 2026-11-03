@@ -22,9 +22,14 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-The [low-Q motion campaign](docs/plans/sf-lowq-motion.md) now prepares stationary
-readmission and bounded rest/boosted Q1/Q2 studies, with restartable local computation
-and separate display exports. Full production results remain pending.
+The [completed low-Q assessment](reports/sf-motion/lowq-motion-2026-11-03T104629-568611+1100-30672/ASSESSMENT.md) is merged via PR52: six of
+60 bounded cases pass every declared case check, while tail, shape and momentum
+sensitivity leave global motion acceptance open. The next [full-field diagnostic](docs/plans/sf-motion-diagnostics.md)
+reuses retained scientific checkpoints and measures initial boost consistency,
+common-coordinate field differences and classical rotational inertia. It performs
+no new physical-time solve. The [supplied quantum-method papers](docs/literature/soliton-quantization-methods.md)
+are integrated into the plan; their quantization assumptions remain explicit.
+
 
 
 The [CPU physical-time reference](docs/models/SF-physical-time.md) now evolves the
