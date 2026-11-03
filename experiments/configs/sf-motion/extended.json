@@ -1,0 +1,96 @@
+{
+  "format": "EFT-lowq-motion-v1",
+  "seeds": [
+    {
+      "q": 1,
+      "nodes": 81,
+      "length": 16.0,
+      "seed_scale": 1.6,
+      "seed_cutoff": 6.4
+    },
+    {
+      "q": 1,
+      "nodes": 101,
+      "length": 16.0,
+      "seed_scale": 1.6,
+      "seed_cutoff": 6.4
+    },
+    {
+      "q": 1,
+      "nodes": 101,
+      "length": 20.0,
+      "seed_scale": 1.6,
+      "seed_cutoff": 8.0
+    },
+    {
+      "q": 2,
+      "nodes": 81,
+      "length": 16.0,
+      "seed_scale": 1.6,
+      "seed_cutoff": 6.4
+    },
+    {
+      "q": 2,
+      "nodes": 101,
+      "length": 16.0,
+      "seed_scale": 1.6,
+      "seed_cutoff": 6.4
+    },
+    {
+      "q": 2,
+      "nodes": 101,
+      "length": 20.0,
+      "seed_scale": 1.6,
+      "seed_cutoff": 8.0
+    },
+    {
+      "q": 1,
+      "nodes": 121,
+      "length": 16.0,
+      "seed_scale": 1.6,
+      "seed_cutoff": 6.4
+    },
+    {
+      "q": 2,
+      "nodes": 121,
+      "length": 16.0,
+      "seed_scale": 1.6,
+      "seed_cutoff": 6.4
+    }
+  ],
+  "readmission": {
+    "relative_force_l2": 0.001,
+    "acceleration_max": 0.01,
+    "charge_relative_error": 0.05,
+    "iterations_per_pass": 200,
+    "checkpoint_every": 25,
+    "stagnation_relative_energy": 1e-10
+  },
+  "betas": [
+    0.1,
+    0.3
+  ],
+  "axes": [
+    0,
+    2
+  ],
+  "time_steps": [
+    0.02,
+    0.01,
+    0.005
+  ],
+  "duration": 2.0,
+  "diagnostic_every": 5,
+  "checkpoint_every": 10,
+  "boundary_shell_width": 2.0,
+  "limits": {
+    "energy_relative": 0.001,
+    "momentum_scaled": 0.001,
+    "shape_relative": 0.01,
+    "speed_relative": 0.01,
+    "rest_speed_absolute": 0.001,
+    "charge_relative_error": 0.05,
+    "tail_fraction": 0.001,
+    "particle_relative": 0.01
+  }
+}

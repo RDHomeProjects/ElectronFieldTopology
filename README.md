@@ -22,21 +22,33 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
+The [low-Q motion campaign](docs/plans/sf-lowq-motion.md) now prepares stationary
+readmission and bounded rest/boosted Q1/Q2 studies, with restartable local computation
+and separate display exports. Full production results remain pending.
+
+
+The [CPU physical-time reference](docs/models/SF-physical-time.md) now evolves the
+neutral nonlinear SF model, with verified wave/nonlinear controls and checkpoint
+resume. The [offline renderer](docs/offline-renderer.md) reads separate display exports
+and produces a 3D surface/slice animation and local browser player. See the
+[measured verification report](reports/sf-time-renderer-20261102/README.md). Full
+stationary low-Q/high-Q free-flight and isolated stability acceptance remain pending.
+
 The [31-endpoint neutral-dynamics assessment](reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md)
 finds positive curvature in the sampled trial directions and significant finite-domain
-stress sensitivity. Physical-time solver implementation and low-Q verification are
-next; no evolved moving-soliton trajectory is claimed.
+stress sensitivity. The implemented solver now supplies wave controls; stationary low-Q readmission and
+higher-Q free flight are next. No accepted moving-soliton trajectory is claimed.
 
 The [neutral dynamics specification](docs/models/SF-relativistic.md) and
 [workstation admission run](docs/plans/sf-dynamics-admission.md) prepare motion-at-speed
-assessment of the retained static fields. These tools assess stress, boosts and selected
-perturbations; a nonlinear physical-time soliton solver remains to be implemented.
+assessment of the retained static fields. Those admission tools assess stress, boosts and selected
+perturbations; the separate physical-time reference now supplies the initial solver controls.
 
 The [Q18/Q17/Q19 assessment](reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md) audits 31 stationary workstation endpoints. Q17/Q19 support the selected K(7,2) branches within tested finite-grid/domain/diagram limits. Four Q18 coarse-start branches retain three-component links; the published hyperbolic local minimum remains unreproduced. Fresh fine-grid Q18 starts remain a specific unresolved control.
 
 The merged [fresh Q22 assessment](reports/s5-a/q22-fresh-20261101T102757+1100/ASSESSMENT.md) supports its bounded numerical benchmark. The subsequent [charged-model equation audit](reports/charged-model-audit-20261101/README.md) defers charged dynamics. Earlier [partial workstation records](reports/s5-a/workstation-2026-11-01/README.md) remain historical evidence. Static neutral knots do not establish electron properties.
 
-S5-A provides a [static Skyrme–Faddeev reference](docs/models/SF-J2015-static.md), independent simple controls, a [paired CPU/GPU timing harness](docs/static-gpu-timing.md) and a [checkpointed local campaign](docs/static-gpu-continuation.md). Maintainer-reported RTX 2080 Super Max-Q float64 timings show about 4.5x short-solve speedup over twelve CPU threads after numerical checks; raw timing artifacts have not been independently retrieved. No physical-time solver or electron model is claimed.
+S5-A provides a [static Skyrme–Faddeev reference](docs/models/SF-J2015-static.md), independent simple controls, a [paired CPU/GPU timing harness](docs/static-gpu-timing.md) and a [checkpointed local campaign](docs/static-gpu-continuation.md). Maintainer-reported RTX 2080 Super Max-Q float64 timings show about 4.5x short-solve speedup over twelve CPU threads after numerical checks; raw timing artifacts have not been independently retrieved. The static reference itself does not evolve physical time; no electron model is claimed.
 
 S4-C adds [bounded return-section diagnosis](docs/models/B0-S4C-ReturnMap.md), followed by [a source-mapped model-feasibility decision](docs/decisions/ADR-0006-model-feasibility.md). No extended physical dynamics or electron-model claim is introduced.
 

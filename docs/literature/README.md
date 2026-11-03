@@ -361,3 +361,19 @@ completion of Jennings' fixed static normalization rather than silently copying 
 compact signs in Eq. (3). The paper's CFL values/smoothing are not adopted as validation.
 Role: S5 neutral evolution-method reference; moving/scattering Hopfions are prior art.
 No electron identification or complete literature-priority claim follows.
+
+
+### L40 — Sparse visualization of time-varying three-dimensional vector fields
+
+Anders Helgeland and Thomas Elboth (2006), *High-Quality and Interactive Animations of
+3D Time-Varying Vector Fields*. IEEE Transactions on Visualization and Computer
+Graphics 12(6), 1535–1546. [DOI](https://doi.org/10.1109/TVCG.2006.95);
+[author-uploaded full text](https://www.researchgate.net/publication/6723735_High-Quality_and_Interactive_Animations_of_3D_Time-Varying_Vector_Fields).
+
+Targeted inspection recorded 2026-11-02T12:37:39.053069+00:00 UTC; 2026-11-02T23:37:39.053069+11:00 Australia/Melbourne.
+Algorithm overview, sparse field-line/seeding explanation and separated processing/
+rendering performance discussion inspected. Role: visualization architecture and
+clutter control, not new physical dynamics. The current basic offline surface/slice
+renderer does not reproduce the paper's particle-advection/texture method. An internal
+SF unit-vector field is not a fluid velocity. See [the renderer map](../offline-renderer.md).
+This is a targeted maintainer-requested methods reference, not renewed corpus traversal.

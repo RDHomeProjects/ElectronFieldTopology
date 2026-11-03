@@ -58,3 +58,25 @@ See [the model/source map](models/B0-S4B-Offcore.md) and [measured report](../re
 ## Bounded S4-C and feasibility decision
 
 [The return-map specification](models/B0-S4C-ReturnMap.md) adds actual section positions and independently varied length, tolerance, step, nodal and observation controls (TOP-001, NUM-003). Manufactured periodic/irrational torus targets validate the instrument without assigning Maxwell rotation numbers. [The equation audit](models/S5-feasibility-audit.md) and [ADR-0006](decisions/ADR-0006-model-feasibility.md) provide MOD-001/002 feasibility dispositions, not an implemented extension or completed physical-model acceptance. Fixed configuration, source hashes, explicit resource-limited cases and clean measured outputs support SCI-003/004/005 and REP-001/002.
+
+
+## Physical-time reference and visualization separation
+
+Recorded: 2026-11-02T12:37:39.053069+00:00 UTC; 2026-11-02T23:37:39.053069+11:00 Australia/Melbourne.
+
+[The solver specification](models/SF-physical-time.md) and
+[measured report](../reports/sf-time-renderer-20261102/README.md) add bounded numerical
+SCI-001/004, MOD-001/002, NUM-001/002/003 and REP-001/002 evidence from actual time
+integration, independent wave/manufactured references, flux refinement and constraints.
+No stationary/high-Q full stability or open-boundary acceptance is implied. The
+[renderer contract](offline-renderer.md) requires:
+
+| ID | Requirement | Acceptance evidence |
+|---|---|---|
+| VIS-001 | Display/export configuration cannot change physics calculations | Identical float64 final states and diagnostics with exports on/off |
+| VIS-002 | Support separate offline rendering and external interchange | Solver completion followed by authenticated NPZ replay and VTI/PVD files |
+| VIS-003 | Configure frames, preview resolution, palette and camera | Basic/economy profiles and independent rerendering of the same data |
+| VIS-004 | Identify simulation/model time and provenance | Frame overlays and UTC/Melbourne manifests; previews not scientific inputs |
+
+The basic renderer supports these bounded controls; a diagnostic animation does not
+close TOP-001/NUM-005 or any electron-model requirement.

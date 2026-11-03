@@ -3,8 +3,9 @@
 Specified: 2026-11-02T08:48:53.481631+00:00 UTC; 2026-11-02T19:48:53.481631+11:00 Australia/Melbourne. Model ID: **SF-relativistic-neutral-v1**.
 This is the explicit relativistic completion of the fixed-coefficient static reference,
 not the deferred charged model in [ADR-0008](../decisions/ADR-0008-charged-model-audit.md).
-The implementation delivered here evaluates its action/stress and static admission
-diagnostics. **No nonlinear physical-time evolution solver is implemented here.**
+The admission layer evaluates its action/stress and static diagnostics. The separate
+[physical-time CPU reference](SF-physical-time.md) now implements bounded wave and
+nonlinear controls; full stationary-soliton/free-flight acceptance remains open.
 
 ## Sources and conventions
 
@@ -171,3 +172,15 @@ evolution remain open; no S6 interaction or S7 quantum gate is released. See
 [ADR-0009](../decisions/ADR-0009-neutral-dynamics-admission.md) and the
 [workstation plan](../plans/sf-dynamics-admission.md). AI assisted derivation and code;
 independent scientific review remains necessary before stronger model claims.
+
+
+## Physical-time implementation update
+
+Recorded: 2026-11-02T12:37:39.053069+00:00 UTC; 2026-11-02T23:37:39.053069+11:00 Australia/Melbourne.
+
+[The explicit discrete-action solver](SF-physical-time.md) now implements physical-time
+integration, constraints, checkpoint/resume and basic analytical/manufactured controls.
+Its [offline renderer](../offline-renderer.md) consumes independent preview exports.
+The following scientific gates above are not automatically closed by software delivery:
+stationary Q1/Q2 readmission, refined moving solitons, absorbing/open boundaries,
+full perturbation stability and electron/charged-model acceptance.

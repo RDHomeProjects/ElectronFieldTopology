@@ -1,0 +1,44 @@
+{
+  "format": "EFT-lowq-motion-v1",
+  "seeds": [
+    {
+      "q": 1,
+      "nodes": 17,
+      "length": 8.0,
+      "seed_scale": 1.1,
+      "seed_cutoff": 3.2
+    }
+  ],
+  "readmission": {
+    "relative_force_l2": 0.001,
+    "acceleration_max": 0.01,
+    "charge_relative_error": 0.05,
+    "iterations_per_pass": 200,
+    "checkpoint_every": 25,
+    "stagnation_relative_energy": 1e-10
+  },
+  "betas": [
+    0.1
+  ],
+  "axes": [
+    0
+  ],
+  "time_steps": [
+    0.01,
+    0.005
+  ],
+  "duration": 0.02,
+  "diagnostic_every": 5,
+  "checkpoint_every": 10,
+  "boundary_shell_width": 1.0,
+  "limits": {
+    "energy_relative": 0.001,
+    "momentum_scaled": 0.001,
+    "shape_relative": 0.01,
+    "speed_relative": 0.01,
+    "rest_speed_absolute": 0.001,
+    "charge_relative_error": 0.05,
+    "tail_fraction": 0.001,
+    "particle_relative": 0.01
+  }
+}

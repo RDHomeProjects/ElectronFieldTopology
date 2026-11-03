@@ -1,0 +1,50 @@
+{
+  "case_id": "wave-renderer-trial",
+  "grid": [
+    25,
+    25,
+    25
+  ],
+  "lengths": [
+    6.283185307179586,
+    6.283185307179586,
+    6.283185307179586
+  ],
+  "boundary": "periodic",
+  "dt": 0.02,
+  "steps": 75,
+  "diagnostic_every": 1,
+  "checkpoint_every": 15,
+  "initial": {
+    "kind": "wave",
+    "modes": [
+      {
+        "amplitude": 0.35,
+        "wave_numbers": [
+          1,
+          0,
+          0
+        ],
+        "phase": 0.0
+      },
+      {
+        "amplitude": 0.2,
+        "wave_numbers": [
+          0,
+          1,
+          0
+        ],
+        "phase": 1.1
+      },
+      {
+        "amplitude": 0.12,
+        "wave_numbers": [
+          0,
+          0,
+          1
+        ],
+        "phase": 0.6
+      }
+    ]
+  }
+}

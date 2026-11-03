@@ -1,6 +1,46 @@
 # Project status
 
-Updated: 2026-11-02T10:46:38.389761+00:00 UTC; 2026-11-02T21:46:38.389761+11:00 Australia/Melbourne.
+Updated: 2026-11-02T12:37:39.053069+00:00 UTC; 2026-11-02T23:37:39.053069+11:00 Australia/Melbourne.
+
+## Low-Q stationary readmission and motion campaign prepared
+
+Prepared: UTC 2026-11-02T15:29:15.448567+00:00; Australia/Melbourne 2026-11-03T02:29:15.448567+11:00.
+
+The [new campaign](plans/sf-lowq-motion.md) provides exact-action Q1/Q2 readmission,
+controlled boosts with lab resolution preserved, two dt/h levels and a matched-spacing
+larger box. Rest/boosted trajectories retain conservation, centroid, translated-field,
+topology and tail/stress diagnostics. Failed readmission blocks boosts and stays in
+the ledger. Background launch/status/checkpoint stop/resume and offline rendering
+are supplied for the workstation; no overall time cap is imposed.
+
+Preparation controls are in [the report](../reports/sf-lowq-motion-preparation-20261103/README.md).
+The full production matrix remains pending local execution and scientific review.
+The maintainer confirmed ParaView display using Outline -> Volume for the wave trial.
+Q17/Q19 free flight and Q18/additional-Q follow-up remain later gates.
+
+## Physical-time reference and offline renderer implemented
+
+Recorded: 2026-11-02T12:37:39.053069+00:00 UTC; 2026-11-02T23:37:39.053069+11:00 Australia/Melbourne.
+
+The [CPU float64 nonlinear solver](models/SF-physical-time.md) now advances physical
+time, with constrained RK4, an explicit fourth-order discrete action, periodic/fixed
+boxes, authenticated rest/boosted static imports, and exact checkpoint/resume. The
+[measured controls](../reports/sf-time-renderer-20261102/README.md) establish wave and
+nonlinear manufactured convergence, constraints, conservation and regional flux checks.
+Fixed-wall reflection is quantified, with the coarse failed time/flux controls retained.
+
+The [standalone offline renderer](offline-renderer.md) reads renderer-owned preview
+exports and produces a basic 3D energy-surface/slice GIF and self-contained HTML player.
+Renderer settings do not change physics: export-on/off final states and diagnostics
+are identical. The default trial solves a 25³ periodic wave, then renders 26 coarser
+17³ display frames. A bundled completed example supports renderer-only testing.
+
+**Next scientific gate:** readmit stationary Q1/Q2 fields to the new time discretization,
+check residual/domain/time/space effects and controlled boosts, then refined larger-domain
+Q17 free flight with Q19 comparison. Short fresh unrelaxed seeds do not establish
+stationary soliton stability. Open/absorbing boundaries, high-Q motion and charged/
+electron acceptance remain uncompleted. Retain linked Q18, fresh fine starts/conditioning
+and additional Q values for later follow-up, including optional Q20/Q24.
 
 ## Neutral dynamics admission: workstation assessment complete
 
@@ -113,7 +153,7 @@ These validate selected transformations, energy, perturbation, topology and boun
 
 [Assessment](literature/pre-s3-review.md): nine additional references L11-L19, updated 2026 publication details for L05, source-specific review depth and S3 subdivisions. [ADR-0003](decisions/ADR-0003-pre-s3-literature.md) is accepted. S3-A maps the inspected Feynman component tables and Hoyos et al. covariant/conserved-quantity passages; S1/S2 numerical findings are unchanged.
 
-## Next task
+## Historical next task after PR36
 
 Following the authorised evidence merge in PR 36, work on a new focused branch: resume existing Q22 161³/193³ checkpoints without overwriting the original campaign, enforce final independently measured stationarity, and run a matched-spacing larger-domain study plus a stationary same-charge comparison within a declared budget. Publish an accepted/partial/failed ledger without extending indefinitely. Full fields remain on the workstation; they are not contained in the small evidence ZIP. Keep Q18's stationary link as a separate outcome; defer wider Q surveys.
 
