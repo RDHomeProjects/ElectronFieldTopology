@@ -1,10 +1,10 @@
 # s0-002: Repository layout and plan reconciliation — evidence index
 
-Updated: UTC 2026-11-04T01:00:23.956083+00:00; Australia/Melbourne 2026-11-04T12:00:23.956083+11:00.
+Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
 
-[Current study plan](../../../docs/plans/s0/002-repository-governance.md). State: prepared; scientific gate: not-applicable.
+[Current study plan](../../../docs/plans/s0/002-repository-governance.md). State: assessed; scientific gate: not-applicable.
 
-This administrative package provides canonical stage indexes, stable study IDs and byte-preservation checks; local application and publication follow.
+PR55 merged on 4 November 2026 at 01:22:41 UTC / 12:22:41 AEDT, commit fe7ce72408b2d1ad86a41a3b97ecc8482a746e25. All 21 CI checks passed; the published tree matched the reviewed correction and protected evidence bytes/paths.
 
 | Record role | Retained record |
 |---|---|

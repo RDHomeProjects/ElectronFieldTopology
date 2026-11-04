@@ -149,3 +149,7 @@ GitHub web/raw URLs do not provide a general server-side redirect through a loca
 filesystem symlink. A fresh clone plus an additive administrative patch gives the
 strongest isolation for this correction; an existing checkout or worktree provides
 less protection from unrelated untracked work and running artifact paths.
+
+## Temporary workstation storage
+
+Follow [the archive and restore policy](workstation-archives.md). Full scientific data is archived in verified release assets with a compact Git catalog before local copies become disposable. Published report paths and bytes remain unchanged.

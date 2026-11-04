@@ -1,8 +1,8 @@
 # s0-002: Repository layout and plan reconciliation
 
-Updated: UTC 2026-11-04T01:00:23.956083+00:00; Australia/Melbourne 2026-11-04T12:00:23.956083+11:00.
+Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
 
-State: **prepared**. Scientific gate: **not-applicable**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **not-applicable**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Restore a single current roadmap without changing published evidence or scientif
 
 ## Evidence and present finding
 
-This administrative package provides canonical stage indexes, stable study IDs and byte-preservation checks; local application and publication follow.
+PR55 merged on 4 November 2026 at 01:22:41 UTC / 12:22:41 AEDT, commit fe7ce72408b2d1ad86a41a3b97ecc8482a746e25. All 21 CI checks passed; the published tree matched the reviewed correction and protected evidence bytes/paths.
 
 ## Next action and exit evidence
 
-Apply in a separate clone, review the documentation-only diff, then publish one administrative PR.
+Maintain the register and canonical recording rules; initial repository reconciliation is published.
 
 All baseline non-administrative paths/bytes/modes unchanged; all legacy report roots owned; current navigation generated from one register.
 

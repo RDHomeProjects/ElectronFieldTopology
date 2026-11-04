@@ -1,13 +1,14 @@
 # Study plans
 
-Updated: UTC 2026-11-04T01:00:23.956083+00:00; Australia/Melbourne 2026-11-04T12:00:23.956083+11:00.
+Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
 
 Each study has a stable stage/number and one current plan below. Earlier flat plan files remain source specifications at their published paths; their historical next-step wording is superseded by the register.
 
 | Study | Activity | State | Scientific gate |
 |---|---|---|---|
 | [s0-001](s0/001-documentation-foundation.md) | Documentation foundation | assessed | not-applicable |
-| [s0-002](s0/002-repository-governance.md) | Repository layout and plan reconciliation | prepared | not-applicable |
+| [s0-002](s0/002-repository-governance.md) | Repository layout and plan reconciliation | assessed | not-applicable |
+| [s0-003](s0/003-workstation-archives.md) | Full workstation archives and temporary-cache policy | assessed | not-applicable |
 | [s1-a-001](s1-a/001-analytical-reference.md) | Analytical Hopfion reference | assessed | bounded |
 | [s2-001](s2/001-periodic-evolution.md) | Independent periodic Maxwell evolution | assessed | bounded |
 | [s3-a-001](s3-a/001-covariance.md) | Analytical Lorentz covariance | assessed | bounded |

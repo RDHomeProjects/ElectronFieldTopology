@@ -1,12 +1,11 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-04T01:00:23.956083+00:00",
-    "melbourne": "2026-11-04T12:00:23.956083+11:00"
+    "utc": "2026-11-04T09:13:37.867474+00:00",
+    "melbourne": "2026-11-04T20:13:37.867474+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
-    "s0-002",
     "s5-b-005",
     "s5-b-006",
     "s5-b-007",
@@ -124,11 +123,11 @@
       "number": 2,
       "slug": "repository-governance",
       "title": "Repository layout and plan reconciliation",
-      "state": "prepared",
+      "state": "assessed",
       "gate": "not-applicable",
       "question": "Restore a single current roadmap without changing published evidence or scientific software.",
-      "finding": "This administrative package provides canonical stage indexes, stable study IDs and byte-preservation checks; local application and publication follow.",
-      "next_action": "Apply in a separate clone, review the documentation-only diff, then publish one administrative PR.",
+      "finding": "PR55 merged on 4 November 2026 at 01:22:41 UTC / 12:22:41 AEDT, commit fe7ce72408b2d1ad86a41a3b97ecc8482a746e25. All 21 CI checks passed; the published tree matched the reviewed correction and protected evidence bytes/paths.",
+      "next_action": "Maintain the register and canonical recording rules; initial repository reconciliation is published.",
       "exit_evidence": "All baseline non-administrative paths/bytes/modes unchanged; all legacy report roots owned; current navigation generated from one register.",
       "depends_on": [
         "s0-001"
@@ -146,6 +145,43 @@
           "role": "preparation",
           "path": "docs/governance/repository-layout.md",
           "label": "Layout and recording policy"
+        }
+      ]
+    },
+    {
+      "id": "s0-003",
+      "stage": "s0",
+      "number": 3,
+      "slug": "workstation-archives",
+      "title": "Full workstation archives and temporary-cache policy",
+      "state": "assessed",
+      "gate": "not-applicable",
+      "question": "Can every surviving project dataset and local Git state be restored from GitHub before local copies are removed?",
+      "finding": "Archive 20261104t023917z-b0d06afa contains 38 workstation roots, 12873 payload files and 32,272,522,204 bytes. All remote payload hashes were checked. Compact catalog is staged for Git publication; no source deletion was performed.",
+      "next_action": "Publish the compact catalog and review unchanged local candidates while retaining one active checkout and datasets needed for the next study.",
+      "exit_evidence": "A versioned Git catalog anchors release assets; every file hash and Git graph is restore-verified; source changes block cleanup. No deletion from a size listing alone.",
+      "depends_on": [
+        "s0-002"
+      ],
+      "requirements": [
+        "GOV-001",
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/governance/workstation-archives.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s0/003-workstation-archives/preparation/20261104t015533z-f891025c/README.md",
+          "label": "Synthetic archive/restore controls"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s0/003-workstation-archives/assessments/20261104t023917z-b0d06afa/README.md",
+          "label": "Verified full-workstation archive"
         }
       ]
     },

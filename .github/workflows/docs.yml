@@ -18,6 +18,8 @@ jobs:
         run: python3 scripts/project_records.py check --ci
       - name: Test administrative integrity guards
         run: python3 scripts/test_project_records.py
+      - name: Test archive and restore invariants
+        run: python3 scripts/test_workstation_archive.py
       - name: Check documentation
         run: python3 scripts/check_docs.py
       - name: Verify recovered textual transfer offline
