@@ -19,4 +19,8 @@ Implemented benchmarks: [S2 periodic evolution](models/B0-H11-PSATD.md), [S2 fin
 
 Templates are available for [models](templates/model.md) and [experiment reports](templates/experiment-report.md).
 
-Before S3: read [the literature assessment](literature/pre-s3-review.md) and [scope decision](decisions/ADR-0003-pre-s3-literature.md).
+Historical pre-S3 checkpoint: see [the literature assessment](literature/pre-s3-review.md) and [scope decision](decisions/ADR-0003-pre-s3-literature.md).
+
+## Current project navigation
+
+Start from [the generated current status](STATUS.md), [roadmap](06-development-plan.md), [study plans](plans/README.md) and [stage report indexes](../reports/README.md). The [layout policy](governance/repository-layout.md) and [project register](project/README.md) define how future work is recorded. Earlier specifications retain their original paths and scientific scope.

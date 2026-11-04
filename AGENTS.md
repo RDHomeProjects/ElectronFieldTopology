@@ -28,3 +28,7 @@ Work in a task branch and open a reviewable pull request for subsequent developm
 Use small hosted CI jobs; larger experiments are explicitly dispatched or run locally. Do not enable recurring compute, paid services, API keys or AI workflow execution merely because this file exists. Do not execute untrusted PR code on a workstation runner.
 
 AI may draft code, derivations and reviews; an AI response is not a primary physics source. Cite actual papers and disclose AI assistance in research reports without assigning the AI human authorship.
+
+## Repository records
+
+Follow [the layout and recording policy](docs/governance/repository-layout.md). Before work, read the generated current status and canonical study plan. Update `docs/project/roadmap.json` in the same PR as changed scope, results or priority; render navigation and run `python3 scripts/project_records.py check`. Existing report files are immutable compatibility records. New studies/runs use registered stage IDs and canonical paths. Do not append competing current priorities.

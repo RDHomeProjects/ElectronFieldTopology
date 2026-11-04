@@ -1,156 +1,64 @@
 # Staged development plan
 
-## Current priority: diagnose low-Q motion before new production
+Updated: UTC 2026-11-04T01:00:23.956083+00:00; Australia/Melbourne 2026-11-04T12:00:23.956083+11:00.
 
-Updated: UTC 2026-11-03T23:43:39.658706+00:00; Melbourne 2026-11-04T10:43:39.658706+11:00.
+This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
-The [merged PR52 assessment](../reports/sf-motion/lowq-motion-2026-11-03T104629-568611+1100-30672/ASSESSMENT.md) establishes six bounded case passes
-and leaves global motion acceptance open. Follow [ADR-0011](decisions/ADR-0011-motion-diagnostics-and-spin-methods.md)
-and the [local diagnostic plan](plans/sf-motion-diagnostics.md):
+## Current priority
 
-1. Authenticate retained fields; replay endpoints; compare common physical times and
-   coordinates; measure initial transport defects, face diagnostics and kinetic/inertia matrices.
-2. Use those results to select a focused third-physical-resolution and matched-spacing
-   larger-domain control. Diagnostic resampling alone does not close NUM-003.
-3. After adequate low-Q motion control, assess Q17/Q19 free flight. Preserve Q18 fresh
-   fine-start/conditioning and additional Q values, including optional Q20/Q24.
-4. In parallel, retain the charged-theory feasibility work. For the conditional spin-method
-   route, first establish converged Q1/Q2 inertia/symmetry controls, then map closed field
-   configuration loops and explicit quantization assumptions before a quantum spectrum.
-   The [supplied papers](literature/soliton-quantization-methods.md), now L41-L43, guide
-   this route; they do not derive charge, Born probabilities or detector outcomes here.
-5. External-field and Stern-Gerlach benchmarks follow a justified coupling and apparatus/
-   detector model. Renderer settings continue to affect only display exports.
+Administrative reconciliation is prepared in this change. After it is merged, the next scientific task is **s5-b-005: boost initialization and field registration**, using retained fields before another production matrix. PR54 recorded the completed diagnostics; it did not close general motion acceptance.
 
-All outputs require UTC/Melbourne stamps. Computation remains local, resumable and
-without an arbitrary overall runtime cap. Lower dated sections preserve historical
-stage decisions; this section defines the current order.
+## Stage map
 
-Stages are evidence gates, not promised dates. S5-S7 are conditional research paths, not guaranteed outcomes. Do not run a broad search before validating the diagnostics.
-
-## Current gate: stationary low-Q readmission after verified wave evolution
-
-Updated: 2026-11-02T12:37:39.053069+00:00 UTC; 2026-11-02T23:37:39.053069+11:00 Australia/Melbourne.
-
-[Physical-time solver and renderer delivery](../reports/sf-time-renderer-20261102/README.md)
-now supplies the initial CPU reference: constrained nonlinear evolution, analytical
-and independently manufactured wave controls, checkpoint/resume and offline display.
-The [renderer-owned profile](offline-renderer.md) determines only optional display
-exports and presentation. The physical calculation keeps its own grid, precision,
-steps, time resolution and scientific diagnostics; export-on/off state equality is tested.
-
-Next establish stationary Q1/Q2 readmission and boost benchmarks in the actual time
-solver's lattice action, then a refined provisional larger-domain Q17 moving reference
-with Q19 comparison. Quantify boundaries, energy/momentum/flux, centroid/localization,
-constraints and perturbations before high-speed or isolated-stability claims. The
-first renderer does not require concurrent solver/render execution. Its basic trial
-is a wave control, not a moving electron or an accepted soliton result.
-
-Keep **Q18 fresh fine-start/conditioning and additional-Q assessment** after this
-motion tranche, including optional Q20/Q24. Preserve unsuccessful hyperbolic reproduction
-and all finite-domain/partial findings. Charged dynamics remains deferred under ADR-0008.
-Older preparation and assessment priorities below are historical checkpoints.
-
-## Current gate: physical-time solver after assessed admission
-
-Updated: 2026-11-02T10:46:38.389761+00:00 UTC; 2026-11-02T21:46:38.389761+11:00 Australia/Melbourne.
-
-The [workstation admission assessment](../reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md)
-is complete within its read-only scope: 31 endpoints, positive curvature in 24 trial
-directions, all numerical consistency gates passed, substantial domain sensitivity
-retained. It does not close nonlinear physical-time evolution or full stability.
-Implement the consistent action/constraint evolution, verify simple waves and low-Q
-controls with spatial/time/domain convergence, then assess a provisional larger-domain
-Q17 free-flight reference. Keep Q19 as a comparison, Q18's linked finding and Q22's
-cable regression. High speeds require contracted-field resolution and verified boundaries.
-The assessment's precise next gates and curvature-baseline recording gap are authoritative.
-
-**Return afterwards to Q18 fresh fine-grid/conditioning and additional Q values**,
-including the optional Q20/Q24 comparisons already recorded. Charged/electron-model
-acceptance remains deferred; this recommendation does not launch a new campaign.
-
-## Current priority: neutral physical-time dynamics admission
-
-Updated: 2026-11-02T08:48:53.481631+00:00 UTC; 2026-11-02T19:48:53.481631+11:00 Australia/Melbourne.
-
-The maintainer has requested motion-at-speed assessment after merged PR50. Follow
-[ADR-0009](decisions/ADR-0009-neutral-dynamics-admission.md): specify the complete
-[neutral relativistic action](models/SF-relativistic.md), execute read-only admission
-on the 31 retained endpoints, validate low-Q physical-time evolution, then run one
-selected higher-Q free-flight benchmark with mesh/time/domain controls. The present
-[workstation package](plans/sf-dynamics-admission.md) implements admission diagnostics,
-not nonlinear time evolution. Charged dynamics stays deferred under ADR-0008.
-
-**Return to Q18 fresh fine-start/conditioning controls and additional Q values after
-this dynamics tranche.** The historical next-task wording below is superseded in
-priority only: Q18's linked outcome and unsuccessful hyperbolic reproduction remain
-recorded, and optional Q20/Q24 comparisons remain available. No static stationarity
-or boost identity establishes electron behaviour.
-
-## Current analytical milestone and requested Q follow-up
-
-Assessment update: 2026-11-01T21:45:24.287800+00:00 UTC; 2026-11-02T08:45:24.287800+11:00 Australia/Melbourne. The [Q18/neighbour campaign assessment](../reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md) supports bounded Q17/Q19 torus-branch benchmarks and a repeatable three-component Q18 linked outcome, while preserving unsuccessful hyperbolic reproduction. All four Q18 branches inherit a 97-grid start; a fresh fine-grid/conditioning comparison is the next focused diagnostic before attributing this result solely to Q. The optional additional-Q controls remain available in the follow-up plan. Scalar stationarity and finite diagrams do not establish charged particles or physical-time stability.
-
-Run preparation update: 2026-11-01T15:07:15+00:00 UTC; 2026-11-02T02:07:15+11:00 Australia/Melbourne. The [Q18 neighbour run specification](plans/q18-neighbour-run.md) now implements this follow-up. [CPU seed admission](../reports/q18-neighbour-preparation-20261102/README.md) passed all six proposed initial fields. The next outputs must come from the separately checkpointed workstation campaign; no new relaxed research result is claimed by preparation.
-
-Recorded: 2026-11-01T02:02:43+00:00 (UTC); 2026-11-01T13:02:43+11:00 (Australia/Melbourne). Following merged PR 48, the [charge-capable relativistic equation audit](../reports/charged-model-audit-20261101/README.md) is complete as an analytical tranche: finite energy and charge flux checked; general Maxwell equivalence and unrestricted causal evolution not established, with explicit counterexamples/degeneracies recorded. [ADR-0008](decisions/ADR-0008-charged-model-audit.md) defers charged dynamics and does not accept an electron model. The [source supplement](literature/charged-model-audit-sources.md) includes restricted vibration evidence and a normalization discrepancy.
-
-**Next requested work: return to Q18 basin diagnosis and assess more Q values.** The [post-audit plan](plans/post-audit-q-assessment.md) prioritizes Q17/Q19 same-family controls, the retained Q22 control and optional Q20/Q24 extensions. Preserve the Q18 linked alternative and failed hyperbolic reproduction. This is a specific next scientific comparison, not a blanket catalogue; it does not wait for resolution of the charged theory. All outputs require UTC/Melbourne timestamps and resumable work without an arbitrary two-hour overall cap. Historical stage descriptions below remain historical; no new Q simulation has been performed in this audit.
-
-| Stage | Deliverables | Exit gate |
+| Stage | Responsibility | Current scope |
 |---|---|---|
-| S0 Documentation foundation | Folder structure, purpose, hypotheses, requirements, AI workflow, literature, templates and documentation CI | Navigable documents, checks pass, no simulated results claimed |
-| S1 Analytical benchmark | Locked Python package; verified Hopfion expressions; analytical sampling; field/energy visualisations and diagnostics | Equation map, independent checks, zero-flux behaviour and provenance |
-| S2 Independent evolution | Validated evolution method; finite-domain flux accounting; manual experiment workflow | Agreement with analytical evolution and resolution/domain/time-step studies |
-| S3 Relativity and stability | Consistent boosts; centre-of-energy tracking; perturbation studies; localisation vs knot persistence | Verified transformations and bounded claims with error estimates |
-| S4 Topology exploration | Valid field families, discrete topology choices, continuous searches and rejection ledger | Reproducible search, controlled budgets and convergence of shortlisted candidates |
-| S5 Extended dynamics feasibility | Literature-supported model specification, changed assumptions, equations/action and scale mechanism | Maintainer-reviewed rationale; viable constraints, causal behaviour and stability checks |
-| S6 Interaction assessment | Candidate pairs/probes, stress/energy balance, force-law and orientation studies | Consistent long-range fields and interactions; fitted properties identified |
-| S7 Quantum and experimental assessment | Spin/statistics analysis, precision/scattering comparison and distinguishing predictions | Qualified review and testable claims; experimental support remains separate |
+| [S0](../reports/s0/INDEX.md) | Repository governance | Administrative foundation; no scientific acceptance implied. |
+| [S1-A](../reports/s1-a/INDEX.md) | Analytical Maxwell benchmark | Bounded analytical instruments and recorded evidence. |
+| [S2](../reports/s2/INDEX.md) | Independent Maxwell evolution | Periodic numerical reference; isolated-boundary claims remain limited. |
+| [S3-A](../reports/s3-a/INDEX.md) | Lorentz covariance | Bounded common-event transformation controls. |
+| [S3-B](../reports/s3-b/INDEX.md) | Centroid and localization | Energy distribution and finite-tail diagnostics. |
+| [S3-C](../reports/s3-c/INDEX.md) | Classified perturbations | Controlled perturbation observations, not a full stability proof. |
+| [S3-D](../reports/s3-d/INDEX.md) | Helicity and linking | Selected fibers and finite instruments, not a whole-topology certificate. |
+| [S4-A](../reports/s4-a/INDEX.md) | Candidate catalogue | Bounded family admission and request ledger. |
+| [S4-B](../reports/s4-b/INDEX.md) | Off-core topology | Bounded closure and polygon invariants. |
+| [S4-C](../reports/s4-c/INDEX.md) | Return-map diagnosis | Bounded recurrence controls and model-feasibility decision. |
+| [S5-A](../reports/s5-a/INDEX.md) | Static neutral-model references | Static benchmarks, Q22 and Q18/neighbour studies; reproduction limits retained. |
+| [S5-B](../reports/s5-b/INDEX.md) | Neutral physical-time dynamics | Active dynamics track; general isolated-motion acceptance remains open. |
+| [S5-C](../reports/s5-c/INDEX.md) | Charged-model feasibility | Analytical feasibility audit; charged dynamics deferred. |
+| [S6](../reports/s6/INDEX.md) | Interactions and external probes | Conditional on suitable dynamics and justified coupling. |
+| [S7](../reports/s7/INDEX.md) | Spin, quantum and experimental assessment | Conditional methods and apparatus tests; no electron acceptance. |
 
-## First implementation task: S1-A
+## Ordered work and dependencies
 
-S1-A is merged; see [the report](../reports/s1-a/README.md). S2 periodic-reference implementation and verification are merged via PR 4; see [S2 findings](../reports/s2/README.md). S3-A covariance is merged via PR 7; see [S3-A findings](../reports/s3-a/README.md). S3-B energy-centroid/localisation diagnostics are merged via PR 9; see [S3-B findings](../reports/s3-b/README.md). S3-C classified perturbations are merged via PR 11; see [S3-C findings and literature alignment](../reports/s3-c/README.md). S3-D instruments are merged via PR 13; see [S3-D helicity and selected closed-pair findings](../reports/s3-d/README.md). S4-A bounded candidate-family work is merged via PR 15; see [its graphical report](../reports/s4-a/README.md). The bounded S4-B instrument tranche is merged via PR 31 under [ADR-0005](decisions/ADR-0005-s4b-resumption.md), with [off-core tracing and independent polygon invariants](models/B0-S4B-Offcore.md). The wider literature review remains incomplete and level 4 deferred. Open-boundary isolation remains a separate requirement before long-time isolated experiments.
+1. [s0-002: Repository layout and plan reconciliation](plans/s0/002-repository-governance.md) — Apply in a separate clone, review the documentation-only diff, then publish one administrative PR.
+2. [s5-b-005: Boost initialization and field registration](plans/s5-b/005-boost-initialization.md) — Start with retained fields and independent analytical controls at exact nodes, shifted points and boundary extensions. Compare old and new variants; add phase-invariant, initial-state and comoving-residual comparisons.
+3. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — After the initializer decision, run a small beta=.3 x/z comparison before selecting third-h and larger-Q1-box controls. Preserve action, precision and predeclared gates.
+4. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Proceed conditionally after adequate low-Q control with matched physical resolution, domain and observation-window checks.
+5. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
+6. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Select a bounded comparison after Q18 follow-up; do not start an unbounded catalogue.
 
-1. Verify a primary Hopfion formula and document conventions and normalisation.
-2. Create pyproject.toml, dependency lock and importable package.
-3. Evaluate E and B on a grid and at arbitrary points/times.
-4. Test Maxwell residuals against an independent reference or derivation.
-5. Produce electric flux, energy density, energy-flow and localisation outputs.
-6. Save config, commit and environment provenance; run small PR checks.
+## Parallel and conditional work
 
-Keep this task limited to analytical evaluation. Independently evolving fields belongs in S2.
+Charged-theory feasibility may proceed analytically in parallel. Q1/Q2 symmetry and collective-coordinate methods require converged kinetic metrics; quantization assumptions are explicit, and are separate from a classical-emergence claim. External-field, Stern–Gerlach and wavefunction-observable tests require justified coupling, state preparation and detector models. Energy density is not automatically a Born position probability. Renderer profiles affect display data only.
 
 ## Stop and reassess rules
 
-- A source-free charge result inconsistent with zero triggers numerical investigation.
-- Boundary-dependent persistence does not pass a free-space confinement gate.
-- If a theorem excludes the intended behaviour, record its assumptions and stop searching that class.
-- A classical candidate with attractive J does not bypass S7.
-- Poorly conditioned or unconverged results are inconclusive, not discoveries.
-- Any changed physical theory receives its own model ID and decision before coding.
+Preserve negative findings. Do not relax gates to obtain a pass. A missing input or integrity mismatch blocks dependent claims. Do not launch a new 60-case matrix automatically. Three diagnostic sampling grids do not constitute three physical solver resolutions. No arbitrary overall two-hour limit is imposed; use checkpointed, documented local work.
 
-S4 may catalogue valid but unconfined knots. Progress to S5 is a decision based on constraints, not a reward for running more candidates.
+## Plan maintenance
 
-## Pre-S3 literature checkpoint
+Edit the register and the applicable study specification in the same PR as a scope or priority change. Run `python3 scripts/project_records.py render`, then `python3 scripts/project_records.py check`. Historical decisions stay in ADRs and immutable reports; do not prepend another competing current plan.
 
-[Assessment](literature/pre-s3-review.md) completed before S3 implementation. [ADR-0003](decisions/ADR-0003-pre-s3-literature.md) records the accepted scope refinement. The literature assessment itself introduced no numerical code. S3-A implementation and evidence are now available separately; S3-B/C are merged; S3-D instrumentation and selected closed-pair evidence are merged via PR 13. S4-A provides a bounded regular monomial catalogue and request ledger, with selected core traces and graphical reports; broader S4 search and arbitrary-line topology work remain pending.
+## Historical section links
 
-| Substage | Purpose | Evidence gate |
-|---|---|---|
-| S3-A | Lorentz-transform the unbounded analytical field at consistent events | Conventions, inverse/composition, local invariants and Maxwell residuals |
-| S3-B | Energy centroid, width and contained-energy diagnostics | Stress-energy relation and domain/tail convergence; distinguish peaks and centroids |
-| S3-C | Bounded, classified perturbations | Constraint/null controls, linear difference-norm baseline, local redistribution and domain limits |
-| S3-D / S4 | Helicity and topology instrumentation | Gauge/boundary/mean handling and validated tracing or invariants |
+[Exact pre-reconciliation document](history/layout-20261104/docs__06-development-plan.md.txt). The following anchors retain former section links; use the current roadmap above.
 
-Use L11-L14 immediately, L15/L19 for topology diagnostic design, L16-L17 before nonlinear extension selection, and L18 before implementing open numerical boundaries. Existing L05 now has a 2026 journal version requiring version reconciliation before S4 construction work.
-
-Global norm conservation or a persistent helicity value alone cannot satisfy a self-confinement/stability gate. No nonlinear binding term is selected merely by adding these references.
-
-## Post-S4-B priority assessment
-
-See [the direction assessment](post-s4b-direction.md). Recommend a bounded return-map/control-sensitivity follow-up (proposed S4-C) before broader sampling or more families, followed by a focused S5 model-feasibility decision for the particle objective. Preserve S4 as the Maxwell reference; more knot examples alone do not supply a binding or charge mechanism. This recommendation does not authorise a broad search, new dynamics, level 4, or progression to S6/S7.
-
-## S4-C diagnosis and model-feasibility decision
-
-The maintainer authorised [the bounded return-map diagnosis](models/B0-S4C-ReturnMap.md) followed by [ADR-0006](decisions/ADR-0006-model-feasibility.md). The candidate comparison is [equation-mapped](models/S5-feasibility-audit.md). The decision retains B0 as a reference, rejects the unchanged/null-preserving route as an electron-binding fix, conditionally advances only a small static-energy mechanism reference, and defers a charged internal-field solver. No extended dynamics are implemented; physical charge, causal/stability and quantum gates remain explicit.
+<a id="current-priority-diagnose-low-q-motion-before-new-production"></a>
+<a id="current-gate-stationary-low-q-readmission-after-verified-wave-evolution"></a>
+<a id="current-gate-physical-time-solver-after-assessed-admission"></a>
+<a id="current-priority-neutral-physical-time-dynamics-admission"></a>
+<a id="current-analytical-milestone-and-requested-q-follow-up"></a>
+<a id="first-implementation-task-s1-a"></a>
+<a id="pre-s3-literature-checkpoint"></a>
+<a id="post-s4-b-priority-assessment"></a>
+<a id="s4-c-diagnosis-and-model-feasibility-decision"></a>

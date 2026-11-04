@@ -15,3 +15,7 @@ Do not include unlicensed paper copies, credentials, bulk simulation arrays or g
 Pull requests must explain what is assumed and what is derived. Reviewers should evaluate correctness separately from whether the result supports the hypothesis. Record rejected candidates and inconclusive experiments.
 
 Contributions are submitted under the applicable repository licence: Apache-2.0 for software and CC-BY-4.0 for original explanatory prose and figures. Only submit material you have the right to contribute.
+
+## Recording work
+
+Use [the layout policy](docs/governance/repository-layout.md) and [study plans](docs/plans/README.md). Update the project register and render generated navigation when recording preparation, a run, assessment or priority change. Preserve failed gates and old evidence; corrections are new dated assessments. Run `python3 scripts/project_records.py check` and the documentation checker for administrative changes.

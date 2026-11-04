@@ -39,3 +39,7 @@ Dedalus is an option for custom PDEs. Meep can provide independent Maxwell/FDTD 
 Begin with analytical sampling and modest grids. Profile before acceleration. Numerical code should run locally and in small hosted CI jobs from the same configuration. GPU support, containers and workstation runners are optional later decisions.
 
 Do not use periodic wraparound or a reflecting box as evidence of free-space confinement. Boundaries, finite tails and simulation duration are part of the physical and numerical specification.
+
+## Canonical project records
+
+The [layout policy](governance/repository-layout.md) defines current folder responsibilities and stage/study naming. The [project register](project/roadmap.json) owns current activity state and dependencies; generated stage indexes map it to unchanged historical report locations. This administration update does not alter numerical data flow, models or artifact paths.
