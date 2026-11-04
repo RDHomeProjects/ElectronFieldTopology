@@ -1,0 +1,1032 @@
+{
+  "schema_version": 1,
+  "updated_at": {
+    "utc": "2026-11-04T01:00:23.956083+00:00",
+    "melbourne": "2026-11-04T12:00:23.956083+11:00"
+  },
+  "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
+  "priority": [
+    "s0-002",
+    "s5-b-005",
+    "s5-b-006",
+    "s5-b-007",
+    "s5-a-004",
+    "s5-a-005"
+  ],
+  "stages": [
+    {
+      "id": "s0",
+      "title": "Repository governance",
+      "scope": "Administrative foundation; no scientific acceptance implied."
+    },
+    {
+      "id": "s1-a",
+      "title": "Analytical Maxwell benchmark",
+      "scope": "Bounded analytical instruments and recorded evidence."
+    },
+    {
+      "id": "s2",
+      "title": "Independent Maxwell evolution",
+      "scope": "Periodic numerical reference; isolated-boundary claims remain limited."
+    },
+    {
+      "id": "s3-a",
+      "title": "Lorentz covariance",
+      "scope": "Bounded common-event transformation controls."
+    },
+    {
+      "id": "s3-b",
+      "title": "Centroid and localization",
+      "scope": "Energy distribution and finite-tail diagnostics."
+    },
+    {
+      "id": "s3-c",
+      "title": "Classified perturbations",
+      "scope": "Controlled perturbation observations, not a full stability proof."
+    },
+    {
+      "id": "s3-d",
+      "title": "Helicity and linking",
+      "scope": "Selected fibers and finite instruments, not a whole-topology certificate."
+    },
+    {
+      "id": "s4-a",
+      "title": "Candidate catalogue",
+      "scope": "Bounded family admission and request ledger."
+    },
+    {
+      "id": "s4-b",
+      "title": "Off-core topology",
+      "scope": "Bounded closure and polygon invariants."
+    },
+    {
+      "id": "s4-c",
+      "title": "Return-map diagnosis",
+      "scope": "Bounded recurrence controls and model-feasibility decision."
+    },
+    {
+      "id": "s5-a",
+      "title": "Static neutral-model references",
+      "scope": "Static benchmarks, Q22 and Q18/neighbour studies; reproduction limits retained."
+    },
+    {
+      "id": "s5-b",
+      "title": "Neutral physical-time dynamics",
+      "scope": "Active dynamics track; general isolated-motion acceptance remains open."
+    },
+    {
+      "id": "s5-c",
+      "title": "Charged-model feasibility",
+      "scope": "Analytical feasibility audit; charged dynamics deferred."
+    },
+    {
+      "id": "s6",
+      "title": "Interactions and external probes",
+      "scope": "Conditional on suitable dynamics and justified coupling."
+    },
+    {
+      "id": "s7",
+      "title": "Spin, quantum and experimental assessment",
+      "scope": "Conditional methods and apparatus tests; no electron acceptance."
+    }
+  ],
+  "studies": [
+    {
+      "id": "s0-001",
+      "stage": "s0",
+      "number": 1,
+      "slug": "documentation-foundation",
+      "title": "Documentation foundation",
+      "state": "assessed",
+      "gate": "not-applicable",
+      "question": "Maintain navigable requirements, specifications and reproducibility guidance.",
+      "finding": "The documentation foundation exists; it is not evidence that later physical stages are accepted.",
+      "next_action": "Maintain traceability through the current register.",
+      "exit_evidence": "Navigable requirements and validated documentation.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "historical",
+          "path": "docs/03-requirements.md",
+          "label": "Requirements"
+        }
+      ]
+    },
+    {
+      "id": "s0-002",
+      "stage": "s0",
+      "number": 2,
+      "slug": "repository-governance",
+      "title": "Repository layout and plan reconciliation",
+      "state": "prepared",
+      "gate": "not-applicable",
+      "question": "Restore a single current roadmap without changing published evidence or scientific software.",
+      "finding": "This administrative package provides canonical stage indexes, stable study IDs and byte-preservation checks; local application and publication follow.",
+      "next_action": "Apply in a separate clone, review the documentation-only diff, then publish one administrative PR.",
+      "exit_evidence": "All baseline non-administrative paths/bytes/modes unchanged; all legacy report roots owned; current navigation generated from one register.",
+      "depends_on": [
+        "s0-001"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/decisions/ADR-0012-repository-governance.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "docs/governance/repository-layout.md",
+          "label": "Layout and recording policy"
+        }
+      ]
+    },
+    {
+      "id": "s1-a-001",
+      "stage": "s1-a",
+      "number": 1,
+      "slug": "analytical-reference",
+      "title": "Analytical Hopfion reference",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s1-a/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s2-001",
+      "stage": "s2",
+      "number": 1,
+      "slug": "periodic-evolution",
+      "title": "Independent periodic Maxwell evolution",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s2/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s3-a-001",
+      "stage": "s3-a",
+      "number": 1,
+      "slug": "covariance",
+      "title": "Analytical Lorentz covariance",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s3-a/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s3-b-001",
+      "stage": "s3-b",
+      "number": 1,
+      "slug": "centroid-localization",
+      "title": "Centroid and localization",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s3-b/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s3-c-001",
+      "stage": "s3-c",
+      "number": 1,
+      "slug": "perturbations",
+      "title": "Classified perturbations",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s3-c/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s3-d-001",
+      "stage": "s3-d",
+      "number": 1,
+      "slug": "helicity-linking",
+      "title": "Helicity and selected linking",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s3-d/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s4-a-001",
+      "stage": "s4-a",
+      "number": 1,
+      "slug": "candidate-catalogue",
+      "title": "Bounded candidate catalogue",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s4-a/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s4-b-001",
+      "stage": "s4-b",
+      "number": 1,
+      "slug": "offcore-topology",
+      "title": "Bounded off-core diagnosis",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s4-b/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s4-c-001",
+      "stage": "s4-c",
+      "number": 1,
+      "slug": "returnmap-feasibility",
+      "title": "Return-map diagnosis and feasibility",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Reproduce the declared bounded reference and validate its instruments.",
+      "finding": "Retained evidence supports only the scope stated in its original report. The administration change makes no new acceptance decision.",
+      "next_action": "Retain as a regression reference; revisit only through a new versioned study.",
+      "exit_evidence": "Original declared tolerances and applicability limits remain authoritative.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s4-c/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s5-a-001",
+      "stage": "s5-a",
+      "number": 1,
+      "slug": "static-reference",
+      "title": "Static neutral SF reference and recovered evidence",
+      "state": "assessed",
+      "gate": "open",
+      "question": "Validate the declared SF energy and stationary references before stronger physical claims.",
+      "finding": "Recovered and partial static records remain intact. Reproduction and physical acceptance limits are unchanged.",
+      "next_action": "Retain these exact records and the complete-history source bundle as historical provenance.",
+      "exit_evidence": "Use the original report scopes; static stationarity does not establish charged particles or physical-time stability.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/SF-J2015-static.md"
+      ],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s5-a/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s5-a-002",
+      "stage": "s5-a",
+      "number": 2,
+      "slug": "q22-benchmark",
+      "title": "Fresh Q22 numerical benchmark",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Assess fresh Q22 scalar and finite-diagram evidence.",
+      "finding": "PR48 records the fresh benchmark assessment; its finite topology and acceptance limits are preserved.",
+      "next_action": "Use as a declared static comparison, with its existing qualifications.",
+      "exit_evidence": "No additional topology or electron acceptance follows from this register.",
+      "depends_on": [
+        "s5-a-001"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/plans/q22-convergence-study.md"
+      ],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/s5-a/q22-fresh-20261101T102757+1100/ASSESSMENT.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s5-a-003",
+      "stage": "s5-a",
+      "number": 3,
+      "slug": "q18-neighbours",
+      "title": "Q18 basin and Q17/Q19 static comparison",
+      "state": "assessed",
+      "gate": "open",
+      "question": "Diagnose the Q18 alternative and compare neighbouring Q values without locking core knot type.",
+      "finding": "Q17/Q19 support the selected bounded K(7,2) branches. A Q18 linked outcome repeats; the target hyperbolic minimum remains unreproduced.",
+      "next_action": "Preserve all branches and return to fresh fine starts/conditioning after the dynamics tranche.",
+      "exit_evidence": "Fresh starts and conditioning are still needed before attributing the outcome solely to Q.",
+      "depends_on": [
+        "s5-a-001"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/plans/q18-neighbour-run.md",
+        "docs/plans/post-audit-q-assessment.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/q18-neighbour-preparation-20261102/README.md",
+          "label": "Preparation"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/q18-neighbours/q18-neighbours-20261102T022100+1100-165739/ASSESSMENT.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s5-a-004",
+      "stage": "s5-a",
+      "number": 4,
+      "slug": "q18-fresh-starts",
+      "title": "Q18 fresh fine-start and conditioning follow-up",
+      "state": "planned",
+      "gate": "open",
+      "question": "Does start resolution or conditioning change the retained Q18 linked outcome?",
+      "finding": "This follow-up has not been completed; earlier unsuccessful hyperbolic reproduction is retained.",
+      "next_action": "Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.",
+      "exit_evidence": "Authenticated independent starts, preserved rejected outcomes, and controlled mesh/domain/conditioning comparisons.",
+      "depends_on": [
+        "s5-b-007",
+        "s5-a-003"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/plans/post-audit-q-assessment.md"
+      ],
+      "records": []
+    },
+    {
+      "id": "s5-a-005",
+      "stage": "s5-a",
+      "number": 5,
+      "slug": "additional-q",
+      "title": "Additional-Q controls",
+      "state": "planned",
+      "gate": "open",
+      "question": "Do additional Q values clarify candidate selection beyond the Q18 difficulties?",
+      "finding": "Optional Q20/Q24 remain planned; no new run is claimed.",
+      "next_action": "Select a bounded comparison after Q18 follow-up; do not start an unbounded catalogue.",
+      "exit_evidence": "Same-action controls, fresh starts and preserved topology/energy comparisons.",
+      "depends_on": [
+        "s5-a-004"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/plans/post-audit-q-assessment.md"
+      ],
+      "records": []
+    },
+    {
+      "id": "s5-b-001",
+      "stage": "s5-b",
+      "number": 1,
+      "slug": "dynamics-admission",
+      "title": "Neutral dynamics admission",
+      "state": "assessed",
+      "gate": "open",
+      "question": "Are retained static fields numerically suitable inputs to the declared neutral dynamics?",
+      "finding": "31 endpoints were assessed; sampled curvature was positive, with significant finite-domain stress sensitivity. No physical-time evolution was established by admission alone.",
+      "next_action": "Retain admission findings as input qualifications for motion studies.",
+      "exit_evidence": "Full stability and isolated-boundary acceptance remain separate.",
+      "depends_on": [
+        "s5-a-003"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/plans/sf-dynamics-admission.md",
+        "docs/models/SF-relativistic.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/sf-dynamics-admission-20261102/README.md",
+          "label": "Admission preparation"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/sf-dynamics/sf-dynamics-admission-20261102T200815+1100-217932/ASSESSMENT.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s5-b-002",
+      "stage": "s5-b",
+      "number": 2,
+      "slug": "solver-renderer-controls",
+      "title": "Physical-time solver and independent renderer controls",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "Validate the time solver independently and keep renderer sampling separate from science.",
+      "finding": "Wave/manufactured controls, checkpoint/resume and export invariance are recorded. An animation is not physical acceptance.",
+      "next_action": "Preserve the reference controls and renderer contract during future initializer work.",
+      "exit_evidence": "Scientific grid, precision and integration remain independent of optional display exports.",
+      "depends_on": [
+        "s5-b-001"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/SF-physical-time.md",
+        "docs/offline-renderer.md"
+      ],
+      "records": [
+        {
+          "role": "verification",
+          "path": "reports/sf-time-renderer-20261102/README.md",
+          "label": "Solver and renderer verification"
+        }
+      ]
+    },
+    {
+      "id": "s5-b-003",
+      "stage": "s5-b",
+      "number": 3,
+      "slug": "lowq-motion",
+      "title": "Low-Q physical-time campaign",
+      "state": "assessed",
+      "gate": "open",
+      "question": "Do readmitted Q1/Q2 fields support controlled bounded motion under the unchanged action?",
+      "finding": "6 rest states and 60 cases completed. Six bounded passes remain; 50 tail, 18 shape and four momentum failures overlap. General motion acceptance is open.",
+      "next_action": "Use retained full fields for diagnosis before a new production matrix.",
+      "exit_evidence": "Existing tolerances and failed cases remain authoritative; no isolated long-time stability claim.",
+      "depends_on": [
+        "s5-b-002"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/plans/sf-lowq-motion.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/sf-lowq-motion-preparation-20261103/README.md",
+          "label": "Campaign preparation"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/sf-motion/lowq-motion-2026-11-03T104629-568611+1100-30672/ASSESSMENT.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s5-b-004",
+      "stage": "s5-b",
+      "number": 4,
+      "slug": "motion-diagnostics",
+      "title": "Full-field motion diagnostics",
+      "state": "assessed",
+      "gate": "open",
+      "question": "Separate timestep, initialization, mesh/domain and classical kinetic-metric effects in retained fields.",
+      "finding": "PR54 records zero mismatch in 540 endpoint comparisons, six rest metrics and 70 pairs. Initialization and domain sensitivity persist; inertia is not converged.",
+      "next_action": "Proceed to initialization and consistently registered initial/comoving comparisons.",
+      "exit_evidence": "Compact record integrity is confirmed; full fields remain local. Sampling grids do not replace physical resolutions.",
+      "depends_on": [
+        "s5-b-003"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/plans/sf-motion-diagnostics.md",
+        "docs/literature/soliton-quantization-methods.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/sf-motion-diagnostics-preparation-20261104/README.md",
+          "label": "Diagnostic preparation"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/sf-motion/motion-diagnostics-2026-11-04T105215-242494+1100-98905/ASSESSMENT.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s5-b-005",
+      "stage": "s5-b",
+      "number": 5,
+      "slug": "boost-initialization",
+      "title": "Boost initialization and field registration",
+      "state": "planned",
+      "gate": "open",
+      "question": "Can a smoother, consistently differentiated reconstruction improve boost consistency without changing the action?",
+      "finding": "The diagnostic finds 5.99–10.98% internal-field-rate mismatch. This is not centroid speed error and does not prove interpolation explains all shape error.",
+      "next_action": "Start with retained fields and independent analytical controls at exact nodes, shifted points and boundary extensions. Compare old and new variants; add phase-invariant, initial-state and comoving-residual comparisons.",
+      "exit_evidence": "Document the interpolant and its derivatives, normalization/tangency, independent accuracy/order and preserved old reference. Do not replace velocity with a fitted D4 derivative merely to erase the residual. Register field symmetries consistently without hiding x/z dependence.",
+      "depends_on": [
+        "s5-b-004"
+      ],
+      "requirements": [
+        "NUM-001",
+        "NUM-003",
+        "REL-002",
+        "REP-001",
+        "REP-002",
+        "VIS-001"
+      ],
+      "specifications": [
+        "docs/models/SF-physical-time.md",
+        "docs/literature/soliton-quantization-methods.md"
+      ],
+      "records": []
+    },
+    {
+      "id": "s5-b-006",
+      "stage": "s5-b",
+      "number": 6,
+      "slug": "focused-motion-convergence",
+      "title": "Focused motion, mesh and domain convergence",
+      "state": "planned",
+      "gate": "open",
+      "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
+      "finding": "No new production run is claimed. Q1 tail and inertia remain domain-sensitive; Q2 low-speed results are provisional bounded references.",
+      "next_action": "After the initializer decision, run a small beta=.3 x/z comparison before selecting third-h and larger-Q1-box controls. Preserve action, precision and predeclared gates.",
+      "exit_evidence": "Separate starting-state, temporal, spatial and domain effects; quantify tails, momentum, shape and inertia. A tail pass alone does not validate inertia or isolation.",
+      "depends_on": [
+        "s5-b-005"
+      ],
+      "requirements": [
+        "NUM-002",
+        "NUM-003",
+        "BND-001",
+        "REL-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/SF-physical-time.md"
+      ],
+      "records": []
+    },
+    {
+      "id": "s5-b-007",
+      "stage": "s5-b",
+      "number": 7,
+      "slug": "higher-q-motion",
+      "title": "Q17/Q19 motion comparison",
+      "state": "planned",
+      "gate": "open",
+      "question": "Do selected higher-Q static references retain controlled motion once low-Q methods are adequately validated?",
+      "finding": "Static K(7,2) identification is not a motion or electron-model result.",
+      "next_action": "Proceed conditionally after adequate low-Q control with matched physical resolution, domain and observation-window checks.",
+      "exit_evidence": "Authenticated higher-Q initial states, conservation, localization, topology and convergence within explicitly bounded scope.",
+      "depends_on": [
+        "s5-b-006",
+        "s5-a-003"
+      ],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/SF-physical-time.md"
+      ],
+      "records": []
+    },
+    {
+      "id": "s5-c-001",
+      "stage": "s5-c",
+      "number": 1,
+      "slug": "charged-model-audit",
+      "title": "Charged-model equation audit",
+      "state": "assessed",
+      "gate": "blocked",
+      "question": "Does the proposed charged extension provide general Maxwell equivalence and unrestricted causal evolution?",
+      "finding": "The retained audit records finite energy/charge-flux checks and unresolved equivalence/degeneracy issues; charged dynamics is deferred.",
+      "next_action": "Retain the counterexamples and exact algebra. Resolve feasibility before a charged simulation.",
+      "exit_evidence": "No charged dynamics or electron acceptance from the analytical audit alone.",
+      "depends_on": [],
+      "requirements": [
+        "GOV-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/decisions/ADR-0008-charged-model-audit.md"
+      ],
+      "records": [
+        {
+          "role": "assessment",
+          "path": "reports/charged-model-audit-20261101/README.md",
+          "label": "Retained report"
+        }
+      ]
+    },
+    {
+      "id": "s5-c-002",
+      "stage": "s5-c",
+      "number": 2,
+      "slug": "charged-theory-feasibility",
+      "title": "Charged-theory feasibility follow-up",
+      "state": "deferred",
+      "gate": "blocked",
+      "question": "Can a justified extension resolve the audited causal/constraint/coupling gaps?",
+      "finding": "No replacement charged model has been accepted. Analytic feasibility can be examined in parallel without launching charged dynamics.",
+      "next_action": "Specify altered assumptions and derive constraints, hyperbolicity and observable coupling before implementation.",
+      "exit_evidence": "Source-mapped equations and independently checked admissibility/coupling; distinguish supplied charge laws from emergence.",
+      "depends_on": [
+        "s5-c-001"
+      ],
+      "requirements": [
+        "MOD-001",
+        "MOD-002",
+        "SCI-003",
+        "GOV-002"
+      ],
+      "specifications": [
+        "docs/decisions/ADR-0008-charged-model-audit.md"
+      ],
+      "records": []
+    },
+    {
+      "id": "s6-001",
+      "stage": "s6",
+      "number": 1,
+      "slug": "external-probes",
+      "title": "External-field and interaction benchmarks",
+      "state": "planned",
+      "gate": "open",
+      "question": "Can a validated candidate respond to independently specified probes under a justified coupling?",
+      "finding": "Uniform/nonuniform-field, pair-interaction and apparatus ideas remain conditional; no force law is inferred from visualization.",
+      "next_action": "First select coupling and apparatus assumptions; predeclare force, energy/momentum and orientation observables.",
+      "exit_evidence": "Converged probes and controls without fitting the desired charge law into the model.",
+      "depends_on": [
+        "s5-b-006",
+        "s5-c-002"
+      ],
+      "requirements": [
+        "INT-001",
+        "SCI-003",
+        "NUM-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": []
+    },
+    {
+      "id": "s7-001",
+      "stage": "s7",
+      "number": 1,
+      "slug": "symmetry-spin-methods",
+      "title": "Q1/Q2 symmetry and spin-method controls",
+      "state": "planned",
+      "gate": "open",
+      "question": "Can converged kinetic metrics and configuration-space symmetry support an explicitly qualified collective-coordinate treatment?",
+      "finding": "Measured classical Gram matrices have near-dependent axial/phase directions and finite-domain sensitivity. No quantum spin has been derived.",
+      "next_action": "Establish metric and symmetry limits before eliminating coordinates or inverting a reduced metric; map appropriate loops and explicitly stated quantization assumptions.",
+      "exit_evidence": "Independent symmetry/loop controls, qualified FR applicability, and no conflation of imposed quantization with classical emergence.",
+      "depends_on": [
+        "s5-b-006"
+      ],
+      "requirements": [
+        "QNT-001",
+        "SCI-003",
+        "NUM-003",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/literature/soliton-quantization-methods.md"
+      ],
+      "records": []
+    },
+    {
+      "id": "s7-002",
+      "stage": "s7",
+      "number": 2,
+      "slug": "apparatus-detectors",
+      "title": "Stern–Gerlach and detector benchmarks",
+      "state": "planned",
+      "gate": "open",
+      "question": "Does a justified model predict apparatus outcomes beyond classical deflection or imposed two-state assumptions?",
+      "finding": "No Stern–Gerlach, detector-probability or electron acceptance follows from current neutral motion.",
+      "next_action": "After candidate/coupling and state-preparation controls, specify the apparatus and distinguish emergent outcomes from supplied quantum rules.",
+      "exit_evidence": "Independent experimental observables, orientation/sequential controls, probability law and uncertainty with assumptions exposed.",
+      "depends_on": [
+        "s6-001",
+        "s7-001"
+      ],
+      "requirements": [
+        "QNT-001",
+        "INT-001",
+        "SCI-003",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": []
+    },
+    {
+      "id": "s7-003",
+      "stage": "s7",
+      "number": 3,
+      "slug": "wavefunction-observables",
+      "title": "Wavefunction and energy-density observable comparison",
+      "state": "planned",
+      "gate": "open",
+      "question": "Which model observables can be meaningfully compared with a wavefunction position distribution?",
+      "finding": "A deterministic energy density is not automatically a probability distribution; no Born-rule equivalence is accepted.",
+      "next_action": "Define preparation, observable map and ensemble or measurement law explicitly before using distributions to select candidates.",
+      "exit_evidence": "Compare declared predictions and controls, not visually similar density plots; identify fitted inputs and independently tested outputs.",
+      "depends_on": [
+        "s7-001",
+        "s6-001"
+      ],
+      "requirements": [
+        "QNT-001",
+        "SCI-003",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [],
+      "records": []
+    }
+  ],
+  "legacy_locations": [
+    {
+      "path": "reports/charged-model-audit-20261101",
+      "study": "s5-c-001",
+      "stage": "s5-c"
+    },
+    {
+      "path": "reports/q18-neighbour-preparation-20261102",
+      "study": "s5-a-003",
+      "stage": "s5-a"
+    },
+    {
+      "path": "reports/q18-neighbours",
+      "study": "s5-a-003",
+      "stage": "s5-a"
+    },
+    {
+      "path": "reports/s1-a",
+      "study": "s1-a-001",
+      "stage": "s1-a"
+    },
+    {
+      "path": "reports/s2",
+      "study": "s2-001",
+      "stage": "s2"
+    },
+    {
+      "path": "reports/s3-a",
+      "study": "s3-a-001",
+      "stage": "s3-a"
+    },
+    {
+      "path": "reports/s3-b",
+      "study": "s3-b-001",
+      "stage": "s3-b"
+    },
+    {
+      "path": "reports/s3-c",
+      "study": "s3-c-001",
+      "stage": "s3-c"
+    },
+    {
+      "path": "reports/s3-d",
+      "study": "s3-d-001",
+      "stage": "s3-d"
+    },
+    {
+      "path": "reports/s4-a",
+      "study": "s4-a-001",
+      "stage": "s4-a"
+    },
+    {
+      "path": "reports/s4-b",
+      "study": "s4-b-001",
+      "stage": "s4-b"
+    },
+    {
+      "path": "reports/s4-c",
+      "study": "s4-c-001",
+      "stage": "s4-c"
+    },
+    {
+      "path": "reports/s5-a",
+      "study": "s5-a-001",
+      "stage": "s5-a"
+    },
+    {
+      "path": "reports/sf-dynamics",
+      "study": "s5-b-001",
+      "stage": "s5-b"
+    },
+    {
+      "path": "reports/sf-dynamics-admission-20261102",
+      "study": "s5-b-001",
+      "stage": "s5-b"
+    },
+    {
+      "path": "reports/sf-lowq-motion-preparation-20261103",
+      "study": "s5-b-003",
+      "stage": "s5-b"
+    },
+    {
+      "path": "reports/sf-motion",
+      "study": "s5-b-003",
+      "stage": "s5-b"
+    },
+    {
+      "path": "reports/sf-motion-diagnostics-preparation-20261104",
+      "study": "s5-b-004",
+      "stage": "s5-b"
+    },
+    {
+      "path": "reports/sf-time-renderer-20261102",
+      "study": "s5-b-002",
+      "stage": "s5-b"
+    }
+  ],
+  "legacy_substudies": [
+    {
+      "path": "reports/sf-motion/motion-diagnostics-2026-11-04T105215-242494+1100-98905",
+      "study": "s5-b-004",
+      "stage": "s5-b"
+    }
+  ]
+}
