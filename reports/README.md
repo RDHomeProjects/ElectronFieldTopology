@@ -1,5 +1,7 @@
 # Research reports
 
+- [Assessed full-field motion diagnostics](sf-motion/motion-diagnostics-2026-11-04T105215-242494+1100-98905/ASSESSMENT.md): endpoint replay, initialization and domain sensitivity; global motion acceptance remains open.
+
 - [Full-field motion diagnostic preparation](sf-motion-diagnostics-preparation-20261104/README.md): authenticated endpoint replay, common-coordinate/time comparisons and classical kinetic metrics.
 
 - [Assessed low-Q physical-time campaign](sf-motion/lowq-motion-2026-11-03T104629-568611+1100-30672/ASSESSMENT.md): six bounded passes and preserved tail/shape/momentum failures.
