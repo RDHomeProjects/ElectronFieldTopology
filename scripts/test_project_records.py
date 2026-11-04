@@ -22,8 +22,8 @@ class RecordIntegrity(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):cls.tmp.cleanup()
 
-    def test_baseline_preserved(self):
-        self.assertEqual(p.check(self.root,migration=True)['protected_files'],1201)
+    def test_published_reports_preserved(self):
+        self.assertEqual(p.check(self.root)['protected_files'],964)
 
     def test_duplicate_study_rejected(self):
         d=copy.deepcopy(self.data);d['studies'].append(d['studies'][0])

@@ -1,12 +1,12 @@
 # Staged development plan
 
-Updated: UTC 2026-11-04T01:00:23.956083+00:00; Australia/Melbourne 2026-11-04T12:00:23.956083+11:00.
+Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
 ## Current priority
 
-Administrative reconciliation is prepared in this change. After it is merged, the next scientific task is **s5-b-005: boost initialization and field registration**, using retained fields before another production matrix. PR54 recorded the completed diagnostics; it did not close general motion acceptance.
+Registered administrative activities are assessed. The next scientific task is **s5-b-005: boost initialization and field registration**, using retained fields before another production matrix. PR54 recorded the completed diagnostics; it did not close general motion acceptance.
 
 ## Stage map
 
@@ -30,12 +30,11 @@ Administrative reconciliation is prepared in this change. After it is merged, th
 
 ## Ordered work and dependencies
 
-1. [s0-002: Repository layout and plan reconciliation](plans/s0/002-repository-governance.md) — Apply in a separate clone, review the documentation-only diff, then publish one administrative PR.
-2. [s5-b-005: Boost initialization and field registration](plans/s5-b/005-boost-initialization.md) — Start with retained fields and independent analytical controls at exact nodes, shifted points and boundary extensions. Compare old and new variants; add phase-invariant, initial-state and comoving-residual comparisons.
-3. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — After the initializer decision, run a small beta=.3 x/z comparison before selecting third-h and larger-Q1-box controls. Preserve action, precision and predeclared gates.
-4. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Proceed conditionally after adequate low-Q control with matched physical resolution, domain and observation-window checks.
-5. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
-6. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Select a bounded comparison after Q18 follow-up; do not start an unbounded catalogue.
+1. [s5-b-005: Boost initialization and field registration](plans/s5-b/005-boost-initialization.md) — Start with retained fields and independent analytical controls at exact nodes, shifted points and boundary extensions. Compare old and new variants; add phase-invariant, initial-state and comoving-residual comparisons.
+2. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — After the initializer decision, run a small beta=.3 x/z comparison before selecting third-h and larger-Q1-box controls. Preserve action, precision and predeclared gates.
+3. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Proceed conditionally after adequate low-Q control with matched physical resolution, domain and observation-window checks.
+4. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
+5. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Select a bounded comparison after Q18 follow-up; do not start an unbounded catalogue.
 
 ## Parallel and conditional work
 

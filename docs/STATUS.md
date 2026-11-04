@@ -1,10 +1,10 @@
 # Project status
 
-Updated: UTC 2026-11-04T01:00:23.956083+00:00; Australia/Melbourne 2026-11-04T12:00:23.956083+11:00.
+Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
 
 ## Current position
 
-Reviewed baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest completed scientific activity is **s5-b-004**, the retained-field motion diagnostic assessment. The administration update is prepared; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest completed scientific activity is **s5-b-004**, the retained-field motion diagnostic assessment. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
 The review records 540 endpoint numeric comparisons with zero mismatch, 6 rest metrics and 70 pair records. The original 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures remain unchanged. Initial internal-field-rate mismatch is 5.99–10.98%; maximum temporal final-field difference is 0.000038%. Cross-box raw-field and inertia sensitivity remain unresolved. These are different observables, not interchangeable speed errors.
 
@@ -17,7 +17,8 @@ The review records 540 endpoint numeric comparisons with zero mismatch, 6 rest m
 | Study | Activity | State | Scientific gate |
 |---|---|---|---|
 | [s0-001](plans/s0/001-documentation-foundation.md) | Documentation foundation | assessed | not-applicable |
-| [s0-002](plans/s0/002-repository-governance.md) | Repository layout and plan reconciliation | prepared | not-applicable |
+| [s0-002](plans/s0/002-repository-governance.md) | Repository layout and plan reconciliation | assessed | not-applicable |
+| [s0-003](plans/s0/003-workstation-archives.md) | Full workstation archives and temporary-cache policy | assessed | not-applicable |
 | [s1-a-001](plans/s1-a/001-analytical-reference.md) | Analytical Hopfion reference | assessed | bounded |
 | [s2-001](plans/s2/001-periodic-evolution.md) | Independent periodic Maxwell evolution | assessed | bounded |
 | [s3-a-001](plans/s3-a/001-covariance.md) | Analytical Lorentz covariance | assessed | bounded |

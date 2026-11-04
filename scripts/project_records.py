@@ -91,8 +91,10 @@ def documents(data, root=ROOT):
     t = '# Staged development plan\n\n' + stamp(data)
     t += '\nThis is the current roadmap, generated from ' + link(p, REGISTRY, 'the project register') + '. '
     t += 'Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.\n'
-    t += '\n## Current priority\n\nAdministrative reconciliation is prepared in this change. '
-    t += 'After it is merged, the next scientific task is **s5-b-005: boost initialization and field registration**, '
+    active_admin = [s['id'] for s in studies if s['stage']=='s0' and s['state'] not in {'assessed','deferred'}]
+    t += '\n## Current priority\n\n'
+    t += ('Administrative work in progress: '+', '.join(active_admin)+'. ' if active_admin else 'Registered administrative activities are assessed. ')
+    t += 'The next scientific task is **s5-b-005: boost initialization and field registration**, '
     t += 'using retained fields before another production matrix. PR54 recorded the completed diagnostics; it did not close general motion acceptance.\n'
     t += '\n## Stage map\n\n| Stage | Responsibility | Current scope |\n|---|---|---|\n'
     for st in stages:
@@ -116,9 +118,9 @@ def documents(data, root=ROOT):
     add(p, t)
     p = 'docs/STATUS.md'
     t = '# Project status\n\n' + stamp(data)
-    t += '\n## Current position\n\nReviewed baseline: PR54, commit `' + data['baseline_commit'] + '`. '
+    t += '\n## Current position\n\nPreservation baseline: PR54, commit `' + data['baseline_commit'] + '`. '
     t += 'The latest completed scientific activity is **s5-b-004**, the retained-field motion diagnostic assessment. '
-    t += 'The administration update is prepared; no new trajectory is produced.\n'
+    t += 'Administrative progress is recorded in the study register below; no new trajectory is produced.\n'
     t += '\nThe review records 540 endpoint numeric comparisons with zero mismatch, 6 rest metrics and 70 pair records. '
     t += 'The original 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures remain unchanged. '
     t += 'Initial internal-field-rate mismatch is 5.99–10.98%; maximum temporal final-field difference is 0.000038%. '
