@@ -1,6 +1,6 @@
 # Project status
 
-Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
+Updated: UTC 2026-11-04T11:59:20.718361+00:00; Australia/Melbourne 2026-11-04T22:59:20.718361+11:00.
 
 ## Current position
 
@@ -37,7 +37,7 @@ The review records 540 endpoint numeric comparisons with zero mismatch, 6 rest m
 | [s5-b-002](plans/s5-b/002-solver-renderer-controls.md) | Physical-time solver and independent renderer controls | assessed | bounded |
 | [s5-b-003](plans/s5-b/003-lowq-motion.md) | Low-Q physical-time campaign | assessed | open |
 | [s5-b-004](plans/s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
-| [s5-b-005](plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | planned | open |
+| [s5-b-005](plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | prepared | open |
 | [s5-b-006](plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | planned | open |
 | [s5-b-007](plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | planned | open |
 | [s5-c-001](plans/s5-c/001-charged-model-audit.md) | Charged-model equation audit | assessed | blocked |

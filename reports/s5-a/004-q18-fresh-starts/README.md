@@ -1,6 +1,6 @@
 # s5-a-004: Q18 fresh fine-start and conditioning follow-up — evidence index
 
-Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
+Updated: UTC 2026-11-04T11:59:20.718361+00:00; Australia/Melbourne 2026-11-04T22:59:20.718361+11:00.
 
 [Current study plan](../../../docs/plans/s5-a/004-q18-fresh-starts.md). State: planned; scientific gate: open.
 
