@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-04T13:35:35.703463+00:00",
-    "melbourne": "2026-11-05T00:35:35.703463+11:00"
+    "utc": "2026-11-04T14:17:45.414426+00:00",
+    "melbourne": "2026-11-05T01:17:45.414426+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -775,11 +775,11 @@
       "number": 6,
       "slug": "focused-motion-convergence",
       "title": "Focused motion, mesh and domain convergence",
-      "state": "planned",
+      "state": "prepared",
       "gate": "open",
       "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
-      "finding": "S5-B-005 supports a conditional cubic comparison but found fixed-layer deviations in all 12 beta=.1 raw candidates. New candidate trajectories and motion/convergence acceptance remain untested.",
-      "next_action": "First implement thin-north-layer x/z controls and explicit candidate fixed-layer readmission, recording pre/post n/v corrections and free-node chain-rule consistency. Only then prepare a focused beta=.3 Q1/Q2 x/z old-versus-cubic comparison before temporal, third-mesh and larger matched-spacing box decisions.",
+      "finding": "Independent fixed-layer, exact-continuation and renderer-isolation software controls passed. The native 48-row admission and focused eight-arm T=1/2/3 overnight experiment are prepared but not executed.",
+      "next_action": "Authenticate retained fields; readmit 48 initial combinations, then execute eight matched beta=.3 Q1/Q2 x/z trilinear/cubic arms at dt=.01 through T=3 with T=1/2/3 checkpoints. Archive every new full field before cleanup; assess this tranche before temporal/third-mesh/domain expansion.",
       "exit_evidence": "Boundary-consistent initial data with recorded corrections; matched rest states, model action, precision, observation windows and predeclared gates; eight nominal method-comparison arms assessed before any wider sweep. Separate initialization, temporal, physical-grid, domain, tail and inertia effects. No silent D4-fitted velocity, gate changes or automatic isolation claim.",
       "depends_on": [
         "s5-b-005"
@@ -793,10 +793,17 @@
         "REP-002"
       ],
       "specifications": [
+        "docs/models/SF-focused-motion.md",
         "docs/models/SF-physical-time.md",
         "docs/decisions/ADR-0013-conditional-cubic-initialization.md"
       ],
-      "records": []
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s5-b/006-focused-motion-convergence/preparation/20261104t141745z-e6160d32/README.md",
+          "label": "Fixed-layer, direct-solver, continuation and renderer-isolation controls"
+        }
+      ]
     },
     {
       "id": "s5-b-007",
@@ -1090,7 +1097,7 @@
   ],
   "current": {
     "latest_assessed_study": "s5-b-005",
-    "summary": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
+    "summary": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. S5-B-006 software/synthetic controls have passed; native focused Q1/Q2 trajectories await workstation execution.",
     "limits": "The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows."
   }
 }

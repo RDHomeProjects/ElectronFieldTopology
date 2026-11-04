@@ -1,6 +1,6 @@
 # S2: Independent Maxwell evolution
 
-Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
+Updated: UTC 2026-11-04T14:17:45.414426+00:00; Australia/Melbourne 2026-11-05T01:17:45.414426+11:00.
 
 Periodic numerical reference; isolated-boundary claims remain limited.
 
