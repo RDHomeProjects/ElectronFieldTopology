@@ -1,0 +1,37 @@
+{
+  "study_id": "s5-b-005",
+  "record_id": "20261104t133535z-6a7e9b21",
+  "role": "assessment",
+  "recorded_at": {
+    "utc": "2026-11-04T13:35:35.703463+00:00",
+    "melbourne": "2026-11-05T00:35:35.703463+11:00"
+  },
+  "source_commit": "461c9bc41d1979bf9d5f20a584eafa530d1999d8",
+  "outcome": "conditional_cubic_candidate; fixed_layer_readmission_required; no_new_dynamics_acceptance",
+  "config_sha256": {
+    "study": "69135f942c01755bed78cda8a9b34588b339780214cebe9498c8da0e77d71cbb"
+  },
+  "input_sha256": {
+    "run_evidence": "321a46ae81be7d799b7a392d1a94b573405c0fe9582babe9395a650c21be15e4"
+  },
+  "evidence_sha256": {},
+  "commands": [
+    "python3 verify_assessment.py --evidence ../../runs/20261104t131812z-4e8c880c/evidence.zip --output reverified.json",
+    "uv run --frozen python probe_fixed_layers.py --output probe-replay.json"
+  ],
+  "environment": {
+    "verification": "Python standard library archive/JSON/CSV checks; locked NumPy/SciPy for analytic control and manufactured probe",
+    "independent_controls_replayed": true
+  },
+  "model_and_units": "Unchanged neutral SF action; c=1; dimensionless model units",
+  "field_retention": "Original full fields in GitHub archive-workstation-20261104t023917z-b0d06afa, root r031; no new evolved fields generated",
+  "limitations": [
+    "Compact evidence records workstation field measurements; independent NPZ replay not performed in this assessment",
+    "Exit timing supplied separately in terminal status",
+    "Original 60-case gates not changed",
+    "Raw candidate violates fixed layers in 12 low-speed cases",
+    "Restricted phase comparison is not a quantum-spin measurement",
+    "Two physical mesh spacings do not establish convergence"
+  ],
+  "supersedes": null
+}

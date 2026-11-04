@@ -1,0 +1,4111 @@
+{
+  "started_at": {
+    "utc": "2026-11-04T13:18:16.707402+00:00",
+    "melbourne": "2026-11-05T00:18:16.707402+11:00"
+  },
+  "record_id": "20261104t131812z-4e8c880c",
+  "source_campaign": "/home/rd/ElectronFieldTopology-lowq-motion/artifacts/lowq-motion-2026-11-03T104629-568611+1100-30672",
+  "config_sha256": "69135f942c01755bed78cda8a9b34588b339780214cebe9498c8da0e77d71cbb",
+  "input_fingerprint": "5dc8ac53bf193103f806007c0115a2c794c43e7101a117c95bddcd70a6fe2977",
+  "source_sha256": {
+    "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+    "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+    "sf_boost_local.py": "5681af857e5d582d40dfdb3a7666630c6b525586e572ae76a4327c10054ff3d8",
+    "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+    "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+    "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+    "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+    "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+  },
+  "expected_cases": 30,
+  "cases": {
+    "q1-n81-L16-b0-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:18:21.819161+00:00",
+        "melbourne": "2026-11-05T00:18:21.819161+11:00"
+      },
+      "case_id": "q1-n81-L16-b0-a0-dt0.01",
+      "seed_id": "q1-n81-L16",
+      "q": 1,
+      "beta": 0.0,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 5.724420007319458e-16,
+          "phase_registered_relative_l2": 5.72434816909499e-16,
+          "global_internal_phase_radians": 1.0099952990436046e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 7.250947627261198e-17
+        },
+        "rate_change_rms": 0.0,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 531441
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 226981
+          },
+          "unit_error": 6.661338147750939e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 531441
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 226981
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 5.481426380597549e-18,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "ad2eca323b83924b65186cdf0d5f3798a9207a35610fea332f044a324a9719cd"
+      },
+      "comoving": {
+        "cube_side": 12.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.003303352121234502,
+              "phase_registered_relative_l2": 0.0033033521212345015,
+              "global_internal_phase_radians": 5.124094786691263e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006303021203800182
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.003297529082760414,
+              "phase_registered_relative_l2": 0.0032975290827604144,
+              "global_internal_phase_radians": 5.231245114582276e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006291910449140767
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0,
+              "phase_registered_relative_l2": 6.260739591818301e-21,
+              "global_internal_phase_radians": 9.419913966399771e-20,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0
+            },
+            "final_reference": {
+              "raw_relative_l2": 2.20175202752366e-05,
+              "phase_registered_relative_l2": 2.20175202752366e-05,
+              "global_internal_phase_radians": 9.359934247903847e-19,
+              "phase_identifiable": true,
+              "absolute_rms": 4.20326706412955e-06
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 2.20175202752366e-05,
+          "phase_registered_relative_l2": 2.20175202752366e-05,
+          "global_internal_phase_radians": 9.359934247903847e-19,
+          "phase_identifiable": true,
+          "absolute_rms": 4.20326706412955e-06
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.003303352121234502,
+          "phase_registered_relative_l2": 0.0033033521212345015,
+          "global_internal_phase_radians": 5.124094786691263e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0006303021203800182
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n81-L16-b0.1-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:18:27.757089+00:00",
+        "melbourne": "2026-11-05T00:18:27.757089+11:00"
+      },
+      "case_id": "q1-n81-L16-b0.1-a0-dt0.01",
+      "seed_id": "q1-n81-L16",
+      "q": 1,
+      "beta": 0.1,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0012588114845643792,
+          "phase_registered_relative_l2": 0.0012588114845643792,
+          "global_internal_phase_radians": 2.837390588852138e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00015906335995390124
+        },
+        "rate_change_rms": 0.0007620514189800659,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.09521554360729072,
+            "rate_absolute_rms": 0.000800680397274075,
+            "points": 544563
+          },
+          "core": {
+            "rate_relative_l2": 0.09559792441826598,
+            "rate_absolute_rms": 0.0012401165553723738,
+            "points": 226981
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 5.551115123125783e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.02030080970442664,
+            "rate_absolute_rms": 0.0001694135959197082,
+            "points": 544563
+          },
+          "core": {
+            "rate_relative_l2": 0.019768703389019544,
+            "rate_absolute_rms": 0.00025446205895254755,
+            "points": 226981
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0008276522766796268,
+          "fixed_face_rate_max": 0.0008142574092475695,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "b43834ef32cf3c966b3f933da6fd5e3d09a024a2b1a58ff326ff4409a3778404"
+      },
+      "comoving": {
+        "cube_side": 11.859446220058704,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0029503280552386425,
+              "phase_registered_relative_l2": 0.0029503280552386425,
+              "global_internal_phase_radians": -1.122348018628573e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0005727409415502377
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.004867991532048184,
+              "phase_registered_relative_l2": 0.0048679915320481845,
+              "global_internal_phase_radians": -1.2547212206041128e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0009450128939299748
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0012763777228758239,
+              "phase_registered_relative_l2": 0.0012763777228758239,
+              "global_internal_phase_radians": -1.3403380985666027e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0002479053321413659
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0035946836553441158,
+              "phase_registered_relative_l2": 0.003594683655344115,
+              "global_internal_phase_radians": -1.468144914889039e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006981798801011508
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.0038443655452528856,
+          "phase_registered_relative_l2": 0.0038443655452528856,
+          "global_internal_phase_radians": -1.4551530112464758e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0007466271098157288
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.002984432178907961,
+          "phase_registered_relative_l2": 0.002984432178907961,
+          "global_internal_phase_radians": 2.586970354675327e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0005793615029032133
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n81-L16-b0.1-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:18:33.640341+00:00",
+        "melbourne": "2026-11-05T00:18:33.640341+11:00"
+      },
+      "case_id": "q1-n81-L16-b0.1-a2-dt0.01",
+      "seed_id": "q1-n81-L16",
+      "q": 1,
+      "beta": 0.1,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0010089531193398608,
+          "phase_registered_relative_l2": 0.0010089531193398608,
+          "global_internal_phase_radians": 7.382068529394119e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00012751889881783252
+        },
+        "rate_change_rms": 0.000614636116596771,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.07545326634882835,
+            "rate_absolute_rms": 0.0006390350191431362,
+            "points": 544563
+          },
+          "core": {
+            "rate_relative_l2": 0.07554765466035132,
+            "rate_absolute_rms": 0.0009897473202972876,
+            "points": 226981
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.012704428481177374,
+            "rate_absolute_rms": 0.00010612203953920691,
+            "points": 544563
+          },
+          "core": {
+            "rate_relative_l2": 0.012481718716377646,
+            "rate_absolute_rms": 0.00016127046615175127,
+            "points": 226981
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0002653391653808109,
+          "fixed_face_rate_max": 0.0002610462268927311,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "2f52c5ed7e1cdf43961fce5d58742a7098fb3d3397a6107f1b72eb3c56d6e5c0"
+      },
+      "comoving": {
+        "cube_side": 11.859446220058704,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0032098082123232083,
+              "phase_registered_relative_l2": 0.0032098082123232083,
+              "global_internal_phase_radians": -5.521594300601271e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006231132753042195
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.004106219857168557,
+              "phase_registered_relative_l2": 0.003995157237988278,
+              "global_internal_phase_radians": 0.0011666676498655424,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0007971317708317609
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0010219275741707107,
+              "phase_registered_relative_l2": 0.0010219275741707107,
+              "global_internal_phase_radians": -5.767405582140575e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0001984845787878557
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.002467667989614244,
+              "phase_registered_relative_l2": 0.002278313095058951,
+              "global_internal_phase_radians": 0.0011665479892227833,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00047928449518971406
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.0027118474224096236,
+          "phase_registered_relative_l2": 0.002540811872298356,
+          "global_internal_phase_radians": 0.0011664043306754584,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0005267969250798572
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.002984432178907961,
+          "phase_registered_relative_l2": 0.002984432178907961,
+          "global_internal_phase_radians": 2.586970354675327e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0005793615029032133
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n81-L16-b0.3-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:18:39.568464+00:00",
+        "melbourne": "2026-11-05T00:18:39.568464+11:00"
+      },
+      "case_id": "q1-n81-L16-b0.3-a0-dt0.01",
+      "seed_id": "q1-n81-L16",
+      "q": 1,
+      "beta": 0.3,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.00015838836292668277,
+          "phase_registered_relative_l2": 0.00015838836292668271,
+          "global_internal_phase_radians": 2.888538085099028e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.960078597570436e-05
+        },
+        "rate_change_rms": 0.0027350331344422733,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.10933038361109554,
+            "rate_absolute_rms": 0.0028290764549685128,
+            "points": 557685
+          },
+          "core": {
+            "rate_relative_l2": 0.1090428140542326,
+            "rate_absolute_rms": 0.00433650592475415,
+            "points": 234423
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.6653345369377348e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.02671553566558194,
+            "rate_absolute_rms": 0.0006831737755841683,
+            "points": 557685
+          },
+          "core": {
+            "rate_relative_l2": 0.026614465168838874,
+            "rate_absolute_rms": 0.0010461533723695056,
+            "points": 234423
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 1.6653345369377348e-16,
+          "fixed_face_field_deviation": 5.481426380597549e-18,
+          "fixed_face_rate_max": 3.0605327587672222e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "8b1a55064c5507303370999b9bcfbc19ef32c2f361fd019098a41da351993083"
+      },
+      "comoving": {
+        "cube_side": 11.950447138629867,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.003150465143396192,
+              "phase_registered_relative_l2": 0.0031504651433961915,
+              "global_internal_phase_radians": 3.3314657354090406e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006047951087241325
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.01415749918841254,
+              "phase_registered_relative_l2": 0.014157499188412543,
+              "global_internal_phase_radians": 2.851324390090848e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0027178165353981803
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.00012907146839152893,
+              "phase_registered_relative_l2": 0.00012907146839152893,
+              "global_internal_phase_radians": -1.581139648748954e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 2.479017100424157e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.013598772156254138,
+              "phase_registered_relative_l2": 0.013598772156254138,
+              "global_internal_phase_radians": -1.9742461164363903e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.002611854435394214
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.01360577209393442,
+          "phase_registered_relative_l2": 0.01360577209393442,
+          "global_internal_phase_radians": -4.2965921212277574e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0026131924016836545
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.003171650711343489,
+          "phase_registered_relative_l2": 0.003171650711343489,
+          "global_internal_phase_radians": 4.8889614688368615e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0006088621043222028
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n81-L16-b0.3-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:18:44.673335+00:00",
+        "melbourne": "2026-11-05T00:18:44.673335+11:00"
+      },
+      "case_id": "q1-n81-L16-b0.3-a2-dt0.01",
+      "seed_id": "q1-n81-L16",
+      "q": 1,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.00011286650382966026,
+          "phase_registered_relative_l2": 0.00011286650382966023,
+          "global_internal_phase_radians": 1.6176062034914726e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.3967675777758515e-05
+        },
+        "rate_change_rms": 0.002185369789537372,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.08559693473758284,
+            "rate_absolute_rms": 0.002235266914591582,
+            "points": 557685
+          },
+          "core": {
+            "rate_relative_l2": 0.08548252146064368,
+            "rate_absolute_rms": 0.003439023073686706,
+            "points": 234423
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.1796119636642288e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.016614310900705826,
+            "rate_absolute_rms": 0.00042526630147076664,
+            "points": 557685
+          },
+          "core": {
+            "rate_relative_l2": 0.01655784570236662,
+            "rate_absolute_rms": 0.0006529491637116931,
+            "points": 234423
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 5.481426380597549e-18,
+          "fixed_face_rate_max": 3.1161335438899545e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "076e27a1b2ca80bb4b063e879722adc20f0f3acc69d44041ee67e7b1c5f783d5"
+      },
+      "comoving": {
+        "cube_side": 11.950447138629867,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.00317789937711791,
+              "phase_registered_relative_l2": 0.00317789937711791,
+              "global_internal_phase_radians": -1.3669077357679846e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006100616613159832
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.009983457673779388,
+              "phase_registered_relative_l2": 0.009316836102171709,
+              "global_internal_phase_radians": 0.004410826699167599,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0019165253682976121
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.00010435203674489305,
+              "phase_registered_relative_l2": 0.00010435203674489308,
+              "global_internal_phase_radians": -6.207244035524877e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 2.0042421983606866e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.009224231069407368,
+              "phase_registered_relative_l2": 0.00849910289803638,
+              "global_internal_phase_radians": 0.004410468175072425,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0017716561874045803
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.00923247604690018,
+          "phase_registered_relative_l2": 0.008508084097761201,
+          "global_internal_phase_radians": 0.004410388924992307,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0017732732186787118
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.003171650711343489,
+          "phase_registered_relative_l2": 0.003171650711343489,
+          "global_internal_phase_radians": 4.8889614688368615e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0006088621043222028
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L16-b0-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:18:52.392342+00:00",
+        "melbourne": "2026-11-05T00:18:52.392342+11:00"
+      },
+      "case_id": "q1-n101-L16-b0-a0-dt0.01",
+      "seed_id": "q1-n101-L16",
+      "q": 1,
+      "beta": 0.0,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 5.440852221313227e-16,
+          "phase_registered_relative_l2": 5.440833326536989e-16,
+          "global_internal_phase_radians": -2.962175113108742e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 7.018635812167769e-17
+        },
+        "rate_change_rms": 0.0,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 1030301
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 421875
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 1030301
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 421875
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 4.398778426838743e-18,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "ae143b8ab0c4b78109bc89d9e0e53ad2f5289c0cd5f5de496990e0e6e42a5b1f"
+      },
+      "comoving": {
+        "cube_side": 12.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0016234373489711536,
+              "phase_registered_relative_l2": 0.0016234373489711536,
+              "global_internal_phase_radians": 1.8558277162009546e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0003142228491544522
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0016196021760792572,
+              "phase_registered_relative_l2": 0.0016196021760792572,
+              "global_internal_phase_radians": 1.791830346497614e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00031348053596703214
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0,
+              "phase_registered_relative_l2": 9.670304622359581e-21,
+              "global_internal_phase_radians": 1.3020787463317354e-19,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0
+            },
+            "final_reference": {
+              "raw_relative_l2": 8.25788566357984e-05,
+              "phase_registered_relative_l2": 8.25788566357984e-05,
+              "global_internal_phase_radians": -5.373424025767181e-19,
+              "phase_identifiable": true,
+              "absolute_rms": 1.5992535775979706e-05
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 8.25788566357984e-05,
+          "phase_registered_relative_l2": 8.25788566357984e-05,
+          "global_internal_phase_radians": -5.373424025767181e-19,
+          "phase_identifiable": true,
+          "absolute_rms": 1.5992535775979706e-05
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0016234373489711536,
+          "phase_registered_relative_l2": 0.0016234373489711536,
+          "global_internal_phase_radians": 1.8558277162009546e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0003142228491544522
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L16-b0.1-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:19:00.904170+00:00",
+        "melbourne": "2026-11-05T00:19:00.904170+11:00"
+      },
+      "case_id": "q1-n101-L16-b0.1-a0-dt0.01",
+      "seed_id": "q1-n101-L16",
+      "q": 1,
+      "beta": 0.1,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0007774263019504002,
+          "phase_registered_relative_l2": 0.0007774263019504002,
+          "global_internal_phase_radians": 2.388927202721803e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00010004168657059896
+        },
+        "rate_change_rms": 0.0006188715576593823,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.07525149402805555,
+            "rate_absolute_rms": 0.0006397145695656914,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.0755459688660665,
+            "rate_absolute_rms": 0.0009961989478271141,
+            "points": 433125
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.013465632917067314,
+            "rate_absolute_rms": 0.00011360498472085796,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.012805519172222451,
+            "rate_absolute_rms": 0.00016756788994324752,
+            "points": 433125
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0007101567264248535,
+          "fixed_face_rate_max": 0.0004570701396295295,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "5f6d94c50b60c7f865d4dcbf4bb406939fe589bfba7eb6d16db4cc3759a15a0d"
+      },
+      "comoving": {
+        "cube_side": 11.859446220058704,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0016204416396689827,
+              "phase_registered_relative_l2": 0.0016204416396689827,
+              "global_internal_phase_radians": 1.396208539333789e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00031909709163656277
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0033437178201378374,
+              "phase_registered_relative_l2": 0.0033437178201378374,
+              "global_internal_phase_radians": 1.2647651397759126e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006584443435292658
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0007756998053136511,
+              "phase_registered_relative_l2": 0.0007756998053136511,
+              "global_internal_phase_radians": -5.6451241795181934e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.000152835801829654
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.002807336334571813,
+              "phase_registered_relative_l2": 0.002807336334571813,
+              "global_internal_phase_radians": -5.7668902044898134e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0005531282807610293
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.002936272204377599,
+          "phase_registered_relative_l2": 0.002936272204377599,
+          "global_internal_phase_radians": -2.6236261375446615e-20,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0005785133270452414
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0017161332751257554,
+          "phase_registered_relative_l2": 0.0017161332751257554,
+          "global_internal_phase_radians": 6.546366509653671e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0003379406721893559
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L16-b0.1-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:19:09.253689+00:00",
+        "melbourne": "2026-11-05T00:19:09.253689+11:00"
+      },
+      "case_id": "q1-n101-L16-b0.1-a2-dt0.01",
+      "seed_id": "q1-n101-L16",
+      "q": 1,
+      "beta": 0.1,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0006172406725565671,
+          "phase_registered_relative_l2": 0.0006172406725565671,
+          "global_internal_phase_radians": 6.904444591717523e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 7.943901109649416e-05
+        },
+        "rate_change_rms": 0.0004980271361645469,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.05985524166198472,
+            "rate_absolute_rms": 0.0005115381076861025,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.059931128439799815,
+            "rate_absolute_rms": 0.0007966340153541514,
+            "points": 433125
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.00830365511353193,
+            "rate_absolute_rms": 7.009337146825163e-05,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.008034019231787634,
+            "rate_absolute_rms": 0.00010547494258621821,
+            "points": 433125
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.00022757651015295808,
+          "fixed_face_rate_max": 0.00014647302295284787,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "481d343fd67ab95d09b87c588d17aa454c599d4e0b53778fe82368bda7bac561"
+      },
+      "comoving": {
+        "cube_side": 11.859446220058704,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0018707215806262802,
+              "phase_registered_relative_l2": 0.0018707215806262802,
+              "global_internal_phase_radians": 1.444974744767376e-19,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00036838217497394185
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0027734792045910847,
+              "phase_registered_relative_l2": 0.0026714774957209988,
+              "global_internal_phase_radians": 0.0009175363530382801,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0005461530524976442
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0006171079961894435,
+              "phase_registered_relative_l2": 0.0006171079961894435,
+              "global_internal_phase_radians": -6.5544745198624755e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00012158852531227355
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0019463758921955663,
+              "phase_registered_relative_l2": 0.0017983811466688797,
+              "global_internal_phase_radians": 0.0009170116420014642,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00038349361197188175
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.0020681398521331376,
+          "phase_registered_relative_l2": 0.0019295305846879433,
+          "global_internal_phase_radians": 0.0009169508880042465,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0004075226393816718
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0017161332751257554,
+          "phase_registered_relative_l2": 0.0017161332751257554,
+          "global_internal_phase_radians": 6.546366509653671e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0003379406721893559
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L16-b0.3-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:19:17.776191+00:00",
+        "melbourne": "2026-11-05T00:19:17.776191+11:00"
+      },
+      "case_id": "q1-n101-L16-b0.3-a0-dt0.01",
+      "seed_id": "q1-n101-L16",
+      "q": 1,
+      "beta": 0.3,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0006381243345721768,
+          "phase_registered_relative_l2": 0.0006381243345721768,
+          "global_internal_phase_radians": 3.178039097303194e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 8.041997335643787e-05
+        },
+        "rate_change_rms": 0.0019722879531612995,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.07819610064670769,
+            "rate_absolute_rms": 0.002039337244388956,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.07819667491829786,
+            "rate_absolute_rms": 0.0031844827188054242,
+            "points": 444375
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.6653345369377348e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.01648826545495336,
+            "rate_absolute_rms": 0.0004262893312152227,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.013732065881650232,
+            "rate_absolute_rms": 0.0005543604637768596,
+            "points": 444375
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.6653345369377348e-16,
+          "fixed_face_field_deviation": 4.398778426838742e-18,
+          "fixed_face_rate_max": 2.445381473278034e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "89ebfd749c7f5823556d6c12db2466a677284b231aa8eeb690a62e6d0ffc88cc"
+      },
+      "comoving": {
+        "cube_side": 11.950447138629867,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0015392858893520983,
+              "phase_registered_relative_l2": 0.0015392858893520983,
+              "global_internal_phase_radians": 2.5101235430830803e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00029974629590579736
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.009376363773391154,
+              "phase_registered_relative_l2": 0.009376363773391154,
+              "global_internal_phase_radians": 2.969637586621257e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0018258663511313577
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.000614284466169,
+              "phase_registered_relative_l2": 0.000614284466169,
+              "global_internal_phase_radians": -5.596390749107079e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0001196873780518162
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.009173421550716137,
+              "phase_registered_relative_l2": 0.009173421550716137,
+              "global_internal_phase_radians": -1.008347165611438e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0017873523320825415
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.009230643245323536,
+          "phase_registered_relative_l2": 0.009230643245323536,
+          "global_internal_phase_radians": 4.741241118147184e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0017984608914920746
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0016498857370479127,
+          "phase_registered_relative_l2": 0.0016498857370479127,
+          "global_internal_phase_radians": 3.0807846704790916e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0003212834872124233
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L16-b0.3-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:19:26.423773+00:00",
+        "melbourne": "2026-11-05T00:19:26.423773+11:00"
+      },
+      "case_id": "q1-n101-L16-b0.3-a2-dt0.01",
+      "seed_id": "q1-n101-L16",
+      "q": 1,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0004969035771393239,
+          "phase_registered_relative_l2": 0.0004969035771393241,
+          "global_internal_phase_radians": 4.1284620601847446e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 6.26289770797678e-05
+        },
+        "rate_change_rms": 0.0015844953176307537,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.06192940303457615,
+            "rate_absolute_rms": 0.0016241818129887713,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.06191698724176491,
+            "rate_absolute_rms": 0.002541768968962479,
+            "points": 444375
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.009717182358515203,
+            "rate_absolute_rms": 0.0002513618356978838,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.00859288113008479,
+            "rate_absolute_rms": 0.0003479137386769109,
+            "points": 444375
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 4.398778426838743e-18,
+          "fixed_face_rate_max": 2.490217930993354e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "f6352f0093f524d2af055de74f2a2b6f5fd4b237b8914be8898e514e2ec9d5bd"
+      },
+      "comoving": {
+        "cube_side": 11.950447138629867,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0017615245232347968,
+              "phase_registered_relative_l2": 0.0017615245232347968,
+              "global_internal_phase_radians": -2.0226299669956253e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00034302299179075896
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.006683732279240895,
+              "phase_registered_relative_l2": 0.006202200570239804,
+              "global_internal_phase_radians": 0.003066226263375935,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0013015282004382779
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0004892793008551775,
+              "phase_registered_relative_l2": 0.0004892793008551776,
+              "global_internal_phase_radians": -5.128278768041393e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 9.533133243559988e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.006337173753912223,
+              "phase_registered_relative_l2": 0.0058282439662663485,
+              "global_internal_phase_radians": 0.00306438211876994,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0012347369217958859
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.00639792120423491,
+          "phase_registered_relative_l2": 0.005894313817555757,
+          "global_internal_phase_radians": 0.0030642055420162014,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0012466690533974427
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0016498857370479127,
+          "phase_registered_relative_l2": 0.0016498857370479127,
+          "global_internal_phase_radians": 3.0807846704790916e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0003212834872124233
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L20-b0-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:19:33.937369+00:00",
+        "melbourne": "2026-11-05T00:19:33.937369+11:00"
+      },
+      "case_id": "q1-n101-L20-b0-a0-dt0.01",
+      "seed_id": "q1-n101-L20",
+      "q": 1,
+      "beta": 0.0,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 6.997162440508943e-16,
+          "phase_registered_relative_l2": 6.996677447738602e-16,
+          "global_internal_phase_radians": -2.2820259393431812e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 6.679016676751472e-17
+        },
+        "rate_change_rms": 0.0,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 1030301
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 531441
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 1030301
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 531441
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 1.1073400272158063e-17,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "0402ee1b400d67800cbba2c2ba879eeb6d0361bbe9f3fba8973999bb13e2d1f1"
+      },
+      "comoving": {
+        "cube_side": 16.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 8.234886951741955e-16,
+              "phase_registered_relative_l2": 8.235176841754094e-16,
+              "global_internal_phase_radians": -1.152755750438333e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 1.0734934985857752e-16
+            },
+            "final_reference": {
+              "raw_relative_l2": 1.0718406456263821e-06,
+              "phase_registered_relative_l2": 1.071840645626382e-06,
+              "global_internal_phase_radians": -9.219193852187494e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 1.3972431817737434e-07
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0,
+              "phase_registered_relative_l2": 1.1861832271489173e-20,
+              "global_internal_phase_radians": -1.266064331327806e-19,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0
+            },
+            "final_reference": {
+              "raw_relative_l2": 1.071840645694387e-06,
+              "phase_registered_relative_l2": 1.071840645694387e-06,
+              "global_internal_phase_radians": 2.1855877850686216e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 1.3972431818623947e-07
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 1.071840645694387e-06,
+          "phase_registered_relative_l2": 1.071840645694387e-06,
+          "global_internal_phase_radians": 2.1855877850686216e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 1.3972431818623947e-07
+        },
+        "reference_change": {
+          "raw_relative_l2": 8.234886951741955e-16,
+          "phase_registered_relative_l2": 8.235176841754094e-16,
+          "global_internal_phase_radians": -1.152755750438333e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.0734934985857752e-16
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L20-b0.1-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:19:42.695217+00:00",
+        "melbourne": "2026-11-05T00:19:42.695217+11:00"
+      },
+      "case_id": "q1-n101-L20-b0.1-a0-dt0.01",
+      "seed_id": "q1-n101-L20",
+      "q": 1,
+      "beta": 0.1,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.000951835843762253,
+          "phase_registered_relative_l2": 0.000951835843762253,
+          "global_internal_phase_radians": 2.550659620356283e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 9.063384454041229e-05
+        },
+        "rate_change_rms": 0.0005665034003306796,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.0978827379675737,
+            "rate_absolute_rms": 0.0005926337790997965,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.09802833661799919,
+            "rate_absolute_rms": 0.0008332583505162483,
+            "points": 531441
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.683753385137379e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.021067934511966206,
+            "rate_absolute_rms": 0.00012640786836122343,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.020876319584812765,
+            "rate_absolute_rms": 0.00017584723086433026,
+            "points": 531441
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 5.551115123125783e-17,
+          "fixed_face_field_deviation": 0.00044693474108757923,
+          "fixed_face_rate_max": 0.00023012499979593903,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "4b41f28dede7cb0810e7e80ca43093e17a149f1bbbee5f464e90062d5c46410d"
+      },
+      "comoving": {
+        "cube_side": 15.879597481095551,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0008252748883413966,
+              "phase_registered_relative_l2": 0.0008252748883413968,
+              "global_internal_phase_radians": -3.554463423591748e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00010880113159806684
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0036208315695191954,
+              "phase_registered_relative_l2": 0.0036208315695191954,
+              "global_internal_phase_radians": -2.0533793011728935e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0004773567906342561
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.000945666064334484,
+              "phase_registered_relative_l2": 0.0009456660643344839,
+              "global_internal_phase_radians": -5.0147679416753086e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0001246620579032543
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0035737612020240303,
+              "phase_registered_relative_l2": 0.0035737612020240307,
+              "global_internal_phase_radians": -3.486335373849371e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0004711096683083944
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.003673294949140928,
+          "phase_registered_relative_l2": 0.003673294949140928,
+          "global_internal_phase_radians": 1.519604337191692e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00048422377773482727
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0005345801814284222,
+          "phase_registered_relative_l2": 0.0005345801814284222,
+          "global_internal_phase_radians": 1.4613607930278587e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 7.047703679219628e-05
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L20-b0.1-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:19:51.660563+00:00",
+        "melbourne": "2026-11-05T00:19:51.660563+11:00"
+      },
+      "case_id": "q1-n101-L20-b0.1-a2-dt0.01",
+      "seed_id": "q1-n101-L20",
+      "q": 1,
+      "beta": 0.1,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0007674795927042409,
+          "phase_registered_relative_l2": 0.0007674795927042409,
+          "global_internal_phase_radians": 2.814501491744781e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 7.309065268672976e-05
+        },
+        "rate_change_rms": 0.0004574958836764315,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.07739078214458792,
+            "rate_absolute_rms": 0.0004734173301406824,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.07742410035409958,
+            "rate_absolute_rms": 0.00066565110422651,
+            "points": 531441
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.013266014099805944,
+            "rate_absolute_rms": 7.990579135162975e-05,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.013184512655417228,
+            "rate_absolute_rms": 0.00011161146790736119,
+            "points": 531441
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.00014417464469064682,
+          "fixed_face_rate_max": 7.423508260125583e-05,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "1ef45ef87fec2a82ff3add6b46833fa1e36615d7c0fd53bc820ac5a45099a7e9"
+      },
+      "comoving": {
+        "cube_side": 15.879597481095551,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0009353463638912674,
+              "phase_registered_relative_l2": 0.0009353463638912674,
+              "global_internal_phase_radians": 2.952255365150744e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00012331254017922884
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.002551479097920114,
+              "phase_registered_relative_l2": 0.0023852648809201656,
+              "global_internal_phase_radians": 0.001096253831350722,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0003363773901571634
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0007659033488136761,
+              "phase_registered_relative_l2": 0.0007659033488136763,
+              "global_internal_phase_radians": 1.51168477053863e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00010096490845878102
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0024564974082046964,
+              "phase_registered_relative_l2": 0.0022833807133222374,
+              "global_internal_phase_radians": 0.0010962609815877153,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00032382680704136276
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.002571657063339352,
+          "phase_registered_relative_l2": 0.0024068980955179284,
+          "global_internal_phase_radians": 0.0010961299122400638,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00033906198354196455
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0005345801814284222,
+          "phase_registered_relative_l2": 0.0005345801814284222,
+          "global_internal_phase_radians": 1.4613607930278587e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 7.047703679219628e-05
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L20-b0.3-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:00.194692+00:00",
+        "melbourne": "2026-11-05T00:20:00.194692+11:00"
+      },
+      "case_id": "q1-n101-L20-b0.3-a0-dt0.01",
+      "seed_id": "q1-n101-L20",
+      "q": 1,
+      "beta": 0.3,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0007604882583056514,
+          "phase_registered_relative_l2": 0.0007604882583056514,
+          "global_internal_phase_radians": 2.5075146449904442e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 7.091815587535365e-05
+        },
+        "rate_change_rms": 0.0017917884374357097,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.10066662733932501,
+            "rate_absolute_rms": 0.0018694051201746554,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.10067364514123373,
+            "rate_absolute_rms": 0.0026124339549721217,
+            "points": 557685
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.6653345369377348e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.02303905966462962,
+            "rate_absolute_rms": 0.0004236115719082644,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.02212155154043459,
+            "rate_absolute_rms": 0.0005683596931279994,
+            "points": 557685
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 1.1073400272158063e-17,
+          "fixed_face_rate_max": 4.920252426387471e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "02fb03fd140453469db08c4f7004e4f3b637370185fca9fd353a52249ff0d4c2"
+      },
+      "comoving": {
+        "cube_side": 16.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0007490887901786065,
+              "phase_registered_relative_l2": 0.0007490887901786063,
+              "global_internal_phase_radians": -5.978595521100092e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 9.765063574432135e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.01158491168784139,
+              "phase_registered_relative_l2": 0.01158491168784139,
+              "global_internal_phase_radians": -3.8848467674982375e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0015102001340719542
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0007490887901786431,
+              "phase_registered_relative_l2": 0.0007490887901786431,
+              "global_internal_phase_radians": -4.8716634702588365e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 9.765063574432614e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.011584911687841395,
+              "phase_registered_relative_l2": 0.011584911687841395,
+              "global_internal_phase_radians": -2.7048158851729837e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.001510200134071955
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.01162659522536536,
+          "phase_registered_relative_l2": 0.01162659522536536,
+          "global_internal_phase_radians": 2.154030112880243e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0015156245812642016
+        },
+        "reference_change": {
+          "raw_relative_l2": 8.234886951741955e-16,
+          "phase_registered_relative_l2": 8.235176841754094e-16,
+          "global_internal_phase_radians": -1.152755750438333e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.0734934985857752e-16
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q1-n101-L20-b0.3-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:08.804890+00:00",
+        "melbourne": "2026-11-05T00:20:08.804890+11:00"
+      },
+      "case_id": "q1-n101-L20-b0.3-a2-dt0.01",
+      "seed_id": "q1-n101-L20",
+      "q": 1,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0006069787002860455,
+          "phase_registered_relative_l2": 0.0006069787002860453,
+          "global_internal_phase_radians": 5.137331527764214e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 5.6609539610153286e-05
+        },
+        "rate_change_rms": 0.001444778839915606,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.07940117237879372,
+            "rate_absolute_rms": 0.0014903467867907157,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.07939467459388273,
+            "rate_absolute_rms": 0.0020840952423465346,
+            "points": 557685
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.014304292905327273,
+            "rate_absolute_rms": 0.00026402991344060944,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.013937409005137229,
+            "rate_absolute_rms": 0.0003597740238136644,
+            "points": 557685
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 1.1073400272158063e-17,
+          "fixed_face_rate_max": 4.973887825849946e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "52140c036fd888f12751ba3ad763c0b0296817fd63cf78c50713a3cf9de3da3f"
+      },
+      "comoving": {
+        "cube_side": 16.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0006067981619117633,
+              "phase_registered_relative_l2": 0.0006067981619117633,
+              "global_internal_phase_radians": -3.5300380275901795e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 7.910173941468423e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.007918039904241787,
+              "phase_registered_relative_l2": 0.007327844252887774,
+              "global_internal_phase_radians": 0.003629843634557519,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0010321895623531618
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0006067981619117415,
+              "phase_registered_relative_l2": 0.0006067981619117415,
+              "global_internal_phase_radians": 7.668260244740439e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 7.91017394146814e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.007918039904241747,
+              "phase_registered_relative_l2": 0.007327844252887727,
+              "global_internal_phase_radians": 0.0036298436345575296,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0010321895623531569
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.007974269230499832,
+          "phase_registered_relative_l2": 0.007388741263793661,
+          "global_internal_phase_radians": 0.00362948717294187,
+          "phase_identifiable": true,
+          "absolute_rms": 0.001039653033169032
+        },
+        "reference_change": {
+          "raw_relative_l2": 8.234886951741955e-16,
+          "phase_registered_relative_l2": 8.235176841754094e-16,
+          "global_internal_phase_radians": -1.152755750438333e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.0734934985857752e-16
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n81-L16-b0-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:13.149260+00:00",
+        "melbourne": "2026-11-05T00:20:13.149260+11:00"
+      },
+      "case_id": "q2-n81-L16-b0-a0-dt0.01",
+      "seed_id": "q2-n81-L16",
+      "q": 2,
+      "beta": 0.0,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 6.659564700831161e-16,
+          "phase_registered_relative_l2": 6.659469722277825e-16,
+          "global_internal_phase_radians": 8.23038616253972e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 8.947208264941825e-17
+        },
+        "rate_change_rms": 0.0,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 531441
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 226981
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 531441
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 226981
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 4.87861589982468e-18,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "6a15a371d10868b2b400f199630d42413b53fc4922c7df86b38746f8158e773a"
+      },
+      "comoving": {
+        "cube_side": 12.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.004017264592037965,
+              "phase_registered_relative_l2": 0.004017264592037965,
+              "global_internal_phase_radians": 3.8437725441500573e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.000813761640230243
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.004015296450469938,
+              "phase_registered_relative_l2": 0.004015296450469938,
+              "global_internal_phase_radians": 4.042435527445388e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0008133629614591758
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0,
+              "phase_registered_relative_l2": 9.998369298942437e-22,
+              "global_internal_phase_radians": -1.2466059619388326e-20,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0
+            },
+            "final_reference": {
+              "raw_relative_l2": 2.2426099258683008e-05,
+              "phase_registered_relative_l2": 2.2426099258683008e-05,
+              "global_internal_phase_radians": 2.163608373705934e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 4.546748896790576e-06
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 2.2426099258683008e-05,
+          "phase_registered_relative_l2": 2.2426099258683008e-05,
+          "global_internal_phase_radians": 2.163608373705934e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 4.546748896790576e-06
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.004017264592037965,
+          "phase_registered_relative_l2": 0.004017264592037965,
+          "global_internal_phase_radians": 3.8437725441500573e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.000813761640230243
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n81-L16-b0.1-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:17.937676+00:00",
+        "melbourne": "2026-11-05T00:20:17.937676+11:00"
+      },
+      "case_id": "q2-n81-L16-b0.1-a0-dt0.01",
+      "seed_id": "q2-n81-L16",
+      "q": 2,
+      "beta": 0.1,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.001764328296005338,
+          "phase_registered_relative_l2": 0.0017643282960053382,
+          "global_internal_phase_radians": -2.4044126531205468e-16,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00023643155012409122
+        },
+        "rate_change_rms": 0.0009617123617150452,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.09407204766879042,
+            "rate_absolute_rms": 0.0010259557268397352,
+            "points": 544563
+          },
+          "core": {
+            "rate_relative_l2": 0.09423927706771211,
+            "rate_absolute_rms": 0.0015890393096623875,
+            "points": 226981
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.018456403988170413,
+            "rate_absolute_rms": 0.00019993686329327257,
+            "points": 544563
+          },
+          "core": {
+            "rate_relative_l2": 0.0182273195086895,
+            "rate_absolute_rms": 0.0003052666874714524,
+            "points": 226981
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0007366334692468275,
+          "fixed_face_rate_max": 0.0007247125385734415,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "4286daf281077785d74bd21f822bee2073fd4af162b20625b9b104b6e2203d86"
+      },
+      "comoving": {
+        "cube_side": 11.859446220058704,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0036175443993138336,
+              "phase_registered_relative_l2": 0.003617544399313834,
+              "global_internal_phase_radians": 6.442506812041237e-16,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0007456283762974301
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.005473437317122715,
+              "phase_registered_relative_l2": 0.005473437317122713,
+              "global_internal_phase_radians": 7.88332563087436e-15,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0011281548279838869
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0018168984885962977,
+              "phase_registered_relative_l2": 0.001816898488596298,
+              "global_internal_phase_radians": 6.270078135293417e-16,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00037483718298982505
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0041293805188069264,
+              "phase_registered_relative_l2": 0.0041293805188069264,
+              "global_internal_phase_radians": 7.843668662953484e-15,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0008519162577753517
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.004426961850403741,
+          "phase_registered_relative_l2": 0.004426961850403742,
+          "global_internal_phase_radians": 5.650644347808935e-15,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0009131227500649469
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0036256443562757983,
+          "phase_registered_relative_l2": 0.0036256443562757983,
+          "global_internal_phase_radians": -2.488109787919079e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0007472978949241458
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n81-L16-b0.1-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:22.724599+00:00",
+        "melbourne": "2026-11-05T00:20:22.724599+11:00"
+      },
+      "case_id": "q2-n81-L16-b0.1-a2-dt0.01",
+      "seed_id": "q2-n81-L16",
+      "q": 2,
+      "beta": 0.1,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0012337766157447594,
+          "phase_registered_relative_l2": 0.001233776615744759,
+          "global_internal_phase_radians": 6.204217523260875e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00016539622621566613
+        },
+        "rate_change_rms": 0.0008122692638826265,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.07807233084783637,
+            "rate_absolute_rms": 0.0008405053004226464,
+            "points": 544563
+          },
+          "core": {
+            "rate_relative_l2": 0.07809340773540889,
+            "rate_absolute_rms": 0.0013018148244667964,
+            "points": 226981
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.85722573273506e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.014341062399374311,
+            "rate_absolute_rms": 0.00015173540646907073,
+            "points": 544563
+          },
+          "core": {
+            "rate_relative_l2": 0.014322199297007647,
+            "rate_absolute_rms": 0.00023463850448586,
+            "points": 226981
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.00011132812018146684,
+          "fixed_face_rate_max": 0.0001095269896602551,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "91e7920b662f5cd808254d4aed86720450a3f0898926536fff2094f37b9b32de"
+      },
+      "comoving": {
+        "cube_side": 11.859446220058704,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.003883437963156847,
+              "phase_registered_relative_l2": 0.003883437963156847,
+              "global_internal_phase_radians": -4.8331722710956486e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0008004328968207454
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0050443811264870644,
+              "phase_registered_relative_l2": 0.0049512760333002784,
+              "global_internal_phase_radians": 0.0012434653365906575,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0010397201232641045
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0012563367277613484,
+              "phase_registered_relative_l2": 0.0012563367277613482,
+              "global_internal_phase_radians": -4.557067436974621e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.000259189890286355
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0030271066767750617,
+              "phase_registered_relative_l2": 0.002870014753193795,
+              "global_internal_phase_radians": 0.0012414392166821616,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006245104756560622
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.0033398128317941706,
+          "phase_registered_relative_l2": 0.0031981927596125862,
+          "global_internal_phase_radians": 0.0012411472943571597,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0006891505398515948
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0036256443562757983,
+          "phase_registered_relative_l2": 0.0036256443562757983,
+          "global_internal_phase_radians": -2.488109787919079e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0007472978949241458
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n81-L16-b0.3-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:27.722095+00:00",
+        "melbourne": "2026-11-05T00:20:27.722095+11:00"
+      },
+      "case_id": "q2-n81-L16-b0.3-a0-dt0.01",
+      "seed_id": "q2-n81-L16",
+      "q": 2,
+      "beta": 0.3,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.00019959638813386548,
+          "phase_registered_relative_l2": 0.00019959638813386548,
+          "global_internal_phase_radians": -4.8475205696138535e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 2.6198413873336148e-05
+        },
+        "rate_change_rms": 0.00352573168677875,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.10980485747281842,
+            "rate_absolute_rms": 0.003682079008863512,
+            "points": 557685
+          },
+          "core": {
+            "rate_relative_l2": 0.10970729019798951,
+            "rate_absolute_rms": 0.0056651349437945465,
+            "points": 234423
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.457167719820518e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.024864107276875384,
+            "rate_absolute_rms": 0.0008253669487836349,
+            "points": 557685
+          },
+          "core": {
+            "rate_relative_l2": 0.02482080939259783,
+            "rate_absolute_rms": 0.0012689108719452127,
+            "points": 234423
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.1796119636642288e-16,
+          "fixed_face_field_deviation": 4.878615899745817e-18,
+          "fixed_face_rate_max": 4.926163587224865e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "6464754cc50df87f0cf75954440c929bb35ce49d86260e9c2d9dd21646464cde"
+      },
+      "comoving": {
+        "cube_side": 11.950447138629867,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.003816022541304533,
+              "phase_registered_relative_l2": 0.003816022541304533,
+              "global_internal_phase_radians": 1.6367858190587948e-16,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0007777347986560713
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.016319699380369552,
+              "phase_registered_relative_l2": 0.016319699380369538,
+              "global_internal_phase_radians": 7.105807766882355e-14,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0033260804867731022
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.00019011213078178743,
+              "phase_registered_relative_l2": 0.00019011213078178748,
+              "global_internal_phase_radians": 1.2067919187333752e-16,
+              "phase_identifiable": true,
+              "absolute_rms": 3.878049811728431e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.015792148083167968,
+              "phase_registered_relative_l2": 0.015792148083167975,
+              "global_internal_phase_radians": 7.106827536218242e-14,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00322140079377744
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.015801092545496446,
+          "phase_registered_relative_l2": 0.015801092545496446,
+          "global_internal_phase_radians": 7.08297504853852e-14,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0032231710407752095
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.003848221975921249,
+          "phase_registered_relative_l2": 0.003848221975921249,
+          "global_internal_phase_radians": 4.1440201417882483e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0007842972915468794
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": false,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n81-L16-b0.3-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:32.626424+00:00",
+        "melbourne": "2026-11-05T00:20:32.626424+11:00"
+      },
+      "case_id": "q2-n81-L16-b0.3-a2-dt0.01",
+      "seed_id": "q2-n81-L16",
+      "q": 2,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0001263591002700796,
+          "phase_registered_relative_l2": 0.0001263591002700796,
+          "global_internal_phase_radians": 1.1056017319258823e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.6586103960137387e-05
+        },
+        "rate_change_rms": 0.0028804631053215715,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.08820769781026139,
+            "rate_absolute_rms": 0.0029275618355333534,
+            "points": 557685
+          },
+          "core": {
+            "rate_relative_l2": 0.08820566235284742,
+            "rate_absolute_rms": 0.00451401119729574,
+            "points": 234423
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.457167719820518e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.018282375853513413,
+            "rate_absolute_rms": 0.0005927311166093151,
+            "points": 557685
+          },
+          "core": {
+            "rate_relative_l2": 0.018280134143078143,
+            "rate_absolute_rms": 0.000913839282108626,
+            "points": 234423
+          },
+          "unit_error": 6.661338147750939e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 4.87861589982468e-18,
+          "fixed_face_rate_max": 3.3094138766354923e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "1320c638e9ef6a8fb2d2245c00cdbc725a841231f1b7e01e30b5d89549ede920"
+      },
+      "comoving": {
+        "cube_side": 11.950447138629867,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.003853457732627736,
+              "phase_registered_relative_l2": 0.003853457732627736,
+              "global_internal_phase_radians": -7.10323853939422e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0007853643791082997
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.012178043639293895,
+              "phase_registered_relative_l2": 0.011633448926089888,
+              "global_internal_phase_radians": 0.004640623806332111,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0024819791328049277
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.00012758892174347277,
+              "phase_registered_relative_l2": 0.00012758892174347274,
+              "global_internal_phase_radians": -4.854386553158886e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 2.602654506638715e-05
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.011287389359722481,
+              "phase_registered_relative_l2": 0.010700254910871924,
+              "global_internal_phase_radians": 0.004633093548972152,
+              "phase_identifiable": true,
+              "absolute_rms": 0.002302486327483249
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.011297236057129545,
+          "phase_registered_relative_l2": 0.010710680023919084,
+          "global_internal_phase_radians": 0.0046329572120745585,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0023045411944092637
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.003848221975921249,
+          "phase_registered_relative_l2": 0.003848221975921249,
+          "global_internal_phase_radians": 4.1440201417882483e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0007842972915468794
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L16-b0-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:40.107070+00:00",
+        "melbourne": "2026-11-05T00:20:40.107070+11:00"
+      },
+      "case_id": "q2-n101-L16-b0-a0-dt0.01",
+      "seed_id": "q2-n101-L16",
+      "q": 2,
+      "beta": 0.0,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 6.083930774589862e-16,
+          "phase_registered_relative_l2": 6.083935418322518e-16,
+          "global_internal_phase_radians": -1.9708583630602926e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 8.27690859049649e-17
+        },
+        "rate_change_rms": 0.0,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 1030301
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 421875
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 1030301
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 421875
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 3.879975596554247e-18,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "0002e783b7c32fa567da02407d22126671bd33ddd883cec18d402dd3d4914ce1"
+      },
+      "comoving": {
+        "cube_side": 12.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0018773726759575206,
+              "phase_registered_relative_l2": 0.0018773726759575206,
+              "global_internal_phase_radians": 1.399415443510646e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0003837133324224481
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.001859172218142296,
+              "phase_registered_relative_l2": 0.001859172218142296,
+              "global_internal_phase_radians": 1.5892235933014708e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00037999336866174563
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0,
+              "phase_registered_relative_l2": 3.648093635405338e-20,
+              "global_internal_phase_radians": 2.623636421335947e-19,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0
+            },
+            "final_reference": {
+              "raw_relative_l2": 4.612354018057443e-05,
+              "phase_registered_relative_l2": 4.612354018057443e-05,
+              "global_internal_phase_radians": 2.476536579723748e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 9.433051581049901e-06
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 4.612354018057443e-05,
+          "phase_registered_relative_l2": 4.612354018057443e-05,
+          "global_internal_phase_radians": 2.476536579723748e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 9.433051581049901e-06
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0018773726759575206,
+          "phase_registered_relative_l2": 0.0018773726759575206,
+          "global_internal_phase_radians": 1.399415443510646e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0003837133324224481
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L16-b0.1-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:48.577592+00:00",
+        "melbourne": "2026-11-05T00:20:48.577592+11:00"
+      },
+      "case_id": "q2-n101-L16-b0.1-a0-dt0.01",
+      "seed_id": "q2-n101-L16",
+      "q": 2,
+      "beta": 0.1,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0010836842309575425,
+          "phase_registered_relative_l2": 0.0010836842309575431,
+          "global_internal_phase_radians": -1.1067432199161663e-13,
+          "phase_identifiable": true,
+          "absolute_rms": 0.000147056936521054
+        },
+        "rate_change_rms": 0.0007984034239617494,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.07666886159313062,
+            "rate_absolute_rms": 0.0008424662850799625,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.07680197335406941,
+            "rate_absolute_rms": 0.0013120333793410896,
+            "points": 433125
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.5319650809894085e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.01333333220798298,
+            "rate_absolute_rms": 0.00014552349132093004,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.01308257853725066,
+            "rate_absolute_rms": 0.00022197767444267,
+            "points": 433125
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0006263996060651755,
+          "fixed_face_rate_max": 0.00040316285171905714,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "c631e32aac6108386207743422c68a4750ccb5cd8a4b0bb961e684bf3f5eea57"
+      },
+      "comoving": {
+        "cube_side": 11.859446220058704,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0019396162468360498,
+              "phase_registered_relative_l2": 0.0019396162468360509,
+              "global_internal_phase_radians": 2.8548937571362233e-13,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0004034153207818105
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.003622432377958698,
+              "phase_registered_relative_l2": 0.0036224323779586996,
+              "global_internal_phase_radians": 2.6824305313942707e-12,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0007534195087035413
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.001100080614606473,
+              "phase_registered_relative_l2": 0.0011000806146064727,
+              "global_internal_phase_radians": 2.817752061970397e-13,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00022893516561425862
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.003063320440514126,
+              "phase_registered_relative_l2": 0.0030633204405141265,
+              "global_internal_phase_radians": 2.6681302883895326e-12,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006375003459446638
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.0032422975274963867,
+          "phase_registered_relative_l2": 0.003242297527496388,
+          "global_internal_phase_radians": 1.6778552263021908e-12,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0006746735074938741
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0019080902135611964,
+          "phase_registered_relative_l2": 0.0019080902135611964,
+          "global_internal_phase_radians": 1.0403160631435499e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0003968583099054066
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L16-b0.1-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:20:58.196649+00:00",
+        "melbourne": "2026-11-05T00:20:58.196649+11:00"
+      },
+      "case_id": "q2-n101-L16-b0.1-a2-dt0.01",
+      "seed_id": "q2-n101-L16",
+      "q": 2,
+      "beta": 0.1,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0007530898427594525,
+          "phase_registered_relative_l2": 0.0007530898427594525,
+          "global_internal_phase_radians": 6.6502226914609776e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00010221847996227822
+        },
+        "rate_change_rms": 0.0006600132766463703,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.06235220285372335,
+            "rate_absolute_rms": 0.0006751597059222115,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.06237111747779361,
+            "rate_absolute_rms": 0.001051506223405565,
+            "points": 433125
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.683753385137379e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.009391183407559166,
+            "rate_absolute_rms": 0.00010012366815571408,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.009367654174118379,
+            "rate_absolute_rms": 0.00015549410179479473,
+            "points": 433125
+          },
+          "unit_error": 6.661338147750939e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 9.462284311553585e-05,
+          "fixed_face_rate_max": 6.0901270563705126e-05,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "f7dfbd9c170d9e8362557a18085d26e4abf97fd6375122563e6196c3455c74dd"
+      },
+      "comoving": {
+        "cube_side": 11.859446220058704,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0020853763187908274,
+              "phase_registered_relative_l2": 0.0020853763187908274,
+              "global_internal_phase_radians": 1.9137751234871922e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.000433731547654386
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.003250548825515944,
+              "phase_registered_relative_l2": 0.0031630655003139236,
+              "global_internal_phase_radians": 0.0009664147994966328,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0006760724959390861
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0007608423094025138,
+              "phase_registered_relative_l2": 0.0007608423094025138,
+              "global_internal_phase_radians": -8.437610467582933e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00015833708711584683
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.002409819045446515,
+              "phase_registered_relative_l2": 0.0022908417533258926,
+              "global_internal_phase_radians": 0.0009651883744670405,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0005015017217324993
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.0025679827657124864,
+          "phase_registered_relative_l2": 0.0024567071162668115,
+          "global_internal_phase_radians": 0.0009650691180402281,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0005344720535110602
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0019080902135611964,
+          "phase_registered_relative_l2": 0.0019080902135611964,
+          "global_internal_phase_radians": 1.0403160631435499e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0003968583099054066
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L16-b0.3-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:21:06.832892+00:00",
+        "melbourne": "2026-11-05T00:21:06.832892+11:00"
+      },
+      "case_id": "q2-n101-L16-b0.3-a0-dt0.01",
+      "seed_id": "q2-n101-L16",
+      "q": 2,
+      "beta": 0.3,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0008777518736077043,
+          "phase_registered_relative_l2": 0.000877751873607704,
+          "global_internal_phase_radians": -1.2555917714973985e-13,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00011665388813529481
+        },
+        "rate_change_rms": 0.0025526341534960893,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.07965668351752296,
+            "rate_absolute_rms": 0.002685022705298712,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.07967537436012907,
+            "rate_absolute_rms": 0.004202229894562655,
+            "points": 444375
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.6653345369377348e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.014945297051080842,
+            "rate_absolute_rms": 0.0004998642163535911,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.013824430437606715,
+            "rate_absolute_rms": 0.000723466134856315,
+            "points": 444375
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 1.1796119636642288e-16,
+          "fixed_face_field_deviation": 3.8799755951804676e-18,
+          "fixed_face_rate_max": 3.8986070936814563e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "d040414f985ef24e44141d69af1e58569f1f5cc746d967cfeaf509da7e691f52"
+      },
+      "comoving": {
+        "cube_side": 11.950447138629867,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0018198159917065032,
+              "phase_registered_relative_l2": 0.001819815991706503,
+              "global_internal_phase_radians": 2.896124422323922e-13,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00037423912091680197
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.010432251571685525,
+              "phase_registered_relative_l2": 0.010432251571685525,
+              "global_internal_phase_radians": 4.253818265347605e-11,
+              "phase_identifiable": true,
+              "absolute_rms": 0.002145357923637905
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0008824777622967682,
+              "phase_registered_relative_l2": 0.0008824777622967682,
+              "global_internal_phase_radians": 2.870059880013935e-13,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00018158868092294064
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.010246893340238416,
+              "phase_registered_relative_l2": 0.010246893340238419,
+              "global_internal_phase_radians": 4.2501592603263263e-11,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0021085175453817474
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.010321682146848135,
+          "phase_registered_relative_l2": 0.010321682146848128,
+          "global_internal_phase_radians": 4.174749749267775e-11,
+          "phase_identifiable": true,
+          "absolute_rms": 0.002123737863125177
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0018641845118269353,
+          "phase_registered_relative_l2": 0.0018641845118269353,
+          "global_internal_phase_radians": 2.6778285787866042e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00038336335987388444
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L16-b0.3-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:21:15.928979+00:00",
+        "melbourne": "2026-11-05T00:21:15.928979+11:00"
+      },
+      "case_id": "q2-n101-L16-b0.3-a2-dt0.01",
+      "seed_id": "q2-n101-L16",
+      "q": 2,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.000597813894016096,
+          "phase_registered_relative_l2": 0.000597813894016096,
+          "global_internal_phase_radians": 3.603102071085971e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 7.946410651688744e-05
+        },
+        "rate_change_rms": 0.002098675919306362,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.06438627324027835,
+            "rate_absolute_rms": 0.0021394327633845298,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.06439575233606668,
+            "rate_absolute_rms": 0.0033523502429504224,
+            "points": 444375
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.010021171453030457,
+            "rate_absolute_rms": 0.0003274036485998572,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.009909315950827707,
+            "rate_absolute_rms": 0.0005072124139529085,
+            "points": 444375
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 3.879975596554247e-18,
+          "fixed_face_rate_max": 2.621579229560465e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "0dee3bc5cd26d6334b44a229223d867c29b42e87d2eb87e658d9d14ea90e5c70"
+      },
+      "comoving": {
+        "cube_side": 11.950447138629867,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.001991411942712645,
+              "phase_registered_relative_l2": 0.001991411942712645,
+              "global_internal_phase_radians": -1.33218976917004e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0004095272589209098
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0082246152981189,
+              "phase_registered_relative_l2": 0.007833429336978963,
+              "global_internal_phase_radians": 0.0032328411064578184,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0016913648484650266
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0006017288707526911,
+              "phase_registered_relative_l2": 0.0006017288707526911,
+              "global_internal_phase_radians": -3.983518786007391e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00012381858963658084
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.00788100543210173,
+              "phase_registered_relative_l2": 0.0074732969365221185,
+              "global_internal_phase_radians": 0.003228564467209197,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0016216854881841414
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.007956161228797897,
+          "phase_registered_relative_l2": 0.007552604295644034,
+          "global_internal_phase_radians": 0.0032282244123755265,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0016372881884326564
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.0018641845118269353,
+          "phase_registered_relative_l2": 0.0018641845118269353,
+          "global_internal_phase_radians": 2.6778285787866042e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00038336335987388444
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": false,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L20-b0-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:21:24.547527+00:00",
+        "melbourne": "2026-11-05T00:21:24.547527+11:00"
+      },
+      "case_id": "q2-n101-L20-b0-a0-dt0.01",
+      "seed_id": "q2-n101-L20",
+      "q": 2,
+      "beta": 0.0,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 8.879561694862151e-16,
+          "phase_registered_relative_l2": 8.879207722354361e-16,
+          "global_internal_phase_radians": -2.0780198409155775e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 8.713107640205338e-17
+        },
+        "rate_change_rms": 0.0,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 1030301
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 531441
+          },
+          "unit_error": 6.661338147750939e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 1030301
+          },
+          "core": {
+            "rate_relative_l2": null,
+            "rate_absolute_rms": 0.0,
+            "points": 531441
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 0.0,
+          "fixed_face_field_deviation": 7.780918084016053e-18,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "05c180e4ac09dfc43f64004ff297fd63ee1b56b0fa2af68926956b26b014c148"
+      },
+      "comoving": {
+        "cube_side": 16.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 9.91137582228968e-16,
+              "phase_registered_relative_l2": 9.911889030757196e-16,
+              "global_internal_phase_radians": -1.3741777018282623e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 1.3290447818547561e-16
+            },
+            "final_reference": {
+              "raw_relative_l2": 4.7341682309856685e-05,
+              "phase_registered_relative_l2": 4.7341682309856685e-05,
+              "global_internal_phase_radians": -1.816362770682937e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 6.348181823217893e-06
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0,
+              "phase_registered_relative_l2": 8.297918517709356e-20,
+              "global_internal_phase_radians": -5.590448475659499e-19,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0
+            },
+            "final_reference": {
+              "raw_relative_l2": 4.734168230992123e-05,
+              "phase_registered_relative_l2": 4.734168230992123e-05,
+              "global_internal_phase_radians": -5.198591303281627e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 6.348181823226547e-06
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 4.734168230992123e-05,
+          "phase_registered_relative_l2": 4.734168230992123e-05,
+          "global_internal_phase_radians": -5.198591303281627e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 6.348181823226547e-06
+        },
+        "reference_change": {
+          "raw_relative_l2": 9.91137582228968e-16,
+          "phase_registered_relative_l2": 9.911889030757196e-16,
+          "global_internal_phase_radians": -1.3741777018282623e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.3290447818547561e-16
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": true,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L20-b0.1-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:21:32.828555+00:00",
+        "melbourne": "2026-11-05T00:21:32.828555+11:00"
+      },
+      "case_id": "q2-n101-L20-b0.1-a0-dt0.01",
+      "seed_id": "q2-n101-L20",
+      "q": 2,
+      "beta": 0.1,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0013937201049854812,
+          "phase_registered_relative_l2": 0.0013937201049854812,
+          "global_internal_phase_radians": 2.3562056214264093e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0001364097562004008
+        },
+        "rate_change_rms": 0.0007212048574577641,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.09749404415498884,
+            "rate_absolute_rms": 0.0007651156307508109,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.09753278410114778,
+            "rate_absolute_rms": 0.0010758054812764664,
+            "points": 531441
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 3.8163916471489756e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.019264619282641386,
+            "rate_absolute_rms": 0.00015000342905347188,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.019212468006676878,
+            "rate_absolute_rms": 0.00021025839606186132,
+            "points": 531441
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 3.8163916471489756e-17,
+          "fixed_face_field_deviation": 0.00031404673832997627,
+          "fixed_face_rate_max": 0.00016170160255405232,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "de1d076ac23a395b554805169883d8a9b66da9cb2619e66ca2260a2931d47da0"
+      },
+      "comoving": {
+        "cube_side": 15.879597481095551,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.001199875870651157,
+              "phase_registered_relative_l2": 0.0011998758706511568,
+              "global_internal_phase_radians": -3.238497196097002e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00016271018791082695
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.004154589301669755,
+              "phase_registered_relative_l2": 0.004154589301669755,
+              "global_internal_phase_radians": -2.4991948211193476e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0005633866156506212
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0014049009769782075,
+              "phase_registered_relative_l2": 0.0014049009769782075,
+              "global_internal_phase_radians": -4.592317948339572e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00019051535917514854
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.004068819910469408,
+              "phase_registered_relative_l2": 0.004068819910469408,
+              "global_internal_phase_radians": -3.8108899771962215e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0005517632198743208
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.004230363559433583,
+          "phase_registered_relative_l2": 0.004230363559433583,
+          "global_internal_phase_radians": 7.9473583783808e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0005736030673355913
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.00077548796028347,
+          "phase_registered_relative_l2": 0.00077548796028347,
+          "global_internal_phase_radians": 1.3416458546496014e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0001051607043917231
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": true,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L20-b0.1-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:21:41.174021+00:00",
+        "melbourne": "2026-11-05T00:21:41.174021+11:00"
+      },
+      "case_id": "q2-n101-L20-b0.1-a2-dt0.01",
+      "seed_id": "q2-n101-L20",
+      "q": 2,
+      "beta": 0.1,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0009661033260399479,
+          "phase_registered_relative_l2": 0.0009661033260399478,
+          "global_internal_phase_radians": 2.3611657682589253e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 9.45835293710148e-05
+        },
+        "rate_change_rms": 0.0006057694885395882,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.08033712716542254,
+            "rate_absolute_rms": 0.0006235983457523056,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.0803413291995563,
+            "rate_absolute_rms": 0.0008768300899893507,
+            "points": 531441
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 4.163336342344337e-17,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.015076908038466468,
+            "rate_absolute_rms": 0.00011482832997380016,
+            "points": 1050703
+          },
+          "core": {
+            "rate_relative_l2": 0.01507219900510996,
+            "rate_absolute_rms": 0.0001613986273148394,
+            "points": 531441
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 2.7755575615628914e-17,
+          "fixed_face_field_deviation": 4.903111048416478e-05,
+          "fixed_face_rate_max": 2.5245972193642887e-05,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "f9a1efbdf68bed5edb32c1e1106112d147af660fcb87dc3a7c74e8abd687a758"
+      },
+      "comoving": {
+        "cube_side": 15.879597481095551,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0013179285994242662,
+              "phase_registered_relative_l2": 0.0013179285994242662,
+              "global_internal_phase_radians": 2.45736001799522e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00017871882859766272
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0032705286257222336,
+              "phase_registered_relative_l2": 0.0031219809067520653,
+              "global_internal_phase_radians": 0.0012470427917650724,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00044350281581228375
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0009684415599634507,
+              "phase_registered_relative_l2": 0.0009684415599634507,
+              "global_internal_phase_radians": 1.0719561235100945e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0001313281111337998
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.0031060240096000705,
+              "phase_registered_relative_l2": 0.0029492578790241493,
+              "global_internal_phase_radians": 0.001246927322577607,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00042120070346051883
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.003265783178979451,
+          "phase_registered_relative_l2": 0.0031171552241155286,
+          "global_internal_phase_radians": 0.0012466159382056455,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0004429497110036716
+        },
+        "reference_change": {
+          "raw_relative_l2": 0.00077548796028347,
+          "phase_registered_relative_l2": 0.00077548796028347,
+          "global_internal_phase_radians": 1.3416458546496014e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0001051607043917231
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": true,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L20-b0.3-a0-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:21:51.034684+00:00",
+        "melbourne": "2026-11-05T00:21:51.034684+11:00"
+      },
+      "case_id": "q2-n101-L20-b0.3-a0-dt0.01",
+      "seed_id": "q2-n101-L20",
+      "q": 2,
+      "beta": 0.3,
+      "axis": 0,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0011059236297063112,
+          "phase_registered_relative_l2": 0.0011059236297063112,
+          "global_internal_phase_radians": 2.3482802789514694e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 0.00010600887968710454
+        },
+        "rate_change_rms": 0.0022913955952236957,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.10057616218816955,
+            "rate_absolute_rms": 0.0024205605740772076,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.10057978161869403,
+            "rate_absolute_rms": 0.003385447015721383,
+            "points": 557685
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.3877787807814457e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.020597754795864898,
+            "rate_absolute_rms": 0.0004914840146791933,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.020347849986022945,
+            "rate_absolute_rms": 0.000679033276142075,
+            "points": 557685
+          },
+          "unit_error": 6.661338147750939e-16,
+          "tangency_error": 1.3877787807814457e-16,
+          "fixed_face_field_deviation": 7.78091808401605e-18,
+          "fixed_face_rate_max": 6.26804401777286e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "f7f3d092f9f86c931a93c7a782d09675fec390abe3356e5178ad65a81def01f8"
+      },
+      "comoving": {
+        "cube_side": 16.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0011222467847796277,
+              "phase_registered_relative_l2": 0.001122246784779628,
+              "global_internal_phase_radians": -5.866318125139784e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0001504852868065373
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.013290944207403418,
+              "phase_registered_relative_l2": 0.013290944207403418,
+              "global_internal_phase_radians": -5.0894125647464123e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.001782220789675543
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0011222467847796784,
+              "phase_registered_relative_l2": 0.0011222467847796784,
+              "global_internal_phase_radians": -4.5923624534053035e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00015048528680654407
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.01329094420740342,
+              "phase_registered_relative_l2": 0.01329094420740342,
+              "global_internal_phase_radians": -3.7919914375969786e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.001782220789675543
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.013351907797114057,
+          "phase_registered_relative_l2": 0.013351907797114057,
+          "global_internal_phase_radians": 8.290941968593744e-18,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0017902387602589636
+        },
+        "reference_change": {
+          "raw_relative_l2": 9.91137582228968e-16,
+          "phase_registered_relative_l2": 9.911889030757196e-16,
+          "global_internal_phase_radians": -1.3741777018282623e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.3290447818547561e-16
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": false,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": true,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    },
+    "q2-n101-L20-b0.3-a2-dt0.01": {
+      "recorded_at": {
+        "utc": "2026-11-04T13:21:59.956399+00:00",
+        "melbourne": "2026-11-05T00:21:59.956399+11:00"
+      },
+      "case_id": "q2-n101-L20-b0.3-a2-dt0.01",
+      "seed_id": "q2-n101-L20",
+      "q": 2,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "time": 1.0,
+      "initial": {
+        "old_replay_bit_exact": true,
+        "new_vs_old": {
+          "raw_relative_l2": 0.0007575935373585775,
+          "phase_registered_relative_l2": 0.0007575935373585778,
+          "global_internal_phase_radians": 4.7584824329677046e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 7.26352579146988e-05
+        },
+        "rate_change_rms": 0.001912352550716202,
+        "old_transport": {
+          "full": {
+            "rate_relative_l2": 0.08235435536957098,
+            "rate_absolute_rms": 0.0019613971448216743,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.08235563953568076,
+            "rate_absolute_rms": 0.0027439131849413528,
+            "points": 557685
+          },
+          "unit_error": 4.440892098500626e-16,
+          "tangency_error": 1.3877787807814457e-16,
+          "fixed_face_field_deviation": 0.0,
+          "fixed_face_rate_max": 0.0,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "new_transport": {
+          "full": {
+            "rate_relative_l2": 0.015831627970568037,
+            "rate_absolute_rms": 0.0003694955502382069,
+            "points": 1091507
+          },
+          "core": {
+            "rate_relative_l2": 0.01580823402122022,
+            "rate_absolute_rms": 0.0005161359982567808,
+            "points": 557685
+          },
+          "unit_error": 5.551115123125783e-16,
+          "tangency_error": 1.1102230246251565e-16,
+          "fixed_face_field_deviation": 7.780918084016053e-18,
+          "fixed_face_rate_max": 4.141401272037274e-19,
+          "scope": "D4 transport consistency only; analytic interpolant velocity is never replaced by a fitted D4 velocity."
+        },
+        "candidate_state_sha256": "3f47aecf0874ee079bae4ac7f1fc53436ecbbe2ed4231d135d1735d4465013fb"
+      },
+      "comoving": {
+        "cube_side": 16.0,
+        "sampling_nodes": 41,
+        "map": "x_a=xi_a/gamma+beta*t; transverse coordinates unchanged",
+        "reference_comparisons": {
+          "historical_trilinear": {
+            "initial_reference": {
+              "raw_relative_l2": 0.00076585955014848,
+              "phase_registered_relative_l2": 0.0007658595501484799,
+              "global_internal_phase_radians": 5.7260399761500754e-18,
+              "phase_identifiable": true,
+              "absolute_rms": 0.00010269630140241477
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.010044329641160839,
+              "phase_registered_relative_l2": 0.009514674444825818,
+              "global_internal_phase_radians": 0.0041186452665236805,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0013468729403633866
+            }
+          },
+          "candidate_cubic": {
+            "initial_reference": {
+              "raw_relative_l2": 0.0007658595501484519,
+              "phase_registered_relative_l2": 0.0007658595501484518,
+              "global_internal_phase_radians": 1.8949352733474526e-17,
+              "phase_identifiable": true,
+              "absolute_rms": 0.000102696301402411
+            },
+            "final_reference": {
+              "raw_relative_l2": 0.010044329641160801,
+              "phase_registered_relative_l2": 0.009514674444825776,
+              "global_internal_phase_radians": 0.004118645266523693,
+              "phase_identifiable": true,
+              "absolute_rms": 0.0013468729403633814
+            }
+          }
+        },
+        "evolved_vs_own_initial": {
+          "raw_relative_l2": 0.010116821625319109,
+          "phase_registered_relative_l2": 0.00959142958610744,
+          "global_internal_phase_radians": 0.004117834788100391,
+          "phase_identifiable": true,
+          "absolute_rms": 0.0013567976044364229
+        },
+        "reference_change": {
+          "raw_relative_l2": 9.91137582228968e-16,
+          "phase_registered_relative_l2": 9.911889030757196e-16,
+          "global_internal_phase_radians": -1.3741777018282623e-17,
+          "phase_identifiable": true,
+          "absolute_rms": 1.3290447818547561e-16
+        }
+      },
+      "original_case_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": false,
+        "speed": true,
+        "topology": true,
+        "tail": true,
+        "initial_particle_relations": true,
+        "initial_boundary_clearance": true
+      },
+      "scope": "Retained-field reconstruction and restricted registration only. New cubic initial data have not been evolved. No isolated-motion, charge, spin or electron acceptance. Comoving comparisons use the same cubic sampling operator on both retained snapshots; sampling error remains."
+    }
+  },
+  "status": "complete_pending_review",
+  "updated_at": {
+    "utc": "2026-11-04T13:21:59.970389+00:00",
+    "melbourne": "2026-11-05T00:21:59.970389+11:00"
+  },
+  "controls": {
+    "recorded_at": {
+      "utc": "2026-11-04T13:18:16.913063+00:00",
+      "melbourne": "2026-11-05T00:18:16.913063+11:00"
+    },
+    "rows": [
+      {
+        "nodes": 17,
+        "sampling": "nodes",
+        "axis": 0,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.007960847129948826,
+        "new_derivative_rms": 0.0012887352528997914,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 6.938893903907228e-18
+      },
+      {
+        "nodes": 17,
+        "sampling": "nodes",
+        "axis": 1,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.005869164076729289,
+        "new_derivative_rms": 0.00041155646886659083,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 17,
+        "sampling": "nodes",
+        "axis": 2,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.001745157939648353,
+        "new_derivative_rms": 0.00030295858989526424,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 17,
+        "sampling": "shifted",
+        "axis": 0,
+        "old_value_max": 0.003935098584637376,
+        "new_value_max": 0.00019744760922997691,
+        "old_derivative_rms": 0.004340062195276221,
+        "new_derivative_rms": 0.0001330131781022692,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 1.0408340855860843e-17
+      },
+      {
+        "nodes": 17,
+        "sampling": "shifted",
+        "axis": 1,
+        "old_value_max": 0.003935098584637376,
+        "new_value_max": 0.00019744760922997691,
+        "old_derivative_rms": 0.0015178352704057574,
+        "new_derivative_rms": 0.0001704887721360564,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 17,
+        "sampling": "shifted",
+        "axis": 2,
+        "old_value_max": 0.003935098584637376,
+        "new_value_max": 0.00019744760922997691,
+        "old_derivative_rms": 0.0003524437589776446,
+        "new_derivative_rms": 0.0001328599569653662,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 33,
+        "sampling": "nodes",
+        "axis": 0,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.003939412683683489,
+        "new_derivative_rms": 0.00032534987944298036,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 6.938893903907228e-18
+      },
+      {
+        "nodes": 33,
+        "sampling": "nodes",
+        "axis": 1,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.002941662547477536,
+        "new_derivative_rms": 0.0001038483382034261,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 33,
+        "sampling": "nodes",
+        "axis": 2,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.0008525913779668302,
+        "new_derivative_rms": 7.606345592170945e-05,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 33,
+        "sampling": "shifted",
+        "axis": 0,
+        "old_value_max": 0.0009262168454351883,
+        "new_value_max": 2.302001442070057e-05,
+        "old_derivative_rms": 0.0021308175380053964,
+        "new_derivative_rms": 2.4525450529446347e-05,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 6.938893903907228e-18
+      },
+      {
+        "nodes": 33,
+        "sampling": "shifted",
+        "axis": 1,
+        "old_value_max": 0.0009262168454351883,
+        "new_value_max": 2.302001442070057e-05,
+        "old_derivative_rms": 0.0007639446200837596,
+        "new_derivative_rms": 4.177983557203203e-05,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 33,
+        "sampling": "shifted",
+        "axis": 2,
+        "old_value_max": 0.0009262168454351883,
+        "new_value_max": 2.302001442070057e-05,
+        "old_derivative_rms": 0.00015998074765082504,
+        "new_derivative_rms": 3.399903918494803e-05,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 5.204170427930421e-18
+      },
+      {
+        "nodes": 65,
+        "sampling": "nodes",
+        "axis": 0,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.0019646204530953996,
+        "new_derivative_rms": 8.159398313098914e-05,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 6.938893903907228e-18
+      },
+      {
+        "nodes": 65,
+        "sampling": "nodes",
+        "axis": 1,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.001477188915643539,
+        "new_derivative_rms": 2.5854955136439812e-05,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 65,
+        "sampling": "nodes",
+        "axis": 2,
+        "old_value_max": 1.2432050435751766e-16,
+        "new_value_max": 1.2432050435751766e-16,
+        "old_derivative_rms": 0.00042214419052308326,
+        "new_derivative_rms": 1.9040124861257365e-05,
+        "unit_max": 2.220446049250313e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 65,
+        "sampling": "shifted",
+        "axis": 0,
+        "old_value_max": 0.00022273000503081605,
+        "new_value_max": 2.7968512597673045e-06,
+        "old_derivative_rms": 0.0010611937317451818,
+        "new_derivative_rms": 5.396508107509927e-06,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 6.938893903907228e-18
+      },
+      {
+        "nodes": 65,
+        "sampling": "shifted",
+        "axis": 1,
+        "old_value_max": 0.00022273000503081605,
+        "new_value_max": 2.7968512597673045e-06,
+        "old_derivative_rms": 0.000383945998682081,
+        "new_derivative_rms": 1.0331698816576056e-05,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 3.469446951953614e-18
+      },
+      {
+        "nodes": 65,
+        "sampling": "shifted",
+        "axis": 2,
+        "old_value_max": 0.00022273000503081605,
+        "new_value_max": 2.7968512597673045e-06,
+        "old_derivative_rms": 7.71450979481073e-05,
+        "new_derivative_rms": 8.563527394198545e-06,
+        "unit_max": 4.440892098500626e-16,
+        "tangency_max": 3.469446951953614e-18
+      }
+    ],
+    "orders": [
+      {
+        "axis": 0,
+        "metric": "new_value_max",
+        "sampling": "shifted",
+        "errors": [
+          0.00019744760922997691,
+          2.302001442070057e-05,
+          2.7968512597673045e-06
+        ],
+        "orders": [
+          3.1005092568614354,
+          3.0410133006900795
+        ]
+      },
+      {
+        "axis": 0,
+        "metric": "new_derivative_rms",
+        "sampling": "shifted",
+        "errors": [
+          0.0001330131781022692,
+          2.4525450529446347e-05,
+          5.396508107509927e-06
+        ],
+        "orders": [
+          2.4392176419568123,
+          2.1841815422590862
+        ]
+      },
+      {
+        "axis": 0,
+        "metric": "new_derivative_rms",
+        "sampling": "nodes",
+        "errors": [
+          0.0012887352528997914,
+          0.00032534987944298036,
+          8.159398313098914e-05
+        ],
+        "orders": [
+          1.9858919945539626,
+          1.99545734452295
+        ]
+      },
+      {
+        "axis": 1,
+        "metric": "new_value_max",
+        "sampling": "shifted",
+        "errors": [
+          0.00019744760922997691,
+          2.302001442070057e-05,
+          2.7968512597673045e-06
+        ],
+        "orders": [
+          3.1005092568614354,
+          3.0410133006900795
+        ]
+      },
+      {
+        "axis": 1,
+        "metric": "new_derivative_rms",
+        "sampling": "shifted",
+        "errors": [
+          0.0001704887721360564,
+          4.177983557203203e-05,
+          1.0331698816576056e-05
+        ],
+        "orders": [
+          2.0287980112543273,
+          2.0157293219617527
+        ]
+      },
+      {
+        "axis": 1,
+        "metric": "new_derivative_rms",
+        "sampling": "nodes",
+        "errors": [
+          0.00041155646886659083,
+          0.0001038483382034261,
+          2.5854955136439812e-05
+        ],
+        "orders": [
+          1.986612263476352,
+          2.00596542357704
+        ]
+      },
+      {
+        "axis": 2,
+        "metric": "new_value_max",
+        "sampling": "shifted",
+        "errors": [
+          0.00019744760922997691,
+          2.302001442070057e-05,
+          2.7968512597673045e-06
+        ],
+        "orders": [
+          3.1005092568614354,
+          3.0410133006900795
+        ]
+      },
+      {
+        "axis": 2,
+        "metric": "new_derivative_rms",
+        "sampling": "shifted",
+        "errors": [
+          0.0001328599569653662,
+          3.399903918494803e-05,
+          8.563527394198545e-06
+        ],
+        "orders": [
+          1.9663404708300773,
+          1.989216893016496
+        ]
+      },
+      {
+        "axis": 2,
+        "metric": "new_derivative_rms",
+        "sampling": "nodes",
+        "errors": [
+          0.00030295858989526424,
+          7.606345592170945e-05,
+          1.9040124861257365e-05
+        ],
+        "orders": [
+          1.9938452173894539,
+          1.998160549323878
+        ]
+      }
+    ],
+    "boundary_max": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "derivative_jump_at_epsilon": [
+      1.3590865124876935e-08,
+      1.3384167533485116e-08,
+      1.3121014581346697e-08
+    ],
+    "event_derivative_max": [
+      9.143514176087697e-11,
+      1.0668419901833925e-10,
+      1.445331831648189e-10
+    ],
+    "checks": {
+      "node_values": true,
+      "offnode_value_order": true,
+      "derivative_order": true,
+      "constraints": true,
+      "north_extension": true,
+      "cell_derivative_continuity": true,
+      "event_derivative": true
+    },
+    "passed": true,
+    "scope": "Reconstruction controls; three input meshes are not soliton evolution convergence."
+  }
+}

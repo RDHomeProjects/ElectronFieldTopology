@@ -1,12 +1,11 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-04T11:59:20.718361+00:00",
-    "melbourne": "2026-11-04T22:59:20.718361+11:00"
+    "utc": "2026-11-04T13:35:35.703463+00:00",
+    "melbourne": "2026-11-05T00:35:35.703463+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
-    "s5-b-005",
     "s5-b-006",
     "s5-b-007",
     "s5-a-004",
@@ -729,12 +728,12 @@
       "number": 5,
       "slug": "boost-initialization",
       "title": "Boost initialization and field registration",
-      "state": "prepared",
+      "state": "assessed",
       "gate": "open",
       "question": "Can a smoother, consistently differentiated reconstruction improve boost consistency without changing the action?",
-      "finding": "Independent reconstruction controls and targeted software tests passed. The existing 5.99\u201310.98% field-rate mismatch remains a prior observation; retained-field old/candidate measurements await local execution.",
-      "next_action": "Run the checkpointed read-only 30-case dt=.01 initialization/registration study on the retained Q1/Q2 fields, preserving the original solver and gates; assess before S5-B-006.",
-      "exit_evidence": "Document the interpolant and its derivatives, normalization/tangency, independent accuracy/order and preserved old reference. Do not replace velocity with a fitted D4 derivative merely to erase the residual. Register field symmetries consistently without hiding x/z dependence.",
+      "finding": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
+      "next_action": "Use the assessment and ADR-0013 to implement fixed-layer readmission before the focused S5-B-006 method comparison. Preserve original gates and all candidate boundary failures.",
+      "exit_evidence": "Authenticated 30-case compact evidence, independent control replay, raw/registered residuals and fixed-layer findings recorded in a separate immutable assessment. Candidate promotion remains conditional; no new dynamics acceptance.",
       "depends_on": [
         "s5-b-004"
       ],
@@ -749,13 +748,24 @@
       "specifications": [
         "docs/models/SF-boost-reconstruction.md",
         "docs/models/SF-physical-time.md",
-        "docs/literature/soliton-quantization-methods.md"
+        "docs/literature/soliton-quantization-methods.md",
+        "docs/decisions/ADR-0013-conditional-cubic-initialization.md"
       ],
       "records": [
         {
           "role": "preparation",
           "path": "reports/s5-b/005-boost-initialization/preparation/20261104t115920z-5cdb51c2/README.md",
           "label": "Independent reconstruction and retained-field replay controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/005-boost-initialization/runs/20261104t131812z-4e8c880c/README.md",
+          "label": "30-case retained-field workstation evidence"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/005-boost-initialization/assessments/20261104t133535z-6a7e9b21/ASSESSMENT.md",
+          "label": "Cubic comparison and fixed-layer readmission decision"
         }
       ]
     },
@@ -768,9 +778,9 @@
       "state": "planned",
       "gate": "open",
       "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
-      "finding": "No new production run is claimed. Q1 tail and inertia remain domain-sensitive; Q2 low-speed results are provisional bounded references.",
-      "next_action": "After the initializer decision, run a small beta=.3 x/z comparison before selecting third-h and larger-Q1-box controls. Preserve action, precision and predeclared gates.",
-      "exit_evidence": "Separate starting-state, temporal, spatial and domain effects; quantify tails, momentum, shape and inertia. A tail pass alone does not validate inertia or isolation.",
+      "finding": "S5-B-005 supports a conditional cubic comparison but found fixed-layer deviations in all 12 beta=.1 raw candidates. New candidate trajectories and motion/convergence acceptance remain untested.",
+      "next_action": "First implement thin-north-layer x/z controls and explicit candidate fixed-layer readmission, recording pre/post n/v corrections and free-node chain-rule consistency. Only then prepare a focused beta=.3 Q1/Q2 x/z old-versus-cubic comparison before temporal, third-mesh and larger matched-spacing box decisions.",
+      "exit_evidence": "Boundary-consistent initial data with recorded corrections; matched rest states, model action, precision, observation windows and predeclared gates; eight nominal method-comparison arms assessed before any wider sweep. Separate initialization, temporal, physical-grid, domain, tail and inertia effects. No silent D4-fitted velocity, gate changes or automatic isolation claim.",
       "depends_on": [
         "s5-b-005"
       ],
@@ -783,7 +793,8 @@
         "REP-002"
       ],
       "specifications": [
-        "docs/models/SF-physical-time.md"
+        "docs/models/SF-physical-time.md",
+        "docs/decisions/ADR-0013-conditional-cubic-initialization.md"
       ],
       "records": []
     },
@@ -1076,5 +1087,10 @@
       "study": "s5-b-004",
       "stage": "s5-b"
     }
-  ]
+  ],
+  "current": {
+    "latest_assessed_study": "s5-b-005",
+    "summary": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
+    "limits": "The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows."
+  }
 }

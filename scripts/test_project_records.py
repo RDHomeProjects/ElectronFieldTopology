@@ -29,6 +29,19 @@ class RecordIntegrity(unittest.TestCase):
         d=copy.deepcopy(self.data);d['studies'].append(d['studies'][0])
         with self.assertRaisesRegex(AssertionError,'Duplicate study'):p.validate(d,self.root)
 
+    def test_next_task_and_summary_follow_register_across_entry_pages(self):
+        d=copy.deepcopy(self.data);d['priority']=['s5-b-007','s5-b-006']
+        d['current']['summary']='Synthetic current assessment summary.'
+        texts=p.documents(d,self.root)
+        for name in ['README.md','docs/STATUS.md','docs/06-development-plan.md']:
+            self.assertIn('s5-b-007',texts[name])
+        for name in ['README.md','docs/STATUS.md','reports/README.md']:
+            self.assertIn(d['current']['summary'],texts[name])
+
+    def test_latest_current_study_must_be_assessed(self):
+        d=copy.deepcopy(self.data);d['current']['latest_assessed_study']='s5-b-006'
+        with self.assertRaisesRegex(AssertionError,'not assessed'):p.validate(d,self.root)
+
     def test_dependency_cycle_rejected(self):
         d=copy.deepcopy(self.data);d['studies'][0]['depends_on']=[d['studies'][1]['id']]
         with self.assertRaisesRegex(AssertionError,'Dependency cycle'):p.validate(d,self.root)

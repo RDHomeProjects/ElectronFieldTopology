@@ -153,3 +153,9 @@ less protection from unrelated untracked work and running artifact paths.
 ## Temporary workstation storage
 
 Follow [the archive and restore policy](workstation-archives.md). Full scientific data is archived in verified release assets with a compact Git catalog before local copies become disposable. Published report paths and bytes remain unchanged.
+
+## Current summary maintenance
+
+UTC: 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne: 2026-11-05T00:35:35.703463+11:00.
+
+The register's `current` object identifies the latest assessed study, measured summary and outstanding limits. The first `priority` entry supplies the next task. The renderer uses those fields for status, roadmap, report navigation and the README Current capability section; its introduction, development and licensing sections are preserved. Update these fields with an assessment so an older hard-coded next-task paragraph cannot compete with the current plan.

@@ -22,34 +22,17 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Recorded: UTC 2026-11-04T01:00:23.956083+00:00; Australia/Melbourne 2026-11-04T12:00:23.956083+11:00.
+Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
 
-Use [the current roadmap](docs/06-development-plan.md), [status](docs/STATUS.md),
-[study plans](docs/plans/README.md) and [stage report indexes](reports/README.md).
-These pages derive from one [project register](docs/project/roadmap.json).
+Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-PR54 publishes the completed retained-field motion diagnostic assessment: endpoint
-replay agrees, while initialization, spatial/domain and classical-inertia sensitivity
-remain unresolved. The next scientific study is **s5-b-005, boost initialization and
-field registration**, before a focused new motion/convergence run. Six bounded low-speed
-passes remain; general isolated motion, quantum spin, electric charge and an electron
-model are not accepted.
+S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99–10.98% to 0.83–2.67% across all 24 moving cases (75.56–86.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.
 
-S1–S4 baseline instruments and S5-A static references remain available through the
-stage indexes. S5-B contains neutral physical-time dynamics; S5-C covers deferred
-charged feasibility. Q17/Q19 motion, Q18 fresh fine starts and additional-Q comparisons
-remain explicitly sequenced. Conditional quantum/probe work does not bypass numerical
-convergence or supply emergent properties by assumption.
+The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows.
 
-See [the repository layout and recording rules](docs/governance/repository-layout.md).
-Existing report folders and scientific bytes are preserved compatibility records;
-new work uses stable stage/study paths. Renderer exports remain separate from science.
+Next: **s5-b-006: Focused motion, mesh and domain convergence**. First implement thin-north-layer x/z controls and explicit candidate fixed-layer readmission, recording pre/post n/v corrections and free-node chain-rule consistency. Only then prepare a focused beta=.3 Q1/Q2 x/z old-versus-cubic comparison before temporal, third-mesh and larger matched-spacing box decisions.
 
-```bash
-uv sync --frozen --all-groups
-python3 scripts/project_records.py check
-python3 scripts/check_docs.py
-```
+See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 
 ## Development
 
