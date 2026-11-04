@@ -1,8 +1,8 @@
 # s5-b-005: Boost initialization and field registration
 
-Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
+Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
 
-State: **planned**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,13 +10,13 @@ Can a smoother, consistently differentiated reconstruction improve boost consist
 
 ## Evidence and present finding
 
-The diagnostic finds 5.99–10.98% internal-field-rate mismatch. This is not centroid speed error and does not prove interpolation explains all shape error.
+S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99–10.98% to 0.83–2.67% across all 24 moving cases (75.56–86.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.
 
 ## Next action and exit evidence
 
-Start with retained fields and independent analytical controls at exact nodes, shifted points and boundary extensions. Compare old and new variants; add phase-invariant, initial-state and comoving-residual comparisons.
+Use the assessment and ADR-0013 to implement fixed-layer readmission before the focused S5-B-006 method comparison. Preserve original gates and all candidate boundary failures.
 
-Document the interpolant and its derivatives, normalization/tangency, independent accuracy/order and preserved old reference. Do not replace velocity with a fitted D4 derivative merely to erase the residual. Register field symmetries consistently without hiding x/z dependence.
+Authenticated 30-case compact evidence, independent control replay, raw/registered residuals and fixed-layer findings recorded in a separate immutable assessment. Candidate promotion remains conditional; no new dynamics acceptance.
 
 ## Traceability
 
@@ -26,5 +26,7 @@ Dependencies: [s5-b-004](004-motion-diagnostics.md).
 
 [Evidence index](../../../reports/s5-b/005-boost-initialization/README.md).
 
+- [docs/models/SF-boost-reconstruction.md](../../models/SF-boost-reconstruction.md)
 - [docs/models/SF-physical-time.md](../../models/SF-physical-time.md)
 - [docs/literature/soliton-quantization-methods.md](../../literature/soliton-quantization-methods.md)
+- [docs/decisions/ADR-0013-conditional-cubic-initialization.md](../../decisions/ADR-0013-conditional-cubic-initialization.md)

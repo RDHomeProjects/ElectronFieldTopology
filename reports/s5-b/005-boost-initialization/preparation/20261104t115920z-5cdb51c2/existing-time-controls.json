@@ -1,0 +1,300 @@
+{
+  "started_at": {
+    "utc": "2026-11-04T11:54:04.193966+00:00",
+    "melbourne": "2026-11-04T22:54:04.193966+11:00"
+  },
+  "finished_at": {
+    "utc": "2026-11-04T11:54:40.936122+00:00",
+    "melbourne": "2026-11-04T22:54:40.936122+11:00"
+  },
+  "wall_seconds": 36.74263088399994,
+  "checks": {
+    "wave_spatial_time_order_gt_3_5": true,
+    "temporal_order_gt_3_9": true,
+    "nonlinear_rhs_order_gt_3_5": true,
+    "forced_evolution_order_gt_3_4": true,
+    "wave_conservation_below_1e_3": true,
+    "unit_tangency_below_1e_10": true,
+    "finest_interior_energy_momentum_balance_below_1e_3": true,
+    "refined_wall_energy_below_1e_6": true,
+    "fixed_wall_reverses_pulse_momentum": true
+  },
+  "passed": true,
+  "results": {
+    "wave_convergence": {
+      "cases": [
+        {
+          "n": 16,
+          "dt": 0.03125,
+          "time": 1.0,
+          "reference_rms_error": 3.564048766937843e-05,
+          "energy_relative_drift": 4.663118780001696e-10,
+          "momentum_scaled_drift": 1.2402417172458434e-07,
+          "unit_error": 0.0,
+          "tangency_error": 6.938893903907228e-18
+        },
+        {
+          "n": 32,
+          "dt": 0.015625,
+          "time": 1.0,
+          "reference_rms_error": 2.3179618607933728e-06,
+          "energy_relative_drift": 1.4621748256615774e-11,
+          "momentum_scaled_drift": 5.403416435747924e-10,
+          "unit_error": 2.220446049250313e-16,
+          "tangency_error": 1.3877787807814457e-17
+        },
+        {
+          "n": 64,
+          "dt": 0.0078125,
+          "time": 1.0,
+          "reference_rms_error": 1.4654604659843312e-07,
+          "energy_relative_drift": 4.574118861455645e-13,
+          "momentum_scaled_drift": 2.5572735049848425e-12,
+          "unit_error": 2.220446049250313e-16,
+          "tangency_error": 6.938893903907228e-18
+        }
+      ],
+      "orders": [
+        3.942588343531992,
+        3.983430874973467
+      ]
+    },
+    "temporal_geodesic": {
+      "cases": [
+        {
+          "dt": 0.1,
+          "time": 1.0,
+          "field_error": 1.8351121631142586e-06
+        },
+        {
+          "dt": 0.05,
+          "time": 1.0,
+          "field_error": 1.160879839025871e-07
+        },
+        {
+          "dt": 0.025,
+          "time": 1.0,
+          "field_error": 7.292191761186158e-09
+        }
+      ],
+      "orders": [
+        3.982577690326031,
+        3.992722338338067
+      ]
+    },
+    "manufactured_spatial_rhs": {
+      "cases": [
+        {
+          "n": 8,
+          "acceleration_rms_error": 0.0006627482060298766
+        },
+        {
+          "n": 16,
+          "acceleration_rms_error": 4.829476529633254e-05
+        },
+        {
+          "n": 32,
+          "acceleration_rms_error": 3.157809075914872e-06
+        }
+      ],
+      "orders": [
+        3.7785221320016698,
+        3.9348709705439733
+      ]
+    },
+    "manufactured_evolution": {
+      "cases": [
+        {
+          "n": 8,
+          "dt": 0.01,
+          "time": 0.1,
+          "field_rms_error": 3.303805202823669e-06
+        },
+        {
+          "n": 12,
+          "dt": 0.01,
+          "time": 0.1,
+          "field_rms_error": 7.278266467486501e-07
+        },
+        {
+          "n": 16,
+          "dt": 0.01,
+          "time": 0.1,
+          "field_rms_error": 2.405040664691787e-07
+        }
+      ],
+      "orders": [
+        3.7309431747036585,
+        3.849130708796491
+      ]
+    },
+    "interior_flux_balance": [
+      {
+        "n": 97,
+        "h": 0.16666666666666666,
+        "dt": 0.005,
+        "time": 1.5,
+        "energy_flux_balance_relative_defect": 0.001584990184800017,
+        "momentum_flux_balance_scaled_defect": 0.0015798098878766142,
+        "scope": "Continuum stress/energy on x in [-4,0], before fixed-wall return; trapezoidal space/time flux quadrature."
+      },
+      {
+        "n": 193,
+        "h": 0.08333333333333333,
+        "dt": 0.0025,
+        "time": 1.5,
+        "energy_flux_balance_relative_defect": 0.00040195893742696234,
+        "momentum_flux_balance_scaled_defect": 0.0004019352042590092,
+        "scope": "Continuum stress/energy on x in [-4,0], before fixed-wall return; trapezoidal space/time flux quadrature."
+      },
+      {
+        "n": 385,
+        "h": 0.041666666666666664,
+        "dt": 0.00125,
+        "time": 1.5,
+        "energy_flux_balance_relative_defect": 0.00010136675139393067,
+        "momentum_flux_balance_scaled_defect": 0.00010136665518988938,
+        "scope": "Continuum stress/energy on x in [-4,0], before fixed-wall return; trapezoidal space/time flux quadrature."
+      }
+    ],
+    "fixed_wall_reflection": [
+      {
+        "n": 129,
+        "dt": 0.01,
+        "time": 4.0,
+        "energy_relative_drift": 2.0581575246314543e-06,
+        "initial_momentum_over_energy": 0.9984639623426775,
+        "final_momentum_over_initial_energy": -0.9984618799327296,
+        "scope": "Reflecting-wall diagnostic; wall impulse changes momentum. This is not an absorbing boundary."
+      },
+      {
+        "n": 129,
+        "dt": 0.005,
+        "time": 4.0,
+        "energy_relative_drift": 6.439031652316629e-08,
+        "initial_momentum_over_energy": 0.9984639623426775,
+        "final_momentum_over_initial_energy": -0.9984638576170403,
+        "scope": "Reflecting-wall diagnostic; wall impulse changes momentum. This is not an absorbing boundary."
+      }
+    ],
+    "low_q_seed_smoke": [
+      {
+        "intended_q": 1,
+        "initial": {
+          "energy": 1.3334380069703253,
+          "continuum_energy": 1.1949387835258656,
+          "momentum": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_error": 2.220446049250313e-16,
+          "tangency_error": 0.0,
+          "centroid": [
+            4.31721776561924e-18,
+            -2.844585956162754e-17,
+            -1.1618706246646697e-17
+          ],
+          "rms_radius": 1.748505769955145,
+          "source_power": 0.0,
+          "source_force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boundary": "fixed_reflecting"
+        },
+        "final": {
+          "energy": 1.3334380069703253,
+          "continuum_energy": 1.1949440174140347,
+          "momentum": [
+            7.375140552004234e-20,
+            -3.1918955917797064e-20,
+            2.1392023265429703e-20
+          ],
+          "unit_error": 1.1102230246251565e-16,
+          "tangency_error": 8.673617379884035e-19,
+          "centroid": [
+            7.490158517208534e-18,
+            3.5675462162361214e-17,
+            5.331817982908442e-18
+          ],
+          "rms_radius": 1.7485096072229331,
+          "source_power": 0.0,
+          "source_force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boundary": "fixed_reflecting"
+        },
+        "time": 0.002,
+        "dt": 0.001,
+        "energy_relative_drift": 0.0,
+        "scope": "Fresh unrelaxed low-Q seed; not a stationary soliton. No independent topology/stability acceptance."
+      },
+      {
+        "intended_q": 2,
+        "initial": {
+          "energy": 1.7146490569326878,
+          "continuum_energy": 1.5597528527917057,
+          "momentum": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "unit_error": 2.220446049250313e-16,
+          "tangency_error": 0.0,
+          "centroid": [
+            2.4719082698941793e-17,
+            2.870692118225591e-17,
+            -7.389458421131248e-19
+          ],
+          "rms_radius": 1.5665438692500016,
+          "source_power": 0.0,
+          "source_force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boundary": "fixed_reflecting"
+        },
+        "final": {
+          "energy": 1.714649056932688,
+          "continuum_energy": 1.5597561802771427,
+          "momentum": [
+            -5.562250375506168e-20,
+            -6.519417878387334e-20,
+            1.0303614674780571e-20
+          ],
+          "unit_error": 2.220446049250313e-16,
+          "tangency_error": 8.673617379884035e-19,
+          "centroid": [
+            -1.3993675420626075e-19,
+            -6.319424646605101e-18,
+            6.814265771080013e-18
+          ],
+          "rms_radius": 1.5665465071641038,
+          "source_power": 0.0,
+          "source_force": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "boundary": "fixed_reflecting"
+        },
+        "time": 0.002,
+        "dt": 0.001,
+        "energy_relative_drift": 2.220446049250313e-16,
+        "scope": "Fresh unrelaxed low-Q seed; not a stationary soliton. No independent topology/stability acceptance."
+      }
+    ]
+  },
+  "source_sha256": {
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+    "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a"
+  },
+  "scope": "Actual physical-time numerical controls. No stationary Q1/Q2 or high-Q free-flight/stability acceptance; no charged or electron claim."
+}

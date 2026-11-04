@@ -80,3 +80,9 @@ No stationary/high-Q full stability or open-boundary acceptance is implied. The
 
 The basic renderer supports these bounded controls; a diagnostic animation does not
 close TOP-001/NUM-005 or any electron-model requirement.
+
+## S5-B-005 retained-field reconstruction assessment
+
+UTC: 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne: 2026-11-05T00:35:35.703463+11:00.
+
+[The immutable assessment](../reports/s5-b/005-boost-initialization/assessments/20261104t133535z-6a7e9b21/ASSESSMENT.md) supplies bounded NUM-001/003, REL-002, REP-001/002 and VIS-001 instrument evidence: authenticated compact results, independent interpolation/event controls, restricted field registration and preserved negative findings. It also records raw candidate fixed-layer failures relevant to BND-001. This does not close physical-mesh/domain convergence, isolated motion, inertia, quantum spin, charge or electron requirements. No existing threshold or earlier gate is changed. [ADR-0013](decisions/ADR-0013-conditional-cubic-initialization.md) requires boundary readmission before the focused S5-B-006 comparison.

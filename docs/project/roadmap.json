@@ -1,12 +1,11 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-04T09:13:37.867474+00:00",
-    "melbourne": "2026-11-04T20:13:37.867474+11:00"
+    "utc": "2026-11-04T13:35:35.703463+00:00",
+    "melbourne": "2026-11-05T00:35:35.703463+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
-    "s5-b-005",
     "s5-b-006",
     "s5-b-007",
     "s5-a-004",
@@ -157,8 +156,8 @@
       "state": "assessed",
       "gate": "not-applicable",
       "question": "Can every surviving project dataset and local Git state be restored from GitHub before local copies are removed?",
-      "finding": "Archive 20261104t023917z-b0d06afa contains 38 workstation roots, 12873 payload files and 32,272,522,204 bytes. All remote payload hashes were checked. Compact catalog is staged for Git publication; no source deletion was performed.",
-      "next_action": "Publish the compact catalog and review unchanged local candidates while retaining one active checkout and datasets needed for the next study.",
+      "finding": "Archive 20261104t023917z-b0d06afa is published with 38 roots and verified full payloads. PR56 merged the compact catalog. The reviewed workstation log records successful cleanup of 36 obsolete roots at 2026-11-04T11:31:00Z / 22:31:00 AEDT; administrative checkout and low-Q input cache remain.",
+      "next_action": "Include the exact cleanup receipt in this preparation PR; retain one checkout and the low-Q input cache for S5-B-005. Archive and verify new unique results before future cleanup.",
       "exit_evidence": "A versioned Git catalog anchors release assets; every file hash and Git graph is restore-verified; source changes block cleanup. No deletion from a size listing alone.",
       "depends_on": [
         "s0-002"
@@ -182,6 +181,11 @@
           "role": "assessment",
           "path": "reports/s0/003-workstation-archives/assessments/20261104t023917z-b0d06afa/README.md",
           "label": "Verified full-workstation archive"
+        },
+        {
+          "role": "verification",
+          "path": "data/archives/20261104t023917z-b0d06afa/cleanup/20261104t113057z-2f00a267/README.md",
+          "label": "Verified local cleanup: 36 obsolete roots removed"
         }
       ]
     },
@@ -724,12 +728,12 @@
       "number": 5,
       "slug": "boost-initialization",
       "title": "Boost initialization and field registration",
-      "state": "planned",
+      "state": "assessed",
       "gate": "open",
       "question": "Can a smoother, consistently differentiated reconstruction improve boost consistency without changing the action?",
-      "finding": "The diagnostic finds 5.99–10.98% internal-field-rate mismatch. This is not centroid speed error and does not prove interpolation explains all shape error.",
-      "next_action": "Start with retained fields and independent analytical controls at exact nodes, shifted points and boundary extensions. Compare old and new variants; add phase-invariant, initial-state and comoving-residual comparisons.",
-      "exit_evidence": "Document the interpolant and its derivatives, normalization/tangency, independent accuracy/order and preserved old reference. Do not replace velocity with a fitted D4 derivative merely to erase the residual. Register field symmetries consistently without hiding x/z dependence.",
+      "finding": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
+      "next_action": "Use the assessment and ADR-0013 to implement fixed-layer readmission before the focused S5-B-006 method comparison. Preserve original gates and all candidate boundary failures.",
+      "exit_evidence": "Authenticated 30-case compact evidence, independent control replay, raw/registered residuals and fixed-layer findings recorded in a separate immutable assessment. Candidate promotion remains conditional; no new dynamics acceptance.",
       "depends_on": [
         "s5-b-004"
       ],
@@ -742,10 +746,28 @@
         "VIS-001"
       ],
       "specifications": [
+        "docs/models/SF-boost-reconstruction.md",
         "docs/models/SF-physical-time.md",
-        "docs/literature/soliton-quantization-methods.md"
+        "docs/literature/soliton-quantization-methods.md",
+        "docs/decisions/ADR-0013-conditional-cubic-initialization.md"
       ],
-      "records": []
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s5-b/005-boost-initialization/preparation/20261104t115920z-5cdb51c2/README.md",
+          "label": "Independent reconstruction and retained-field replay controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/005-boost-initialization/runs/20261104t131812z-4e8c880c/README.md",
+          "label": "30-case retained-field workstation evidence"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/005-boost-initialization/assessments/20261104t133535z-6a7e9b21/ASSESSMENT.md",
+          "label": "Cubic comparison and fixed-layer readmission decision"
+        }
+      ]
     },
     {
       "id": "s5-b-006",
@@ -756,9 +778,9 @@
       "state": "planned",
       "gate": "open",
       "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
-      "finding": "No new production run is claimed. Q1 tail and inertia remain domain-sensitive; Q2 low-speed results are provisional bounded references.",
-      "next_action": "After the initializer decision, run a small beta=.3 x/z comparison before selecting third-h and larger-Q1-box controls. Preserve action, precision and predeclared gates.",
-      "exit_evidence": "Separate starting-state, temporal, spatial and domain effects; quantify tails, momentum, shape and inertia. A tail pass alone does not validate inertia or isolation.",
+      "finding": "S5-B-005 supports a conditional cubic comparison but found fixed-layer deviations in all 12 beta=.1 raw candidates. New candidate trajectories and motion/convergence acceptance remain untested.",
+      "next_action": "First implement thin-north-layer x/z controls and explicit candidate fixed-layer readmission, recording pre/post n/v corrections and free-node chain-rule consistency. Only then prepare a focused beta=.3 Q1/Q2 x/z old-versus-cubic comparison before temporal, third-mesh and larger matched-spacing box decisions.",
+      "exit_evidence": "Boundary-consistent initial data with recorded corrections; matched rest states, model action, precision, observation windows and predeclared gates; eight nominal method-comparison arms assessed before any wider sweep. Separate initialization, temporal, physical-grid, domain, tail and inertia effects. No silent D4-fitted velocity, gate changes or automatic isolation claim.",
       "depends_on": [
         "s5-b-005"
       ],
@@ -771,7 +793,8 @@
         "REP-002"
       ],
       "specifications": [
-        "docs/models/SF-physical-time.md"
+        "docs/models/SF-physical-time.md",
+        "docs/decisions/ADR-0013-conditional-cubic-initialization.md"
       ],
       "records": []
     },
@@ -914,11 +937,11 @@
       "stage": "s7",
       "number": 2,
       "slug": "apparatus-detectors",
-      "title": "Stern–Gerlach and detector benchmarks",
+      "title": "Stern\u2013Gerlach and detector benchmarks",
       "state": "planned",
       "gate": "open",
       "question": "Does a justified model predict apparatus outcomes beyond classical deflection or imposed two-state assumptions?",
-      "finding": "No Stern–Gerlach, detector-probability or electron acceptance follows from current neutral motion.",
+      "finding": "No Stern\u2013Gerlach, detector-probability or electron acceptance follows from current neutral motion.",
       "next_action": "After candidate/coupling and state-preparation controls, specify the apparatus and distinguish emergent outcomes from supplied quantum rules.",
       "exit_evidence": "Independent experimental observables, orientation/sequential controls, probability law and uncertainty with assumptions exposed.",
       "depends_on": [
@@ -1064,5 +1087,10 @@
       "study": "s5-b-004",
       "stage": "s5-b"
     }
-  ]
+  ],
+  "current": {
+    "latest_assessed_study": "s5-b-005",
+    "summary": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
+    "limits": "The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows."
+  }
 }

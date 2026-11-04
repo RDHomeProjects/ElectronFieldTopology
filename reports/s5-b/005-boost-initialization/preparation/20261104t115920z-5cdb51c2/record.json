@@ -1,0 +1,44 @@
+{
+  "study_id": "s5-b-005",
+  "record_id": "20261104t115920z-5cdb51c2",
+  "role": "preparation",
+  "recorded_at": {
+    "utc": "2026-11-04T11:59:20.718361+00:00",
+    "melbourne": "2026-11-04T22:59:20.718361+11:00"
+  },
+  "source_commit": "f81ec578dbf3d929b46befea24fae81f8840913d",
+  "outcome": "independent_instrument_controls_passed; workstation_measurements_pending",
+  "config_sha256": {
+    "study": "36de83986a78bf48c32ab31774a940dfe44dfedb215f7333270211408db92c8a"
+  },
+  "input_sha256": {},
+  "evidence_sha256": {
+    "src/electron_field_topology/sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+    "src/electron_field_topology/sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+    "src/electron_field_topology/sf_boost_local.py": "5681af857e5d582d40dfdb3a7666630c6b525586e572ae76a4327c10054ff3d8",
+    "tests/test_sf_reconstruction.py": "b1c5877b669f582d676548d400af616396979a66123008a9690b247f79fccd9a",
+    "scripts/publish_boost_study.py": "f5f6694234dfbb9dde66c0fe2f11f4e7173abb0a4ed9782d0356587bd7f1ff5c",
+    "experiments/configs/s5-b/005-boost-initialization/study.json": "36de83986a78bf48c32ab31774a940dfe44dfedb215f7333270211408db92c8a",
+    ".github/workflows/sf-time-renderer.yml": "1a127b1eb61217d4a8fcd6e4819c1a7132a2a60e106941cc1c69f2e36ce041ab"
+  },
+  "commands": [
+    "uv sync --frozen --all-groups --python 3.12",
+    "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 uv run --frozen pytest -q tests/test_sf_reconstruction.py tests/test_sf_time.py tests/test_sf_dynamics.py tests/test_sf_motion_diagnostics.py tests/test_sf_readmission.py tests/test_sf_lowq_motion.py tests/test_sf_motion_local.py",
+    "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 uv run --frozen python scripts/check_sf_time.py --output artifacts/s5b005-time-controls.json"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "dependency_setup": "Committed uv.lock; core and dev groups only"
+  },
+  "model_and_units": "Unchanged neutral SF physical-time action; c=1, dimensionless model units",
+  "field_retention": "Synthetic temporary fixtures only. Workstation fields remain in retained low-Q cache and GitHub archive root r031.",
+  "limitations": [
+    "source_commit is the preparation baseline; new working-tree implementation is pinned by source hashes above",
+    "No retained workstation fields available in this environment",
+    "No cubic candidate trajectory generated",
+    "Control meshes do not establish solver convergence",
+    "No scientific gate promotion"
+  ],
+  "supersedes": null
+}

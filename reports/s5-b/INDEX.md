@@ -1,6 +1,6 @@
 # S5-B: Neutral physical-time dynamics
 
-Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
+Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
 
 Active dynamics track; general isolated-motion acceptance remains open.
 
@@ -10,7 +10,7 @@ Active dynamics track; general isolated-motion acceptance remains open.
 | [s5-b-002](../../docs/plans/s5-b/002-solver-renderer-controls.md) | Physical-time solver and independent renderer controls | assessed | bounded |
 | [s5-b-003](../../docs/plans/s5-b/003-lowq-motion.md) | Low-Q physical-time campaign | assessed | open |
 | [s5-b-004](../../docs/plans/s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
-| [s5-b-005](../../docs/plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | planned | open |
+| [s5-b-005](../../docs/plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
 | [s5-b-006](../../docs/plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | planned | open |
 | [s5-b-007](../../docs/plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | planned | open |
 

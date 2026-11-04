@@ -41,3 +41,5 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 - [ADR-0011: motion diagnosis and conditional spin methods](ADR-0011-motion-diagnostics-and-spin-methods.md).
 
 - [ADR-0012: canonical project records and preserved evidence paths](ADR-0012-repository-governance.md).
+
+- [ADR-0013: conditional cubic initialization and fixed-layer readmission](ADR-0013-conditional-cubic-initialization.md).

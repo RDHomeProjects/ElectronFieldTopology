@@ -1,16 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-04T09:13:37.867474+00:00; Australia/Melbourne 2026-11-04T20:13:37.867474+11:00.
+Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
 
 ## Current position
 
-Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest completed scientific activity is **s5-b-004**, the retained-field motion diagnostic assessment. Administrative progress is recorded in the study register below; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-005**, Boost initialization and field registration. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-The review records 540 endpoint numeric comparisons with zero mismatch, 6 rest metrics and 70 pair records. The original 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures remain unchanged. Initial internal-field-rate mismatch is 5.99–10.98%; maximum temporal final-field difference is 0.000038%. Cross-box raw-field and inertia sensitivity remain unresolved. These are different observables, not interchangeable speed errors.
+S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99–10.98% to 0.83–2.67% across all 24 moving cases (75.56–86.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.
+
+The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows.
 
 ## Next scientific task
 
-[s5-b-005: initialization and field registration](plans/s5-b/005-boost-initialization.md): compare the current initializer with a smoother, consistently differentiated variant; validate independent exact-node/off-node/boundary controls; separate initial-state and comoving evolution differences. A focused evolution and third-mesh/larger-domain decision follows those results.
+[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): First implement thin-north-layer x/z controls and explicit candidate fixed-layer readmission, recording pre/post n/v corrections and free-node chain-rule consistency. Only then prepare a focused beta=.3 Q1/Q2 x/z old-versus-cubic comparison before temporal, third-mesh and larger matched-spacing box decisions.
 
 ## Study register
 
@@ -37,7 +39,7 @@ The review records 540 endpoint numeric comparisons with zero mismatch, 6 rest m
 | [s5-b-002](plans/s5-b/002-solver-renderer-controls.md) | Physical-time solver and independent renderer controls | assessed | bounded |
 | [s5-b-003](plans/s5-b/003-lowq-motion.md) | Low-Q physical-time campaign | assessed | open |
 | [s5-b-004](plans/s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
-| [s5-b-005](plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | planned | open |
+| [s5-b-005](plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
 | [s5-b-006](plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | planned | open |
 | [s5-b-007](plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | planned | open |
 | [s5-c-001](plans/s5-c/001-charged-model-audit.md) | Charged-model equation audit | assessed | blocked |

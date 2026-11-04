@@ -75,6 +75,11 @@ def documents(data, root=ROOT):
     result = {}
     studies = data['studies']
     by_id = {s['id']: s for s in studies}
+    active = by_id[data['priority'][0]]
+    current = data.get('current', {})
+    latest = by_id[current.get('latest_assessed_study', 's5-b-004')]
+    summary = current.get('summary', latest['finding'])
+    limits = current.get('limits', 'General isolated motion, quantum spin, electric charge and electron acceptance remain open.')
     def add(path, text):
         result[path] = compatibility(root, path, text.rstrip() + '\n')
     def planpath(s):
@@ -94,8 +99,8 @@ def documents(data, root=ROOT):
     active_admin = [s['id'] for s in studies if s['stage']=='s0' and s['state'] not in {'assessed','deferred'}]
     t += '\n## Current priority\n\n'
     t += ('Administrative work in progress: '+', '.join(active_admin)+'. ' if active_admin else 'Registered administrative activities are assessed. ')
-    t += 'The next scientific task is **s5-b-005: boost initialization and field registration**, '
-    t += 'using retained fields before another production matrix. PR54 recorded the completed diagnostics; it did not close general motion acceptance.\n'
+    t += f'The next scientific task is **{active["id"]}: {active["title"]}**. '
+    t += active['next_action'] + '\n'
     t += '\n## Stage map\n\n| Stage | Responsibility | Current scope |\n|---|---|---|\n'
     for st in stages:
         t += f'| {link(p, "reports/"+st["id"]+"/INDEX.md", st["id"].upper())} | {st["title"]} | {st["scope"]} |\n'
@@ -119,16 +124,11 @@ def documents(data, root=ROOT):
     p = 'docs/STATUS.md'
     t = '# Project status\n\n' + stamp(data)
     t += '\n## Current position\n\nPreservation baseline: PR54, commit `' + data['baseline_commit'] + '`. '
-    t += 'The latest completed scientific activity is **s5-b-004**, the retained-field motion diagnostic assessment. '
+    t += f'The latest assessed scientific activity is **{latest["id"]}**, {latest["title"]}. '
     t += 'Administrative progress is recorded in the study register below; no new trajectory is produced.\n'
-    t += '\nThe review records 540 endpoint numeric comparisons with zero mismatch, 6 rest metrics and 70 pair records. '
-    t += 'The original 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures remain unchanged. '
-    t += 'Initial internal-field-rate mismatch is 5.99–10.98%; maximum temporal final-field difference is 0.000038%. '
-    t += 'Cross-box raw-field and inertia sensitivity remain unresolved. These are different observables, not interchangeable speed errors.\n'
-    t += '\n## Next scientific task\n\n' + link(p, planpath(by_id['s5-b-005']), 's5-b-005: initialization and field registration')
-    t += ': compare the current initializer with a smoother, consistently differentiated variant; '
-    t += 'validate independent exact-node/off-node/boundary controls; separate initial-state and comoving evolution differences. '
-    t += 'A focused evolution and third-mesh/larger-domain decision follows those results.\n'
+    t += '\n' + summary + '\n\n' + limits + '\n'
+    t += '\n## Next scientific task\n\n' + link(p, planpath(active), active['id']+': '+active['title'])
+    t += ': ' + active['next_action'] + '\n'
     t += '\n## Study register\n\n' + study_table(p, studies)
     t += '\n## Claims and deferred work\n\nNo accepted general isolated motion, full stability, emergent electric charge, quantum spin or electron model. '
     t += 'Retain Q17/Q19 motion after low-Q control, Q18 fresh fine starts/conditioning and further Q values including optional Q20/Q24. '
@@ -149,8 +149,8 @@ def documents(data, root=ROOT):
     t += 'They remain at their exact paths so hashes, replay scripts, old links and local handoffs keep working. '
     t += 'Use ' + link(p, 'docs/project/legacy-locations.md', 'the complete location-to-study map') + ' to find their canonical stage. '
     t += 'Do not add a new campaign beneath a legacy root. New records use `reports/<stage>/<nnn>-<study>/runs/<utc>-<token>/`.\n'
-    t += '\n## Current assessment\n\n' + link(p, by_id['s5-b-004']['records'][-1]['path'], 'Completed motion diagnostic assessment')
-    t += ' — reproducible endpoint records; initialization and domain effects remain unresolved.\n'
+    t += '\n## Current assessment\n\n' + link(p, latest['records'][-1]['path'], latest['id']+': '+latest['title'])
+    t += ' — ' + summary + '\n'
     add(p, t)
     p = 'docs/plans/README.md'
     t = '# Study plans\n\n' + stamp(data) + '\n'
@@ -202,6 +202,17 @@ def documents(data, root=ROOT):
             t += '\nNo measured result is registered for this study. This index reserves its identity; it is not evidence of execution.\n'
         t += '\nPublished records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.\n'
         add(p, t)
+    # Keep the repository landing page aligned with the same register. Preserve
+    # its introduction, licensing and development sections byte-for-byte.
+    readme=root/'README.md'
+    if readme.exists():
+        text=readme.read_text();start=text.index('## Current capability\n');end=text.index('## Development\n',start)
+        body='## Current capability\n\n'+stamp(data)+'\n'
+        body+='Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).\n\n'
+        body+=summary+'\n\n'+limits+'\n\n'
+        body+=f'Next: **{active["id"]}: {active["title"]}**. '+active['next_action']+'\n\n'
+        body+='See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.\n\n'
+        result['README.md']=text[:start]+body+text[end:]
     return result
 
 
@@ -216,6 +227,11 @@ def validate(data, root=ROOT):
     assert len(ids) == len(set(ids)), 'Duplicate study ID'
     assert len(stage_ids) == len(data['stages']), 'Duplicate stage'
     by_id = {s['id']: s for s in data['studies']}
+    if 'current' in data:
+        current=data['current']
+        assert current['latest_assessed_study'] in by_id, 'Unknown latest assessed study'
+        assert by_id[current['latest_assessed_study']]['state']=='assessed', 'Latest study is not assessed'
+        assert current['summary'] and current['limits'], 'Current summary and limits are required'
     requirements = (root/'docs/03-requirements.md').read_text()
     def safe(name):
         p = Path(name)
