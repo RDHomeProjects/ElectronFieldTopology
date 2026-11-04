@@ -124,3 +124,11 @@ Requirement mapping: SCI-001/003/004, MOD-001/002, NUM-001/002/003/005,
 REL-001/002, REP-001/002 and VIS-001..004. No new field/coupling or physical charge
 is introduced. AI assisted implementation/analysis; independent scientific review
 is not claimed.
+
+## Assessed production and next diagnostic (UTC 2026-11-03T23:43:39.658706+00:00; Melbourne 2026-11-04T10:43:39.658706+11:00)
+
+PR52 publishes the [60-case assessment](../../reports/sf-motion/lowq-motion-2026-11-03T104629-568611+1100-30672/ASSESSMENT.md). Six bounded cases pass;
+global motion acceptance remains unreleased. Production is complete. Follow the
+[full-field diagnostic plan](sf-motion-diagnostics.md) before additional production
+refinement. Classical kinetic metrics now prepare the separately conditional quantum
+method route; they do not supply spin/electric-charge assignments.

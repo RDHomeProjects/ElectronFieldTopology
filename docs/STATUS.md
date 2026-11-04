@@ -1,6 +1,26 @@
 # Project status
 
-Updated: 2026-11-02T12:37:39.053069+00:00 UTC; 2026-11-02T23:37:39.053069+11:00 Australia/Melbourne.
+Updated: UTC 2026-11-03T23:43:39.658706+00:00; Melbourne 2026-11-04T10:43:39.658706+11:00.
+
+## Low-Q campaign merged; full-field diagnosis prepared
+
+[PR52](https://github.com/RDHomeProjects/ElectronFieldTopology/pull/52) merged at
+b9e2442755e49f1b03663b0ea1a4cb721a957d3e. The [assessment](../reports/sf-motion/lowq-motion-2026-11-03T104629-568611+1100-30672/ASSESSMENT.md)
+authenticates six stationary candidates and 60 complete cases. Six Q2 L20 rest/beta=.1
+cases pass all declared checks. Tail failures (50), shape failures (18) and momentum
+failures (4) overlap. The global motion gate remains open. Production is no longer pending.
+
+**Next local analysis:** [retained full-field diagnosis](plans/sf-motion-diagnostics.md),
+including matched-time/common-coordinate comparisons, exact boost reconstruction,
+D4 transport residuals, boundary-face diagnostics and classical kinetic matrices.
+The [three-paper applicability assessment](literature/soliton-quantization-methods.md)
+adds a conditional Q1/Q2 spin-method route. No quantum spectrum or electromagnetic
+coupling is implemented. See [ADR-0011](decisions/ADR-0011-motion-diagnostics-and-spin-methods.md).
+
+The numerical solver, original measurements and failed tolerances are preserved.
+Q17/Q19 free flight follows adequate low-Q control; Q18 fresh fine-start/conditioning
+and optional additional Q20/Q24 remain later tasks. Charged dynamics stays deferred.
+The entries below retain earlier checkpoints and are superseded in current priority.
 
 ## Low-Q stationary readmission and motion campaign prepared
 

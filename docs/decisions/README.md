@@ -37,3 +37,5 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 - [ADR-0009: neutral dynamics admission before free flight](ADR-0009-neutral-dynamics-admission.md).
 
 - [ADR-0010: physical-time reference and offline renderer](ADR-0010-physical-time-and-offline-renderer.md).
+
+- [ADR-0011: motion diagnosis and conditional spin methods](ADR-0011-motion-diagnostics-and-spin-methods.md).
