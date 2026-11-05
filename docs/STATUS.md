@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-04T14:17:45.414426+00:00; Australia/Melbourne 2026-11-05T01:17:45.414426+11:00.
+Updated: UTC 2026-11-05T01:58:43.055406+00:00; Australia/Melbourne 2026-11-05T12:58:43.055406+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-005**, Boost initialization and field registration. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99–10.98% to 0.83–2.67% across all 24 moving cases (75.56–86.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. S5-B-006 software/synthetic controls have passed; native focused Q1/Q2 trajectories await workstation execution.
+S5-B-005 remains the latest assessed numerical study. S5-B-006 focused original/cubic trajectories are now recorded pending scientific assessment; see the study evidence for completion/failure counts and T=1/2/3 outcomes. Earlier bounded passes are not promoted to general motion acceptance.
 
 The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows.
 
 ## Next scientific task
 
-[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): Authenticate retained fields; readmit 48 initial combinations, then execute eight matched beta=.3 Q1/Q2 x/z trilinear/cubic arms at dt=.01 through T=3 with T=1/2/3 checkpoints. Archive every new full field before cleanup; assess this tranche before temporal/third-mesh/domain expansion.
+[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): Archive/verify all new full fields, then assess the eight-arm initial-state and time-window comparison before any temporal, third-mesh or domain expansion.
 
 ## Study register
 
@@ -40,7 +40,7 @@ The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18
 | [s5-b-003](plans/s5-b/003-lowq-motion.md) | Low-Q physical-time campaign | assessed | open |
 | [s5-b-004](plans/s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
 | [s5-b-005](plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
-| [s5-b-006](plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | prepared | open |
+| [s5-b-006](plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | recorded | open |
 | [s5-b-007](plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | planned | open |
 | [s5-c-001](plans/s5-c/001-charged-model-audit.md) | Charged-model equation audit | assessed | blocked |
 | [s5-c-002](plans/s5-c/002-charged-theory-feasibility.md) | Charged-theory feasibility follow-up | deferred | blocked |

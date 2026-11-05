@@ -1,8 +1,8 @@
 # s5-b-006: Focused motion, mesh and domain convergence
 
-Updated: UTC 2026-11-04T14:17:45.414426+00:00; Australia/Melbourne 2026-11-05T01:17:45.414426+11:00.
+Updated: UTC 2026-11-05T01:58:43.055406+00:00; Australia/Melbourne 2026-11-05T12:58:43.055406+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Which residuals survive improved initialization, a third physical mesh and a lar
 
 ## Evidence and present finding
 
-Independent fixed-layer, exact-continuation and renderer-isolation software controls passed. The native 48-row admission and focused eight-arm T=1/2/3 overnight experiment are prepared but not executed.
+8 focused method arms have been attempted at their declared milestones, pending scientific assessment; all failed gates and numerical failures remain in the run record.
 
 ## Next action and exit evidence
 
-Authenticate retained fields; readmit 48 initial combinations, then execute eight matched beta=.3 Q1/Q2 x/z trilinear/cubic arms at dt=.01 through T=3 with T=1/2/3 checkpoints. Archive every new full field before cleanup; assess this tranche before temporal/third-mesh/domain expansion.
+Archive/verify all new full fields, then assess the eight-arm initial-state and time-window comparison before any temporal, third-mesh or domain expansion.
 
 Boundary-consistent initial data with recorded corrections; matched rest states, model action, precision, observation windows and predeclared gates; eight nominal method-comparison arms assessed before any wider sweep. Separate initialization, temporal, physical-grid, domain, tail and inertia effects. No silent D4-fitted velocity, gate changes or automatic isolation claim.
 

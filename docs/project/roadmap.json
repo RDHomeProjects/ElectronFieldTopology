@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-04T14:17:45.414426+00:00",
-    "melbourne": "2026-11-05T01:17:45.414426+11:00"
+    "utc": "2026-11-05T01:58:43.055406+00:00",
+    "melbourne": "2026-11-05T12:58:43.055406+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -775,11 +775,11 @@
       "number": 6,
       "slug": "focused-motion-convergence",
       "title": "Focused motion, mesh and domain convergence",
-      "state": "prepared",
+      "state": "recorded",
       "gate": "open",
       "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
-      "finding": "Independent fixed-layer, exact-continuation and renderer-isolation software controls passed. The native 48-row admission and focused eight-arm T=1/2/3 overnight experiment are prepared but not executed.",
-      "next_action": "Authenticate retained fields; readmit 48 initial combinations, then execute eight matched beta=.3 Q1/Q2 x/z trilinear/cubic arms at dt=.01 through T=3 with T=1/2/3 checkpoints. Archive every new full field before cleanup; assess this tranche before temporal/third-mesh/domain expansion.",
+      "finding": "8 focused method arms have been attempted at their declared milestones, pending scientific assessment; all failed gates and numerical failures remain in the run record.",
+      "next_action": "Archive/verify all new full fields, then assess the eight-arm initial-state and time-window comparison before any temporal, third-mesh or domain expansion.",
       "exit_evidence": "Boundary-consistent initial data with recorded corrections; matched rest states, model action, precision, observation windows and predeclared gates; eight nominal method-comparison arms assessed before any wider sweep. Separate initialization, temporal, physical-grid, domain, tail and inertia effects. No silent D4-fitted velocity, gate changes or automatic isolation claim.",
       "depends_on": [
         "s5-b-005"
@@ -802,6 +802,11 @@
           "role": "preparation",
           "path": "reports/s5-b/006-focused-motion-convergence/preparation/20261104t141745z-e6160d32/README.md",
           "label": "Fixed-layer, direct-solver, continuation and renderer-isolation controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/006-focused-motion-convergence/runs/20261104t142830z-d061b67b/README.md",
+          "label": "Focused eight-arm workstation evidence"
         }
       ]
     },
@@ -1097,7 +1102,7 @@
   ],
   "current": {
     "latest_assessed_study": "s5-b-005",
-    "summary": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. S5-B-006 software/synthetic controls have passed; native focused Q1/Q2 trajectories await workstation execution.",
+    "summary": "S5-B-005 remains the latest assessed numerical study. S5-B-006 focused original/cubic trajectories are now recorded pending scientific assessment; see the study evidence for completion/failure counts and T=1/2/3 outcomes. Earlier bounded passes are not promoted to general motion acceptance.",
     "limits": "The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows."
   }
 }
