@@ -1,6 +1,6 @@
 # s5-b-001: Neutral dynamics admission
 
-Updated: UTC 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne 2026-11-05T15:12:28.812263+11:00.
+Updated: UTC 2026-11-05T05:06:55.459022+00:00; Australia/Melbourne 2026-11-05T16:06:55.459022+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 

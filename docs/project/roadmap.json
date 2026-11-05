@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-05T04:12:28.812263+00:00",
-    "melbourne": "2026-11-05T15:12:28.812263+11:00"
+    "utc": "2026-11-05T05:06:55.459022+00:00",
+    "melbourne": "2026-11-05T16:06:55.459022+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
+    "s5-b-008",
     "s5-b-006",
     "s5-b-007",
     "s5-a-004",
@@ -1005,6 +1006,41 @@
       ],
       "specifications": [],
       "records": []
+    },
+    {
+      "id": "s5-b-008",
+      "stage": "s5-b",
+      "number": 8,
+      "slug": "tail-domain-screening",
+      "title": "Stationary tail-domain screening",
+      "state": "prepared",
+      "gate": "open",
+      "question": "Can stationary L17.92 and L20.16 boxes mitigate the 0.1% outer-shell failure at unchanged spacing and comparable core state?",
+      "finding": "User-requested tail-only diagnostic prepared; no native computation yet. Six Q1/Q2 stationary readmissions include L16 controls and both requested larger domains. Initial extension and final relaxed metrics remain separate.",
+      "next_action": "Run the prepared stationary Q1/Q2 L16/17.92/20.16 screen, archive all new checkpoints, then assess moving-shell and fixed-region/core measurements. No physical-time trajectory or automatic acceptance.",
+      "exit_evidence": "Authenticated original inputs, exact centred extension, original shell criterion, matched stricter stationary preparation, fixed physical-region comparisons, retained failures and verified full-field archive; later assessment determines possible corrective action.",
+      "depends_on": [
+        "s5-b-006"
+      ],
+      "requirements": [
+        "NUM-001",
+        "NUM-002",
+        "NUM-003",
+        "BND-001",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/SF-tail-domain-screening.md",
+        "docs/models/SF-physical-time.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s5-b/008-tail-domain-screening/preparation/20261105t050655z-1beff54b/README.md",
+          "label": "Tail-only diagnostic preparation and controls"
+        }
+      ]
     }
   ],
   "legacy_locations": [
@@ -1113,7 +1149,7 @@
   ],
   "current": {
     "latest_assessed_study": "s5-b-006",
-    "summary": "S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive.",
+    "summary": "S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive. The maintainer has requested a separate S5-B-008 stationary L17.92/L20.16 tail-domain screen before returning to the temporal audit; it is prepared, with no new native results yet.",
     "limits": "No milestone passes every original gate: overlapping failures are 24 tail, 16 shape, six momentum and four speed. One dt/grid/box and reflecting long windows do not establish isolated motion. The earlier 60-case record and all negative findings remain intact. Classical inertia, quantum spin, electric charge and electron-model acceptance remain open."
   }
 }
