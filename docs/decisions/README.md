@@ -45,3 +45,5 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 - [ADR-0013: conditional cubic initialization and fixed-layer readmission](ADR-0013-conditional-cubic-initialization.md).
 
 - [ADR-0014: focused motion assessment and staged convergence](ADR-0014-focused-motion-assessment.md).
+
+- [ADR-0015: stationary tail-domain assessment and Q-dependent mitigation](ADR-0015-stationary-tail-domain-assessment.md).

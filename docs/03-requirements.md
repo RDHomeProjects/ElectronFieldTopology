@@ -92,3 +92,9 @@ UTC: 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne: 2026-11-05T00:35:35.
 UTC: 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne: 2026-11-05T15:12:28.812263+11:00.
 
 [The immutable assessment](../reports/s5-b/006-focused-motion-convergence/assessments/20261105t041228z-a1c49633/ASSESSMENT.md) records 48 admitted states, eight focused trajectories and 24 milestone evaluations. NUM-002/003, BND-001, REL-002 and REP-001/002 gain bounded evidence and retained failures: cubic improves shape in all 12 pairs, while every tail check fails and speed/momentum tradeoffs persist. Full fields are in a verified GitHub Release archive. This does not close temporal, physical-grid/domain, isolated-motion or quantum/electron requirements. [ADR-0014](decisions/ADR-0014-focused-motion-assessment.md) orders the remaining convergence work; all original thresholds and earlier records remain unchanged.
+
+## S5-B-008 stationary tail-domain assessment
+
+UTC: 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne: 2026-11-05T17:49:56.783673+11:00.
+
+[The immutable assessment](../reports/s5-b/008-tail-domain-screening/assessments/20261105t064956z-339196d8/ASSESSMENT.md) provides bounded NUM-002/003, BND-001 and REP-001/002 evidence from six stationary domain states, independent verification of74 archived files and replay of12 NPZ checkpoints. Q2 passes the original shell criterion at L17.92/L20.16; Q1 fails both. Inner-field domain sensitivity remains. This does not close physical-grid/time convergence or isolated-motion requirements. Original gates, earlier motion failures and quantum/electron limits remain unchanged. [ADR-0015](decisions/ADR-0015-stationary-tail-domain-assessment.md) records the remaining corrective-action plan.

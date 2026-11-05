@@ -1,6 +1,6 @@
 # s7-002: Stern–Gerlach and detector benchmarks — evidence index
 
-Updated: UTC 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne 2026-11-05T15:12:28.812263+11:00.
+Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
 
 [Current study plan](../../../docs/plans/s7/002-apparatus-detectors.md). State: planned; scientific gate: open.
 
