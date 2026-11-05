@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-05T05:06:55.459022+00:00",
-    "melbourne": "2026-11-05T16:06:55.459022+11:00"
+    "utc": "2026-11-05T06:31:26.938968+00:00",
+    "melbourne": "2026-11-05T17:31:26.938968+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -1013,11 +1013,11 @@
       "number": 8,
       "slug": "tail-domain-screening",
       "title": "Stationary tail-domain screening",
-      "state": "prepared",
+      "state": "recorded",
       "gate": "open",
       "question": "Can stationary L17.92 and L20.16 boxes mitigate the 0.1% outer-shell failure at unchanged spacing and comparable core state?",
-      "finding": "User-requested tail-only diagnostic prepared; no native computation yet. Six Q1/Q2 stationary readmissions include L16 controls and both requested larger domains. Initial extension and final relaxed metrics remain separate.",
-      "next_action": "Run the prepared stationary Q1/Q2 L16/17.92/20.16 screen, archive all new checkpoints, then assess moving-shell and fixed-region/core measurements. No physical-time trajectory or automatic acceptance.",
+      "finding": "Six stationary domain cases recorded; 2 satisfy both strict preparation stationarity and the original rest tail check. Results and all failures require scientific assessment; no motion was run.",
+      "next_action": "Archive/verify the new full fields, then assess initial extension versus relaxation, matched L16 control and fixed-region/core comparisons before selecting any correction.",
       "exit_evidence": "Authenticated original inputs, exact centred extension, original shell criterion, matched stricter stationary preparation, fixed physical-region comparisons, retained failures and verified full-field archive; later assessment determines possible corrective action.",
       "depends_on": [
         "s5-b-006"
@@ -1039,6 +1039,11 @@
           "role": "preparation",
           "path": "reports/s5-b/008-tail-domain-screening/preparation/20261105t050655z-1beff54b/README.md",
           "label": "Tail-only diagnostic preparation and controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/008-tail-domain-screening/runs/20261105t053203z-576d1edc/README.md",
+          "label": "Six-case stationary tail-domain measurements"
         }
       ]
     }
@@ -1149,7 +1154,7 @@
   ],
   "current": {
     "latest_assessed_study": "s5-b-006",
-    "summary": "S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive. The maintainer has requested a separate S5-B-008 stationary L17.92/L20.16 tail-domain screen before returning to the temporal audit; it is prepared, with no new native results yet.",
+    "summary": "S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive. The maintainer has requested a separate S5-B-008 stationary L17.92/L20.16 tail-domain screen before returning to the temporal audit; it is prepared, with no new native results yet. S5-B-008 stationary tail-domain results are recorded pending scientific assessment; no motion acceptance follows.",
     "limits": "No milestone passes every original gate: overlapping failures are 24 tail, 16 shape, six momentum and four speed. One dt/grid/box and reflecting long windows do not establish isolated motion. The earlier 60-case record and all negative findings remain intact. Classical inertia, quantum spin, electric charge and electron-model acceptance remain open."
   }
 }

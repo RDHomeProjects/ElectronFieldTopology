@@ -1,8 +1,8 @@
 # s5-b-008: Stationary tail-domain screening
 
-Updated: UTC 2026-11-05T05:06:55.459022+00:00; Australia/Melbourne 2026-11-05T16:06:55.459022+11:00.
+Updated: UTC 2026-11-05T06:31:26.938968+00:00; Australia/Melbourne 2026-11-05T17:31:26.938968+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Can stationary L17.92 and L20.16 boxes mitigate the 0.1% outer-shell failure at 
 
 ## Evidence and present finding
 
-User-requested tail-only diagnostic prepared; no native computation yet. Six Q1/Q2 stationary readmissions include L16 controls and both requested larger domains. Initial extension and final relaxed metrics remain separate.
+Six stationary domain cases recorded; 2 satisfy both strict preparation stationarity and the original rest tail check. Results and all failures require scientific assessment; no motion was run.
 
 ## Next action and exit evidence
 
-Run the prepared stationary Q1/Q2 L16/17.92/20.16 screen, archive all new checkpoints, then assess moving-shell and fixed-region/core measurements. No physical-time trajectory or automatic acceptance.
+Archive/verify the new full fields, then assess initial extension versus relaxation, matched L16 control and fixed-region/core comparisons before selecting any correction.
 
 Authenticated original inputs, exact centred extension, original shell criterion, matched stricter stationary preparation, fixed physical-region comparisons, retained failures and verified full-field archive; later assessment determines possible corrective action.
 

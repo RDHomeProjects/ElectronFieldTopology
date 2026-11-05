@@ -1,6 +1,6 @@
 # s5-b-004: Full-field motion diagnostics
 
-Updated: UTC 2026-11-05T05:06:55.459022+00:00; Australia/Melbourne 2026-11-05T16:06:55.459022+11:00.
+Updated: UTC 2026-11-05T06:31:26.938968+00:00; Australia/Melbourne 2026-11-05T17:31:26.938968+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 

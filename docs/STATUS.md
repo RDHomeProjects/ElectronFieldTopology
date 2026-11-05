@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-05T05:06:55.459022+00:00; Australia/Melbourne 2026-11-05T16:06:55.459022+11:00.
+Updated: UTC 2026-11-05T06:31:26.938968+00:00; Australia/Melbourne 2026-11-05T17:31:26.938968+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-006**, Focused motion, mesh and domain convergence. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive. The maintainer has requested a separate S5-B-008 stationary L17.92/L20.16 tail-domain screen before returning to the temporal audit; it is prepared, with no new native results yet.
+S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive. The maintainer has requested a separate S5-B-008 stationary L17.92/L20.16 tail-domain screen before returning to the temporal audit; it is prepared, with no new native results yet. S5-B-008 stationary tail-domain results are recorded pending scientific assessment; no motion acceptance follows.
 
 No milestone passes every original gate: overlapping failures are 24 tail, 16 shape, six momentum and four speed. One dt/grid/box and reflecting long windows do not establish isolated motion. The earlier 60-case record and all negative findings remain intact. Classical inertia, quantum spin, electric charge and electron-model acceptance remain open.
 
 ## Next scientific task
 
-[s5-b-008: Stationary tail-domain screening](plans/s5-b/008-tail-domain-screening.md): Run the prepared stationary Q1/Q2 L16/17.92/20.16 screen, archive all new checkpoints, then assess moving-shell and fixed-region/core measurements. No physical-time trajectory or automatic acceptance.
+[s5-b-008: Stationary tail-domain screening](plans/s5-b/008-tail-domain-screening.md): Archive/verify the new full fields, then assess initial extension versus relaxation, matched L16 control and fixed-region/core comparisons before selecting any correction.
 
 ## Study register
 
@@ -48,7 +48,7 @@ No milestone passes every original gate: overlapping failures are 24 tail, 16 sh
 | [s7-001](plans/s7/001-symmetry-spin-methods.md) | Q1/Q2 symmetry and spin-method controls | planned | open |
 | [s7-002](plans/s7/002-apparatus-detectors.md) | Stern–Gerlach and detector benchmarks | planned | open |
 | [s7-003](plans/s7/003-wavefunction-observables.md) | Wavefunction and energy-density observable comparison | planned | open |
-| [s5-b-008](plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | prepared | open |
+| [s5-b-008](plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | recorded | open |
 
 ## Claims and deferred work
 
