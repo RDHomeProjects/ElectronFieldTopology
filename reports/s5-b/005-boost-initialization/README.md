@@ -1,6 +1,6 @@
 # s5-b-005: Boost initialization and field registration — evidence index
 
-Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
+Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/005-boost-initialization.md). State: assessed; scientific gate: open.
 

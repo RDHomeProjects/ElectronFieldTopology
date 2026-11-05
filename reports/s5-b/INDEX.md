@@ -1,6 +1,6 @@
 # S5-B: Neutral physical-time dynamics
 
-Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
+Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
 
 Active dynamics track; general isolated-motion acceptance remains open.
 
@@ -13,7 +13,7 @@ Active dynamics track; general isolated-motion acceptance remains open.
 | [s5-b-005](../../docs/plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
 | [s5-b-006](../../docs/plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | assessed | open |
 | [s5-b-007](../../docs/plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | planned | open |
-| [s5-b-008](../../docs/plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | recorded | open |
+| [s5-b-008](../../docs/plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | assessed | open |
 
 Study indexes distinguish preparation, measurements and assessment. A planned record has no measured results.
 

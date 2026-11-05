@@ -1,0 +1,40 @@
+{
+  "study_id": "s5-b-008",
+  "record_id": "20261105t064956z-339196d8",
+  "role": "assessment",
+  "recorded_at": {
+    "utc": "2026-11-05T06:49:56.783673+00:00",
+    "melbourne": "2026-11-05T17:49:56.783673+11:00"
+  },
+  "source_commit": "56bc6b5e442fecbf923f9eec8fcb227eaceff976",
+  "outcome": "Q2_stationary_tail_mitigation; Q1_tail_open; full_field_domain_sensitivity_remains",
+  "config_sha256": {
+    "study": "1b5b33bdefd2089c064f93801c0cc904153d12699051dd3077a0d2414c751add"
+  },
+  "input_sha256": {
+    "evidence.zip": "721c3b28762ddf5880ec8cfbaeb65c08097b86fc01bc53c37d13ef1410c5b4fa"
+  },
+  "evidence_sha256": {
+    "verification.json": "e4539eb367bf5f3eb4200d956ecba6b47875ac969bc96969c7512a231d0891a6",
+    "full-field-verification.json": "412131e32933d4ea644ba9f670d086da3230ac895dec1e45067ae6d9028a8942",
+    "download-verification.json": "8ed6809d6b24b2b0903a9d5a4be36a24124d45c7fc89ca959d52bddfd2be4a8f"
+  },
+  "commands": [
+    "python3 verify_assessment.py --evidence RUN/evidence.zip --repo REPOSITORY --retention-folder ASSESSMENT --output NEW_OUTPUT",
+    "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 python3 replay_fields.py --repo REPOSITORY --run FULL_RUN --evidence RUN/evidence.zip --retention-folder ASSESSMENT --output NEW_OUTPUT"
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "model_and_units": "Unchanged neutral SF D4 stationary lattice Hamiltonian; parent metric+---, c=1; model length/energy units; no physical-time evolution",
+  "field_retention": "data/archives/20261105t063134z-4cd07212/CATALOG.json; 74 files independently downloaded and verified, all12 NPZ states replayed",
+  "limitations": [
+    "Q1 fails both requested boxes",
+    "Q2 stationary tail passes do not establish motion or domain independence",
+    "One physical spacing and warm-start basin",
+    "No optimization path or original pre-study NPZ download repeated"
+  ],
+  "supersedes": null
+}

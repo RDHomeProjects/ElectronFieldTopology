@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
+Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive. The maintainer has requested a separate S5-B-008 stationary L17.92/L20.16 tail-domain screen before returning to the temporal audit; it is prepared, with no new native results yet. S5-B-008 stationary tail-domain results are recorded pending scientific assessment; no motion acceptance follows.
+S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive.
 
-No milestone passes every original gate: overlapping failures are 24 tail, 16 shape, six momentum and four speed. One dt/grid/box and reflecting long windows do not establish isolated motion. The earlier 60-case record and all negative findings remain intact. Classical inertia, quantum spin, electric charge and electron-model acceptance remain open.
+A passing stationary shell is not domain independence or motion acceptance. The two larger boxes still differ in inner-field state by 2.93% for Q1 and 1.04% for Q2. The earlier24 moving tail failures and all shape/speed/momentum failures remain unchanged. Temporal/physical-mesh convergence, classical inertia, quantum spin, electric charge and electron acceptance remain open.
 
-Next: **s5-b-008: Stationary tail-domain screening**. Assess the completed stationary tail-domain measurements and verified full-field archive; select potential corrective actions without promoting them to motion acceptance.
+Next: **s5-b-008: Stationary tail-domain screening**. Prepare a narrow Q1 stationary correction/settling follow-up: consider L22.08/n139 at h=.16 and a separately recorded tightening check of the L20.16 endpoint. Preserve Q2 passing rest references and all original gates; assess fixed-region/core sensitivity before production motion. No run is launched by this assessment.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 

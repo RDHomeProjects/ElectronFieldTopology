@@ -1,6 +1,6 @@
 # s3-a-001: Analytical Lorentz covariance
 
-Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
+Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
 
 State: **assessed**. Scientific gate: **bounded**. State records workflow progress, not a physical claim.
 
