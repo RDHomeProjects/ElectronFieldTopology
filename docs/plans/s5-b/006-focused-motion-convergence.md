@@ -1,8 +1,8 @@
 # s5-b-006: Focused motion, mesh and domain convergence
 
-Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
+Updated: UTC 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne 2026-11-05T15:12:28.812263+11:00.
 
-State: **planned**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,13 +10,13 @@ Which residuals survive improved initialization, a third physical mesh and a lar
 
 ## Evidence and present finding
 
-S5-B-005 supports a conditional cubic comparison but found fixed-layer deviations in all 12 beta=.1 raw candidates. New candidate trajectories and motion/convergence acceptance remain untested.
+Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance.
 
 ## Next action and exit evidence
 
-First implement thin-north-layer x/z controls and explicit candidate fixed-layer readmission, recording pre/post n/v corrections and free-node chain-rule consistency. Only then prepare a focused beta=.3 Q1/Q2 x/z old-versus-cubic comparison before temporal, third-mesh and larger matched-spacing box decisions.
+Prepare staged convergence: clarify raw/baseline transport labels and use a fixed common analysis region; first audit cubic Q1/x and Q2/z at T=1 with dt=.01/.005/.0025, then larger matched-spacing domains and a third physical mesh with readmitted rest controls. Preserve all gates; no automatic wider matrix.
 
-Boundary-consistent initial data with recorded corrections; matched rest states, model action, precision, observation windows and predeclared gates; eight nominal method-comparison arms assessed before any wider sweep. Separate initialization, temporal, physical-grid, domain, tail and inertia effects. No silent D4-fitted velocity, gate changes or automatic isolation claim.
+Focused initialization/time-window tranche assessed; convergence remains outstanding. Require independent temporal/full-state comparisons, domain and third-physical-grid evidence, original tail/speed/momentum gates and bounded classical-inertia sensitivity before higher-Q or quantum work. Full native fields retained in verified Release catalog.
 
 ## Traceability
 
@@ -26,5 +26,7 @@ Dependencies: [s5-b-005](005-boost-initialization.md).
 
 [Evidence index](../../../reports/s5-b/006-focused-motion-convergence/README.md).
 
+- [docs/models/SF-focused-motion.md](../../models/SF-focused-motion.md)
 - [docs/models/SF-physical-time.md](../../models/SF-physical-time.md)
 - [docs/decisions/ADR-0013-conditional-cubic-initialization.md](../../decisions/ADR-0013-conditional-cubic-initialization.md)
+- [docs/decisions/ADR-0014-focused-motion-assessment.md](../../decisions/ADR-0014-focused-motion-assessment.md)

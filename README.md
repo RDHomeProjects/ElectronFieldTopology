@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
+Updated: UTC 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne 2026-11-05T15:12:28.812263+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99–10.98% to 0.83–2.67% across all 24 moving cases (75.56–86.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.
+S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive.
 
-The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows.
+No milestone passes every original gate: overlapping failures are 24 tail, 16 shape, six momentum and four speed. One dt/grid/box and reflecting long windows do not establish isolated motion. The earlier 60-case record and all negative findings remain intact. Classical inertia, quantum spin, electric charge and electron-model acceptance remain open.
 
-Next: **s5-b-006: Focused motion, mesh and domain convergence**. First implement thin-north-layer x/z controls and explicit candidate fixed-layer readmission, recording pre/post n/v corrections and free-node chain-rule consistency. Only then prepare a focused beta=.3 Q1/Q2 x/z old-versus-cubic comparison before temporal, third-mesh and larger matched-spacing box decisions.
+Next: **s5-b-006: Focused motion, mesh and domain convergence**. Prepare staged convergence: clarify raw/baseline transport labels and use a fixed common analysis region; first audit cubic Q1/x and Q2/z at T=1 with dt=.01/.005/.0025, then larger matched-spacing domains and a third physical mesh with readmitted rest controls. Preserve all gates; no automatic wider matrix.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 

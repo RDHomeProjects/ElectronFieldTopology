@@ -1,0 +1,35 @@
+{
+  "study_id": "s5-b-006",
+  "record_id": "20261104t142830z-d061b67b",
+  "role": "measurement",
+  "recorded_at": {
+    "utc": "2026-11-05T01:58:43.052344+00:00",
+    "melbourne": "2026-11-05T12:58:43.052344+11:00"
+  },
+  "source_commit": "1e3a4ed64ee68bc014846923e4b75845a5c20cf5",
+  "outcome": "complete_pending_review",
+  "config_sha256": {
+    "plan": "1c2fd818891a557dc52f88e59704a2ee86af8ef1018be971448904ca2eb5ec1c"
+  },
+  "input_sha256": {
+    "fingerprint": "c03c7f192e4169047eac4a3dcced8a81d1a9cd9faa915ed9847d70777e093ee9"
+  },
+  "evidence_sha256": {
+    "evidence.zip": "4ced49b9bc30deb186c5cacfc634870a96fe2c36ae6643db79fa2fdd2fdf0db5"
+  },
+  "commands": [
+    "python -m electron_field_topology.sf_focused_local start --source RETAINED_CAMPAIGN"
+  ],
+  "environment": {
+    "attempt_manifests": "Python/NumPy/platform/Git metadata retained per attempt in evidence.zip"
+  },
+  "model_and_units": "Unchanged SF-relativistic-neutral-v1; c=1, dimensionless model time",
+  "field_retention": "At record creation full fields are local pending the separately registered, verified GitHub Release catalog. Do not remove them.",
+  "limitations": [
+    "One dt, physical mesh and box",
+    "Fixed reflecting walls; long windows can be wall-sensitive",
+    "Original gate thresholds retained",
+    "Scientific interpretation pending"
+  ],
+  "supersedes": null
+}

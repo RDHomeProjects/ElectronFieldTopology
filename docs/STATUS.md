@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
+Updated: UTC 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne 2026-11-05T15:12:28.812263+11:00.
 
 ## Current position
 
-Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-005**, Boost initialization and field registration. Administrative progress is recorded in the study register below; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-006**, Focused motion, mesh and domain convergence. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99–10.98% to 0.83–2.67% across all 24 moving cases (75.56–86.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.
+S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive.
 
-The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows.
+No milestone passes every original gate: overlapping failures are 24 tail, 16 shape, six momentum and four speed. One dt/grid/box and reflecting long windows do not establish isolated motion. The earlier 60-case record and all negative findings remain intact. Classical inertia, quantum spin, electric charge and electron-model acceptance remain open.
 
 ## Next scientific task
 
-[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): First implement thin-north-layer x/z controls and explicit candidate fixed-layer readmission, recording pre/post n/v corrections and free-node chain-rule consistency. Only then prepare a focused beta=.3 Q1/Q2 x/z old-versus-cubic comparison before temporal, third-mesh and larger matched-spacing box decisions.
+[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): Prepare staged convergence: clarify raw/baseline transport labels and use a fixed common analysis region; first audit cubic Q1/x and Q2/z at T=1 with dt=.01/.005/.0025, then larger matched-spacing domains and a third physical mesh with readmitted rest controls. Preserve all gates; no automatic wider matrix.
 
 ## Study register
 
@@ -40,7 +40,7 @@ The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18
 | [s5-b-003](plans/s5-b/003-lowq-motion.md) | Low-Q physical-time campaign | assessed | open |
 | [s5-b-004](plans/s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
 | [s5-b-005](plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
-| [s5-b-006](plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | planned | open |
+| [s5-b-006](plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | assessed | open |
 | [s5-b-007](plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | planned | open |
 | [s5-c-001](plans/s5-c/001-charged-model-audit.md) | Charged-model equation audit | assessed | blocked |
 | [s5-c-002](plans/s5-c/002-charged-theory-feasibility.md) | Charged-theory feasibility follow-up | deferred | blocked |

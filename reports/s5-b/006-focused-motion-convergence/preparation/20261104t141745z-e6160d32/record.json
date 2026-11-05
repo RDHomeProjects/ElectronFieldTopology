@@ -1,0 +1,41 @@
+{
+  "study_id": "s5-b-006",
+  "record_id": "20261104t141745z-e6160d32",
+  "role": "preparation",
+  "recorded_at": {
+    "utc": "2026-11-04T14:17:45.414426+00:00",
+    "melbourne": "2026-11-05T01:17:45.414426+11:00"
+  },
+  "source_commit": "30ff87f8502bef7ab3b8ec0bc96f3e056ba92fc4",
+  "outcome": "software_and_synthetic_controls_passed; native_overnight_run_pending",
+  "config_sha256": {
+    "experiments/configs/s5-b/006-focused-motion-convergence/overnight.json": "4dc3cafa6763de9dedea64a949f0ad4e23b643dc2a45ed935758aaa078c81086",
+    "experiments/configs/s5-b/006-focused-motion-convergence/preview.json": "9320123927682f00fc2d283144a61f6807efcef90451154288b5880aab3c2e25"
+  },
+  "input_sha256": {},
+  "evidence_sha256": {
+    "src/electron_field_topology/sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+    "src/electron_field_topology/sf_focused_local.py": "87779f1823a009878ada7be0aa1fb65c0032c87e38baf7c5f398fa6c84f58ae1",
+    "tests/test_sf_focused_motion.py": "ed29ed6eed65ad8042e856624cba24489a1650552ee72bafded27b262f20a28b",
+    "experiments/configs/s5-b/006-focused-motion-convergence/overnight.json": "4dc3cafa6763de9dedea64a949f0ad4e23b643dc2a45ed935758aaa078c81086",
+    "experiments/configs/s5-b/006-focused-motion-convergence/preview.json": "9320123927682f00fc2d283144a61f6807efcef90451154288b5880aab3c2e25",
+    ".github/workflows/sf-time-renderer.yml": "97d0755fc34ae1bfcd52d706c62504825052d4ab58e08412281cfa10c0aebd77"
+  },
+  "commands": [
+    "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 uv run --frozen pytest -q tests/test_sf_focused_motion.py tests/test_sf_reconstruction.py tests/test_sf_time.py tests/test_sf_dynamics.py",
+    "python3 scripts/test_workstation_archive.py"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "dependencies": "uv sync --frozen --all-groups --python 3.12.14"
+  },
+  "model_and_units": "Unchanged neutral SF action and D4-action-projected-RK4-v1; +---, c=1, dimensionless model time",
+  "field_retention": "Preparation uses synthetic temporary fields. New native fields must be archived through a verified GitHub Release catalog before local cleanup.",
+  "limitations": [
+    "Baseline source_commit plus explicit new working-tree source hashes; native execution requires a local code commit",
+    "Unresolved coarse test fixtures retain negative labels and gates",
+    "Native 48-row admission and eight physical arms not executed here",
+    "One dt, physical mesh and reflecting box; no convergence or electron acceptance"
+  ],
+  "supersedes": null
+}

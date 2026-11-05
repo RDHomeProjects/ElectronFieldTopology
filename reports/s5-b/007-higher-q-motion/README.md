@@ -1,6 +1,6 @@
 # s5-b-007: Q17/Q19 motion comparison — evidence index
 
-Updated: UTC 2026-11-04T13:35:35.703463+00:00; Australia/Melbourne 2026-11-05T00:35:35.703463+11:00.
+Updated: UTC 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne 2026-11-05T15:12:28.812263+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/007-higher-q-motion.md). State: planned; scientific gate: open.
 
