@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-05T06:31:26.938968+00:00",
-    "melbourne": "2026-11-05T17:31:26.938968+11:00"
+    "utc": "2026-11-05T06:34:58.372247+00:00",
+    "melbourne": "2026-11-05T17:34:58.372247+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -1017,7 +1017,7 @@
       "gate": "open",
       "question": "Can stationary L17.92 and L20.16 boxes mitigate the 0.1% outer-shell failure at unchanged spacing and comparable core state?",
       "finding": "Six stationary domain cases recorded; 2 satisfy both strict preparation stationarity and the original rest tail check. Results and all failures require scientific assessment; no motion was run.",
-      "next_action": "Archive/verify the new full fields, then assess initial extension versus relaxation, matched L16 control and fixed-region/core comparisons before selecting any correction.",
+      "next_action": "Assess the completed stationary tail-domain measurements and verified full-field archive; select potential corrective actions without promoting them to motion acceptance.",
       "exit_evidence": "Authenticated original inputs, exact centred extension, original shell criterion, matched stricter stationary preparation, fixed physical-region comparisons, retained failures and verified full-field archive; later assessment determines possible corrective action.",
       "depends_on": [
         "s5-b-006"
@@ -1044,6 +1044,11 @@
           "role": "measurement",
           "path": "reports/s5-b/008-tail-domain-screening/runs/20261105t053203z-576d1edc/README.md",
           "label": "Six-case stationary tail-domain measurements"
+        },
+        {
+          "role": "verification",
+          "path": "data/archives/20261105t063134z-4cd07212/README.md",
+          "label": "Full tail-screen fields and logs: verified Release archive"
         }
       ]
     }

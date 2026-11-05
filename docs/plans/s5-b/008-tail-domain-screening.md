@@ -1,6 +1,6 @@
 # s5-b-008: Stationary tail-domain screening
 
-Updated: UTC 2026-11-05T06:31:26.938968+00:00; Australia/Melbourne 2026-11-05T17:31:26.938968+11:00.
+Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
 
 State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ Six stationary domain cases recorded; 2 satisfy both strict preparation stationa
 
 ## Next action and exit evidence
 
-Archive/verify the new full fields, then assess initial extension versus relaxation, matched L16 control and fixed-region/core comparisons before selecting any correction.
+Assess the completed stationary tail-domain measurements and verified full-field archive; select potential corrective actions without promoting them to motion acceptance.
 
 Authenticated original inputs, exact centred extension, original shell criterion, matched stricter stationary preparation, fixed physical-region comparisons, retained failures and verified full-field archive; later assessment determines possible corrective action.
 

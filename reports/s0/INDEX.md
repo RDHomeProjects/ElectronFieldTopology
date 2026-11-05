@@ -1,6 +1,6 @@
 # S0: Repository governance
 
-Updated: UTC 2026-11-05T06:31:26.938968+00:00; Australia/Melbourne 2026-11-05T17:31:26.938968+11:00.
+Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
 
 Administrative foundation; no scientific acceptance implied.
 

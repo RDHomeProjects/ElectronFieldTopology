@@ -1,6 +1,6 @@
 # s5-c-001: Charged-model equation audit
 
-Updated: UTC 2026-11-05T06:31:26.938968+00:00; Australia/Melbourne 2026-11-05T17:31:26.938968+11:00.
+Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
 
 State: **assessed**. Scientific gate: **blocked**. State records workflow progress, not a physical claim.
 

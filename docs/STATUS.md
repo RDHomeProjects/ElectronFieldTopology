@@ -1,6 +1,6 @@
 # Project status
 
-Updated: UTC 2026-11-05T06:31:26.938968+00:00; Australia/Melbourne 2026-11-05T17:31:26.938968+11:00.
+Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
 
 ## Current position
 
@@ -12,7 +12,7 @@ No milestone passes every original gate: overlapping failures are 24 tail, 16 sh
 
 ## Next scientific task
 
-[s5-b-008: Stationary tail-domain screening](plans/s5-b/008-tail-domain-screening.md): Archive/verify the new full fields, then assess initial extension versus relaxation, matched L16 control and fixed-region/core comparisons before selecting any correction.
+[s5-b-008: Stationary tail-domain screening](plans/s5-b/008-tail-domain-screening.md): Assess the completed stationary tail-domain measurements and verified full-field archive; select potential corrective actions without promoting them to motion acceptance.
 
 ## Study register
 

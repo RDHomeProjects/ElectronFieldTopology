@@ -1,6 +1,6 @@
 # s5-c-002: Charged-theory feasibility follow-up — evidence index
 
-Updated: UTC 2026-11-05T06:31:26.938968+00:00; Australia/Melbourne 2026-11-05T17:31:26.938968+11:00.
+Updated: UTC 2026-11-05T06:34:58.372247+00:00; Australia/Melbourne 2026-11-05T17:34:58.372247+11:00.
 
 [Current study plan](../../../docs/plans/s5-c/002-charged-theory-feasibility.md). State: deferred; scientific gate: blocked.
 
