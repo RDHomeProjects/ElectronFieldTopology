@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
+Updated: UTC 2026-11-05T20:58:49.887092+00:00; Australia/Melbourne 2026-11-06T07:58:49.887092+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive.
+S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive. S5-B-009 paired Q1 overnight settling is prepared; it has no native results yet.
 
 A passing stationary shell is not domain independence or motion acceptance. The two larger boxes still differ in inner-field state by 2.93% for Q1 and 1.04% for Q2. The earlier24 moving tail failures and all shape/speed/momentum failures remain unchanged. Temporal/physical-mesh convergence, classical inertia, quantum spin, electric charge and electron acceptance remain open.
 
-Next: **s5-b-008: Stationary tail-domain screening**. Prepare a narrow Q1 stationary correction/settling follow-up: consider L22.08/n139 at h=.16 and a separately recorded tightening check of the L20.16 endpoint. Preserve Q2 passing rest references and all original gates; assess fixed-region/core sensitivity before production motion. No run is launched by this assessment.
+Next: **s5-b-009: Paired Q1 stationary tail settling**. Execute the paired Q1 L20.16/n127 and L22.08/n139 settling study at h=.16, preserve all observation fields in a verified Release archive and assess tail/core histories before motion. Up to1200 optimizer iterations per arm; no wall-time cutoff or automatic downstream matrix.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 

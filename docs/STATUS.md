@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
+Updated: UTC 2026-11-05T20:58:49.887092+00:00; Australia/Melbourne 2026-11-06T07:58:49.887092+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-008**, Stationary tail-domain screening. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive.
+S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive. S5-B-009 paired Q1 overnight settling is prepared; it has no native results yet.
 
 A passing stationary shell is not domain independence or motion acceptance. The two larger boxes still differ in inner-field state by 2.93% for Q1 and 1.04% for Q2. The earlier24 moving tail failures and all shape/speed/momentum failures remain unchanged. Temporal/physical-mesh convergence, classical inertia, quantum spin, electric charge and electron acceptance remain open.
 
 ## Next scientific task
 
-[s5-b-008: Stationary tail-domain screening](plans/s5-b/008-tail-domain-screening.md): Prepare a narrow Q1 stationary correction/settling follow-up: consider L22.08/n139 at h=.16 and a separately recorded tightening check of the L20.16 endpoint. Preserve Q2 passing rest references and all original gates; assess fixed-region/core sensitivity before production motion. No run is launched by this assessment.
+[s5-b-009: Paired Q1 stationary tail settling](plans/s5-b/009-q1-tail-settling.md): Execute the paired Q1 L20.16/n127 and L22.08/n139 settling study at h=.16, preserve all observation fields in a verified Release archive and assess tail/core histories before motion. Up to1200 optimizer iterations per arm; no wall-time cutoff or automatic downstream matrix.
 
 ## Study register
 
@@ -49,6 +49,7 @@ A passing stationary shell is not domain independence or motion acceptance. The 
 | [s7-002](plans/s7/002-apparatus-detectors.md) | Stern–Gerlach and detector benchmarks | planned | open |
 | [s7-003](plans/s7/003-wavefunction-observables.md) | Wavefunction and energy-density observable comparison | planned | open |
 | [s5-b-008](plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | assessed | open |
+| [s5-b-009](plans/s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | prepared | open |
 
 ## Claims and deferred work
 

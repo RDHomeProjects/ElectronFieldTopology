@@ -6,6 +6,9 @@ on:
       - 'src/electron_field_topology/sf_boost*.py'
       - 'src/electron_field_topology/sf_focused*.py'
       - 'src/electron_field_topology/sf_tail*.py'
+      - 'src/electron_field_topology/sf_q1*.py'
+      - 'tests/test_sf_q1_settling.py'
+      - 'experiments/configs/s5-b/009-q1-tail-settling/**'
       - 'tests/test_sf_tail_domain.py'
       - 'experiments/configs/s5-b/008-tail-domain-screening/**'
       - 'tests/test_sf_focused_motion.py'
@@ -53,7 +56,7 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install uv==0.13.4
       - run: uv sync --frozen --all-groups
-      - run: uv run --frozen pytest -q tests/test_sf_time.py tests/test_sf_renderer.py tests/test_sf_dynamics.py tests/test_sf_readmission.py tests/test_sf_lowq_motion.py tests/test_sf_motion_local.py tests/test_sf_motion_diagnostics.py tests/test_sf_reconstruction.py tests/test_sf_focused_motion.py tests/test_sf_tail_domain.py
+      - run: uv run --frozen pytest -q tests/test_sf_time.py tests/test_sf_renderer.py tests/test_sf_dynamics.py tests/test_sf_readmission.py tests/test_sf_lowq_motion.py tests/test_sf_motion_local.py tests/test_sf_motion_diagnostics.py tests/test_sf_reconstruction.py tests/test_sf_focused_motion.py tests/test_sf_tail_domain.py tests/test_sf_q1_settling.py
       - run: uv run --frozen python scripts/check_sf_time.py --output artifacts/sf-time-controls.json
       - run: python3 scripts/check_docs.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

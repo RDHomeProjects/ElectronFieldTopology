@@ -1,12 +1,12 @@
 # Staged development plan
 
-Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
+Updated: UTC 2026-11-05T20:58:49.887092+00:00; Australia/Melbourne 2026-11-06T07:58:49.887092+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
 ## Current priority
 
-Registered administrative activities are assessed. The next scientific task is **s5-b-008: Stationary tail-domain screening**. Prepare a narrow Q1 stationary correction/settling follow-up: consider L22.08/n139 at h=.16 and a separately recorded tightening check of the L20.16 endpoint. Preserve Q2 passing rest references and all original gates; assess fixed-region/core sensitivity before production motion. No run is launched by this assessment.
+Registered administrative activities are assessed. The next scientific task is **s5-b-009: Paired Q1 stationary tail settling**. Execute the paired Q1 L20.16/n127 and L22.08/n139 settling study at h=.16, preserve all observation fields in a verified Release archive and assess tail/core histories before motion. Up to1200 optimizer iterations per arm; no wall-time cutoff or automatic downstream matrix.
 
 ## Stage map
 
@@ -30,7 +30,7 @@ Registered administrative activities are assessed. The next scientific task is *
 
 ## Ordered work and dependencies
 
-1. [s5-b-008: Stationary tail-domain screening](plans/s5-b/008-tail-domain-screening.md) — Prepare a narrow Q1 stationary correction/settling follow-up: consider L22.08/n139 at h=.16 and a separately recorded tightening check of the L20.16 endpoint. Preserve Q2 passing rest references and all original gates; assess fixed-region/core sensitivity before production motion. No run is launched by this assessment.
+1. [s5-b-009: Paired Q1 stationary tail settling](plans/s5-b/009-q1-tail-settling.md) — Execute the paired Q1 L20.16/n127 and L22.08/n139 settling study at h=.16, preserve all observation fields in a verified Release archive and assess tail/core histories before motion. Up to1200 optimizer iterations per arm; no wall-time cutoff or automatic downstream matrix.
 2. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Prepare staged convergence: clarify raw/baseline transport labels and use a fixed common analysis region; first audit cubic Q1/x and Q2/z at T=1 with dt=.01/.005/.0025, then larger matched-spacing domains and a third physical mesh with readmitted rest controls. Preserve all gates; no automatic wider matrix.
 3. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Proceed conditionally after adequate low-Q control with matched physical resolution, domain and observation-window checks.
 4. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.

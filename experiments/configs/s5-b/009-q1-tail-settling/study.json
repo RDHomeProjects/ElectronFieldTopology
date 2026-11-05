@@ -1,0 +1,40 @@
+{
+  "format": "EFT-q1-tail-settling-v1",
+  "domains": [
+    {
+      "nodes": 127,
+      "length": 20.16
+    },
+    {
+      "nodes": 139,
+      "length": 22.08
+    }
+  ],
+  "spacing": 0.16,
+  "shell_width": 2.0,
+  "tail_fraction_limit": 0.001,
+  "common_nodes": 73,
+  "profile_half_widths": [
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0
+  ],
+  "max_iterations_per_case": 1200,
+  "observe_every": 100,
+  "stable_intervals": 3,
+  "tail_fraction_change": 1e-07,
+  "shell_energy_change": 1e-07,
+  "core_field_relative_change": 1e-05,
+  "hamiltonian_relative_change": 1e-09,
+  "readmission": {
+    "relative_force_l2": 1e-09,
+    "acceleration_max": 1e-08,
+    "charge_relative_error": 0.05,
+    "iterations_per_pass": 200,
+    "checkpoint_every": 25,
+    "stagnation_relative_energy": 1e-14
+  }
+}

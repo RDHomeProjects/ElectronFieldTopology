@@ -1,0 +1,51 @@
+{
+  "study_id": "s5-b-009",
+  "record_id": "20261105t205849z-2d6ac03d",
+  "role": "preparation",
+  "recorded_at": {
+    "utc": "2026-11-05T20:58:49.887092+00:00",
+    "melbourne": "2026-11-06T07:58:49.887092+11:00"
+  },
+  "source_commit": "5bf6ae24732674d5265af046bd4701ce68891123",
+  "outcome": "prepared; 34 targeted tests, 14 record checks and 12 archive controls passed; no native overnight result",
+  "config_sha256": {
+    "study": "0ed175c8df974b54c52e3dd911e6bcf902d8bd152171b12d97159fbb0dbdcfa7"
+  },
+  "input_sha256": {
+    "q1_endpoint": "2eafd171bf4f8bb184b89cadb63435970d8eb8b8c44496d61e8d576c237dd343"
+  },
+  "evidence_sha256": {
+    "README.md": "7cc55aba1bd6fcb4ec8dbf6c115dbb7c15cfc3d91f50e6c34713e3e10a7c1c2a",
+    "control-tests.txt": "8857667eee2cdb1a4b2dd0ca410531e68104be47a7bb987a2a76a3294e864aca",
+    "install-validation.json": "2f1710aacbef3066789accd2f87ca9c03fb4cbc35375367e201cadb57218f190",
+    "native-control-validation.json": "01fb43f7d3c904ecc15c079fd4d26fee7ae19efe292f43437b5af2792282da2b",
+    "pipeline-validation.json": "11c91f396c3341be18f94487218a44f092c68a0160eadc89bc41ac2e4761df83",
+    "publication-validation.json": "9fcf98ef4b561b2c166cee5566ed7ccb9f73f930191586be20e6860e0ef1d8a4",
+    "validation.json": "8eeda1845fe528f0d51fd7cc236824edec4543ad262b0dd7f05b512ee2dcdf0d"
+  },
+  "commands": [
+    "python -m pytest -q tests/test_sf_q1_settling.py tests/test_sf_tail_domain.py tests/test_sf_readmission.py tests/test_sf_motion_local.py",
+    "python3 scripts/test_project_records.py",
+    "python3 scripts/project_records.py check --compare-ref 5bf6ae24732674d5265af046bd4701ce68891123",
+    "python3 scripts/check_docs.py"
+  ],
+  "environment": {
+    "scope": "Preparation validation runtime; workstation uses uv frozen Python3.12.14",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "model_and_units": "Unchanged neutral D4 nodal action; CPU float64, c=1, dimensionless stationary units",
+  "field_retention": "New full observation fields and runnable handover require verified Release archive; existing S5-B-008 source archive unchanged",
+  "limitations": [
+    "No production result",
+    "Very tight settling can be unresolved",
+    "No motion or physical-mesh study",
+    "No electron, charge, spin or independent basin claim"
+  ],
+  "supersedes": null,
+  "validation_finished_at": {
+    "utc": "2026-11-05T21:13:55.161035+00:00",
+    "melbourne": "2026-11-06T08:13:55.161035+11:00"
+  }
+}

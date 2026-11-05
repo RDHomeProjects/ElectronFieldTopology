@@ -1,6 +1,6 @@
 # s5-b-008: Stationary tail-domain screening
 
-Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
+Updated: UTC 2026-11-05T20:58:49.887092+00:00; Australia/Melbourne 2026-11-06T07:58:49.887092+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ Six stationary states independently replayed from the verified full-field archiv
 
 ## Next action and exit evidence
 
-Prepare a narrow Q1 stationary correction/settling follow-up: consider L22.08/n139 at h=.16 and a separately recorded tightening check of the L20.16 endpoint. Preserve Q2 passing rest references and all original gates; assess fixed-region/core sensitivity before production motion. No run is launched by this assessment.
+The paired Q1 follow-up is prepared as S5-B-009. Preserve this assessed six-case record and Q2 references; interpret the new tail/core settling separately before returning to S5-B-006 temporal convergence.
 
 Requested stationary screen assessed: two tail passes and four failures including controls, authenticated compact evidence, independent download/hash verification of all74 payload files and replay of all12 NPZ states. Q1 correction, domain independence and motion qualification remain open.
 
