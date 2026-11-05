@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-05T02:33:22.505004+00:00",
-    "melbourne": "2026-11-05T13:33:22.505004+11:00"
+    "utc": "2026-11-05T04:12:28.812263+00:00",
+    "melbourne": "2026-11-05T15:12:28.812263+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -775,12 +775,12 @@
       "number": 6,
       "slug": "focused-motion-convergence",
       "title": "Focused motion, mesh and domain convergence",
-      "state": "recorded",
+      "state": "assessed",
       "gate": "open",
       "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
-      "finding": "8 focused method arms have been attempted at their declared milestones, pending scientific assessment; all failed gates and numerical failures remain in the run record.",
-      "next_action": "Archive/verify all new full fields, then assess the eight-arm initial-state and time-window comparison before any temporal, third-mesh or domain expansion.",
-      "exit_evidence": "Boundary-consistent initial data with recorded corrections; matched rest states, model action, precision, observation windows and predeclared gates; eight nominal method-comparison arms assessed before any wider sweep. Separate initialization, temporal, physical-grid, domain, tail and inertia effects. No silent D4-fitted velocity, gate changes or automatic isolation claim.",
+      "finding": "Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance.",
+      "next_action": "Prepare staged convergence: clarify raw/baseline transport labels and use a fixed common analysis region; first audit cubic Q1/x and Q2/z at T=1 with dt=.01/.005/.0025, then larger matched-spacing domains and a third physical mesh with readmitted rest controls. Preserve all gates; no automatic wider matrix.",
+      "exit_evidence": "Focused initialization/time-window tranche assessed; convergence remains outstanding. Require independent temporal/full-state comparisons, domain and third-physical-grid evidence, original tail/speed/momentum gates and bounded classical-inertia sensitivity before higher-Q or quantum work. Full native fields retained in verified Release catalog.",
       "depends_on": [
         "s5-b-005"
       ],
@@ -795,7 +795,8 @@
       "specifications": [
         "docs/models/SF-focused-motion.md",
         "docs/models/SF-physical-time.md",
-        "docs/decisions/ADR-0013-conditional-cubic-initialization.md"
+        "docs/decisions/ADR-0013-conditional-cubic-initialization.md",
+        "docs/decisions/ADR-0014-focused-motion-assessment.md"
       ],
       "records": [
         {
@@ -812,6 +813,11 @@
           "role": "verification",
           "path": "data/archives/20261105t015855z-b7d90f43/README.md",
           "label": "Full fields/checkpoints/previews: verified GitHub Release archive"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/006-focused-motion-convergence/assessments/20261105t041228z-a1c49633/ASSESSMENT.md",
+          "label": "Eight-arm assessment, speed tradeoff and staged convergence decision"
         }
       ]
     },
@@ -1106,8 +1112,8 @@
     }
   ],
   "current": {
-    "latest_assessed_study": "s5-b-005",
-    "summary": "S5-B-005 remains the latest assessed numerical study. S5-B-006 focused original/cubic trajectories are now recorded pending scientific assessment; see the study evidence for completion/failure counts and T=1/2/3 outcomes. Earlier bounded passes are not promoted to general motion acceptance.",
-    "limits": "The original 60-case record retains 6 bounded passes and overlapping 50 tail, 18 shape and 4 momentum failures. Sampling, physical-mesh/domain and classical-inertia sensitivity remain unresolved. No general isolated-motion, full stability, quantum-spin, electromagnetic-charge or electron-model acceptance follows."
+    "latest_assessed_study": "s5-b-006",
+    "summary": "S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive.",
+    "limits": "No milestone passes every original gate: overlapping failures are 24 tail, 16 shape, six momentum and four speed. One dt/grid/box and reflecting long windows do not establish isolated motion. The earlier 60-case record and all negative findings remain intact. Classical inertia, quantum spin, electric charge and electron-model acceptance remain open."
   }
 }

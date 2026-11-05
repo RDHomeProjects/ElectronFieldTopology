@@ -40,6 +40,7 @@ class RecordIntegrity(unittest.TestCase):
 
     def test_latest_current_study_must_be_assessed(self):
         d=copy.deepcopy(self.data);d['current']['latest_assessed_study']='s5-b-006'
+        next(s for s in d['studies'] if s['id']=='s5-b-006')['state']='recorded'
         with self.assertRaisesRegex(AssertionError,'not assessed'):p.validate(d,self.root)
 
     def test_dependency_cycle_rejected(self):

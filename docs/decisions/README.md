@@ -43,3 +43,5 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 - [ADR-0012: canonical project records and preserved evidence paths](ADR-0012-repository-governance.md).
 
 - [ADR-0013: conditional cubic initialization and fixed-layer readmission](ADR-0013-conditional-cubic-initialization.md).
+
+- [ADR-0014: focused motion assessment and staged convergence](ADR-0014-focused-motion-assessment.md).

@@ -1,0 +1,35 @@
+{
+  "study_id": "s5-b-006",
+  "record_id": "20261105t041228z-a1c49633",
+  "role": "assessment",
+  "recorded_at": {
+    "utc": "2026-11-05T04:12:28.812263+00:00",
+    "melbourne": "2026-11-05T15:12:28.812263+11:00"
+  },
+  "source_commit": "1e3a4ed64ee68bc014846923e4b75845a5c20cf5",
+  "outcome": "cubic_candidate_retained; all_tail_gates_fail; speed_tradeoff; convergence_and_isolation_open",
+  "config_sha256": {
+    "study": "1c2fd818891a557dc52f88e59704a2ee86af8ef1018be971448904ca2eb5ec1c"
+  },
+  "input_sha256": {
+    "evidence.zip": "4ced49b9bc30deb186c5cacfc634870a96fe2c36ae6643db79fa2fdd2fdf0db5"
+  },
+  "evidence_sha256": {},
+  "commands": [
+    "python3 verify_assessment.py --evidence RUN/evidence.zip --repo REPOSITORY --output NEW_OUTPUT",
+    "python3 verify_retention.py --folder ASSESSMENT --repo REPOSITORY --evidence RUN/evidence.zip --output NEW_OUTPUT"
+  ],
+  "environment": {
+    "verification": "Python standard-library scalar and metadata replay; NumPy/SciPy manufactured controls separately replayed",
+    "independent_full_npz_replay": false
+  },
+  "model_and_units": "SF-relativistic-neutral-v1; metric +---, c=1; dimensionless model time; unchanged D4/RK4",
+  "field_retention": "data/archives/20261105t015855z-b7d90f43/CATALOG.json; 525 files, all payload bytes download-verified by workstation receipt",
+  "limitations": [
+    "One physical grid, dt and box",
+    "All tails fail; speed and momentum tradeoffs persist",
+    "Field-derived metrics are authenticated workstation records, not independent NPZ replay",
+    "Long windows can be reflecting-wall sensitive"
+  ],
+  "supersedes": null
+}

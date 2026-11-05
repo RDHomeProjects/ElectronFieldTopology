@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-05T02:33:22.505004+00:00; Australia/Melbourne 2026-11-05T13:33:22.505004+11:00.
+Updated: UTC 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne 2026-11-05T15:12:28.812263+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-005: Boost initialization and field registration](s5-b/005-boost-initialization/assessments/20261104t133535z-6a7e9b21/ASSESSMENT.md) — S5-B-005 remains the latest assessed numerical study. S5-B-006 focused original/cubic trajectories are now recorded pending scientific assessment; see the study evidence for completion/failure counts and T=1/2/3 outcomes. Earlier bounded passes are not promoted to general motion acceptance.
+[s5-b-006: Focused motion, mesh and domain convergence](s5-b/006-focused-motion-convergence/assessments/20261105t041228z-a1c49633/ASSESSMENT.md) — S5-B-006 focused motion is assessed: 48 admissions passed and eight arms completed T=1/2/3. Cubic initialization improves matched shape residuals but introduces or retains speed failures; all 24 milestone tail checks fail. The focused tranche is complete; physical convergence remains under S5-B-006. All 525 native files are retained in a verified GitHub Release archive.
