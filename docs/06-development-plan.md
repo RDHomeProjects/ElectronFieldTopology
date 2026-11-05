@@ -1,6 +1,6 @@
 # Staged development plan
 
-Updated: UTC 2026-11-05T01:58:43.055406+00:00; Australia/Melbourne 2026-11-05T12:58:43.055406+11:00.
+Updated: UTC 2026-11-05T02:33:22.505004+00:00; Australia/Melbourne 2026-11-05T13:33:22.505004+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
