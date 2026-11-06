@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne 2026-11-07T00:05:24.404933+11:00.
+Updated: UTC 2026-11-06T13:58:33.492062+00:00; Australia/Melbourne 2026-11-07T00:58:33.492062+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-009: Paired Q1 stationary tail settling](s5-b/009-q1-tail-settling/assessments/20261106t130524z-7c67deae/ASSESSMENT.md) — S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.120638% tail failure. L22.08 reaches0.081394% and tight final force limits, but both native unresolved labels and the incomplete regular-endpoint certificate remain. All52 full-run files were independently download/hash verified;12 checkpoints and eight unique field states were replayed.
+[s5-b-009: Paired Q1 stationary tail settling](s5-b/009-q1-tail-settling/assessments/20261106t130524z-7c67deae/ASSESSMENT.md) — S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.120638% tail failure. L22.08 reaches0.081394% and tight final force limits, but both native unresolved labels and the incomplete regular-endpoint certificate remain. All52 full-run files were independently download/hash verified;12 checkpoints and eight unique field states were replayed. A combined endpoint-reporting audit and reserve-admitted S5-B-006 temporal run is prepared; no new motion result yet.

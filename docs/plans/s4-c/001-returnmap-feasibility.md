@@ -1,6 +1,6 @@
 # s4-c-001: Return-map diagnosis and feasibility
 
-Updated: UTC 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne 2026-11-07T00:05:24.404933+11:00.
+Updated: UTC 2026-11-06T13:58:33.492062+00:00; Australia/Melbourne 2026-11-07T00:58:33.492062+11:00.
 
 State: **assessed**. Scientific gate: **bounded**. State records workflow progress, not a physical claim.
 

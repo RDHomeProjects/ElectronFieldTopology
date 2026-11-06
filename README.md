@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne 2026-11-07T00:05:24.404933+11:00.
+Updated: UTC 2026-11-06T13:58:33.492062+00:00; Australia/Melbourne 2026-11-07T00:58:33.492062+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.120638% tail failure. L22.08 reaches0.081394% and tight final force limits, but both native unresolved labels and the incomplete regular-endpoint certificate remain. All52 full-run files were independently download/hash verified;12 checkpoints and eight unique field states were replayed.
+S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.120638% tail failure. L22.08 reaches0.081394% and tight final force limits, but both native unresolved labels and the incomplete regular-endpoint certificate remain. All52 full-run files were independently download/hash verified;12 checkpoints and eight unique field states were replayed. A combined endpoint-reporting audit and reserve-admitted S5-B-006 temporal run is prepared; no new motion result yet.
 
 A stationary shell pass does not establish domain independence or moving-field acceptance. Common-core raw-field difference is 1.66% between L20.16 and L22.08; all earlier motion tail/shape/speed/momentum failures remain unchanged. Physical mesh/time/domain convergence, isolated motion, charge, quantum spin and electron acceptance stay open.
 
-Next: **s5-b-006: Focused motion, mesh and domain convergence**. Audit stalled/irregular-endpoint reporting with small controls, then prepare the planned T=1 cubic Q1/x and Q2/z dt=.01/.005/.0025 temporal sentinels with fixed common regions and preserved raw/baseline labels. Retain small-box failures; use the bounded L22.08 Q1 and existing Q2 references for later matched-domain motion admission. No automatic broader matrix.
+Next: **s5-b-006: Focused motion, mesh and domain convergence**. Execute the combined audit and Q1/x, Q2/z beta0.3 T1 temporal families. Readmit larger matched-spacing boxes with predeclared tail reserves and fallback, retain all failures, then archive and assess before physical mesh/domain expansion.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 

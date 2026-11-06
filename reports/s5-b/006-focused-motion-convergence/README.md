@@ -1,10 +1,10 @@
 # s5-b-006: Focused motion, mesh and domain convergence — evidence index
 
-Updated: UTC 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne 2026-11-07T00:05:24.404933+11:00.
+Updated: UTC 2026-11-06T13:58:33.492062+00:00; Australia/Melbourne 2026-11-07T00:58:33.492062+11:00.
 
-[Current study plan](../../../docs/plans/s5-b/006-focused-motion-convergence.md). State: assessed; scientific gate: open.
+[Current study plan](../../../docs/plans/s5-b/006-focused-motion-convergence.md). State: prepared; scientific gate: open.
 
-Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance.
+Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance. A new combined endpoint-audit and boundary-admitted T1 three-dt preparation is ready; no new production result yet.
 
 | Record role | Retained record |
 |---|---|
@@ -12,5 +12,6 @@ Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=
 | measurement | [Focused eight-arm workstation evidence](runs/20261104t142830z-d061b67b/README.md) |
 | verification | [Full fields/checkpoints/previews: verified GitHub Release archive](../../../data/archives/20261105t015855z-b7d90f43/README.md) |
 | assessment | [Eight-arm assessment, speed tradeoff and staged convergence decision](assessments/20261105t041228z-a1c49633/ASSESSMENT.md) |
+| preparation | [Combined endpoint audit and boundary-admitted temporal preparation](preparation/20261106t135833z-f0f65430/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.
