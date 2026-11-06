@@ -1,6 +1,6 @@
 # s4-a-001: Bounded candidate catalogue — evidence index
 
-Updated: UTC 2026-11-06T12:55:56.848597+00:00; Australia/Melbourne 2026-11-06T23:55:56.848597+11:00.
+Updated: UTC 2026-11-06T13:27:41.408781+00:00; Australia/Melbourne 2026-11-07T00:27:41.408781+11:00.
 
 [Current study plan](../../../docs/plans/s4-a/001-candidate-catalogue.md). State: assessed; scientific gate: bounded.
 

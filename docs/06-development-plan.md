@@ -1,12 +1,12 @@
 # Staged development plan
 
-Updated: UTC 2026-11-06T12:55:56.848597+00:00; Australia/Melbourne 2026-11-06T23:55:56.848597+11:00.
+Updated: UTC 2026-11-06T13:27:41.408781+00:00; Australia/Melbourne 2026-11-07T00:27:41.408781+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
 ## Current priority
 
-Registered administrative activities are assessed. The next scientific task is **s5-b-009: Paired Q1 stationary tail settling**. Archive/verify all observation fields, then assess Q1 settling histories, retained L20.16 drift, matched L22.08 correction and fixed-region/core comparisons before production motion.
+Registered administrative activities are assessed. The next scientific task is **s5-b-009: Paired Q1 stationary tail settling**. Assess paired Q1 settling histories and the verified observation-field archive; retain unresolved outcomes and select any correction before returning to S5-B-006 time convergence.
 
 ## Stage map
 
@@ -30,7 +30,7 @@ Registered administrative activities are assessed. The next scientific task is *
 
 ## Ordered work and dependencies
 
-1. [s5-b-009: Paired Q1 stationary tail settling](plans/s5-b/009-q1-tail-settling.md) — Archive/verify all observation fields, then assess Q1 settling histories, retained L20.16 drift, matched L22.08 correction and fixed-region/core comparisons before production motion.
+1. [s5-b-009: Paired Q1 stationary tail settling](plans/s5-b/009-q1-tail-settling.md) — Assess paired Q1 settling histories and the verified observation-field archive; retain unresolved outcomes and select any correction before returning to S5-B-006 time convergence.
 2. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Prepare staged convergence: clarify raw/baseline transport labels and use a fixed common analysis region; first audit cubic Q1/x and Q2/z at T=1 with dt=.01/.005/.0025, then larger matched-spacing domains and a third physical mesh with readmitted rest controls. Preserve all gates; no automatic wider matrix.
 3. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Proceed conditionally after adequate low-Q control with matched physical resolution, domain and observation-window checks.
 4. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.

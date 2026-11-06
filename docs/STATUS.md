@@ -1,6 +1,6 @@
 # Project status
 
-Updated: UTC 2026-11-06T12:55:56.848597+00:00; Australia/Melbourne 2026-11-06T23:55:56.848597+11:00.
+Updated: UTC 2026-11-06T13:27:41.408781+00:00; Australia/Melbourne 2026-11-07T00:27:41.408781+11:00.
 
 ## Current position
 
@@ -12,7 +12,7 @@ A passing stationary shell is not domain independence or motion acceptance. The 
 
 ## Next scientific task
 
-[s5-b-009: Paired Q1 stationary tail settling](plans/s5-b/009-q1-tail-settling.md): Archive/verify all observation fields, then assess Q1 settling histories, retained L20.16 drift, matched L22.08 correction and fixed-region/core comparisons before production motion.
+[s5-b-009: Paired Q1 stationary tail settling](plans/s5-b/009-q1-tail-settling.md): Assess paired Q1 settling histories and the verified observation-field archive; retain unresolved outcomes and select any correction before returning to S5-B-006 time convergence.
 
 ## Study register
 
