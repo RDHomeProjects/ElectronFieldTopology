@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-06T13:27:41.408781+00:00; Australia/Melbourne 2026-11-07T00:27:41.408781+11:00.
+Updated: UTC 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne 2026-11-07T00:05:24.404933+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive. S5-B-009 paired Q1 overnight settling is prepared; it has no native results yet. S5-B-009 paired Q1 tail-settling results are recorded pending scientific assessment; no motion acceptance follows.
+S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.120638% tail failure. L22.08 reaches0.081394% and tight final force limits, but both native unresolved labels and the incomplete regular-endpoint certificate remain. All52 full-run files were independently download/hash verified;12 checkpoints and eight unique field states were replayed.
 
-A passing stationary shell is not domain independence or motion acceptance. The two larger boxes still differ in inner-field state by 2.93% for Q1 and 1.04% for Q2. The earlier24 moving tail failures and all shape/speed/momentum failures remain unchanged. Temporal/physical-mesh convergence, classical inertia, quantum spin, electric charge and electron acceptance remain open.
+A stationary shell pass does not establish domain independence or moving-field acceptance. Common-core raw-field difference is 1.66% between L20.16 and L22.08; all earlier motion tail/shape/speed/momentum failures remain unchanged. Physical mesh/time/domain convergence, isolated motion, charge, quantum spin and electron acceptance stay open.
 
-Next: **s5-b-009: Paired Q1 stationary tail settling**. Assess paired Q1 settling histories and the verified observation-field archive; retain unresolved outcomes and select any correction before returning to S5-B-006 time convergence.
+Next: **s5-b-006: Focused motion, mesh and domain convergence**. Audit stalled/irregular-endpoint reporting with small controls, then prepare the planned T=1 cubic Q1/x and Q2/z dt=.01/.005/.0025 temporal sentinels with fixed common regions and preserved raw/baseline labels. Retain small-box failures; use the bounded L22.08 Q1 and existing Q2 references for later matched-domain motion admission. No automatic broader matrix.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 

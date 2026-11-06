@@ -1,8 +1,8 @@
 # s5-b-009: Paired Q1 stationary tail settling
 
-Updated: UTC 2026-11-06T13:27:41.408781+00:00; Australia/Melbourne 2026-11-07T00:27:41.408781+11:00.
+Updated: UTC 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne 2026-11-07T00:05:24.404933+11:00.
 
-State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,13 +10,13 @@ Does deeper Q1/L20.16 settling or aligned L22.08 mitigate the rest tail failure 
 
 ## Evidence and present finding
 
-Two Q1 settling cases recorded; 1 satisfy strict stationarity and the original rest tail check. Settling status is reported separately. Results and all failures require scientific assessment; no motion was run.
+Paired Q1 full fields independently replayed. L20.16 remains a 0.120638% rest-tail failure; L22.08 passes at 0.081394% with tight final endpoint stationarity. Both native unresolved labels remain because the regular-endpoint settling certificate is unmet. Common-core raw-field domain difference is 1.66%; no isolated-motion acceptance.
 
 ## Next action and exit evidence
 
-Assess paired Q1 settling histories and the verified observation-field archive; retain unresolved outcomes and select any correction before returning to S5-B-006 time convergence.
+Retain the bounded L22.08 stationary reference and both native labels; use a versioned small controller/reporting audit before future reuse, then return to S5-B-006 temporal and matched-domain motion convergence. No repeated overnight stationary run is launched.
 
-Authenticated source; separated100-iteration observations with tighter force/core/tail settling; original0.1% shell gate; matched-region comparisons; all failures/budget endpoints retained and full fields download-verified; later scientific assessment.
+Both requested arms assessed, all 52 archived payload files and 12 NPZ checkpoints/eight unique states verified, settling/controller logic and three full-field domain regions replayed. Rest-shell correction is bounded; prescribed settling, domain independence and motion remain open.
 
 ## Traceability
 
@@ -29,3 +29,4 @@ Dependencies: [s5-b-008](008-tail-domain-screening.md).
 - [docs/models/SF-q1-tail-settling.md](../../models/SF-q1-tail-settling.md)
 - [docs/models/SF-physical-time.md](../../models/SF-physical-time.md)
 - [docs/decisions/ADR-0015-stationary-tail-domain-assessment.md](../../decisions/ADR-0015-stationary-tail-domain-assessment.md)
+- [docs/decisions/ADR-0016-q1-tail-settling-assessment.md](../../decisions/ADR-0016-q1-tail-settling-assessment.md)
