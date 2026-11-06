@@ -98,3 +98,9 @@ UTC: 2026-11-05T04:12:28.812263+00:00; Australia/Melbourne: 2026-11-05T15:12:28.
 UTC: 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne: 2026-11-05T17:49:56.783673+11:00.
 
 [The immutable assessment](../reports/s5-b/008-tail-domain-screening/assessments/20261105t064956z-339196d8/ASSESSMENT.md) provides bounded NUM-002/003, BND-001 and REP-001/002 evidence from six stationary domain states, independent verification of74 archived files and replay of12 NPZ checkpoints. Q2 passes the original shell criterion at L17.92/L20.16; Q1 fails both. Inner-field domain sensitivity remains. This does not close physical-grid/time convergence or isolated-motion requirements. Original gates, earlier motion failures and quantum/electron limits remain unchanged. [ADR-0015](decisions/ADR-0015-stationary-tail-domain-assessment.md) records the remaining corrective-action plan.
+
+## S5-B-009 Q1 settling assessment
+
+UTC: 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne: 2026-11-07T00:05:24.404933+11:00.
+
+[The immutable assessment](../reports/s5-b/009-q1-tail-settling/assessments/20261106t130524z-7c67deae/ASSESSMENT.md) supplies bounded NUM-002/003, BND-001 and REP-001/002 evidence: all52 archive payloads authenticated,12 NPZ checkpoints/eight unique fields replayed, persistent L20.16 tail failure and L22.08 rest-shell mitigation with strict endpoint stationarity. Both native unresolved labels and the unfulfilled regular-endpoint certificate remain. Three raw-domain regions still differ; no motion/physical-grid/isolated-boundary or quantum/electron requirement is closed. [ADR-0016](decisions/ADR-0016-q1-tail-settling-assessment.md) returns priority to controlled motion convergence after a small reporting/termination audit. No original tolerance or published run is rewritten.

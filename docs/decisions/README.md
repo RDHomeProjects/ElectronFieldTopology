@@ -47,3 +47,5 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 - [ADR-0014: focused motion assessment and staged convergence](ADR-0014-focused-motion-assessment.md).
 
 - [ADR-0015: stationary tail-domain assessment and Q-dependent mitigation](ADR-0015-stationary-tail-domain-assessment.md).
+
+- [ADR-0016: Q1 tail settling, endpoint qualification and motion convergence](ADR-0016-q1-tail-settling-assessment.md).

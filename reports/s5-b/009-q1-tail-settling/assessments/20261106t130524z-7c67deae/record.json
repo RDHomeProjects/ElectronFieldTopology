@@ -1,0 +1,63 @@
+{
+  "study_id": "s5-b-009",
+  "record_id": "20261106t130524z-7c67deae",
+  "role": "assessment",
+  "recorded_at": {
+    "utc": "2026-11-06T13:05:24.404933+00:00",
+    "melbourne": "2026-11-07T00:05:24.404933+11:00"
+  },
+  "source_commit": "a8249de8eee6f91fd217c028e80dc8edf0ea3acc",
+  "publication_commit": "57caf91109a4d7fc84c4eca336cbee145400b6c1",
+  "outcome": "bounded Q1 L22.08 rest-tail mitigation; native settling labels retained; domain independence and motion open",
+  "input_sha256": {
+    "evidence.zip": "5cc3460d8fa9ddeb6525757ccebfad471088ea6103e248aaa2198a8f24beef27",
+    "publication_terminal_uncompressed": "272c1c58687ce2f774a9816ad5f75eca774ef21ab39f17e890246523924aca67"
+  },
+  "config_sha256": {
+    "study": "06741d6ba95a0129d0d73c336b5a5abbc03115716835ea788297559c2fd87b3a"
+  },
+  "evidence_sha256": {
+    "case-metrics.csv": "a09873fd31ebb2018e17a173672438ccfd336a530c6a040f54726d52853f408b",
+    "render_assessment.py": "9b4a1e21c75f7a1f3f829235aec9eb13b2ede8b8958d0fb47c38cd7ca247e55f",
+    "full-field-verification.json": "104c3935c6fed4ef5ed1627c01f5235f9c1d43309b4919d19e636446c63be781",
+    "verification.json": "8267c5dc8499fb346d7a3a7e34af6e65ef48cac790bad65800a453920ab4dba6",
+    "domain-sensitivity.png": "b0ec4bb88f86cb7005d9c986af2c15c16a031009371336dcd537539cddaf2ce2",
+    "observation-metrics.csv": "9f8298f32f1c982a34b4c277869d1ba3035829241110cff2e0d9b114cf205d24",
+    "release-index.json": "a2351b1c2b1372dcb8501ab0f3015ec2623163f02c3af7459a4ce3c56619b78e",
+    "replay_fields.py": "3e624d91cda151cc17dd158771315b2e98e3a5f090ff0cd2e7c8dd3aaa61065e",
+    "administrative-checks.txt": "222c9657536efa9a66dbf3fe45e3f6b9f91ae4fa1e06f7ffc513bcd2fb63f752",
+    "README.md": "a54e0054be1d640438330f378a0e6b380567ebab10bd2189a5e87b128c320598",
+    "settling-history.png": "03a28cd0eeb3d889c43a40920f8b0dbdcdf08418126dba5de321f90f4a50adce",
+    "download-verification.json": "f8d27a14281e07e6363ecfe7aac4b1025c81cf8deffdf418eeaf7ca8d150f0a9",
+    "release-manifest.json": "51cb3f1995059aaf4e656320701acd15df11e3d5d9606ce427386860ffcdd92b",
+    "handover-validation.json": "f66874768cff93322d793bdb1f67025c0ed1bb98fde3f366ee3ade4734ed5ea8",
+    "publication-terminal.txt.gz": "d0a3ba56c5cc089fecdd28275e37fdf6b66b481e73f82040065e782b07ede1f2",
+    "verify_assessment.py": "48cb85c2e47b6d37c4deb172ac02b5b7cc6aded6c7d03e37fdf69f08a182cb01",
+    "ASSESSMENT.md": "41186e7522fb8dc77dee1abf7100df13e4d1893e2651f90a29635d966db79d2c"
+  },
+  "commands": [
+    "python verify_assessment.py --evidence EVIDENCE --repo REPO --output verification.json",
+    "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 python replay_fields.py --repo REPO --run RESTORED_RUN --evidence EVIDENCE --output full-field-verification.json"
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "model_and_units": "Unchanged neutral D4 nodal Hamiltonian; c=1, dimensionless lengths/energies, CPU float64, zero field rate",
+  "field_retention": "All52 full-run files independently verified in Release archive-workstation-20261106t125605z-da3924bf; workstation catalog finalization required before merge; no source deletion",
+  "limitations": [
+    "Both native stationarity_unresolved labels retained",
+    "No optimizer path rerun",
+    "No independent physical-model or isolated-motion validation",
+    "No exact topology, charge, quantum spin or electron acceptance"
+  ],
+  "supersedes": null,
+  "administrative_validation": {
+    "record_invariants": 14,
+    "archive_controls": 12,
+    "transport_and_full52_file_recovery_rehearsal": "passed; external reads served from independently downloaded verified assets and all GitHub mutations mocked",
+    "reference": "handover-validation.json"
+  },
+  "source_log_retention": "publication-terminal.txt.gz decompresses to byte-identical uploaded terminal text"
+}

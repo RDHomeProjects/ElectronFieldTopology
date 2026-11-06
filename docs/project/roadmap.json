@@ -1,12 +1,11 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-05T06:49:56.783673+00:00",
-    "melbourne": "2026-11-05T17:49:56.783673+11:00"
+    "utc": "2026-11-06T13:05:24.404933+00:00",
+    "melbourne": "2026-11-07T00:05:24.404933+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
-    "s5-b-008",
     "s5-b-006",
     "s5-b-007",
     "s5-a-004",
@@ -780,7 +779,7 @@
       "gate": "open",
       "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
       "finding": "Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance.",
-      "next_action": "Prepare staged convergence: clarify raw/baseline transport labels and use a fixed common analysis region; first audit cubic Q1/x and Q2/z at T=1 with dt=.01/.005/.0025, then larger matched-spacing domains and a third physical mesh with readmitted rest controls. Preserve all gates; no automatic wider matrix.",
+      "next_action": "Audit stalled/irregular-endpoint reporting with small controls, then prepare the planned T=1 cubic Q1/x and Q2/z dt=.01/.005/.0025 temporal sentinels with fixed common regions and preserved raw/baseline labels. Retain small-box failures; use the bounded L22.08 Q1 and existing Q2 references for later matched-domain motion admission. No automatic broader matrix.",
       "exit_evidence": "Focused initialization/time-window tranche assessed; convergence remains outstanding. Require independent temporal/full-state comparisons, domain and third-physical-grid evidence, original tail/speed/momentum gates and bounded classical-inertia sensitivity before higher-Q or quantum work. Full native fields retained in verified Release catalog.",
       "depends_on": [
         "s5-b-005"
@@ -797,7 +796,8 @@
         "docs/models/SF-focused-motion.md",
         "docs/models/SF-physical-time.md",
         "docs/decisions/ADR-0013-conditional-cubic-initialization.md",
-        "docs/decisions/ADR-0014-focused-motion-assessment.md"
+        "docs/decisions/ADR-0014-focused-motion-assessment.md",
+        "docs/decisions/ADR-0016-q1-tail-settling-assessment.md"
       ],
       "records": [
         {
@@ -1017,7 +1017,7 @@
       "gate": "open",
       "question": "Can stationary L17.92 and L20.16 boxes mitigate the 0.1% outer-shell failure at unchanged spacing and comparable core state?",
       "finding": "Six stationary states independently replayed from the verified full-field archive. Q2 passes the 0.1% tail criterion at L17.92 (0.066603%) and L20.16 (0.030154%); Q1 fails both (0.202260%, 0.120632%). Inner-field differences between the larger boxes remain 2.93% for Q1 and 1.04% for Q2; no domain-independent motion acceptance.",
-      "next_action": "Prepare a narrow Q1 stationary correction/settling follow-up: consider L22.08/n139 at h=.16 and a separately recorded tightening check of the L20.16 endpoint. Preserve Q2 passing rest references and all original gates; assess fixed-region/core sensitivity before production motion. No run is launched by this assessment.",
+      "next_action": "The Q1 follow-up is assessed under S5-B-009. Retain all original Q2 references and Q1 failures; return to S5-B-006 controlled motion convergence without changing historical evidence.",
       "exit_evidence": "Requested stationary screen assessed: two tail passes and four failures including controls, authenticated compact evidence, independent download/hash verification of all74 payload files and replay of all12 NPZ states. Q1 correction, domain independence and motion qualification remain open.",
       "depends_on": [
         "s5-b-006"
@@ -1055,6 +1055,58 @@
           "role": "assessment",
           "path": "reports/s5-b/008-tail-domain-screening/assessments/20261105t064956z-339196d8/ASSESSMENT.md",
           "label": "Full-field tail assessment, Q2 mitigation and retained Q1 failure"
+        }
+      ]
+    },
+    {
+      "id": "s5-b-009",
+      "stage": "s5-b",
+      "number": 9,
+      "slug": "q1-tail-settling",
+      "title": "Paired Q1 stationary tail settling",
+      "state": "assessed",
+      "gate": "open",
+      "question": "Does deeper Q1/L20.16 settling or aligned L22.08 mitigate the rest tail failure while retaining comparable field state?",
+      "finding": "Paired Q1 full fields independently replayed. L20.16 remains a 0.120638% rest-tail failure; L22.08 passes at 0.081394% with tight final endpoint stationarity. Both native unresolved labels remain because the regular-endpoint settling certificate is unmet. Common-core raw-field domain difference is 1.66%; no isolated-motion acceptance.",
+      "next_action": "Retain the bounded L22.08 stationary reference and both native labels; use a versioned small controller/reporting audit before future reuse, then return to S5-B-006 temporal and matched-domain motion convergence. No repeated overnight stationary run is launched.",
+      "exit_evidence": "Both requested arms assessed, all 52 archived payload files and 12 NPZ checkpoints/eight unique states verified, settling/controller logic and three full-field domain regions replayed. Rest-shell correction is bounded; prescribed settling, domain independence and motion remain open.",
+      "depends_on": [
+        "s5-b-008"
+      ],
+      "requirements": [
+        "NUM-001",
+        "NUM-002",
+        "NUM-003",
+        "BND-001",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/SF-q1-tail-settling.md",
+        "docs/models/SF-physical-time.md",
+        "docs/decisions/ADR-0015-stationary-tail-domain-assessment.md",
+        "docs/decisions/ADR-0016-q1-tail-settling-assessment.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s5-b/009-q1-tail-settling/preparation/20261105t205849z-2d6ac03d/README.md",
+          "label": "Paired Q1 overnight preparation and controller controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/009-q1-tail-settling/runs/20261105t212644z-103ef9f4/README.md",
+          "label": "Paired Q1 tail-settling measurements"
+        },
+        {
+          "role": "verification",
+          "path": "data/archives/20261106t125605z-da3924bf/README.md",
+          "label": "Full tail-screen fields and logs: verified Release archive"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/009-q1-tail-settling/assessments/20261106t130524z-7c67deae/ASSESSMENT.md",
+          "label": "Verified Q1 correction, endpoint/controller qualification and motion handoff"
         }
       ]
     }
@@ -1164,8 +1216,8 @@
     }
   ],
   "current": {
-    "latest_assessed_study": "s5-b-008",
-    "summary": "S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive.",
-    "limits": "A passing stationary shell is not domain independence or motion acceptance. The two larger boxes still differ in inner-field state by 2.93% for Q1 and 1.04% for Q2. The earlier24 moving tail failures and all shape/speed/momentum failures remain unchanged. Temporal/physical-mesh convergence, classical inertia, quantum spin, electric charge and electron acceptance remain open."
+    "latest_assessed_study": "s5-b-009",
+    "summary": "S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.120638% tail failure. L22.08 reaches0.081394% and tight final force limits, but both native unresolved labels and the incomplete regular-endpoint certificate remain. All52 full-run files were independently download/hash verified;12 checkpoints and eight unique field states were replayed.",
+    "limits": "A stationary shell pass does not establish domain independence or moving-field acceptance. Common-core raw-field difference is 1.66% between L20.16 and L22.08; all earlier motion tail/shape/speed/momentum failures remain unchanged. Physical mesh/time/domain convergence, isolated motion, charge, quantum spin and electron acceptance stay open."
   }
 }

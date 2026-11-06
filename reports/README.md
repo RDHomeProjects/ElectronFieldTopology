@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
+Updated: UTC 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne 2026-11-07T00:05:24.404933+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-008: Stationary tail-domain screening](s5-b/008-tail-domain-screening/assessments/20261105t064956z-339196d8/ASSESSMENT.md) — S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive.
+[s5-b-009: Paired Q1 stationary tail settling](s5-b/009-q1-tail-settling/assessments/20261106t130524z-7c67deae/ASSESSMENT.md) — S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.120638% tail failure. L22.08 reaches0.081394% and tight final force limits, but both native unresolved labels and the incomplete regular-endpoint certificate remain. All52 full-run files were independently download/hash verified;12 checkpoints and eight unique field states were replayed.

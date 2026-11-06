@@ -1,0 +1,45 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-05T21:13:55.161035+00:00",
+    "melbourne": "2026-11-06T08:13:55.161035+11:00"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+  },
+  "workstation_environment": "uv --frozen Python3.12.14 from unchanged uv.lock; native user validation required",
+  "native_overnight_run_performed": false,
+  "existing_numerical_kernel_sha256_unchanged": {
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+    "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+    "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+    "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949"
+  },
+  "targeted_tests": {
+    "command": "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 PYTHONPATH=src python3 -m pytest -q tests/test_sf_q1_settling.py tests/test_sf_tail_domain.py tests/test_sf_readmission.py tests/test_sf_motion_local.py",
+    "outcome": "..................................                                       [100%]\n34 passed in 24.33s"
+  },
+  "native_source_probe": "See native-control-validation.json; two genuine n127 steps and both initial geometries only; canonical fixed-profile rounding correction subsequently tested independently. No equilibrium/convergence claim from this probe.",
+  "pipeline_control": "See pipeline-validation.json; manufactured small fields, three checkpoint/resume segments, both budget failures retained; source and geometry authorization mocked only in fixture",
+  "github_writes_performed": false,
+  "limitations": [
+    "No production Q1 follow-up results yet",
+    "No freeze-environment reproduction in preparation runtime",
+    "Archive publication rehearsal mocks external mutations; no actual new remote-byte verification is claimed by the rehearsal",
+    "No physical-time or isolated-motion acceptance"
+  ],
+  "administrative_checks": {
+    "record_invariants": 14,
+    "archive_controls": 12,
+    "legacy_protected_files": 964,
+    "markdown_files": 239,
+    "immutable_comparison_base": "5bf6ae24732674d5265af046bd4701ce68891123"
+  },
+  "install_rehearsal": "See install-validation.json; fresh/repeat install, verified bundle, exact local commit, source selection and restore-reuse control",
+  "publication_rehearsal": "See publication-validation.json; real local recording/catalog flow, all remote mutations and remote archive verification mocked. No uploaded bytes or production result is claimed."
+}

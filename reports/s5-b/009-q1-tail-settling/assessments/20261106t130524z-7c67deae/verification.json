@@ -1,0 +1,99 @@
+{
+  "verified_at": {
+    "utc": "2026-11-06T13:07:49.413894+00:00",
+    "melbourne": "2026-11-07T00:07:49.413894+11:00"
+  },
+  "run_id": "20261105t212644z-103ef9f4",
+  "source_commit": "a8249de8eee6f91fd217c028e80dc8edf0ea3acc",
+  "evidence_sha256": "5cc3460d8fa9ddeb6525757ccebfad471088ea6103e248aaa2198a8f24beef27",
+  "archive_members": 26,
+  "payload_hashes_verified": 25,
+  "native_source_files_verified": 16,
+  "cases": [
+    {
+      "case_id": "q1-n127-L20.16",
+      "iterations": 69,
+      "reason": "Armijo search stalled",
+      "native_status": "stationarity_unresolved",
+      "tail_percent": 0.12063773520403875,
+      "tail_gate_pass": false,
+      "strict_endpoint_stationarity_pass": false,
+      "three_regular_intervals_stable": false,
+      "final_observation_regular": false,
+      "prescribed_settling_pass": false,
+      "pass_end_iterations": [
+        50,
+        57,
+        69
+      ],
+      "final_relative_force": 7.417633898680924e-09,
+      "final_acceleration_max": 6.732447488942986e-08,
+      "final_hamiltonian": 1.2252797497021088,
+      "source_core_relative_change": 2.491687302756528e-06
+    },
+    {
+      "case_id": "q1-n139-L22.08",
+      "iterations": 484,
+      "reason": "Armijo search stalled",
+      "native_status": "stationarity_unresolved",
+      "tail_percent": 0.08139419494980688,
+      "tail_gate_pass": true,
+      "strict_endpoint_stationarity_pass": true,
+      "three_regular_intervals_stable": true,
+      "final_observation_regular": false,
+      "prescribed_settling_pass": false,
+      "pass_end_iterations": [
+        190,
+        390,
+        484
+      ],
+      "final_relative_force": 2.7204880496327047e-14,
+      "final_acceleration_max": 1.8079069299066148e-13,
+      "final_hamiltonian": 1.2247209498470177,
+      "source_core_relative_change": 5.682621612163013e-10
+    }
+  ],
+  "domain_regions": [
+    {
+      "recorded_at": {
+        "utc": "2026-11-05T23:59:12.352438+00:00",
+        "melbourne": "2026-11-06T10:59:12.352438+11:00"
+      },
+      "common_nodes": 73,
+      "common_side": 11.52,
+      "field_relative_l2": 0.016644582187818127,
+      "field_absolute_rms": 0.0036020862188139062,
+      "energy_relative_difference": 0.0006758721438564404,
+      "density_relative_l1": 0.0022571157913062172,
+      "scope": "Fixed original-centre cube; density derivatives evaluated on each full domain, then cropped. Descriptive differences only; no new convergence tolerance."
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-05T23:59:23.130112+00:00",
+        "melbourne": "2026-11-06T10:59:23.130112+11:00"
+      },
+      "common_nodes": 101,
+      "common_side": 16.0,
+      "field_relative_l2": 0.03159114033325854,
+      "field_absolute_rms": 0.004274479410103235,
+      "energy_relative_difference": 0.0007145240070384384,
+      "density_relative_l1": 0.002406567633509016,
+      "scope": "Fixed original-centre cube; density derivatives evaluated on each full domain, then cropped. Descriptive differences only; no new convergence tolerance."
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-05T23:59:33.818310+00:00",
+        "melbourne": "2026-11-06T10:59:33.818310+11:00"
+      },
+      "common_nodes": 127,
+      "common_side": 20.16,
+      "field_relative_l2": 0.048648313984180756,
+      "field_absolute_rms": 0.004674997507151731,
+      "energy_relative_difference": 0.000728359287876588,
+      "density_relative_l1": 0.002728268991317001,
+      "scope": "Fixed original-centre cube; density derivatives evaluated on each full domain, then cropped. Descriptive differences only; no new convergence tolerance."
+    }
+  ],
+  "disposition": "Q1 L20.16 tail failure retained; L22.08 shell and strict endpoint pass with stable preceding intervals, prescribed regular-endpoint settling certificate unmet; domain sensitivity remains",
+  "scope": "Compact hashes and recorded scalar/controller logic replayed. No optimization path or physical-time evolution rerun; full fields require separate replay."
+}

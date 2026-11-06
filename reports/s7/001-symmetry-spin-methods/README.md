@@ -1,6 +1,6 @@
 # s7-001: Q1/Q2 symmetry and spin-method controls — evidence index
 
-Updated: UTC 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne 2026-11-05T17:49:56.783673+11:00.
+Updated: UTC 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne 2026-11-07T00:05:24.404933+11:00.
 
 [Current study plan](../../../docs/plans/s7/001-symmetry-spin-methods.md). State: planned; scientific gate: open.
 
