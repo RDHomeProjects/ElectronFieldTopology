@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-05T20:58:49.887092+00:00",
-    "melbourne": "2026-11-06T07:58:49.887092+11:00"
+    "utc": "2026-11-06T12:55:56.848597+00:00",
+    "melbourne": "2026-11-06T23:55:56.848597+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -1064,11 +1064,11 @@
       "number": 9,
       "slug": "q1-tail-settling",
       "title": "Paired Q1 stationary tail settling",
-      "state": "prepared",
+      "state": "recorded",
       "gate": "open",
       "question": "Does deeper Q1/L20.16 settling or aligned L22.08 mitigate the rest tail failure while retaining comparable field state?",
-      "finding": "Overnight-capable paired preparation is ready; no native campaign result yet. Both arms start from the same authenticated S5-B-008 Q1 endpoint. Existing Q2 passes and Q1 failures remain unchanged.",
-      "next_action": "Execute the paired Q1 L20.16/n127 and L22.08/n139 settling study at h=.16, preserve all observation fields in a verified Release archive and assess tail/core histories before motion. Up to1200 optimizer iterations per arm; no wall-time cutoff or automatic downstream matrix.",
+      "finding": "Two Q1 settling cases recorded; 1 satisfy strict stationarity and the original rest tail check. Settling status is reported separately. Results and all failures require scientific assessment; no motion was run.",
+      "next_action": "Archive/verify all observation fields, then assess Q1 settling histories, retained L20.16 drift, matched L22.08 correction and fixed-region/core comparisons before production motion.",
       "exit_evidence": "Authenticated source; separated100-iteration observations with tighter force/core/tail settling; original0.1% shell gate; matched-region comparisons; all failures/budget endpoints retained and full fields download-verified; later scientific assessment.",
       "depends_on": [
         "s5-b-008"
@@ -1091,6 +1091,11 @@
           "role": "preparation",
           "path": "reports/s5-b/009-q1-tail-settling/preparation/20261105t205849z-2d6ac03d/README.md",
           "label": "Paired Q1 overnight preparation and controller controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/009-q1-tail-settling/runs/20261105t212644z-103ef9f4/README.md",
+          "label": "Paired Q1 tail-settling measurements"
         }
       ]
     }
@@ -1201,7 +1206,7 @@
   ],
   "current": {
     "latest_assessed_study": "s5-b-008",
-    "summary": "S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive. S5-B-009 paired Q1 overnight settling is prepared; it has no native results yet.",
+    "summary": "S5-B-008 stationary tail-domain screening is assessed. All six states meet the stricter preparation stationarity gates. Q2 passes the original 0.1% shell limit at L17.92 and L20.16; Q1 fails both. Full-field replay confirms the results and residual domain sensitivity. All74 run files are retained in a verified GitHub Release archive. S5-B-009 paired Q1 overnight settling is prepared; it has no native results yet. S5-B-009 paired Q1 tail-settling results are recorded pending scientific assessment; no motion acceptance follows.",
     "limits": "A passing stationary shell is not domain independence or motion acceptance. The two larger boxes still differ in inner-field state by 2.93% for Q1 and 1.04% for Q2. The earlier24 moving tail failures and all shape/speed/momentum failures remain unchanged. Temporal/physical-mesh convergence, classical inertia, quantum spin, electric charge and electron acceptance remain open."
   }
 }

@@ -1,6 +1,6 @@
 # Study plans
 
-Updated: UTC 2026-11-05T20:58:49.887092+00:00; Australia/Melbourne 2026-11-06T07:58:49.887092+11:00.
+Updated: UTC 2026-11-06T12:55:56.848597+00:00; Australia/Melbourne 2026-11-06T23:55:56.848597+11:00.
 
 Each study has a stable stage/number and one current plan below. Earlier flat plan files remain source specifications at their published paths; their historical next-step wording is superseded by the register.
 
@@ -37,4 +37,4 @@ Each study has a stable stage/number and one current plan below. Earlier flat pl
 | [s7-002](s7/002-apparatus-detectors.md) | Stern–Gerlach and detector benchmarks | planned | open |
 | [s7-003](s7/003-wavefunction-observables.md) | Wavefunction and energy-density observable comparison | planned | open |
 | [s5-b-008](s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | assessed | open |
-| [s5-b-009](s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | prepared | open |
+| [s5-b-009](s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | recorded | open |
