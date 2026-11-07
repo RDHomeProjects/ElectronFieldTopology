@@ -1,6 +1,6 @@
 # s5-b-001: Neutral dynamics admission — evidence index
 
-Updated: UTC 2026-11-06T13:58:33.492062+00:00; Australia/Melbourne 2026-11-07T00:58:33.492062+11:00.
+Updated: UTC 2026-11-07T23:35:40.416170+00:00; Australia/Melbourne 2026-11-08T10:35:40.416170+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/001-dynamics-admission.md). State: assessed; scientific gate: open.
 

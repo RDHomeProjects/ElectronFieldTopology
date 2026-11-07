@@ -1,8 +1,8 @@
 # s5-b-006: Focused motion, mesh and domain convergence
 
-Updated: UTC 2026-11-06T13:58:33.492062+00:00; Australia/Melbourne 2026-11-07T00:58:33.492062+11:00.
+Updated: UTC 2026-11-07T23:35:40.416170+00:00; Australia/Melbourne 2026-11-08T10:35:40.416170+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Which residuals survive improved initialization, a third physical mesh and a lar
 
 ## Evidence and present finding
 
-Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance. A new combined endpoint-audit and boundary-admitted T1 three-dt preparation is ready; no new production result yet.
+Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance. New combined audit/admission/temporal results recorded: 2/2 models have complete reserve-qualified three-dt families; all rejected domains, incomplete families and original scientific failures are retained pending assessment.
 
 ## Next action and exit evidence
 
-Execute the combined audit and Q1/x, Q2/z beta0.3 T1 temporal families. Readmit larger matched-spacing boxes with predeclared tail reserves and fallback, retain all failures, then archive and assess before physical mesh/domain expansion.
+Archive and verify every new field/snapshot, then assess endpoint audit, boundary selection, matched-time full-state refinement and original shape/speed/momentum/tail gates. No mesh/domain independence follows from temporal refinement.
 
 Focused initialization/time-window tranche assessed; convergence remains outstanding. Require independent temporal/full-state comparisons, domain and third-physical-grid evidence, original tail/speed/momentum gates and bounded classical-inertia sensitivity before higher-Q or quantum work. Full native fields retained in verified Release catalog.
 

@@ -1,0 +1,39 @@
+{
+  "study_id": "s5-b-006",
+  "record_id": "20261106t212927z-589f5f5d",
+  "role": "measurement",
+  "recorded_at": {
+    "utc": "2026-11-07T23:35:40.413682+00:00",
+    "melbourne": "2026-11-08T10:35:40.413682+11:00"
+  },
+  "source_commit": "422bbcf59810938d26437f7dce9f6be83e3fb1a8",
+  "outcome": "complete_pending_review",
+  "config_sha256": {
+    "study": "1ac50a5fc9cc64605a88bfbbc5a46edfd01353a91ee7a56b56c723c9bfe98b78"
+  },
+  "input_sha256": {
+    "fingerprint": "5721b587617f2fd0ac77e7dc5e37f04e7949ec552393b761e31b638f8a4d3c5b"
+  },
+  "evidence_sha256": {
+    "evidence.zip": "9c57be7d19ef234e16f05fee517a8146ae71c5de20edb53d5dcb4fdec0f861d1"
+  },
+  "commands": [
+    "python -m electron_field_topology.sf_temporal_local start --source SOURCE_MAP"
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39"
+  },
+  "model_and_units": "Unchanged neutral D4/RK4 physical-time model; CPU float64, c=1 and dimensionless T=1",
+  "field_retention": "All new full fields/snapshots and runnable handover require a verified Release archive before cleanup",
+  "limitations": [
+    "Finite fixed reflecting boxes",
+    "No guarantee between tail observations",
+    "Temporal refinements are not physical-grid/domain convergence",
+    "Earlier boundary stops and all scientific failures retained",
+    "No charge, quantum spin or electron acceptance"
+  ],
+  "supersedes": null
+}
