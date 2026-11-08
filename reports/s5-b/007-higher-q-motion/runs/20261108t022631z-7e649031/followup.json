@@ -1,0 +1,75 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-08T03:36:17.158202+00:00",
+    "melbourne": "2026-11-08T14:36:17.158202+11:00"
+  },
+  "parent_run": "20261108t022631z-7e649031",
+  "parent_config_sha256": "484b45180757ed8bcd1bf1fe82353c898d7080352a8ff8c85c1fe9de6609feac",
+  "candidates": [
+    {
+      "model": "q17",
+      "disposition": "review_coarse_failure_or_preparation",
+      "original129_source_sha256": "3e3ce644e184fc8702b13bb001e30708b785019f55ced3ecf2c28f75c9638216",
+      "coarse_rest": {
+        "checkpoint": "rest/q17/latest.npz",
+        "sha256": "761c01c418e23b3cec4c70899c8fb2631867a5af4bcb1ce60eafa0e72886de4b",
+        "state_sha256": "494a8694f655c1c5bc79b08fabe5af07b8eb2cc700ca46c0507f863ef6889f36"
+      },
+      "motion_parent": null,
+      "recommended_action": "Keep the failure. Diagnose resolution/preparation versus dynamics; use the original129 field for a finer representation if coarse topology or preparation failed. No automatic expensive rerun.",
+      "followup_options": {
+        "rest_spacings": [
+          0.192,
+          0.16,
+          0.12
+        ],
+        "same_box_length": 23.04,
+        "rest_nodes": [
+          121,
+          145,
+          193
+        ],
+        "directions": [
+          0,
+          2
+        ],
+        "duration": 1.0,
+        "policy": "new immutable studies; prolongation of admitted coarse rest is a warm start only; freshly readmit and rerun motion from t0. If coarse topology/readmission fails, use authenticated original129 source rather than inheriting failed coarse state."
+      }
+    },
+    {
+      "model": "q19",
+      "disposition": "review_coarse_failure_or_preparation",
+      "original129_source_sha256": "cb95e199902bc6ab5ee95fe7ca212c2017d098619e18aca81005c60d04fa50b4",
+      "coarse_rest": {
+        "checkpoint": "rest/q19/latest.npz",
+        "sha256": "212db8ee60a4ea0431fed7a04553ed31d281b90c8fd4d2f3b4243a9ab7294d81",
+        "state_sha256": "a5bf07a388b090a61cf4c1b964efe5564683e75dc2916ff9f34930c72029ce3b"
+      },
+      "motion_parent": null,
+      "recommended_action": "Keep the failure. Diagnose resolution/preparation versus dynamics; use the original129 field for a finer representation if coarse topology or preparation failed. No automatic expensive rerun.",
+      "followup_options": {
+        "rest_spacings": [
+          0.192,
+          0.16,
+          0.12
+        ],
+        "same_box_length": 23.04,
+        "rest_nodes": [
+          121,
+          145,
+          193
+        ],
+        "directions": [
+          0,
+          2
+        ],
+        "duration": 1.0,
+        "policy": "new immutable studies; prolongation of admitted coarse rest is a warm start only; freshly readmit and rerun motion from t0. If coarse topology/readmission fails, use authenticated original129 source rather than inheriting failed coarse state."
+      }
+    }
+  ],
+  "q1": "parked; original1.563660% speed failure retained",
+  "q2": "Reference control does not close its physical-mesh/domain work. Return to low-Q methods if control fails or both higher-Q screens are unresolved.",
+  "automatic_fine_work_started": false
+}

@@ -1,0 +1,21 @@
+UTC: 2026-11-08T02:14:27.407337+00:00; Australia/Melbourne: 2026-11-08T13:14:27.407337+11:00
+
+Actual frozen-environment local handover rehearsal:
+uv run --frozen --python 3.12.14 pytest -q tests/test_sf_higher_q.py tests/test_sf_temporal.py tests/test_sf_readmission.py
+45 passed in 61.18s (0:01:01)
+
+python3 scripts/test_project_records.py
+14 passed
+
+python3 scripts/test_workstation_archive.py
+12 passed
+
+project_records.py check --compare-ref 73bce2144de270cf21a077a30f5ae35709447301
+964 protected baseline report files, 15 stages, 32 studies; append-only canonical records checked
+check_docs.py: 256 Markdown files; local targets and fences passed
+git diff --check and git diff --cached --check: passed
+
+Read-only source-field probes and all selected input hashes are in source-probes.json/validation.json. The full publication/archive rehearsal, using actual original input bytes and a synthetic blocked status with all remote writes mocked, is recorded separately in handover-validation.json. No native higher-Q optimization or physical-time trajectory was performed.
+
+Final fresh-checkout rehearsal completed UTC 2026-11-08T02:19:36.893013+00:00; Australia/Melbourne 2026-11-08T13:19:36.893013+11:00.
+The final tested native output uses lower-case followup.json under the repository naming policy. Real retained input bytes were packed/restored through the fake-remote archive; all original scientific asset identities and prior releases were preserved.

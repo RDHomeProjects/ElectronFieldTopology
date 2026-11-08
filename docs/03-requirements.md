@@ -110,3 +110,15 @@ UTC: 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne: 2026-11-07T00:05:24.
 UTC: 2026-11-08T01:09:15.758801+00:00; Australia/Melbourne: 2026-11-08T12:09:15.758801+11:00.
 
 [The immutable assessment](../reports/s5-b/006-focused-motion-convergence/assessments/20261108t010058z-672ebb4c/ASSESSMENT.md) supplies bounded NUM-002/003, BND-001, REL-002 and REP-001/002 evidence:128 full archived files/52 NPZ states authenticated, six tail-controlled T1 trajectories replayed, and near-fourth-order matched-time refinement. All126 recorded tail observations pass; Q2 passes all original case gates, while Q1 retains its1.563660% speed failure. This supports the fixed-grid temporal tranche, not physical-grid/domain or isolated-motion closure. All historical failures and thresholds remain. [ADR-0017](decisions/ADR-0017-admitted-temporal-assessment.md) prioritizes centroid/initialization controls, fixed-box physical meshes and matched-spacing domains.
+
+## S5-B-007 staged coarse higher-Q preparation
+
+UTC: 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne: 2026-11-08T12:48:14.439097+11:00.
+
+[The new specification](models/SF-higher-q-screen.md) and [preparation record](../reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/README.md) trace NUM-001/002/003, BND-001, REL-002, SCI-003/004 and REP-001/002 to the coarse Q17/Q19 driver, authenticated selected-source recovery, unchanged-step continuation and early-stop controls. This prepares an exploratory campaign; production motion outcomes and detailed convergence remain unmeasured. Q1's prior failure is retained and its corrective work parked under [ADR-0018](decisions/ADR-0018-coarse-higher-q-screen.md). Original acceptance thresholds and all older reports remain unchanged.
+
+## S5-B-007 coarse preparation assessment
+
+UTC: 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne: 2026-11-09T00:31:39.521682+11:00.
+
+[The immutable assessment](../reports/s5-b/007-higher-q-motion/assessments/20261108t133139z-d11d12c1/ASSESSMENT.md) adds NUM-001/002/003, BND-001, REL-002, SCI-003/004 and REP-001/002 evidence:79 full archived payloads and 23 NPZ files independently verified, all three short Q2 motion milestones replayed, and both higher-Q 200-iteration preparation outcomes retained as unresolved. No Q17/Q19 motion or half-dt confirmation ran. This closes assessment of the coarse screen, not stationary higher-Q admission, physical-mesh/domain convergence, curve identification or isolated-motion requirements. [ADR-0019](decisions/ADR-0019-higher-q-preparation-assessment.md) returns priority to Q2 controls with Q1 parked; all earlier failures and thresholds remain unchanged.

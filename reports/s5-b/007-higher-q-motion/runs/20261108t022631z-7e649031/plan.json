@@ -1,0 +1,135 @@
+{
+  "format": "EFT-higher-q-screen-v1",
+  "sources": {
+    "q17": {
+      "key": "q17",
+      "q": 17,
+      "model": "SF-J2015-static",
+      "nodes": 129,
+      "length": 15.36,
+      "archive_id": "20261104t023917z-b0d06afa",
+      "root_id": "r034",
+      "archive_path": "files/artifacts/q18-neighbours-20261102T022100+1100-165739/cases/q17-neighbour-129-pass0002/final.npz",
+      "sha256": "3e3ce644e184fc8702b13bb001e30708b785019f55ced3ecf2c28f75c9638216",
+      "bytes": 44416046,
+      "tar_offset": 285694976,
+      "index": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/20261104t023917z-b0d06afa-index.json",
+      "manifest": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/20261104t023917z-b0d06afa-r034-manifest.json"
+    },
+    "q19": {
+      "key": "q19",
+      "q": 19,
+      "model": "SF-J2015-static",
+      "nodes": 129,
+      "length": 15.36,
+      "archive_id": "20261104t023917z-b0d06afa",
+      "root_id": "r034",
+      "archive_path": "files/artifacts/q18-neighbours-20261102T022100+1100-165739/cases/q19-neighbour-129-pass0002/final.npz",
+      "sha256": "cb95e199902bc6ab5ee95fe7ca212c2017d098619e18aca81005c60d04fa50b4",
+      "bytes": 44456922,
+      "tar_offset": 11837592064,
+      "index": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/20261104t023917z-b0d06afa-index.json",
+      "manifest": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/20261104t023917z-b0d06afa-r034-manifest.json"
+    },
+    "q2": {
+      "key": "q2",
+      "q": 2,
+      "model": "SF-relativistic-neutral-v1",
+      "nodes": 127,
+      "length": 20.16,
+      "archive_id": "20261107t233600z-d1c399ad",
+      "root_id": "r001",
+      "archive_path": "files/rest/q2-z-n127-L20.16/latest.npz",
+      "sha256": "22e9f420373869521e3cb4d8fcdafa004e0af34eb95d0220ec952086b310cc23",
+      "bytes": 40930733,
+      "tar_offset": 6007870464,
+      "index": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/20261107t233600z-d1c399ad-index.json",
+      "manifest": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/20261107t233600z-d1c399ad-r001-manifest.json"
+    }
+  },
+  "models": [
+    {
+      "id": "q17",
+      "q": 17,
+      "axis": 2,
+      "source": "q17"
+    },
+    {
+      "id": "q19",
+      "q": 19,
+      "axis": 2,
+      "source": "q19"
+    }
+  ],
+  "coarse_rest": {
+    "nodes": 97,
+    "length": 23.04,
+    "spacing": 0.24,
+    "source_stride": 2
+  },
+  "reference_rest": {
+    "nodes": 127,
+    "length": 20.16,
+    "spacing": 0.16
+  },
+  "beta": 0.3,
+  "duration": 0.2,
+  "time_step": 0.01,
+  "confirmation_dt": 0.005,
+  "milestones": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "diagnostic_time": 0.01,
+  "snapshot_time": 0.05,
+  "shell_width": 2.0,
+  "initial_tail_reserve": 0.00075,
+  "expanded_guard_width": 3.0,
+  "expanded_guard_limit": 0.001,
+  "runtime_tail_reserve": 0.0009,
+  "readmission": {
+    "relative_force_l2": 0.0001,
+    "acceleration_max": 0.001,
+    "charge_relative_error": 0.05,
+    "iterations_per_pass": 50,
+    "checkpoint_every": 25,
+    "stagnation_relative_energy": 1e-10
+  },
+  "maximum_readmission_calls": 4,
+  "speed_stop_from_time": 0.1,
+  "limits": {
+    "energy_relative": 0.001,
+    "momentum_scaled": 0.001,
+    "shape_relative": 0.01,
+    "speed_relative": 0.01,
+    "rest_speed_absolute": 0.001,
+    "charge_relative_error": 0.05,
+    "tail_fraction": 0.001,
+    "particle_relative": 0.01
+  },
+  "confirmation_policy": "after both coarse candidates assessed; only original-gate passes receive one same-grid half-dt confirmation",
+  "temporal_screen_limits": {
+    "field_relative_l2": 0.0001,
+    "rate_relative_l2": 0.001
+  },
+  "followup": {
+    "rest_spacings": [
+      0.192,
+      0.16,
+      0.12
+    ],
+    "same_box_length": 23.04,
+    "rest_nodes": [
+      121,
+      145,
+      193
+    ],
+    "directions": [
+      0,
+      2
+    ],
+    "duration": 1.0,
+    "policy": "new immutable studies; prolongation of admitted coarse rest is a warm start only; freshly readmit and rerun motion from t0. If coarse topology/readmission fails, use authenticated original129 source rather than inheriting failed coarse state."
+  }
+}

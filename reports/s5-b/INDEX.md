@@ -1,6 +1,6 @@
 # S5-B: Neutral physical-time dynamics
 
-Updated: UTC 2026-11-08T01:09:15.758801+00:00; Australia/Melbourne 2026-11-08T12:09:15.758801+11:00.
+Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
 
 Active dynamics track; general isolated-motion acceptance remains open.
 
@@ -12,7 +12,7 @@ Active dynamics track; general isolated-motion acceptance remains open.
 | [s5-b-004](../../docs/plans/s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
 | [s5-b-005](../../docs/plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
 | [s5-b-006](../../docs/plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | assessed | open |
-| [s5-b-007](../../docs/plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | planned | open |
+| [s5-b-007](../../docs/plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | assessed | open |
 | [s5-b-008](../../docs/plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | assessed | open |
 | [s5-b-009](../../docs/plans/s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | assessed | open |
 

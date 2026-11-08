@@ -1,0 +1,55 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-08T02:14:27.407337+00:00",
+    "melbourne": "2026-11-08T13:14:27.407337+11:00"
+  },
+  "status": "passed",
+  "frozen_environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pytest": "9.2.0"
+  },
+  "small_software_controls": {
+    "higher_q_screen_tests": 25,
+    "existing_temporal_and_readmission_tests": 20,
+    "total_relevant_pytests": 45,
+    "record_invariant_tests": 14,
+    "archive_roundtrip_tests": 12
+  },
+  "selected_original_inputs": {
+    "q17": {
+      "sha256": "3e3ce644e184fc8702b13bb001e30708b785019f55ced3ecf2c28f75c9638216",
+      "bytes": 44416046,
+      "model": "SF-J2015-static",
+      "original_nodes": 129
+    },
+    "q19": {
+      "sha256": "cb95e199902bc6ab5ee95fe7ca212c2017d098619e18aca81005c60d04fa50b4",
+      "bytes": 44456922,
+      "model": "SF-J2015-static",
+      "original_nodes": 129
+    },
+    "q2": {
+      "sha256": "22e9f420373869521e3cb4d8fcdafa004e0af34eb95d0220ec952086b310cc23",
+      "bytes": 40930733,
+      "model": "SF-relativistic-neutral-v1",
+      "original_nodes": 127
+    }
+  },
+  "source_recovery_bytes_total": 129803701,
+  "unchanged_existing_numerical_files": 120,
+  "original_motion_limits_preserved": true,
+  "read_only_probe_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "native_production_optimizer_or_trajectory_launched": false,
+  "notes": [
+    "Read-only original-field decimation/interpolation and topology/residual checks only on production-sized inputs",
+    "Small nonlinear step/segmentation, early-stop and recovery controls used synthetic fields",
+    "Actual frozen environment was installed; local handover rehearsal reused it with fixture sync mocked",
+    "External GitHub operations were mocked in the real local archive/publication rehearsal"
+  ]
+}
