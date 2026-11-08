@@ -1,6 +1,6 @@
 # s7-001: Q1/Q2 symmetry and spin-method controls
 
-Updated: UTC 2026-11-08T13:25:06.959942+00:00; Australia/Melbourne 2026-11-09T00:25:06.959942+11:00.
+Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
 
 State: **planned**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 

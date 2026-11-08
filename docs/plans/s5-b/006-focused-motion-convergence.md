@@ -1,6 +1,6 @@
 # s5-b-006: Focused motion, mesh and domain convergence
 
-Updated: UTC 2026-11-08T13:25:06.959942+00:00; Australia/Melbourne 2026-11-09T00:25:06.959942+11:00.
+Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ The boundary-admitted T1 temporal tranche is assessed: six complete trajectories
 
 ## Next action and exit evidence
 
-Q1 speed correction is parked by the maintainer; retain its 1.563660% failure. Keep Q2 physical-grid/domain and centroid controls available as the fallback if the coarse S5-B-007 reference/candidates fail. Detailed low-Q work resumes through a new specified tranche, not automatically during higher-Q screening.
+Resume Q2 numerical controls after both coarse higher-Q preparations remain unresolved: isolate centroid/initialization and stationarity measurement effects, then specify fixed-box physical meshes and matched-spacing larger domains with fresh readmission and original tail reserves. Q1 correction stays parked; do not repeat completed temporal work without a new diagnostic reason.
 
 Temporal tranche assessed on Q1 L24.32/Q2 L20.16 at beta=0.3/T=1. S5-B-006 remains open for independent physical-mesh/domain and observation-window convergence, speed/momentum/shape gates and qualified classical-inertia sensitivity before higher-Q/quantum work. Original focused-motion and stationary-tail failures remain unchanged.
 
@@ -33,3 +33,4 @@ Dependencies: [s5-b-005](005-boost-initialization.md).
 - [docs/decisions/ADR-0016-q1-tail-settling-assessment.md](../../decisions/ADR-0016-q1-tail-settling-assessment.md)
 - [docs/models/SF-admitted-temporal.md](../../models/SF-admitted-temporal.md)
 - [docs/decisions/ADR-0017-admitted-temporal-assessment.md](../../decisions/ADR-0017-admitted-temporal-assessment.md)
+- [docs/decisions/ADR-0019-higher-q-preparation-assessment.md](../../decisions/ADR-0019-higher-q-preparation-assessment.md)

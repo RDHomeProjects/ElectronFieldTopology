@@ -53,3 +53,5 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 - [ADR-0017: admitted temporal convergence, tail mitigation and remaining physical-grid tests](ADR-0017-admitted-temporal-assessment.md).
 
 - [ADR-0018: park Q1 correction and run staged coarse Q17/Q19 motion screening](ADR-0018-coarse-higher-q-screen.md).
+
+- [ADR-0019: coarse higher-Q preparation assessment and return to Q2 controls](ADR-0019-higher-q-preparation-assessment.md).

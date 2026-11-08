@@ -1,0 +1,29 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-08T13:44:53.674016+00:00",
+    "melbourne": "2026-11-09T00:44:53.674016+11:00"
+  },
+  "scope": "Read-only retained-field/scalar/archive replay and report/administrative integrity; no new optimization or evolution.",
+  "completed": {
+    "compact_zip_members": 41,
+    "compact_hashed_members": 40,
+    "pinned_numerical_sources": 26,
+    "remote_archive_payload_files": 79,
+    "npz_files": 23,
+    "distinct_states": 12,
+    "field_numeric_comparisons": 234,
+    "independent_energy_current_expansion": true,
+    "corruption_and_provenance_tests": 4,
+    "administrative_integrity_tests": 14,
+    "documentation_markdown_files": 263,
+    "protected_baseline_files": 964
+  },
+  "essential_publication_checks": [
+    "python3 scripts/project_records.py check --compare-ref 92a5cc24c2b8192ed0b2b9d64e2e0a42f8414529",
+    "python3 scripts/check_docs.py",
+    "python3 -m unittest discover -s scripts -p test_project_records.py -v",
+    "git diff --cached --check"
+  ],
+  "interpretation": "Named metric replay shares frozen numerical instruments; expanded energy/current contractions and scalar fits provide separate consistency checks. Full field re-evaluation is not a new trajectory. Package installation/publication rehearsal is retained separately in the handover; remote writes are mocked there.",
+  "status": "passed"
+}

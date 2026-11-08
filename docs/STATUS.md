@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-08T13:25:06.959942+00:00; Australia/Melbourne 2026-11-09T00:25:06.959942+11:00.
+Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
 
 ## Current position
 
-Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-006**, Focused motion, mesh and domain convergence. Administrative progress is recorded in the study register below; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-007**, Q17/Q19 motion comparison. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-S5-B-007 coarse Q17/Q19 screen is recorded pending assessment (complete_pending_review). Q1 remains parked; original gates/failures and Q2 spatial/domain limits are retained.
+S5-B-007 is assessed: Q2 passes the short motion reference; Q17/Q19 exhaust 200 preparation iterations each without stationary admission, so higher-Q motion is untested. All 79 archive payloads and 23 NPZ states are independently verified. Q1 remains parked with its original failure retained.
 
-A coarse screen selects follow-up work and separates representation, preparation and moving-field failures. Detailed physical-grid/domain and long-time qualification remains open. Original 129-cubed sources and full coarse states are retained for finer restart/re-readmission; Q18 fresh-start and additional-Q studies remain registered.
+Stationary residuals, rather than the measured rest tails, block the coarse higher-Q arms. Return to Q2 numerical controls and physical-mesh/domain convergence; any additional higher-Q preparation/finer restart is a new conditional tranche with preserved original-source controls. No general isolated motion, curve identity, charge or quantum-spin conclusion follows.
 
 ## Next scientific task
 
-[s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md): Assess the coarse outcomes and verified full fields; select a finer candidate investigation or a return to low-Q numerical controls. Q1 stays parked.
+[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): Resume Q2 numerical controls after both coarse higher-Q preparations remain unresolved: isolate centroid/initialization and stationarity measurement effects, then specify fixed-box physical meshes and matched-spacing larger domains with fresh readmission and original tail reserves. Q1 correction stays parked; do not repeat completed temporal work without a new diagnostic reason.
 
 ## Study register
 
@@ -41,7 +41,7 @@ A coarse screen selects follow-up work and separates representation, preparation
 | [s5-b-004](plans/s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
 | [s5-b-005](plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
 | [s5-b-006](plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | assessed | open |
-| [s5-b-007](plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | recorded | open |
+| [s5-b-007](plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | assessed | open |
 | [s5-c-001](plans/s5-c/001-charged-model-audit.md) | Charged-model equation audit | assessed | blocked |
 | [s5-c-002](plans/s5-c/002-charged-theory-feasibility.md) | Charged-theory feasibility follow-up | deferred | blocked |
 | [s6-001](plans/s6/001-external-probes.md) | External-field and interaction benchmarks | planned | open |
