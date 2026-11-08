@@ -1,0 +1,33 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-08T01:18:26.489428+00:00",
+    "melbourne": "2026-11-08T12:18:26.489428+11:00"
+  },
+  "status": "passed",
+  "controls": [
+    "fresh additive patch and all essential checks pass",
+    "idempotent update preserves staging",
+    "changed numerical source rejected",
+    "wrong branch rejected without switching",
+    "changed Release asset identity rejected",
+    "package corruption rejected",
+    "stale PR-head read retried",
+    "real local commit; only expected patch paths committed",
+    "checked merge and already-merged retry handled",
+    "all120 numerical/config/lock files byte-identical",
+    "corrupt compact archive rejected",
+    "New SVG whitespace normalized with identical XML geometry; LF CSV values preserved"
+  ],
+  "github_operations": [
+    "push mocked",
+    "PR title/body PATCH mocked",
+    "hosted checks mocked as passing",
+    "exact-head merge mocked"
+  ],
+  "real_github_writes": 0,
+  "real_git_patch_backup_staging_commit_and_append_only_checks": true,
+  "updated_paths": 114,
+  "numerical_source_config_lock_pins_unchanged": 120,
+  "fixture": "/workspace/scratch/a825e53302cb/temporal-assessment-build/rehearsal-checkout",
+  "environment_note": "Workstation uv CLI replay delegated to assessment-host Python3.12.14 with installed NumPy/SciPy; no claim of reinstalling the frozen workstation environment. All GitHub reads/writes/checks mocked; no hosted CI executed from this host. The actual local source, patch, checksum, record and link checks were exercised."
+}

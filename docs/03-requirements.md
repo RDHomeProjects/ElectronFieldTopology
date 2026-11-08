@@ -104,3 +104,9 @@ UTC: 2026-11-05T06:49:56.783673+00:00; Australia/Melbourne: 2026-11-05T17:49:56.
 UTC: 2026-11-06T13:05:24.404933+00:00; Australia/Melbourne: 2026-11-07T00:05:24.404933+11:00.
 
 [The immutable assessment](../reports/s5-b/009-q1-tail-settling/assessments/20261106t130524z-7c67deae/ASSESSMENT.md) supplies bounded NUM-002/003, BND-001 and REP-001/002 evidence: all52 archive payloads authenticated,12 NPZ checkpoints/eight unique fields replayed, persistent L20.16 tail failure and L22.08 rest-shell mitigation with strict endpoint stationarity. Both native unresolved labels and the unfulfilled regular-endpoint certificate remain. Three raw-domain regions still differ; no motion/physical-grid/isolated-boundary or quantum/electron requirement is closed. [ADR-0016](decisions/ADR-0016-q1-tail-settling-assessment.md) returns priority to controlled motion convergence after a small reporting/termination audit. No original tolerance or published run is rewritten.
+
+## S5-B-006 boundary-admitted temporal assessment
+
+UTC: 2026-11-08T01:09:15.758801+00:00; Australia/Melbourne: 2026-11-08T12:09:15.758801+11:00.
+
+[The immutable assessment](../reports/s5-b/006-focused-motion-convergence/assessments/20261108t010058z-672ebb4c/ASSESSMENT.md) supplies bounded NUM-002/003, BND-001, REL-002 and REP-001/002 evidence:128 full archived files/52 NPZ states authenticated, six tail-controlled T1 trajectories replayed, and near-fourth-order matched-time refinement. All126 recorded tail observations pass; Q2 passes all original case gates, while Q1 retains its1.563660% speed failure. This supports the fixed-grid temporal tranche, not physical-grid/domain or isolated-motion closure. All historical failures and thresholds remain. [ADR-0017](decisions/ADR-0017-admitted-temporal-assessment.md) prioritizes centroid/initialization controls, fixed-box physical meshes and matched-spacing domains.

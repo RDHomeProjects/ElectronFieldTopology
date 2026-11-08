@@ -1,0 +1,12 @@
+UTC: 2026-11-08T01:18:26.489428+00:00; Australia/Melbourne: 2026-11-08T12:18:26.489428+11:00
+Essential checks passed in fresh-checkout rehearsal:
+- project_records.py check --compare-ref 6c214afe141ecd4c538acf7aafa72551c6adfd4d
+- check_docs.py: 252 Markdown files, local targets and fences
+- test_project_records.py: 14 controls passed
+- git diff --check and git diff --cached --check
+- compact scalar/provenance/gate replay: 62 members, 61 hashes, 126 tail observations, 3 retained Q1 speed failures
+- archive retention chain: 128 files, 52 NPZ, 6048737963 payload bytes
+- 120 numerical source/configuration/lock files unchanged
+- installer idempotence and corruption/source/branch/archive rejection controls passed
+- commit/push/PR update/stale-head retry/merge workflow rehearsed; GitHub reads and writes mocked
+Full numerical array replay is separately recorded in full-field-verification.json.
