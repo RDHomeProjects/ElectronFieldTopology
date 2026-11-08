@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-08T01:09:15.758801+00:00; Australia/Melbourne 2026-11-08T12:09:15.758801+11:00.
+Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-006**, Focused motion, mesh and domain convergence. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-The boundary-admitted T1 temporal tranche is assessed: six complete trajectories, zero failures across 126 recorded tail observations, near-fourth-order fixed-grid refinement. Q2 passes all seven original case gates; Q1 retains 1.563660% speed error against 1%. All 128 full archive files/52 NPZ records and matched-time fields were independently verified; historical failed milestones are retained.
+PR61 is merged. Q1 correction is parked with its 1.563660% speed failure retained. Q2 passed the prior bounded case gates; its spatial/domain work remains open. A staged coarse Q17/Q19 motion screen is prepared: short Q2 reference, bounded preparation and T=0.2 early stops, then half-dt confirmations for passing candidates only. No higher-Q production trajectory has been run by this preparation.
 
-Temporal refinement and the measured shell correction do not establish physical-mesh/domain convergence or isolated motion. Q1 speed still fails; endpoint/settling labels and earlier negative findings remain. Higher-Q motion, charged theory, quantum spin and apparatus milestones retain their prerequisites.
+A coarse screen selects follow-up work and separates representation, preparation and moving-field failures. Detailed physical-grid/domain and long-time qualification remains open. Original 129-cubed sources and full coarse states are retained for finer restart/re-readmission; Q18 fresh-start and additional-Q studies remain registered.
 
 ## Next scientific task
 
-[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): Freeze the next physical-grid/domain matrix: same-grid known-coasting and zero-speed centroid/initialization controls, at least three physical spacings at fixed admitted box, matched-spacing domain pairs, and crossed-direction controls as needed. Keep the original gates and analytic beta/rate; limited temporal confirmation on a future finest mesh rather than another broad dt sweep.
+[s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md): Run the Q2 short reference first, then bounded Q17/Q19 readmission and T=0.2 coarse motion with early original-gate stops. Assess both coarse arms before half-dt confirmations for passes only. Retain original fields and coarse checkpoints for a separately specified finer follow-up.
 
 ## Study register
 
@@ -41,7 +41,7 @@ Temporal refinement and the measured shell correction do not establish physical-
 | [s5-b-004](plans/s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
 | [s5-b-005](plans/s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
 | [s5-b-006](plans/s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | assessed | open |
-| [s5-b-007](plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | planned | open |
+| [s5-b-007](plans/s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | prepared | open |
 | [s5-c-001](plans/s5-c/001-charged-model-audit.md) | Charged-model equation audit | assessed | blocked |
 | [s5-c-002](plans/s5-c/002-charged-theory-feasibility.md) | Charged-theory feasibility follow-up | deferred | blocked |
 | [s6-001](plans/s6/001-external-probes.md) | External-field and interaction benchmarks | planned | open |
@@ -53,7 +53,7 @@ Temporal refinement and the measured shell correction do not establish physical-
 
 ## Claims and deferred work
 
-No accepted general isolated motion, full stability, emergent electric charge, quantum spin or electron model. Retain Q17/Q19 motion after low-Q control, Q18 fresh fine starts/conditioning and further Q values including optional Q20/Q24. Q18's repeatable linked outcome and unsuccessful hyperbolic reproduction stay recorded. The wider literature review remains incomplete and its level-4 work deferred.
+No accepted general isolated motion, full stability, emergent electric charge, quantum spin or electron model. Follow the registered priorities and readiness limits for Q17/Q19 motion, Q18 fresh fine starts/conditioning and further Q values including optional Q20/Q24. Q18's repeatable linked outcome and unsuccessful hyperbolic reproduction stay recorded. The wider literature review remains incomplete and its level-4 work deferred.
 
 Use [the current roadmap](06-development-plan.md) for ordering and [stage report indexes](../reports/README.md) for evidence. Scientific specifications, hypotheses and acceptance thresholds are not changed by this administration update.
 

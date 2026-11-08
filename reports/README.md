@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-08T01:09:15.758801+00:00; Australia/Melbourne 2026-11-08T12:09:15.758801+11:00.
+Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-006: Focused motion, mesh and domain convergence](s5-b/006-focused-motion-convergence/assessments/20261108t010058z-672ebb4c/ASSESSMENT.md) — The boundary-admitted T1 temporal tranche is assessed: six complete trajectories, zero failures across 126 recorded tail observations, near-fourth-order fixed-grid refinement. Q2 passes all seven original case gates; Q1 retains 1.563660% speed error against 1%. All 128 full archive files/52 NPZ records and matched-time fields were independently verified; historical failed milestones are retained.
+[s5-b-006: Focused motion, mesh and domain convergence](s5-b/006-focused-motion-convergence/assessments/20261108t010058z-672ebb4c/ASSESSMENT.md) — PR61 is merged. Q1 correction is parked with its 1.563660% speed failure retained. Q2 passed the prior bounded case gates; its spatial/domain work remains open. A staged coarse Q17/Q19 motion screen is prepared: short Q2 reference, bounded preparation and T=0.2 early stops, then half-dt confirmations for passing candidates only. No higher-Q production trajectory has been run by this preparation.

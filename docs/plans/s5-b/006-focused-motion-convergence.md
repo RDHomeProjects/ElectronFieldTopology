@@ -1,6 +1,6 @@
 # s5-b-006: Focused motion, mesh and domain convergence
 
-Updated: UTC 2026-11-08T01:09:15.758801+00:00; Australia/Melbourne 2026-11-08T12:09:15.758801+11:00.
+Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ The boundary-admitted T1 temporal tranche is assessed: six complete trajectories
 
 ## Next action and exit evidence
 
-Freeze the next physical-grid/domain matrix: same-grid known-coasting and zero-speed centroid/initialization controls, at least three physical spacings at fixed admitted box, matched-spacing domain pairs, and crossed-direction controls as needed. Keep the original gates and analytic beta/rate; limited temporal confirmation on a future finest mesh rather than another broad dt sweep.
+Q1 speed correction is parked by the maintainer; retain its 1.563660% failure. Keep Q2 physical-grid/domain and centroid controls available as the fallback if the coarse S5-B-007 reference/candidates fail. Detailed low-Q work resumes through a new specified tranche, not automatically during higher-Q screening.
 
 Temporal tranche assessed on Q1 L24.32/Q2 L20.16 at beta=0.3/T=1. S5-B-006 remains open for independent physical-mesh/domain and observation-window convergence, speed/momentum/shape gates and qualified classical-inertia sensitivity before higher-Q/quantum work. Original focused-motion and stationary-tail failures remain unchanged.
 

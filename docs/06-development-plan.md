@@ -1,12 +1,12 @@
 # Staged development plan
 
-Updated: UTC 2026-11-08T01:09:15.758801+00:00; Australia/Melbourne 2026-11-08T12:09:15.758801+11:00.
+Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
 ## Current priority
 
-Registered administrative activities are assessed. The next scientific task is **s5-b-006: Focused motion, mesh and domain convergence**. Freeze the next physical-grid/domain matrix: same-grid known-coasting and zero-speed centroid/initialization controls, at least three physical spacings at fixed admitted box, matched-spacing domain pairs, and crossed-direction controls as needed. Keep the original gates and analytic beta/rate; limited temporal confirmation on a future finest mesh rather than another broad dt sweep.
+Registered administrative activities are assessed. The next scientific task is **s5-b-007: Q17/Q19 motion comparison**. Run the Q2 short reference first, then bounded Q17/Q19 readmission and T=0.2 coarse motion with early original-gate stops. Assess both coarse arms before half-dt confirmations for passes only. Retain original fields and coarse checkpoints for a separately specified finer follow-up.
 
 ## Stage map
 
@@ -30,8 +30,8 @@ Registered administrative activities are assessed. The next scientific task is *
 
 ## Ordered work and dependencies
 
-1. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Freeze the next physical-grid/domain matrix: same-grid known-coasting and zero-speed centroid/initialization controls, at least three physical spacings at fixed admitted box, matched-spacing domain pairs, and crossed-direction controls as needed. Keep the original gates and analytic beta/rate; limited temporal confirmation on a future finest mesh rather than another broad dt sweep.
-2. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Proceed conditionally after adequate low-Q control with matched physical resolution, domain and observation-window checks.
+1. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Run the Q2 short reference first, then bounded Q17/Q19 readmission and T=0.2 coarse motion with early original-gate stops. Assess both coarse arms before half-dt confirmations for passes only. Retain original fields and coarse checkpoints for a separately specified finer follow-up.
+2. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Q1 speed correction is parked by the maintainer; retain its 1.563660% failure. Keep Q2 physical-grid/domain and centroid controls available as the fallback if the coarse S5-B-007 reference/candidates fail. Detailed low-Q work resumes through a new specified tranche, not automatically during higher-Q screening.
 3. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
 4. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Select a bounded comparison after Q18 follow-up; do not start an unbounded catalogue.
 

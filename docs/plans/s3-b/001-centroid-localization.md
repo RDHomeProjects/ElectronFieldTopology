@@ -1,6 +1,6 @@
 # s3-b-001: Centroid and localization
 
-Updated: UTC 2026-11-08T01:09:15.758801+00:00; Australia/Melbourne 2026-11-08T12:09:15.758801+11:00.
+Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
 
 State: **assessed**. Scientific gate: **bounded**. State records workflow progress, not a physical claim.
 
