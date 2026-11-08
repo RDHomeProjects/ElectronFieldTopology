@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-08T01:48:14.439097+00:00",
-    "melbourne": "2026-11-08T12:48:14.439097+11:00"
+    "utc": "2026-11-08T13:09:37.946748+00:00",
+    "melbourne": "2026-11-09T00:09:37.946748+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -850,11 +850,11 @@
       "number": 7,
       "slug": "higher-q-motion",
       "title": "Q17/Q19 motion comparison",
-      "state": "prepared",
+      "state": "recorded",
       "gate": "open",
       "question": "Do short coarse Q17/Q19 trajectories justify finer motion work while preserving a quick return to low-Q controls?",
-      "finding": "Q1 correction is parked. Read-only archived-field probes support a coarse 97-cubed representation of Q17/Q19 with positive cell continuity and Hopf quadrature within 5%; D4 stationary readmission and all production trajectories remain to be run locally.",
-      "next_action": "Run the Q2 short reference first, then bounded Q17/Q19 readmission and T=0.2 coarse motion with early original-gate stops. Assess both coarse arms before half-dt confirmations for passes only. Retain original fields and coarse checkpoints for a separately specified finer follow-up.",
+      "finding": "Local coarse screen recorded with status complete_pending_review. Original reference/candidate flags, early stops and preparation outcomes await scientific assessment; Q1 stays parked.",
+      "next_action": "Archive and verify the full inputs/checkpoints, then assess the coarse results and select finer candidate work or a return to low-Q controls; no automatic fine sweep.",
       "exit_evidence": "Recorded source/admission/control and short-motion outcomes, including all failed/skipped gates and full verified Release retention. Coarse passes select finer tests; spatial/domain and longer-time convergence, curve identification and higher-level interpretation stay open.",
       "depends_on": [
         "s5-b-006",
@@ -881,6 +881,11 @@
           "role": "preparation",
           "path": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/README.md",
           "label": "Coarse higher-Q orchestration, source-recovery and early-stop controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/007-higher-q-motion/runs/20261108t022631z-7e649031/README.md",
+          "label": "Staged coarse higher-Q screening measurements and parent-state lineage"
         }
       ]
     },
@@ -1253,7 +1258,7 @@
   ],
   "current": {
     "latest_assessed_study": "s5-b-006",
-    "summary": "PR61 is merged. Q1 correction is parked with its 1.563660% speed failure retained. Q2 passed the prior bounded case gates; its spatial/domain work remains open. A staged coarse Q17/Q19 motion screen is prepared: short Q2 reference, bounded preparation and T=0.2 early stops, then half-dt confirmations for passing candidates only. No higher-Q production trajectory has been run by this preparation.",
+    "summary": "S5-B-007 coarse Q17/Q19 screen is recorded pending assessment (complete_pending_review). Q1 remains parked; original gates/failures and Q2 spatial/domain limits are retained.",
     "limits": "A coarse screen selects follow-up work and separates representation, preparation and moving-field failures. Detailed physical-grid/domain and long-time qualification remains open. Original 129-cubed sources and full coarse states are retained for finer restart/re-readmission; Q18 fresh-start and additional-Q studies remain registered."
   }
 }

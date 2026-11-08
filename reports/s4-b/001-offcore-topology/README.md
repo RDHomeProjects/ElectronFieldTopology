@@ -1,6 +1,6 @@
 # s4-b-001: Bounded off-core diagnosis — evidence index
 
-Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
+Updated: UTC 2026-11-08T13:09:37.946748+00:00; Australia/Melbourne 2026-11-09T00:09:37.946748+11:00.
 
 [Current study plan](../../../docs/plans/s4-b/001-offcore-topology.md). State: assessed; scientific gate: bounded.
 

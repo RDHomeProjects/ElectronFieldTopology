@@ -1,6 +1,6 @@
 # Study plans
 
-Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
+Updated: UTC 2026-11-08T13:09:37.946748+00:00; Australia/Melbourne 2026-11-09T00:09:37.946748+11:00.
 
 Each study has a stable stage/number and one current plan below. Earlier flat plan files remain source specifications at their published paths; their historical next-step wording is superseded by the register.
 
@@ -29,7 +29,7 @@ Each study has a stable stage/number and one current plan below. Earlier flat pl
 | [s5-b-004](s5-b/004-motion-diagnostics.md) | Full-field motion diagnostics | assessed | open |
 | [s5-b-005](s5-b/005-boost-initialization.md) | Boost initialization and field registration | assessed | open |
 | [s5-b-006](s5-b/006-focused-motion-convergence.md) | Focused motion, mesh and domain convergence | assessed | open |
-| [s5-b-007](s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | prepared | open |
+| [s5-b-007](s5-b/007-higher-q-motion.md) | Q17/Q19 motion comparison | recorded | open |
 | [s5-c-001](s5-c/001-charged-model-audit.md) | Charged-model equation audit | assessed | blocked |
 | [s5-c-002](s5-c/002-charged-theory-feasibility.md) | Charged-theory feasibility follow-up | deferred | blocked |
 | [s6-001](s6/001-external-probes.md) | External-field and interaction benchmarks | planned | open |

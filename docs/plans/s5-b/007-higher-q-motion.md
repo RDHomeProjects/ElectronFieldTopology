@@ -1,8 +1,8 @@
 # s5-b-007: Q17/Q19 motion comparison
 
-Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
+Updated: UTC 2026-11-08T13:09:37.946748+00:00; Australia/Melbourne 2026-11-09T00:09:37.946748+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Do short coarse Q17/Q19 trajectories justify finer motion work while preserving 
 
 ## Evidence and present finding
 
-Q1 correction is parked. Read-only archived-field probes support a coarse 97-cubed representation of Q17/Q19 with positive cell continuity and Hopf quadrature within 5%; D4 stationary readmission and all production trajectories remain to be run locally.
+Local coarse screen recorded with status complete_pending_review. Original reference/candidate flags, early stops and preparation outcomes await scientific assessment; Q1 stays parked.
 
 ## Next action and exit evidence
 
-Run the Q2 short reference first, then bounded Q17/Q19 readmission and T=0.2 coarse motion with early original-gate stops. Assess both coarse arms before half-dt confirmations for passes only. Retain original fields and coarse checkpoints for a separately specified finer follow-up.
+Archive and verify the full inputs/checkpoints, then assess the coarse results and select finer candidate work or a return to low-Q controls; no automatic fine sweep.
 
 Recorded source/admission/control and short-motion outcomes, including all failed/skipped gates and full verified Release retention. Coarse passes select finer tests; spatial/domain and longer-time convergence, curve identification and higher-level interpretation stay open.
 

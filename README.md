@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne 2026-11-08T12:48:14.439097+11:00.
+Updated: UTC 2026-11-08T13:09:37.946748+00:00; Australia/Melbourne 2026-11-09T00:09:37.946748+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-PR61 is merged. Q1 correction is parked with its 1.563660% speed failure retained. Q2 passed the prior bounded case gates; its spatial/domain work remains open. A staged coarse Q17/Q19 motion screen is prepared: short Q2 reference, bounded preparation and T=0.2 early stops, then half-dt confirmations for passing candidates only. No higher-Q production trajectory has been run by this preparation.
+S5-B-007 coarse Q17/Q19 screen is recorded pending assessment (complete_pending_review). Q1 remains parked; original gates/failures and Q2 spatial/domain limits are retained.
 
 A coarse screen selects follow-up work and separates representation, preparation and moving-field failures. Detailed physical-grid/domain and long-time qualification remains open. Original 129-cubed sources and full coarse states are retained for finer restart/re-readmission; Q18 fresh-start and additional-Q studies remain registered.
 
-Next: **s5-b-007: Q17/Q19 motion comparison**. Run the Q2 short reference first, then bounded Q17/Q19 readmission and T=0.2 coarse motion with early original-gate stops. Assess both coarse arms before half-dt confirmations for passes only. Retain original fields and coarse checkpoints for a separately specified finer follow-up.
+Next: **s5-b-007: Q17/Q19 motion comparison**. Archive and verify the full inputs/checkpoints, then assess the coarse results and select finer candidate work or a return to low-Q controls; no automatic fine sweep.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 
