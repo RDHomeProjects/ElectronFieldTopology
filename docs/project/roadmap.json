@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-07T23:35:40.416170+00:00",
-    "melbourne": "2026-11-08T10:35:40.416170+11:00"
+    "utc": "2026-11-08T00:35:11.468143+00:00",
+    "melbourne": "2026-11-08T11:35:11.468143+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -779,7 +779,7 @@
       "gate": "open",
       "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
       "finding": "Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance. New combined audit/admission/temporal results recorded: 2/2 models have complete reserve-qualified three-dt families; all rejected domains, incomplete families and original scientific failures are retained pending assessment.",
-      "next_action": "Archive and verify every new field/snapshot, then assess endpoint audit, boundary selection, matched-time full-state refinement and original shape/speed/momentum/tail gates. No mesh/domain independence follows from temporal refinement.",
+      "next_action": "Assess the combined endpoint audit, admitted-domain selection and matched-time three-dt field comparisons with the original motion gates; preserve all safety stops and remaining mesh/domain limitations.",
       "exit_evidence": "Focused initialization/time-window tranche assessed; convergence remains outstanding. Require independent temporal/full-state comparisons, domain and third-physical-grid evidence, original tail/speed/momentum gates and bounded classical-inertia sensitivity before higher-Q or quantum work. Full native fields retained in verified Release catalog.",
       "depends_on": [
         "s5-b-005"
@@ -830,6 +830,11 @@
           "role": "measurement",
           "path": "reports/s5-b/006-focused-motion-convergence/runs/20261106t212927z-589f5f5d/README.md",
           "label": "Combined endpoint audit and admitted T1 temporal measurements"
+        },
+        {
+          "role": "verification",
+          "path": "data/archives/20261107t233600z-d1c399ad/README.md",
+          "label": "Full audit/temporal fields and snapshots: verified Release archive"
         }
       ]
     },

@@ -1,6 +1,6 @@
 # Project status
 
-Updated: UTC 2026-11-07T23:35:40.416170+00:00; Australia/Melbourne 2026-11-08T10:35:40.416170+11:00.
+Updated: UTC 2026-11-08T00:35:11.468143+00:00; Australia/Melbourne 2026-11-08T11:35:11.468143+11:00.
 
 ## Current position
 
@@ -12,7 +12,7 @@ A stationary shell pass does not establish domain independence or moving-field a
 
 ## Next scientific task
 
-[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): Archive and verify every new field/snapshot, then assess endpoint audit, boundary selection, matched-time full-state refinement and original shape/speed/momentum/tail gates. No mesh/domain independence follows from temporal refinement.
+[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): Assess the combined endpoint audit, admitted-domain selection and matched-time three-dt field comparisons with the original motion gates; preserve all safety stops and remaining mesh/domain limitations.
 
 ## Study register
 

@@ -1,6 +1,6 @@
 # s5-b-006: Focused motion, mesh and domain convergence
 
-Updated: UTC 2026-11-07T23:35:40.416170+00:00; Australia/Melbourne 2026-11-08T10:35:40.416170+11:00.
+Updated: UTC 2026-11-08T00:35:11.468143+00:00; Australia/Melbourne 2026-11-08T11:35:11.468143+11:00.
 
 State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=
 
 ## Next action and exit evidence
 
-Archive and verify every new field/snapshot, then assess endpoint audit, boundary selection, matched-time full-state refinement and original shape/speed/momentum/tail gates. No mesh/domain independence follows from temporal refinement.
+Assess the combined endpoint audit, admitted-domain selection and matched-time three-dt field comparisons with the original motion gates; preserve all safety stops and remaining mesh/domain limitations.
 
 Focused initialization/time-window tranche assessed; convergence remains outstanding. Require independent temporal/full-state comparisons, domain and third-physical-grid evidence, original tail/speed/momentum gates and bounded classical-inertia sensitivity before higher-Q or quantum work. Full native fields retained in verified Release catalog.
 

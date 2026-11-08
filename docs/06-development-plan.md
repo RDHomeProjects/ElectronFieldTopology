@@ -1,12 +1,12 @@
 # Staged development plan
 
-Updated: UTC 2026-11-07T23:35:40.416170+00:00; Australia/Melbourne 2026-11-08T10:35:40.416170+11:00.
+Updated: UTC 2026-11-08T00:35:11.468143+00:00; Australia/Melbourne 2026-11-08T11:35:11.468143+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
 ## Current priority
 
-Registered administrative activities are assessed. The next scientific task is **s5-b-006: Focused motion, mesh and domain convergence**. Archive and verify every new field/snapshot, then assess endpoint audit, boundary selection, matched-time full-state refinement and original shape/speed/momentum/tail gates. No mesh/domain independence follows from temporal refinement.
+Registered administrative activities are assessed. The next scientific task is **s5-b-006: Focused motion, mesh and domain convergence**. Assess the combined endpoint audit, admitted-domain selection and matched-time three-dt field comparisons with the original motion gates; preserve all safety stops and remaining mesh/domain limitations.
 
 ## Stage map
 
@@ -30,7 +30,7 @@ Registered administrative activities are assessed. The next scientific task is *
 
 ## Ordered work and dependencies
 
-1. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Archive and verify every new field/snapshot, then assess endpoint audit, boundary selection, matched-time full-state refinement and original shape/speed/momentum/tail gates. No mesh/domain independence follows from temporal refinement.
+1. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Assess the combined endpoint audit, admitted-domain selection and matched-time three-dt field comparisons with the original motion gates; preserve all safety stops and remaining mesh/domain limitations.
 2. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Proceed conditionally after adequate low-Q control with matched physical resolution, domain and observation-window checks.
 3. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
 4. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Select a bounded comparison after Q18 follow-up; do not start an unbounded catalogue.

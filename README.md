@@ -22,7 +22,7 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-07T23:35:40.416170+00:00; Australia/Melbourne 2026-11-08T10:35:40.416170+11:00.
+Updated: UTC 2026-11-08T00:35:11.468143+00:00; Australia/Melbourne 2026-11-08T11:35:11.468143+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
@@ -30,7 +30,7 @@ S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.
 
 A stationary shell pass does not establish domain independence or moving-field acceptance. Common-core raw-field difference is 1.66% between L20.16 and L22.08; all earlier motion tail/shape/speed/momentum failures remain unchanged. Physical mesh/time/domain convergence, isolated motion, charge, quantum spin and electron acceptance stay open.
 
-Next: **s5-b-006: Focused motion, mesh and domain convergence**. Archive and verify every new field/snapshot, then assess endpoint audit, boundary selection, matched-time full-state refinement and original shape/speed/momentum/tail gates. No mesh/domain independence follows from temporal refinement.
+Next: **s5-b-006: Focused motion, mesh and domain convergence**. Assess the combined endpoint audit, admitted-domain selection and matched-time three-dt field comparisons with the original motion gates; preserve all safety stops and remaining mesh/domain limitations.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 
