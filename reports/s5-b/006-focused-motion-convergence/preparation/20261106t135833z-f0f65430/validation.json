@@ -1,0 +1,95 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-06T14:24:17.099811+00:00",
+    "melbourne": "2026-11-07T01:24:17.099811+11:00"
+  },
+  "status": "validated_preparation; native_production_pending",
+  "test_results": {
+    "targeted_before_final_provenance_only_changes": "64 passed in140.77s; included original13 temporal controls",
+    "final_temporal_controls": "15 passed in59.56s, including2 real preparation/measurement integration branches",
+    "project_record_controls": 14,
+    "workstation_archive_controls": 12,
+    "distinct_targeted_tests_exercised": 66,
+    "full_final_wrapper_attempt": "Incomplete log; not counted as passing evidence"
+  },
+  "independent_controls": {
+    "recorded_at": {
+      "utc": "2026-11-06T14:16:48.215535+00:00",
+      "melbourne": "2026-11-07T01:16:48.215535+11:00"
+    },
+    "rows": [
+      {
+        "dt": 0.2,
+        "error": 2.7792037713215225e-06,
+        "unit_error": 2.220446049250313e-16,
+        "tangency_error": 0.0
+      },
+      {
+        "dt": 0.1,
+        "error": 1.7610957199388888e-07,
+        "unit_error": 0.0,
+        "tangency_error": 0.0
+      },
+      {
+        "dt": 0.05,
+        "error": 1.106232867487475e-08,
+        "unit_error": 1.1102230246251565e-16,
+        "tangency_error": 5.551115123125783e-17
+      }
+    ],
+    "orders": [
+      3.9801263863875853,
+      3.9927463082764394
+    ],
+    "passed": true,
+    "scope": "Closed-form temporal instrument control only, not soliton acceptance."
+  },
+  "native_source_probe": "native-admission-probe.json; real retained hashes/projection/tails, no new production solve",
+  "handover_rehearsal": "handover-validation.json; fresh install/read-only main fetch/local backup and commit; publication/archive/merge mutations mocked",
+  "preserved_numerical_kernel_sha256": {
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+    "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+    "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+    "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+    "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+    "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+    "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4"
+  },
+  "numerical_source_files_bound": [
+    "sf_temporal.py",
+    "sf_temporal_run.py",
+    "sf_temporal_metrics.py",
+    "sf_temporal_local.py",
+    "sf_focused_motion.py",
+    "sf_reconstruction.py",
+    "sf_readmission.py",
+    "sf_tail_domain.py",
+    "sf_q1_metrics.py",
+    "sf_q1_settling.py",
+    "sf_time.py",
+    "sf_time_run.py",
+    "sf_time_initial.py",
+    "sf_time_controls.py",
+    "sf_dynamics.py",
+    "sf_checkpoints.py",
+    "sf_motion_metrics.py",
+    "sf_motion_diagnostics.py",
+    "sf_boost_study.py",
+    "skyrme.py",
+    "sf_preview.py",
+    "sf_dynamics_admission.py",
+    "sf_motion_local.py"
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "production_expected": "uv frozen lock, Python3.12.14; no GPU/static-functional substitution"
+  },
+  "github_mutations_performed": false,
+  "production_trajectory_performed": false,
+  "scope": "Software controls, historical audit replay and read-only source probe; native domains and T1 temporal results remain to be run locally"
+}

@@ -1,0 +1,44 @@
+{
+  "study_id": "s5-b-006",
+  "record_id": "20261108t010058z-672ebb4c",
+  "role": "assessment",
+  "recorded_at": {
+    "utc": "2026-11-08T01:09:15.758801+00:00",
+    "melbourne": "2026-11-08T12:09:15.758801+11:00"
+  },
+  "source_commit": "422bbcf59810938d26437f7dce9f6be83e3fb1a8",
+  "publication_base": "6c214afe141ecd4c538acf7aafa72551c6adfd4d",
+  "outcome": "tail mitigation and fixed-grid temporal refinement supported; Q1 speed failure retained; physical-mesh/domain convergence next",
+  "input_sha256": {
+    "evidence.zip": "9c57be7d19ef234e16f05fee517a8146ae71c5de20edb53d5dcb4fdec0f861d1",
+    "publication_terminal_uncompressed": "8600971bcbfb9bb14e74951d1778ae7f71c59df97d1efc30cf3079afdf396e05"
+  },
+  "config_sha256": {
+    "study": "1ac50a5fc9cc64605a88bfbbc5a46edfd01353a91ee7a56b56c723c9bfe98b78"
+  },
+  "commands": [
+    "uv run --frozen --python 3.12.14 python verify_assessment.py --repo REPO --evidence EVIDENCE --output verification.json",
+    "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 uv run --frozen --python 3.12.14 python replay_fields.py --repo REPO --run RESTORED_RUN --evidence EVIDENCE --output full-field-verification.json"
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "model_and_units": "Unchanged neutral D4 nodal Hamiltonian, projected RK4, metric +---, c=1, dimensionless time/length/energy, CPU float64; beta0.3/T1",
+  "field_retention": "Verified GitHub Release archive-workstation-20261107t233600z-d1c399ad; Git catalog data/archives/20261107t233600z-d1c399ad; all128 payload files independently downloaded/hash verified",
+  "limitations": [
+    "One physical grid/domain and direction per Q at beta0.3/T1",
+    "Q1 original speed criterion fails at all three time steps",
+    "126 tail observations; no assertion about every intermediate instant",
+    "009 native unresolved labels and original24 tail failures unchanged",
+    "No physical-grid/domain, isolated-motion, spin/charge or electron closure"
+  ],
+  "supersedes": null,
+  "ai_assistance": "AI-assisted replay, interpretation and publication tooling; human maintainer review required for scientific interpretation.",
+  "administrative_validation": {
+    "record_invariant_tests": 14,
+    "local_handover_controls": "passed; actual Git patch/backup/staging/commit tested, GitHub operations mocked",
+    "reference": "handover-validation.json"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "format": "EFT-admitted-temporal-v1",
+  "sources": {
+    "q1": {
+      "q": 1,
+      "nodes": 139,
+      "length": 22.08,
+      "checkpoint": "readmission/q1-n139-L22.08/latest.npz",
+      "checkpoint_sha256": "f463a3975642593d8b36ecd984bf4f9fd5766aef5805154adc9017cce22f2255",
+      "published_run": "reports/s5-b/009-q1-tail-settling/runs/20261105t212644z-103ef9f4",
+      "case_id": "q1-n139-L22.08",
+      "evidence_sha256": "5cc3460d8fa9ddeb6525757ccebfad471088ea6103e248aaa2198a8f24beef27",
+      "artifact": "artifacts/s5-b/009-q1-tail-settling/20261105t212644z-103ef9f4",
+      "catalog": "data/archives/20261106t125605z-da3924bf/CATALOG.json"
+    },
+    "q2": {
+      "q": 2,
+      "nodes": 127,
+      "length": 20.16,
+      "checkpoint": "readmission/q2-n127-L20.16/latest.npz",
+      "checkpoint_sha256": "2172e56ee9357749ccfa5d30d42f319eede17158a15da39ceddd463686e0be0e",
+      "published_run": "reports/s5-b/008-tail-domain-screening/runs/20261105t053203z-576d1edc",
+      "case_id": "q2-n127-L20.16",
+      "evidence_sha256": "721c3b28762ddf5880ec8cfbaeb65c08097b86fc01bc53c37d13ef1410c5b4fa",
+      "artifact": "artifacts/s5-b/008-tail-domain-screening/20261105t053203z-576d1edc",
+      "catalog": "data/archives/20261105t063134z-4cd07212/CATALOG.json"
+    }
+  },
+  "models": [
+    {
+      "id": "q1-x",
+      "q": 1,
+      "axis": 0,
+      "source": "q1",
+      "domains": [
+        {
+          "nodes": 153,
+          "length": 24.32
+        },
+        {
+          "nodes": 167,
+          "length": 26.56
+        }
+      ]
+    },
+    {
+      "id": "q2-z",
+      "q": 2,
+      "axis": 2,
+      "source": "q2",
+      "domains": [
+        {
+          "nodes": 127,
+          "length": 20.16
+        },
+        {
+          "nodes": 139,
+          "length": 22.08
+        }
+      ]
+    }
+  ],
+  "spacing": 0.16,
+  "beta": 0.3,
+  "duration": 1.0,
+  "time_steps": [
+    0.01,
+    0.005,
+    0.0025
+  ],
+  "diagnostic_time": 0.05,
+  "checkpoint_time": 0.25,
+  "shell_width": 2.0,
+  "initial_tail_reserve": 0.00075,
+  "runtime_tail_reserve": 0.0009,
+  "expanded_guard_width": 3.0,
+  "expanded_guard_limit": 0.001,
+  "common_nodes": 73,
+  "fixed_comoving_half_width": 4.0,
+  "profile_half_widths": [
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0
+  ],
+  "readmission": {
+    "relative_force_l2": 0.0001,
+    "acceleration_max": 0.001,
+    "charge_relative_error": 0.05,
+    "iterations_per_pass": 200,
+    "checkpoint_every": 25,
+    "stagnation_relative_energy": 1e-10
+  },
+  "readmission_passes": 6,
+  "limits": {
+    "energy_relative": 0.001,
+    "momentum_scaled": 0.001,
+    "shape_relative": 0.01,
+    "speed_relative": 0.01,
+    "rest_speed_absolute": 0.001,
+    "charge_relative_error": 0.05,
+    "tail_fraction": 0.001,
+    "particle_relative": 0.01
+  },
+  "comparison_times": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "tail_fraction_limit": 0.001
+}

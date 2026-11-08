@@ -1,0 +1,48 @@
+{
+  "study_id": "s5-b-006",
+  "record_id": "20261106t135833z-f0f65430",
+  "role": "preparation",
+  "recorded_at": {
+    "utc": "2026-11-06T13:58:33.492062+00:00",
+    "melbourne": "2026-11-07T00:58:33.492062+11:00"
+  },
+  "source_commit": "4e4ff50657fa312a4e764a0ec53a42e422a183da",
+  "outcome": "validated combined audit/admission/temporal preparation; 66 distinct targeted tests exercised, 14 records and 12 archive controls; native results pending",
+  "config_sha256": {
+    "study": "f4b4ae7d342cf63c81f87dccd333ee2ef071fe4b62c49f0499d175c0a450d8be"
+  },
+  "input_sha256": {
+    "q1": "f463a3975642593d8b36ecd984bf4f9fd5766aef5805154adc9017cce22f2255",
+    "q2": "2172e56ee9357749ccfa5d30d42f319eede17158a15da39ceddd463686e0be0e"
+  },
+  "evidence_sha256": {
+    "native-admission-probe.json": "f2f16bdd4d9263ddfe090b3617ff3601684d0907bcf74105c8f01f5a7048f7ba",
+    "validation.json": "70e15d23f56584c589db310923429733df90d270cfcb8ec73583a977688afa9c",
+    "README.md": "9f5d3aff548d4c20ba276b411a005f30523a9c147a7a9d2f8a7d988d0e9020be",
+    "audit-replay.json": "6e430be1e02d479608bd52d69945ab9845afe7aa999285243ee484f4a32bad3f",
+    "handover-validation.json": "2c47ed036c29b57db78f3e3b8e30e9ce1bab70ee7d6267f1da25e2750048d95f",
+    "control-tests.txt": "78f0e16bfb1268270530cc035a411d285f2faf407114eb3f837372f1551d132f"
+  },
+  "commands": [
+    "python -m pytest -q tests/test_sf_temporal.py tests/test_sf_time.py tests/test_sf_readmission.py tests/test_sf_focused_motion.py",
+    "python3 scripts/project_records.py check --compare-ref 4e4ff50657fa312a4e764a0ec53a42e422a183da",
+    "python -m electron_field_topology.sf_temporal_local start --source SOURCE_MAP"
+  ],
+  "environment": {
+    "scope": "Software fixtures and read-only retained-source probe; native workstation environment is recorded at launch"
+  },
+  "model_and_units": "Unchanged neutral D4/RK4; metric +---; CPU float64; c=1; dimensionless T1",
+  "field_retention": "Original sources remain read-only; new full fields/snapshots/handover require a verified Release archive",
+  "limitations": [
+    "No production trajectory in preparation",
+    "Adaptive finite domain selection is not domain convergence",
+    "Between-observation tail maxima unknown",
+    "Original negative scientific gates retained",
+    "No charge/spin/electron acceptance"
+  ],
+  "supersedes": null,
+  "validation_finished_at": {
+    "utc": "2026-11-06T14:24:17.099811+00:00",
+    "melbourne": "2026-11-07T01:24:17.099811+11:00"
+  }
+}

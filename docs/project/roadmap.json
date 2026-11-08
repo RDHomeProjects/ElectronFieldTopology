@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-06T13:05:24.404933+00:00",
-    "melbourne": "2026-11-07T00:05:24.404933+11:00"
+    "utc": "2026-11-08T01:09:15.758801+00:00",
+    "melbourne": "2026-11-08T12:09:15.758801+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -778,9 +778,9 @@
       "state": "assessed",
       "gate": "open",
       "question": "Which residuals survive improved initialization, a third physical mesh and a larger matched-spacing box?",
-      "finding": "Focused tranche assessed: 48 fixed-layer admissions pass; eight arms complete T=1/2/3. Cubic improves shape in all 12 matched comparisons, but 24/24 milestone tail gates fail, with overlapping 16 shape, six momentum and four speed failures. No general motion acceptance.",
-      "next_action": "Audit stalled/irregular-endpoint reporting with small controls, then prepare the planned T=1 cubic Q1/x and Q2/z dt=.01/.005/.0025 temporal sentinels with fixed common regions and preserved raw/baseline labels. Retain small-box failures; use the bounded L22.08 Q1 and existing Q2 references for later matched-domain motion admission. No automatic broader matrix.",
-      "exit_evidence": "Focused initialization/time-window tranche assessed; convergence remains outstanding. Require independent temporal/full-state comparisons, domain and third-physical-grid evidence, original tail/speed/momentum gates and bounded classical-inertia sensitivity before higher-Q or quantum work. Full native fields retained in verified Release catalog.",
+      "finding": "The boundary-admitted T1 temporal tranche is assessed: six complete trajectories, zero failures across 126 recorded tail observations, near-fourth-order fixed-grid refinement. Q2 passes all seven original case gates; Q1 retains 1.563660% speed error against 1%. All 128 full archive files/52 NPZ records and matched-time fields were independently verified; historical failed milestones are retained.",
+      "next_action": "Freeze the next physical-grid/domain matrix: same-grid known-coasting and zero-speed centroid/initialization controls, at least three physical spacings at fixed admitted box, matched-spacing domain pairs, and crossed-direction controls as needed. Keep the original gates and analytic beta/rate; limited temporal confirmation on a future finest mesh rather than another broad dt sweep.",
+      "exit_evidence": "Temporal tranche assessed on Q1 L24.32/Q2 L20.16 at beta=0.3/T=1. S5-B-006 remains open for independent physical-mesh/domain and observation-window convergence, speed/momentum/shape gates and qualified classical-inertia sensitivity before higher-Q/quantum work. Original focused-motion and stationary-tail failures remain unchanged.",
       "depends_on": [
         "s5-b-005"
       ],
@@ -797,7 +797,9 @@
         "docs/models/SF-physical-time.md",
         "docs/decisions/ADR-0013-conditional-cubic-initialization.md",
         "docs/decisions/ADR-0014-focused-motion-assessment.md",
-        "docs/decisions/ADR-0016-q1-tail-settling-assessment.md"
+        "docs/decisions/ADR-0016-q1-tail-settling-assessment.md",
+        "docs/models/SF-admitted-temporal.md",
+        "docs/decisions/ADR-0017-admitted-temporal-assessment.md"
       ],
       "records": [
         {
@@ -819,6 +821,26 @@
           "role": "assessment",
           "path": "reports/s5-b/006-focused-motion-convergence/assessments/20261105t041228z-a1c49633/ASSESSMENT.md",
           "label": "Eight-arm assessment, speed tradeoff and staged convergence decision"
+        },
+        {
+          "role": "preparation",
+          "path": "reports/s5-b/006-focused-motion-convergence/preparation/20261106t135833z-f0f65430/README.md",
+          "label": "Combined endpoint audit and boundary-admitted temporal preparation"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/006-focused-motion-convergence/runs/20261106t212927z-589f5f5d/README.md",
+          "label": "Combined endpoint audit and admitted T1 temporal measurements"
+        },
+        {
+          "role": "verification",
+          "path": "data/archives/20261107t233600z-d1c399ad/README.md",
+          "label": "Full audit/temporal fields and snapshots: verified Release archive"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/006-focused-motion-convergence/assessments/20261108t010058z-672ebb4c/ASSESSMENT.md",
+          "label": "Tail-controlled temporal assessment, retained Q1 speed deficit and physical-grid decision"
         }
       ]
     },
@@ -1216,8 +1238,8 @@
     }
   ],
   "current": {
-    "latest_assessed_study": "s5-b-009",
-    "summary": "S5-B-009 paired Q1 settling is assessed. Deeper L20.16 relaxation retains its 0.120638% tail failure. L22.08 reaches0.081394% and tight final force limits, but both native unresolved labels and the incomplete regular-endpoint certificate remain. All52 full-run files were independently download/hash verified;12 checkpoints and eight unique field states were replayed.",
-    "limits": "A stationary shell pass does not establish domain independence or moving-field acceptance. Common-core raw-field difference is 1.66% between L20.16 and L22.08; all earlier motion tail/shape/speed/momentum failures remain unchanged. Physical mesh/time/domain convergence, isolated motion, charge, quantum spin and electron acceptance stay open."
+    "latest_assessed_study": "s5-b-006",
+    "summary": "The boundary-admitted T1 temporal tranche is assessed: six complete trajectories, zero failures across 126 recorded tail observations, near-fourth-order fixed-grid refinement. Q2 passes all seven original case gates; Q1 retains 1.563660% speed error against 1%. All 128 full archive files/52 NPZ records and matched-time fields were independently verified; historical failed milestones are retained.",
+    "limits": "Temporal refinement and the measured shell correction do not establish physical-mesh/domain convergence or isolated motion. Q1 speed still fails; endpoint/settling labels and earlier negative findings remain. Higher-Q motion, charged theory, quantum spin and apparatus milestones retain their prerequisites."
   }
 }
