@@ -1,6 +1,6 @@
 # Project status
 
-Updated: UTC 2026-11-08T13:09:37.946748+00:00; Australia/Melbourne 2026-11-09T00:09:37.946748+11:00.
+Updated: UTC 2026-11-08T13:25:06.959942+00:00; Australia/Melbourne 2026-11-09T00:25:06.959942+11:00.
 
 ## Current position
 
@@ -12,7 +12,7 @@ A coarse screen selects follow-up work and separates representation, preparation
 
 ## Next scientific task
 
-[s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md): Archive and verify the full inputs/checkpoints, then assess the coarse results and select finer candidate work or a return to low-Q controls; no automatic fine sweep.
+[s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md): Assess the coarse outcomes and verified full fields; select a finer candidate investigation or a return to low-Q numerical controls. Q1 stays parked.
 
 ## Study register
 

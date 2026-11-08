@@ -22,7 +22,7 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-08T13:09:37.946748+00:00; Australia/Melbourne 2026-11-09T00:09:37.946748+11:00.
+Updated: UTC 2026-11-08T13:25:06.959942+00:00; Australia/Melbourne 2026-11-09T00:25:06.959942+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
@@ -30,7 +30,7 @@ S5-B-007 coarse Q17/Q19 screen is recorded pending assessment (complete_pending_
 
 A coarse screen selects follow-up work and separates representation, preparation and moving-field failures. Detailed physical-grid/domain and long-time qualification remains open. Original 129-cubed sources and full coarse states are retained for finer restart/re-readmission; Q18 fresh-start and additional-Q studies remain registered.
 
-Next: **s5-b-007: Q17/Q19 motion comparison**. Archive and verify the full inputs/checkpoints, then assess the coarse results and select finer candidate work or a return to low-Q controls; no automatic fine sweep.
+Next: **s5-b-007: Q17/Q19 motion comparison**. Assess the coarse outcomes and verified full fields; select a finer candidate investigation or a return to low-Q numerical controls. Q1 stays parked.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 

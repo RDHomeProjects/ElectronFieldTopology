@@ -1,6 +1,6 @@
 # s5-b-007: Q17/Q19 motion comparison
 
-Updated: UTC 2026-11-08T13:09:37.946748+00:00; Australia/Melbourne 2026-11-09T00:09:37.946748+11:00.
+Updated: UTC 2026-11-08T13:25:06.959942+00:00; Australia/Melbourne 2026-11-09T00:25:06.959942+11:00.
 
 State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ Local coarse screen recorded with status complete_pending_review. Original refer
 
 ## Next action and exit evidence
 
-Archive and verify the full inputs/checkpoints, then assess the coarse results and select finer candidate work or a return to low-Q controls; no automatic fine sweep.
+Assess the coarse outcomes and verified full fields; select a finer candidate investigation or a return to low-Q numerical controls. Q1 stays parked.
 
 Recorded source/admission/control and short-motion outcomes, including all failed/skipped gates and full verified Release retention. Coarse passes select finer tests; spatial/domain and longer-time convergence, curve identification and higher-level interpretation stay open.
 
