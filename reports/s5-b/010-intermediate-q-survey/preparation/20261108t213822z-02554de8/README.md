@@ -1,0 +1,13 @@
+# Q3/Q4/Q7 fresh-start and detailed-motion preparation
+
+UTC: 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne: 2026-11-09T08:38:22.662797+11:00.
+
+[Scientific contract](../../../../../docs/models/SF-candidate-survey.md), [source review](../../../../../docs/literature/intermediate-q-candidates.md), [ordering decision](../../../../../docs/decisions/ADR-0020-intermediate-q-survey.md).
+
+This is preparation evidence, not production Q3/Q4/Q7 relaxation or motion. The read-only [final seed probes](seed-resolution-probes.json) measure all six starts at97³ and representative Q3/Q4/Q7 starts at121³/145³. All meet the original approximate Hopf-magnitude/positive-cell/unit representation checks. They retain substantial force residuals and are not stationary inputs. [The original probes](initial-seed-probes.json) and [trefoil conditioning trials](trefoil-conditioning-probes.json) retain the first underresolved Q7 initialization and every tested alternative. The chosen amplitude/profile improves representation without altering energy coefficients or fitting an energy target.
+
+[Validation](validation.json) and [test transcript](tests.txt) identify the actual small numerical/continuation, provenance, early-gate and administrative controls and their host environment. The software continuation fixture uses artificial decision stubs solely to exercise segmentation; its native endpoint is compared with direct unchanged RK4 from the identical readmitted n/v. It does not create a passing physical candidate. [Kernel preservation](kernel-preservation.json) compares the old numerical action/optimizer/reconstruction/source files against the merged base. Production results await the workstation.
+
+The handover's PREPARE verifies installation, dependencies and tests and commits locally before computation. RUN supplies preflight/start/status/stop/resume/foreground and an offline preview mode. PUBLISH records compact results in Git; ARCHIVE uploads the complete run, verifies it by downloading, writes a descriptive research guide and registers its catalog; MERGE checks that retention and the exact PR head. The package separately retains its tested installation/publication/archive rehearsal receipt. No GitHub mutation or full candidate solve was performed during this preparation.
+
+The default detailed matrix can take days when many candidates qualify. It has no overall wall-time cap. Its declared1200-iteration per-rest capacity, medium fresh retry, selection and refinement are explicit, and every native failure remains. Full fields and source lineage permit a later separately specified continuation; renderer profiles affect only separately generated display data. Q1 remains parked; old results and Releases are preserved.

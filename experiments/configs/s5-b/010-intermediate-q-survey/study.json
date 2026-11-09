@@ -1,0 +1,181 @@
+{
+  "format": "EFT-intermediate-q-survey-v1",
+  "seeds": [
+    {
+      "id": "q3-axial",
+      "q": 3,
+      "family": "axial",
+      "alpha": 3,
+      "beta": 1,
+      "scale": 2.8,
+      "cutoff": 8.8,
+      "bend": 0.0,
+      "amplitude": 1.0,
+      "perturbation": 0.005
+    },
+    {
+      "id": "q3-bent",
+      "q": 3,
+      "family": "axial",
+      "alpha": 3,
+      "beta": 1,
+      "scale": 2.8,
+      "cutoff": 8.8,
+      "bend": 0.65,
+      "amplitude": 1.0,
+      "perturbation": 0.005
+    },
+    {
+      "id": "q4-axial41",
+      "q": 4,
+      "family": "axial",
+      "alpha": 4,
+      "beta": 1,
+      "scale": 3.2,
+      "cutoff": 8.8,
+      "bend": 0.2,
+      "amplitude": 1.0,
+      "perturbation": 0.005
+    },
+    {
+      "id": "q4-axial22",
+      "q": 4,
+      "family": "axial",
+      "alpha": 2,
+      "beta": 2,
+      "scale": 3.2,
+      "cutoff": 8.8,
+      "bend": 0.2,
+      "amplitude": 1.0,
+      "perturbation": 0.005
+    },
+    {
+      "id": "q7-axial",
+      "q": 7,
+      "family": "axial",
+      "alpha": 7,
+      "beta": 1,
+      "scale": 4.0,
+      "cutoff": 8.8,
+      "bend": 0.25,
+      "amplitude": 1.0,
+      "perturbation": 0.005
+    },
+    {
+      "id": "q7-trefoil",
+      "q": 7,
+      "family": "trefoil32",
+      "alpha": 2,
+      "beta": 1,
+      "scale": 3.8,
+      "cutoff": 8.8,
+      "bend": 0.25,
+      "amplitude": 2.0,
+      "perturbation": 0.005
+    }
+  ],
+  "levels": [
+    {
+      "id": "coarse",
+      "nodes": 97,
+      "length": 23.04
+    },
+    {
+      "id": "medium",
+      "nodes": 121,
+      "length": 23.04
+    },
+    {
+      "id": "fine",
+      "nodes": 145,
+      "length": 23.04
+    }
+  ],
+  "domain": {
+    "id": "domain",
+    "nodes": 169,
+    "length": 26.88
+  },
+  "reference_source": {
+    "key": "q2",
+    "q": 2,
+    "model": "SF-relativistic-neutral-v1",
+    "nodes": 127,
+    "length": 20.16,
+    "archive_id": "20261107t233600z-d1c399ad",
+    "root_id": "r001",
+    "archive_path": "files/rest/q2-z-n127-L20.16/latest.npz",
+    "sha256": "22e9f420373869521e3cb4d8fcdafa004e0af34eb95d0220ec952086b310cc23",
+    "bytes": 40930733,
+    "tar_offset": 6007870464,
+    "index": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/20261107t233600z-d1c399ad-index.json",
+    "manifest": "reports/s5-b/007-higher-q-motion/preparation/20261108t014814z-b0f2f435/20261107t233600z-d1c399ad-r001-manifest.json"
+  },
+  "readmission": {
+    "relative_force_l2": 0.0001,
+    "acceleration_max": 0.001,
+    "charge_relative_error": 0.05,
+    "iterations_per_pass": 200,
+    "checkpoint_every": 25,
+    "stagnation_relative_energy": 1e-10
+  },
+  "maximum_preparation_calls": 6,
+  "medium_retry_if_no_coarse_stationary": true,
+  "beta": 0.3,
+  "screen_duration": 0.2,
+  "detail_duration": 0.5,
+  "screen_dt": 0.01,
+  "time_steps": [
+    0.02,
+    0.01,
+    0.005
+  ],
+  "screen_milestones": [
+    0.1,
+    0.2
+  ],
+  "detail_milestones": [
+    0.1,
+    0.2,
+    0.5
+  ],
+  "screen_diagnostic_time": 0.01,
+  "detail_diagnostic_time": 0.02,
+  "snapshot_time": 0.1,
+  "speed_stop_from_time": 0.2,
+  "shell_width": 2.0,
+  "initial_tail_reserve": 0.00075,
+  "runtime_tail_reserve": 0.0009,
+  "expanded_guard_width": 3.0,
+  "expanded_guard_limit": 0.001,
+  "limits": {
+    "energy_relative": 0.001,
+    "momentum_scaled": 0.001,
+    "shape_relative": 0.01,
+    "speed_relative": 0.01,
+    "rest_speed_absolute": 0.001,
+    "charge_relative_error": 0.05,
+    "tail_fraction": 0.001,
+    "particle_relative": 0.01
+  },
+  "comparison_half_width": 8.0,
+  "comparison_nodes": 41,
+  "curve_targets": [
+    [
+      7e-06,
+      1.1e-05,
+      -1.0
+    ],
+    [
+      1.3e-05,
+      -1.7e-05,
+      -1.0
+    ]
+  ],
+  "curve_max_tetrahedra": 300000,
+  "curve_polygon_nodes": 128,
+  "minimum_free_gib": 60,
+  "scope": "Fresh-seed stationary survey and conditional detailed neutral fixed-box motion; Q1 parked; no electric-charge or quantum-spin observable.",
+  "curve_max_crossings": 40,
+  "curve_max_components": 16
+}

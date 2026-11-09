@@ -1,6 +1,6 @@
 # s5-a-005: Additional-Q controls
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
 
 State: **planned**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -10,11 +10,11 @@ Do additional Q values clarify candidate selection beyond the Q18 difficulties?
 
 ## Evidence and present finding
 
-Optional Q20/Q24 remain planned; no new run is claimed.
+Fresh Q3/Q4/Q7 candidate preparation and motion are now specified under S5-B-010. Additional Q5/Q6/Q8 and optional later Q20/Q24 remain unexecuted conditional controls.
 
 ## Next action and exit evidence
 
-Select a bounded comparison after Q18 follow-up; do not start an unbounded catalogue.
+Use the S5-B-010 assessment to select a bounded next set, including Q5/Q6 links or Q8 if informative. Preserve Q18 conditioning follow-up; do not start an unrestricted catalogue.
 
 Same-action controls, fresh starts and preserved topology/energy comparisons.
 

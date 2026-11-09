@@ -1,12 +1,12 @@
 # Staged development plan
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
 ## Current priority
 
-Registered administrative activities are assessed. The next scientific task is **s5-b-006: Focused motion, mesh and domain convergence**. Resume Q2 numerical controls after both coarse higher-Q preparations remain unresolved: isolate centroid/initialization and stationarity measurement effects, then specify fixed-box physical meshes and matched-spacing larger domains with fresh readmission and original tail reserves. Q1 correction stays parked; do not repeat completed temporal work without a new diagnostic reason.
+Registered administrative activities are assessed. The next scientific task is **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Run the checkpointed local Q2-reference and six-start survey, then gated three-mesh fresh/warm, temporal, orientation and domain diagnostics. Retain all failed/skipped arms and full fields, publish compact records and verified descriptive Release assets, then assess before further Q values. Q1 stays parked.
 
 ## Stage map
 
@@ -30,10 +30,11 @@ Registered administrative activities are assessed. The next scientific task is *
 
 ## Ordered work and dependencies
 
-1. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Resume Q2 numerical controls after both coarse higher-Q preparations remain unresolved: isolate centroid/initialization and stationarity measurement effects, then specify fixed-box physical meshes and matched-spacing larger domains with fresh readmission and original tail reserves. Q1 correction stays parked; do not repeat completed temporal work without a new diagnostic reason.
-2. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Retain higher-Q endpoints for conditional stationary-only diagnosis after Q2 numerical controls: additional same-grid preparation versus finer readmission, with original-source and warm-start controls. Require strict stationarity and boosted boundary admission before fresh motion; no automatic expensive rerun. Q1 stays parked.
-3. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
-4. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Select a bounded comparison after Q18 follow-up; do not start an unbounded catalogue.
+1. [s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md) — Run the checkpointed local Q2-reference and six-start survey, then gated three-mesh fresh/warm, temporal, orientation and domain diagnostics. Retain all failed/skipped arms and full fields, publish compact records and verified descriptive Release assets, then assess before further Q values. Q1 stays parked.
+2. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Keep Q2 numerical/physical-mesh/domain controls available alongside the authorized S5-B-010 fresh-candidate survey. A failed short reference blocks that survey. Q1 correction stays parked; do not repeat completed temporal work without a diagnostic reason.
+3. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Retain higher-Q endpoints for conditional stationary-only diagnosis after Q2 numerical controls: additional same-grid preparation versus finer readmission, with original-source and warm-start controls. Require strict stationarity and boosted boundary admission before fresh motion; no automatic expensive rerun. Q1 stays parked.
+4. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
+5. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Use the S5-B-010 assessment to select a bounded next set, including Q5/Q6 links or Q8 if informative. Preserve Q18 conditioning follow-up; do not start an unrestricted catalogue.
 
 ## Parallel and conditional work
 

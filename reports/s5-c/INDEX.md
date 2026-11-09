@@ -1,6 +1,6 @@
 # S5-C: Charged-model feasibility
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
 
 Analytical feasibility audit; charged dynamics deferred.
 

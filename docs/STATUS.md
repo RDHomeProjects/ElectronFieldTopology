@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-007**, Q17/Q19 motion comparison. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-S5-B-007 is assessed: Q2 passes the short motion reference; Q17/Q19 exhaust 200 preparation iterations each without stationary admission, so higher-Q motion is untested. All 79 archive payloads and 23 NPZ states are independently verified. Q1 remains parked with its original failure retained.
+S5-B-010 is prepared for a fresh Q3/Q4/Q7 survey and conditional detailed local motion, with Q2 as the short reference. Six analytic starts, three physical meshes, fresh/warm controls, temporal and domain diagnostics are specified; no production results are claimed. Q1 remains parked; the assessed Q17/Q19 preparation failures are retained.
 
-Stationary residuals, rather than the measured rest tails, block the coarse higher-Q arms. Return to Q2 numerical controls and physical-mesh/domain convergence; any additional higher-Q preparation/finer restart is a new conditional tranche with preserved original-source controls. No general isolated motion, curve identity, charge or quantum-spin conclusion follows.
+Latest assessed scientific activity remains S5-B-007. New seed-resolution and software controls are preparation only. General isolated motion, physical-grid/domain convergence, unique knot identity and charge/spin remain open; Q2 controls and Q18/additional-Q work remain registered.
 
 ## Next scientific task
 
-[s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md): Resume Q2 numerical controls after both coarse higher-Q preparations remain unresolved: isolate centroid/initialization and stationarity measurement effects, then specify fixed-box physical meshes and matched-spacing larger domains with fresh readmission and original tail reserves. Q1 correction stays parked; do not repeat completed temporal work without a new diagnostic reason.
+[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md): Run the checkpointed local Q2-reference and six-start survey, then gated three-mesh fresh/warm, temporal, orientation and domain diagnostics. Retain all failed/skipped arms and full fields, publish compact records and verified descriptive Release assets, then assess before further Q values. Q1 stays parked.
 
 ## Study register
 
@@ -50,10 +50,11 @@ Stationary residuals, rather than the measured rest tails, block the coarse high
 | [s7-003](plans/s7/003-wavefunction-observables.md) | Wavefunction and energy-density observable comparison | planned | open |
 | [s5-b-008](plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | assessed | open |
 | [s5-b-009](plans/s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | assessed | open |
+| [s5-b-010](plans/s5-b/010-intermediate-q-survey.md) | Fresh Q3 Q4 Q7 survey and detailed motion | prepared | open |
 
 ## Claims and deferred work
 
-No accepted general isolated motion, full stability, emergent electric charge, quantum spin or electron model. Follow the registered priorities and readiness limits for Q17/Q19 motion, Q18 fresh fine starts/conditioning and further Q values including optional Q20/Q24. Q18's repeatable linked outcome and unsuccessful hyperbolic reproduction stay recorded. The wider literature review remains incomplete and its level-4 work deferred.
+No accepted general isolated motion, full stability, emergent electric charge, quantum spin or electron model. Follow the registered priorities and current study contracts for candidate selection, stationary preparation, motion, convergence and deferred additional-Q work. Q18's repeatable linked outcome and unsuccessful hyperbolic reproduction stay recorded. The wider literature review remains incomplete and its level-4 work deferred.
 
 Use [the current roadmap](06-development-plan.md) for ordering and [stage report indexes](../reports/README.md) for evidence. Scientific specifications, hypotheses and acceptance thresholds are not changed by this administration update.
 

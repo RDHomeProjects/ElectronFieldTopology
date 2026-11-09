@@ -1,0 +1,46 @@
+{"verified_at": {"utc": "2026-11-08T22:08:27.920893+00:00", "melbourne": "2026-11-09T09:08:27.920893+11:00"}}
+
+=== verified-tests.txt ===
+........................................................................ [ 86%]
+...........                                                              [100%]
+83 passed in 58.28s
+
+=== administrative-tests.txt ===
+test_canonical_record_checksums_and_registration (test_project_records.RecordIntegrity.test_canonical_record_checksums_and_registration) ... ok
+test_dependency_cycle_rejected (test_project_records.RecordIntegrity.test_dependency_cycle_rejected) ... ok
+test_duplicate_study_rejected (test_project_records.RecordIntegrity.test_duplicate_study_rejected) ... ok
+test_generated_status_drift_rejected (test_project_records.RecordIntegrity.test_generated_status_drift_rejected) ... ok
+test_latest_current_study_must_be_assessed (test_project_records.RecordIntegrity.test_latest_current_study_must_be_assessed) ... ok
+test_legacy_archive_corruption_rejected (test_project_records.RecordIntegrity.test_legacy_archive_corruption_rejected) ... ok
+test_missing_evidence_rejected (test_project_records.RecordIntegrity.test_missing_evidence_rejected) ... ok
+test_new_ad_hoc_root_rejected (test_project_records.RecordIntegrity.test_new_ad_hoc_root_rejected) ... ok
+test_new_superseding_assessment_can_be_appended (test_project_records.RecordIntegrity.test_new_superseding_assessment_can_be_appended) ... ok
+test_next_task_and_summary_follow_register_across_entry_pages (test_project_records.RecordIntegrity.test_next_task_and_summary_follow_register_across_entry_pages) ... ok
+test_published_canonical_payload_cannot_be_rewritten (test_project_records.RecordIntegrity.test_published_canonical_payload_cannot_be_rewritten) ... ok
+test_published_reports_preserved (test_project_records.RecordIntegrity.test_published_reports_preserved) ... ok
+test_report_byte_change_rejected (test_project_records.RecordIntegrity.test_report_byte_change_rejected) ... ok
+test_timezones_must_match (test_project_records.RecordIntegrity.test_timezones_must_match) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.877s
+
+OK
+
+=== archive-tests.txt ===
+test_changed_source_is_not_archived (test_workstation_archive.Archives.test_changed_source_is_not_archived) ... ok
+test_cleanup_review_retains_sources_and_flags_later_changes (test_workstation_archive.Archives.test_cleanup_review_retains_sources_and_flags_later_changes) ... ok
+test_completed_archive_rerun_does_not_replace_master (test_workstation_archive.Archives.test_completed_archive_rerun_does_not_replace_master) ... ok
+test_external_symlink_blocks_publication (test_workstation_archive.Archives.test_external_symlink_blocks_publication) ... ok
+test_full_remote_roundtrip_restores_data_modes_and_all_git_objects (test_workstation_archive.Archives.test_full_remote_roundtrip_restores_data_modes_and_all_git_objects) ... ok
+test_inventory_is_read_only_and_counts_ignored_fields (test_workstation_archive.Archives.test_inventory_is_read_only_and_counts_ignored_fields) ... ok
+test_linked_worktree_restores_as_standalone_git_store (test_workstation_archive.Archives.test_linked_worktree_restores_as_standalone_git_store) ... ok
+test_network_interruption_resumes_without_clobbering_assets (test_workstation_archive.Archives.test_network_interruption_resumes_without_clobbering_assets) ... ok
+test_remote_corruption_invalidates_receipt_and_blocks_cleanup (test_workstation_archive.Archives.test_remote_corruption_invalidates_receipt_and_blocks_cleanup) ... ok
+test_restore_refuses_existing_directory (test_workstation_archive.Archives.test_restore_refuses_existing_directory) ... ok
+test_secret_filename_blocks_publication_before_release_creation (test_workstation_archive.Archives.test_secret_filename_blocks_publication_before_release_creation) ... ok
+test_traversal_member_is_rejected (test_workstation_archive.Archives.test_traversal_member_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.102s
+
+OK

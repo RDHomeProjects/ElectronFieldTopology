@@ -55,3 +55,5 @@ Consequence: the baseline cannot establish a nonzero Maxwell electric charge fro
 - [ADR-0018: park Q1 correction and run staged coarse Q17/Q19 motion screening](ADR-0018-coarse-higher-q-screen.md).
 
 - [ADR-0019: coarse higher-Q preparation assessment and return to Q2 controls](ADR-0019-higher-q-preparation-assessment.md).
+
+- [ADR-0020: fresh Q3/Q4/Q7 survey and conditional detailed motion](ADR-0020-intermediate-q-survey.md).
