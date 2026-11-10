@@ -1,6 +1,6 @@
 # Study plans
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-10T13:31:16.111336+00:00; Australia/Melbourne 2026-11-11T00:31:16.111336+11:00.
 
 Each study has a stable stage/number and one current plan below. Earlier flat plan files remain source specifications at their published paths; their historical next-step wording is superseded by the register.
 

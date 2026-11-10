@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-10T13:31:16.111336+00:00; Australia/Melbourne 2026-11-11T00:31:16.111336+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 

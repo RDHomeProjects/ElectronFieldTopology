@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-08T13:31:39.521682+00:00",
-    "melbourne": "2026-11-09T00:31:39.521682+11:00"
+    "utc": "2026-11-10T13:31:16.111336+00:00",
+    "melbourne": "2026-11-11T00:31:16.111336+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -731,7 +731,7 @@
       "state": "assessed",
       "gate": "open",
       "question": "Can a smoother, consistently differentiated reconstruction improve boost consistency without changing the action?",
-      "finding": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99–10.98% to 0.83–2.67% across all 24 moving cases (75.56–86.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
+      "finding": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
       "next_action": "Use the assessment and ADR-0013 to implement fixed-layer readmission before the focused S5-B-006 method comparison. Preserve original gates and all candidate boundary failures.",
       "exit_evidence": "Authenticated 30-case compact evidence, independent control replay, raw/registered residuals and fixed-layer findings recorded in a separate immutable assessment. Candidate promotion remains conditional; no new dynamics acceptance.",
       "depends_on": [
@@ -842,6 +842,11 @@
           "role": "assessment",
           "path": "reports/s5-b/006-focused-motion-convergence/assessments/20261108t010058z-672ebb4c/ASSESSMENT.md",
           "label": "Tail-controlled temporal assessment, retained Q1 speed deficit and physical-grid decision"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/006-focused-motion-convergence/assessments/20261110t121649z-176b2be9/README.md",
+          "label": "Q2 detailed browser gallery: 4K static images and recorded-state animations"
         }
       ]
     },
@@ -1014,11 +1019,11 @@
       "stage": "s7",
       "number": 2,
       "slug": "apparatus-detectors",
-      "title": "Stern–Gerlach and detector benchmarks",
+      "title": "Stern\u2013Gerlach and detector benchmarks",
       "state": "planned",
       "gate": "open",
       "question": "Does a justified model predict apparatus outcomes beyond classical deflection or imposed two-state assumptions?",
-      "finding": "No Stern–Gerlach, detector-probability or electron acceptance follows from current neutral motion.",
+      "finding": "No Stern\u2013Gerlach, detector-probability or electron acceptance follows from current neutral motion.",
       "next_action": "After candidate/coupling and state-preparation controls, specify the apparatus and distinguish emergent outcomes from supplied quantum rules.",
       "exit_evidence": "Independent experimental observables, orientation/sequential controls, probability law and uncertainty with assumptions exposed.",
       "depends_on": [
