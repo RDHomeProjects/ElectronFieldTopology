@@ -1,6 +1,6 @@
 # s0-003: Full workstation archives and temporary-cache policy — evidence index
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-10T13:31:16.111336+00:00; Australia/Melbourne 2026-11-11T00:31:16.111336+11:00.
 
 [Current study plan](../../../docs/plans/s0/003-workstation-archives.md). State: assessed; scientific gate: not-applicable.
 

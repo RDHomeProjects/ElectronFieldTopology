@@ -1,6 +1,6 @@
 # s7-003: Wavefunction and energy-density observable comparison
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-10T13:31:16.111336+00:00; Australia/Melbourne 2026-11-11T00:31:16.111336+11:00.
 
 State: **planned**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
