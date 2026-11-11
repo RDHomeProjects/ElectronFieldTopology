@@ -1,6 +1,6 @@
 # s7-003: Wavefunction and energy-density observable comparison — evidence index
 
-Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
+Updated: UTC 2026-11-11T15:46:53.345043+00:00; Australia/Melbourne 2026-11-12T02:46:53.345043+11:00.
 
 [Current study plan](../../../docs/plans/s7/003-wavefunction-observables.md). State: planned; scientific gate: open.
 

@@ -1,12 +1,12 @@
 # Project status
 
-Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
+Updated: UTC 2026-11-11T15:46:53.345043+00:00; Australia/Melbourne 2026-11-12T02:46:53.345043+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-007**, Q17/Q19 motion comparison. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-S5-B-010 local results are recorded pending assessment. Full-field Release archival is the next publication step. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.
+S5-B-010 local results are recorded pending assessment. Complete fields are retained in verified descriptive Release assets. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.
 
 Latest assessed scientific activity remains S5-B-007. New seed-resolution and software controls are preparation only. General isolated motion, physical-grid/domain convergence, unique knot identity and charge/spin remain open; Q2 controls and Q18/additional-Q work remain registered.
 

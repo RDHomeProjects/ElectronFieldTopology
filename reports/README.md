@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
+Updated: UTC 2026-11-11T15:46:53.345043+00:00; Australia/Melbourne 2026-11-12T02:46:53.345043+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-007: Q17/Q19 motion comparison](s5-b/007-higher-q-motion/assessments/20261108t133139z-d11d12c1/ASSESSMENT.md) — S5-B-010 local results are recorded pending assessment. Full-field Release archival is the next publication step. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.
+[s5-b-007: Q17/Q19 motion comparison](s5-b/007-higher-q-motion/assessments/20261108t133139z-d11d12c1/ASSESSMENT.md) — S5-B-010 local results are recorded pending assessment. Complete fields are retained in verified descriptive Release assets. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.

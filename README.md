@@ -22,11 +22,11 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
+Updated: UTC 2026-11-11T15:46:53.345043+00:00; Australia/Melbourne 2026-11-12T02:46:53.345043+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-S5-B-010 local results are recorded pending assessment. Full-field Release archival is the next publication step. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.
+S5-B-010 local results are recorded pending assessment. Complete fields are retained in verified descriptive Release assets. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.
 
 Latest assessed scientific activity remains S5-B-007. New seed-resolution and software controls are preparation only. General isolated motion, physical-grid/domain convergence, unique knot identity and charge/spin remain open; Q2 controls and Q18/additional-Q work remain registered.
 
