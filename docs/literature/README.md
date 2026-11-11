@@ -410,3 +410,5 @@ Sections3.1-3.3,4.6,5 inspected. Deformable configuration families, kinetic metr
 inertia-approximation limits. The worked Be8 model is not an electron model; its
 Skyrme normalization is not copied into SF. Current use: quantify inertia sensitivity
 before a future quantum spectrum. No ADHM field generator or quantum solver is added.
+
+- [Intermediate-Q candidate source and equation review](intermediate-q-candidates.md): fresh Q3/Q4/Q7 starts and limits of numerical comparisons.

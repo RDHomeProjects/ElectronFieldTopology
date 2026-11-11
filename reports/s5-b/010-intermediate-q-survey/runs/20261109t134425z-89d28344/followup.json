@@ -1,0 +1,91 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-11T10:18:30.521980+00:00",
+    "melbourne": "2026-11-11T21:18:30.521980+11:00"
+  },
+  "parent_run": "20261109t134425z-89d28344",
+  "selected": {
+    "q3": {
+      "recorded_at": {
+        "utc": "2026-11-09T20:13:09.342664+00:00",
+        "melbourne": "2026-11-10T07:13:09.342664+11:00"
+      },
+      "status": "selected",
+      "seed_id": "q3-axial",
+      "survey_parent": "q3-axial-coarse-fresh",
+      "criterion": "Boundary-admitted stationary pool preferred, then lowest same-mesh D4 energy; seed ID breaks ties. Motion failure does not conceal spatial-refinement diagnostics.",
+      "levels": {
+        "coarse": {
+          "status": "stationary",
+          "primary_rest": "q3-axial-coarse-fresh",
+          "rest_ids": [
+            "q3-axial-coarse-fresh"
+          ],
+          "route": "fresh"
+        },
+        "medium": {
+          "status": "stationary",
+          "primary_rest": "q3-axial-medium-warm",
+          "rest_ids": [
+            "q3-axial-medium-fresh",
+            "q3-axial-medium-warm"
+          ],
+          "route": "cubic-warm-start"
+        },
+        "fine": {
+          "status": "stationary",
+          "primary_rest": "q3-axial-fine-warm",
+          "rest_ids": [
+            "q3-axial-fine-fresh",
+            "q3-axial-fine-warm"
+          ],
+          "route": "cubic-warm-start"
+        }
+      }
+    },
+    "q4": {
+      "recorded_at": {
+        "utc": "2026-11-10T11:01:02.466400+00:00",
+        "melbourne": "2026-11-10T22:01:02.466400+11:00"
+      },
+      "status": "selected",
+      "seed_id": "q4-axial41",
+      "survey_parent": "q4-axial41-medium-fresh",
+      "criterion": "Boundary-admitted stationary pool preferred, then lowest same-mesh D4 energy; seed ID breaks ties. Motion failure does not conceal spatial-refinement diagnostics.",
+      "levels": {
+        "coarse": {
+          "status": "preparation_unresolved",
+          "rest_ids": [
+            "q4-axial41-coarse-fresh"
+          ]
+        },
+        "medium": {
+          "status": "stationary",
+          "primary_rest": "q4-axial41-medium-fresh",
+          "rest_ids": [
+            "q4-axial41-medium-fresh"
+          ],
+          "route": "fresh"
+        },
+        "fine": {
+          "status": "preparation_unresolved",
+          "rest_ids": [
+            "q4-axial41-fine-fresh",
+            "q4-axial41-fine-warm"
+          ]
+        }
+      }
+    },
+    "q7": {
+      "recorded_at": {
+        "utc": "2026-11-11T10:18:30.504447+00:00",
+        "melbourne": "2026-11-11T21:18:30.504447+11:00"
+      },
+      "status": "preparation_unresolved",
+      "reason": "Neither coarse nor declared medium fresh-start retry qualified; no trajectory or further automatic mesh increase"
+    }
+  },
+  "q1": "parked",
+  "q2": "Physical-mesh/domain work remains open; this control is short.",
+  "scope": "Review seed/basin, strict preparation, original motion gates and mesh/domain/time comparisons separately. Any unfulfilled matrix cells remain skips, not acceptance."
+}

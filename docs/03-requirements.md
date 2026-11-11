@@ -122,3 +122,9 @@ UTC: 2026-11-08T01:48:14.439097+00:00; Australia/Melbourne: 2026-11-08T12:48:14.
 UTC: 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne: 2026-11-09T00:31:39.521682+11:00.
 
 [The immutable assessment](../reports/s5-b/007-higher-q-motion/assessments/20261108t133139z-d11d12c1/ASSESSMENT.md) adds NUM-001/002/003, BND-001, REL-002, SCI-003/004 and REP-001/002 evidence:79 full archived payloads and 23 NPZ files independently verified, all three short Q2 motion milestones replayed, and both higher-Q 200-iteration preparation outcomes retained as unresolved. No Q17/Q19 motion or half-dt confirmation ran. This closes assessment of the coarse screen, not stationary higher-Q admission, physical-mesh/domain convergence, curve identification or isolated-motion requirements. [ADR-0019](decisions/ADR-0019-higher-q-preparation-assessment.md) returns priority to Q2 controls with Q1 parked; all earlier failures and thresholds remain unchanged.
+
+## S5-B-010 intermediate-Q preparation
+
+UTC: 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne: 2026-11-09T08:38:22.662797+11:00.
+
+[The specification](models/SF-candidate-survey.md) and [preparation controls](../reports/s5-b/010-intermediate-q-survey/preparation/20261108t213822z-02554de8/README.md) prepare SRCH-001/002, NUM-001/002/003/004, TOP-001, BND-001, REL-002, SCI-003/004, REP-001/002 and VIS-001/002 evidence through fresh seed families, strict unchanged-action readmission, recorded competing basins, matched motion/mesh/domain comparisons and offline-only display. Read-only seed/finite-polygon/software checks are preparation evidence; no Q3/Q4/Q7 production endpoint or motion result is claimed. [ADR-0020](decisions/ADR-0020-intermediate-q-survey.md) orders the authorized new tranche and preserves prior findings and thresholds.

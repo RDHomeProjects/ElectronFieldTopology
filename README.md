@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-08T13:31:39.521682+00:00; Australia/Melbourne 2026-11-09T00:31:39.521682+11:00.
+Updated: UTC 2026-11-11T15:46:53.345043+00:00; Australia/Melbourne 2026-11-12T02:46:53.345043+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-S5-B-007 is assessed: Q2 passes the short motion reference; Q17/Q19 exhaust 200 preparation iterations each without stationary admission, so higher-Q motion is untested. All 79 archive payloads and 23 NPZ states are independently verified. Q1 remains parked with its original failure retained.
+S5-B-010 local results are recorded pending assessment. Complete fields are retained in verified descriptive Release assets. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.
 
-Stationary residuals, rather than the measured rest tails, block the coarse higher-Q arms. Return to Q2 numerical controls and physical-mesh/domain convergence; any additional higher-Q preparation/finer restart is a new conditional tranche with preserved original-source controls. No general isolated motion, curve identity, charge or quantum-spin conclusion follows.
+Latest assessed scientific activity remains S5-B-007. New seed-resolution and software controls are preparation only. General isolated motion, physical-grid/domain convergence, unique knot identity and charge/spin remain open; Q2 controls and Q18/additional-Q work remain registered.
 
-Next: **s5-b-006: Focused motion, mesh and domain convergence**. Resume Q2 numerical controls after both coarse higher-Q preparations remain unresolved: isolate centroid/initialization and stationarity measurement effects, then specify fixed-box physical meshes and matched-spacing larger domains with fresh readmission and original tail reserves. Q1 correction stays parked; do not repeat completed temporal work without a new diagnostic reason.
+Next: **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Assess the published compact outcomes and verified complete fields, compare competing starts and mesh/time/domain diagnostics, then choose follow-up. Do not treat completion or seed labels as physical acceptance.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 
