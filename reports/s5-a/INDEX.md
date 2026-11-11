@@ -1,6 +1,6 @@
 # S5-A: Static neutral-model references
 
-Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
+Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
 
 Static benchmarks, Q22 and Q18/neighbour studies; reproduction limits retained.
 

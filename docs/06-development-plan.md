@@ -1,12 +1,12 @@
 # Staged development plan
 
-Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
+Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
 ## Current priority
 
-Registered administrative activities are assessed. The next scientific task is **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Run the checkpointed local Q2-reference and six-start survey, then gated three-mesh fresh/warm, temporal, orientation and domain diagnostics. Retain all failed/skipped arms and full fields, publish compact records and verified descriptive Release assets, then assess before further Q values. Q1 stays parked.
+Registered administrative activities are assessed. The next scientific task is **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Assess the published compact outcomes and verified complete fields, compare competing starts and mesh/time/domain diagnostics, then choose follow-up. Do not treat completion or seed labels as physical acceptance.
 
 ## Stage map
 
@@ -30,7 +30,7 @@ Registered administrative activities are assessed. The next scientific task is *
 
 ## Ordered work and dependencies
 
-1. [s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md) — Run the checkpointed local Q2-reference and six-start survey, then gated three-mesh fresh/warm, temporal, orientation and domain diagnostics. Retain all failed/skipped arms and full fields, publish compact records and verified descriptive Release assets, then assess before further Q values. Q1 stays parked.
+1. [s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md) — Assess the published compact outcomes and verified complete fields, compare competing starts and mesh/time/domain diagnostics, then choose follow-up. Do not treat completion or seed labels as physical acceptance.
 2. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Keep Q2 numerical/physical-mesh/domain controls available alongside the authorized S5-B-010 fresh-candidate survey. A failed short reference blocks that survey. Q1 correction stays parked; do not repeat completed temporal work without a diagnostic reason.
 3. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Retain higher-Q endpoints for conditional stationary-only diagnosis after Q2 numerical controls: additional same-grid preparation versus finer readmission, with original-source and warm-start controls. Require strict stationarity and boosted boundary admission before fresh motion; no automatic expensive rerun. Q1 stays parked.
 4. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.

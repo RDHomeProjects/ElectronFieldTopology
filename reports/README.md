@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
+Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-007: Q17/Q19 motion comparison](s5-b/007-higher-q-motion/assessments/20261108t133139z-d11d12c1/ASSESSMENT.md) — S5-B-010 is prepared for a fresh Q3/Q4/Q7 survey and conditional detailed local motion, with Q2 as the short reference. Six analytic starts, three physical meshes, fresh/warm controls, temporal and domain diagnostics are specified; no production results are claimed. Q1 remains parked; the assessed Q17/Q19 preparation failures are retained.
+[s5-b-007: Q17/Q19 motion comparison](s5-b/007-higher-q-motion/assessments/20261108t133139z-d11d12c1/ASSESSMENT.md) — S5-B-010 local results are recorded pending assessment. Full-field Release archival is the next publication step. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.

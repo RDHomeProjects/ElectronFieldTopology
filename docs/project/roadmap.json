@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-08T21:38:22.662797+00:00",
-    "melbourne": "2026-11-09T08:38:22.662797+11:00"
+    "utc": "2026-11-11T13:26:50.693613+00:00",
+    "melbourne": "2026-11-12T00:26:50.693613+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -732,7 +732,7 @@
       "state": "assessed",
       "gate": "open",
       "question": "Can a smoother, consistently differentiated reconstruction improve boost consistency without changing the action?",
-      "finding": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99–10.98% to 0.83–2.67% across all 24 moving cases (75.56–86.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
+      "finding": "S5-B-005 assessed 30 retained Q1/Q2 cases. Cubic analytic-rate/D4 mismatch falls from 5.99\u201310.98% to 0.83\u20132.67% across all 24 moving cases (75.56\u201386.13% reduction). Twelve raw beta=.1 candidates violate the fixed layers; they require explicit readmission before a focused motion comparison. No cubic-initialized trajectory has been evolved.",
       "next_action": "Use the assessment and ADR-0013 to implement fixed-layer readmission before the focused S5-B-006 method comparison. Preserve original gates and all candidate boundary failures.",
       "exit_evidence": "Authenticated 30-case compact evidence, independent control replay, raw/registered residuals and fixed-layer findings recorded in a separate immutable assessment. Candidate promotion remains conditional; no new dynamics acceptance.",
       "depends_on": [
@@ -1015,11 +1015,11 @@
       "stage": "s7",
       "number": 2,
       "slug": "apparatus-detectors",
-      "title": "Stern–Gerlach and detector benchmarks",
+      "title": "Stern\u2013Gerlach and detector benchmarks",
       "state": "planned",
       "gate": "open",
       "question": "Does a justified model predict apparatus outcomes beyond classical deflection or imposed two-state assumptions?",
-      "finding": "No Stern–Gerlach, detector-probability or electron acceptance follows from current neutral motion.",
+      "finding": "No Stern\u2013Gerlach, detector-probability or electron acceptance follows from current neutral motion.",
       "next_action": "After candidate/coupling and state-preparation controls, specify the apparatus and distinguish emergent outcomes from supplied quantum rules.",
       "exit_evidence": "Independent experimental observables, orientation/sequential controls, probability law and uncertainty with assumptions exposed.",
       "depends_on": [
@@ -1170,11 +1170,11 @@
       "number": 10,
       "slug": "intermediate-q-survey",
       "title": "Fresh Q3 Q4 Q7 survey and detailed motion",
-      "state": "prepared",
+      "state": "recorded",
       "gate": "open",
       "question": "Which fresh intermediate-Q families can be strictly prepared and retain controlled motion across physical mesh, time step and domain changes?",
-      "finding": "Six fresh starts and a conditional detailed matrix are prepared against the unchanged D4 action. Measured read-only seed probes and small software controls are recorded; all production optimizer and trajectory outcomes await local execution.",
-      "next_action": "Run the checkpointed local Q2-reference and six-start survey, then gated three-mesh fresh/warm, temporal, orientation and domain diagnostics. Retain all failed/skipped arms and full fields, publish compact records and verified descriptive Release assets, then assess before further Q values. Q1 stays parked.",
+      "finding": "Local fresh Q3/Q4/Q7 survey recorded with native status complete_pending_review. Original preparation/motion failures and skipped comparisons await scientific assessment. Q1 remains parked.",
+      "next_action": "Assess the published compact outcomes and verified complete fields, compare competing starts and mesh/time/domain diagnostics, then choose follow-up. Do not treat completion or seed labels as physical acceptance.",
       "exit_evidence": "Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.",
       "depends_on": [
         "s5-b-006",
@@ -1208,6 +1208,11 @@
           "role": "preparation",
           "path": "reports/s5-b/010-intermediate-q-survey/preparation/20261108t213822z-02554de8/README.md",
           "label": "Fresh-family source/seed probes and checkpointed detailed-survey controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s5-b/010-intermediate-q-survey/runs/20261109t134425z-89d28344/README.md",
+          "label": "Fresh Q3/Q4/Q7 stationary and conditional detailed-motion measurements"
         }
       ]
     }
@@ -1318,7 +1323,7 @@
   ],
   "current": {
     "latest_assessed_study": "s5-b-007",
-    "summary": "S5-B-010 is prepared for a fresh Q3/Q4/Q7 survey and conditional detailed local motion, with Q2 as the short reference. Six analytic starts, three physical meshes, fresh/warm controls, temporal and domain diagnostics are specified; no production results are claimed. Q1 remains parked; the assessed Q17/Q19 preparation failures are retained.",
+    "summary": "S5-B-010 local results are recorded pending assessment. Full-field Release archival is the next publication step. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.",
     "limits": "Latest assessed scientific activity remains S5-B-007. New seed-resolution and software controls are preparation only. General isolated motion, physical-grid/domain convergence, unique knot identity and charge/spin remain open; Q2 controls and Q18/additional-Q work remain registered."
   }
 }

@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
+Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-007**, Q17/Q19 motion comparison. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-S5-B-010 is prepared for a fresh Q3/Q4/Q7 survey and conditional detailed local motion, with Q2 as the short reference. Six analytic starts, three physical meshes, fresh/warm controls, temporal and domain diagnostics are specified; no production results are claimed. Q1 remains parked; the assessed Q17/Q19 preparation failures are retained.
+S5-B-010 local results are recorded pending assessment. Full-field Release archival is the next publication step. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.
 
 Latest assessed scientific activity remains S5-B-007. New seed-resolution and software controls are preparation only. General isolated motion, physical-grid/domain convergence, unique knot identity and charge/spin remain open; Q2 controls and Q18/additional-Q work remain registered.
 
 ## Next scientific task
 
-[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md): Run the checkpointed local Q2-reference and six-start survey, then gated three-mesh fresh/warm, temporal, orientation and domain diagnostics. Retain all failed/skipped arms and full fields, publish compact records and verified descriptive Release assets, then assess before further Q values. Q1 stays parked.
+[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md): Assess the published compact outcomes and verified complete fields, compare competing starts and mesh/time/domain diagnostics, then choose follow-up. Do not treat completion or seed labels as physical acceptance.
 
 ## Study register
 
@@ -50,7 +50,7 @@ Latest assessed scientific activity remains S5-B-007. New seed-resolution and so
 | [s7-003](plans/s7/003-wavefunction-observables.md) | Wavefunction and energy-density observable comparison | planned | open |
 | [s5-b-008](plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | assessed | open |
 | [s5-b-009](plans/s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | assessed | open |
-| [s5-b-010](plans/s5-b/010-intermediate-q-survey.md) | Fresh Q3 Q4 Q7 survey and detailed motion | prepared | open |
+| [s5-b-010](plans/s5-b/010-intermediate-q-survey.md) | Fresh Q3 Q4 Q7 survey and detailed motion | recorded | open |
 
 ## Claims and deferred work
 

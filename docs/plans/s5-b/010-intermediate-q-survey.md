@@ -1,8 +1,8 @@
 # s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion
 
-Updated: UTC 2026-11-08T21:38:22.662797+00:00; Australia/Melbourne 2026-11-09T08:38:22.662797+11:00.
+Updated: UTC 2026-11-11T13:26:50.693613+00:00; Australia/Melbourne 2026-11-12T00:26:50.693613+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Which fresh intermediate-Q families can be strictly prepared and retain controll
 
 ## Evidence and present finding
 
-Six fresh starts and a conditional detailed matrix are prepared against the unchanged D4 action. Measured read-only seed probes and small software controls are recorded; all production optimizer and trajectory outcomes await local execution.
+Local fresh Q3/Q4/Q7 survey recorded with native status complete_pending_review. Original preparation/motion failures and skipped comparisons await scientific assessment. Q1 remains parked.
 
 ## Next action and exit evidence
 
-Run the checkpointed local Q2-reference and six-start survey, then gated three-mesh fresh/warm, temporal, orientation and domain diagnostics. Retain all failed/skipped arms and full fields, publish compact records and verified descriptive Release assets, then assess before further Q values. Q1 stays parked.
+Assess the published compact outcomes and verified complete fields, compare competing starts and mesh/time/domain diagnostics, then choose follow-up. Do not treat completion or seed labels as physical acceptance.
 
 Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.
 
