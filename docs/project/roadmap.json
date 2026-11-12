@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-12T12:46:43.693315+00:00",
-    "melbourne": "2026-11-12T23:46:43.693315+11:00"
+    "utc": "2026-11-12T13:24:27.005071+00:00",
+    "melbourne": "2026-11-13T00:24:27.005071+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -1173,8 +1173,8 @@
       "state": "assessed",
       "gate": "open",
       "question": "Which fresh intermediate-Q families can be strictly prepared and retain controlled motion across physical mesh, time step and domain changes?",
-      "finding": "Nine-case initial-field diagnosis locates the Q3 fine z speed deficit at initialization (1.056717% vs fitted 1.057322%). Cadence controls and Hamiltonian-density centroid do not resolve it. Original gates and Q4/Q7 unresolved findings remain unchanged.",
-      "next_action": "Run the controlled fixed-rest Q3 initialization study: same sealed fine rest field and box; lab sampling 97/121/145 in x/z; cubic spatial/time derivative controls and original fine-state seal replay. Review before separating padding from larger-domain relaxation, then short matched evolution. Original gates unchanged.",
+      "finding": "The six-case fixed-rest initialization study reproduces the fine state but speed error is nonmonotonic; the tiny 121 x error reflects cancellation, and coarse held-layer projection mixes boundary treatment with sampling. Original failures and scientific gate remain open.",
+      "next_action": "Run twelve bounded initial-only paired padding/sampling controls, including half-cell shifts and finer 169 lab sampling, before selecting short physical evolution. Follow the focused Yang-Mills/SF, Maxwell topology and quantum-state applicability plan; keep five assessment dimensions separate.",
       "exit_evidence": "Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.",
       "depends_on": [
         "s5-b-006",
@@ -1233,6 +1233,11 @@
           "role": "assessment",
           "path": "reports/s5-b/010-intermediate-q-survey/assessments/20261112t124307z-a8b10d33/README.md",
           "label": "Q3 initial-field assessment and controlled fixed-rest sampling preparation"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/010-intermediate-q-survey/assessments/20261112t131727z-1cce12ab/README.md",
+          "label": "Q3 sampling assessment, boundary controls and focused literature plan"
         }
       ]
     }
@@ -1343,7 +1348,7 @@
   ],
   "current": {
     "latest_assessed_study": "s5-b-010",
-    "summary": "Nine-case initial-field diagnosis locates the Q3 fine z speed deficit at initialization (1.056717% vs fitted 1.057322%). Cadence controls and Hamiltonian-density centroid do not resolve it. Original gates and Q4/Q7 unresolved findings remain unchanged.",
-    "limits": "Observation controls do not establish spatial/domain convergence or a discrete conservation identity. Controlled fixed-rest sampling production execution is pending; momentum/energy ratios remain proxies. No physical charge, spin or electron validation is claimed."
+    "summary": "The six-case fixed-rest initialization study reproduces the fine state but speed error is nonmonotonic; the tiny 121 x error reflects cancellation, and coarse held-layer projection mixes boundary treatment with sampling. Original failures and scientific gate remain open.",
+    "limits": "No physical trajectory or continuum convergence is established by this diagnostic. Boundary/phase controls and focused equation/proof audits are prepared, not completed. Neutral SF topology does not establish electric charge, fermionic spin/statistics or electron properties."
   }
 }

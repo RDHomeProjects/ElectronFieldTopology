@@ -412,3 +412,7 @@ Skyrme normalization is not copied into SF. Current use: quantify inertia sensit
 before a future quantum spectrum. No ADHM field generator or quantum solver is added.
 
 - [Intermediate-Q candidate source and equation review](intermediate-q-candidates.md): fresh Q3/Q4/Q7 starts and limits of numerical comparisons.
+
+## Focused applicability plan — 13 November 2026
+
+See [the Q3 diagnostics, Yang-Mills/SF and quantum-state review plan](../../reports/s5-b/010-intermediate-q-survey/assessments/20261112t131727z-1cce12ab/LITERATURE-PLAN.md). Existing Bode, Maxwell benchmark, nonlinear and soliton-quantization assessments are reused. New review targets are not completed equation or proof audits.

@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-12T12:46:43.693315+00:00; Australia/Melbourne 2026-11-12T23:46:43.693315+11:00.
+Updated: UTC 2026-11-12T13:24:27.005071+00:00; Australia/Melbourne 2026-11-13T00:24:27.005071+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-Nine-case initial-field diagnosis locates the Q3 fine z speed deficit at initialization (1.056717% vs fitted 1.057322%). Cadence controls and Hamiltonian-density centroid do not resolve it. Original gates and Q4/Q7 unresolved findings remain unchanged.
+The six-case fixed-rest initialization study reproduces the fine state but speed error is nonmonotonic; the tiny 121 x error reflects cancellation, and coarse held-layer projection mixes boundary treatment with sampling. Original failures and scientific gate remain open.
 
-Observation controls do not establish spatial/domain convergence or a discrete conservation identity. Controlled fixed-rest sampling production execution is pending; momentum/energy ratios remain proxies. No physical charge, spin or electron validation is claimed.
+No physical trajectory or continuum convergence is established by this diagnostic. Boundary/phase controls and focused equation/proof audits are prepared, not completed. Neutral SF topology does not establish electric charge, fermionic spin/statistics or electron properties.
 
-Next: **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Run the controlled fixed-rest Q3 initialization study: same sealed fine rest field and box; lab sampling 97/121/145 in x/z; cubic spatial/time derivative controls and original fine-state seal replay. Review before separating padding from larger-domain relaxation, then short matched evolution. Original gates unchanged.
+Next: **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Run twelve bounded initial-only paired padding/sampling controls, including half-cell shifts and finer 169 lab sampling, before selecting short physical evolution. Follow the focused Yang-Mills/SF, Maxwell topology and quantum-state applicability plan; keep five assessment dimensions separate.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 

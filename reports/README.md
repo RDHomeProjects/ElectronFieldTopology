@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-12T12:46:43.693315+00:00; Australia/Melbourne 2026-11-12T23:46:43.693315+11:00.
+Updated: UTC 2026-11-12T13:24:27.005071+00:00; Australia/Melbourne 2026-11-13T00:24:27.005071+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](s5-b/010-intermediate-q-survey/assessments/20261112t124307z-a8b10d33/README.md) — Nine-case initial-field diagnosis locates the Q3 fine z speed deficit at initialization (1.056717% vs fitted 1.057322%). Cadence controls and Hamiltonian-density centroid do not resolve it. Original gates and Q4/Q7 unresolved findings remain unchanged.
+[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](s5-b/010-intermediate-q-survey/assessments/20261112t131727z-1cce12ab/README.md) — The six-case fixed-rest initialization study reproduces the fine state but speed error is nonmonotonic; the tiny 121 x error reflects cancellation, and coarse held-layer projection mixes boundary treatment with sampling. Original failures and scientific gate remain open.
