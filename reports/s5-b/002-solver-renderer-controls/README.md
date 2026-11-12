@@ -1,6 +1,6 @@
 # s5-b-002: Physical-time solver and independent renderer controls — evidence index
 
-Updated: UTC 2026-11-11T15:46:53.345043+00:00; Australia/Melbourne 2026-11-12T02:46:53.345043+11:00.
+Updated: UTC 2026-11-12T07:52:19.488261+00:00; Australia/Melbourne 2026-11-12T18:52:19.488261+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/002-solver-renderer-controls.md). State: assessed; scientific gate: bounded.
 

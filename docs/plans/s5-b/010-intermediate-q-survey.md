@@ -1,8 +1,8 @@
 # s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion
 
-Updated: UTC 2026-11-11T15:46:53.345043+00:00; Australia/Melbourne 2026-11-12T02:46:53.345043+11:00.
+Updated: UTC 2026-11-12T07:52:19.488261+00:00; Australia/Melbourne 2026-11-12T18:52:19.488261+11:00.
 
-State: **recorded**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Which fresh intermediate-Q families can be strictly prepared and retain controll
 
 ## Evidence and present finding
 
-Local fresh Q3/Q4/Q7 survey recorded with native status complete_pending_review. Original preparation/motion failures and skipped comparisons await scientific assessment. Q1 remains parked.
+Q3 has three strictly prepared meshes and near-fourth-order temporal differences over common T0.1/T0.2 windows; small-box z motion fails speed while x short motion and the larger-box z/T0.5 case pass. Q4 medium stationarity does not pass boundary admission and both fine routes remain unresolved. Q7 preparation remains unresolved. The workstation frozen-instrument replay reports 1588 numeric comparisons with zero difference; full fields were archived and PR63 merged.
 
 ## Next action and exit evidence
 
-Assess the published compact outcomes and verified complete fields, compare competing starts and mesh/time/domain diagnostics, then choose follow-up. Do not treat completion or seed labels as physical acceptance.
+Prepare the bounded Q3 mesh/domain/initialization/centroid diagnosis described in the new assessment plan; preserve failed small-box cases and original gates. Keep Q4 boundary/preparation and a separately registered Q7 checkpoint continuation as targeted follow-ups. Q1 stays parked and Q2 remains the reference; new evolution requires its own recorded preparation.
 
 Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.
 

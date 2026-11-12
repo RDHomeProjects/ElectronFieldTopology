@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-11T15:46:53.345043+00:00",
-    "melbourne": "2026-11-12T02:46:53.345043+11:00"
+    "utc": "2026-11-12T07:52:19.488261+00:00",
+    "melbourne": "2026-11-12T18:52:19.488261+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
@@ -1170,11 +1170,11 @@
       "number": 10,
       "slug": "intermediate-q-survey",
       "title": "Fresh Q3 Q4 Q7 survey and detailed motion",
-      "state": "recorded",
+      "state": "assessed",
       "gate": "open",
       "question": "Which fresh intermediate-Q families can be strictly prepared and retain controlled motion across physical mesh, time step and domain changes?",
-      "finding": "Local fresh Q3/Q4/Q7 survey recorded with native status complete_pending_review. Original preparation/motion failures and skipped comparisons await scientific assessment. Q1 remains parked.",
-      "next_action": "Assess the published compact outcomes and verified complete fields, compare competing starts and mesh/time/domain diagnostics, then choose follow-up. Do not treat completion or seed labels as physical acceptance.",
+      "finding": "Q3 has three strictly prepared meshes and near-fourth-order temporal differences over common T0.1/T0.2 windows; small-box z motion fails speed while x short motion and the larger-box z/T0.5 case pass. Q4 medium stationarity does not pass boundary admission and both fine routes remain unresolved. Q7 preparation remains unresolved. The workstation frozen-instrument replay reports 1588 numeric comparisons with zero difference; full fields were archived and PR63 merged.",
+      "next_action": "Prepare the bounded Q3 mesh/domain/initialization/centroid diagnosis described in the new assessment plan; preserve failed small-box cases and original gates. Keep Q4 boundary/preparation and a separately registered Q7 checkpoint continuation as targeted follow-ups. Q1 stays parked and Q2 remains the reference; new evolution requires its own recorded preparation.",
       "exit_evidence": "Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.",
       "depends_on": [
         "s5-b-006",
@@ -1218,6 +1218,11 @@
           "role": "verification",
           "path": "data/archives/20261111t132834z-2016a3d0/README.md",
           "label": "Complete candidate fields and handover: descriptive verified Release"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/010-intermediate-q-survey/assessments/20261111t213047z-4d88bfc1/README.md",
+          "label": "Q3 Q4 Q7 assessed outcomes, full-field replay and bounded Q3 diagnostic decision"
         }
       ]
     }
@@ -1327,8 +1332,8 @@
     }
   ],
   "current": {
-    "latest_assessed_study": "s5-b-007",
-    "summary": "S5-B-010 local results are recorded pending assessment. Complete fields are retained in verified descriptive Release assets. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.",
-    "limits": "Latest assessed scientific activity remains S5-B-007. New seed-resolution and software controls are preparation only. General isolated motion, physical-grid/domain convergence, unique knot identity and charge/spin remain open; Q2 controls and Q18/additional-Q work remain registered."
+    "latest_assessed_study": "s5-b-010",
+    "summary": "Q3 has three strictly prepared meshes and near-fourth-order temporal differences over common T0.1/T0.2 windows; small-box z motion fails speed while x short motion and the larger-box z/T0.5 case pass. Q4 medium stationarity does not pass boundary admission and both fine routes remain unresolved. Q7 preparation remains unresolved. The workstation frozen-instrument replay reports 1588 numeric comparisons with zero difference; full fields were archived and PR63 merged.",
+    "limits": "Only finite reflecting-box windows were tested. Q3 T0.5 temporal/mesh/domain comparisons remain partial, direction/domain sensitivity persists, and Q4/Q7 motion is unqualified or untested. Same-instrument replay agreement is reproducibility evidence, not independent theory validation, spatial/domain closure, unique knot identity, isolated stability, electric charge or quantum spin."
   }
 }
