@@ -1,6 +1,6 @@
 # s2-001: Independent periodic Maxwell evolution — evidence index
 
-Updated: UTC 2026-11-12T12:46:43.693315+00:00; Australia/Melbourne 2026-11-12T23:46:43.693315+11:00.
+Updated: UTC 2026-11-12T13:24:27.005071+00:00; Australia/Melbourne 2026-11-13T00:24:27.005071+11:00.
 
 [Current study plan](../../../docs/plans/s2/001-periodic-evolution.md). State: assessed; scientific gate: bounded.
 
