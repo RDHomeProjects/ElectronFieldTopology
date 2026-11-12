@@ -1,6 +1,6 @@
 # s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion
 
-Updated: UTC 2026-11-12T08:42:42.111134+00:00; Australia/Melbourne 2026-11-12T19:42:42.111134+11:00.
+Updated: UTC 2026-11-12T12:46:43.693315+00:00; Australia/Melbourne 2026-11-12T23:46:43.693315+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -10,11 +10,11 @@ Which fresh intermediate-Q families can be strictly prepared and retain controll
 
 ## Evidence and present finding
 
-Q3 observation controls exactly replay 133 alternative fits and 10 comparisons; the fine z speed envelope remains 1.057319–1.057461%, above the original 1% gate. Tested cadence/start-window changes do not explain the deficit. The earlier survey assessment and all Q4/Q7 unresolved findings remain unchanged.
+Nine-case initial-field diagnosis locates the Q3 fine z speed deficit at initialization (1.056717% vs fitted 1.057322%). Cadence controls and Hamiltonian-density centroid do not resolve it. Original gates and Q4/Q7 unresolved findings remain unchanged.
 
 ## Next action and exit evidence
 
-Run the prepared read-only initial-field centroid-rate/energy-flux diagnostic on retained sealed float64 fields before deciding further Q3 evolution. Compare initialization, density choices and discrete continuity/summation contributions. Keep original gates, Q1 parked, Q2 reference and Q4/Q7 follow-ups unchanged.
+Run the controlled fixed-rest Q3 initialization study: same sealed fine rest field and box; lab sampling 97/121/145 in x/z; cubic spatial/time derivative controls and original fine-state seal replay. Review before separating padding from larger-domain relaxation, then short matched evolution. Original gates unchanged.
 
 Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.
 
