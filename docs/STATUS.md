@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-12T07:52:19.488261+00:00; Australia/Melbourne 2026-11-12T18:52:19.488261+11:00.
+Updated: UTC 2026-11-12T08:42:42.111134+00:00; Australia/Melbourne 2026-11-12T19:42:42.111134+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-010**, Fresh Q3 Q4 Q7 survey and detailed motion. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-Q3 has three strictly prepared meshes and near-fourth-order temporal differences over common T0.1/T0.2 windows; small-box z motion fails speed while x short motion and the larger-box z/T0.5 case pass. Q4 medium stationarity does not pass boundary admission and both fine routes remain unresolved. Q7 preparation remains unresolved. The workstation frozen-instrument replay reports 1588 numeric comparisons with zero difference; full fields were archived and PR63 merged.
+Q3 observation controls exactly replay 133 alternative fits and 10 comparisons; the fine z speed envelope remains 1.057319–1.057461%, above the original 1% gate. Tested cadence/start-window changes do not explain the deficit. The earlier survey assessment and all Q4/Q7 unresolved findings remain unchanged.
 
-Only finite reflecting-box windows were tested. Q3 T0.5 temporal/mesh/domain comparisons remain partial, direction/domain sensitivity persists, and Q4/Q7 motion is unqualified or untested. Same-instrument replay agreement is reproducibility evidence, not independent theory validation, spatial/domain closure, unique knot identity, isolated stability, electric charge or quantum spin.
+Observation controls do not establish spatial/domain convergence or a discrete conservation identity. Initial-field diagnostic production execution is pending; momentum/energy ratios are proxies. No physical charge, spin or electron validation is claimed.
 
 ## Next scientific task
 
-[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md): Prepare the bounded Q3 mesh/domain/initialization/centroid diagnosis described in the new assessment plan; preserve failed small-box cases and original gates. Keep Q4 boundary/preparation and a separately registered Q7 checkpoint continuation as targeted follow-ups. Q1 stays parked and Q2 remains the reference; new evolution requires its own recorded preparation.
+[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md): Run the prepared read-only initial-field centroid-rate/energy-flux diagnostic on retained sealed float64 fields before deciding further Q3 evolution. Compare initialization, density choices and discrete continuity/summation contributions. Keep original gates, Q1 parked, Q2 reference and Q4/Q7 follow-ups unchanged.
 
 ## Study register
 

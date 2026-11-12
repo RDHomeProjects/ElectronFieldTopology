@@ -1,6 +1,6 @@
 # S3-B: Centroid and localization
 
-Updated: UTC 2026-11-12T07:52:19.488261+00:00; Australia/Melbourne 2026-11-12T18:52:19.488261+11:00.
+Updated: UTC 2026-11-12T08:42:42.111134+00:00; Australia/Melbourne 2026-11-12T19:42:42.111134+11:00.
 
 Energy distribution and finite-tail diagnostics.
 
