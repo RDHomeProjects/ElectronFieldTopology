@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-12T07:52:19.488261+00:00; Australia/Melbourne 2026-11-12T18:52:19.488261+11:00.
+Updated: UTC 2026-11-12T08:42:42.111134+00:00; Australia/Melbourne 2026-11-12T19:42:42.111134+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](s5-b/010-intermediate-q-survey/assessments/20261111t213047z-4d88bfc1/README.md) — Q3 has three strictly prepared meshes and near-fourth-order temporal differences over common T0.1/T0.2 windows; small-box z motion fails speed while x short motion and the larger-box z/T0.5 case pass. Q4 medium stationarity does not pass boundary admission and both fine routes remain unresolved. Q7 preparation remains unresolved. The workstation frozen-instrument replay reports 1588 numeric comparisons with zero difference; full fields were archived and PR63 merged.
+[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](s5-b/010-intermediate-q-survey/assessments/20261112t081500z-d30b01a1/README.md) — Q3 observation controls exactly replay 133 alternative fits and 10 comparisons; the fine z speed envelope remains 1.057319–1.057461%, above the original 1% gate. Tested cadence/start-window changes do not explain the deficit. The earlier survey assessment and all Q4/Q7 unresolved findings remain unchanged.
