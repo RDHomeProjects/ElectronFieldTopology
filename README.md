@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-12T08:42:42.111134+00:00; Australia/Melbourne 2026-11-12T19:42:42.111134+11:00.
+Updated: UTC 2026-11-12T12:46:43.693315+00:00; Australia/Melbourne 2026-11-12T23:46:43.693315+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-Q3 observation controls exactly replay 133 alternative fits and 10 comparisons; the fine z speed envelope remains 1.057319–1.057461%, above the original 1% gate. Tested cadence/start-window changes do not explain the deficit. The earlier survey assessment and all Q4/Q7 unresolved findings remain unchanged.
+Nine-case initial-field diagnosis locates the Q3 fine z speed deficit at initialization (1.056717% vs fitted 1.057322%). Cadence controls and Hamiltonian-density centroid do not resolve it. Original gates and Q4/Q7 unresolved findings remain unchanged.
 
-Observation controls do not establish spatial/domain convergence or a discrete conservation identity. Initial-field diagnostic production execution is pending; momentum/energy ratios are proxies. No physical charge, spin or electron validation is claimed.
+Observation controls do not establish spatial/domain convergence or a discrete conservation identity. Controlled fixed-rest sampling production execution is pending; momentum/energy ratios remain proxies. No physical charge, spin or electron validation is claimed.
 
-Next: **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Run the prepared read-only initial-field centroid-rate/energy-flux diagnostic on retained sealed float64 fields before deciding further Q3 evolution. Compare initialization, density choices and discrete continuity/summation contributions. Keep original gates, Q1 parked, Q2 reference and Q4/Q7 follow-ups unchanged.
+Next: **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Run the controlled fixed-rest Q3 initialization study: same sealed fine rest field and box; lab sampling 97/121/145 in x/z; cubic spatial/time derivative controls and original fine-state seal replay. Review before separating padding from larger-domain relaxation, then short matched evolution. Original gates unchanged.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 
