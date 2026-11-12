@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-11T15:46:53.345043+00:00; Australia/Melbourne 2026-11-12T02:46:53.345043+11:00.
+Updated: UTC 2026-11-12T07:52:19.488261+00:00; Australia/Melbourne 2026-11-12T18:52:19.488261+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-007: Q17/Q19 motion comparison](s5-b/007-higher-q-motion/assessments/20261108t133139z-d11d12c1/ASSESSMENT.md) — S5-B-010 local results are recorded pending assessment. Complete fields are retained in verified descriptive Release assets. Q1 stays parked; earlier Q17/Q19 findings and original gates remain.
+[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](s5-b/010-intermediate-q-survey/assessments/20261111t213047z-4d88bfc1/README.md) — Q3 has three strictly prepared meshes and near-fourth-order temporal differences over common T0.1/T0.2 windows; small-box z motion fails speed while x short motion and the larger-box z/T0.5 case pass. Q4 medium stationarity does not pass boundary admission and both fine routes remain unresolved. Q7 preparation remains unresolved. The workstation frozen-instrument replay reports 1588 numeric comparisons with zero difference; full fields were archived and PR63 merged.

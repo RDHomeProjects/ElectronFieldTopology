@@ -1,0 +1,958 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-11T12:42:44.910770+00:00",
+    "melbourne": "2026-11-11T23:42:44.910770+11:00"
+  },
+  "source_run": "20261109t134425z-89d28344",
+  "source_commit": "bae639dc700c5653cb4bfb2738608795b37da641",
+  "evidence_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+  "status": "compact_record_checks_passed",
+  "verified_here": {
+    "compact_hashed_members": 238,
+    "zip_members": 239,
+    "summary_byte_exact": true,
+    "config_canonical_hash": true,
+    "rest_endpoint_metric_sets": 18,
+    "evolved_cases_with_history_arithmetic": 12,
+    "history_rows": 207,
+    "milestone_and_final_assessment_recalculations": 37,
+    "identical_fine_dt_initial_state_hash": true,
+    "descriptive_order_arithmetic": [
+      {
+        "time": 0.1,
+        "kind": "field",
+        "order": 3.9716729454211244
+      },
+      {
+        "time": 0.1,
+        "kind": "rate",
+        "order": 4.0214816271567075
+      },
+      {
+        "time": 0.2,
+        "kind": "field",
+        "order": 4.02368823060065
+      },
+      {
+        "time": 0.2,
+        "kind": "rate",
+        "order": 3.9675117078165316
+      }
+    ]
+  },
+  "workstation_attestation": {
+    "recorded_at": {
+      "utc": "2026-11-11T12:35:03.216864+00:00",
+      "melbourne": "2026-11-11T23:35:03.216864+11:00"
+    },
+    "record_id": "20261109t134425z-89d28344",
+    "source_commit": "bae639dc700c5653cb4bfb2738608795b37da641",
+    "status": "complete_pending_review",
+    "config_sha256": "425246008dad48bf3722a245f2ecbc70567208b1e7397fc7bca1baf6a1003090",
+    "evidence_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+    "compact_hashed_members": 238,
+    "sealed_field_or_curve_files": 112,
+    "rest_records": 18,
+    "case_records": 15,
+    "scope": "Source commit/locks, all compact members, declared full-field/curve/snapshot hashes and NPZ CRCs checked; this is not a new scientific metric replay."
+  },
+  "limits": [
+    "112 sealed field/curve files were verified on the workstation according to its receipt; those files are absent here and were not independently rehashed here.",
+    "Centroid, energy, momentum and tail history arithmetic was recalculated from authenticated records. Shape/topology and field differences require full-field replay; their numerical values remain recorded measurements.",
+    "No numerical source commit object was fetched; source/lock verification is the workstation attestation.",
+    "No new optimization, physical-time evolution, threshold change or GitHub interaction."
+  ],
+  "counts": {
+    "rest": {
+      "stationary": 8,
+      "preparation_unresolved": 7,
+      "topology_unresolved": 2,
+      "stationarity_unresolved": 1
+    },
+    "cases": {
+      "screen_pass": 6,
+      "screen_failed": 6,
+      "admission_rejected": 3
+    }
+  },
+  "rest": [
+    {
+      "id": "q2-reference",
+      "q": 2,
+      "status": "stationary",
+      "iterations": 0,
+      "calls": 0,
+      "energy": 1.99948549715528,
+      "force": 1.1542460483789047e-05,
+      "acceleration": 6.636497024101145e-05,
+      "force_over_limit": 0.11542460483789047,
+      "acceleration_over_limit": 0.06636497024101146,
+      "tail_percent": 0.03015441669190186,
+      "minimum_recorded_force": 1.1542460483789047e-05,
+      "reason": null
+    },
+    {
+      "id": "q3-axial-coarse-fresh",
+      "q": 3,
+      "status": "stationary",
+      "iterations": 225,
+      "calls": 2,
+      "energy": 2.785585644021431,
+      "force": 7.456741350477546e-05,
+      "acceleration": 0.000738149854967357,
+      "force_over_limit": 0.7456741350477545,
+      "acceleration_over_limit": 0.738149854967357,
+      "tail_percent": 0.02704874931397207,
+      "minimum_recorded_force": 7.456741350477546e-05,
+      "reason": null
+    },
+    {
+      "id": "q3-bent-coarse-fresh",
+      "q": 3,
+      "status": "preparation_unresolved",
+      "iterations": 1200,
+      "calls": 6,
+      "energy": 2.785587931305862,
+      "force": 0.0003698130543172773,
+      "acceleration": 0.002240373067580353,
+      "force_over_limit": 3.698130543172773,
+      "acceleration_over_limit": 2.2403730675803533,
+      "tail_percent": 0.027403778780332726,
+      "minimum_recorded_force": 0.0002729061549271217,
+      "reason": "Declared preparation allocation exhausted or retained reference unqualified; no physical candidate rejection"
+    },
+    {
+      "id": "q4-axial41-coarse-fresh",
+      "q": 4,
+      "status": "preparation_unresolved",
+      "iterations": 1200,
+      "calls": 6,
+      "energy": 3.5929219456259758,
+      "force": 0.0011594344536356488,
+      "acceleration": 0.006330411158048311,
+      "force_over_limit": 11.594344536356488,
+      "acceleration_over_limit": 6.33041115804831,
+      "tail_percent": 0.08047472584019995,
+      "minimum_recorded_force": 0.00014624996523252017,
+      "reason": "Declared preparation allocation exhausted or retained reference unqualified; no physical candidate rejection"
+    },
+    {
+      "id": "q4-axial22-coarse-fresh",
+      "q": 4,
+      "status": "topology_unresolved",
+      "iterations": 75,
+      "calls": 1,
+      "energy": 3.467985064007114,
+      "force": 0.25115458924998774,
+      "acceleration": 11.649766937638372,
+      "force_over_limit": 2511.545892499877,
+      "acceleration_over_limit": 11649.766937638371,
+      "tail_percent": 0.015428163292230339,
+      "minimum_recorded_force": 0.026570106820949655,
+      "reason": "Readmission topology diagnostic failed"
+    },
+    {
+      "id": "q7-axial-coarse-fresh",
+      "q": 7,
+      "status": "stationarity_unresolved",
+      "iterations": 323,
+      "calls": 3,
+      "energy": 5.525546502143066,
+      "force": 0.15114952263458575,
+      "acceleration": 4.987432760731952,
+      "force_over_limit": 1511.4952263458574,
+      "acceleration_over_limit": 4987.432760731952,
+      "tail_percent": 0.07575672179560743,
+      "minimum_recorded_force": 0.03286040468660091,
+      "reason": "Armijo search stalled"
+    },
+    {
+      "id": "q7-trefoil-coarse-fresh",
+      "q": 7,
+      "status": "topology_unresolved",
+      "iterations": 325,
+      "calls": 2,
+      "energy": 5.298928624782993,
+      "force": 0.1487381738687389,
+      "acceleration": 5.6447470012541805,
+      "force_over_limit": 1487.3817386873889,
+      "acceleration_over_limit": 5644.747001254181,
+      "tail_percent": 0.0351148933862267,
+      "minimum_recorded_force": 0.005813978943275104,
+      "reason": "Readmission topology diagnostic failed"
+    },
+    {
+      "id": "q3-axial-medium-fresh",
+      "q": 3,
+      "status": "stationary",
+      "iterations": 200,
+      "calls": 1,
+      "energy": 2.7928766068098656,
+      "force": 6.49098329766592e-05,
+      "acceleration": 0.0006786804238339941,
+      "force_over_limit": 0.649098329766592,
+      "acceleration_over_limit": 0.6786804238339941,
+      "tail_percent": 0.02810791161806883,
+      "minimum_recorded_force": 6.49098329766592e-05,
+      "reason": null
+    },
+    {
+      "id": "q3-axial-medium-warm",
+      "q": 3,
+      "status": "stationary",
+      "iterations": 375,
+      "calls": 2,
+      "energy": 2.7928752032778417,
+      "force": 9.318091212904314e-05,
+      "acceleration": 0.000673689185657545,
+      "force_over_limit": 0.9318091212904314,
+      "acceleration_over_limit": 0.673689185657545,
+      "tail_percent": 0.02810055122580608,
+      "minimum_recorded_force": 9.318091212904314e-05,
+      "reason": null
+    },
+    {
+      "id": "q3-axial-fine-fresh",
+      "q": 3,
+      "status": "stationary",
+      "iterations": 225,
+      "calls": 2,
+      "energy": 2.7953461617182334,
+      "force": 9.027288089489444e-05,
+      "acceleration": 0.0006613874156058099,
+      "force_over_limit": 0.9027288089489444,
+      "acceleration_over_limit": 0.6613874156058099,
+      "tail_percent": 0.02849933896339902,
+      "minimum_recorded_force": 9.027288089489444e-05,
+      "reason": null
+    },
+    {
+      "id": "q3-axial-fine-warm",
+      "q": 3,
+      "status": "stationary",
+      "iterations": 50,
+      "calls": 1,
+      "energy": 2.7953452477710763,
+      "force": 9.460063192660284e-05,
+      "acceleration": 0.0007749056125761395,
+      "force_over_limit": 0.9460063192660283,
+      "acceleration_over_limit": 0.7749056125761395,
+      "tail_percent": 0.02848491096427298,
+      "minimum_recorded_force": 9.460063192660284e-05,
+      "reason": null
+    },
+    {
+      "id": "q3-axial-domain-warm",
+      "q": 3,
+      "status": "stationary",
+      "iterations": 75,
+      "calls": 1,
+      "energy": 2.794810659984525,
+      "force": 8.321395664562329e-05,
+      "acceleration": 0.0006204729269432818,
+      "force_over_limit": 0.8321395664562329,
+      "acceleration_over_limit": 0.6204729269432818,
+      "tail_percent": 0.014258361511673263,
+      "minimum_recorded_force": 8.321395664562329e-05,
+      "reason": null
+    },
+    {
+      "id": "q4-axial41-medium-fresh",
+      "q": 4,
+      "status": "stationary",
+      "iterations": 225,
+      "calls": 2,
+      "energy": 3.6027385708268214,
+      "force": 6.35318860363358e-05,
+      "acceleration": 0.0005436435896968481,
+      "force_over_limit": 0.6353188603633579,
+      "acceleration_over_limit": 0.5436435896968481,
+      "tail_percent": 0.08419777534177962,
+      "minimum_recorded_force": 6.35318860363358e-05,
+      "reason": null
+    },
+    {
+      "id": "q4-axial22-medium-fresh",
+      "q": 4,
+      "status": "preparation_unresolved",
+      "iterations": 1200,
+      "calls": 6,
+      "energy": 3.5073675762352234,
+      "force": 0.00016979860357199805,
+      "acceleration": 0.0019882973631413434,
+      "force_over_limit": 1.6979860357199803,
+      "acceleration_over_limit": 1.9882973631413434,
+      "tail_percent": 0.017521072231253522,
+      "minimum_recorded_force": 4.453299113137628e-05,
+      "reason": "Declared preparation allocation exhausted or retained reference unqualified; no physical candidate rejection"
+    },
+    {
+      "id": "q4-axial41-fine-fresh",
+      "q": 4,
+      "status": "preparation_unresolved",
+      "iterations": 1200,
+      "calls": 6,
+      "energy": 3.605716937765863,
+      "force": 0.008571991096005866,
+      "acceleration": 0.07313172460333907,
+      "force_over_limit": 85.71991096005866,
+      "acceleration_over_limit": 73.13172460333907,
+      "tail_percent": 0.08080680209790977,
+      "minimum_recorded_force": 0.00012159262494009158,
+      "reason": "Declared preparation allocation exhausted or retained reference unqualified; no physical candidate rejection"
+    },
+    {
+      "id": "q4-axial41-fine-warm",
+      "q": 4,
+      "status": "preparation_unresolved",
+      "iterations": 1200,
+      "calls": 6,
+      "energy": 3.6017795967277197,
+      "force": 0.020581278620729518,
+      "acceleration": 0.17504570845989817,
+      "force_over_limit": 205.81278620729518,
+      "acceleration_over_limit": 175.04570845989818,
+      "tail_percent": 0.0579309295233344,
+      "minimum_recorded_force": 0.0001233667946736264,
+      "reason": "Declared preparation allocation exhausted or retained reference unqualified; no physical candidate rejection"
+    },
+    {
+      "id": "q7-axial-medium-fresh",
+      "q": 7,
+      "status": "preparation_unresolved",
+      "iterations": 1200,
+      "calls": 6,
+      "energy": 5.548517380394311,
+      "force": 0.005293887226215454,
+      "acceleration": 0.04989205333805393,
+      "force_over_limit": 52.93887226215454,
+      "acceleration_over_limit": 49.89205333805393,
+      "tail_percent": 0.05789235023580569,
+      "minimum_recorded_force": 0.0004143321745463007,
+      "reason": "Declared preparation allocation exhausted or retained reference unqualified; no physical candidate rejection"
+    },
+    {
+      "id": "q7-trefoil-medium-fresh",
+      "q": 7,
+      "status": "preparation_unresolved",
+      "iterations": 1200,
+      "calls": 6,
+      "energy": 5.33279972069303,
+      "force": 0.00017940288265448742,
+      "acceleration": 0.0035355805783470495,
+      "force_over_limit": 1.794028826544874,
+      "acceleration_over_limit": 3.5355805783470493,
+      "tail_percent": 0.03395741146761095,
+      "minimum_recorded_force": 0.00017940288265448742,
+      "reason": "Declared preparation allocation exhausted or retained reference unqualified; no physical candidate rejection"
+    }
+  ],
+  "cases": [
+    {
+      "id": "q2-reference-dt0.01",
+      "q": 2,
+      "status": "screen_pass",
+      "time": 0.2,
+      "requested_time": 0.2,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.02744519154488718,
+      "width3_guard_percent": 0.05914838839268166,
+      "velocity": [
+        5.372168606146666e-15,
+        6.69199637353162e-16,
+        0.2974650047783957
+      ],
+      "speed_error_percent": 0.8449984072014249,
+      "rest_speed": null,
+      "shape_error_percent": 0.20962334909355282,
+      "tail_percent": 0.02745245517056992,
+      "failed_gates": [],
+      "energy_relative_drift": 1.9335784303031868e-13,
+      "momentum_scaled_drift": 6.03458474154764e-08,
+      "initial_state_sha256": "1f5e81b5f83c60764feecd6a4fc10713e2739a1c9cbfe35e32b8c7882c343430"
+    },
+    {
+      "id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "q": 3,
+      "status": "screen_failed",
+      "time": 0.2,
+      "requested_time": 0.2,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.02383242327446113,
+      "width3_guard_percent": 0.04556397014940955,
+      "velocity": [
+        2.997282134840566e-07,
+        -2.7929073523362335e-06,
+        0.29295675483073175
+      ],
+      "speed_error_percent": 2.3477485764637693,
+      "rest_speed": null,
+      "shape_error_percent": 0.4311816424734984,
+      "tail_percent": 0.02384908324776039,
+      "failed_gates": [
+        "speed"
+      ],
+      "energy_relative_drift": 6.502787493399636e-14,
+      "momentum_scaled_drift": 3.4075835235664607e-06,
+      "initial_state_sha256": "1dd7e725abf19a77f796852813c4b63250d62de8021ebc389d3c437a699879e1"
+    },
+    {
+      "id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "q": 3,
+      "status": "screen_pass",
+      "time": 0.2,
+      "requested_time": 0.2,
+      "beta": 0.0,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.02704874931397211,
+      "width3_guard_percent": 0.05014319281127526,
+      "velocity": [
+        4.5309033112013037e-07,
+        -1.4937123851238745e-06,
+        2.7059197062166585e-09
+      ],
+      "speed_error_percent": null,
+      "rest_speed": 1.5609211574030443e-06,
+      "shape_error_percent": 0.00011377883498920078,
+      "tail_percent": 0.02704874992783356,
+      "failed_gates": [],
+      "energy_relative_drift": 1.594240014853573e-16,
+      "momentum_scaled_drift": 3.1084361869693677e-06,
+      "initial_state_sha256": "8591fc6698ecd5f99d0f27afea38b72f718d4ece026d1805f176766270da4efb"
+    },
+    {
+      "id": "q3-axial-coarse-fresh-z-dt0.01",
+      "q": 3,
+      "status": "screen_failed",
+      "time": 0.2,
+      "requested_time": 0.5,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.02383242327446113,
+      "width3_guard_percent": 0.04556397014940955,
+      "velocity": [
+        2.9974541889127175e-07,
+        -2.7929135518881667e-06,
+        0.29295659076397335
+      ],
+      "speed_error_percent": 2.347803265379951,
+      "rest_speed": null,
+      "shape_error_percent": 0.4311816424734984,
+      "tail_percent": 0.02384908324776039,
+      "failed_gates": [
+        "speed"
+      ],
+      "energy_relative_drift": 6.502787493399636e-14,
+      "momentum_scaled_drift": 3.4075835235664607e-06,
+      "initial_state_sha256": "1dd7e725abf19a77f796852813c4b63250d62de8021ebc389d3c437a699879e1"
+    },
+    {
+      "id": "q3-axial-medium-warm-rest-dt0.01",
+      "q": 3,
+      "status": "screen_pass",
+      "time": 0.2,
+      "requested_time": 0.2,
+      "beta": 0.0,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.028100551225806077,
+      "width3_guard_percent": 0.05182754896543685,
+      "velocity": [
+        1.3987786603705679e-07,
+        1.0744090284809907e-07,
+        -8.244690730903929e-09
+      ],
+      "speed_error_percent": null,
+      "rest_speed": 1.7657106200378284e-07,
+      "shape_error_percent": 0.00011205951977958243,
+      "tail_percent": 0.028100551225806077,
+      "failed_gates": [],
+      "energy_relative_drift": 1.5900789599508776e-16,
+      "momentum_scaled_drift": 3.6122718671422434e-07,
+      "initial_state_sha256": "c302ef2856c26d6572dc8d34f21e072e99dc74ccba71444247a6fa2fe6f18dc7"
+    },
+    {
+      "id": "q3-axial-medium-warm-z-dt0.01",
+      "q": 3,
+      "status": "screen_failed",
+      "time": 0.2,
+      "requested_time": 0.5,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.024840810452535413,
+      "width3_guard_percent": 0.047076329018484075,
+      "velocity": [
+        3.683990974328593e-08,
+        4.942294069605986e-07,
+        0.29468706804551476
+      ],
+      "speed_error_percent": 1.7709773258668402,
+      "rest_speed": null,
+      "shape_error_percent": 0.3115464850059021,
+      "tail_percent": 0.024873383782656834,
+      "failed_gates": [
+        "speed"
+      ],
+      "energy_relative_drift": 2.9391645981616974e-13,
+      "momentum_scaled_drift": 5.761468784124515e-07,
+      "initial_state_sha256": "4e6ac80d97060ff160c40551f402a481edc7e0068d732116af97f4188a08054d"
+    },
+    {
+      "id": "q3-axial-fine-warm-rest-dt0.01",
+      "q": 3,
+      "status": "screen_pass",
+      "time": 0.2,
+      "requested_time": 0.2,
+      "beta": 0.0,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.028484910964272973,
+      "width3_guard_percent": 0.05233184120814741,
+      "velocity": [
+        3.877209469466358e-08,
+        -1.2969667852954207e-07,
+        -1.4553313489587372e-09
+      ],
+      "speed_error_percent": null,
+      "rest_speed": 1.353758536000516e-07,
+      "shape_error_percent": 0.00011911732651121025,
+      "tail_percent": 0.028484910964272973,
+      "failed_gates": [],
+      "energy_relative_drift": 1.588673922135972e-16,
+      "momentum_scaled_drift": 2.675588956907017e-07,
+      "initial_state_sha256": "9554fb862c747124ae59a8143650c0fec6fd361f034d2be8b0467d72c43cd948"
+    },
+    {
+      "id": "q3-axial-fine-warm-z-dt0.01",
+      "q": 3,
+      "status": "screen_failed",
+      "time": 0.2,
+      "requested_time": 0.5,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.0255369318104019,
+      "width3_guard_percent": 0.047331792753020595,
+      "velocity": [
+        3.773617770887416e-08,
+        -3.084209034582546e-07,
+        0.2968280348541935
+      ],
+      "speed_error_percent": 1.0573217203417835,
+      "rest_speed": null,
+      "shape_error_percent": 0.23111954334918858,
+      "tail_percent": 0.025545312108660873,
+      "failed_gates": [
+        "speed"
+      ],
+      "energy_relative_drift": 3.054870624321607e-13,
+      "momentum_scaled_drift": 2.8232486920562427e-07,
+      "initial_state_sha256": "7ea700c9fdcf63fc95682f556ed6127151be3e81036f56bbb9b0b8dededb0e90"
+    },
+    {
+      "id": "q3-axial-fine-warm-z-dt0.02",
+      "q": 3,
+      "status": "screen_failed",
+      "time": 0.2,
+      "requested_time": 0.5,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.02,
+      "admission_failures": [],
+      "initial_tail_percent": 0.0255369318104019,
+      "width3_guard_percent": 0.047331792753020595,
+      "velocity": [
+        3.773665789670315e-08,
+        -3.084207377448828e-07,
+        0.29682803450905276
+      ],
+      "speed_error_percent": 1.057321835388696,
+      "rest_speed": null,
+      "shape_error_percent": 0.2311195176895054,
+      "tail_percent": 0.025545311566856174,
+      "failed_gates": [
+        "speed"
+      ],
+      "energy_relative_drift": 9.910279399735676e-12,
+      "momentum_scaled_drift": 2.8232712262560255e-07,
+      "initial_state_sha256": "7ea700c9fdcf63fc95682f556ed6127151be3e81036f56bbb9b0b8dededb0e90"
+    },
+    {
+      "id": "q3-axial-fine-warm-z-dt0.005",
+      "q": 3,
+      "status": "screen_failed",
+      "time": 0.2,
+      "requested_time": 0.5,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.005,
+      "admission_failures": [],
+      "initial_tail_percent": 0.0255369318104019,
+      "width3_guard_percent": 0.047331792753020595,
+      "velocity": [
+        3.7736133573606424e-08,
+        -3.0842093392510567e-07,
+        0.2968280348758336
+      ],
+      "speed_error_percent": 1.057321713128425,
+      "rest_speed": null,
+      "shape_error_percent": 0.23111954487997555,
+      "tail_percent": 0.02554531212496952,
+      "failed_gates": [
+        "speed"
+      ],
+      "energy_relative_drift": 9.252587293128999e-15,
+      "momentum_scaled_drift": 2.8232478758228587e-07,
+      "initial_state_sha256": "7ea700c9fdcf63fc95682f556ed6127151be3e81036f56bbb9b0b8dededb0e90"
+    },
+    {
+      "id": "q3-axial-fine-warm-x-dt0.01",
+      "q": 3,
+      "status": "screen_pass",
+      "time": 0.2,
+      "requested_time": 0.2,
+      "beta": 0.3,
+      "axis": 0,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.024798173165923726,
+      "width3_guard_percent": 0.046740464434045746,
+      "velocity": [
+        0.29754354744975575,
+        0.00011367606083495449,
+        1.1205151765579996e-06
+      ],
+      "speed_error_percent": 0.8196938882535919,
+      "rest_speed": null,
+      "shape_error_percent": 0.2656546421920632,
+      "tail_percent": 0.024823845936575217,
+      "failed_gates": [],
+      "energy_relative_drift": 1.7356730457185014e-12,
+      "momentum_scaled_drift": 2.1747210253535733e-05,
+      "initial_state_sha256": "9303dc15bb51241574c72cdb694506b274a1c539485d9a5052b5a74f14893fbd"
+    },
+    {
+      "id": "q3-axial-domain-warm-z-dt0.01",
+      "q": 3,
+      "status": "screen_pass",
+      "time": 0.5,
+      "requested_time": 0.5,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [],
+      "initial_tail_percent": 0.012684088597378677,
+      "width3_guard_percent": 0.02223093987401413,
+      "velocity": [
+        1.1608687223040254e-07,
+        -4.4322293839520195e-07,
+        0.297098348694679
+      ],
+      "speed_error_percent": 0.9672171138313245,
+      "rest_speed": null,
+      "shape_error_percent": 0.16081555657762703,
+      "tail_percent": 0.012697557103979188,
+      "failed_gates": [],
+      "energy_relative_drift": 9.512916409738375e-13,
+      "momentum_scaled_drift": 7.449840540128709e-07,
+      "initial_state_sha256": "deedf9abb7664153b7761c1d4a92f92384f5db7c19bad65ea8fc51cefa3c01a2"
+    },
+    {
+      "id": "q4-axial41-medium-fresh-screen-dt0.01",
+      "q": 4,
+      "status": "admission_rejected",
+      "time": null,
+      "requested_time": 0.2,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [
+        "width3_guard"
+      ],
+      "initial_tail_percent": 0.0746841035948325,
+      "width3_guard_percent": 0.13770907802992724
+    },
+    {
+      "id": "q4-axial41-medium-fresh-rest-dt0.01",
+      "q": 4,
+      "status": "admission_rejected",
+      "time": null,
+      "requested_time": 0.2,
+      "beta": 0.0,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [
+        "initial_tail",
+        "predicted_tail",
+        "width3_guard"
+      ],
+      "initial_tail_percent": 0.08419777534177958,
+      "width3_guard_percent": 0.15139699263013803
+    },
+    {
+      "id": "q4-axial41-medium-fresh-z-dt0.01",
+      "q": 4,
+      "status": "admission_rejected",
+      "time": null,
+      "requested_time": 0.5,
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "admission_failures": [
+        "width3_guard"
+      ],
+      "initial_tail_percent": 0.0746841035948325,
+      "width3_guard_percent": 0.13770907802992724
+    }
+  ],
+  "comparisons": {
+    "q3-medium-fresh-warm": {
+      "recorded_at": {
+        "utc": "2026-11-09T22:36:50.942463+00:00",
+        "melbourne": "2026-11-10T09:36:50.942463+11:00"
+      },
+      "status": "measured",
+      "kind": "same-grid-fresh-warm-rest",
+      "rest_ids": [
+        "q3-axial-medium-fresh",
+        "q3-axial-medium-warm"
+      ],
+      "field_relative_l2": 0.01280868664628908,
+      "energy_relative_difference": 5.025401859304674e-07,
+      "scope": "Raw full-grid comparison, no registration or claim of identical basins from equal Q/energy."
+    },
+    "q3-fine-fresh-warm": {
+      "recorded_at": {
+        "utc": "2026-11-10T00:57:57.350707+00:00",
+        "melbourne": "2026-11-10T11:57:57.350707+11:00"
+      },
+      "status": "measured",
+      "kind": "same-grid-fresh-warm-rest",
+      "rest_ids": [
+        "q3-axial-fine-fresh",
+        "q3-axial-fine-warm"
+      ],
+      "field_relative_l2": 0.013785234234793676,
+      "energy_relative_difference": 3.269532297647415e-07,
+      "scope": "Raw full-grid comparison, no registration or claim of identical basins from equal Q/energy."
+    },
+    "q3-temporal": {
+      "recorded_at": {
+        "utc": "2026-11-10T02:47:45.683696+00:00",
+        "melbourne": "2026-11-10T13:47:45.683696+11:00"
+      },
+      "status": "partial_matched_windows",
+      "requested_time": 0.5,
+      "full_window_completed": false,
+      "case_ids": [
+        "q3-axial-fine-warm-z-dt0.02",
+        "q3-axial-fine-warm-z-dt0.01",
+        "q3-axial-fine-warm-z-dt0.005"
+      ],
+      "matched_windows": [
+        {
+          "time": 0.1,
+          "coarse_medium": {
+            "field_relative_l2": 2.442609479687637e-09,
+            "rate_relative_l2": 1.5153295999584911e-07,
+            "rate_absolute_rms": 3.3573948015712432e-09
+          },
+          "medium_fine": {
+            "field_relative_l2": 1.5569022587294573e-10,
+            "rate_relative_l2": 9.33083500349808e-09,
+            "rate_absolute_rms": 2.0673586087413802e-10
+          },
+          "field_order": {
+            "order": 3.9716729454211244,
+            "reason": "descriptive three-step estimate at fixed physical grid and common time"
+          },
+          "rate_order": {
+            "order": 4.0214816271567075,
+            "reason": "descriptive three-step estimate at fixed physical grid and common time"
+          }
+        },
+        {
+          "time": 0.2,
+          "coarse_medium": {
+            "field_relative_l2": 5.427790994050057e-09,
+            "rate_relative_l2": 2.609910188573651e-07,
+            "rate_absolute_rms": 5.782412111013142e-09
+          },
+          "medium_fine": {
+            "field_relative_l2": 3.3371233939089864e-10,
+            "rate_relative_l2": 1.668343718770248e-08,
+            "rate_absolute_rms": 3.6963152858324375e-10
+          },
+          "field_order": {
+            "order": 4.02368823060065,
+            "reason": "descriptive three-step estimate at fixed physical grid and common time"
+          },
+          "rate_order": {
+            "order": 3.9675117078165316,
+            "reason": "descriptive three-step estimate at fixed physical grid and common time"
+          }
+        }
+      ],
+      "scope": "Same-grid three-dt full field/rate comparison at reached common windows. Partial windows do not complete the requested T0.5 comparison; order may be unresolved near roundoff and is not spatial convergence or stability."
+    },
+    "q3-domain": {
+      "recorded_at": {
+        "utc": "2026-11-10T05:40:31.519548+00:00",
+        "melbourne": "2026-11-10T16:40:31.519548+11:00"
+      },
+      "kind": "matched-spacing-domain",
+      "role": "q3",
+      "case_ids": [
+        "q3-axial-fine-warm-z-dt0.01",
+        "q3-axial-domain-warm-z-dt0.01"
+      ],
+      "requested_time": 0.5,
+      "time": 0.2,
+      "status": "partial_matched_window",
+      "full_window_completed": false,
+      "fixed_cube_side": 16.0,
+      "sampling_nodes": 41,
+      "difference": {
+        "field_relative_l2": 0.03006934290509863,
+        "rate_relative_l2": 0.007015694431358721,
+        "rate_absolute_rms": 0.00026176269521321996
+      },
+      "scope": "Same fixed physical cube, normalized Hermite field and raw cubic rate sampling at a reached common endpoint. No fitted registration; partial windows do not complete T0.5, and this is not a whole-box error or automatic convergence-order claim."
+    },
+    "q3-mesh-0-1": {
+      "recorded_at": {
+        "utc": "2026-11-10T05:40:36.090128+00:00",
+        "melbourne": "2026-11-10T16:40:36.090128+11:00"
+      },
+      "kind": "fixed-box-physical-mesh",
+      "role": "q3",
+      "case_ids": [
+        "q3-axial-coarse-fresh-z-dt0.01",
+        "q3-axial-medium-warm-z-dt0.01"
+      ],
+      "requested_time": 0.5,
+      "time": 0.2,
+      "status": "partial_matched_window",
+      "full_window_completed": false,
+      "fixed_cube_side": 16.0,
+      "sampling_nodes": 41,
+      "difference": {
+        "field_relative_l2": 0.0365849579274778,
+        "rate_relative_l2": 0.041769431766459766,
+        "rate_absolute_rms": 0.001542543341471569
+      },
+      "scope": "Same fixed physical cube, normalized Hermite field and raw cubic rate sampling at a reached common endpoint. No fitted registration; partial windows do not complete T0.5, and this is not a whole-box error or automatic convergence-order claim."
+    },
+    "q3-mesh-1-2": {
+      "recorded_at": {
+        "utc": "2026-11-10T05:40:38.319974+00:00",
+        "melbourne": "2026-11-10T16:40:38.319974+11:00"
+      },
+      "kind": "fixed-box-physical-mesh",
+      "role": "q3",
+      "case_ids": [
+        "q3-axial-medium-warm-z-dt0.01",
+        "q3-axial-fine-warm-z-dt0.01"
+      ],
+      "requested_time": 0.5,
+      "time": 0.2,
+      "status": "partial_matched_window",
+      "full_window_completed": false,
+      "fixed_cube_side": 16.0,
+      "sampling_nodes": 41,
+      "difference": {
+        "field_relative_l2": 0.010631126344042566,
+        "rate_relative_l2": 0.014504361491041222,
+        "rate_absolute_rms": 0.0005403898274065609
+      },
+      "scope": "Same fixed physical cube, normalized Hermite field and raw cubic rate sampling at a reached common endpoint. No fitted registration; partial windows do not complete T0.5, and this is not a whole-box error or automatic convergence-order claim."
+    },
+    "q3-mesh-0-2": {
+      "recorded_at": {
+        "utc": "2026-11-10T05:40:41.435348+00:00",
+        "melbourne": "2026-11-10T16:40:41.435348+11:00"
+      },
+      "kind": "fixed-box-physical-mesh",
+      "role": "q3",
+      "case_ids": [
+        "q3-axial-coarse-fresh-z-dt0.01",
+        "q3-axial-fine-warm-z-dt0.01"
+      ],
+      "requested_time": 0.5,
+      "time": 0.2,
+      "status": "partial_matched_window",
+      "full_window_completed": false,
+      "fixed_cube_side": 16.0,
+      "sampling_nodes": 41,
+      "difference": {
+        "field_relative_l2": 0.04648760784687366,
+        "rate_relative_l2": 0.05394135740304995,
+        "rate_absolute_rms": 0.0020096962444788903
+      },
+      "scope": "Same fixed physical cube, normalized Hermite field and raw cubic rate sampling at a reached common endpoint. No fitted registration; partial windows do not complete T0.5, and this is not a whole-box error or automatic convergence-order claim."
+    },
+    "q4-mesh-0-1": {
+      "recorded_at": {
+        "utc": "2026-11-11T02:19:05.094905+00:00",
+        "melbourne": "2026-11-11T13:19:05.094905+11:00"
+      },
+      "kind": "fixed-box-physical-mesh",
+      "role": "q4",
+      "case_ids": [
+        null,
+        "q4-axial41-medium-fresh-z-dt0.01"
+      ],
+      "requested_time": 0.5,
+      "time": null,
+      "status": "incomplete",
+      "reason": "No matched declared endpoint available; early failures retained"
+    },
+    "q4-mesh-1-2": {
+      "recorded_at": {
+        "utc": "2026-11-11T02:19:05.094926+00:00",
+        "melbourne": "2026-11-11T13:19:05.094926+11:00"
+      },
+      "kind": "fixed-box-physical-mesh",
+      "role": "q4",
+      "case_ids": [
+        "q4-axial41-medium-fresh-z-dt0.01",
+        null
+      ],
+      "requested_time": 0.5,
+      "time": null,
+      "status": "incomplete",
+      "reason": "No matched declared endpoint available; early failures retained"
+    },
+    "q4-mesh-0-2": {
+      "recorded_at": {
+        "utc": "2026-11-11T02:19:05.094933+00:00",
+        "melbourne": "2026-11-11T13:19:05.094933+11:00"
+      },
+      "kind": "fixed-box-physical-mesh",
+      "role": "q4",
+      "case_ids": [
+        null,
+        null
+      ],
+      "requested_time": 0.5,
+      "time": null,
+      "status": "incomplete",
+      "reason": "No matched declared endpoint available; early failures retained"
+    }
+  }
+}
