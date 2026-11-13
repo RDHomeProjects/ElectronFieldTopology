@@ -1,0 +1,4355 @@
+{
+  "source_run": "20261109t134425z-89d28344",
+  "source_commit": "bae639dc700c5653cb4bfb2738608795b37da641",
+  "evidence_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+  "scope": "Retained-history observation controls only. No fields reconstructed, no physical steps, no changed gates. Ratios do not establish a conservation identity. Missing observation times are skipped.",
+  "original_cases": [
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "original_status": "screen_failed",
+      "original_time": 0.2,
+      "original_speed_error_fraction": 0.023477485764637512,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": false,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "original_status": "screen_pass",
+      "original_time": 0.2,
+      "original_speed_error_fraction": null,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "original_status": "screen_failed",
+      "original_time": 0.2,
+      "original_speed_error_fraction": 0.023478032653799327,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": false,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "original_status": "screen_pass",
+      "original_time": 0.2,
+      "original_speed_error_fraction": null,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "original_status": "screen_failed",
+      "original_time": 0.2,
+      "original_speed_error_fraction": 0.0177097732586684,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": false,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "original_status": "screen_pass",
+      "original_time": 0.2,
+      "original_speed_error_fraction": null,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "original_status": "screen_failed",
+      "original_time": 0.2,
+      "original_speed_error_fraction": 0.01057321720341765,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": false,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "original_status": "screen_failed",
+      "original_time": 0.2,
+      "original_speed_error_fraction": 0.010573218353886775,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": false,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "original_status": "screen_failed",
+      "original_time": 0.2,
+      "original_speed_error_fraction": 0.010573217131284063,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": false,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "original_status": "screen_pass",
+      "original_time": 0.2,
+      "original_speed_error_fraction": 0.00819693888253592,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": true
+      }
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "original_status": "screen_pass",
+      "original_time": 0.5,
+      "original_speed_error_fraction": 0.009672171138313245,
+      "original_checks": {
+        "energy": true,
+        "momentum": true,
+        "constraints": true,
+        "shape": true,
+        "speed": true,
+        "topology": true,
+        "tail": true
+      }
+    }
+  ],
+  "fit_rows": [
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 11,
+      "fitted_velocity": [
+        9.621206266183421e-08,
+        -2.1090362827370544e-06,
+        0.29295529381930846
+      ],
+      "endpoint_velocity": [
+        9.616866185444169e-08,
+        -2.1093582161513247e-06,
+        0.2929553685862492
+      ],
+      "relative_speed_error_percent": 2.34823549901633,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.348235393563843,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        9.619774488974998e-08,
+        -2.109142775206231e-06,
+        0.2929553182048068
+      ],
+      "endpoint_velocity": [
+        9.616866185444169e-08,
+        -2.1093582161513247e-06,
+        0.2929553685862492
+      ],
+      "relative_speed_error_percent": 2.3482273705278094,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3482272650643954,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 9,
+      "fitted_velocity": [
+        1.3697631649933935e-07,
+        -2.2452044080527913e-06,
+        0.2929559721104847
+      ],
+      "endpoint_velocity": [
+        1.3695100578720845e-07,
+        -2.245370830700243e-06,
+        0.29295598286576424
+      ],
+      "relative_speed_error_percent": 2.348009416221294,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.348009296505101,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        1.369655576547836e-07,
+        -2.245275372340195e-06,
+        0.29295597653232697
+      ],
+      "endpoint_velocity": [
+        1.3695100578720845e-07,
+        -2.245370830700243e-06,
+        0.29295598286576424
+      ],
+      "relative_speed_error_percent": 2.3480079422814124,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.348007822557674,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        1.369510057877802e-07,
+        -2.2453708307188777e-06,
+        0.2929559828657643
+      ],
+      "endpoint_velocity": [
+        1.3695100578720845e-07,
+        -2.245370830700243e-06,
+        0.29295598286576424
+      ],
+      "relative_speed_error_percent": 2.3480058311457914,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3480057114118975,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 7,
+      "fitted_velocity": [
+        1.776963639594614e-07,
+        -2.3817164868009945e-06,
+        0.2929567559418716
+      ],
+      "endpoint_velocity": [
+        1.776853387208185e-07,
+        -2.381781940092332e-06,
+        0.2929567430027231
+      ],
+      "relative_speed_error_percent": 2.347748154355345,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.347748019376132,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        1.7768976656436736e-07,
+        -2.3817556550598767e-06,
+        0.29295674814657835
+      ],
+      "endpoint_velocity": [
+        1.776853387208185e-07,
+        -2.381781940092332e-06,
+        0.2929567430027231
+      ],
+      "relative_speed_error_percent": 2.347750752790637,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3477506178072134,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 21,
+      "fitted_velocity": [
+        2.997282134840566e-07,
+        -2.7929073523362335e-06,
+        0.29295675483073175
+      ],
+      "endpoint_velocity": [
+        2.9982995319063725e-07,
+        -2.792954316753818e-06,
+        0.2929557031427303
+      ],
+      "relative_speed_error_percent": 2.3477485764637693,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.347748389756081,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        2.9974541889127175e-07,
+        -2.7929135518881667e-06,
+        0.29295659076397335
+      ],
+      "endpoint_velocity": [
+        2.9982995319063725e-07,
+        -2.792954316753818e-06,
+        0.2929557031427303
+      ],
+      "relative_speed_error_percent": 2.347803265379951,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3478030786755477,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        2.9977677313685167e-07,
+        -2.7929238991924446e-06,
+        0.29295630029214326
+      ],
+      "endpoint_velocity": [
+        2.9982995319063725e-07,
+        -2.792954316753818e-06,
+        0.2929557031427303
+      ],
+      "relative_speed_error_percent": 2.347900089317427,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3478999026189107,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 19,
+      "fitted_velocity": [
+        3.4044811682886796e-07,
+        -2.9295640406638247e-06,
+        0.292957062852622
+      ],
+      "endpoint_velocity": [
+        3.405844717536664e-07,
+        -2.929359489953614e-06,
+        0.29295601332879045
+      ],
+      "relative_speed_error_percent": 2.3476459216312584,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3476457157926567,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        3.4047298696770805e-07,
+        -2.9295275810416364e-06,
+        0.29295687996181946
+      ],
+      "endpoint_velocity": [
+        3.405844717536664e-07,
+        -2.929359489953614e-06,
+        0.29295601332879045
+      ],
+      "relative_speed_error_percent": 2.3477068852221117,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3477066793935095,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 17,
+      "fitted_velocity": [
+        3.811551018852297e-07,
+        -3.0663737845803833e-06,
+        0.29295727090304124
+      ],
+      "endpoint_velocity": [
+        3.8131402984957746e-07,
+        -3.066012238382319e-06,
+        0.29295630218802826
+      ],
+      "relative_speed_error_percent": 2.34757659160526,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3475763656529147,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        3.8118738670477406e-07,
+        -3.066301649246554e-06,
+        0.2929570794500682
+      ],
+      "endpoint_velocity": [
+        3.8131402984957746e-07,
+        -3.066012238382319e-06,
+        0.29295630218802826
+      ],
+      "relative_speed_error_percent": 2.3476404092469085,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3476401833105918,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        3.8124277940299087e-07,
+        -3.0661780333832026e-06,
+        0.29295675167084395
+      ],
+      "endpoint_velocity": [
+        3.8131402984957746e-07,
+        -3.066012238382319e-06,
+        0.29295630218802826
+      ],
+      "relative_speed_error_percent": 2.3477496689608754,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3477494430520127,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 11,
+      "fitted_velocity": [
+        2.2670942675968887e-07,
+        -7.469154451779091e-07,
+        1.2913346968445748e-09
+      ],
+      "endpoint_velocity": [
+        2.266985586497081e-07,
+        -7.469110137369242e-07,
+        1.2947877134610736e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 7.805648685229948e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        2.2670583634379257e-07,
+        -7.469139563115324e-07,
+        1.292487804366289e-09
+      ],
+      "endpoint_velocity": [
+        2.266985586497081e-07,
+        -7.469110137369242e-07,
+        1.2947877134610736e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 7.805624029441904e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 9,
+      "fitted_velocity": [
+        2.720418321943947e-07,
+        -8.962946565366177e-07,
+        1.552461585849414e-09
+      ],
+      "endpoint_velocity": [
+        2.7203447857205643e-07,
+        -8.962916523064853e-07,
+        1.5549057152247896e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 9.366713831097608e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        2.7203870224846366e-07,
+        -8.962933693032558e-07,
+        1.5535136539301302e-09
+      ],
+      "endpoint_velocity": [
+        2.7203447857205643e-07,
+        -8.962916523064853e-07,
+        1.5549057152247896e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 9.366692440678746e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        2.720344785728823e-07,
+        -8.962916523217319e-07,
+        1.5549057134036688e-09
+      ],
+      "endpoint_velocity": [
+        2.7203447857205643e-07,
+        -8.962916523064853e-07,
+        1.5549057152247896e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 9.366663767242945e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 7,
+      "fitted_velocity": [
+        3.1736414524531216e-07,
+        -1.0456697860011595e-06,
+        1.8166709366435432e-09
+      ],
+      "endpoint_velocity": [
+        3.1736022059633865e-07,
+        -1.045668207621045e-06,
+        1.8180512009414195e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.0927710658396342e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        3.1736182126811215e-07,
+        -1.0456688597957565e-06,
+        1.8175051604178766e-09
+      ],
+      "endpoint_velocity": [
+        3.1736022059633865e-07,
+        -1.045668207621045e-06,
+        1.8180512009414195e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.0927695060122143e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 21,
+      "fitted_velocity": [
+        4.5309033112013037e-07,
+        -1.4937123851238745e-06,
+        2.7059197062166585e-09
+      ],
+      "endpoint_velocity": [
+        4.5301334947707244e-07,
+        -1.4936897162784284e-06,
+        2.741513573231366e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.5609211574030443e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        4.530782941716695e-07,
+        -1.4937088725923824e-06,
+        2.7115468835948967e-09
+      ],
+      "endpoint_velocity": [
+        4.5301334947707244e-07,
+        -1.4936897162784284e-06,
+        2.741513573231366e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.5609143119329832e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        4.530569643326886e-07,
+        -1.4937027148912249e-06,
+        2.721553342084138e-09
+      ],
+      "endpoint_velocity": [
+        4.5301334947707244e-07,
+        -1.4936897162784284e-06,
+        2.741513573231366e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.5609022455798956e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 19,
+      "fitted_velocity": [
+        4.983733123553056e-07,
+        -1.643074382164243e-06,
+        2.986469812720456e-09
+      ],
+      "endpoint_velocity": [
+        4.983087350900454e-07,
+        -1.6430565225917337e-06,
+        3.017868891767494e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.7169968849110794e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        4.983620109307156e-07,
+        -1.6430712862458865e-06,
+        2.9920166270731197e-09
+      ],
+      "endpoint_velocity": [
+        4.983087350900454e-07,
+        -1.6430565225917337e-06,
+        3.017868891767494e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.716990651630962e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 17,
+      "fitted_velocity": [
+        5.43641822316212e-07,
+        -1.792431372258015e-06,
+        3.272726973876886e-09
+      ],
+      "endpoint_velocity": [
+        5.435901704139e-07,
+        -1.7924183396203497e-06,
+        3.299418845979069e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.8730636310515155e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        5.436315639921701e-07,
+        -1.7924288090546937e-06,
+        3.2780694113781272e-09
+      ],
+      "endpoint_velocity": [
+        5.435901704139e-07,
+        -1.7924183396203497e-06,
+        3.299418845979069e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.873058210157086e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        5.436140197322785e-07,
+        -1.7924244456267566e-06,
+        3.2872234716029144e-09
+      ],
+      "endpoint_velocity": [
+        5.435901704139e-07,
+        -1.7924183396203497e-06,
+        3.299418845979069e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.873048958668199e-06,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        9.619774488974998e-08,
+        -2.109142775206231e-06,
+        0.2929553182048068
+      ],
+      "endpoint_velocity": [
+        9.616866185444169e-08,
+        -2.1093582161513247e-06,
+        0.2929553685862492
+      ],
+      "relative_speed_error_percent": 2.3482273705278094,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3482272650643954,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        1.369655576547836e-07,
+        -2.245275372340195e-06,
+        0.29295597653232697
+      ],
+      "endpoint_velocity": [
+        1.3695100578720845e-07,
+        -2.245370830700243e-06,
+        0.29295598286576424
+      ],
+      "relative_speed_error_percent": 2.3480079422814124,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.348007822557674,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        1.369510057877802e-07,
+        -2.2453708307188777e-06,
+        0.2929559828657643
+      ],
+      "endpoint_velocity": [
+        1.3695100578720845e-07,
+        -2.245370830700243e-06,
+        0.29295598286576424
+      ],
+      "relative_speed_error_percent": 2.3480058311457914,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3480057114118975,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        1.7768976656436736e-07,
+        -2.3817556550598767e-06,
+        0.29295674814657835
+      ],
+      "endpoint_velocity": [
+        1.776853387208185e-07,
+        -2.381781940092332e-06,
+        0.2929567430027231
+      ],
+      "relative_speed_error_percent": 2.347750752790637,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3477506178072134,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        2.9974541889127175e-07,
+        -2.7929135518881667e-06,
+        0.29295659076397335
+      ],
+      "endpoint_velocity": [
+        2.9982995319063725e-07,
+        -2.792954316753818e-06,
+        0.2929557031427303
+      ],
+      "relative_speed_error_percent": 2.347803265379951,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3478030786755477,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        2.9977677313685167e-07,
+        -2.7929238991924446e-06,
+        0.29295630029214326
+      ],
+      "endpoint_velocity": [
+        2.9982995319063725e-07,
+        -2.792954316753818e-06,
+        0.2929557031427303
+      ],
+      "relative_speed_error_percent": 2.347900089317427,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3478999026189107,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        3.4047298696770805e-07,
+        -2.9295275810416364e-06,
+        0.29295687996181946
+      ],
+      "endpoint_velocity": [
+        3.405844717536664e-07,
+        -2.929359489953614e-06,
+        0.29295601332879045
+      ],
+      "relative_speed_error_percent": 2.3477068852221117,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3477066793935095,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        3.8118738670477406e-07,
+        -3.066301649246554e-06,
+        0.2929570794500682
+      ],
+      "endpoint_velocity": [
+        3.8131402984957746e-07,
+        -3.066012238382319e-06,
+        0.29295630218802826
+      ],
+      "relative_speed_error_percent": 2.3476404092469085,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3476401833105918,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        3.8124277940299087e-07,
+        -3.0661780333832026e-06,
+        0.29295675167084395
+      ],
+      "endpoint_velocity": [
+        3.8131402984957746e-07,
+        -3.066012238382319e-06,
+        0.29295630218802826
+      ],
+      "relative_speed_error_percent": 2.3477496689608754,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 2.3477494430520127,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 11,
+      "fitted_velocity": [
+        6.986646668631867e-08,
+        5.373995888818629e-08,
+        -4.5215846746641236e-09
+      ],
+      "endpoint_velocity": [
+        6.987110956111452e-08,
+        5.3738456059181094e-08,
+        -4.4965108459554815e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 8.825956648717796e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        6.986802430028759e-08,
+        5.3739504227081226e-08,
+        -4.513234724193993e-09
+      ],
+      "endpoint_velocity": [
+        6.987110956111452e-08,
+        5.3738456059181094e-08,
+        -4.4965108459554815e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 8.826009529721645e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 9,
+      "fitted_velocity": [
+        8.384362685491386e-08,
+        6.44866669775094e-08,
+        -5.404625062336571e-09
+      ],
+      "endpoint_velocity": [
+        8.384688691238321e-08,
+        6.448567180998392e-08,
+        -5.387259757218266e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.0591267135767406e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        8.384504152405268e-08,
+        6.448628156596335e-08,
+        -5.397190439254511e-09
+      ],
+      "endpoint_velocity": [
+        8.384688691238321e-08,
+        6.448567180998392e-08,
+        -5.387259757218266e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.0591317747576268e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        8.38468869159831e-08,
+        6.448567180134419e-08,
+        -5.387259767382661e-09
+      ],
+      "endpoint_velocity": [
+        8.384688691238321e-08,
+        6.448567180998392e-08,
+        -5.387259757218266e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.0591376152782789e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 7,
+      "fitted_velocity": [
+        9.782507124747155e-08,
+        7.523197137537584e-08,
+        -6.264895604643934e-09
+      ],
+      "endpoint_velocity": [
+        9.782685002237937e-08,
+        7.52314256897979e-08,
+        -6.255403038728698e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.2356715987079797e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        9.782608110865503e-08,
+        7.523165803093532e-08,
+        -6.259197780439589e-09
+      ],
+      "endpoint_velocity": [
+        9.782685002237937e-08,
+        7.52314256897979e-08,
+        -6.255403038728698e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.2356747983193398e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 21,
+      "fitted_velocity": [
+        1.3987786603705679e-07,
+        1.0744090284809907e-07,
+        -8.244690730903929e-09
+      ],
+      "endpoint_velocity": [
+        1.3991462340437726e-07,
+        1.0743360829212553e-07,
+        -8.04084107240352e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.7657106200378284e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        1.3988362743018814e-07,
+        1.0743979564585794e-07,
+        -8.212648372408224e-09
+      ],
+      "endpoint_velocity": [
+        1.3991462340437726e-07,
+        1.0743360829212553e-07,
+        -8.04084107240352e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.765734592308261e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        1.398938767645726e-07,
+        1.0743780541711552e-07,
+        -8.15577871554683e-09
+      ],
+      "endpoint_velocity": [
+        1.3991462340437726e-07,
+        1.0743360829212553e-07,
+        -8.04084107240352e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.7657773221877206e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 19,
+      "fitted_velocity": [
+        1.5387721899678408e-07,
+        1.1818195434399787e-07,
+        -9.005397469578894e-09
+      ],
+      "endpoint_velocity": [
+        1.5390869265419253e-07,
+        1.1817627665169838e-07,
+        -8.830543947014539e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.9423251540958877e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        1.5388273607946466e-07,
+        1.1818098695969305e-07,
+        -8.97466159036866e-09
+      ],
+      "endpoint_velocity": [
+        1.5390869265419253e-07,
+        1.1817627665169838e-07,
+        -8.830543947014539e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.942348750681271e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 17,
+      "fitted_velocity": [
+        1.678830969209609e-07,
+        1.2892135474246425e-07,
+        -9.730243396767562e-09
+      ],
+      "endpoint_velocity": [
+        1.6790890453816727e-07,
+        1.2891725996184294e-07,
+        -9.586508201305487e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 2.1189650204041925e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        1.6788820728002688e-07,
+        1.289205548635566e-07,
+        -9.701590302860389e-09
+      ],
+      "endpoint_velocity": [
+        1.6790890453816727e-07,
+        1.2891725996184294e-07,
+        -9.586508201305487e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 2.1189875050229327e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        1.6789704376145645e-07,
+        1.2891917919552226e-07,
+        -9.652490161733652e-09
+      ],
+      "endpoint_velocity": [
+        1.6790890453816727e-07,
+        1.2891725996184294e-07,
+        -9.586508201305487e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 2.11902672551825e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        -2.684034653359535e-08,
+        4.475704550973175e-07,
+        0.29469434783916465
+      ],
+      "endpoint_velocity": [
+        -2.6813899827718077e-08,
+        4.4732935354160897e-07,
+        0.29469418616216175
+      ],
+      "relative_speed_error_percent": 1.7685507265937155,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.7685507202784465,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        -1.463083496518777e-08,
+        4.5788523185816613e-07,
+        0.294692625011607
+      ],
+      "endpoint_velocity": [
+        -1.4601722976082584e-08,
+        4.57759717257351e-07,
+        0.2946925842568076
+      ],
+      "relative_speed_error_percent": 1.7691250027216108,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.7691249961310034,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        -1.4601722973033265e-08,
+        4.577597172437985e-07,
+        0.2946925842568076
+      ],
+      "endpoint_velocity": [
+        -1.4601722976082584e-08,
+        4.57759717257351e-07,
+        0.2946925842568076
+      ],
+      "relative_speed_error_percent": 1.7691385876510473,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.7691385810641262,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        -2.4134306194453397e-09,
+        4.678482839869389e-07,
+        0.29469057950114064
+      ],
+      "endpoint_velocity": [
+        -2.39860740499966e-09,
+        4.678077065624573e-07,
+        0.2946905807502808
+      ],
+      "relative_speed_error_percent": 1.7698068398241695,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.7698068329531174,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        3.683990974328593e-08,
+        4.942294069605986e-07,
+        0.29468706804551476
+      ],
+      "endpoint_velocity": [
+        3.750746435009569e-08,
+        4.938091541922818e-07,
+        0.29468800857289523
+      ],
+      "relative_speed_error_percent": 1.7709773258668402,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.7709773181617448,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        3.70527502569221e-08,
+        4.940997099907649e-07,
+        0.29468736096052023
+      ],
+      "endpoint_velocity": [
+        3.750746435009569e-08,
+        4.938091541922818e-07,
+        0.29468800857289523
+      ],
+      "relative_speed_error_percent": 1.7708796875285793,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.770879679826587,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        4.94998962637494e-08,
+        5.037585988655141e-07,
+        0.2946856167111287
+      ],
+      "endpoint_velocity": [
+        5.008191674835744e-08,
+        5.036092936937974e-07,
+        0.2946866102161526
+      ],
+      "relative_speed_error_percent": 1.7714611043259503,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.7714610962904314,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        6.22796629289174e-08,
+        5.130495589963216e-07,
+        0.2946842040207919
+      ],
+      "endpoint_velocity": [
+        6.274354005306854e-08,
+        5.131084867377681e-07,
+        0.29468511214612325
+      ],
+      "relative_speed_error_percent": 1.77193200144374,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.771931993069372,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        6.247266102264169e-08,
+        5.130752879466602e-07,
+        0.2946845780149704
+      ],
+      "endpoint_velocity": [
+        6.274354005306854e-08,
+        5.131084867377681e-07,
+        0.29468511214612325
+      ],
+      "relative_speed_error_percent": 1.7718073367197407,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.7718073283432,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 11,
+      "fitted_velocity": [
+        1.9429150910153948e-08,
+        -6.492922593347419e-08,
+        -1.0248556850222053e-09
+      ],
+      "endpoint_velocity": [
+        1.9426012104256304e-08,
+        -6.492386859461435e-08,
+        -1.0050932959179693e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 6.778160970783149e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        1.9428083947368027e-08,
+        -6.492750563701539e-08,
+        -1.0182877345229773e-09
+      ],
+      "endpoint_velocity": [
+        1.9426012104256304e-08,
+        -6.492386859461435e-08,
+        -1.0050932959179693e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 6.777955697716624e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 9,
+      "fitted_velocity": [
+        2.331225446151012e-08,
+        -7.791062747542564e-08,
+        -1.2128129353212596e-09
+      ],
+      "endpoint_velocity": [
+        2.3310274857005122e-08,
+        -7.790703862196532e-08,
+        -1.1992510229232728e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 8.133263795616635e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        2.3311346032827318e-08,
+        -7.79091600566393e-08,
+        -1.2070040012092257e-09
+      ],
+      "endpoint_velocity": [
+        2.3310274857005122e-08,
+        -7.790703862196532e-08,
+        -1.1992510229232728e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 8.133088548179093e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        2.3310274860986177e-08,
+        -7.790703863297675e-08,
+        -1.1992510366452065e-09
+      ],
+      "endpoint_velocity": [
+        2.3310274857005122e-08,
+        -7.790703862196532e-08,
+        -1.1992510229232728e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 8.132843159500711e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 7,
+      "fitted_velocity": [
+        2.7192303304642576e-08,
+        -9.088706575701899e-08,
+        -1.3826333619939723e-09
+      ],
+      "endpoint_velocity": [
+        2.7191115535751008e-08,
+        -9.088513413356655e-08,
+        -1.375319801620589e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 9.487777271809277e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        2.7191570847752123e-08,
+        -9.088596469861217e-08,
+        -1.3782400818762668e-09
+      ],
+      "endpoint_velocity": [
+        2.7191115535751008e-08,
+        -9.088513413356655e-08,
+        -1.375319801620589e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 9.48764441265006e-08,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 21,
+      "fitted_velocity": [
+        3.877209469466358e-08,
+        -1.2969667852954207e-07,
+        -1.4553313489587372e-09
+      ],
+      "endpoint_velocity": [
+        3.8754067500663264e-08,
+        -1.296570118500609e-07,
+        -1.3150225504875157e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.353758536000516e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        3.876924405525453e-08,
+        -1.2969046551180874e-07,
+        -1.433370813516248e-09
+      ],
+      "endpoint_velocity": [
+        3.8754067500663264e-08,
+        -1.296570118500609e-07,
+        -1.3150225504875157e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.353688504833168e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        3.8764261827028546e-08,
+        -1.29679434019792e-07,
+        -1.3944366964320708e-09
+      ],
+      "endpoint_velocity": [
+        3.8754067500663264e-08,
+        -1.296570118500609e-07,
+        -1.3150225504875157e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.3535644815223384e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 19,
+      "fitted_velocity": [
+        4.26425346675027e-08,
+        -1.4265347953612208e-07,
+        -1.5537204104261619e-09
+      ],
+      "endpoint_velocity": [
+        4.262796821259684e-08,
+        -1.4261988111282204e-07,
+        -1.4357514574420445e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.488986737138573e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        4.2639942593038006e-08,
+        -1.4264758977128616e-07,
+        -1.5330575260507952e-09
+      ],
+      "endpoint_velocity": [
+        4.262796821259684e-08,
+        -1.4261988111282204e-07,
+        -1.4357514574420445e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.488920744609091e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 17,
+      "fitted_velocity": [
+        4.65092535565682e-08,
+        -1.5560305233562373e-07,
+        -1.6258900552959745e-09
+      ],
+      "endpoint_velocity": [
+        4.649799513657552e-08,
+        -1.5557577224102961e-07,
+        -1.5313398037683848e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.624132509403833e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        4.6506974791543494e-08,
+        -1.5559761748678806e-07,
+        -1.607100247176099e-09
+      ],
+      "endpoint_velocity": [
+        4.649799513657552e-08,
+        -1.5557577224102961e-07,
+        -1.5313398037683848e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.6240720440617943e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "axis": 2,
+      "beta": 0.0,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        4.6503165371560153e-08,
+        -1.5558832846058925e-07,
+        -1.5749058212611612e-09
+      ],
+      "endpoint_velocity": [
+        4.649799513657552e-08,
+        -1.5557577224102961e-07,
+        -1.5313398037683848e-09
+      ],
+      "relative_speed_error_percent": null,
+      "absolute_rest_speed": 1.6239689858824498e-07,
+      "axial_speed_deficit_percent": null,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        2.023487035549454e-08,
+        -2.500217335934892e-07,
+        0.29682909692868276
+      ],
+      "endpoint_velocity": [
+        2.0223809544346258e-08,
+        -2.5003319080105224e-07,
+        0.2968290767674001
+      ],
+      "relative_speed_error_percent": 1.0569676937462489,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0569676904390777,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        2.3675767601175025e-08,
+        -2.617692200408841e-07,
+        0.29682889939922624
+      ],
+      "endpoint_velocity": [
+        2.367365155363059e-08,
+        -2.6177114058204345e-07,
+        0.2968288933501842
+      ],
+      "relative_speed_error_percent": 1.0570335372221473,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0570335335912489,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        2.367365155701872e-08,
+        -2.617711405932243e-07,
+        0.29682889335018425
+      ],
+      "endpoint_velocity": [
+        2.367365155363059e-08,
+        -2.6177114058204345e-07,
+        0.2968288933501842
+      ],
+      "relative_speed_error_percent": 1.0570355535695177,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0570355499385786,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        2.709324490255402e-08,
+        -2.7354150837845026e-07,
+        0.2968286635646468
+      ],
+      "endpoint_velocity": [
+        2.7093944468985103e-08,
+        -2.7354062757655817e-07,
+        0.29682866298334426
+      ],
+      "relative_speed_error_percent": 1.0571121490886561,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0571121451177223,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        3.773617770887416e-08,
+        -3.084209034582546e-07,
+        0.2968280348541935
+      ],
+      "endpoint_velocity": [
+        3.787326000341193e-08,
+        -3.082721020770604e-07,
+        0.2968280674604287
+      ],
+      "relative_speed_error_percent": 1.0573217203417835,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573217152688257,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        3.7780242019344766e-08,
+        -3.0837315286083757e-07,
+        0.29682804344856234
+      ],
+      "endpoint_velocity": [
+        3.787326000341193e-08,
+        -3.082721020770604e-07,
+        0.2968280674604287
+      ],
+      "relative_speed_error_percent": 1.0573188555508153,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573188504792164,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        4.123201222214974e-08,
+        -3.2010626170604655e-07,
+        0.29682782861640555
+      ],
+      "endpoint_velocity": [
+        4.13675731696567e-08,
+        -3.1995995878816847e-07,
+        0.29682787379644704
+      ],
+      "relative_speed_error_percent": 1.0573904666711629,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573904611981453,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        4.474041127465825e-08,
+        -3.3177734600341664e-07,
+        0.29682761566544935
+      ],
+      "endpoint_velocity": [
+        4.4861923214917915e-08,
+        -3.316471186868772e-07,
+        0.296827659964665
+      ],
+      "relative_speed_error_percent": 1.0574614507384184,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0574614448502127,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        4.479103816937681e-08,
+        -3.317231099675416e-07,
+        0.29682763323741124
+      ],
+      "endpoint_velocity": [
+        4.4861923214917915e-08,
+        -3.316471186868772e-07,
+        0.296827659964665
+      ],
+      "relative_speed_error_percent": 1.0574555934161698,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0574555875295841,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        2.0234783403932363e-08,
+        -2.500215021598871e-07,
+        0.29682909656783213
+      ],
+      "endpoint_velocity": [
+        2.0223667330631495e-08,
+        -2.50032901618312e-07,
+        0.2968290764071105
+      ],
+      "relative_speed_error_percent": 1.0569678140297845,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.05696781072262,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        2.367583160298452e-08,
+        -2.61768810729153e-07,
+        0.29682889905488985
+      ],
+      "endpoint_velocity": [
+        2.3673685249278858e-08,
+        -2.617707048357693e-07,
+        0.29682889300521337
+      ],
+      "relative_speed_error_percent": 1.0570336520009334,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0570336483700464,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        2.3673685251989363e-08,
+        -2.6177070484983007e-07,
+        0.2968288930052135
+      ],
+      "endpoint_velocity": [
+        2.3673685249278858e-08,
+        -2.617707048357693e-07,
+        0.29682889300521337
+      ],
+      "relative_speed_error_percent": 1.0570356685597635,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0570356649288368,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        2.709338231840312e-08,
+        -2.7354082968483094e-07,
+        0.2968286632394959
+      ],
+      "endpoint_velocity": [
+        2.709404558167971e-08,
+        -2.7353990980580795e-07,
+        0.29682866265765073
+      ],
+      "relative_speed_error_percent": 1.057112257472272,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0571122535013577,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        3.773665789670315e-08,
+        -3.084207377448828e-07,
+        0.29682803450905276
+      ],
+      "endpoint_velocity": [
+        3.7873630419457856e-08,
+        -3.08272164867545e-07,
+        0.2968280671005898
+      ],
+      "relative_speed_error_percent": 1.057321835388696,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573218303157421,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        3.77806685438744e-08,
+        -3.083730481155333e-07,
+        0.2968280430991883
+      ],
+      "endpoint_velocity": [
+        3.7873630419457856e-08,
+        -3.08272164867545e-07,
+        0.2968280671005898
+      ],
+      "relative_speed_error_percent": 1.057318972008823,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573189669372263,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        4.123260861927995e-08,
+        -3.2010608128186853e-07,
+        0.2968278282763561
+      ],
+      "endpoint_velocity": [
+        4.136807872650405e-08,
+        -3.1995999554744083e-07,
+        0.29682787344346656
+      ],
+      "relative_speed_error_percent": 1.0573905800209695,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573905745479562,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        4.4741100534166554e-08,
+        -3.3177717839959563e-07,
+        0.296827615327941
+      ],
+      "endpoint_velocity": [
+        4.486251303580753e-08,
+        -3.316471087501643e-07,
+        0.29682765961791224
+      ],
+      "relative_speed_error_percent": 1.0574615632411999,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0574615573529975,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        4.479165830422035e-08,
+        -3.3172299063669296e-07,
+        0.2968276328962545
+      ],
+      "endpoint_velocity": [
+        4.486251303580753e-08,
+        -3.316471087501643e-07,
+        0.29682765961791224
+      ],
+      "relative_speed_error_percent": 1.0574557071350728,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0574557012484886,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        2.0234851135590937e-08,
+        -2.5002175841639476e-07,
+        0.2968290969509274
+      ],
+      "endpoint_velocity": [
+        2.022378736156981e-08,
+        -2.500331797074956e-07,
+        0.29682907678964116
+      ],
+      "relative_speed_error_percent": 1.056967686331366,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.056967683024194,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        2.367573169206026e-08,
+        -2.61769279992182e-07,
+        0.29682889942041457
+      ],
+      "endpoint_velocity": [
+        2.367363764060621e-08,
+        -2.61771158325012e-07,
+        0.2968288933714225
+      ],
+      "relative_speed_error_percent": 1.0570335301593727,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0570335265284725,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        2.3673637644502563e-08,
+        -2.6177115833432937e-07,
+        0.29682889337142254
+      ],
+      "endpoint_velocity": [
+        2.367363764060621e-08,
+        -2.61771158325012e-07,
+        0.2968288933714225
+      ],
+      "relative_speed_error_percent": 1.0570355464900887,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0570355428591491,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        2.7093140898766558e-08,
+        -2.735415980877097e-07,
+        0.29682866358467014
+      ],
+      "endpoint_velocity": [
+        2.7093845297012385e-08,
+        -2.7354069218777966e-07,
+        0.29682866300339744
+      ],
+      "relative_speed_error_percent": 1.0571121424142196,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0571121384432836,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        3.7736133573606424e-08,
+        -3.0842093392510567e-07,
+        0.2968280348758336
+      ],
+      "endpoint_velocity": [
+        3.787317905741983e-08,
+        -3.082720809698125e-07,
+        0.2968280674829767
+      ],
+      "relative_speed_error_percent": 1.057321713128425,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573217080554662,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        3.7780187759866224e-08,
+        -3.083731587615111e-07,
+        0.2968280434704638
+      ],
+      "endpoint_velocity": [
+        3.787317905741983e-08,
+        -3.082720809698125e-07,
+        0.2968280674829767
+      ],
+      "relative_speed_error_percent": 1.0573188482503217,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573188431787228,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        4.123195630539807e-08,
+        -3.201062984231281e-07,
+        0.2968278286377785
+      ],
+      "endpoint_velocity": [
+        4.136748936986379e-08,
+        -3.1995994938452166e-07,
+        0.29682787381858344
+      ],
+      "relative_speed_error_percent": 1.057390459546844,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.0573904540738255,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        4.474033381165999e-08,
+        -3.317773805855131e-07,
+        0.2968276156867391
+      ],
+      "endpoint_velocity": [
+        4.4861798707173306e-08,
+        -3.3164712346549826e-07,
+        0.2968276599864692
+      ],
+      "relative_speed_error_percent": 1.0574614436418366,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.05746143775363,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        4.479095021051095e-08,
+        -3.3172311855052646e-07,
+        0.2968276332589015
+      ],
+      "endpoint_velocity": [
+        4.4861798707173306e-08,
+        -3.3164712346549826e-07,
+        0.2968276599864692
+      ],
+      "relative_speed_error_percent": 1.057455586252752,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 1.057455580366166,
+      "same_numeric_threshold_met": false,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 11,
+      "fitted_velocity": [
+        0.29754980904469125,
+        0.00011059341063920518,
+        9.573577073446822e-07
+      ],
+      "endpoint_velocity": [
+        0.29754963550882146,
+        0.00011068059075747261,
+        9.355020303249487e-07
+      ],
+      "relative_speed_error_percent": 0.8175619267395894,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8167303184362467,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        0.2975497513044252,
+        0.00011062242031159109,
+        9.500899203392331e-07
+      ],
+      "endpoint_velocity": [
+        0.29754963550882146,
+        0.00011068059075747261,
+        9.355020303249487e-07
+      ],
+      "relative_speed_error_percent": 0.8175815890452973,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8167495651916028,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 9,
+      "fitted_velocity": [
+        0.2975490144087087,
+        0.00011100502219456438,
+        1.100191200175039e-06
+      ],
+      "endpoint_velocity": [
+        0.2975489247899598,
+        0.00011104918032602473,
+        1.084996898462155e-06
+      ],
+      "relative_speed_error_percent": 0.8178327521287729,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8169951970971034,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        0.2975489760097887,
+        0.00011102394333596419,
+        1.0936948827363106e-06
+      ],
+      "endpoint_velocity": [
+        0.2975489247899598,
+        0.00011104918032602473,
+        1.084996898462155e-06
+      ],
+      "relative_speed_error_percent": 0.8178458230656709,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8170079967370996,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        0.29754892478995987,
+        0.0001110491803260149,
+        1.0849968984504658e-06
+      ],
+      "endpoint_velocity": [
+        0.2975489247899598,
+        0.00011104918032602473,
+        1.084996898462155e-06
+      ],
+      "relative_speed_error_percent": 0.8178632582625543,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8170250700133738,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "observations": 7,
+      "fitted_velocity": [
+        0.2975480356873706,
+        0.00011150983810600595,
+        1.2232140351191847e-06
+      ],
+      "endpoint_velocity": [
+        0.2975479990013742,
+        0.00011152746614089512,
+        1.214887474149974e-06
+      ],
+      "relative_speed_error_percent": 0.8181663054698156,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8173214375431319,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        0.2975480136658003,
+        0.00011152041849495083,
+        1.2182260886927442e-06
+      ],
+      "endpoint_velocity": [
+        0.2975479990013742,
+        0.00011152746614089512,
+        1.214887474149974e-06
+      ],
+      "relative_speed_error_percent": 0.8181737978176425,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8173287780665617,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 21,
+      "fitted_velocity": [
+        0.29754354744975575,
+        0.00011367606083495449,
+        1.1205151765579996e-06
+      ],
+      "endpoint_velocity": [
+        0.29754315488340427,
+        0.0001138014491082126,
+        9.808791313708175e-07
+      ],
+      "relative_speed_error_percent": 0.8196938882535919,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.818817516748079,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        0.2975434851247361,
+        0.00011369569723463159,
+        1.098865789789535e-06
+      ],
+      "endpoint_velocity": [
+        0.29754315488340427,
+        0.0001138014491082126,
+        9.808791313708175e-07
+      ],
+      "relative_speed_error_percent": 0.8197149403887252,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8188382917546274,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        0.297543374022864,
+        0.00011373054399514457,
+        1.0606260771701254e-06
+      ],
+      "endpoint_velocity": [
+        0.29754315488340427,
+        0.0001138014491082126,
+        9.808791313708175e-07
+      ],
+      "relative_speed_error_percent": 0.8197524662362944,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8188753257119912,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 19,
+      "fitted_velocity": [
+        0.2975423651070262,
+        0.00011425879176905705,
+        1.166905822154735e-06
+      ],
+      "endpoint_velocity": [
+        0.2975421189388638,
+        0.00011431202873320687,
+        1.052363195103561e-06
+      ],
+      "relative_speed_error_percent": 0.8200965864747631,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8192116309912642,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        0.2975423213372708,
+        0.00011426804677473733,
+        1.1470321402312272e-06
+      ],
+      "endpoint_velocity": [
+        0.2975421189388638,
+        0.00011431202873320687,
+        1.052363195103561e-06
+      ],
+      "relative_speed_error_percent": 0.8201113008089326,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8192262209097227,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "observations": 17,
+      "fitted_velocity": [
+        0.2975410627113999,
+        0.0001148947870930719,
+        1.1852672491844529e-06
+      ],
+      "endpoint_velocity": [
+        0.2975409210367572,
+        0.00011489924196468105,
+        1.0969929480666692e-06
+      ],
+      "relative_speed_error_percent": 0.820540120640568,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8196457628666942,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        0.297541034147501,
+        0.00011489553640729704,
+        1.1678779841576316e-06
+      ],
+      "endpoint_velocity": [
+        0.2975409210367572,
+        0.00011489924196468105,
+        1.0969929480666692e-06
+      ],
+      "relative_speed_error_percent": 0.820549640449851,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8196552841663318,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "axis": 0,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        0.297540985108406,
+        0.00011489678503967082,
+        1.1381244548174047e-06
+      ],
+      "endpoint_velocity": [
+        0.2975409210367572,
+        0.00011489924196468105,
+        1.0969929480666692e-06
+      ],
+      "relative_speed_error_percent": 0.8205659837792715,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.8196716305313342,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 6,
+      "fitted_velocity": [
+        6.003092317979789e-08,
+        -2.2757065455383023e-07,
+        0.2971010894291899
+      ],
+      "endpoint_velocity": [
+        6.008642821036907e-08,
+        -2.2776811806849567e-07,
+        0.2971011165445263
+      ],
+      "relative_speed_error_percent": 0.9663035267880173,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9663035236033661,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 5,
+      "fitted_velocity": [
+        6.290393841087234e-08,
+        -2.3793133118063753e-07,
+        0.2971022350167445
+      ],
+      "endpoint_velocity": [
+        6.292331163087377e-08,
+        -2.3803626635434706e-07,
+        0.29710220246268726
+      ],
+      "relative_speed_error_percent": 0.9659216645687846,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9659216610851673,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.04,
+      "observations": 3,
+      "fitted_velocity": [
+        6.292331163366898e-08,
+        -2.380362663629868e-07,
+        0.2971022024626873
+      ],
+      "endpoint_velocity": [
+        6.292331163087377e-08,
+        -2.3803626635434706e-07,
+        0.29710220246268726
+      ],
+      "relative_speed_error_percent": 0.9659325159241489,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9659325124375581,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.02,
+      "observations": 4,
+      "fitted_velocity": [
+        6.587696976431114e-08,
+        -2.485757962178902e-07,
+        0.29710351350075437
+      ],
+      "endpoint_velocity": [
+        6.587935383307007e-08,
+        -2.4860915498556985e-07,
+        0.29710348667486214
+      ],
+      "relative_speed_error_percent": 0.965495503553708,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9654954997485403,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 11,
+      "fitted_velocity": [
+        7.452603773628466e-08,
+        -2.827963837701139e-07,
+        0.2971025315089909
+      ],
+      "endpoint_velocity": [
+        7.439668088667865e-08,
+        -2.829324495870478e-07,
+        0.29710138648794776
+      ],
+      "relative_speed_error_percent": 0.965822835256053,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9658228303363603,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 6,
+      "fitted_velocity": [
+        7.448914513215773e-08,
+        -2.828361145175708e-07,
+        0.29710218202921396
+      ],
+      "endpoint_velocity": [
+        7.439668088667865e-08,
+        -2.829324495870478e-07,
+        0.29710138648794776
+      ],
+      "relative_speed_error_percent": 0.9659393285154196,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.965939323595344,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 10,
+      "fitted_velocity": [
+        7.74088548014642e-08,
+        -2.936933824792459e-07,
+        0.29710293517190095
+      ],
+      "endpoint_velocity": [
+        7.724754603760401e-08,
+        -2.936254412161541e-07,
+        0.297101899111955
+      ],
+      "relative_speed_error_percent": 0.9656882813399896,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9656882760330129,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.02,
+      "observations": 9,
+      "fitted_velocity": [
+        8.030485606871333e-08,
+        -3.0475472532984777e-07,
+        0.2971031616955679
+      ],
+      "endpoint_velocity": [
+        8.014659116426892e-08,
+        -3.045389213105886e-07,
+        0.2971023427726791
+      ],
+      "relative_speed_error_percent": 0.9656127738585585,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9656127681440345,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.04,
+      "observations": 5,
+      "fitted_velocity": [
+        8.024217847102231e-08,
+        -3.0466689034047906e-07,
+        0.2971028292691817
+      ],
+      "endpoint_velocity": [
+        8.014659116426892e-08,
+        -3.045389213105886e-07,
+        0.2971023427726791
+      ],
+      "relative_speed_error_percent": 0.9657235826496432,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9657235769394331,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.0,
+      "end": 0.5,
+      "cadence": 0.02,
+      "observations": 26,
+      "fitted_velocity": [
+        1.1608687223040254e-07,
+        -4.4322293839520195e-07,
+        0.297098348694679
+      ],
+      "endpoint_velocity": [
+        1.1533345902923695e-07,
+        -4.436753021893128e-07,
+        0.2970981265984416
+      ],
+      "relative_speed_error_percent": 0.9672171138313245,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9672171017736653,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.5,
+      "cadence": 0.02,
+      "observations": 25,
+      "fitted_velocity": [
+        1.1886418503536332e-07,
+        -4.539737109201808e-07,
+        0.2970981975015988
+      ],
+      "endpoint_velocity": [
+        1.1810823255010722e-07,
+        -4.5438279290865543e-07,
+        0.2970981830037149
+      ],
+      "relative_speed_error_percent": 0.9672675121155618,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9672674994670543,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.02,
+      "end": 0.5,
+      "cadence": 0.04,
+      "observations": 13,
+      "fitted_velocity": [
+        1.1876897052911986e-07,
+        -4.540167031237818e-07,
+        0.29709819022468376
+      ],
+      "endpoint_velocity": [
+        1.1810823255010722e-07,
+        -4.5438279290865543e-07,
+        0.2970981830037149
+      ],
+      "relative_speed_error_percent": 0.9672699377548293,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9672699251054111,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "axis": 2,
+      "beta": 0.3,
+      "start": 0.04,
+      "end": 0.5,
+      "cadence": 0.02,
+      "observations": 24,
+      "fitted_velocity": [
+        1.216339709883645e-07,
+        -4.647406913483791e-07,
+        0.297097989738337
+      ],
+      "endpoint_velocity": [
+        1.208931476599256e-07,
+        -4.651682360585674e-07,
+        0.29709817575056496
+      ],
+      "relative_speed_error_percent": 0.9673367671416178,
+      "absolute_rest_speed": null,
+      "axial_speed_deficit_percent": 0.9673367538876598,
+      "same_numeric_threshold_met": true,
+      "scope": "Alternative observation fit; not a replacement acceptance decision."
+    }
+  ],
+  "skipped_fits": [
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.1,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.2,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.2,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.5,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.0,
+      "end": 0.5,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.02,
+      "end": 0.5,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.5,
+      "cadence": 0.01,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "start": 0.04,
+      "end": 0.5,
+      "cadence": 0.04,
+      "reason": "At least three exact matching observations unavailable; no interpolation"
+    }
+  ],
+  "initial_proxies": [
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "initial_centroid": [
+        0.00013588475132963237,
+        -0.0032311788433331415,
+        -0.0004002155810372093
+      ],
+      "initial_momentum": [
+        -9.566286624945295e-07,
+        -4.12729435654996e-06,
+        0.8610822995496705
+      ],
+      "initial_hamiltonian": 2.9160739574905103,
+      "initial_continuum_energy": 2.9119014062326767,
+      "momentum_over_hamiltonian": [
+        -3.2805363527809037e-07,
+        -1.4153599725919817e-06,
+        0.29528822385927866
+      ],
+      "momentum_over_continuum_energy": [
+        -3.2852371321602697e-07,
+        -1.4173880845401698e-06,
+        0.2957113512520023
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "initial_centroid": [
+        0.00013580246124872658,
+        -0.003231501947205178,
+        -0.0004195428399423897
+      ],
+      "initial_momentum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_hamiltonian": 2.785585644021431,
+      "initial_continuum_energy": 2.7812601335810183,
+      "momentum_over_hamiltonian": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "momentum_over_continuum_energy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "initial_centroid": [
+        0.00013588475132963237,
+        -0.0032311788433331415,
+        -0.0004002155810372093
+      ],
+      "initial_momentum": [
+        -9.566286624945295e-07,
+        -4.12729435654996e-06,
+        0.8610822995496705
+      ],
+      "initial_hamiltonian": 2.9160739574905103,
+      "initial_continuum_energy": 2.9119014062326767,
+      "momentum_over_hamiltonian": [
+        -3.2805363527809037e-07,
+        -1.4153599725919817e-06,
+        0.29528822385927866
+      ],
+      "momentum_over_continuum_energy": [
+        -3.2852371321602697e-07,
+        -1.4173880845401698e-06,
+        0.2957113512520023
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "initial_centroid": [
+        0.0007553838614443137,
+        -0.002667337112974498,
+        -0.002650971013863981
+      ],
+      "initial_momentum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_hamiltonian": 2.7928752032778417,
+      "initial_continuum_energy": 2.7910226503271494,
+      "momentum_over_hamiltonian": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "momentum_over_continuum_energy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "initial_centroid": [
+        0.000754853885416529,
+        -0.0026669459240293413,
+        -0.002529244000226074
+      ],
+      "initial_momentum": [
+        -6.054898172024251e-07,
+        8.828657112349465e-07,
+        0.8643880568666843
+      ],
+      "initial_hamiltonian": 2.923662804040743,
+      "initial_continuum_energy": 2.9218574089598217,
+      "momentum_over_hamiltonian": [
+        -2.0709974363855785e-07,
+        3.0197248123646587e-07,
+        0.2956524451698153
+      ],
+      "momentum_over_continuum_energy": [
+        -2.0722770910917888e-07,
+        3.021590679023744e-07,
+        0.2958351267300226
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "initial_centroid": [
+        0.0007634704781648311,
+        -0.00269293813888461,
+        -0.002730981082324129
+      ],
+      "initial_momentum": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_hamiltonian": 2.7953452477710763,
+      "initial_continuum_energy": 2.7943969647517233,
+      "momentum_over_hamiltonian": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "momentum_over_continuum_energy": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "initial_centroid": [
+        0.0007631806760481377,
+        -0.002692775826142715,
+        -0.0026055669765097564
+      ],
+      "initial_momentum": [
+        -1.6311515722662912e-07,
+        -6.916798147074125e-07,
+        0.8703767734078931
+      ],
+      "initial_hamiltonian": 2.9277693841343737,
+      "initial_continuum_energy": 2.926851576214676,
+      "momentum_over_hamiltonian": [
+        -5.571311665138402e-08,
+        -2.362480523417028e-07,
+        0.2972832416803311
+      ],
+      "momentum_over_continuum_energy": [
+        -5.573058728095377e-08,
+        -2.3632213547431344e-07,
+        0.29737646434861564
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "initial_centroid": [
+        0.0007631806760481377,
+        -0.002692775826142715,
+        -0.0026055669765097564
+      ],
+      "initial_momentum": [
+        -1.6311515722662912e-07,
+        -6.916798147074125e-07,
+        0.8703767734078931
+      ],
+      "initial_hamiltonian": 2.9277693841343737,
+      "initial_continuum_energy": 2.926851576214676,
+      "momentum_over_hamiltonian": [
+        -5.571311665138402e-08,
+        -2.362480523417028e-07,
+        0.2972832416803311
+      ],
+      "momentum_over_continuum_energy": [
+        -5.573058728095377e-08,
+        -2.3632213547431344e-07,
+        0.29737646434861564
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "initial_centroid": [
+        0.0007631806760481377,
+        -0.002692775826142715,
+        -0.0026055669765097564
+      ],
+      "initial_momentum": [
+        -1.6311515722662912e-07,
+        -6.916798147074125e-07,
+        0.8703767734078931
+      ],
+      "initial_hamiltonian": 2.9277693841343737,
+      "initial_continuum_energy": 2.926851576214676,
+      "momentum_over_hamiltonian": [
+        -5.571311665138402e-08,
+        -2.362480523417028e-07,
+        0.2972832416803311
+      ],
+      "momentum_over_continuum_energy": [
+        -5.573058728095377e-08,
+        -2.3632213547431344e-07,
+        0.29737646434861564
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "initial_centroid": [
+        0.0007283509952815563,
+        -0.0026927237391222904,
+        -0.0026978623795838328
+      ],
+      "initial_momentum": [
+        0.8721866187970204,
+        0.00029251369379865687,
+        4.055055910170904e-07
+      ],
+      "initial_hamiltonian": 2.928317069433988,
+      "initial_continuum_energy": 2.92738954357795,
+      "momentum_over_hamiltonian": [
+        0.29784569024337404,
+        9.989140071337854e-05,
+        1.3847735112081636e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.29794006086767866,
+        9.992305070583028e-05,
+        1.3852122684071228e-07
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "initial_centroid": [
+        0.0007704169325652479,
+        -0.0027520362326781027,
+        -0.0027456270585075834
+      ],
+      "initial_momentum": [
+        -2.885397858224557e-08,
+        -6.447558846855843e-07,
+        0.8710643719363103
+      ],
+      "initial_hamiltonian": 2.927475986353519,
+      "initial_continuum_energy": 2.926564933836032,
+      "momentum_over_hamiltonian": [
+        -9.856264822238986e-09,
+        -2.2024292861534143e-07,
+        0.29754791362825594
+      ],
+      "momentum_over_continuum_energy": [
+        -9.859333120767237e-09,
+        -2.2031149120633466e-07,
+        0.2976405416006101
+      ],
+      "scope": "Diagnostic ratios only, not substituted centroid velocities or a discrete conservation-law identity."
+    }
+  ],
+  "matched_pairs": [
+    {
+      "comparison": "mesh_coarse_medium",
+      "end": 0.1,
+      "cadence": 0.02,
+      "left": "q3-axial-coarse-fresh-z-dt0.01",
+      "right": "q3-axial-medium-warm-z-dt0.01",
+      "left_error_percent": 2.3482273705278094,
+      "right_error_percent": 1.7685507265937155,
+      "difference_percentage_points": -0.5796766439340939
+    },
+    {
+      "comparison": "mesh_coarse_medium",
+      "end": 0.2,
+      "cadence": 0.02,
+      "left": "q3-axial-coarse-fresh-z-dt0.01",
+      "right": "q3-axial-medium-warm-z-dt0.01",
+      "left_error_percent": 2.347803265379951,
+      "right_error_percent": 1.7709773258668402,
+      "difference_percentage_points": -0.576825939513111
+    },
+    {
+      "comparison": "mesh_medium_fine",
+      "end": 0.1,
+      "cadence": 0.02,
+      "left": "q3-axial-medium-warm-z-dt0.01",
+      "right": "q3-axial-fine-warm-z-dt0.01",
+      "left_error_percent": 1.7685507265937155,
+      "right_error_percent": 1.0569676937462489,
+      "difference_percentage_points": -0.7115830328474666
+    },
+    {
+      "comparison": "mesh_medium_fine",
+      "end": 0.2,
+      "cadence": 0.02,
+      "left": "q3-axial-medium-warm-z-dt0.01",
+      "right": "q3-axial-fine-warm-z-dt0.01",
+      "left_error_percent": 1.7709773258668402,
+      "right_error_percent": 1.0573217203417835,
+      "difference_percentage_points": -0.7136556055250567
+    },
+    {
+      "comparison": "orientation",
+      "end": 0.1,
+      "cadence": 0.02,
+      "left": "q3-axial-fine-warm-z-dt0.01",
+      "right": "q3-axial-fine-warm-x-dt0.01",
+      "left_error_percent": 1.0569676937462489,
+      "right_error_percent": 0.8175815890452973,
+      "difference_percentage_points": -0.23938610470095156
+    },
+    {
+      "comparison": "orientation",
+      "end": 0.2,
+      "cadence": 0.02,
+      "left": "q3-axial-fine-warm-z-dt0.01",
+      "right": "q3-axial-fine-warm-x-dt0.01",
+      "left_error_percent": 1.0573217203417835,
+      "right_error_percent": 0.8197149403887252,
+      "difference_percentage_points": -0.23760677995305834
+    },
+    {
+      "comparison": "domain",
+      "end": 0.1,
+      "cadence": 0.02,
+      "left": "q3-axial-fine-warm-z-dt0.01",
+      "right": "q3-axial-domain-warm-z-dt0.01",
+      "left_error_percent": 1.0569676937462489,
+      "right_error_percent": 0.9663035267880173,
+      "difference_percentage_points": -0.09066416695823154
+    },
+    {
+      "comparison": "domain",
+      "end": 0.2,
+      "cadence": 0.02,
+      "left": "q3-axial-fine-warm-z-dt0.01",
+      "right": "q3-axial-domain-warm-z-dt0.01",
+      "left_error_percent": 1.0573217203417835,
+      "right_error_percent": 0.965822835256053,
+      "difference_percentage_points": -0.09149888508573056
+    },
+    {
+      "comparison": "coarse_screen_cadence",
+      "end": 0.1,
+      "cadence": 0.02,
+      "left": "q3-axial-coarse-fresh-screen-dt0.01",
+      "right": "q3-axial-coarse-fresh-z-dt0.01",
+      "left_error_percent": 2.3482273705278094,
+      "right_error_percent": 2.3482273705278094,
+      "difference_percentage_points": 0.0
+    },
+    {
+      "comparison": "coarse_screen_cadence",
+      "end": 0.2,
+      "cadence": 0.02,
+      "left": "q3-axial-coarse-fresh-screen-dt0.01",
+      "right": "q3-axial-coarse-fresh-z-dt0.01",
+      "left_error_percent": 2.347803265379951,
+      "right_error_percent": 2.347803265379951,
+      "difference_percentage_points": 0.0
+    }
+  ],
+  "fit_envelopes": [
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "window_end": 0.2,
+      "minimum_percent": 2.34757659160526,
+      "maximum_percent": 2.347900089317427,
+      "fit_spread_percentage_points": 0.00032349771216688694,
+      "crosses_one_percent": false,
+      "scope": "Recorded cadence/start-window envelope; not an uncertainty interval or corrected speed."
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "window_end": 0.2,
+      "minimum_percent": 2.3476404092469085,
+      "maximum_percent": 2.347900089317427,
+      "fit_spread_percentage_points": 0.0002596800705183533,
+      "crosses_one_percent": false,
+      "scope": "Recorded cadence/start-window envelope; not an uncertainty interval or corrected speed."
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "window_end": 0.2,
+      "minimum_percent": 0.9656127738585585,
+      "maximum_percent": 0.9659393285154196,
+      "fit_spread_percentage_points": 0.0003265546568611555,
+      "crosses_one_percent": false,
+      "scope": "Recorded cadence/start-window envelope; not an uncertainty interval or corrected speed."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "window_end": 0.2,
+      "minimum_percent": 0.8196938882535919,
+      "maximum_percent": 0.8205659837792715,
+      "fit_spread_percentage_points": 0.0008720955256795726,
+      "crosses_one_percent": false,
+      "scope": "Recorded cadence/start-window envelope; not an uncertainty interval or corrected speed."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "window_end": 0.2,
+      "minimum_percent": 1.0573188482503217,
+      "maximum_percent": 1.0574614436418366,
+      "fit_spread_percentage_points": 0.00014259539151484368,
+      "crosses_one_percent": false,
+      "scope": "Recorded cadence/start-window envelope; not an uncertainty interval or corrected speed."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "window_end": 0.2,
+      "minimum_percent": 1.0573188555508153,
+      "maximum_percent": 1.0574614507384184,
+      "fit_spread_percentage_points": 0.00014259518760306733,
+      "crosses_one_percent": false,
+      "scope": "Recorded cadence/start-window envelope; not an uncertainty interval or corrected speed."
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "window_end": 0.2,
+      "minimum_percent": 1.057318972008823,
+      "maximum_percent": 1.0574615632411999,
+      "fit_spread_percentage_points": 0.00014259123237692073,
+      "crosses_one_percent": false,
+      "scope": "Recorded cadence/start-window envelope; not an uncertainty interval or corrected speed."
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "window_end": 0.2,
+      "minimum_percent": 1.7708796875285793,
+      "maximum_percent": 1.77193200144374,
+      "fit_spread_percentage_points": 0.0010523139151608074,
+      "crosses_one_percent": false,
+      "scope": "Recorded cadence/start-window envelope; not an uncertainty interval or corrected speed."
+    }
+  ],
+  "recorded_at": {
+    "utc": "2026-11-12T08:07:54.806664+00:00",
+    "melbourne": "2026-11-12T19:07:54.806664+11:00"
+  }
+}

@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-12T13:24:27.005071+00:00; Australia/Melbourne 2026-11-13T00:24:27.005071+11:00.
+Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
 
 ## Current position
 
 Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-010**, Fresh Q3 Q4 Q7 survey and detailed motion. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-The six-case fixed-rest initialization study reproduces the fine state but speed error is nonmonotonic; the tiny 121 x error reflects cancellation, and coarse held-layer projection mixes boundary treatment with sampling. Original failures and scientific gate remain open.
+Twelve initial-only controls show negligible fine-grid padding effect but strong alignment dependence reversing the speed bias. Finer zero-phase errors are about 0.072% z and 0.098% x, not convergence or motion admission. Original gates and unresolved Q4/Q7 outcomes remain.
 
-No physical trajectory or continuum convergence is established by this diagnostic. Boundary/phase controls and focused equation/proof audits are prepared, not completed. Neutral SF topology does not establish electric charge, fermionic spin/statistics or electron properties.
+SF production method comparison and Maxwell benchmark are prepared, not completed. Same reconstruction can share error; common D4 observer is not continuum truth. No full-field replay, phase averaging/favorable selection, new trajectory acceptance, charge/spin/electron validation or changed original gate.
 
 ## Next scientific task
 
-[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md): Run twelve bounded initial-only paired padding/sampling controls, including half-cell shifts and finer 169 lab sampling, before selecting short physical evolution. Follow the focused Yang-Mills/SF, Maxwell topology and quantum-state applicability plan; keep five assessment dimensions separate.
+[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md): Compare D4 and independent variational D2 SF initial vector fields on identical finest-grid states at four alignments in x/z, retaining native and qualified common observables. Run separate analytical Maxwell/Yee controls; review phase/refinement trends before short SF evolution. Keep focused literature plan and five assessment dimensions.
 
 ## Study register
 

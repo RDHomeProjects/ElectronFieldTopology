@@ -1,6 +1,6 @@
 # S4-C: Return-map diagnosis
 
-Updated: UTC 2026-11-12T13:24:27.005071+00:00; Australia/Melbourne 2026-11-13T00:24:27.005071+11:00.
+Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
 
 Bounded recurrence controls and model-feasibility decision.
 
