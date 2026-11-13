@@ -1,0 +1,217 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-13T15:38:58.127347+00:00",
+    "melbourne": "2026-11-14T02:38:58.127347+11:00"
+  },
+  "models": [
+    {
+      "model": "cubic",
+      "origin": 0.2,
+      "scale": 0.8,
+      "coefficients": [
+        0.003946009433568726,
+        0.015681842771681564,
+        -0.0006619485807634446,
+        0.00049002264402109
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 1.497030435379816e-06,
+      "development_max_residual": 1.3055613659928092e-06
+    },
+    {
+      "model": "linear",
+      "origin": 0.2,
+      "scale": 0.8,
+      "coefficients": [
+        0.003950016532491169,
+        0.015476074238596049
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 1.5998905779897906e-05,
+      "development_max_residual": 3.0158992813923702e-05
+    },
+    {
+      "model": "quadratic",
+      "origin": 0.2,
+      "scale": 0.8,
+      "coefficients": [
+        0.003963534334744413,
+        0.015397255504163232,
+        7.703889225461313e-05
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 1.9416290584969517e-05,
+      "development_max_residual": 1.8421032738882154e-05
+    },
+    {
+      "model": "exponential",
+      "origin": 0.2,
+      "scale": 0.8,
+      "coefficients": [
+        -5.124735696341935,
+        1.2374944236940388
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 0.0010178472080237726,
+      "development_max_residual": 0.002001062565047689
+    },
+    {
+      "model": "constant",
+      "origin": 0.2,
+      "scale": 0.8,
+      "coefficients": [
+        0.012351491129164904
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 0.0048948432622126226,
+      "development_max_residual": 0.008404764523032491
+    }
+  ],
+  "rows": [
+    {
+      "level": 48,
+      "x": 0.2,
+      "y": 0.003946726606132412,
+      "role": "seed_development",
+      "case_id": "6e57290106e51455",
+      "measured_at": {
+        "utc": "2026-11-13T15:34:56.016680+00:00",
+        "melbourne": "2026-11-14T02:34:56.016680+11:00"
+      }
+    },
+    {
+      "level": 96,
+      "x": 0.4,
+      "y": 0.00783246147580316,
+      "role": "seed_development",
+      "case_id": "fa9f4ad1214b89fd",
+      "measured_at": {
+        "utc": "2026-11-13T15:36:23.575318+00:00",
+        "melbourne": "2026-11-14T02:36:23.575318+11:00"
+      }
+    },
+    {
+      "level": 120,
+      "x": 0.5,
+      "y": 0.009759965812838793,
+      "role": "seed_development",
+      "case_id": "793d9299ad565251",
+      "measured_at": {
+        "utc": "2026-11-13T15:36:34.018132+00:00",
+        "melbourne": "2026-11-14T02:36:34.018132+11:00"
+      }
+    },
+    {
+      "level": 240,
+      "x": 1.0,
+      "y": 0.019456249763901142,
+      "role": "seed_development",
+      "case_id": "10917f27d6b0d7e1",
+      "measured_at": {
+        "utc": "2026-11-13T15:36:53.827326+00:00",
+        "melbourne": "2026-11-14T02:36:53.827326+11:00"
+      }
+    },
+    {
+      "level": 180,
+      "x": 0.75,
+      "y": 0.014573283757055295,
+      "role": "adaptive_development",
+      "case_id": "4ee13d0b04ad0f93",
+      "measured_at": {
+        "utc": "2026-11-13T15:37:09.082372+00:00",
+        "melbourne": "2026-11-14T02:37:09.082372+11:00"
+      }
+    },
+    {
+      "level": 150,
+      "x": 0.625,
+      "y": 0.012163885658050901,
+      "role": "adaptive_development",
+      "case_id": "eb8da749dbe45304",
+      "measured_at": {
+        "utc": "2026-11-13T15:37:21.823740+00:00",
+        "melbourne": "2026-11-14T02:37:21.823740+11:00"
+      }
+    },
+    {
+      "level": 135,
+      "x": 0.5625,
+      "y": 0.01096203523535692,
+      "role": "adaptive_development",
+      "case_id": "80f5d540eac0edd3",
+      "measured_at": {
+        "utc": "2026-11-13T15:37:33.383390+00:00",
+        "melbourne": "2026-11-14T02:37:33.383390+11:00"
+      }
+    },
+    {
+      "level": 142,
+      "x": 0.5916666666666667,
+      "y": 0.011522829474439047,
+      "role": "adaptive_development",
+      "case_id": "922ebc6a8b96fc6b",
+      "measured_at": {
+        "utc": "2026-11-13T15:37:45.525298+00:00",
+        "melbourne": "2026-11-14T02:37:45.525298+11:00"
+      }
+    },
+    {
+      "level": 210,
+      "x": 0.875,
+      "y": 0.01700038893731892,
+      "role": "adaptive_development",
+      "case_id": "f24bc93468683163",
+      "measured_at": {
+        "utc": "2026-11-13T15:38:02.763214+00:00",
+        "melbourne": "2026-11-14T02:38:02.763214+11:00"
+      }
+    },
+    {
+      "level": 73,
+      "x": 0.30416666666666664,
+      "y": 0.005976469431717513,
+      "role": "adaptive_development",
+      "case_id": "67261dc77ed0c362",
+      "measured_at": {
+        "utc": "2026-11-13T15:38:09.784962+00:00",
+        "melbourne": "2026-11-14T02:38:09.784962+11:00"
+      }
+    },
+    {
+      "level": 195,
+      "x": 0.8125,
+      "y": 0.015783905546098587,
+      "role": "adaptive_development",
+      "case_id": "0f951cd058e3a403",
+      "measured_at": {
+        "utc": "2026-11-13T15:38:25.863139+00:00",
+        "melbourne": "2026-11-14T02:38:25.863139+11:00"
+      }
+    },
+    {
+      "level": 165,
+      "x": 0.6875,
+      "y": 0.013367110732139845,
+      "role": "adaptive_development",
+      "case_id": "245873ce96397769",
+      "measured_at": {
+        "utc": "2026-11-13T15:38:39.678352+00:00",
+        "melbourne": "2026-11-14T02:38:39.678352+11:00"
+      }
+    },
+    {
+      "level": 225,
+      "x": 0.9375,
+      "y": 0.018224072248291184,
+      "role": "adaptive_development",
+      "case_id": "53303119e8e7acf1",
+      "measured_at": {
+        "utc": "2026-11-13T15:38:58.086817+00:00",
+        "melbourne": "2026-11-14T02:38:58.086817+11:00"
+      }
+    }
+  ],
+  "stop_reason": "budget_exhausted",
+  "adaptive_budget": 9
+}

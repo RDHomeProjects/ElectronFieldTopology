@@ -1,0 +1,85 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-13T15:34:44.325280+00:00",
+    "melbourne": "2026-11-14T02:34:44.325280+11:00"
+  },
+  "environment": {
+    "source_commit": "50a1337739f5063bfb459c8d7111077b9ccffd33",
+    "tracked_worktree_status": "",
+    "source_sha256": {
+      "fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+      "evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735"
+    },
+    "dependency_sha256": {
+      "pyproject.toml": "7533c5330618cded5524ac2bc7c0035cfd2f1688109e433a53c3ac24adf74d0c",
+      "uv.lock": "1256a2e134796077174a1a10bbfa53b3c33239a616ed93b20e08220da063079e"
+    },
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_count": 12,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "6",
+      "OPENBLAS_NUM_THREADS": "6",
+      "MKL_NUM_THREADS": "6"
+    },
+    "package_sha256": {
+      "dependencies.py": "93ba55ad79a34f98e8e4627879c87331a71569f708e8fc0a3d151284152f9a15",
+      "manage.py": "3e00b9a73f57ea9d00f56c79e135b423e6e1f31938c7fa0c2eebcbe0cbc836a2",
+      "render_report.py": "6929379f2abf90c3e67306e38626ba93554904088e6588a36abe2a93df30840d",
+      "PLAN.json": "a65f44e45a41e2127f9467b28c61cb5db106bf8f9c1c1c7c1802f75940c5b24a",
+      "extension.py": "d35fa3cbba76ab8cbd31db88a6d1e10749279ca33170f3a5006c45a5bf2e570c",
+      "qualification.py": "1dae6e23c2687a2aabab19b58c229ce8380ae40638fde3c138c71ebb5287b6ce",
+      "numerics.py": "9e9ce2405885fc17554e6036b7d31354f6e1bd6867ca2318e4ba4e56e75af25b",
+      "yee_primitives.py": "aa34b7376067d1ed18a28aa1555de95bb55d446eac49f0a308ebbd4634739f76"
+    }
+  },
+  "status": "qualification_passed",
+  "checks": {
+    "fourier_multimode": {
+      "relative_error": 6.119806745504667e-16,
+      "energy_drift": 2.220446049250313e-16,
+      "divergence_max": 4.179965770360403e-15,
+      "pass": true
+    },
+    "discrete_yee_wave": {
+      "native_max_error": 6.661338147750939e-16,
+      "synchronization_formula_error": 6.661338147750939e-16,
+      "modified_energy_drift": 2.220446049250313e-16,
+      "divergence_change": 0.0,
+      "pass": true
+    },
+    "manufactured_maxwell_pde": {
+      "central_difference_residual": 3.885786137303171e-11,
+      "pass": true
+    },
+    "adaptive_relationship": {
+      "model": "quadratic",
+      "validation_error": 6.938893903907228e-18,
+      "selected_x": 0.4,
+      "reason": "turning_point",
+      "pass": true
+    },
+    "inflection_detection": {
+      "features": [
+        [
+          "turning_point",
+          -1.0536712502506873e-08
+        ],
+        [
+          "turning_point",
+          1.0536711725350756e-08
+        ],
+        [
+          "possible_inflection",
+          0.0
+        ]
+      ],
+      "pass": true
+    }
+  },
+  "scope": "Manufactured software/numerical controls, not a physical candidate admission."
+}

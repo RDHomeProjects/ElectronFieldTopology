@@ -1,0 +1,22 @@
+{
+  "schema": "maxwell-bounded-dependencies-v1",
+  "nodes": 65,
+  "length": 8.0,
+  "fixed_dt": 0.004166666666666667,
+  "baseline_duration": 0.2,
+  "phase": 0.0,
+  "boundary_layers": 2,
+  "max_case_count": 80,
+  "adaptive": {"min_additions": 2, "max_additions": 6, "hopfion_max_additions": 9, "prediction_tolerance_fraction": 0.000001, "feature_bracket_fraction": 0.03, "validation_tolerance_fraction": 0.000005, "accuracy_budget_fraction": null},
+  "blocks": [
+    {"id": "hopfion-dt", "field": "hopfion", "variable": "dt", "seed": [12,24,48,96], "validation": [18,36,72], "candidates": [12,96]},
+    {"id": "packet-dt", "field": "packet", "variable": "dt", "seed": [12,24,48,96], "validation": [18,36,72], "candidates": [12,96]},
+    {"id": "hopfion-duration", "field": "hopfion", "variable": "duration", "seed": [48,96,120,240], "validation": [72,160,216], "candidates": [48,240]},
+    {"id": "packet-duration", "field": "packet", "variable": "duration", "seed": [48,96,120,240], "validation": [72,160,216], "candidates": [48,240]},
+    {"id": "hopfion-angle", "field": "hopfion", "variable": "angle_degrees", "seed": [0,30,60,90], "validation": [15,45,75], "candidates": [0,90]}
+  ],
+  "packet_cubic_rotation_controls": ["x90", "y90"],
+  "late_time_dt_checks": [480,960],
+  "snapshot_policy": "Retain compressed float64 native final E and B_half, plus Fourier final E/B for packet cases. Compact evidence excludes full fields.",
+  "scope": "Separate classical Maxwell numerical-control extension; fixed grid and box; no spatial/domain convergence, SF admission, isolation, particle, charge or quantum claim."
+}

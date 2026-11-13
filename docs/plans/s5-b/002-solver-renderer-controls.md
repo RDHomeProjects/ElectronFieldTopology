@@ -1,6 +1,6 @@
 # s5-b-002: Physical-time solver and independent renderer controls
 
-Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
+Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
 
 State: **assessed**. Scientific gate: **bounded**. State records workflow progress, not a physical claim.
 

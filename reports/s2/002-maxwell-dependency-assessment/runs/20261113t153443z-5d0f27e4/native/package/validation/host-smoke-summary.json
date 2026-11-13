@@ -1,0 +1,51 @@
+{
+  "role": "assistant-host preparation only; not zbook production",
+  "recorded_at": {
+    "utc": "2026-11-13T15:27:38.583647+00:00",
+    "melbourne": "2026-11-14T02:27:38.583647+11:00"
+  },
+  "finished_at": {
+    "utc": "2026-11-13T15:27:57.622996+00:00",
+    "melbourne": "2026-11-14T02:27:57.622996+11:00"
+  },
+  "nodes": 17,
+  "case_count": 46,
+  "packet_numerical_controls_pass": true,
+  "blocks": [
+    {
+      "id": "hopfion-dt",
+      "stop_reason": "refinement_tolerances_met",
+      "empirical_prediction_check": true,
+      "model": "cubic",
+      "validation_rmse_fraction": 7.353329555949603e-10
+    },
+    {
+      "id": "packet-dt",
+      "stop_reason": "refinement_tolerances_met",
+      "empirical_prediction_check": true,
+      "model": "cubic",
+      "validation_rmse_fraction": 4.34573884902619e-10
+    },
+    {
+      "id": "hopfion-duration",
+      "stop_reason": "budget_exhausted",
+      "empirical_prediction_check": false,
+      "model": "cubic",
+      "validation_rmse_fraction": 3.313839669024149e-05
+    },
+    {
+      "id": "packet-duration",
+      "stop_reason": "budget_exhausted",
+      "empirical_prediction_check": true,
+      "model": "cubic",
+      "validation_rmse_fraction": 1.743711726234659e-07
+    },
+    {
+      "id": "hopfion-angle",
+      "stop_reason": "refinement_tolerances_met",
+      "empirical_prediction_check": true,
+      "model": "constant",
+      "validation_rmse_fraction": 1.9487049287472822e-13
+    }
+  ]
+}

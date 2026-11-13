@@ -1,6 +1,6 @@
 # s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion
 
-Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
+Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ Twelve initial-only controls show negligible fine-grid padding effect but strong
 
 ## Next action and exit evidence
 
-Compare D4 and independent variational D2 SF initial vector fields on identical finest-grid states at four alignments in x/z, retaining native and qualified common observables. Run separate analytical Maxwell/Yee controls; review phase/refinement trends before short SF evolution. Keep focused literature plan and five assessment dimensions.
+Apply the separately registered controlled Q-dependency transfer; preserve all earlier preparation, admission and motion outcomes.
 
 Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.
 

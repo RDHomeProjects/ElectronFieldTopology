@@ -1,0 +1,151 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-13T23:22:24.826054+00:00",
+    "melbourne": "2026-11-14T10:22:24.826054+11:00"
+  },
+  "status": "host_preparation_checks_passed",
+  "scope": "Manufactured numerical controls, reduced-grid complete follow-up, 129^3 short maximum-geometry case, local publication/archive fixtures and lifecycle checks. Full production spacing, real GitHub and hosted CI are pending workstation execution.",
+  "qualification": {
+    "status": "qualification_passed",
+    "checks": {
+      "fourier_multimode": {
+        "relative_error": 6.119806745504667e-16,
+        "energy_drift": 2.220446049250313e-16,
+        "divergence_max": 4.179965770360403e-15,
+        "pass": true
+      },
+      "discrete_yee_wave": {
+        "native_max_error": 6.661338147750939e-16,
+        "synchronization_formula_error": 6.661338147750939e-16,
+        "modified_energy_drift": 2.220446049250313e-16,
+        "divergence_change": 0.0,
+        "pass": true
+      },
+      "manufactured_maxwell_pde": {
+        "central_difference_residual": 3.885786137303171e-11,
+        "pass": true
+      },
+      "adaptive_relationship": {
+        "model": "quadratic",
+        "validation_error": 6.938893903907228e-18,
+        "selected_x": 0.4,
+        "reason": "turning_point",
+        "pass": true
+      },
+      "inflection_detection": {
+        "features": [
+          [
+            "possible_inflection",
+            -3.3306690738754696e-16
+          ],
+          [
+            "possible_inflection",
+            -2.7755575615628914e-17
+          ]
+        ],
+        "pass": true
+      }
+    },
+    "scope": "Manufactured software/numerical controls, not a physical candidate admission.",
+    "corrected_features": {
+      "stationary_inflection_not_extremum": true,
+      "quadratic_extremum_retained": true,
+      "cubic_features": [
+        [
+          "possible_inflection",
+          -3.3306690738754696e-16
+        ],
+        [
+          "possible_inflection",
+          -2.7755575615628914e-17
+        ]
+      ]
+    },
+    "observer_linear_exactness": 1.3322676295501878e-15,
+    "manufactured_offset_power_error": 1.5027042110649091e-15
+  },
+  "smoke": {
+    "role": "smoke",
+    "completed_cases": 28,
+    "status": "complete_pending_review",
+    "block_results": [
+      {
+        "id": "hopfion-duration-localized",
+        "stop": "budget_exhausted",
+        "prediction_pass": false
+      },
+      {
+        "id": "hopfion-spacing",
+        "stop": "budget_exhausted",
+        "prediction_pass": false
+      },
+      {
+        "id": "packet-spacing",
+        "stop": "budget_exhausted",
+        "prediction_pass": false
+      }
+    ]
+  },
+  "maximum_geometry": {
+    "scope": "Maximum requested array geometry, short interval only; not T1 spatial campaign",
+    "parameters": {
+      "nodes": 129,
+      "length": 8.0,
+      "duration": 0.0125,
+      "field": "hopfion",
+      "angle_degrees": 0.0,
+      "rotation_code": null,
+      "steps": 12
+    },
+    "native_error": 6.407295851161737e-05,
+    "observer": {
+      "observer_nodes": 33,
+      "observer_half_extent": 2.0,
+      "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+      "evolution_observed_error": 6.35602926421821e-05,
+      "observer_baseline_error": 0.003136549836876259,
+      "total_observed_error": 0.003137443276583984,
+      "normalized_cross_term": 1.5655237727968023e-09,
+      "vector_decomposition_closure": 1.6940658945086007e-21,
+      "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+    },
+    "wall_seconds": 10.29778655500013
+  },
+  "archive_fixture": {
+    "status": "passed",
+    "scope": "61 small manufactured NPZ fixture states, real TAR/hash/CRC/part routines; gh simulated locally, no network/real release",
+    "verified_members": 65,
+    "download_tamper_rejected": true,
+    "source_fields_retained": 61,
+    "gh_calls_simulated": 18
+  },
+  "publication_fixture": {
+    "status": "passed",
+    "scope": "Local clones, complete-history bundle, staging, commit, push-to-bare, registry/docs and merge-sync exercised. gh auth/PR/CI/merge simulated; real GitHub untouched. Fixture measured-source ancestry bypassed only in test because its compatible snapshot predates the real workstation source commit.",
+    "hosted_checks_head_guard_exercised": true,
+    "merged_receipt_created": true,
+    "local_main_updated": true,
+    "gh_calls_simulated": 8,
+    "imported_html_bytes_preserved": true
+  },
+  "registry_and_deduplication": {
+    "base": "4ec804b11bb2095cf93e289aae184616a45e5f7a",
+    "studies": {
+      "assessment": "s2-002",
+      "followup": "s2-003",
+      "qx_transfer": "s5-b-012"
+    },
+    "before_registry_sha256": "c024f88fda0866913ef4b6390dd803b91fcebe4ffa0d9f8238622ebf56e1fcf8",
+    "existing_evidence_deduplicated": true
+  },
+  "stop_resume": {
+    "status": "passed",
+    "completed_case_receipts_preserved": 5,
+    "frozen_fit_preserved": true,
+    "final_status": "complete_pending_review"
+  },
+  "protected_historical_files_checked": 964,
+  "real_github_actions_performed_here": false,
+  "real_hosted_CI_run_here": false,
+  "full_spatial_campaign_run_here": false
+}

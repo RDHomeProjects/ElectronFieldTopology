@@ -1,0 +1,107 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-13T15:27:57.622996+00:00",
+    "melbourne": "2026-11-14T02:27:57.622996+11:00"
+  },
+  "status": "host_preparation_checks_passed",
+  "scope": "Manufactured controls, full 17^3 smoke workflow, selected 65^3 regression/late-time cases and lifecycle checks only; full 65^3 adaptive workstation campaign has not run. Scientific/prediction failures in host smoke remain in the included report. Final renderer was visually checked after the numerical smoke run.",
+  "unchanged_primitive_ASTs": true,
+  "host_smoke": {
+    "role": "assistant-host preparation only; not zbook production",
+    "recorded_at": {
+      "utc": "2026-11-13T15:27:38.583647+00:00",
+      "melbourne": "2026-11-14T02:27:38.583647+11:00"
+    },
+    "finished_at": {
+      "utc": "2026-11-13T15:27:57.622996+00:00",
+      "melbourne": "2026-11-14T02:27:57.622996+11:00"
+    },
+    "nodes": 17,
+    "case_count": 46,
+    "packet_numerical_controls_pass": true,
+    "blocks": [
+      {
+        "id": "hopfion-dt",
+        "stop_reason": "refinement_tolerances_met",
+        "empirical_prediction_check": true,
+        "model": "cubic",
+        "validation_rmse_fraction": 7.353329555949603e-10
+      },
+      {
+        "id": "packet-dt",
+        "stop_reason": "refinement_tolerances_met",
+        "empirical_prediction_check": true,
+        "model": "cubic",
+        "validation_rmse_fraction": 4.34573884902619e-10
+      },
+      {
+        "id": "hopfion-duration",
+        "stop_reason": "budget_exhausted",
+        "empirical_prediction_check": false,
+        "model": "cubic",
+        "validation_rmse_fraction": 3.313839669024149e-05
+      },
+      {
+        "id": "packet-duration",
+        "stop_reason": "budget_exhausted",
+        "empirical_prediction_check": true,
+        "model": "cubic",
+        "validation_rmse_fraction": 1.743711726234659e-07
+      },
+      {
+        "id": "hopfion-angle",
+        "stop_reason": "refinement_tolerances_met",
+        "empirical_prediction_check": true,
+        "model": "constant",
+        "validation_rmse_fraction": 1.9487049287472822e-13
+      }
+    ]
+  },
+  "baseline_65_E_error_exact_match": true,
+  "late_65_cases": {
+    "hopfion": {
+      "sync_native_error": 0.019456249763901142,
+      "max_discrete_divergence_change_normalized": 6.59399556923259e-14,
+      "modified_energy_relative_drift": null,
+      "wall_seconds": 17.549761920000037,
+      "fourier": null
+    },
+    "packet": {
+      "sync_native_error": 0.0009858346284132415,
+      "max_discrete_divergence_change_normalized": 6.784576929654061e-14,
+      "modified_energy_relative_drift": 0.0,
+      "wall_seconds": 4.072402265000164,
+      "fourier": {
+        "exact_error": 5.823346291628058e-16,
+        "yee_difference": 0.001921764619761864,
+        "energy_relative_change": 0.0,
+        "divergence_max": 2.261012874613325e-14,
+        "projection": false
+      }
+    }
+  },
+  "stop_resume": {
+    "status": "passed",
+    "completed_case_receipts_preserved": 7,
+    "frozen_model_preserved": true,
+    "unrelated_pid_guard": "passed"
+  },
+  "default_budget": {
+    "hopfion_additions_per_block": 9,
+    "packet_additions_per_block": 6,
+    "seed_points_per_block": 4,
+    "reserved_validation_per_block": 3,
+    "maximum_distinct_cases": 80
+  },
+  "source_sha256": {
+    "fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+    "evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735"
+  },
+  "numerical_module_sha256": {
+    "numerics.py": "9e9ce2405885fc17554e6036b7d31354f6e1bd6867ca2318e4ba4e56e75af25b",
+    "dependencies.py": "93ba55ad79a34f98e8e4627879c87331a71569f708e8fc0a3d151284152f9a15",
+    "qualification.py": "1dae6e23c2687a2aabab19b58c229ce8380ae40638fde3c138c71ebb5287b6ce",
+    "yee_primitives.py": "aa34b7376067d1ed18a28aa1555de95bb55d446eac49f0a308ebbd4634739f76"
+  },
+  "nested_package_snapshot_check": "passed"
+}

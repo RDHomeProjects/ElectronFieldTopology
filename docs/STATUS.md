@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
+Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
 
 ## Current position
 
-Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-010**, Fresh Q3 Q4 Q7 survey and detailed motion. Administrative progress is recorded in the study register below; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s2-002**, Bounded Maxwell dependency assessment. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-Twelve initial-only controls show negligible fine-grid padding effect but strong alignment dependence reversing the speed bias. Finer zero-phase errors are about 0.072% z and 0.098% x, not convergence or motion admission. Original gates and unresolved Q4/Q7 outcomes remain.
+Bounded Maxwell dependency assessment records 61 cases, five withheld prediction checks and verified periodic controls. Available Q3 initial/observation/sampling diagnostics are preserved. The next numerical priority is fixed-observer spacing and focused duration localization, followed by Q2/Q3 transfer.
 
-SF production method comparison and Maxwell benchmark are prepared, not completed. Same reconstruction can share error; common D4 observer is not continuum truth. No full-field replay, phase averaging/favorable selection, new trajectory acceptance, charge/spin/electron validation or changed original gate.
+Hopfion-duration feature localization, physical spacing/domain convergence, discrete initial divergence and observation errors remain open. Maxwell validation does not admit SF motion, isolation, charge, quantum spin or an electron model. Q1 parked; Q2 reference; Q4/Q7 unresolved.
 
 ## Next scientific task
 
-[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md): Compare D4 and independent variational D2 SF initial vector fields on identical finest-grid states at four alignments in x/z, retaining native and qualified common observables. Run separate analytical Maxwell/Yee controls; review phase/refinement trends before short SF evolution. Keep focused literature plan and five assessment dimensions.
+[s2-003: Fixed-observer Maxwell spacing and localized duration controls](plans/s2/003-spacing-observer-controls.md): Run the locally published follow-up: focused duration points, fixed-dt spacing curves, saved-state observer refinement and separate time anchors.
 
 ## Study register
 
@@ -51,6 +51,9 @@ SF production method comparison and Maxwell benchmark are prepared, not complete
 | [s5-b-008](plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | assessed | open |
 | [s5-b-009](plans/s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | assessed | open |
 | [s5-b-010](plans/s5-b/010-intermediate-q-survey.md) | Fresh Q3 Q4 Q7 survey and detailed motion | assessed | open |
+| [s2-002](plans/s2/002-maxwell-dependency-assessment.md) | Bounded Maxwell dependency assessment | assessed | bounded |
+| [s2-003](plans/s2/003-spacing-observer-controls.md) | Fixed-observer Maxwell spacing and localized duration controls | prepared | open |
+| [s5-b-011](plans/s5-b/011-controlled-q-dependencies.md) | Controlled dependency transfer to Q2 Q3 and other Q results | prepared | open |
 
 ## Claims and deferred work
 

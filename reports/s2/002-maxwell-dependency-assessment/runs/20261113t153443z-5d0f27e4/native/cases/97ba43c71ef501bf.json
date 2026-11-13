@@ -1,0 +1,154 @@
+{
+  "parameters": {
+    "nodes": 65,
+    "length": 8.0,
+    "duration": 0.2,
+    "field": "packet",
+    "angle_degrees": 0.0,
+    "rotation_code": null,
+    "steps": 19
+  },
+  "dt": 0.010526315789473684,
+  "wall_seconds": 1.0909426629077643,
+  "E_error": 0.00020103863246190637,
+  "B_synchronized_error": 0.00019869343412674928,
+  "sync_native_error": 0.00019986947304082524,
+  "collocated_error": 0.001638894483431103,
+  "initial_discrete_divergence_normalized": 0.0020646751094815607,
+  "max_discrete_divergence_change_normalized": 1.9178460376778377e-14,
+  "cube_half_extent": 1.9692307692307693,
+  "poynting_balance": {
+    "samples": 6,
+    "integrated_flux": 0.9649164024057626,
+    "energy_change": -0.9612811134193748,
+    "defect": 0.0036352889863877635,
+    "defect_over_initial_energy": 5.450809189103625e-05,
+    "defect_over_transport": 0.0037674652201207656
+  },
+  "coarser_flux_quadrature": {
+    "samples": 4,
+    "integrated_flux": 0.9630889040161953,
+    "energy_change": -0.9612811134193748,
+    "defect": 0.0018077905968204577,
+    "defect_over_initial_energy": 2.7106295081413905e-05,
+    "defect_over_transport": 0.0018770755111825667
+  },
+  "modified_energy_relative_drift": 2.220446049250313e-16,
+  "physical_energy_relative_change": 3.564012418522111e-09,
+  "trace": [
+    {
+      "time": 0.0,
+      "energy": 66.69264801370858,
+      "outward_flux": 7.323165464152363,
+      "face_fluxes": [
+        -2.6823404152465193,
+        7.291870661418123,
+        -0.8082121922796384,
+        -2.223926773019724,
+        -0.49582405268118,
+        6.241598235961302
+      ],
+      "half_extent": 1.9692307692307693,
+      "collocated_full_box_energy": 518.0118752047201,
+      "native_modified_energy": 519.0223411446402
+    },
+    {
+      "time": 0.042105263157894736,
+      "energy": 66.4066351917531,
+      "outward_flux": 6.328476061668119,
+      "face_fluxes": [
+        -2.982536803737349,
+        6.953954553494409,
+        -0.6785150245922964,
+        -2.338244346103453,
+        -0.4332647155577786,
+        5.807082398164587
+      ],
+      "half_extent": 1.9692307692307693,
+      "collocated_full_box_energy": 518.0118747760782,
+      "native_modified_energy": 519.0223411446402
+    },
+    {
+      "time": 0.08421052631578947,
+      "energy": 66.16351292580671,
+      "outward_flux": 5.270463747389235,
+      "face_fluxes": [
+        -3.3403387819441632,
+        6.623935351504914,
+        -0.5522072355628788,
+        -2.4335826575533765,
+        -0.3858483598436652,
+        5.358505430788405
+      ],
+      "half_extent": 1.9692307692307693,
+      "collocated_full_box_energy": 518.0118747757298,
+      "native_modified_energy": 519.0223411446402
+    },
+    {
+      "time": 0.12631578947368421,
+      "energy": 65.96551830131841,
+      "outward_flux": 4.168962850793427,
+      "face_fluxes": [
+        -3.7490375482302243,
+        6.306962878569179,
+        -0.4290593194525266,
+        -2.5088056873335294,
+        -0.3517363610284584,
+        4.900638888268987
+      ],
+      "half_extent": 1.9692307692307693,
+      "collocated_full_box_energy": 518.0118752132785,
+      "native_modified_energy": 519.0223411446402
+    },
+    {
+      "time": 0.16842105263157894,
+      "energy": 65.81405484209498,
+      "outward_flux": 3.0439786924878134,
+      "face_fluxes": [
+        -4.201651443405899,
+        6.008273450553947,
+        -0.30891178907353456,
+        -2.5630976291178627,
+        -0.3289542513362827,
+        4.438320354867445
+      ],
+      "half_extent": 1.9692307692307693,
+      "collocated_full_box_energy": 518.0118760953861,
+      "native_modified_energy": 519.0223411446402
+    },
+    {
+      "time": 0.19999999999999998,
+      "energy": 65.7313669002892,
+      "outward_flux": 2.196794158088167,
+      "face_fluxes": [
+        -4.56563552409021,
+        5.799411412748284,
+        -0.22071955449221833,
+        -2.5897760570437622,
+        -0.3180601693503363,
+        4.09157405031641
+      ],
+      "half_extent": 1.9692307692307693,
+      "collocated_full_box_energy": 518.0118770509209,
+      "native_modified_energy": 519.0223411446401
+    }
+  ],
+  "fourier": {
+    "exact_error": 5.927198938933898e-16,
+    "yee_difference": 0.0016388944834309928,
+    "energy_relative_change": 0.0,
+    "divergence_max": 2.2607561362382677e-14,
+    "projection": false
+  },
+  "state": {
+    "file": "97ba43c71ef501bf.npz",
+    "sha256": "c31e2588d652db7c47904fb0459ebbc6f9f4ec9133da0c2653d3390e8be66341",
+    "bytes": 25121600,
+    "dtype": "float64",
+    "scope": "B_half at T-dt/2; E at T; reconstruct B_sync without changing E/B_half; Fourier packet arrays collocated at common cell centres and T."
+  },
+  "finished_at": {
+    "utc": "2026-11-13T15:35:59.104092+00:00",
+    "melbourne": "2026-11-14T02:35:59.104092+11:00"
+  }
+}

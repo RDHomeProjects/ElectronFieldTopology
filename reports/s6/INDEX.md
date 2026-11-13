@@ -1,6 +1,6 @@
 # S6: Interactions and external probes
 
-Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
+Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
 
 Conditional on suitable dynamics and justified coupling.
 

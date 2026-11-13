@@ -1,12 +1,12 @@
 # Staged development plan
 
-Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
+Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
 ## Current priority
 
-Registered administrative activities are assessed. The next scientific task is **s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion**. Compare D4 and independent variational D2 SF initial vector fields on identical finest-grid states at four alignments in x/z, retaining native and qualified common observables. Run separate analytical Maxwell/Yee controls; review phase/refinement trends before short SF evolution. Keep focused literature plan and five assessment dimensions.
+Registered administrative activities are assessed. The next scientific task is **s2-003: Fixed-observer Maxwell spacing and localized duration controls**. Run the locally published follow-up: focused duration points, fixed-dt spacing curves, saved-state observer refinement and separate time anchors.
 
 ## Stage map
 
@@ -30,11 +30,13 @@ Registered administrative activities are assessed. The next scientific task is *
 
 ## Ordered work and dependencies
 
-1. [s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md) — Compare D4 and independent variational D2 SF initial vector fields on identical finest-grid states at four alignments in x/z, retaining native and qualified common observables. Run separate analytical Maxwell/Yee controls; review phase/refinement trends before short SF evolution. Keep focused literature plan and five assessment dimensions.
-2. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Keep Q2 numerical/physical-mesh/domain controls available alongside the authorized S5-B-010 fresh-candidate survey. A failed short reference blocks that survey. Q1 correction stays parked; do not repeat completed temporal work without a diagnostic reason.
-3. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Retain higher-Q endpoints for conditional stationary-only diagnosis after Q2 numerical controls: additional same-grid preparation versus finer readmission, with original-source and warm-start controls. Require strict stationarity and boosted boundary admission before fresh motion; no automatic expensive rerun. Q1 stays parked.
-4. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
-5. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Use the S5-B-010 assessment to select a bounded next set, including Q5/Q6 links or Q8 if informative. Preserve Q18 conditioning follow-up; do not start an unrestricted catalogue.
+1. [s2-003: Fixed-observer Maxwell spacing and localized duration controls](plans/s2/003-spacing-observer-controls.md) — Run the locally published follow-up: focused duration points, fixed-dt spacing curves, saved-state observer refinement and separate time anchors.
+2. [s5-b-011: Controlled dependency transfer to Q2 Q3 and other Q results](plans/s5-b/011-controlled-q-dependencies.md) — After Maxwell spacing assessment, qualify Q2 then measure one Q3 variable with fresh validation. Run the supplied Qx audit now without new SF evolution or altered gates.
+3. [s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md) — Apply the separately registered controlled Q-dependency transfer; preserve all earlier preparation, admission and motion outcomes.
+4. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Keep Q2 numerical/physical-mesh/domain controls available alongside the authorized S5-B-010 fresh-candidate survey. A failed short reference blocks that survey. Q1 correction stays parked; do not repeat completed temporal work without a diagnostic reason.
+5. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Retain higher-Q endpoints for conditional stationary-only diagnosis after Q2 numerical controls: additional same-grid preparation versus finer readmission, with original-source and warm-start controls. Require strict stationarity and boosted boundary admission before fresh motion; no automatic expensive rerun. Q1 stays parked.
+6. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
+7. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Use the S5-B-010 assessment to select a bounded next set, including Q5/Q6 links or Q8 if informative. Preserve Q18 conditioning follow-up; do not start an unrestricted catalogue.
 
 ## Parallel and conditional work
 
