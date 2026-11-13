@@ -1,6 +1,6 @@
 # s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion
 
-Updated: UTC 2026-11-12T13:24:27.005071+00:00; Australia/Melbourne 2026-11-13T00:24:27.005071+11:00.
+Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -10,11 +10,11 @@ Which fresh intermediate-Q families can be strictly prepared and retain controll
 
 ## Evidence and present finding
 
-The six-case fixed-rest initialization study reproduces the fine state but speed error is nonmonotonic; the tiny 121 x error reflects cancellation, and coarse held-layer projection mixes boundary treatment with sampling. Original failures and scientific gate remain open.
+Twelve initial-only controls show negligible fine-grid padding effect but strong alignment dependence reversing the speed bias. Finer zero-phase errors are about 0.072% z and 0.098% x, not convergence or motion admission. Original gates and unresolved Q4/Q7 outcomes remain.
 
 ## Next action and exit evidence
 
-Run twelve bounded initial-only paired padding/sampling controls, including half-cell shifts and finer 169 lab sampling, before selecting short physical evolution. Follow the focused Yang-Mills/SF, Maxwell topology and quantum-state applicability plan; keep five assessment dimensions separate.
+Compare D4 and independent variational D2 SF initial vector fields on identical finest-grid states at four alignments in x/z, retaining native and qualified common observables. Run separate analytical Maxwell/Yee controls; review phase/refinement trends before short SF evolution. Keep focused literature plan and five assessment dimensions.
 
 Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.
 

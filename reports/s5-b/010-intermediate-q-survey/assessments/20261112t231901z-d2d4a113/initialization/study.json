@@ -1,0 +1,872 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-12T12:55:41.750197+00:00",
+    "melbourne": "2026-11-12T23:55:41.750197+11:00"
+  },
+  "status": "complete_pending_review",
+  "source_run": "20261109t134425z-89d28344",
+  "source_evidence_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+  "rest_id": "q3-axial-fine-warm",
+  "rest_checkpoint_sha256": "eb58603b3e17cc804dee87f4f256a4c28cbba892d830a1bb74bd21c7c4e9f987",
+  "kernel_sha256": {
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+    "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582"
+  },
+  "dependency_sha256": {
+    "pyproject.toml": "7533c5330618cded5524ac2bc7c0035cfd2f1688109e433a53c3ac24adf74d0c",
+    "uv.lock": "1256a2e134796077174a1a10bbfa53b3c33239a616ed93b20e08220da063079e"
+  },
+  "script_sha256": "204a17c3eed2cdde611b4239a7f0c59453fe147a49e3998c3c52c59821010f70",
+  "metrics_sha256": "5c404133768fca455b2a21947fea76414800e73384d957cd83572c87b84566ba",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "nodes": [
+    97,
+    121,
+    145
+  ],
+  "axes": [
+    2,
+    0
+  ],
+  "output": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/q3-initialization-study/20261112t125541z-b1a86b59",
+  "cases": [
+    {
+      "continuum_energy": 2.917058762974381,
+      "continuum_energy_rate": -1.4693755464665196e-06,
+      "continuum_centroid": [
+        0.0007633084486569231,
+        -0.0026928603698433418,
+        -0.0025980518522788535
+      ],
+      "continuum_centroid_rate": [
+        3.2864847678596764e-07,
+        5.750493587290141e-08,
+        0.2976221778675324
+      ],
+      "hamiltonian": 2.920973293864254,
+      "hamiltonian_rate": -2.7084217221914405e-18,
+      "hamiltonian_centroid": [
+        0.0007632837166918042,
+        -0.002692871736069206,
+        -0.002601697920010687
+      ],
+      "hamiltonian_centroid_rate": [
+        3.3678590928161873e-07,
+        3.6268127634339396e-08,
+        0.29762970368018277
+      ],
+      "momentum": [
+        2.1889643344075887e-07,
+        -4.966854161858813e-07,
+        0.8757229921288538
+      ],
+      "momentum_over_continuum_energy": [
+        7.504011788146529e-08,
+        -1.7026925288246014e-07,
+        0.30020752521142985
+      ],
+      "momentum_over_hamiltonian": [
+        7.49395531621494e-08,
+        -1.7004106721181262e-07,
+        0.2998052032753543
+      ],
+      "continuum_continuity_residual_rms": 4.109563524012648e-05,
+      "weighted_continuity_residual_over_energy": [
+        2.5360835891120944e-07,
+        2.277741887996727e-07,
+        -0.0025853473439023684
+      ],
+      "discrete_summation_term": [
+        -7.146152278188515e-18,
+        -4.5239606196378554e-17,
+        4.9404924595819466e-15
+      ],
+      "moment_decomposition_closure": [
+        4.390807040329479e-19,
+        9.284804590887217e-19,
+        1.734723475976807e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.4503163423265222e-09,
+          "hamiltonian_relative_l2": 1.451631499412671e-09,
+          "continuum_absolute_rms": 1.1677623414200717e-12,
+          "hamiltonian_absolute_rms": 1.167764881012752e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.630356867333588e-10,
+          "hamiltonian_relative_l2": 3.633071671289571e-10,
+          "continuum_absolute_rms": 2.9230823040904876e-13,
+          "hamiltonian_absolute_rms": 2.922624309028014e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 9.563330707724666e-11,
+          "hamiltonian_relative_l2": 9.479787272016646e-11,
+          "continuum_absolute_rms": 7.700180390377697e-14,
+          "hamiltonian_absolute_rms": 7.62601435709521e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 5.551115123125783e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "nominal_lab_nodes": 97,
+      "axis": 2,
+      "beta": 0.3,
+      "grid": [
+        97,
+        97,
+        103
+      ],
+      "spacing": [
+        0.24,
+        0.24,
+        0.22588235294117645
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "state_sha256": "1b9768770178a0a99d8bd491505034fd0b508111abdc6f4859fae967fd71bf55",
+      "projection": {
+        "field_max": 0.0015503027729680612,
+        "rate_max": 6.179084201555773e-05,
+        "free_field_max": 2.220446049250313e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0015503027729680612,
+        "raw_fixed_rate_max": 6.179084201555773e-05
+      },
+      "initial_speed_error_percent": 0.7926073852916113,
+      "translation_rate_mismatch_relative_l2": 0.008810626591362712,
+      "derivative_probes": {
+        "sample_points": 512,
+        "scope": "Centered finite perturbations of the prescribed interpolant, not evolved states; deterministic interior off-node points. C1 Hermite knot crossings can reduce apparent order.",
+        "rows": [
+          {
+            "epsilon_in_rest_spacing": 0.001,
+            "space_absolute_rms": 6.5151858708797936e-09,
+            "space_relative_l2": 4.092580475581664e-08,
+            "time_absolute_rms": 2.048931169272631e-09,
+            "time_relative_l2": 4.09258048000032e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.0005,
+            "space_absolute_rms": 1.6284255014552135e-09,
+            "space_relative_l2": 1.022912092651462e-08,
+            "time_absolute_rms": 5.121161296800143e-10,
+            "time_relative_l2": 1.0229120954637892e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.00025,
+            "space_absolute_rms": 4.066019792520434e-10,
+            "space_relative_l2": 2.554111815991927e-09,
+            "time_absolute_rms": 1.2787040931546142e-10,
+            "time_relative_l2": 2.5541118656508442e-09
+          }
+        ]
+      }
+    },
+    {
+      "continuum_energy": 2.926454366432358,
+      "continuum_energy_rate": -1.574606430432167e-07,
+      "continuum_centroid": [
+        0.0007632533982006006,
+        -0.0026927478134557785,
+        -0.0025948322990686757
+      ],
+      "continuum_centroid_rate": [
+        9.346847117559119e-09,
+        -8.260174482273637e-08,
+        0.29936289382309916
+      ],
+      "hamiltonian": 2.928188124180931,
+      "hamiltonian_rate": -1.2780999116200421e-17,
+      "hamiltonian_centroid": [
+        0.0007632684018397406,
+        -0.0026927869963742318,
+        -0.0025959941882658624
+      ],
+      "hamiltonian_centroid_rate": [
+        1.2816172261297932e-08,
+        -8.34997441038542e-08,
+        0.2993480570154222
+      ],
+      "momentum": [
+        -3.4206279224801966e-07,
+        -5.860292370872192e-07,
+        0.879399085107969
+      ],
+      "momentum_over_continuum_energy": [
+        -1.1688642617210143e-07,
+        -2.0025230661691396e-07,
+        0.30049984554518955
+      ],
+      "momentum_over_hamiltonian": [
+        -1.1681721861490749e-07,
+        -2.0013373876077126e-07,
+        0.3003219218894802
+      ],
+      "continuum_continuity_residual_rms": 2.2088317556456624e-05,
+      "weighted_continuity_residual_over_energy": [
+        1.2623327328607648e-07,
+        1.1765056177840306e-07,
+        -0.0011369517220788737
+      ],
+      "discrete_summation_term": [
+        3.5840743325187626e-18,
+        1.5924351757278855e-17,
+        -1.149080830487037e-14
+      ],
+      "moment_decomposition_closure": [
+        -1.3234889800848443e-23,
+        -1.4983218743540522e-19,
+        -2.0166160408230382e-17
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.4215531224870272e-09,
+          "hamiltonian_relative_l2": 1.4234248988681245e-09,
+          "continuum_absolute_rms": 1.1798449595686022e-12,
+          "hamiltonian_absolute_rms": 1.1798157671751995e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.5599724753346866e-10,
+          "hamiltonian_relative_l2": 3.5630257729388195e-10,
+          "continuum_absolute_rms": 2.9546666352350166e-13,
+          "hamiltonian_absolute_rms": 2.953239042753505e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 9.507631260691326e-11,
+          "hamiltonian_relative_l2": 9.415289653694939e-11,
+          "continuum_absolute_rms": 7.891038782102099e-14,
+          "hamiltonian_absolute_rms": 7.803929237702541e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "nominal_lab_nodes": 121,
+      "axis": 2,
+      "beta": 0.3,
+      "grid": [
+        121,
+        121,
+        127
+      ],
+      "spacing": [
+        0.192,
+        0.192,
+        0.18285714285714286
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "state_sha256": "1a8b4efab44816cf037f2fa47391914ce5d9cd07f32ae69d1317e1ff26215476",
+      "projection": {
+        "field_max": 0.00048285666680232276,
+        "rate_max": 1.9258394350895283e-05,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.00048285666680232276,
+        "raw_fixed_rate_max": 1.9258394350895283e-05
+      },
+      "initial_speed_error_percent": 0.21236872744136895,
+      "translation_rate_mismatch_relative_l2": 0.006935953349351743,
+      "derivative_probes": {
+        "sample_points": 512,
+        "scope": "Centered finite perturbations of the prescribed interpolant, not evolved states; deterministic interior off-node points. C1 Hermite knot crossings can reduce apparent order.",
+        "rows": [
+          {
+            "epsilon_in_rest_spacing": 0.001,
+            "space_absolute_rms": 6.5151858708797936e-09,
+            "space_relative_l2": 4.092580475581664e-08,
+            "time_absolute_rms": 2.048931169272631e-09,
+            "time_relative_l2": 4.09258048000032e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.0005,
+            "space_absolute_rms": 1.6284255014552135e-09,
+            "space_relative_l2": 1.022912092651462e-08,
+            "time_absolute_rms": 5.121161296800143e-10,
+            "time_relative_l2": 1.0229120954637892e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.00025,
+            "space_absolute_rms": 4.066019792520434e-10,
+            "space_relative_l2": 2.554111815991927e-09,
+            "time_absolute_rms": 1.2787040931546142e-10,
+            "time_relative_l2": 2.5541118656508442e-09
+          }
+        ]
+      }
+    },
+    {
+      "continuum_energy": 2.926851576214676,
+      "continuum_energy_rate": -4.969170674740708e-08,
+      "continuum_centroid": [
+        0.0007631806760393623,
+        -0.0026927758261348594,
+        -0.00260556697650979
+      ],
+      "continuum_centroid_rate": [
+        2.8805250294442494e-09,
+        -1.914418899611663e-07,
+        0.2968298500701072
+      ],
+      "hamiltonian": 2.9277693841343737,
+      "hamiltonian_rate": -1.723253119148706e-18,
+      "hamiltonian_centroid": [
+        0.0007631908451236902,
+        -0.0026928077856622386,
+        -0.0026061949682479914
+      ],
+      "hamiltonian_centroid_rate": [
+        2.10309163774375e-09,
+        -1.9134252917976144e-07,
+        0.29682641768954443
+      ],
+      "momentum": [
+        -1.6311515722662912e-07,
+        -6.916798147074125e-07,
+        0.8703767734078931
+      ],
+      "momentum_over_continuum_energy": [
+        -5.573058728095377e-08,
+        -2.3632213547431344e-07,
+        0.29737646434861564
+      ],
+      "momentum_over_hamiltonian": [
+        -5.571311665138402e-08,
+        -2.362480523417028e-07,
+        0.2972832416803311
+      ],
+      "continuum_continuity_residual_rms": 1.3388137267685196e-05,
+      "weighted_continuity_residual_over_energy": [
+        5.861111230622038e-08,
+        4.4880246109943614e-08,
+        -0.0005466142784930281
+      ],
+      "discrete_summation_term": [
+        3.814255535935119e-18,
+        -5.967234087447647e-16,
+        -1.5432100042289676e-14
+      ],
+      "moment_decomposition_closure": [
+        3.6338375181699527e-19,
+        -7.30565917006834e-20,
+        2.0816681711721685e-17
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.3747913244302876e-09,
+          "hamiltonian_relative_l2": 1.376120922495442e-09,
+          "continuum_absolute_rms": 1.1274816644639234e-12,
+          "hamiltonian_absolute_rms": 1.1274766225775844e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.4427158493040694e-10,
+          "hamiltonian_relative_l2": 3.445365005957033e-10,
+          "continuum_absolute_rms": 2.823409580110778e-13,
+          "hamiltonian_absolute_rms": 2.82283950266462e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 9.544590617717208e-11,
+          "hamiltonian_relative_l2": 9.400130314533546e-11,
+          "continuum_absolute_rms": 7.827624982104049e-14,
+          "hamiltonian_absolute_rms": 7.70166851296779e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 8.326672684688674e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "nominal_lab_nodes": 145,
+      "axis": 2,
+      "beta": 0.3,
+      "grid": [
+        145,
+        145,
+        153
+      ],
+      "spacing": [
+        0.16,
+        0.16,
+        0.15157894736842104
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "state_sha256": "7ea700c9fdcf63fc95682f556ed6127151be3e81036f56bbb9b0b8dededb0e90",
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 1.590872954827468e-18,
+        "raw_fixed_rate_max": 6.343784463635903e-20
+      },
+      "initial_speed_error_percent": 1.056716645224859,
+      "translation_rate_mismatch_relative_l2": 0.01183305419466522,
+      "derivative_probes": {
+        "sample_points": 512,
+        "scope": "Centered finite perturbations of the prescribed interpolant, not evolved states; deterministic interior off-node points. C1 Hermite knot crossings can reduce apparent order.",
+        "rows": [
+          {
+            "epsilon_in_rest_spacing": 0.001,
+            "space_absolute_rms": 6.5151858708797936e-09,
+            "space_relative_l2": 4.092580475581664e-08,
+            "time_absolute_rms": 2.048931169272631e-09,
+            "time_relative_l2": 4.09258048000032e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.0005,
+            "space_absolute_rms": 1.6284255014552135e-09,
+            "space_relative_l2": 1.022912092651462e-08,
+            "time_absolute_rms": 5.121161296800143e-10,
+            "time_relative_l2": 1.0229120954637892e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.00025,
+            "space_absolute_rms": 4.066019792520434e-10,
+            "space_relative_l2": 2.554111815991927e-09,
+            "time_absolute_rms": 1.2787040931546142e-10,
+            "time_relative_l2": 2.5541118656508442e-09
+          }
+        ]
+      },
+      "historical_state_matches": true
+    },
+    {
+      "continuum_energy": 2.917535912929899,
+      "continuum_energy_rate": 1.565729939732324e-06,
+      "continuum_centroid": [
+        0.0007281696722644205,
+        -0.0026922804854228786,
+        -0.002696362123263874
+      ],
+      "continuum_centroid_rate": [
+        0.29878873989041405,
+        7.098252956680976e-05,
+        2.3402533765083493e-07
+      ],
+      "hamiltonian": 2.9214704542580026,
+      "hamiltonian_rate": -2.3111865362700293e-17,
+      "hamiltonian_centroid": [
+        0.0007281342042967737,
+        -0.002692271922834135,
+        -0.002700329473679686
+      ],
+      "hamiltonian_centroid_rate": [
+        0.29879427501481404,
+        8.308886035562214e-05,
+        1.3617033481128953e-07
+      ],
+      "momentum": [
+        0.877382373612903,
+        -2.0801312182557216e-05,
+        3.1861176331919246e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.30072718890092526,
+        -7.129753601445049e-06,
+        1.0920577255182117e-07
+      ],
+      "momentum_over_hamiltonian": [
+        0.3003221793101246,
+        -7.1201514813335155e-06,
+        1.090586977714665e-07
+      ],
+      "continuum_continuity_residual_rms": 7.286868146102484e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.001938449010505886,
+        7.811228316825466e-05,
+        1.2481956510043139e-07
+      ],
+      "discrete_summation_term": [
+        -5.329070518200751e-15,
+        1.5239816786999372e-17,
+        -7.157759276543859e-18
+      ],
+      "moment_decomposition_closure": [
+        3.2526065174565133e-18,
+        -1.5090738988282615e-17,
+        5.740117290415779e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 4.463953388362335e-09,
+          "hamiltonian_relative_l2": 4.51935386139739e-09,
+          "continuum_absolute_rms": 2.7751925928202527e-12,
+          "hamiltonian_absolute_rms": 2.7751875398362495e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.1159978652088428e-09,
+          "hamiltonian_relative_l2": 1.1297963334131399e-09,
+          "continuum_absolute_rms": 6.938040655184822e-13,
+          "hamiltonian_absolute_rms": 6.937710131136662e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 2.824294889955603e-10,
+          "hamiltonian_relative_l2": 2.854937844873183e-10,
+          "continuum_absolute_rms": 1.7558342519836055e-13,
+          "hamiltonian_absolute_rms": 1.7531240476153366e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 5.551115123125783e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "nominal_lab_nodes": 97,
+      "axis": 0,
+      "beta": 0.3,
+      "grid": [
+        103,
+        97,
+        97
+      ],
+      "spacing": [
+        0.22588235294117645,
+        0.24,
+        0.24
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "state_sha256": "b5e9fc3a319fafe8a0d65d9b198113c7cd364d346d2e5bf9c274bf919aff6733",
+      "projection": {
+        "field_max": 0.0015504578642737614,
+        "rate_max": 7.600242527352653e-05,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0015504578642737614,
+        "raw_fixed_rate_max": 7.600242527352653e-05
+      },
+      "initial_speed_error_percent": 0.40444607212907235,
+      "translation_rate_mismatch_relative_l2": 0.016854418440971183,
+      "derivative_probes": {
+        "sample_points": 512,
+        "scope": "Centered finite perturbations of the prescribed interpolant, not evolved states; deterministic interior off-node points. C1 Hermite knot crossings can reduce apparent order.",
+        "rows": [
+          {
+            "epsilon_in_rest_spacing": 0.001,
+            "space_absolute_rms": 8.57391165214164e-09,
+            "space_relative_l2": 4.980890977297167e-08,
+            "time_absolute_rms": 2.6963704753685698e-09,
+            "time_relative_l2": 4.980890981857185e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.0005,
+            "space_absolute_rms": 2.143133362349127e-09,
+            "space_relative_l2": 1.2450225825458465e-08,
+            "time_absolute_rms": 6.739842647572765e-10,
+            "time_relative_l2": 1.2450225875523605e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.00025,
+            "space_absolute_rms": 5.368614561168634e-10,
+            "space_relative_l2": 3.1188196138727007e-09,
+            "time_absolute_rms": 1.6883512042377035e-10,
+            "time_relative_l2": 3.1188196741569033e-09
+          }
+        ]
+      }
+    },
+    {
+      "continuum_energy": 2.9267224289065625,
+      "continuum_energy_rate": 4.2957686677042927e-07,
+      "continuum_centroid": [
+        0.0007277551400770905,
+        -0.002691885310079101,
+        -0.0026960195216542467
+      ],
+      "continuum_centroid_rate": [
+        0.2999966823295534,
+        -3.4635866863558127e-06,
+        -7.62806223315855e-08
+      ],
+      "hamiltonian": 2.928473949918607,
+      "hamiltonian_rate": 4.789658955165318e-17,
+      "hamiltonian_centroid": [
+        0.0007277592209467909,
+        -0.002691907525856883,
+        -0.0026970399461209204
+      ],
+      "hamiltonian_centroid_rate": [
+        0.29995241640738635,
+        4.7561970714810627e-07,
+        -4.350539440404227e-08
+      ],
+      "momentum": [
+        0.8802442427402176,
+        -0.00010007234890658807,
+        -1.9727029071231997e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.3007610950892535,
+        -3.419263402576088e-05,
+        -6.740314310777367e-08
+      ],
+      "momentum_over_hamiltonian": [
+        0.300581209802014,
+        -3.4172183402679556e-05,
+        -6.736282927078891e-08
+      ],
+      "continuum_continuity_residual_rms": 5.2869788385075314e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.0007644127596932984,
+        3.07290473394093e-05,
+        -8.877479212975955e-09
+      ],
+      "discrete_summation_term": [
+        -6.772360450213455e-15,
+        -1.634434775021898e-17,
+        -7.12812635827976e-18
+      ],
+      "moment_decomposition_closure": [
+        -5.746271514173174e-17,
+        1.2115959277525512e-17,
+        -3.707749414624016e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 5.149006920030387e-09,
+          "hamiltonian_relative_l2": 5.195556514045637e-09,
+          "continuum_absolute_rms": 3.237148397893727e-12,
+          "hamiltonian_absolute_rms": 3.237137691795515e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.2874557215565547e-09,
+          "hamiltonian_relative_l2": 1.299078723317117e-09,
+          "continuum_absolute_rms": 8.094153476824833e-13,
+          "hamiltonian_absolute_rms": 8.094025516787002e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 3.2563524959956436e-10,
+          "hamiltonian_relative_l2": 3.280788414995629e-10,
+          "continuum_absolute_rms": 2.047248416851472e-13,
+          "hamiltonian_absolute_rms": 2.044124399047021e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 5.551115123125783e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "nominal_lab_nodes": 121,
+      "axis": 0,
+      "beta": 0.3,
+      "grid": [
+        127,
+        121,
+        121
+      ],
+      "spacing": [
+        0.18285714285714286,
+        0.192,
+        0.192
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "state_sha256": "37a51d6e63b467812e90f14d14a9909592f935e147fcbbd6ba44e45200c10569",
+      "projection": {
+        "field_max": 0.00048284984064255154,
+        "rate_max": 2.3678384057599253e-05,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.00048284984064255154,
+        "raw_fixed_rate_max": 2.3678384057599253e-05
+      },
+      "initial_speed_error_percent": 0.0015989298038729947,
+      "translation_rate_mismatch_relative_l2": 0.01475266519650871,
+      "derivative_probes": {
+        "sample_points": 512,
+        "scope": "Centered finite perturbations of the prescribed interpolant, not evolved states; deterministic interior off-node points. C1 Hermite knot crossings can reduce apparent order.",
+        "rows": [
+          {
+            "epsilon_in_rest_spacing": 0.001,
+            "space_absolute_rms": 8.57391165214164e-09,
+            "space_relative_l2": 4.980890977297167e-08,
+            "time_absolute_rms": 2.6963704753685698e-09,
+            "time_relative_l2": 4.980890981857185e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.0005,
+            "space_absolute_rms": 2.143133362349127e-09,
+            "space_relative_l2": 1.2450225825458465e-08,
+            "time_absolute_rms": 6.739842647572765e-10,
+            "time_relative_l2": 1.2450225875523605e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.00025,
+            "space_absolute_rms": 5.368614561168634e-10,
+            "space_relative_l2": 3.1188196138727007e-09,
+            "time_absolute_rms": 1.6883512042377035e-10,
+            "time_relative_l2": 3.1188196741569033e-09
+          }
+        ]
+      }
+    },
+    {
+      "continuum_energy": 2.92738954357795,
+      "continuum_energy_rate": 8.540470424831206e-08,
+      "continuum_centroid": [
+        0.0007283509952940452,
+        -0.002692723739127744,
+        -0.0026978623795823804
+      ],
+      "continuum_centroid_rate": [
+        0.2975526080272864,
+        0.00010913790504709099,
+        1.510752961129825e-07
+      ],
+      "hamiltonian": 2.928317069433988,
+      "hamiltonian_rate": 2.7572049906379295e-17,
+      "hamiltonian_centroid": [
+        0.0007283563313149348,
+        -0.0026927490871133507,
+        -0.002698462956428371
+      ],
+      "hamiltonian_centroid_rate": [
+        0.2975295845153086,
+        0.00011640491382754794,
+        1.4899846473865395e-07
+      ],
+      "momentum": [
+        0.8721866187970204,
+        0.00029251369379865687,
+        4.055055910170904e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.29794006086767866,
+        9.992305070583028e-05,
+        1.3852122684071228e-07
+      ],
+      "momentum_over_hamiltonian": [
+        0.29784569024337404,
+        9.989140071337854e-05,
+        1.3847735112081636e-07
+      ],
+      "continuum_continuity_residual_rms": 2.3001649065615588e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.00038745284039676286,
+        9.214854341254123e-06,
+        1.2554069282969304e-08
+      ],
+      "discrete_summation_term": [
+        4.440892098500626e-15,
+        5.1906179007743525e-18,
+        -5.7874055516742105e-18
+      ],
+      "moment_decomposition_closure": [
+        5.583641188300348e-17,
+        1.3976043629695956e-18,
+        -4.911674400247995e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 4.183081200514407e-09,
+          "hamiltonian_relative_l2": 4.205650334781892e-09,
+          "continuum_absolute_rms": 2.6616674688590964e-12,
+          "hamiltonian_absolute_rms": 2.661670949337688e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.0461670822327711e-09,
+          "hamiltonian_relative_l2": 1.0517441363408096e-09,
+          "continuum_absolute_rms": 6.65669337097203e-13,
+          "hamiltonian_absolute_rms": 6.656275702910432e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 2.6667215527523717e-10,
+          "hamiltonian_relative_l2": 2.6729087041142704e-10,
+          "continuum_absolute_rms": 1.6968176483386182e-13,
+          "hamiltonian_absolute_rms": 1.691629803156639e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "nominal_lab_nodes": 145,
+      "axis": 0,
+      "beta": 0.3,
+      "grid": [
+        153,
+        145,
+        145
+      ],
+      "spacing": [
+        0.15157894736842104,
+        0.16,
+        0.16
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "state_sha256": "9303dc15bb51241574c72cdb694506b274a1c539485d9a5052b5a74f14893fbd",
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 1.5909587677844594e-18,
+        "raw_fixed_rate_max": 7.80478550265564e-20
+      },
+      "initial_speed_error_percent": 0.8166080641045186,
+      "translation_rate_mismatch_relative_l2": 0.013261013212112788,
+      "derivative_probes": {
+        "sample_points": 512,
+        "scope": "Centered finite perturbations of the prescribed interpolant, not evolved states; deterministic interior off-node points. C1 Hermite knot crossings can reduce apparent order.",
+        "rows": [
+          {
+            "epsilon_in_rest_spacing": 0.001,
+            "space_absolute_rms": 8.57391165214164e-09,
+            "space_relative_l2": 4.980890977297167e-08,
+            "time_absolute_rms": 2.6963704753685698e-09,
+            "time_relative_l2": 4.980890981857185e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.0005,
+            "space_absolute_rms": 2.143133362349127e-09,
+            "space_relative_l2": 1.2450225825458465e-08,
+            "time_absolute_rms": 6.739842647572765e-10,
+            "time_relative_l2": 1.2450225875523605e-08
+          },
+          {
+            "epsilon_in_rest_spacing": 0.00025,
+            "space_absolute_rms": 5.368614561168634e-10,
+            "space_relative_l2": 3.1188196138727007e-09,
+            "time_absolute_rms": 1.6883512042377035e-10,
+            "time_relative_l2": 3.1188196741569033e-09
+          }
+        ]
+      },
+      "historical_state_matches": true
+    }
+  ],
+  "scope": "Read-only fixed-rest initialization diagnosis. No relaxation, physical steps, new pass/fail decisions or changed gates.",
+  "finished_at": {
+    "utc": "2026-11-12T13:02:09.821816+00:00",
+    "melbourne": "2026-11-13T00:02:09.821816+11:00"
+  }
+}

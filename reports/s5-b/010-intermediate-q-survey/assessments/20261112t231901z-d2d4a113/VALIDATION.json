@@ -1,0 +1,123 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-12T23:27:45.338165+00:00",
+    "melbourne": "2026-11-13T10:27:45.338165+11:00"
+  },
+  "status": "qualification_publication_rehearsal_and_small_Maxwell_matrix_passed_production_SF_pending",
+  "qualification": {
+    "recorded_at": {
+      "utc": "2026-11-12T23:27:07.662297+00:00",
+      "melbourne": "2026-11-13T10:27:07.662297+11:00"
+    },
+    "status": "qualification_passed",
+    "script_sha256": "e3545c47f42347bc9a98c1a972f4bc441f87ef20ec74cf458c740c05966b75c1",
+    "kernel_sha256": {
+      "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+      "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+      "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+      "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582"
+    },
+    "maxwell_source_sha256": {
+      "fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+      "evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735"
+    },
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "controls": {
+      "sf_controls": [
+        {
+          "boundary": "fixed",
+          "d2_native_h_rate": 1.6062254407192657e-20,
+          "EL_directional_difference": 1.6278254785784263e-13,
+          "D4_common_observer_centroid_matches_reference": true,
+          "density_probe": {
+            "epsilon": 2.5e-05,
+            "continuum_absolute_rms": 4.4551566640345256e-17,
+            "hamiltonian_absolute_rms": 4.5550616359399485e-17
+          }
+        },
+        {
+          "boundary": "periodic",
+          "d2_native_h_rate": -3.7900194286247954e-20,
+          "EL_directional_difference": 2.8247586561502835e-14,
+          "D4_common_observer_centroid_matches_reference": true,
+          "density_probe": {
+            "epsilon": 2.5e-05,
+            "continuum_absolute_rms": 5.973023711758859e-17,
+            "hamiltonian_absolute_rms": 6.381286540059949e-17
+          }
+        }
+      ],
+      "D2_sine_derivative_max_errors": [
+        0.022612253984557795,
+        0.006031056133700141,
+        0.0015566066028510628
+      ],
+      "D2_sigma_laplacian_max_errors": [
+        0.011283578262893057,
+        0.0030139333570533555,
+        0.0007781972364342415
+      ],
+      "Maxwell_controls": [
+        {
+          "nodes": 17,
+          "plane_error": 0.0008757767713832637,
+          "hopfion_error": 0.05312973770787628,
+          "fourier_error": 2.3467703416277003e-16
+        },
+        {
+          "nodes": 33,
+          "plane_error": 0.0002327541554600352,
+          "hopfion_error": 0.014739469458946792,
+          "fourier_error": 4.3836675353593994e-16
+        },
+        {
+          "nodes": 65,
+          "plane_error": 6.003284589263598e-05,
+          "hopfion_error": 0.0038345590957549855,
+          "fourier_error": 4.726840794887381e-16
+        }
+      ]
+    }
+  },
+  "SF_end_to_end": "Manufactured fixed-grid checkpoint to both D2/D4 native/common diagnostics, rest residuals, JSON/status/HTML/hash-verified ZIP and qualification inclusion passed. Tampered rest rejected. Required ancestry/evidence/geometry pins replaced only in temporary synthetic fixture; production delivery pins unchanged. No actual Q3 full arrays available here.",
+  "Maxwell_host_control": {
+    "cases": 27,
+    "fourier_controls": [
+      {
+        "nodes": 33,
+        "relative_l2": 4.3836675353593994e-16,
+        "scope": "Collocated periodic plane wave at a common physical time; separate exact-solution error, not direct pointwise Yee-array subtraction."
+      },
+      {
+        "nodes": 49,
+        "relative_l2": 3.2425881504388856e-16,
+        "scope": "Collocated periodic plane wave at a common physical time; separate exact-solution error, not direct pointwise Yee-array subtraction."
+      },
+      {
+        "nodes": 65,
+        "relative_l2": 4.726840794887381e-16,
+        "scope": "Collocated periodic plane wave at a common physical time; separate exact-solution error, not direct pointwise Yee-array subtraction."
+      }
+    ],
+    "ranges": {
+      "33": {
+        "minimum_relative_l2": 0.014734421485704696,
+        "maximum_relative_l2": 0.014741241137405077
+      },
+      "49": {
+        "minimum_relative_l2": 0.006729304567553691,
+        "maximum_relative_l2": 0.0067314510387628335
+      },
+      "65": {
+        "minimum_relative_l2": 0.0038338626934851633,
+        "maximum_relative_l2": 0.0038347948257998624
+      }
+    },
+    "script_sha256": "b1ad27cb811510a7dad139fad077187e09d0f290f74bba031f1ebbeb6bb3a328",
+    "evidence_sha256": "3a996eaea6e1b0ad2a39367bbf13cb41a4516180d3dff2f2f1ee849f00833efc",
+    "scope": "Executed small analytical control matrix on this host. Its own staggered boundary/measurement limits apply. Reproduce on workstation; this is not an SF production result. Embedded validation/host-maxwell-evidence.zip retains exact script, prior qualification receipt and scalar results."
+  },
+  "publication_rehearsal": "Local prior-boundary-to-new-method package install passed. Existing helper bytes and immutable reports preserved; generated navigation, additive bibliography, doc/project/archive/evidence checks and exact staged reinstall passed. Actual required merge replaced only by local synthetic ancestry in rehearsal packages. No GitHub service interaction by publication tools.",
+  "production_limit": "Eight Q3 alignments x two initial vector fields remain pending, as does workstation reproduction. No SF time integrator or physical trajectory added. Native Hamiltonians differ at finite h; common D4 observer is not continuum truth. All original scientific gates unchanged."
+}

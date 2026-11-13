@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-12T13:24:27.005071+00:00; Australia/Melbourne 2026-11-13T00:24:27.005071+11:00.
+Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](s5-b/010-intermediate-q-survey/assessments/20261112t131727z-1cce12ab/README.md) — The six-case fixed-rest initialization study reproduces the fine state but speed error is nonmonotonic; the tiny 121 x error reflects cancellation, and coarse held-layer projection mixes boundary treatment with sampling. Original failures and scientific gate remain open.
+[s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](s5-b/010-intermediate-q-survey/assessments/20261112t231901z-d2d4a113/README.md) — Twelve initial-only controls show negligible fine-grid padding effect but strong alignment dependence reversing the speed bias. Finer zero-phase errors are about 0.072% z and 0.098% x, not convergence or motion admission. Original gates and unresolved Q4/Q7 outcomes remain.

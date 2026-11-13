@@ -1,10 +1,10 @@
 # s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion — evidence index
 
-Updated: UTC 2026-11-12T13:24:27.005071+00:00; Australia/Melbourne 2026-11-13T00:24:27.005071+11:00.
+Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/010-intermediate-q-survey.md). State: assessed; scientific gate: open.
 
-The six-case fixed-rest initialization study reproduces the fine state but speed error is nonmonotonic; the tiny 121 x error reflects cancellation, and coarse held-layer projection mixes boundary treatment with sampling. Original failures and scientific gate remain open.
+Twelve initial-only controls show negligible fine-grid padding effect but strong alignment dependence reversing the speed bias. Finer zero-phase errors are about 0.072% z and 0.098% x, not convergence or motion admission. Original gates and unresolved Q4/Q7 outcomes remain.
 
 | Record role | Retained record |
 |---|---|
@@ -15,5 +15,6 @@ The six-case fixed-rest initialization study reproduces the fine state but speed
 | assessment | [Q3 observation controls and read-only initial-field diagnostic decision](assessments/20261112t081500z-d30b01a1/README.md) |
 | assessment | [Q3 initial-field assessment and controlled fixed-rest sampling preparation](assessments/20261112t124307z-a8b10d33/README.md) |
 | assessment | [Q3 sampling assessment, boundary controls and focused literature plan](assessments/20261112t131727z-1cce12ab/README.md) |
+| assessment | [Q3 boundary assessment and independent SF/Maxwell method controls](assessments/20261112t231901z-d2d4a113/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.

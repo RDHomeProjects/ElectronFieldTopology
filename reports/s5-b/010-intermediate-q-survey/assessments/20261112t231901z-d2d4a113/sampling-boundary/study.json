@@ -1,0 +1,1688 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-12T13:32:12.138828+00:00",
+    "melbourne": "2026-11-13T00:32:12.138828+11:00"
+  },
+  "status": "complete_pending_review",
+  "output": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/q3-sampling-boundary/20261112t133212z-4c066e0b",
+  "source_run": "20261109t134425z-89d28344",
+  "source_evidence_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+  "rest_checkpoint_sha256": "eb58603b3e17cc804dee87f4f256a4c28cbba892d830a1bb74bd21c7c4e9f987",
+  "kernel_sha256": {
+    "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+    "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+    "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d",
+    "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582"
+  },
+  "dependency_sha256": {
+    "pyproject.toml": "7533c5330618cded5524ac2bc7c0035cfd2f1688109e433a53c3ac24adf74d0c",
+    "uv.lock": "1256a2e134796077174a1a10bbfa53b3c33239a616ed93b20e08220da063079e"
+  },
+  "script_sha256": "d82081f5757b39903b6430991da0b1a6270d7b33eda753e7e9f34e6285fe9436",
+  "helper_sha256": {
+    "sf_q3_initialization.py": "204a17c3eed2cdde611b4239a7f0c59453fe147a49e3998c3c52c59821010f70",
+    "sf_initial_centroid.py": "5c404133768fca455b2a21947fea76414800e73384d957cd83572c87b84566ba"
+  },
+  "selected_cases": [
+    "z121-native",
+    "z121-pad",
+    "z145-native",
+    "z145-pad",
+    "z145-half",
+    "z169-refine",
+    "x121-native",
+    "x121-pad",
+    "x145-native",
+    "x145-pad",
+    "x145-half",
+    "x169-refine"
+  ],
+  "case_plan_sha256": "e7985fae07bf9e296f4a9788c3cca811d661c6425e1490e9d236cf81c6cbe188",
+  "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+  "numpy": "2.5.4",
+  "cases": [
+    {
+      "continuum_energy": 2.926454366432358,
+      "continuum_energy_rate": -1.574606430432167e-07,
+      "continuum_centroid": [
+        0.0007632533982006006,
+        -0.0026927478134557785,
+        -0.0025948322990686757
+      ],
+      "continuum_centroid_rate": [
+        9.346847117559119e-09,
+        -8.260174482273637e-08,
+        0.29936289382309916
+      ],
+      "hamiltonian": 2.928188124180931,
+      "hamiltonian_rate": -1.2780999116200421e-17,
+      "hamiltonian_centroid": [
+        0.0007632684018397406,
+        -0.0026927869963742318,
+        -0.0025959941882658624
+      ],
+      "hamiltonian_centroid_rate": [
+        1.2816172261297932e-08,
+        -8.34997441038542e-08,
+        0.2993480570154222
+      ],
+      "momentum": [
+        -3.4206279224801966e-07,
+        -5.860292370872192e-07,
+        0.879399085107969
+      ],
+      "momentum_over_continuum_energy": [
+        -1.1688642617210143e-07,
+        -2.0025230661691396e-07,
+        0.30049984554518955
+      ],
+      "momentum_over_hamiltonian": [
+        -1.1681721861490749e-07,
+        -2.0013373876077126e-07,
+        0.3003219218894802
+      ],
+      "continuum_continuity_residual_rms": 2.2088317556456624e-05,
+      "weighted_continuity_residual_over_energy": [
+        1.2623327328607648e-07,
+        1.1765056177840306e-07,
+        -0.0011369517220788737
+      ],
+      "discrete_summation_term": [
+        3.5840743325187626e-18,
+        1.5924351757278855e-17,
+        -1.149080830487037e-14
+      ],
+      "moment_decomposition_closure": [
+        -1.3234889800848443e-23,
+        -1.4983218743540522e-19,
+        -2.0166160408230382e-17
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.4215531224870272e-09,
+          "hamiltonian_relative_l2": 1.4234248988681245e-09,
+          "continuum_absolute_rms": 1.1798449595686022e-12,
+          "hamiltonian_absolute_rms": 1.1798157671751995e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.5599724753346866e-10,
+          "hamiltonian_relative_l2": 3.5630257729388195e-10,
+          "continuum_absolute_rms": 2.9546666352350166e-13,
+          "hamiltonian_absolute_rms": 2.953239042753505e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 9.507631260691326e-11,
+          "hamiltonian_relative_l2": 9.415289653694939e-11,
+          "continuum_absolute_rms": 7.891038782102099e-14,
+          "hamiltonian_absolute_rms": 7.803929237702541e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "z121-native",
+      "axis": 2,
+      "nodes": 121,
+      "pad": 0,
+      "phase": 0.0,
+      "grid": [
+        121,
+        121,
+        127
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "spacing": [
+        0.192,
+        0.192,
+        0.18285714285714286
+      ],
+      "native_grid": [
+        121,
+        121,
+        127
+      ],
+      "native_spacing": [
+        0.192,
+        0.192,
+        0.18285714285714286
+      ],
+      "projection": {
+        "field_max": 0.00048285666680232276,
+        "rate_max": 1.9258394350895283e-05,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.00048285666680232276,
+        "raw_fixed_rate_max": 1.9258394350895283e-05
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "1a8b4efab44816cf037f2fa47391914ce5d9cd07f32ae69d1317e1ff26215476",
+      "initial_speed_error_percent": 0.21236872744136895,
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 257985,
+        "continuum_energy": 2.919548739126436,
+        "momentum": [
+          -4.605758748691099e-07,
+          -6.636940453378335e-07,
+          0.8785728028343595
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.926445479202486,
+      "continuum_energy_rate": -1.5746066767300883e-07,
+      "continuum_centroid": [
+        0.0007632481360009765,
+        -0.0026927308685349323,
+        -0.0025948148453811613
+      ],
+      "continuum_centroid_rate": [
+        9.346906209276969e-09,
+        -8.260197777158056e-08,
+        0.299364418797805
+      ],
+      "hamiltonian": 2.9281732306616544,
+      "hamiltonian_rate": -1.3845107917274748e-17,
+      "hamiltonian_centroid": [
+        0.0007632595709871774,
+        -0.002692758437471238,
+        -0.0025959649637490997
+      ],
+      "hamiltonian_centroid_rate": [
+        1.2816271231008218e-08,
+        -8.350015195900417e-08,
+        0.2993495797195227
+      ],
+      "momentum": [
+        -3.4206269332445984e-07,
+        -5.86029187484376e-07,
+        0.8793990855032441
+      ],
+      "momentum_over_continuum_energy": [
+        -1.1688674733748284e-07,
+        -2.0025289780696017e-07,
+        0.30050075825875205
+      ],
+      "momentum_over_hamiltonian": [
+        -1.1681777899703251e-07,
+        -2.0013473975785098e-07,
+        0.30032344954691553
+      ],
+      "continuum_continuity_residual_rms": 1.6904152098685012e-05,
+      "weighted_continuity_residual_over_energy": [
+        1.262336535435016e-07,
+        1.176509201113114e-07,
+        -0.0011363394609535653
+      ],
+      "discrete_summation_term": [
+        3.1483288207156284e-18,
+        -7.507872404357544e-17,
+        6.5503158452884236e-15
+      ],
+      "moment_decomposition_closure": [
+        1.0986282023684292e-19,
+        -8.530680570034872e-19,
+        -2.949029909160572e-17
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.4215531224861078e-09,
+          "hamiltonian_relative_l2": 1.4234248988681546e-09,
+          "continuum_absolute_rms": 9.029333549300561e-13,
+          "hamiltonian_absolute_rms": 9.02911014040687e-13
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.559972475332502e-10,
+          "hamiltonian_relative_l2": 3.5630257729388257e-10,
+          "continuum_absolute_rms": 2.2612013858398965e-13,
+          "hamiltonian_absolute_rms": 2.2601088517247223e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 9.507631260690596e-11,
+          "hamiltonian_relative_l2": 9.415289653680648e-11,
+          "continuum_absolute_rms": 6.038998652853418e-14,
+          "hamiltonian_absolute_rms": 5.972333865630196e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "z121-pad",
+      "axis": 2,
+      "nodes": 121,
+      "pad": 12,
+      "phase": 0.0,
+      "grid": [
+        145,
+        145,
+        151
+      ],
+      "lengths": [
+        27.648,
+        27.648,
+        27.428571428571427
+      ],
+      "spacing": [
+        0.192,
+        0.192,
+        0.18285714285714286
+      ],
+      "native_grid": [
+        121,
+        121,
+        127
+      ],
+      "native_spacing": [
+        0.192,
+        0.192,
+        0.18285714285714286
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0,
+        "raw_fixed_rate_max": 0.0
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "a4c12d37a498e094da5c9bcf97e62375614418b5022906d56d866595d88be61d",
+      "initial_speed_error_percent": 0.21186040254376787,
+      "embedded_native_comparison": {
+        "free_field_max": 0.0,
+        "free_rate_max": 0.0,
+        "all_field_max": 0.0004828566668023228,
+        "all_rate_max": 1.9258394350895283e-05,
+        "scope": "Same nominal h and same interior coordinates; all-node difference includes removal of the former held layers."
+      },
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 257985,
+        "continuum_energy": 2.919548739126436,
+        "momentum": [
+          -4.605758748691099e-07,
+          -6.636940453378335e-07,
+          0.8785728028343595
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.926851576214676,
+      "continuum_energy_rate": -4.969170674740708e-08,
+      "continuum_centroid": [
+        0.0007631806760393623,
+        -0.0026927758261348594,
+        -0.00260556697650979
+      ],
+      "continuum_centroid_rate": [
+        2.8805250294442494e-09,
+        -1.914418899611663e-07,
+        0.2968298500701072
+      ],
+      "hamiltonian": 2.9277693841343737,
+      "hamiltonian_rate": -1.723253119148706e-18,
+      "hamiltonian_centroid": [
+        0.0007631908451236902,
+        -0.0026928077856622386,
+        -0.0026061949682479914
+      ],
+      "hamiltonian_centroid_rate": [
+        2.10309163774375e-09,
+        -1.9134252917976144e-07,
+        0.29682641768954443
+      ],
+      "momentum": [
+        -1.6311515722662912e-07,
+        -6.916798147074125e-07,
+        0.8703767734078931
+      ],
+      "momentum_over_continuum_energy": [
+        -5.573058728095377e-08,
+        -2.3632213547431344e-07,
+        0.29737646434861564
+      ],
+      "momentum_over_hamiltonian": [
+        -5.571311665138402e-08,
+        -2.362480523417028e-07,
+        0.2972832416803311
+      ],
+      "continuum_continuity_residual_rms": 1.3388137267685196e-05,
+      "weighted_continuity_residual_over_energy": [
+        5.861111230622038e-08,
+        4.4880246109943614e-08,
+        -0.0005466142784930281
+      ],
+      "discrete_summation_term": [
+        3.814255535935119e-18,
+        -5.967234087447647e-16,
+        -1.5432100042289676e-14
+      ],
+      "moment_decomposition_closure": [
+        3.6338375181699527e-19,
+        -7.30565917006834e-20,
+        2.0816681711721685e-17
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.3747913244302876e-09,
+          "hamiltonian_relative_l2": 1.376120922495442e-09,
+          "continuum_absolute_rms": 1.1274816644639234e-12,
+          "hamiltonian_absolute_rms": 1.1274766225775844e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.4427158493040694e-10,
+          "hamiltonian_relative_l2": 3.445365005957033e-10,
+          "continuum_absolute_rms": 2.823409580110778e-13,
+          "hamiltonian_absolute_rms": 2.82283950266462e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 9.544590617717208e-11,
+          "hamiltonian_relative_l2": 9.400130314533546e-11,
+          "continuum_absolute_rms": 7.827624982104049e-14,
+          "hamiltonian_absolute_rms": 7.70166851296779e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 8.326672684688674e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "z145-native",
+      "axis": 2,
+      "nodes": 145,
+      "pad": 0,
+      "phase": 0.0,
+      "grid": [
+        145,
+        145,
+        153
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "spacing": [
+        0.16,
+        0.16,
+        0.15157894736842104
+      ],
+      "native_grid": [
+        145,
+        145,
+        153
+      ],
+      "native_spacing": [
+        0.16,
+        0.16,
+        0.15157894736842104
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 1.590872954827468e-18,
+        "raw_fixed_rate_max": 6.343784463635903e-20
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "7ea700c9fdcf63fc95682f556ed6127151be3e81036f56bbb9b0b8dededb0e90",
+      "initial_speed_error_percent": 1.056716645224859,
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 444375,
+        "continuum_energy": 2.9197543776674486,
+        "momentum": [
+          -2.854872762793568e-07,
+          -7.731684214710618e-07,
+          0.8695394976747115
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      },
+      "historical_state_matches": true
+    },
+    {
+      "continuum_energy": 2.9268515762146756,
+      "continuum_energy_rate": -4.969170674401444e-08,
+      "continuum_centroid": [
+        0.0007631806760395135,
+        -0.002692775826134823,
+        -0.002605566976508186
+      ],
+      "continuum_centroid_rate": [
+        2.8805250292602588e-09,
+        -1.914418899617298e-07,
+        0.2968298500701072
+      ],
+      "hamiltonian": 2.9277693841343737,
+      "hamiltonian_rate": 2.6387313386964566e-18,
+      "hamiltonian_centroid": [
+        0.0007631908451236903,
+        -0.002692807785662126,
+        -0.002606194968246373
+      ],
+      "hamiltonian_centroid_rate": [
+        2.103091638166799e-09,
+        -1.9134252918031098e-07,
+        0.2968264176895443
+      ],
+      "momentum": [
+        -1.6311515722497786e-07,
+        -6.916798147151673e-07,
+        0.870376773407893
+      ],
+      "momentum_over_continuum_energy": [
+        -5.57305872803896e-08,
+        -2.36322135476963e-07,
+        0.29737646434861564
+      ],
+      "momentum_over_hamiltonian": [
+        -5.571311665082002e-08,
+        -2.3624805234435152e-07,
+        0.29728324168033105
+      ],
+      "continuum_continuity_residual_rms": 1.0679736471156314e-05,
+      "weighted_continuity_residual_over_energy": [
+        5.861111230541774e-08,
+        4.488024611104988e-08,
+        -0.0005466142784930249
+      ],
+      "discrete_summation_term": [
+        4.997997314612804e-18,
+        -5.958011486838823e-16,
+        -1.5376588891058418e-14
+      ],
+      "moment_decomposition_closure": [
+        -7.658766029954977e-19,
+        -1.5524525736395223e-20,
+        -3.7838655819744105e-17
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.3748302070921553e-09,
+          "hamiltonian_relative_l2": 1.3761156134304095e-09,
+          "continuum_absolute_rms": 8.994191924028192e-13,
+          "hamiltonian_absolute_rms": 8.993862634569351e-13
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.442316928247217e-10,
+          "hamiltonian_relative_l2": 3.445159508333784e-10,
+          "continuum_absolute_rms": 2.25197693186204e-13,
+          "hamiltonian_absolute_rms": 2.2516488491031322e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 9.558353785680185e-11,
+          "hamiltonian_relative_l2": 9.413062017289742e-11,
+          "continuum_absolute_rms": 6.253111692097508e-14,
+          "hamiltonian_absolute_rms": 6.152083874925556e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 8.326672684688674e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "z145-pad",
+      "axis": 2,
+      "nodes": 145,
+      "pad": 12,
+      "phase": 0.0,
+      "grid": [
+        169,
+        169,
+        177
+      ],
+      "lengths": [
+        26.88,
+        26.88,
+        26.677894736842106
+      ],
+      "spacing": [
+        0.16,
+        0.16,
+        0.15157894736842106
+      ],
+      "native_grid": [
+        145,
+        145,
+        153
+      ],
+      "native_spacing": [
+        0.16,
+        0.16,
+        0.15157894736842104
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0,
+        "raw_fixed_rate_max": 0.0
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "81a12ffa1517e077e4111f06cf9f3e3297298a2ea0ee1c18b3de8b596b498524",
+      "initial_speed_error_percent": 1.056716645224859,
+      "embedded_native_comparison": {
+        "free_field_max": 0.0,
+        "free_rate_max": 0.0,
+        "all_field_max": 1.590872954827468e-18,
+        "all_rate_max": 6.343784463635903e-20,
+        "scope": "Same nominal h and same interior coordinates; all-node difference includes removal of the former held layers."
+      },
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 444375,
+        "continuum_energy": 2.9197543776674486,
+        "momentum": [
+          -2.854872762777152e-07,
+          -7.731684214693387e-07,
+          0.8695394976747114
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.9316969988190524,
+      "continuum_energy_rate": 1.014834164639548e-08,
+      "continuum_centroid": [
+        0.0007635535509365785,
+        -0.0026933100304514365,
+        -0.07839487627261435
+      ],
+      "continuum_centroid_rate": [
+        1.1695680907195298e-07,
+        -1.7718513932267763e-07,
+        0.30183466987516466
+      ],
+      "hamiltonian": 2.932614046141201,
+      "hamiltonian_rate": 1.5078464792551181e-18,
+      "hamiltonian_centroid": [
+        0.0007635627036918653,
+        -0.002693340345909259,
+        -0.07839550406836947
+      ],
+      "hamiltonian_centroid_rate": [
+        1.1723343484838468e-07,
+        -1.7712125945862565e-07,
+        0.3018373085850569
+      ],
+      "momentum": [
+        1.604582145649881e-07,
+        -6.608568910855844e-07,
+        0.8865692454820012
+      ],
+      "momentum_over_continuum_energy": [
+        5.47321959362185e-08,
+        -2.254178693609166e-07,
+        0.3024082112984833
+      ],
+      "momentum_over_hamiltonian": [
+        5.471508082562811e-08,
+        -2.2534737973964035e-07,
+        0.30231364630083823
+      ],
+      "continuum_continuity_residual_rms": 1.1916070001921608e-05,
+      "weighted_continuity_residual_over_energy": [
+        6.222461312899568e-08,
+        4.823272987001101e-08,
+        -0.0005735414233096293
+      ],
+      "discrete_summation_term": [
+        6.589552370168933e-18,
+        1.6789159161535695e-16,
+        -8.93729534823251e-15
+      ],
+      "moment_decomposition_closure": [
+        1.4924323483926747e-19,
+        3.3636472428856317e-19,
+        -4.651227319962814e-17
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.4232327651978358e-09,
+          "hamiltonian_relative_l2": 1.424668166877806e-09,
+          "continuum_absolute_rms": 9.609349926350503e-13,
+          "hamiltonian_absolute_rms": 9.609180287760355e-13
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.5606587540187466e-10,
+          "hamiltonian_relative_l2": 3.5635673238778496e-10,
+          "continuum_absolute_rms": 2.404077307125018e-13,
+          "hamiltonian_absolute_rms": 2.4035745080033606e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 9.770592274594465e-11,
+          "hamiltonian_relative_l2": 9.650913830707548e-11,
+          "continuum_absolute_rms": 6.596885797610404e-14,
+          "hamiltonian_absolute_rms": 6.509401494113792e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 5.551115123125783e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "z145-half",
+      "axis": 2,
+      "nodes": 145,
+      "pad": 12,
+      "phase": 0.5,
+      "grid": [
+        169,
+        169,
+        177
+      ],
+      "lengths": [
+        26.88,
+        26.88,
+        26.677894736842106
+      ],
+      "spacing": [
+        0.16,
+        0.16,
+        0.15157894736842106
+      ],
+      "native_grid": [
+        145,
+        145,
+        153
+      ],
+      "native_spacing": [
+        0.16,
+        0.16,
+        0.15157894736842104
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0,
+        "raw_fixed_rate_max": 0.0
+      },
+      "lab_sample_shift": 0.07578947368421053,
+      "state_sha256": "3855b7f186dac48a2d8bf539cd5a5626faaa2a3226fcc16594c34ebf355c20e2",
+      "initial_speed_error_percent": 0.6115566291494944,
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 444375,
+        "continuum_energy": 2.924597806966952,
+        "momentum": [
+          3.770508576338106e-08,
+          -7.410625659932749e-07,
+          0.8857315581166245
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.9314907617891004,
+      "continuum_energy_rate": -1.1833527607827593e-07,
+      "continuum_centroid": [
+        0.0007634744316514855,
+        -0.0026931790195798147,
+        -0.002608572539172513
+      ],
+      "continuum_centroid_rate": [
+        3.123353628328781e-08,
+        -2.276149685604729e-07,
+        0.300214717545419
+      ],
+      "hamiltonian": 2.9319785646849135,
+      "hamiltonian_rate": 1.2337973342666635e-17,
+      "hamiltonian_centroid": [
+        0.0007634841021603577,
+        -0.0026932116313585996,
+        -0.0026085381065124153
+      ],
+      "hamiltonian_centroid_rate": [
+        3.223977022134708e-08,
+        -2.2265017748804914e-07,
+        0.30022372863575564
+      ],
+      "momentum": [
+        1.0447653736807332e-09,
+        -7.490779737944791e-07,
+        0.8809903626356603
+      ],
+      "momentum_over_continuum_energy": [
+        3.5639388235462453e-10,
+        -2.555280008241656e-07,
+        0.30052639910009077
+      ],
+      "momentum_over_hamiltonian": [
+        3.5633458793482327e-10,
+        -2.554854877920907e-07,
+        0.3004763995368214
+      ],
+      "continuum_continuity_residual_rms": 1.0210609901866164e-05,
+      "weighted_continuity_residual_over_energy": [
+        3.0877142400759866e-08,
+        2.791303283252977e-08,
+        -0.0003116815547216187
+      ],
+      "discrete_summation_term": [
+        -2.335067279727607e-19,
+        -5.686295228760465e-16,
+        4.984901380566953e-14
+      ],
+      "moment_decomposition_closure": [
+        4.068242273597715e-19,
+        -2.0753299824465422e-19,
+        8.61940727125976e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 1.5936805608197176e-09,
+          "hamiltonian_relative_l2": 1.5953245465981472e-09,
+          "continuum_absolute_rms": 1.0728273585237065e-12,
+          "hamiltonian_absolute_rms": 1.072820938410497e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 3.990129965962562e-10,
+          "hamiltonian_relative_l2": 3.9935351379635787e-10,
+          "continuum_absolute_rms": 2.6860593627044376e-13,
+          "hamiltonian_absolute_rms": 2.685565218325787e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 1.092919049475666e-10,
+          "hamiltonian_relative_l2": 1.0781213955111261e-10,
+          "continuum_absolute_rms": 7.35726773454592e-14,
+          "hamiltonian_absolute_rms": 7.250131076582786e-14
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "z169-refine",
+      "axis": 2,
+      "nodes": 169,
+      "pad": 14,
+      "phase": 0.0,
+      "grid": [
+        197,
+        197,
+        207
+      ],
+      "lengths": [
+        26.88,
+        26.88,
+        26.677894736842106
+      ],
+      "spacing": [
+        0.13714285714285715,
+        0.13714285714285715,
+        0.12950434338272868
+      ],
+      "native_grid": [
+        169,
+        169,
+        179
+      ],
+      "native_spacing": [
+        0.13714285714285715,
+        0.13714285714285715,
+        0.12943820224719102
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0,
+        "raw_fixed_rate_max": 0.0
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "8996d833c2b7afaf2a7f99fd955099cd0688291121ce501eaa5987daed2732f9",
+      "initial_speed_error_percent": 0.07157255611140041,
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 703917,
+        "continuum_energy": 2.924244725097454,
+        "momentum": [
+          -1.241158106246926e-07,
+          -8.333314962138479e-07,
+          0.8801444520158904
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.9267224289065625,
+      "continuum_energy_rate": 4.2957686677042927e-07,
+      "continuum_centroid": [
+        0.0007277551400770905,
+        -0.002691885310079101,
+        -0.0026960195216542467
+      ],
+      "continuum_centroid_rate": [
+        0.2999966823295534,
+        -3.4635866863558127e-06,
+        -7.62806223315855e-08
+      ],
+      "hamiltonian": 2.928473949918607,
+      "hamiltonian_rate": 4.789658955165318e-17,
+      "hamiltonian_centroid": [
+        0.0007277592209467909,
+        -0.002691907525856883,
+        -0.0026970399461209204
+      ],
+      "hamiltonian_centroid_rate": [
+        0.29995241640738635,
+        4.7561970714810627e-07,
+        -4.350539440404227e-08
+      ],
+      "momentum": [
+        0.8802442427402176,
+        -0.00010007234890658807,
+        -1.9727029071231997e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.3007610950892535,
+        -3.419263402576088e-05,
+        -6.740314310777367e-08
+      ],
+      "momentum_over_hamiltonian": [
+        0.300581209802014,
+        -3.4172183402679556e-05,
+        -6.736282927078891e-08
+      ],
+      "continuum_continuity_residual_rms": 5.2869788385075314e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.0007644127596932984,
+        3.07290473394093e-05,
+        -8.877479212975955e-09
+      ],
+      "discrete_summation_term": [
+        -6.772360450213455e-15,
+        -1.634434775021898e-17,
+        -7.12812635827976e-18
+      ],
+      "moment_decomposition_closure": [
+        -5.746271514173174e-17,
+        1.2115959277525512e-17,
+        -3.707749414624016e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 5.149006920030387e-09,
+          "hamiltonian_relative_l2": 5.195556514045637e-09,
+          "continuum_absolute_rms": 3.237148397893727e-12,
+          "hamiltonian_absolute_rms": 3.237137691795515e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.2874557215565547e-09,
+          "hamiltonian_relative_l2": 1.299078723317117e-09,
+          "continuum_absolute_rms": 8.094153476824833e-13,
+          "hamiltonian_absolute_rms": 8.094025516787002e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 3.2563524959956436e-10,
+          "hamiltonian_relative_l2": 3.280788414995629e-10,
+          "continuum_absolute_rms": 2.047248416851472e-13,
+          "hamiltonian_absolute_rms": 2.044124399047021e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 5.551115123125783e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "x121-native",
+      "axis": 0,
+      "nodes": 121,
+      "pad": 0,
+      "phase": 0.0,
+      "grid": [
+        127,
+        121,
+        121
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "spacing": [
+        0.18285714285714286,
+        0.192,
+        0.192
+      ],
+      "native_grid": [
+        127,
+        121,
+        121
+      ],
+      "native_spacing": [
+        0.18285714285714286,
+        0.192,
+        0.192
+      ],
+      "projection": {
+        "field_max": 0.00048284984064255154,
+        "rate_max": 2.3678384057599253e-05,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.00048284984064255154,
+        "raw_fixed_rate_max": 2.3678384057599253e-05
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "37a51d6e63b467812e90f14d14a9909592f935e147fcbbd6ba44e45200c10569",
+      "initial_speed_error_percent": 0.0015989298038729947,
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 257985,
+        "continuum_energy": 2.919786158380094,
+        "momentum": [
+          0.8786563448643328,
+          -0.00013514931162124936,
+          -3.1678047038245106e-07
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.9267162697498583,
+      "continuum_energy_rate": 4.295768692850002e-07,
+      "continuum_centroid": [
+        0.0007277516909896051,
+        -0.0026918687886714854,
+        -0.002695547551164064
+      ],
+      "continuum_centroid_rate": [
+        0.299997740427047,
+        -3.463595246914626e-06,
+        -7.628081955209033e-08
+      ],
+      "hamiltonian": 2.9284636287380685,
+      "hamiltonian_rate": 0.0,
+      "hamiltonian_centroid": [
+        0.0007277534458629468,
+        -0.002691879675497992,
+        -0.0026962495826341375
+      ],
+      "hamiltonian_centroid_rate": [
+        0.2999534737268521,
+        4.756211147476661e-07,
+        -4.3505513937276115e-08
+      ],
+      "momentum": [
+        0.8802442431987402,
+        -0.00010007234969392388,
+        -1.9727019170344207e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.3007617281855522,
+        -3.419270625180107e-05,
+        -6.740325112563865e-08
+      ],
+      "momentum_over_hamiltonian": [
+        0.3005822693376098,
+        -3.417230410918472e-05,
+        -6.736303287756714e-08
+      ],
+      "continuum_continuity_residual_rms": 4.0461159753518856e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.0007639877585101255,
+        3.072911100488481e-05,
+        -8.877568411497486e-09
+      ],
+      "discrete_summation_term": [
+        4.9960036108132044e-15,
+        8.063753657860939e-18,
+        -1.3483877782671805e-17
+      ],
+      "moment_decomposition_closure": [
+        -3.957337929572091e-17,
+        -6.4374503991326826e-18,
+        -1.4703201562579071e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 5.149006920026478e-09,
+          "hamiltonian_relative_l2": 5.195556514045779e-09,
+          "continuum_absolute_rms": 2.477384201722043e-12,
+          "hamiltonian_absolute_rms": 2.477376008363163e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.2874557215555797e-09,
+          "hamiltonian_relative_l2": 1.2990787233171513e-09,
+          "continuum_absolute_rms": 6.194441985683022e-13,
+          "hamiltonian_absolute_rms": 6.194344058082165e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 3.2563524959935084e-10,
+          "hamiltonian_relative_l2": 3.2807884149957404e-10,
+          "continuum_absolute_rms": 1.566755755840183e-13,
+          "hamiltonian_absolute_rms": 1.5643649502904055e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 5.551115123125783e-17,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "x121-pad",
+      "axis": 0,
+      "nodes": 121,
+      "pad": 12,
+      "phase": 0.0,
+      "grid": [
+        151,
+        145,
+        145
+      ],
+      "lengths": [
+        27.428571428571427,
+        27.648,
+        27.648
+      ],
+      "spacing": [
+        0.18285714285714286,
+        0.192,
+        0.192
+      ],
+      "native_grid": [
+        127,
+        121,
+        121
+      ],
+      "native_spacing": [
+        0.18285714285714286,
+        0.192,
+        0.192
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0,
+        "raw_fixed_rate_max": 0.0
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "fb0749c60200026ef015838444600394e649e9dd8ce6995d159363dbc8446dec",
+      "initial_speed_error_percent": 0.0013787264948197872,
+      "embedded_native_comparison": {
+        "free_field_max": 0.0,
+        "free_rate_max": 0.0,
+        "all_field_max": 0.00048284984064255154,
+        "all_rate_max": 2.3678384057599253e-05,
+        "scope": "Same nominal h and same interior coordinates; all-node difference includes removal of the former held layers."
+      },
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 257985,
+        "continuum_energy": 2.919786158380094,
+        "momentum": [
+          0.8786563448643328,
+          -0.00013514931162124936,
+          -3.1678047038245106e-07
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.92738954357795,
+      "continuum_energy_rate": 8.540470424831206e-08,
+      "continuum_centroid": [
+        0.0007283509952940452,
+        -0.002692723739127744,
+        -0.0026978623795823804
+      ],
+      "continuum_centroid_rate": [
+        0.2975526080272864,
+        0.00010913790504709099,
+        1.510752961129825e-07
+      ],
+      "hamiltonian": 2.928317069433988,
+      "hamiltonian_rate": 2.7572049906379295e-17,
+      "hamiltonian_centroid": [
+        0.0007283563313149348,
+        -0.0026927490871133507,
+        -0.002698462956428371
+      ],
+      "hamiltonian_centroid_rate": [
+        0.2975295845153086,
+        0.00011640491382754794,
+        1.4899846473865395e-07
+      ],
+      "momentum": [
+        0.8721866187970204,
+        0.00029251369379865687,
+        4.055055910170904e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.29794006086767866,
+        9.992305070583028e-05,
+        1.3852122684071228e-07
+      ],
+      "momentum_over_hamiltonian": [
+        0.29784569024337404,
+        9.989140071337854e-05,
+        1.3847735112081636e-07
+      ],
+      "continuum_continuity_residual_rms": 2.3001649065615588e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.00038745284039676286,
+        9.214854341254123e-06,
+        1.2554069282969304e-08
+      ],
+      "discrete_summation_term": [
+        4.440892098500626e-15,
+        5.1906179007743525e-18,
+        -5.7874055516742105e-18
+      ],
+      "moment_decomposition_closure": [
+        5.583641188300348e-17,
+        1.3976043629695956e-18,
+        -4.911674400247995e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 4.183081200514407e-09,
+          "hamiltonian_relative_l2": 4.205650334781892e-09,
+          "continuum_absolute_rms": 2.6616674688590964e-12,
+          "hamiltonian_absolute_rms": 2.661670949337688e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.0461670822327711e-09,
+          "hamiltonian_relative_l2": 1.0517441363408096e-09,
+          "continuum_absolute_rms": 6.65669337097203e-13,
+          "hamiltonian_absolute_rms": 6.656275702910432e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 2.6667215527523717e-10,
+          "hamiltonian_relative_l2": 2.6729087041142704e-10,
+          "continuum_absolute_rms": 1.6968176483386182e-13,
+          "hamiltonian_absolute_rms": 1.691629803156639e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "x145-native",
+      "axis": 0,
+      "nodes": 145,
+      "pad": 0,
+      "phase": 0.0,
+      "grid": [
+        153,
+        145,
+        145
+      ],
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "spacing": [
+        0.15157894736842104,
+        0.16,
+        0.16
+      ],
+      "native_grid": [
+        153,
+        145,
+        145
+      ],
+      "native_spacing": [
+        0.15157894736842104,
+        0.16,
+        0.16
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 1.5909587677844594e-18,
+        "raw_fixed_rate_max": 7.80478550265564e-20
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "9303dc15bb51241574c72cdb694506b274a1c539485d9a5052b5a74f14893fbd",
+      "initial_speed_error_percent": 0.8166080641045186,
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 444375,
+        "continuum_energy": 2.920363812014655,
+        "momentum": [
+          0.8705953580409727,
+          0.0002573590475767402,
+          2.815252859438263e-07
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      },
+      "historical_state_matches": true
+    },
+    {
+      "continuum_energy": 2.9273895435779504,
+      "continuum_energy_rate": 8.540470424831208e-08,
+      "continuum_centroid": [
+        0.0007283509952957028,
+        -0.002692723739127593,
+        -0.002697862379582228
+      ],
+      "continuum_centroid_rate": [
+        0.2975526080272863,
+        0.00010913790504709868,
+        1.5107529610827316e-07
+      ],
+      "hamiltonian": 2.9283170694339877,
+      "hamiltonian_rate": 0.0,
+      "hamiltonian_centroid": [
+        0.0007283563313165921,
+        -0.0026927490871131634,
+        -0.002698462956428241
+      ],
+      "hamiltonian_centroid_rate": [
+        0.29752958451530864,
+        0.00011640491382753761,
+        1.48998464738654e-07
+      ],
+      "momentum": [
+        0.8721866187970202,
+        0.00029251369379865177,
+        4.055055910150772e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.29794006086767855,
+        9.992305070582853e-05,
+        1.3852122684002454e-07
+      ],
+      "momentum_over_hamiltonian": [
+        0.297845690243374,
+        9.989140071337682e-05,
+        1.3847735112012892e-07
+      ],
+      "continuum_continuity_residual_rms": 1.834844874318101e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.00038745284039675744,
+        9.214854341253379e-06,
+        1.2554069282960108e-08
+      ],
+      "discrete_summation_term": [
+        4.496403249731884e-15,
+        3.848917712323541e-18,
+        -7.454339922091072e-18
+      ],
+      "moment_decomposition_closure": [
+        -5.095750210681871e-18,
+        1.2915558379733572e-17,
+        -7.25714999022578e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 4.18311702085311e-09,
+          "hamiltonian_relative_l2": 4.205685293836373e-09,
+          "continuum_absolute_rms": 2.123234172769842e-12,
+          "hamiltonian_absolute_rms": 2.1232364167893112e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.0461692228134079e-09,
+          "hamiltonian_relative_l2": 1.0517531155841543e-09,
+          "continuum_absolute_rms": 5.310064799297628e-13,
+          "hamiltonian_absolute_rms": 5.309766091515761e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 2.6678788383736663e-10,
+          "hamiltonian_relative_l2": 2.6736919007388805e-10,
+          "continuum_absolute_rms": 1.3541412994679223e-13,
+          "hamiltonian_absolute_rms": 1.349810937885224e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "x145-pad",
+      "axis": 0,
+      "nodes": 145,
+      "pad": 12,
+      "phase": 0.0,
+      "grid": [
+        177,
+        169,
+        169
+      ],
+      "lengths": [
+        26.677894736842106,
+        26.88,
+        26.88
+      ],
+      "spacing": [
+        0.15157894736842106,
+        0.16,
+        0.16
+      ],
+      "native_grid": [
+        153,
+        145,
+        145
+      ],
+      "native_spacing": [
+        0.15157894736842104,
+        0.16,
+        0.16
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0,
+        "raw_fixed_rate_max": 0.0
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "a6051cae054a1806859cf6c34172c0639a5b8a96bc93760e30eb760750a73d19",
+      "initial_speed_error_percent": 0.8166080641045557,
+      "embedded_native_comparison": {
+        "free_field_max": 0.0,
+        "free_rate_max": 0.0,
+        "all_field_max": 1.5909587677844594e-18,
+        "all_rate_max": 7.80478550265564e-20,
+        "scope": "Same nominal h and same interior coordinates; all-node difference includes removal of the former held layers."
+      },
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 444375,
+        "continuum_energy": 2.9203638120146547,
+        "momentum": [
+          0.8705953580409724,
+          0.00025735904757674184,
+          2.81525285940058e-07
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.9316578752338778,
+      "continuum_energy_rate": -6.710966602641795e-08,
+      "continuum_centroid": [
+        -0.07506136682354214,
+        -0.0026922405565031195,
+        -0.0026744757940714457
+      ],
+      "continuum_centroid_rate": [
+        0.3018981090792378,
+        -0.00013813854296369372,
+        -6.648256508998037e-08
+      ],
+      "hamiltonian": 2.932553826777148,
+      "hamiltonian_rate": 2.75720499063793e-17,
+      "hamiltonian_centroid": [
+        -0.07506136429467124,
+        -0.0026922605801299026,
+        -0.0026752489643103333
+      ],
+      "hamiltonian_centroid_rate": [
+        0.3019168533934237,
+        -0.00014282369600660994,
+        -6.486719757026736e-08
+      ],
+      "momentum": [
+        0.8862314829914123,
+        -0.0004662631916115878,
+        -2.2703634294764346e-07
+      ],
+      "momentum_over_continuum_energy": [
+        0.3022970348887357,
+        -0.00015904420346947573,
+        -7.744298707758703e-08
+      ],
+      "momentum_over_hamiltonian": [
+        0.3022046773359223,
+        -0.00015899561240927232,
+        -7.74193267569634e-08
+      ],
+      "continuum_continuity_residual_rms": 4.0779816058340495e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.0003989258094978133,
+        2.0905660505783596e-05,
+        1.0960421973659193e-08
+      ],
+      "discrete_summation_term": [
+        0.0,
+        -9.64939933512099e-18,
+        2.0096505183208517e-17
+      ],
+      "moment_decomposition_closure": [
+        -9.427137889761461e-17,
+        8.056977394282905e-18,
+        -6.1490389893150435e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 5.3181268077348335e-09,
+          "hamiltonian_relative_l2": 5.352581352487172e-09,
+          "continuum_absolute_rms": 2.6751931126817538e-12,
+          "hamiltonian_absolute_rms": 2.675202122740346e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.3298795240464121e-09,
+          "hamiltonian_relative_l2": 1.338430700040313e-09,
+          "continuum_absolute_rms": 6.689732441601508e-13,
+          "hamiltonian_absolute_rms": 6.689431536103439e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 3.364871945975235e-10,
+          "hamiltonian_relative_l2": 3.3800969978391004e-10,
+          "continuum_absolute_rms": 1.6926415221684079e-13,
+          "hamiltonian_absolute_rms": 1.689361089203366e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "x145-half",
+      "axis": 0,
+      "nodes": 145,
+      "pad": 12,
+      "phase": 0.5,
+      "grid": [
+        177,
+        169,
+        169
+      ],
+      "lengths": [
+        26.677894736842106,
+        26.88,
+        26.88
+      ],
+      "spacing": [
+        0.15157894736842106,
+        0.16,
+        0.16
+      ],
+      "native_grid": [
+        153,
+        145,
+        145
+      ],
+      "native_spacing": [
+        0.15157894736842104,
+        0.16,
+        0.16
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0,
+        "raw_fixed_rate_max": 0.0
+      },
+      "lab_sample_shift": 0.07578947368421053,
+      "state_sha256": "74ac70a7f2dbe45fa240f067df2588d5089b4692892df622a3f041086b3d5f2a",
+      "initial_speed_error_percent": 0.6343763637670822,
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 444375,
+        "continuum_energy": 2.9246266277094852,
+        "momentum": [
+          0.8846396229006969,
+          -0.0005016329545100593,
+          -5.181589293894102e-07
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    },
+    {
+      "continuum_energy": 2.9314997149168196,
+      "continuum_energy_rate": -4.6381861908012106e-07,
+      "continuum_centroid": [
+        0.0007281658208533886,
+        -0.0026924765566267456,
+        -0.0026951474377463363
+      ],
+      "continuum_centroid_rate": [
+        0.30028862366073794,
+        -6.121937073330812e-05,
+        2.3609653377574177e-08
+      ],
+      "hamiltonian": 2.9319921404407467,
+      "hamiltonian_rate": 0.0,
+      "hamiltonian_centroid": [
+        0.0007281748544883383,
+        -0.002692507534931893,
+        -0.0026952126364630574
+      ],
+      "hamiltonian_centroid_rate": [
+        0.30032562503028865,
+        -6.150293037575168e-05,
+        2.898530112111644e-08
+      ],
+      "momentum": [
+        0.8809935961147713,
+        -0.00020641781528744162,
+        6.558417276226934e-08
+      ],
+      "momentum_over_continuum_energy": [
+        0.3005265842707985,
+        -7.041372517864927e-05,
+        2.2372225529665546e-08
+      ],
+      "momentum_over_hamiltonian": [
+        0.30047611109296407,
+        -7.040189925489098e-05,
+        2.2368468133891556e-08
+      ],
+      "continuum_continuity_residual_rms": 3.6598172842477165e-05,
+      "weighted_continuity_residual_over_energy": [
+        -0.0002379606101251892,
+        9.194354445348337e-06,
+        1.2374278518804134e-09
+      ],
+      "discrete_summation_term": [
+        6.467049118441537e-14,
+        -1.2332799712022613e-18,
+        -6.318309921145445e-18
+      ],
+      "moment_decomposition_closure": [
+        -2.043721095135176e-17,
+        -5.9495594215142056e-18,
+        2.3465271433314933e-18
+      ],
+      "directional_probes": [
+        {
+          "epsilon": 0.0001,
+          "continuum_relative_l2": 7.2338621243848696e-09,
+          "hamiltonian_relative_l2": 7.272250984125423e-09,
+          "continuum_absolute_rms": 3.671732151560328e-12,
+          "hamiltonian_absolute_rms": 3.671732697208169e-12
+        },
+        {
+          "epsilon": 5e-05,
+          "continuum_relative_l2": 1.8087196041839133e-09,
+          "hamiltonian_relative_l2": 1.8182553572073265e-09,
+          "continuum_absolute_rms": 9.180619991985617e-13,
+          "hamiltonian_absolute_rms": 9.180304229743168e-13
+        },
+        {
+          "epsilon": 2.5e-05,
+          "continuum_relative_l2": 4.5603357944075125e-10,
+          "hamiltonian_relative_l2": 4.5776644431900924e-10,
+          "continuum_absolute_rms": 2.31471533052769e-13,
+          "hamiltonian_absolute_rms": 2.3112458920351016e-13
+        }
+      ],
+      "constraint_projection_rate_correction": 1.1102230246251565e-16,
+      "scope": "Initial-state vector-field directional derivative, not measured physical trajectory or new acceptance. Discrete summation term includes discretization/domain effects; it is not an isolated physical surface flux. No Hamiltonian continuity identity is assumed.",
+      "id": "x169-refine",
+      "axis": 0,
+      "nodes": 169,
+      "pad": 14,
+      "phase": 0.0,
+      "grid": [
+        207,
+        197,
+        197
+      ],
+      "lengths": [
+        26.677894736842106,
+        26.88,
+        26.88
+      ],
+      "spacing": [
+        0.12950434338272868,
+        0.13714285714285715,
+        0.13714285714285715
+      ],
+      "native_grid": [
+        179,
+        169,
+        169
+      ],
+      "native_spacing": [
+        0.12943820224719102,
+        0.13714285714285715,
+        0.13714285714285715
+      ],
+      "projection": {
+        "field_max": 3.3306690738754696e-16,
+        "rate_max": 1.1102230246251565e-16,
+        "free_field_max": 3.3306690738754696e-16,
+        "free_rate_max": 1.1102230246251565e-16,
+        "raw_fixed_field_max": 0.0,
+        "raw_fixed_rate_max": 0.0
+      },
+      "lab_sample_shift": 0.0,
+      "state_sha256": "4fd01243273ac6d28e47bf779324a808d2d2b8e8401c9a1574d8baef46876884",
+      "initial_speed_error_percent": 0.0983482640914275,
+      "common_cube": {
+        "half_width": 6.0,
+        "nodes": 703917,
+        "continuum_energy": 2.9244026943880144,
+        "momentum": [
+          0.8793989445411701,
+          -0.00024184465512035503,
+          -6.15468328474349e-08
+        ],
+        "scope": "Fixed physical cube, native nodal quadrature; counts and boundary sampling vary with h and phase. Truncated integrals only, not isolation/velocity evidence."
+      }
+    }
+  ],
+  "scope": "Read-only sampling/boundary study; fixed rest representation; no physical steps, changed gates or acceptance flags.",
+  "finished_at": {
+    "utc": "2026-11-12T14:11:02.326844+00:00",
+    "melbourne": "2026-11-13T01:11:02.326844+11:00"
+  }
+}
