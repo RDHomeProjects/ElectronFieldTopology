@@ -1,6 +1,6 @@
 # S5-B: Neutral physical-time dynamics
 
-Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
+Updated: UTC 2026-11-14T23:23:48.283541+00:00; Australia/Melbourne 2026-11-15T10:23:48.283541+11:00.
 
 Active dynamics track; general isolated-motion acceptance remains open.
 
@@ -18,7 +18,7 @@ Active dynamics track; general isolated-motion acceptance remains open.
 | [s5-b-010](../../docs/plans/s5-b/010-intermediate-q-survey.md) | Fresh Q3 Q4 Q7 survey and detailed motion | assessed | open |
 | [s5-b-011](../../docs/plans/s5-b/011-controlled-q-dependencies.md) | Controlled dependency transfer to Q2 Q3 and other Q results | prepared | open |
 | [s5-b-012](../../docs/plans/s5-b/012-rapid-q-screening.md) | Bounded rapid Q2-Q16 static screening and conditional refinement | assessed | open |
-| [s5-b-013](../../docs/plans/s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | prepared | open |
+| [s5-b-013](../../docs/plans/s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | assessed | open |
 
 Study indexes distinguish preparation, measurements and assessment. A planned record has no measured results.
 

@@ -1,6 +1,6 @@
 # Staged development plan
 
-Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
+Updated: UTC 2026-11-14T23:23:48.283541+00:00; Australia/Melbourne 2026-11-15T10:23:48.283541+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
@@ -31,7 +31,7 @@ Registered administrative activities are assessed. The next scientific task is *
 ## Ordered work and dependencies
 
 1. [s2-005: Cell-aware saved-state spacing measurements](plans/s2/005-cell-aware-spacing-measurements.md) — Run the registered anchor checks, then all 16 Hopfion and nine packet states if the common contract passes. Refit descriptively and reserve fresh physical validation separately.
-2. [s5-b-013: Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls](plans/s5-b/013-rapid-q-bounded-followup.md) — Run the local field/device audit, then Q6 +200, medium Q4/Q7 +100 each, secondary Q8 +100, and Q5/Q9/Q10 controls +50 each, all in batches of at most 50. Stop measured survivors for later mesh/boost/motion admission.
+2. [s5-b-013: Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls](plans/s5-b/013-rapid-q-bounded-followup.md) — Prepare a separate controlled diagnostic tranche: retained-field Q4/Q6 diagnosis, selective fixed-grid Q8/Q10 continuation and Q5 resolution rescue from pre-loss iteration 50. Q7/Q9 deferred pending diagnostics. No production launched by this assessment.
 3. [s5-b-011: Controlled dependency transfer to Q2 Q3 and other Q results](plans/s5-b/011-controlled-q-dependencies.md) — After Maxwell spacing assessment, qualify Q2 then measure one Q3 variable with fresh validation. Run the supplied Qx audit now without new SF evolution or altered gates.
 4. [s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md) — Apply the separately registered controlled Q-dependency transfer; preserve all earlier preparation, admission and motion outcomes.
 5. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Keep Q2 numerical/physical-mesh/domain controls available alongside the authorized S5-B-010 fresh-candidate survey. A failed short reference blocks that survey. Q1 correction stays parked; do not repeat completed temporal work without a diagnostic reason.

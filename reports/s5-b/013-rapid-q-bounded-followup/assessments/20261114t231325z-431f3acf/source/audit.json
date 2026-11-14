@@ -1,0 +1,941 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T13:22:53.682804+00:00",
+    "melbourne": "2026-11-15T00:22:53.682804+11:00"
+  },
+  "status": "local_field_and_backend_audit_passed",
+  "identity": {
+    "source_commit": "cffd6fc10c84a50b0a0dcce768b965a9aa5e7b09",
+    "package_sha256": "8f2e94c2cb7de1311a40f71be98b5eab113a0293b69eba04ab0e04f21900242e",
+    "plan_sha256": "5213ea6953d2a54e2a059ab2698d41720121c61174825d18a53cdfd1643c8591",
+    "screen_evidence_sha256": "ed884f71077cc200a1414e535b306f35141a932a4f545c8230c808f3ca95c70c",
+    "prior_evidence_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+    "screen_run": "/home/rd/ElectronFieldTopology-rapid-q-screen/artifacts/rapid-q-screen/20261114t094318z-7800d5c4",
+    "past_run": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "threads": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4"
+    }
+  },
+  "full_screen_manifest_verified": true,
+  "selected_endpoint_replays": [
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T13:16:55.411890+00:00",
+        "melbourne": "2026-11-15T00:16:55.411890+11:00"
+      },
+      "seed": "q6-axial6-1",
+      "nodes": 97,
+      "backend": "cuda",
+      "parent_sha256": "e47a30b87ec729f826264e52ee3cea4c0c27cc03cb28f71c4475d5335d643800",
+      "replayed_metrics": {
+        "energy": 5.117914601817769,
+        "relative_force_l2": 0.0004291176327235489,
+        "acceleration_max": 0.003745830801543436,
+        "acceleration_rms": 4.178397667174478e-05,
+        "minimum_corner_cone": 0.8535812933926108,
+        "hopf_integral": -5.93775570864054,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.6255744617037136,
+        "mean_topological_b": [
+          1.4233164995041945e-06,
+          -5.948339648233123e-07,
+          -2.6200774708682283e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0006527007713080162
+      },
+      "metric_abs_differences": {
+        "energy": 0.0,
+        "relative_force_l2": 0.0,
+        "acceleration_max": 0.0,
+        "acceleration_rms": 0.0,
+        "minimum_corner_cone": 0.0,
+        "hopf_integral": 0.0,
+        "unit_error": 0.0,
+        "max_neighbour_angle": 0.0,
+        "tail_fraction": 0.0
+      },
+      "raw_gradient_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "one_step_accepted": true,
+      "one_step_field_max_difference": 2.220446049250313e-16,
+      "scope": "Disposable one-step copies; parent field and optimizer state unchanged",
+      "continuation_mode": "exact optimizer state and adaptive schedule continuation"
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T13:17:45.010017+00:00",
+        "melbourne": "2026-11-15T00:17:45.010017+11:00"
+      },
+      "seed": "q4-axial22",
+      "nodes": 121,
+      "backend": "cuda",
+      "parent_sha256": "1be554aee7d4b9f040460636dfd63972ccdc85bc35afbdd56ee6b41f072929ab",
+      "replayed_metrics": {
+        "energy": 3.5073675762352234,
+        "relative_force_l2": 0.00016979860357199116,
+        "acceleration_max": 0.0019882973631413434,
+        "acceleration_rms": 1.4136323747695058e-05,
+        "minimum_corner_cone": 0.8250535224828744,
+        "hopf_integral": -3.9637382260477896,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.6981978128925772,
+        "mean_topological_b": [
+          6.697734600319938e-08,
+          -1.2405292260541083e-07,
+          -3.486632311318485e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00017521072231253522
+      },
+      "metric_abs_differences": {
+        "energy": 0.0,
+        "relative_force_l2": 6.884683795282953e-18,
+        "acceleration_max": 0.0,
+        "acceleration_rms": 0.0,
+        "minimum_corner_cone": 0.0,
+        "hopf_integral": 0.0,
+        "unit_error": 0.0,
+        "max_neighbour_angle": 0.0,
+        "tail_fraction": 0.0
+      },
+      "raw_gradient_audit": {
+        "passed": true,
+        "energy_abs_difference": 8.881784197001252e-16,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "one_step_accepted": true,
+      "one_step_field_max_difference": 2.220446049250313e-16,
+      "scope": "Disposable one-step copies; parent field and optimizer state unchanged",
+      "continuation_mode": "legacy field import; explicit conjugacy and step-length restart at native iteration count"
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T13:18:32.424032+00:00",
+        "melbourne": "2026-11-15T00:18:32.424032+11:00"
+      },
+      "seed": "q7-trefoil",
+      "nodes": 121,
+      "backend": "cuda",
+      "parent_sha256": "05b540ded1583f58abe44b9a5c4f3e463c24c983ab2fc7076c08b5ae75aecdf1",
+      "replayed_metrics": {
+        "energy": 5.33279972069303,
+        "relative_force_l2": 0.00017940288265446452,
+        "acceleration_max": 0.0035355805783470495,
+        "acceleration_rms": 2.7310355790007368e-05,
+        "minimum_corner_cone": 0.8354516680325716,
+        "hopf_integral": -6.95012194348651,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.7195293785514776,
+        "mean_topological_b": [
+          4.251213501032816e-08,
+          -2.1081532233884254e-05,
+          -3.640627109532229e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00033957411467610947
+      },
+      "metric_abs_differences": {
+        "energy": 0.0,
+        "relative_force_l2": 2.290377089375628e-17,
+        "acceleration_max": 0.0,
+        "acceleration_rms": 0.0,
+        "minimum_corner_cone": 0.0,
+        "hopf_integral": 0.0,
+        "unit_error": 0.0,
+        "max_neighbour_angle": 0.0,
+        "tail_fraction": 0.0
+      },
+      "raw_gradient_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "one_step_accepted": true,
+      "one_step_field_max_difference": 2.220446049250313e-16,
+      "scope": "Disposable one-step copies; parent field and optimizer state unchanged",
+      "continuation_mode": "legacy field import; explicit conjugacy and step-length restart at native iteration count"
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T13:19:23.206996+00:00",
+        "melbourne": "2026-11-15T00:19:23.206996+11:00"
+      },
+      "seed": "q8-trefoil32-1-2",
+      "nodes": 121,
+      "backend": "cuda",
+      "parent_sha256": "19561e5b8e2421824f15d9db23b37bae84fef20e06e401409aba6cb0198f8a3f",
+      "replayed_metrics": {
+        "energy": 5.913814939857314,
+        "relative_force_l2": 0.0017322071471138458,
+        "acceleration_max": 0.026410499337229096,
+        "acceleration_rms": 0.00018249515850949944,
+        "minimum_corner_cone": 0.8684147353250121,
+        "hopf_integral": -7.961130792490306,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6098366175694958,
+        "mean_topological_b": [
+          -3.765185258614236e-09,
+          1.5811657286426382e-06,
+          -2.9641555032832618e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0005853662714168995
+      },
+      "metric_abs_differences": {
+        "energy": 0.0,
+        "relative_force_l2": 0.0,
+        "acceleration_max": 0.0,
+        "acceleration_rms": 0.0,
+        "minimum_corner_cone": 0.0,
+        "hopf_integral": 0.0,
+        "unit_error": 0.0,
+        "max_neighbour_angle": 0.0,
+        "tail_fraction": 0.0
+      },
+      "raw_gradient_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "one_step_accepted": true,
+      "one_step_field_max_difference": 2.220446049250313e-16,
+      "scope": "Disposable one-step copies; parent field and optimizer state unchanged",
+      "continuation_mode": "exact optimizer state and adaptive schedule continuation"
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T13:19:39.542826+00:00",
+        "melbourne": "2026-11-15T00:19:39.542826+11:00"
+      },
+      "seed": "q5-trefoil32-1-1",
+      "nodes": 97,
+      "backend": "cuda",
+      "parent_sha256": "c0e4ceefc651e8b449b0ef4822f958339550c7d71d72a6a3c86c5ed22cdfd336",
+      "replayed_metrics": {
+        "energy": 4.294527537019871,
+        "relative_force_l2": 0.07490308714480153,
+        "acceleration_max": 0.7304894582308503,
+        "acceleration_rms": 0.005470609086400769,
+        "minimum_corner_cone": 0.8129162727078001,
+        "hopf_integral": -4.923207919067485,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.8685898039461425,
+        "mean_topological_b": [
+          1.4055955644025235e-07,
+          -1.1094708632563964e-05,
+          -6.856990714157365e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0019992822336636993
+      },
+      "metric_abs_differences": {
+        "energy": 0.0,
+        "relative_force_l2": 0.0,
+        "acceleration_max": 0.0,
+        "acceleration_rms": 0.0,
+        "minimum_corner_cone": 0.0,
+        "hopf_integral": 0.0,
+        "unit_error": 0.0,
+        "max_neighbour_angle": 0.0,
+        "tail_fraction": 0.0
+      },
+      "raw_gradient_audit": {
+        "passed": true,
+        "energy_abs_difference": 8.881784197001252e-16,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "one_step_accepted": true,
+      "one_step_field_max_difference": 2.220446049250313e-16,
+      "scope": "Disposable one-step copies; parent field and optimizer state unchanged",
+      "continuation_mode": "exact optimizer state and adaptive schedule continuation"
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T13:21:26.380333+00:00",
+        "melbourne": "2026-11-15T00:21:26.380333+11:00"
+      },
+      "seed": "q9-trefoil32-3-1",
+      "nodes": 145,
+      "backend": "cuda",
+      "parent_sha256": "f86c2b58e297e6af329a988e07bb005dd027af540d437ed7a390661c4aeffaf5",
+      "replayed_metrics": {
+        "energy": 6.613814074309771,
+        "relative_force_l2": 0.14439071577449356,
+        "acceleration_max": 3.743318551320556,
+        "acceleration_rms": 0.018451097121309837,
+        "minimum_corner_cone": 0.914577621999316,
+        "hopf_integral": -8.98563207561516,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.42723197982736694,
+        "mean_topological_b": [
+          2.4579706922439643e-09,
+          -1.0357916916146225e-06,
+          -1.1779723651456194e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0004566328313102441
+      },
+      "metric_abs_differences": {
+        "energy": 0.0,
+        "relative_force_l2": 0.0,
+        "acceleration_max": 0.0,
+        "acceleration_rms": 0.0,
+        "minimum_corner_cone": 0.0,
+        "hopf_integral": 0.0,
+        "unit_error": 0.0,
+        "max_neighbour_angle": 0.0,
+        "tail_fraction": 0.0
+      },
+      "raw_gradient_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "one_step_accepted": true,
+      "one_step_field_max_difference": 3.3306690738754696e-16,
+      "scope": "Disposable one-step copies; parent field and optimizer state unchanged",
+      "continuation_mode": "exact optimizer state and adaptive schedule continuation"
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T13:22:53.676999+00:00",
+        "melbourne": "2026-11-15T00:22:53.676999+11:00"
+      },
+      "seed": "q10-trefoil32-2-2",
+      "nodes": 145,
+      "backend": "cuda",
+      "parent_sha256": "f3c2bbe7da2a00a03a3b0d50810dfd783640b99fbaa624565447794b42c0d7a2",
+      "replayed_metrics": {
+        "energy": 7.222116137158979,
+        "relative_force_l2": 0.14575955076727481,
+        "acceleration_max": 3.04819465117004,
+        "acceleration_rms": 0.017848371778994263,
+        "minimum_corner_cone": 0.9487915649024139,
+        "hopf_integral": -9.987564980008017,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.41121405461099986,
+        "mean_topological_b": [
+          5.3160168410946155e-09,
+          8.506256204248869e-08,
+          -8.973713927388106e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0006364646415848367
+      },
+      "metric_abs_differences": {
+        "energy": 0.0,
+        "relative_force_l2": 0.0,
+        "acceleration_max": 0.0,
+        "acceleration_rms": 0.0,
+        "minimum_corner_cone": 0.0,
+        "hopf_integral": 0.0,
+        "unit_error": 0.0,
+        "max_neighbour_angle": 0.0,
+        "tail_fraction": 0.0
+      },
+      "raw_gradient_audit": {
+        "passed": true,
+        "energy_abs_difference": 8.881784197001252e-16,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "one_step_accepted": true,
+      "one_step_field_max_difference": 3.3306690738754696e-16,
+      "scope": "Disposable one-step copies; parent field and optimizer state unchanged",
+      "continuation_mode": "exact optimizer state and adaptive schedule continuation"
+    }
+  ],
+  "corrected_prior_selection": [
+    {
+      "seed": "q2-retained-reference",
+      "primary_rest_id": "q2-reference",
+      "alternatives": [
+        {
+          "rest_id": "q2-reference",
+          "native_status": "stationary",
+          "nodes": 127,
+          "length": 20.16,
+          "category": 0,
+          "representation_pass": true,
+          "strict_stationarity_pass": true,
+          "tail_pass": true,
+          "force": 1.1542460483789047e-05,
+          "acceleration": 6.636497024101145e-05,
+          "gate_proximity": 0.11542460483789047,
+          "checkpoint_sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930"
+        }
+      ],
+      "rule": "Represented strict-and-tail, strict boundary follow-up, represented unresolved, then unresolved representation; gate proximity within bucket. All alternatives retained; no cross-mesh energy ranking."
+    },
+    {
+      "seed": "q3-axial",
+      "primary_rest_id": "q3-axial-medium-fresh",
+      "alternatives": [
+        {
+          "rest_id": "q3-axial-medium-fresh",
+          "native_status": "stationary",
+          "nodes": 121,
+          "length": 23.04,
+          "category": 0,
+          "representation_pass": true,
+          "strict_stationarity_pass": true,
+          "tail_pass": true,
+          "force": 6.49098329766592e-05,
+          "acceleration": 0.0006786804238339941,
+          "gate_proximity": 0.6786804238339941,
+          "checkpoint_sha256": "c71eae710ebb208b3b25b9189b5be1a9a675997e8a73a51cfc7eeed262509c2d"
+        },
+        {
+          "rest_id": "q3-axial-coarse-fresh",
+          "native_status": "stationary",
+          "nodes": 97,
+          "length": 23.04,
+          "category": 0,
+          "representation_pass": true,
+          "strict_stationarity_pass": true,
+          "tail_pass": true,
+          "force": 7.456741350477546e-05,
+          "acceleration": 0.000738149854967357,
+          "gate_proximity": 0.7456741350477545,
+          "checkpoint_sha256": "6f5db07eb7eb8257c8f5cbf952c4266926b1ac43d4b0f0fc2f5485683dd742b2"
+        },
+        {
+          "rest_id": "q3-axial-domain-warm",
+          "native_status": "stationary",
+          "nodes": 169,
+          "length": 26.88,
+          "category": 0,
+          "representation_pass": true,
+          "strict_stationarity_pass": true,
+          "tail_pass": true,
+          "force": 8.321395664562329e-05,
+          "acceleration": 0.0006204729269432818,
+          "gate_proximity": 0.8321395664562329,
+          "checkpoint_sha256": "a87b3bb32ac5d3366a64f8d72a97cf5fac32af080f2d34352e7a6a9165cacb40"
+        },
+        {
+          "rest_id": "q3-axial-fine-fresh",
+          "native_status": "stationary",
+          "nodes": 145,
+          "length": 23.04,
+          "category": 0,
+          "representation_pass": true,
+          "strict_stationarity_pass": true,
+          "tail_pass": true,
+          "force": 9.027288089489444e-05,
+          "acceleration": 0.0006613874156058099,
+          "gate_proximity": 0.9027288089489444,
+          "checkpoint_sha256": "d6827a282bad8509e00891acdb621f306ff9d85469918c4397f3b14a9ded35bd"
+        },
+        {
+          "rest_id": "q3-axial-medium-warm",
+          "native_status": "stationary",
+          "nodes": 121,
+          "length": 23.04,
+          "category": 0,
+          "representation_pass": true,
+          "strict_stationarity_pass": true,
+          "tail_pass": true,
+          "force": 9.318091212904314e-05,
+          "acceleration": 0.000673689185657545,
+          "gate_proximity": 0.9318091212904314,
+          "checkpoint_sha256": "a0035a536f756c6176545181b1f287643f8fb7a4322e022e3f55dd1a8b8ecb5e"
+        },
+        {
+          "rest_id": "q3-axial-fine-warm",
+          "native_status": "stationary",
+          "nodes": 145,
+          "length": 23.04,
+          "category": 0,
+          "representation_pass": true,
+          "strict_stationarity_pass": true,
+          "tail_pass": true,
+          "force": 9.460063192660284e-05,
+          "acceleration": 0.0007749056125761395,
+          "gate_proximity": 0.9460063192660283,
+          "checkpoint_sha256": "eb58603b3e17cc804dee87f4f256a4c28cbba892d830a1bb74bd21c7c4e9f987"
+        }
+      ],
+      "rule": "Represented strict-and-tail, strict boundary follow-up, represented unresolved, then unresolved representation; gate proximity within bucket. All alternatives retained; no cross-mesh energy ranking."
+    },
+    {
+      "seed": "q3-bent",
+      "primary_rest_id": "q3-bent-coarse-fresh",
+      "alternatives": [
+        {
+          "rest_id": "q3-bent-coarse-fresh",
+          "native_status": "preparation_unresolved",
+          "nodes": 97,
+          "length": 23.04,
+          "category": 2,
+          "representation_pass": true,
+          "strict_stationarity_pass": false,
+          "tail_pass": true,
+          "force": 0.0003698130543172773,
+          "acceleration": 0.002240373067580353,
+          "gate_proximity": 3.698130543172773,
+          "checkpoint_sha256": "9cd90364bfe3471bd723ebe91a7dc724fa58698f363bc9b2aefae4a4d2cc6c25"
+        }
+      ],
+      "rule": "Represented strict-and-tail, strict boundary follow-up, represented unresolved, then unresolved representation; gate proximity within bucket. All alternatives retained; no cross-mesh energy ranking."
+    },
+    {
+      "seed": "q4-axial22",
+      "primary_rest_id": "q4-axial22-medium-fresh",
+      "alternatives": [
+        {
+          "rest_id": "q4-axial22-medium-fresh",
+          "native_status": "preparation_unresolved",
+          "nodes": 121,
+          "length": 23.04,
+          "category": 2,
+          "representation_pass": true,
+          "strict_stationarity_pass": false,
+          "tail_pass": true,
+          "force": 0.00016979860357199805,
+          "acceleration": 0.0019882973631413434,
+          "gate_proximity": 1.9882973631413434,
+          "checkpoint_sha256": "1be554aee7d4b9f040460636dfd63972ccdc85bc35afbdd56ee6b41f072929ab"
+        },
+        {
+          "rest_id": "q4-axial22-coarse-fresh",
+          "native_status": "topology_unresolved",
+          "nodes": 97,
+          "length": 23.04,
+          "category": 3,
+          "representation_pass": false,
+          "strict_stationarity_pass": false,
+          "tail_pass": true,
+          "force": 0.25115458924998774,
+          "acceleration": 11.649766937638372,
+          "gate_proximity": 11649.766937638371,
+          "checkpoint_sha256": "ca392101da8746f96b46de3047a51303efda5875486ec65ecb826b74ed76a302"
+        }
+      ],
+      "rule": "Represented strict-and-tail, strict boundary follow-up, represented unresolved, then unresolved representation; gate proximity within bucket. All alternatives retained; no cross-mesh energy ranking."
+    },
+    {
+      "seed": "q4-axial41",
+      "primary_rest_id": "q4-axial41-medium-fresh",
+      "alternatives": [
+        {
+          "rest_id": "q4-axial41-medium-fresh",
+          "native_status": "stationary",
+          "nodes": 121,
+          "length": 23.04,
+          "category": 1,
+          "representation_pass": true,
+          "strict_stationarity_pass": true,
+          "tail_pass": false,
+          "force": 6.35318860363358e-05,
+          "acceleration": 0.0005436435896968481,
+          "gate_proximity": 0.6353188603633579,
+          "checkpoint_sha256": "312642b264936e6af09ecb60cd66db3c4317d3afc4f90a1de6f3d1e1b05e7112"
+        },
+        {
+          "rest_id": "q4-axial41-coarse-fresh",
+          "native_status": "preparation_unresolved",
+          "nodes": 97,
+          "length": 23.04,
+          "category": 2,
+          "representation_pass": true,
+          "strict_stationarity_pass": false,
+          "tail_pass": false,
+          "force": 0.0011594344536356488,
+          "acceleration": 0.006330411158048311,
+          "gate_proximity": 11.594344536356488,
+          "checkpoint_sha256": "7acab2fa88e82b190589047fa72c3dfa2fdaec53333f701bb050672028c6101e"
+        },
+        {
+          "rest_id": "q4-axial41-fine-fresh",
+          "native_status": "preparation_unresolved",
+          "nodes": 145,
+          "length": 23.04,
+          "category": 2,
+          "representation_pass": true,
+          "strict_stationarity_pass": false,
+          "tail_pass": false,
+          "force": 0.008571991096005866,
+          "acceleration": 0.07313172460333907,
+          "gate_proximity": 85.71991096005866,
+          "checkpoint_sha256": "c06bcd93168ceea466edfb590473d7e9f774579f68484cd4555d795740188079"
+        },
+        {
+          "rest_id": "q4-axial41-fine-warm",
+          "native_status": "preparation_unresolved",
+          "nodes": 145,
+          "length": 23.04,
+          "category": 2,
+          "representation_pass": true,
+          "strict_stationarity_pass": false,
+          "tail_pass": true,
+          "force": 0.020581278620729518,
+          "acceleration": 0.17504570845989817,
+          "gate_proximity": 205.81278620729518,
+          "checkpoint_sha256": "8bee6bbcfc9a326db85a6190e0b958e917c9e4cb6defccc9fa365bb9a0d5f578"
+        }
+      ],
+      "rule": "Represented strict-and-tail, strict boundary follow-up, represented unresolved, then unresolved representation; gate proximity within bucket. All alternatives retained; no cross-mesh energy ranking."
+    },
+    {
+      "seed": "q7-axial",
+      "primary_rest_id": "q7-axial-medium-fresh",
+      "alternatives": [
+        {
+          "rest_id": "q7-axial-medium-fresh",
+          "native_status": "preparation_unresolved",
+          "nodes": 121,
+          "length": 23.04,
+          "category": 2,
+          "representation_pass": true,
+          "strict_stationarity_pass": false,
+          "tail_pass": true,
+          "force": 0.005293887226215454,
+          "acceleration": 0.04989205333805393,
+          "gate_proximity": 52.93887226215454,
+          "checkpoint_sha256": "c57c637f806c0eb6f28882b425235f8da91f7248c80c6cf8b16545ae4b318a49"
+        },
+        {
+          "rest_id": "q7-axial-coarse-fresh",
+          "native_status": "stationarity_unresolved",
+          "nodes": 97,
+          "length": 23.04,
+          "category": 2,
+          "representation_pass": true,
+          "strict_stationarity_pass": false,
+          "tail_pass": false,
+          "force": 0.15114952263458575,
+          "acceleration": 4.987432760731952,
+          "gate_proximity": 4987.432760731952,
+          "checkpoint_sha256": "88270aa2d3faccc7c403210ce5a1ffb9c72d648b6a8e1efa18fabe2c078244e1"
+        }
+      ],
+      "rule": "Represented strict-and-tail, strict boundary follow-up, represented unresolved, then unresolved representation; gate proximity within bucket. All alternatives retained; no cross-mesh energy ranking."
+    },
+    {
+      "seed": "q7-trefoil",
+      "primary_rest_id": "q7-trefoil-medium-fresh",
+      "alternatives": [
+        {
+          "rest_id": "q7-trefoil-medium-fresh",
+          "native_status": "preparation_unresolved",
+          "nodes": 121,
+          "length": 23.04,
+          "category": 2,
+          "representation_pass": true,
+          "strict_stationarity_pass": false,
+          "tail_pass": true,
+          "force": 0.00017940288265448742,
+          "acceleration": 0.0035355805783470495,
+          "gate_proximity": 3.5355805783470493,
+          "checkpoint_sha256": "05b540ded1583f58abe44b9a5c4f3e463c24c983ab2fc7076c08b5ae75aecdf1"
+        },
+        {
+          "rest_id": "q7-trefoil-coarse-fresh",
+          "native_status": "topology_unresolved",
+          "nodes": 97,
+          "length": 23.04,
+          "category": 3,
+          "representation_pass": false,
+          "strict_stationarity_pass": false,
+          "tail_pass": true,
+          "force": 0.1487381738687389,
+          "acceleration": 5.6447470012541805,
+          "gate_proximity": 5644.747001254181,
+          "checkpoint_sha256": "5922762b5bad21dc7a570367f2e4b1842d52b98c0daa796312a43f1ddfcce602"
+        }
+      ],
+      "rule": "Represented strict-and-tail, strict boundary follow-up, represented unresolved, then unresolved representation; gate proximity within bucket. All alternatives retained; no cross-mesh energy ranking."
+    }
+  ],
+  "completed_screen_allocation_ledger": [
+    {
+      "phase": "broad",
+      "seed": "q2-retained-reference",
+      "q": 2,
+      "native_screen_decision": "static_survivor",
+      "allocation_status": "measured_static_endpoint",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q2-bent",
+      "q": 2,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "allocated_priority_stage",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q3-axial",
+      "q": 3,
+      "native_screen_decision": "static_survivor",
+      "allocation_status": "measured_static_endpoint",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q3-bent",
+      "q": 3,
+      "native_screen_decision": "prior_unresolved",
+      "allocation_status": "deferred_prior_unresolved",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q4-axial22",
+      "q": 4,
+      "native_screen_decision": "prior_unresolved",
+      "allocation_status": "deferred_prior_unresolved",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q4-axial41",
+      "q": 4,
+      "native_screen_decision": "boundary_followup",
+      "allocation_status": "deferred_boundary_followup",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q5-axial5-1",
+      "q": 5,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "allocated_priority_stage",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q5-trefoil32-1-1",
+      "q": 5,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "deferred_priority_capacity",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q6-axial3-2",
+      "q": 6,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q6-axial6-1",
+      "q": 6,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "allocated_priority_stage",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q7-axial",
+      "q": 7,
+      "native_screen_decision": "prior_unresolved",
+      "allocation_status": "deferred_prior_unresolved",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q7-trefoil",
+      "q": 7,
+      "native_screen_decision": "prior_unresolved",
+      "allocation_status": "deferred_prior_unresolved",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q8-axial4-2",
+      "q": 8,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q8-trefoil32-1-2",
+      "q": 8,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "allocated_priority_stage",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q9-axial3-3",
+      "q": 9,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q9-trefoil32-3-1",
+      "q": 9,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q10-axial5-2",
+      "q": 10,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q10-trefoil32-2-2",
+      "q": 10,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q11-axial11-1",
+      "q": 11,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q11-trefoil32-1-3",
+      "q": 11,
+      "native_screen_decision": "defer_resolution",
+      "allocation_status": "deferred_defer_resolution",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q12-axial4-3",
+      "q": 12,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q12-trefoil32-3-2",
+      "q": 12,
+      "native_screen_decision": "defer_resolution",
+      "allocation_status": "deferred_defer_resolution",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q13-axial13-1",
+      "q": 13,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q13-trefoil32-2-3",
+      "q": 13,
+      "native_screen_decision": "defer_resolution",
+      "allocation_status": "deferred_defer_resolution",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q14-axial7-2",
+      "q": 14,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q14-trefoil32-1-4",
+      "q": 14,
+      "native_screen_decision": "defer_resolution",
+      "allocation_status": "deferred_defer_resolution",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q15-axial5-3",
+      "q": 15,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q15-trefoil32-3-3",
+      "q": 15,
+      "native_screen_decision": "defer_resolution",
+      "allocation_status": "deferred_defer_resolution",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q16-axial4-4",
+      "q": 16,
+      "native_screen_decision": "defer_slow",
+      "allocation_status": "deferred_defer_slow",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "broad",
+      "seed": "q16-trefoil32-2-4",
+      "q": 16,
+      "native_screen_decision": "defer_resolution",
+      "allocation_status": "deferred_defer_resolution",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "priority",
+      "seed": "q2-bent",
+      "q": 2,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "budget_exhausted_unresolved",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "priority",
+      "seed": "q5-axial5-1",
+      "q": 5,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "budget_exhausted_unresolved",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "priority",
+      "seed": "q6-axial6-1",
+      "q": 6,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "budget_exhausted_unresolved",
+      "whole_Q_rejected": false
+    },
+    {
+      "phase": "priority",
+      "seed": "q8-trefoil32-1-2",
+      "q": 8,
+      "native_screen_decision": "priority_continue",
+      "allocation_status": "budget_exhausted_unresolved",
+      "whole_Q_rejected": false
+    }
+  ],
+  "benchmark_reuse_basis": "Exact same CPU/D4/CUDA adapter, engine and branch function; same locks, environment, threads and device; original qualified geometries cover every fixed follow-up job. New selected fields additionally replayed on CPU and one disposable CPU/device continuation step. New commit changes selection/reporting only."
+}

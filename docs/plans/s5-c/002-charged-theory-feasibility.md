@@ -1,6 +1,6 @@
 # s5-c-002: Charged-theory feasibility follow-up
 
-Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
+Updated: UTC 2026-11-14T23:23:48.283541+00:00; Australia/Melbourne 2026-11-15T10:23:48.283541+11:00.
 
 State: **deferred**. Scientific gate: **blocked**. State records workflow progress, not a physical claim.
 

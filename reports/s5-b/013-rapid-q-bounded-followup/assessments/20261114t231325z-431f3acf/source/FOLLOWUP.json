@@ -1,0 +1,71 @@
+{
+  "format": "EFT-rapid-Q-followup-v1",
+  "length": 23.04,
+  "batch_steps": 50,
+  "total_additional_step_budget": 650,
+  "threads": 4,
+  "disk_reserve_gib": 8,
+  "memory_min_available_gib": 4,
+  "metric_replay_rtol": 1e-09,
+  "metric_replay_atol": 1e-12,
+  "motion_execution": false,
+  "automatic_mesh_refinement": false,
+  "jobs": [
+    {
+      "id": "q6-axial6-1",
+      "source": "screen",
+      "phase": "priority",
+      "priority": "primary",
+      "nodes": 97,
+      "additional_steps": 200
+    },
+    {
+      "id": "q4-axial22",
+      "source": "legacy",
+      "rest_id": "q4-axial22-medium-fresh",
+      "priority": "legacy-reassessment",
+      "nodes": 121,
+      "additional_steps": 100
+    },
+    {
+      "id": "q7-trefoil",
+      "source": "legacy",
+      "rest_id": "q7-trefoil-medium-fresh",
+      "priority": "legacy-reassessment",
+      "nodes": 121,
+      "additional_steps": 100
+    },
+    {
+      "id": "q8-trefoil32-1-2",
+      "source": "screen",
+      "phase": "priority",
+      "priority": "secondary",
+      "nodes": 121,
+      "additional_steps": 100
+    },
+    {
+      "id": "q5-trefoil32-1-1",
+      "source": "screen",
+      "phase": "broad",
+      "priority": "capacity-control",
+      "nodes": 97,
+      "additional_steps": 50
+    },
+    {
+      "id": "q9-trefoil32-3-1",
+      "source": "screen",
+      "phase": "broad",
+      "priority": "cutoff-control",
+      "nodes": 145,
+      "additional_steps": 50
+    },
+    {
+      "id": "q10-trefoil32-2-2",
+      "source": "screen",
+      "phase": "broad",
+      "priority": "cutoff-control",
+      "nodes": 145,
+      "additional_steps": 50
+    }
+  ]
+}
