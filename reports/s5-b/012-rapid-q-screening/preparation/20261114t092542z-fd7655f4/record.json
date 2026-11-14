@@ -1,0 +1,31 @@
+{
+  "study_id": "s5-b-012",
+  "record_id": "20261114t092542z-fd7655f4",
+  "role": "preparation",
+  "recorded_at": {
+    "utc": "2026-11-14T09:25:42.639934+00:00",
+    "melbourne": "2026-11-14T20:25:42.639934+11:00"
+  },
+  "source_commit": "baa9e4991365fc50a0d6509d65b7dfa489100493",
+  "outcome": "retrospective policy and host controls complete; production/CUDA pending",
+  "input_sha256": {
+    "policy": "aae0535a43f26a222ea88fcd6372b2662669615eefd9914a6a83e26bd6bc93f2",
+    "catalogue": "c67eea09cb7b3cd507179055bc47310f0aa6cf23c40d9f84a9e302ff84e66bc9",
+    "past_evidence": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+    "host_validation": "6ccca5f52f06e308d840d7f9dadeb98973fd71701c7d0493e8523b614e1fc186",
+    "bundled_gpu_adapter": "c6771c9a6bf69cbe3397ff8db718f4c10994a1025852d5159c3d45e589c18af3"
+  },
+  "model_and_units": "Neutral Skyrme-Faddeev D4 action, float64; dimensionless model units",
+  "commands": [
+    "bash RUN.sh verify",
+    "bash RUN.sh publish",
+    "bash RUN.sh merge",
+    "bash RUN.sh benchmark",
+    "bash RUN.sh run"
+  ],
+  "field_retention": "Original survey full fields remain in their local artifact directory; new full fields stay in the separate screening checkout.",
+  "limitations": [
+    "AI-assisted analysis and preparation, not scientific peer review",
+    "Retain all original failures; no physical acceptance implied"
+  ]
+}

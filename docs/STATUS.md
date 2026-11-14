@@ -1,6 +1,6 @@
 # Project status
 
-Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
+Updated: UTC 2026-11-14T09:25:42.642598+00:00; Australia/Melbourne 2026-11-14T20:25:42.642598+11:00.
 
 ## Current position
 
@@ -56,6 +56,7 @@ Original physical-mesh and observer-fit failures remain. Duration confirmation i
 | [s5-b-011](plans/s5-b/011-controlled-q-dependencies.md) | Controlled dependency transfer to Q2 Q3 and other Q results | prepared | open |
 | [s2-004](plans/s2/004-saved-state-observer-calibration.md) | Saved-state observer quadrature and alignment calibration | assessed | open |
 | [s2-005](plans/s2/005-cell-aware-spacing-measurements.md) | Cell-aware saved-state spacing measurements | prepared | open |
+| [s5-b-012](plans/s5-b/012-rapid-q-screening.md) | Bounded rapid Q2-Q16 static screening and conditional refinement | prepared | open |
 
 ## Claims and deferred work
 

@@ -1,0 +1,74 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T06:39:30.558676+00:00",
+    "melbourne": "2026-11-14T17:39:30.558676+11:00"
+  },
+  "status": "reduced_geometry_cpu_benchmark_smoke_passed",
+  "receipt": {
+    "recorded_at": {
+      "utc": "2026-11-14T06:39:30.558261+00:00",
+      "melbourne": "2026-11-14T17:39:30.558261+11:00"
+    },
+    "status": "backend_qualification_passed",
+    "requested_backend": "cpu",
+    "cuda_unavailable": null,
+    "cuda_dst_vs_scipy_max": null,
+    "cuda_identity": null,
+    "rows": [
+      {
+        "nodes": 33,
+        "results": {
+          "cpu": {
+            "mean_step_seconds": 0.09635335050006688,
+            "diagnostics_and_audit_seconds": 0.2464463340002112,
+            "checkpoint_seconds": 0.09740974700071092,
+            "estimated_50_step_three_observation_seconds": 5.8492357680061104,
+            "initial_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            },
+            "endpoint_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            }
+          }
+        },
+        "cpu_cuda_field_max_difference": null,
+        "estimated_speedup": null,
+        "selected_backend": "cpu"
+      },
+      {
+        "nodes": 41,
+        "results": {
+          "cpu": {
+            "mean_step_seconds": 0.1741077030001179,
+            "diagnostics_and_audit_seconds": 0.421882898000149,
+            "checkpoint_seconds": 0.19718066499990528,
+            "estimated_50_step_three_observation_seconds": 10.562575839006058,
+            "initial_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            },
+            "endpoint_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            }
+          }
+        },
+        "cpu_cuda_field_max_difference": null,
+        "estimated_speedup": null,
+        "selected_backend": "cpu"
+      }
+    ],
+    "scope": "50-step cost is an estimate from synchronized completed optimizer steps plus CPU audits and checkpoint timing; no whole-campaign speed promise"
+  },
+  "scope": "33/41 cubed, warm-up plus two timed steps, control-flow fixture only; no production timings, no CUDA"
+}

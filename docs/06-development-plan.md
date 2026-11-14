@@ -1,6 +1,6 @@
 # Staged development plan
 
-Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
+Updated: UTC 2026-11-14T09:25:42.642598+00:00; Australia/Melbourne 2026-11-14T20:25:42.642598+11:00.
 
 This is the current roadmap, generated from [the project register](project/roadmap.json). Study state and scientific acceptance are separate. An assessed run can retain an open or blocked gate.
 
@@ -31,12 +31,13 @@ Registered administrative activities are assessed. The next scientific task is *
 ## Ordered work and dependencies
 
 1. [s2-005: Cell-aware saved-state spacing measurements](plans/s2/005-cell-aware-spacing-measurements.md) — Run the registered anchor checks, then all 16 Hopfion and nine packet states if the common contract passes. Refit descriptively and reserve fresh physical validation separately.
-2. [s5-b-011: Controlled dependency transfer to Q2 Q3 and other Q results](plans/s5-b/011-controlled-q-dependencies.md) — After Maxwell spacing assessment, qualify Q2 then measure one Q3 variable with fresh validation. Run the supplied Qx audit now without new SF evolution or altered gates.
-3. [s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md) — Apply the separately registered controlled Q-dependency transfer; preserve all earlier preparation, admission and motion outcomes.
-4. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Keep Q2 numerical/physical-mesh/domain controls available alongside the authorized S5-B-010 fresh-candidate survey. A failed short reference blocks that survey. Q1 correction stays parked; do not repeat completed temporal work without a diagnostic reason.
-5. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Retain higher-Q endpoints for conditional stationary-only diagnosis after Q2 numerical controls: additional same-grid preparation versus finer readmission, with original-source and warm-start controls. Require strict stationarity and boosted boundary admission before fresh motion; no automatic expensive rerun. Q1 stays parked.
-6. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
-7. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Use the S5-B-010 assessment to select a bounded next set, including Q5/Q6 links or Q8 if informative. Preserve Q18 conditioning follow-up; do not start an unrestricted catalogue.
+2. [s5-b-012: Bounded rapid Q2-Q16 static screening and conditional refinement](plans/s5-b/012-rapid-q-screening.md) — Leave the active measurement analysis untouched. On the workstation, qualify/time the D4 static CPU/CUDA engines, then run the isolated bounded Q2-Q16 funnel and review deferrals and conditional motion follow-ups.
+3. [s5-b-011: Controlled dependency transfer to Q2 Q3 and other Q results](plans/s5-b/011-controlled-q-dependencies.md) — After Maxwell spacing assessment, qualify Q2 then measure one Q3 variable with fresh validation. Run the supplied Qx audit now without new SF evolution or altered gates.
+4. [s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion](plans/s5-b/010-intermediate-q-survey.md) — Apply the separately registered controlled Q-dependency transfer; preserve all earlier preparation, admission and motion outcomes.
+5. [s5-b-006: Focused motion, mesh and domain convergence](plans/s5-b/006-focused-motion-convergence.md) — Keep Q2 numerical/physical-mesh/domain controls available alongside the authorized S5-B-010 fresh-candidate survey. A failed short reference blocks that survey. Q1 correction stays parked; do not repeat completed temporal work without a diagnostic reason.
+6. [s5-b-007: Q17/Q19 motion comparison](plans/s5-b/007-higher-q-motion.md) — Retain higher-Q endpoints for conditional stationary-only diagnosis after Q2 numerical controls: additional same-grid preparation versus finer readmission, with original-source and warm-start controls. Require strict stationarity and boosted boundary admission before fresh motion; no automatic expensive rerun. Q1 stays parked.
+7. [s5-a-004: Q18 fresh fine-start and conditioning follow-up](plans/s5-a/004-q18-fresh-starts.md) — Return after the low-Q/higher-Q dynamics tranche; predeclare independent starts, topology and energy comparisons.
+8. [s5-a-005: Additional-Q controls](plans/s5-a/005-additional-q.md) — Use the S5-B-010 assessment to select a bounded next set, including Q5/Q6 links or Q8 if informative. Preserve Q18 conditioning follow-up; do not start an unrestricted catalogue.
 
 ## Parallel and conditional work
 

@@ -1,6 +1,6 @@
 # s5-a-004: Q18 fresh fine-start and conditioning follow-up
 
-Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
+Updated: UTC 2026-11-14T09:25:42.642598+00:00; Australia/Melbourne 2026-11-14T20:25:42.642598+11:00.
 
 State: **planned**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
