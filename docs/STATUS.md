@@ -1,14 +1,14 @@
 # Project status
 
-Updated: UTC 2026-11-14T09:25:42.642598+00:00; Australia/Melbourne 2026-11-14T20:25:42.642598+11:00.
+Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
 
 ## Current position
 
-Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s2-004**, Saved-state observer quadrature and alignment calibration. Administrative progress is recorded in the study register below; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-012**, Bounded rapid Q2-Q16 static screening and conditional refinement. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-Six-state observer calibration assessed: primary cell-aware evolution is stable, but joint uniform-observer and curve checks remain partly unresolved. Next: confirm higher-order anchors and remeasure existing spacing states consistently before revised physical prediction checks.
+30 variants over Q2-Q16; seven prior states reused; four branches extended; no newly stationary survivor or motion. CUDA controls passed. Coarsest unresolved reuse masked better medium Q4/Q7 endpoints; capacity and exhausted budgets need explicit reporting.
 
-Original physical-mesh and observer-fit failures remain. Duration confirmation is separate. No new physical evolution or SF admission. Q1 parked; Q2 reference; Q4/Q7 preparation/admission unresolved; Q2/Q3 inventory may progress separately.
+Compact evidence assessed; local full-field replay and bounded continuation pending. No new stationary candidate, spatial/domain closure, motion, electric charge or quantum spin claim.
 
 ## Next scientific task
 
@@ -56,7 +56,8 @@ Original physical-mesh and observer-fit failures remain. Duration confirmation i
 | [s5-b-011](plans/s5-b/011-controlled-q-dependencies.md) | Controlled dependency transfer to Q2 Q3 and other Q results | prepared | open |
 | [s2-004](plans/s2/004-saved-state-observer-calibration.md) | Saved-state observer quadrature and alignment calibration | assessed | open |
 | [s2-005](plans/s2/005-cell-aware-spacing-measurements.md) | Cell-aware saved-state spacing measurements | prepared | open |
-| [s5-b-012](plans/s5-b/012-rapid-q-screening.md) | Bounded rapid Q2-Q16 static screening and conditional refinement | prepared | open |
+| [s5-b-012](plans/s5-b/012-rapid-q-screening.md) | Bounded rapid Q2-Q16 static screening and conditional refinement | assessed | open |
+| [s5-b-013](plans/s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | prepared | open |
 
 ## Claims and deferred work
 

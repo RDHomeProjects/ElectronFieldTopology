@@ -1,0 +1,33 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T12:46:07.965173+00:00",
+    "melbourne": "2026-11-14T23:46:07.965173+11:00"
+  },
+  "status": "passed",
+  "fixture_base": "4e4dbc9ebe64c812ea864109d28e084fe85b2ec1",
+  "network_failure_retry_same_marked_clone": true,
+  "all_git_operations_local": true,
+  "live_github_contacted": false,
+  "exact_repeated_install": true,
+  "source_checkout_unchanged": true,
+  "active_unrelated_priority_preserved": true,
+  "completed_screen_recorded_as_latest_assessment": true,
+  "required_ancestor_override": "Only the synthetic local fixture base was substituted in test memory; production settings unchanged.",
+  "checks": [
+    [
+      "scripts/project_records.py",
+      "check",
+      "--compare-ref",
+      "4e4dbc9ebe64c812ea864109d28e084fe85b2ec1"
+    ],
+    [
+      "scripts/check_docs.py"
+    ],
+    [
+      "diff",
+      "--check"
+    ]
+  ],
+  "host_tests": "Direct invocation with host NumPy/SciPy; frozen uv pytest remains required on zbook",
+  "cuda_executed": false
+}
