@@ -1,0 +1,719 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T06:38:05.374223+00:00",
+    "melbourne": "2026-11-14T17:38:05.374223+11:00"
+  },
+  "source_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+  "status": "retrospective_policy_replay_complete",
+  "rows": [
+    {
+      "rest_id": "q2-reference",
+      "q": 2,
+      "seed_id": "q2-reference",
+      "level": "reference",
+      "early_iteration": 0,
+      "force_ratio": 1.0,
+      "early_decision": "boundary_followup",
+      "later_native_status": "stationary",
+      "later_stationary": true,
+      "early_trend": {
+        "models": [],
+        "scope": "insufficient observations"
+      }
+    },
+    {
+      "rest_id": "q3-axial-coarse-fresh",
+      "q": 3,
+      "seed_id": "q3-axial",
+      "level": "coarse",
+      "early_iteration": 50,
+      "force_ratio": 0.007106286107116271,
+      "early_decision": "priority_continue",
+      "later_native_status": "stationary",
+      "later_stationary": true,
+      "early_trend": {
+        "models": [
+          {
+            "model": "constant",
+            "coefficients": [
+              0.3692831198057223
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.5709447292840532
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.22464434102694475,
+              -4.946775519441746
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 3.3533563855228823
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q3-bent-coarse-fresh",
+      "q": 3,
+      "seed_id": "q3-bent",
+      "level": "coarse",
+      "early_iteration": 50,
+      "force_ratio": 0.007627761719427782,
+      "early_decision": "priority_continue",
+      "later_native_status": "preparation_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.16797933955795552,
+              -4.87596082935277
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.16422291412996193
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.32414689858333107
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.6123564512373543
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q4-axial41-coarse-fresh",
+      "q": 4,
+      "seed_id": "q4-axial41",
+      "level": "coarse",
+      "early_iteration": 50,
+      "force_ratio": 0.017342833530734895,
+      "early_decision": "priority_continue",
+      "later_native_status": "preparation_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.08735304978729924,
+              -4.054575910902729
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.10165964730929945
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.35911177814874545
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.6275759613211511
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q4-axial22-coarse-fresh",
+      "q": 4,
+      "seed_id": "q4-axial22",
+      "level": "coarse",
+      "early_iteration": 50,
+      "force_ratio": 0.03375786301445512,
+      "early_decision": "priority_continue",
+      "later_native_status": "topology_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.1955855853267749,
+              -3.3885419105927284
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.13730932075851998
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.32619632981964913
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.49612932969719015
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q7-axial-coarse-fresh",
+      "q": 7,
+      "seed_id": "q7-axial",
+      "level": "coarse",
+      "early_iteration": 50,
+      "force_ratio": 0.07736322463862748,
+      "early_decision": "defer_slow",
+      "later_native_status": "stationarity_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.6514746730230303,
+              -2.5592437451661807
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.6460183121437798
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.4041777211393847
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.7333759731832028
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q7-trefoil-coarse-fresh",
+      "q": 7,
+      "seed_id": "q7-trefoil",
+      "level": "coarse",
+      "early_iteration": 50,
+      "force_ratio": 0.10982495170057607,
+      "early_decision": "defer_slow",
+      "later_native_status": "topology_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.6579916441815759,
+              -2.2088675289057207
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.38600098637714503
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.30041278930208687
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.4613282261690303
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q3-axial-medium-fresh",
+      "q": 3,
+      "seed_id": "q3-axial",
+      "level": "medium",
+      "early_iteration": 50,
+      "force_ratio": 0.0039189653058149905,
+      "early_decision": "priority_continue",
+      "later_native_status": "stationary",
+      "later_stationary": true,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.0130677699187004,
+              -5.5419276126196015
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.22517552031769325
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.3347358814310357
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.6338525425647598
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q3-axial-medium-warm",
+      "q": 3,
+      "seed_id": "q3-axial",
+      "level": "medium",
+      "early_iteration": 50,
+      "force_ratio": 0.0022221224480636873,
+      "early_decision": "priority_continue",
+      "later_native_status": "stationary",
+      "later_stationary": true,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -2.3238340550234624,
+              -6.109292482143668
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.026377032084393508
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.03714754970108052
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.07451198057519157
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q3-axial-fine-fresh",
+      "q": 3,
+      "seed_id": "q3-axial",
+      "level": "fine",
+      "early_iteration": 50,
+      "force_ratio": 0.004577211489475411,
+      "early_decision": "priority_continue",
+      "later_native_status": "stationary",
+      "later_stationary": true,
+      "early_trend": {
+        "models": [
+          {
+            "model": "constant",
+            "coefficients": [
+              0.3571602896043246
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.6297053788758143
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.15495764241377818,
+              -5.386665311370191
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 1.3735434481623472
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q3-axial-fine-warm",
+      "q": 3,
+      "seed_id": "q3-axial",
+      "level": "fine",
+      "early_iteration": 50,
+      "force_ratio": 0.0012937800885267055,
+      "early_decision": "boundary_followup",
+      "later_native_status": "stationary",
+      "later_stationary": true,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -2.7288193449060887,
+              -6.593607050713114
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.016943051980691206
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.06050851593831255,
+              -0.06671943776882121
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.0396261104043992
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.018808867332799295
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.04182028385398668
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q3-axial-domain-warm",
+      "q": 3,
+      "seed_id": "q3-axial",
+      "level": "domain",
+      "early_iteration": 50,
+      "force_ratio": 0.00592171322307209,
+      "early_decision": "priority_continue",
+      "later_native_status": "stationary",
+      "later_stationary": true,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -4.0249543387909865,
+              -5.129129476163902
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.00641194971164296
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.00718183148197128
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.013997080443923912
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q4-axial41-medium-fresh",
+      "q": 4,
+      "seed_id": "q4-axial41",
+      "level": "medium",
+      "early_iteration": 50,
+      "force_ratio": 0.020177906770828567,
+      "early_decision": "priority_continue",
+      "later_native_status": "stationary",
+      "later_stationary": true,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.060709352981009254,
+              -3.9031669973441905
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.14260899614734018
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.37620110662624
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.651035281876487
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q4-axial22-medium-fresh",
+      "q": 4,
+      "seed_id": "q4-axial22",
+      "level": "medium",
+      "early_iteration": 50,
+      "force_ratio": 0.043921088840209184,
+      "early_decision": "priority_continue",
+      "later_native_status": "preparation_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.1975128901445943,
+              -3.1253606906444227
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.06350463939608215
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.33942583769699575
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.5000853917999343
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q4-axial41-fine-fresh",
+      "q": 4,
+      "seed_id": "q4-axial41",
+      "level": "fine",
+      "early_iteration": 50,
+      "force_ratio": 0.032320978385011,
+      "early_decision": "priority_continue",
+      "later_native_status": "preparation_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.050350882541188705,
+              -3.4320387739739657
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.16328365892076271
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.39670376352403197
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.6488213199428492
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q4-axial41-fine-warm",
+      "q": 4,
+      "seed_id": "q4-axial41",
+      "level": "fine",
+      "early_iteration": 50,
+      "force_ratio": 0.008108778951475349,
+      "early_decision": "priority_continue",
+      "later_native_status": "preparation_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -3.3111910402357836,
+              -4.814807983044078
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.02491797197836048
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.01749222383685682
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.0348546100122627
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q7-axial-medium-fresh",
+      "q": 7,
+      "seed_id": "q7-axial",
+      "level": "medium",
+      "early_iteration": 50,
+      "force_ratio": 0.09733776341530839,
+      "early_decision": "defer_slow",
+      "later_native_status": "preparation_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.40979759969249074,
+              -2.3295682518768808
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.6668402217515528
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.4449856594583781
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.7526216070728652
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    },
+    {
+      "rest_id": "q7-trefoil-medium-fresh",
+      "q": 7,
+      "seed_id": "q7-trefoil",
+      "level": "medium",
+      "early_iteration": 50,
+      "force_ratio": 0.09680835940892066,
+      "early_decision": "defer_slow",
+      "later_native_status": "preparation_unresolved",
+      "later_stationary": false,
+      "early_trend": {
+        "models": [
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.5306199947158723,
+              -2.3350219308980313
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.3523436471438473
+          },
+          {
+            "model": "constant",
+            "coefficients": [
+              0.31411149668732535
+            ],
+            "origin": 0.0,
+            "scale": 50.0,
+            "loo_rmse": 0.472301688566916
+          }
+        ],
+        "scope": "Retrospective/descriptive relaxation trend; no terminal prediction validation or physical-time fit"
+      }
+    }
+  ],
+  "motion_outcomes": [
+    {
+      "case_id": "q2-reference-dt0.01",
+      "native_status": "screen_pass",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+      "native_status": "screen_failed",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+      "native_status": "screen_pass",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+      "native_status": "screen_failed",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-rest-dt0.01",
+      "native_status": "screen_pass",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-medium-warm-z-dt0.01",
+      "native_status": "screen_failed",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-rest-dt0.01",
+      "native_status": "screen_pass",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.01",
+      "native_status": "screen_failed",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.02",
+      "native_status": "screen_failed",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-z-dt0.005",
+      "native_status": "screen_failed",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-fine-warm-x-dt0.01",
+      "native_status": "screen_pass",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q3-axial-domain-warm-z-dt0.01",
+      "native_status": "screen_pass",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q4-axial41-medium-fresh-screen-dt0.01",
+      "native_status": "admission_rejected",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q4-axial41-medium-fresh-rest-dt0.01",
+      "native_status": "admission_rejected",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    },
+    {
+      "case_id": "q4-axial41-medium-fresh-z-dt0.01",
+      "native_status": "admission_rejected",
+      "scope": "Outcome retained; static screen does not predict motion success"
+    }
+  ],
+  "count": 18,
+  "stationary_later": 8,
+  "stationary_retained": 8,
+  "priority_count": 14,
+  "priority_stationary_later": 8,
+  "hard_Q_rejections": 0,
+  "caveats": [
+    "All these records were previously inspected; this is policy engineering, not independent validation.",
+    "Unresolved endpoints are censored, not proven physical negatives.",
+    "Multiple grids share Q/seed ancestry; rows are not independent trials.",
+    "Early priority does not certify stationarity, boundary admission or future motion."
+  ]
+}

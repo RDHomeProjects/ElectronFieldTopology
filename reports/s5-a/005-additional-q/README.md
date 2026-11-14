@@ -1,6 +1,6 @@
 # s5-a-005: Additional-Q controls — evidence index
 
-Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
+Updated: UTC 2026-11-14T09:25:42.642598+00:00; Australia/Melbourne 2026-11-14T20:25:42.642598+11:00.
 
 [Current study plan](../../../docs/plans/s5-a/005-additional-q.md). State: planned; scientific gate: open.
 

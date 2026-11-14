@@ -1,0 +1,19 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T06:38:51.869193+00:00",
+    "melbourne": "2026-11-14T17:38:51.869193+11:00"
+  },
+  "status": "passed",
+  "source_fixture_commit": "50afada05e8d98d5f68e112069c54ec13aa3982b",
+  "active_priority_preserved": true,
+  "latest_assessment_preserved": true,
+  "checks": [
+    "project_records.py render",
+    "project_records.py check --compare-ref full-base",
+    "check_docs.py",
+    "git diff --check",
+    "published tests via direct invocation"
+  ],
+  "github_contacted": false,
+  "limits": "Local publication payload/render/layout/immutable-record checks only. Real workstation git fetch/gh PR/checks/merge remain pending."
+}
