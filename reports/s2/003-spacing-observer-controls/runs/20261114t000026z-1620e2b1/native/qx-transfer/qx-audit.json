@@ -1,0 +1,890 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T00:56:08.367263+00:00",
+    "melbourne": "2026-11-14T11:56:08.367263+11:00"
+  },
+  "source_evidence_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+  "source_run": "20261109t134425z-89d28344",
+  "source_commit": "bae639dc700c5653cb4bfb2738608795b37da641",
+  "case_count": 15,
+  "original_status_counts": {
+    "screen_pass": 6,
+    "screen_failed": 6,
+    "admission_rejected": 3
+  },
+  "temporal_groups": [
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.3,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.01,
+        "grid": [
+          127,
+          127,
+          135
+        ],
+        "initial_state_sha256": "1f5e81b5f83c60764feecd6a4fc10713e2739a1c9cbfe35e32b8c7882c343430",
+        "lengths": [
+          20.16,
+          20.16,
+          20.16
+        ],
+        "measurement_time": 0.2,
+        "q": 2,
+        "rest_id": "q2-reference",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q2-reference-dt0.01",
+          "dt": 0.01,
+          "speed_error": 0.00844998407201462,
+          "shape_error": 0.002096233490935528,
+          "status": "screen_pass",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": true,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.3,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.01,
+        "grid": [
+          97,
+          97,
+          103
+        ],
+        "initial_state_sha256": "1dd7e725abf19a77f796852813c4b63250d62de8021ebc389d3c437a699879e1",
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "measurement_time": 0.2,
+        "q": 3,
+        "rest_id": "q3-axial-coarse-fresh",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-coarse-fresh-screen-dt0.01",
+          "dt": 0.01,
+          "speed_error": 0.023477485764637512,
+          "shape_error": 0.004311816424734984,
+          "status": "screen_failed",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": false,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.0,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.01,
+        "grid": [
+          97,
+          97,
+          97
+        ],
+        "initial_state_sha256": "8591fc6698ecd5f99d0f27afea38b72f718d4ece026d1805f176766270da4efb",
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "measurement_time": 0.2,
+        "q": 3,
+        "rest_id": "q3-axial-coarse-fresh",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-coarse-fresh-rest-dt0.01",
+          "dt": 0.01,
+          "speed_error": null,
+          "shape_error": 1.1377883498920078e-06,
+          "status": "screen_pass",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": true,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.3,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.02,
+        "grid": [
+          97,
+          97,
+          103
+        ],
+        "initial_state_sha256": "1dd7e725abf19a77f796852813c4b63250d62de8021ebc389d3c437a699879e1",
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "measurement_time": 0.2,
+        "q": 3,
+        "rest_id": "q3-axial-coarse-fresh",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-coarse-fresh-z-dt0.01",
+          "dt": 0.01,
+          "speed_error": 0.023478032653799327,
+          "shape_error": 0.004311816424734984,
+          "status": "screen_failed",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": false,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.0,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.01,
+        "grid": [
+          121,
+          121,
+          121
+        ],
+        "initial_state_sha256": "c302ef2856c26d6572dc8d34f21e072e99dc74ccba71444247a6fa2fe6f18dc7",
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "measurement_time": 0.2,
+        "q": 3,
+        "rest_id": "q3-axial-medium-warm",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-medium-warm-rest-dt0.01",
+          "dt": 0.01,
+          "speed_error": null,
+          "shape_error": 1.1205951977958243e-06,
+          "status": "screen_pass",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": true,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.3,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.02,
+        "grid": [
+          121,
+          121,
+          127
+        ],
+        "initial_state_sha256": "4e6ac80d97060ff160c40551f402a481edc7e0068d732116af97f4188a08054d",
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "measurement_time": 0.2,
+        "q": 3,
+        "rest_id": "q3-axial-medium-warm",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-medium-warm-z-dt0.01",
+          "dt": 0.01,
+          "speed_error": 0.0177097732586684,
+          "shape_error": 0.003115464850059021,
+          "status": "screen_failed",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": false,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.0,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.01,
+        "grid": [
+          145,
+          145,
+          145
+        ],
+        "initial_state_sha256": "9554fb862c747124ae59a8143650c0fec6fd361f034d2be8b0467d72c43cd948",
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "measurement_time": 0.2,
+        "q": 3,
+        "rest_id": "q3-axial-fine-warm",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-fine-warm-rest-dt0.01",
+          "dt": 0.01,
+          "speed_error": null,
+          "shape_error": 1.1911732651121025e-06,
+          "status": "screen_pass",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": true,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.3,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.02,
+        "grid": [
+          145,
+          145,
+          153
+        ],
+        "initial_state_sha256": "7ea700c9fdcf63fc95682f556ed6127151be3e81036f56bbb9b0b8dededb0e90",
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "measurement_time": 0.2,
+        "q": 3,
+        "rest_id": "q3-axial-fine-warm",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-fine-warm-z-dt0.005",
+          "dt": 0.005,
+          "speed_error": 0.010573217131284063,
+          "shape_error": 0.0023111954487997554,
+          "status": "screen_failed",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": false,
+            "topology": true,
+            "tail": true
+          }
+        },
+        {
+          "case_id": "q3-axial-fine-warm-z-dt0.01",
+          "dt": 0.01,
+          "speed_error": 0.01057321720341765,
+          "shape_error": 0.002311195433491886,
+          "status": "screen_failed",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": false,
+            "topology": true,
+            "tail": true
+          }
+        },
+        {
+          "case_id": "q3-axial-fine-warm-z-dt0.02",
+          "dt": 0.02,
+          "speed_error": 0.010573218353886775,
+          "shape_error": 0.002311195176895054,
+          "status": "screen_failed",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": false,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 3,
+      "dependency_status": "descriptive_only",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 0,
+        "beta": 0.3,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.01,
+        "grid": [
+          153,
+          145,
+          145
+        ],
+        "initial_state_sha256": "9303dc15bb51241574c72cdb694506b274a1c539485d9a5052b5a74f14893fbd",
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "measurement_time": 0.2,
+        "q": 3,
+        "rest_id": "q3-axial-fine-warm",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-fine-warm-x-dt0.01",
+          "dt": 0.01,
+          "speed_error": 0.00819693888253592,
+          "shape_error": 0.002656546421920632,
+          "status": "screen_pass",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": true,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    },
+    {
+      "fixed": {
+        "axis": 2,
+        "beta": 0.3,
+        "boundary": "fixed",
+        "diagnostic_model_interval": 0.02,
+        "grid": [
+          169,
+          169,
+          179
+        ],
+        "initial_state_sha256": "deedf9abb7664153b7761c1d4a92f92384f5db7c19bad65ea8fc51cefa3c01a2",
+        "lengths": [
+          26.88,
+          26.88,
+          26.88
+        ],
+        "measurement_time": 0.5,
+        "q": 3,
+        "rest_id": "q3-axial-domain-warm",
+        "source_sha256": {
+          "knot_diagram.py": "d6933648a3f38fc4fbf22eb2ac24c2187dddc54cf11b85e6069e9e99fdf793da",
+          "sf_boost_study.py": "069774cc820af81c7cbd31bd8c2c674018807be3c052242ea85ad9e31a33e8a9",
+          "sf_candidate_local.py": "f4773f95621d40a07230ce98dbf692fcacc95096215fa59e6e728c02ef45bd37",
+          "sf_candidate_motion.py": "0626fb05f0a3688f7d017e918f4ccbc29ccde049be440a294514aeeb355452f9",
+          "sf_candidate_replay.py": "1fd715768a6b16acbd364d6839dc43f88b65eed7fc0f9b78312a5ff3bc98ffb5",
+          "sf_candidate_seeds.py": "fc48154dc4cd82f5370f4f4615abfbe706257c0d642c77da2aa411c6e1ce9d44",
+          "sf_candidate_survey.py": "fbef8514c019c101437fd62d4c447c5ab987c717219b402b2d1ea058fb7b1771",
+          "sf_checkpoints.py": "76e534fc7cf9f332b465a151d85169e0c55eae3405cf05f9521537316f1b845d",
+          "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+          "sf_dynamics_admission.py": "e5b375b6867b122e70457178955e931fda4ff6ea5749089e1bde1a1143de8ba5",
+          "sf_focused_motion.py": "74f1f2442e7e48e949e0c323db3b8f86c16f344eecc2e7a6dd8a35192eee0a2e",
+          "sf_higher_q.py": "42dd84f18a515876305454583aa1e01a802ad72e16c6c7650431a57c0060ebf0",
+          "sf_higher_q_local.py": "f178b5885448446848195f3f86bb13dee6e688ad00ab7a3af3fc4fd357ba3c8e",
+          "sf_higher_q_sources.py": "51f83a1867f60442c2ad43374cc4cb37776d2d28474c31009d75ce0313153ea1",
+          "sf_motion_diagnostics.py": "94d98869ba2df0a505001dc64daa6833f495630e9aab5d7be4f731da60cd8936",
+          "sf_motion_local.py": "c719dcc34bee12143fc5bd0d3205d8b9d27c8aa531163c93864117f93863fb2a",
+          "sf_motion_metrics.py": "eb9bf8ed06f378b486835e33397352707b79b7c6fb347192fc25148b7e05cb5a",
+          "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+          "sf_q1_metrics.py": "a9b93c2ec87faa831753e28eabe0da88ebf970d102c052633e662a6ef59f4adc",
+          "sf_q1_settling.py": "4a9d0a9e91b7a21abe927c2466c6e37472d3a1d0e9fd7330cb11fa3a474119e4",
+          "sf_readmission.py": "02290951928a08f328d6dffefeaf353710199de8e1499bfa1b1555cb092b293b",
+          "sf_reconstruction.py": "98efcdc6f8d09a75830f21993e7acb2a2af6ddb6dfb0d9d0742733f909487582",
+          "sf_tail_domain.py": "b8a6c0b054fdd5ba6ad159e16c72aa6e3c8328f35533901fe80419f15ddfed3b",
+          "sf_temporal.py": "bd71c107bcb7f2cb9e0194d62f2606b5768a94a2d8f6e46dc29051c96da51bf1",
+          "sf_temporal_local.py": "24a7af6e7aea19e7da8a7c6fa4b0533ba2d22ba2afeed4ef2ac0d94f7253843f",
+          "sf_temporal_metrics.py": "c9581452bcbb33c7884e6d284e30ea8a67ebb8ed2e9933444c34317a49101dad",
+          "sf_temporal_run.py": "0863578f9e540e994d67cd87978b7bb8b7667351ba991c9dd7c6952381b89d1f",
+          "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+          "sf_time_controls.py": "c925a06ec71ead8a45d370eabf23a46292c6de435fe6c5bb5671d1eec48e246b",
+          "sf_time_initial.py": "cb45f829b49f4610b8576c1cad55699975d72c17d3548909d762b59de7af9949",
+          "sf_time_run.py": "bf7507464b4b4fcb2612fb769362d788331b8d6296995ac854dab866477bf714",
+          "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+          "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+        }
+      },
+      "active_variable": "dt",
+      "rows": [
+        {
+          "case_id": "q3-axial-domain-warm-z-dt0.01",
+          "dt": 0.01,
+          "speed_error": 0.009672171138313245,
+          "shape_error": 0.0016081555657762702,
+          "status": "screen_pass",
+          "original_checks": {
+            "energy": true,
+            "momentum": true,
+            "constraints": true,
+            "shape": true,
+            "speed": true,
+            "topology": true,
+            "tail": true
+          }
+        }
+      ],
+      "distinct_levels": 1,
+      "dependency_status": "insufficient_levels",
+      "validated_fit": false,
+      "reason": "Existing points have been reviewed; no fresh reserved validation, and at least six to seven controlled levels are needed for competing-curve validation."
+    }
+  ],
+  "admission_exclusions": [
+    {
+      "id": "q4-axial41-medium-fresh-screen-dt0.01",
+      "q": 4,
+      "status": "admission_rejected",
+      "reason": "No admitted trajectory/compatible motion metric; original outcome retained"
+    },
+    {
+      "id": "q4-axial41-medium-fresh-rest-dt0.01",
+      "q": 4,
+      "status": "admission_rejected",
+      "reason": "No admitted trajectory/compatible motion metric; original outcome retained"
+    },
+    {
+      "id": "q4-axial41-medium-fresh-z-dt0.01",
+      "q": 4,
+      "status": "admission_rejected",
+      "reason": "No admitted trajectory/compatible motion metric; original outcome retained"
+    }
+  ],
+  "rest_statuses": {
+    "q2-reference": "stationary",
+    "q3-axial-coarse-fresh": "stationary",
+    "q3-bent-coarse-fresh": "preparation_unresolved",
+    "q4-axial41-coarse-fresh": "preparation_unresolved",
+    "q4-axial22-coarse-fresh": "topology_unresolved",
+    "q7-axial-coarse-fresh": "stationarity_unresolved",
+    "q7-trefoil-coarse-fresh": "topology_unresolved",
+    "q3-axial-medium-fresh": "stationary",
+    "q3-axial-medium-warm": "stationary",
+    "q3-axial-fine-fresh": "stationary",
+    "q3-axial-fine-warm": "stationary",
+    "q3-axial-domain-warm": "stationary",
+    "q4-axial41-medium-fresh": "stationary",
+    "q4-axial22-medium-fresh": "preparation_unresolved",
+    "q4-axial41-fine-fresh": "preparation_unresolved",
+    "q4-axial41-fine-warm": "preparation_unresolved",
+    "q7-axial-medium-fresh": "preparation_unresolved",
+    "q7-trefoil-medium-fresh": "preparation_unresolved"
+  },
+  "scope": "Read-only application of matching, provenance and identifiability rules to existing Qx results. No new physical time step, admission decision, changed gate or certified fit. Q1 parked; Q2 reference; Q3 controlled temporal and mesh measurements need their own study; Q4/Q7 preparation/admission exclusions retained."
+}

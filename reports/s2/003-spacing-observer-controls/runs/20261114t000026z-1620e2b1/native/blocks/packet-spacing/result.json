@@ -1,0 +1,275 @@
+{
+  "id": "packet-spacing",
+  "variable": "spacing",
+  "response": "evolution_observed_error",
+  "development": [
+    {
+      "level": 49,
+      "x": 0.16326530612244897,
+      "y": 0.0016016971434028144,
+      "role": "seed_development",
+      "case_id": "f4fce6dbc2633c32",
+      "measured_at": {
+        "utc": "2026-11-14T00:39:46.364262+00:00",
+        "melbourne": "2026-11-14T11:39:46.364262+11:00"
+      },
+      "variable": "spacing"
+    },
+    {
+      "level": 65,
+      "x": 0.12307692307692308,
+      "y": 0.0009133516966052495,
+      "role": "seed_development",
+      "case_id": "0066b77afe2c8926",
+      "measured_at": {
+        "utc": "2026-11-14T00:39:47.173168+00:00",
+        "melbourne": "2026-11-14T11:39:47.173168+11:00"
+      },
+      "variable": "spacing"
+    },
+    {
+      "level": 97,
+      "x": 0.08247422680412371,
+      "y": 0.0004109633929862827,
+      "role": "seed_development",
+      "case_id": "88c6bae489c8b89b",
+      "measured_at": {
+        "utc": "2026-11-14T00:41:10.352866+00:00",
+        "melbourne": "2026-11-14T11:41:10.352866+11:00"
+      },
+      "variable": "spacing"
+    },
+    {
+      "level": 129,
+      "x": 0.06201550387596899,
+      "y": 0.00023252584761145094,
+      "role": "seed_development",
+      "case_id": "452b8d421a3657f2",
+      "measured_at": {
+        "utc": "2026-11-14T00:44:58.671841+00:00",
+        "melbourne": "2026-11-14T11:44:58.671841+11:00"
+      },
+      "variable": "spacing"
+    },
+    {
+      "level": 77,
+      "x": 0.1038961038961039,
+      "y": 0.000651502819422746,
+      "role": "adaptive_development",
+      "case_id": "732fab177a345cd9",
+      "measured_at": {
+        "utc": "2026-11-14T00:45:34.941020+00:00",
+        "melbourne": "2026-11-14T11:45:34.941020+11:00"
+      },
+      "variable": "spacing"
+    },
+    {
+      "level": 55,
+      "x": 0.14545454545454545,
+      "y": 0.0012733238027348554,
+      "role": "adaptive_development",
+      "case_id": "31da5d11d9a6e78a",
+      "measured_at": {
+        "utc": "2026-11-14T00:45:46.113864+00:00",
+        "melbourne": "2026-11-14T11:45:46.113864+11:00"
+      },
+      "variable": "spacing"
+    }
+  ],
+  "validation": [
+    {
+      "level": 57,
+      "x": 0.14035087719298245,
+      "y": 0.0011859356571404572,
+      "role": "fresh_validation",
+      "case_id": "df3cb8f32d8a0f69",
+      "measured_at": {
+        "utc": "2026-11-14T00:45:58.856522+00:00",
+        "melbourne": "2026-11-14T11:45:58.856522+11:00"
+      },
+      "variable": "spacing"
+    },
+    {
+      "level": 81,
+      "x": 0.09876543209876543,
+      "y": 0.0005889060763960298,
+      "role": "fresh_validation",
+      "case_id": "d22f08eb92aedaf5",
+      "measured_at": {
+        "utc": "2026-11-14T00:46:42.443265+00:00",
+        "melbourne": "2026-11-14T11:46:42.443265+11:00"
+      },
+      "variable": "spacing"
+    },
+    {
+      "level": 113,
+      "x": 0.07079646017699115,
+      "y": 0.0003029482726448627,
+      "role": "fresh_validation",
+      "case_id": "056ba81b7910a1db",
+      "measured_at": {
+        "utc": "2026-11-14T00:49:07.816053+00:00",
+        "melbourne": "2026-11-14T11:49:07.816053+11:00"
+      },
+      "variable": "spacing"
+    }
+  ],
+  "models": [
+    {
+      "model": "cubic",
+      "origin": 0.06201550387596899,
+      "scale": 0.10124980224647998,
+      "coefficients": [
+        0.00023252969922050632,
+        0.0007579200534376252,
+        0.000620687403702403,
+        -9.450171031922841e-06
+      ],
+      "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+      "development_loo_rmse": 1.1377074383437694e-07,
+      "development_max_residual": 6.559498855456675e-08,
+      "validation_rmse": 8.732114846814731e-08,
+      "validation_max_abs_error": 1.438514102142241e-07
+    },
+    {
+      "model": "offset_power",
+      "origin": 0.0,
+      "scale": 0.16326530612244897,
+      "coefficients": [
+        -2.6545164184082057e-06,
+        0.001604489697092103,
+        1.9844286565926286
+      ],
+      "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+      "development_loo_rmse": 4.972369321847176e-07,
+      "development_max_residual": 1.9468622538539948e-07,
+      "validation_rmse": 1.3629735699430804e-07,
+      "validation_max_abs_error": 2.164414792643187e-07
+    },
+    {
+      "model": "quadratic",
+      "origin": 0.06201550387596899,
+      "scale": 0.10124980224647998,
+      "coefficients": [
+        0.0002323125181402379,
+        0.0007630442405777861,
+        0.0006065626725337356
+      ],
+      "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+      "development_loo_rmse": 7.351848650940412e-07,
+      "development_max_residual": 2.966037879276401e-07,
+      "validation_rmse": 1.9999963686047212e-07,
+      "validation_max_abs_error": 2.730880089847187e-07
+    },
+    {
+      "model": "exponential",
+      "origin": 0.06201550387596899,
+      "scale": 0.10124980224647998,
+      "coefficients": [
+        -8.058426120745267,
+        1.649923209174836
+      ],
+      "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+      "development_loo_rmse": 9.6972543274556e-05,
+      "development_max_residual": 8.389857983084323e-05,
+      "validation_rmse": 4.73210283971611e-05,
+      "validation_max_abs_error": 6.215312713474735e-05
+    },
+    {
+      "model": "linear",
+      "origin": 0.06201550387596899,
+      "scale": 0.10124980224647998,
+      "coefficients": [
+        0.0001513599640759877,
+        0.001372129054542031
+      ],
+      "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+      "development_loo_rmse": 0.00010705685400498485,
+      "development_max_residual": 8.116588353546326e-05,
+      "validation_rmse": 4.262488419913803e-05,
+      "validation_max_abs_error": 6.048591488410238e-05
+    },
+    {
+      "model": "constant",
+      "origin": 0.06201550387596899,
+      "scale": 0.10124980224647998,
+      "coefficients": [
+        0.0008472274504605667
+      ],
+      "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+      "development_loo_rmse": 0.000571660225204192,
+      "development_max_residual": 0.0007544696929422477,
+      "validation_rmse": 0.00039903759429183133,
+      "validation_max_abs_error": 0.000544279177815704
+    }
+  ],
+  "frozen_at": {
+    "utc": "2026-11-14T00:45:46.151461+00:00",
+    "melbourne": "2026-11-14T11:45:46.151461+11:00"
+  },
+  "selection_journal": [
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T00:44:58.683178+00:00",
+        "melbourne": "2026-11-14T11:44:58.683178+11:00"
+      },
+      "level": 77,
+      "x": 0.1038961038961039,
+      "score": 0.4263540022261497,
+      "bracket": [
+        0.08247422680412371,
+        0.12307692307692308
+      ],
+      "reason": "coverage_residual_and_model_disagreement",
+      "features": [],
+      "predicted_y": 0.0006517686085495909,
+      "model": {
+        "model": "quadratic",
+        "origin": 0.06201550387596899,
+        "scale": 0.10124980224647998,
+        "coefficients": [
+          0.00023233826301125176,
+          0.0007632822357576213,
+          0.0006061488182813704
+        ],
+        "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+        "development_loo_rmse": 1.7418070943057957e-06,
+        "development_max_residual": 3.535411540328548e-07
+      },
+      "round": 1
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-14T00:45:34.958757+00:00",
+        "melbourne": "2026-11-14T11:45:34.958757+11:00"
+      },
+      "level": 55,
+      "x": 0.14545454545454545,
+      "score": 0.4008172424719673,
+      "bracket": [
+        0.12307692307692308,
+        0.16326530612244897
+      ],
+      "reason": "coverage_residual_and_model_disagreement",
+      "features": [],
+      "predicted_y": 0.0012729445488657998,
+      "model": {
+        "model": "quadratic",
+        "origin": 0.06201550387596899,
+        "scale": 0.10124980224647998,
+        "coefficients": [
+          0.00023234765717778554,
+          0.0007627799204065509,
+          0.0006066576731439881
+        ],
+        "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+        "development_loo_rmse": 1.464062565299834e-06,
+        "development_max_residual": 3.4659941424016686e-07
+      },
+      "round": 2
+    }
+  ],
+  "stop_reason": "refinement_tolerances_met",
+  "prediction_pass": true,
+  "operating_point": "not_selected: no new accuracy budget declared"
+}

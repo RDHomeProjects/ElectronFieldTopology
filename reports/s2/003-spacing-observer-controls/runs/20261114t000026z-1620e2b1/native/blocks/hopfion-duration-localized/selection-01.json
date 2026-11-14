@@ -1,0 +1,40 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T00:00:28.504384+00:00",
+    "melbourne": "2026-11-14T11:00:28.504384+11:00"
+  },
+  "level": 130,
+  "x": 0.5416666666666666,
+  "score": 0.07813305469497248,
+  "bracket": [
+    0.5,
+    0.5625
+  ],
+  "reason": "coverage_residual_and_model_disagreement",
+  "features": [
+    {
+      "kind": "possible_inflection",
+      "x": 0.5604447808551463
+    },
+    {
+      "kind": "possible_inflection",
+      "x": 0.5722222222222222
+    }
+  ],
+  "predicted_y": 0.010560792896694829,
+  "model": {
+    "model": "cubic",
+    "origin": 0.2,
+    "scale": 0.8,
+    "coefficients": [
+      0.003945686750261591,
+      0.01568170439887856,
+      -0.0006595336233464621,
+      0.0004879405729641289
+    ],
+    "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+    "development_loo_rmse": 1.329295381150994e-06,
+    "development_max_residual": 1.0398558708208175e-06
+  },
+  "round": 1
+}

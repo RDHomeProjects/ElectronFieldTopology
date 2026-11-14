@@ -1,0 +1,174 @@
+{
+  "assessment_at": {
+    "utc": "2026-11-14T02:02:19.326884+00:00",
+    "melbourne": "2026-11-14T13:02:19.326884+11:00"
+  },
+  "source_archive_sha256": "293f5dc04a5612622c30310ca461a9e43070f4995589e5355427ee54e4702bf7",
+  "run_id": "20261114t000026z-1620e2b1",
+  "source_commit": "38b593415764fa10d2308b2ef4f1eeacb165529c",
+  "run_started": {
+    "utc": "2026-11-14T00:00:28.403369+00:00",
+    "melbourne": "2026-11-14T11:00:28.403369+11:00"
+  },
+  "run_finished": {
+    "utc": "2026-11-14T00:56:16.296899+00:00",
+    "melbourne": "2026-11-14T11:56:16.296899+11:00"
+  },
+  "completed_configurations": 35,
+  "reused_parent_states": 2,
+  "fresh_integrations": 33,
+  "integrity": {
+    "zip_entries": 83,
+    "compact_hashes_verified": 82,
+    "raw_full_arrays_present": false,
+    "field_manifest_declarations": 35,
+    "declared_bytes": 1407315126,
+    "scope": "Scalar, code/provenance and compact-payload assessment; no independent raw-state hash/CRC or field replay."
+  },
+  "fit_results": [
+    {
+      "block": "hopfion-duration-localized",
+      "primary_model": "cubic",
+      "response": "sync_native_error",
+      "fresh_validation_max_fraction": 4.569995819287548e-07,
+      "fresh_validation_max_percentage_points": 4.569995819287548e-05,
+      "prediction_pass": true,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "block": "hopfion-spacing",
+      "primary_model": "cubic",
+      "response": "evolution_observed_error",
+      "fresh_validation_max_fraction": 7.865166275272326e-06,
+      "fresh_validation_max_percentage_points": 0.0007865166275272326,
+      "prediction_pass": false,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "block": "packet-spacing",
+      "primary_model": "cubic",
+      "response": "evolution_observed_error",
+      "fresh_validation_max_fraction": 1.438514102142241e-07,
+      "fresh_validation_max_percentage_points": 1.438514102142241e-05,
+      "prediction_pass": true,
+      "stop_reason": "refinement_tolerances_met"
+    }
+  ],
+  "mesh_table": [
+    {
+      "N": 49,
+      "h": 0.16326530612244897,
+      "hopfion_evolution_percent": 3.1722925929815218,
+      "hopfion_interpolation_percent": 2.4114982388019257,
+      "hopfion_total_percent": 4.058588773110512,
+      "packet_evolution_percent": 0.16016971434028143,
+      "packet_interpolation_percent": 0.36110513562866575,
+      "packet_total_percent": 0.4026976078398909
+    },
+    {
+      "N": 65,
+      "h": 0.12307692307692308,
+      "hopfion_evolution_percent": 1.871765956696763,
+      "hopfion_interpolation_percent": 1.3224274972326706,
+      "hopfion_total_percent": 2.2995544347632046,
+      "packet_evolution_percent": 0.09133516966052495,
+      "packet_interpolation_percent": 0.1924813314883902,
+      "packet_total_percent": 0.22018736043617815
+    },
+    {
+      "N": 97,
+      "h": 0.08247422680412371,
+      "hopfion_evolution_percent": 0.8617782962239439,
+      "hopfion_interpolation_percent": 0.6033259680219628,
+      "hopfion_total_percent": 1.0498076832910108,
+      "packet_evolution_percent": 0.04109633929862827,
+      "packet_interpolation_percent": 0.09252219752738317,
+      "packet_total_percent": 0.10378535196890219
+    },
+    {
+      "N": 129,
+      "h": 0.06201550387596899,
+      "hopfion_evolution_percent": 0.49155411600791443,
+      "hopfion_interpolation_percent": 0.33860276033298586,
+      "hopfion_total_percent": 0.5945615347743395,
+      "packet_evolution_percent": 0.023252584761145095,
+      "packet_interpolation_percent": 0.04892401372954676,
+      "packet_total_percent": 0.05596832881281975
+    }
+  ],
+  "apparent_orders": {
+    "hopfion": [
+      {
+        "coarse": 49,
+        "fine": 65,
+        "apparent_p": 1.867069571176263
+      },
+      {
+        "coarse": 65,
+        "fine": 97,
+        "apparent_p": 1.9375309750203322
+      },
+      {
+        "coarse": 97,
+        "fine": 129,
+        "apparent_p": 1.9692149964890941
+      }
+    ],
+    "packet": [
+      {
+        "coarse": 49,
+        "fine": 65,
+        "apparent_p": 1.987840407751797
+      },
+      {
+        "coarse": 65,
+        "fine": 97,
+        "apparent_p": 1.994927746577816
+      },
+      {
+        "coarse": 97,
+        "fine": 129,
+        "apparent_p": 1.9975443801604633
+      }
+    ]
+  },
+  "audit": [
+    {
+      "block": "hopfion-duration-localized",
+      "frozen_coefficients_match": true,
+      "new_validation_disjoint": true,
+      "freeze_precedes_new_validation": true,
+      "choice_precedes_measurement": true,
+      "validation_residuals_recomputed": true
+    },
+    {
+      "block": "hopfion-spacing",
+      "frozen_coefficients_match": true,
+      "new_validation_disjoint": true,
+      "freeze_precedes_new_validation": true,
+      "choice_precedes_measurement": true,
+      "validation_residuals_recomputed": true
+    },
+    {
+      "block": "packet-spacing",
+      "frozen_coefficients_match": true,
+      "new_validation_disjoint": true,
+      "freeze_precedes_new_validation": true,
+      "choice_precedes_measurement": true,
+      "validation_residuals_recomputed": true
+    }
+  ],
+  "packet_controls_recomputed": {
+    "max_fourier_exact_error": 1.130445986239341e-15,
+    "max_modified_energy_drift": 4.440892098500626e-16,
+    "max_discrete_divergence_change": 2.6990078530374393e-13
+  },
+  "qx": {
+    "survey_cases": 15,
+    "matched_groups": 10,
+    "excluded_admissions": 3,
+    "q3_temporal_difference_ratio": 15.949146127059903,
+    "q3_descriptive_apparent_order": 3.995407283063632
+  },
+  "disposition": "Packet mesh prediction/refinement passed; Hopfion mesh prediction/refinement remains unresolved; duration prediction passed with final individual tolerances met but no two-successive-round certificate. Controlled h dependence strongly supports a spatial error explanation in the tested range. Observer integration needs calibration before further fitting or optimal-grid selection."
+}

@@ -1,6 +1,6 @@
 # Study plans
 
-Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
+Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
 
 Each study has a stable stage/number and one current plan below. Earlier flat plan files remain source specifications at their published paths; their historical next-step wording is superseded by the register.
 
@@ -40,5 +40,6 @@ Each study has a stable stage/number and one current plan below. Earlier flat pl
 | [s5-b-009](s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | assessed | open |
 | [s5-b-010](s5-b/010-intermediate-q-survey.md) | Fresh Q3 Q4 Q7 survey and detailed motion | assessed | open |
 | [s2-002](s2/002-maxwell-dependency-assessment.md) | Bounded Maxwell dependency assessment | assessed | bounded |
-| [s2-003](s2/003-spacing-observer-controls.md) | Fixed-observer Maxwell spacing and localized duration controls | prepared | open |
+| [s2-003](s2/003-spacing-observer-controls.md) | Fixed-observer Maxwell spacing and localized duration controls | assessed | open |
 | [s5-b-011](s5-b/011-controlled-q-dependencies.md) | Controlled dependency transfer to Q2 Q3 and other Q results | prepared | open |
+| [s2-004](s2/004-saved-state-observer-calibration.md) | Saved-state observer quadrature and alignment calibration | prepared | open |

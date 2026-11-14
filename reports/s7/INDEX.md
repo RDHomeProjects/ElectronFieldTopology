@@ -1,6 +1,6 @@
 # S7: Spin, quantum and experimental assessment
 
-Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
+Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
 
 Conditional methods and apparatus tests; no electron acceptance.
 

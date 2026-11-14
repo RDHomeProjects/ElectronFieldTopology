@@ -1,0 +1,86 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T02:26:26.681631+00:00",
+    "melbourne": "2026-11-14T13:26:26.681631+11:00"
+  },
+  "status": "available_host_controls_passed",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "numerical_qualification": {
+    "manufactured": {
+      "analytic_polynomial_integral": 320.0,
+      "expected": 320.0,
+      "piecewise_kink_integral": 85.33333333333334,
+      "expected_kink": 85.33333333333333,
+      "status": "passed"
+    },
+    "fixed_state_controls": [
+      {
+        "field": "hopfion",
+        "legacy_streamed_max_difference": 2.7755575615628914e-17,
+        "gauss2_to3_max_change": 0.01051419543737056,
+        "raw_arrays_unchanged": true
+      },
+      {
+        "field": "packet",
+        "legacy_streamed_max_difference": 3.469446951953614e-18,
+        "gauss2_to3_max_change": 0.0015167866866837854,
+        "raw_arrays_unchanged": true
+      }
+    ],
+    "status": "qualification_passed"
+  },
+  "six_anchor_smoke_and_resume": {
+    "status": "passed",
+    "wall_seconds": 9.800658988000578,
+    "six_anchor_completion": true,
+    "resume_reuses_sealed_measurements": true,
+    "measurement_count": 72,
+    "result": {
+      "recorded_at": {
+        "utc": "2026-11-14T02:23:17.948287+00:00",
+        "melbourne": "2026-11-14T13:23:17.948287+11:00"
+      },
+      "status": "complete_pending_review",
+      "pid": 5,
+      "completed_anchors": 6,
+      "evidence": "/workspace/scratch/ce90b953716c/build/calibration-smoke/output-final/evidence.zip",
+      "report": "/workspace/scratch/ce90b953716c/build/calibration-smoke/output-final/REPORT.html"
+    }
+  },
+  "archive_controls": {
+    "status": "passed",
+    "host_only_synthetic_fields": 35,
+    "downloaded_members_verified": 39,
+    "corrupt_download_rejected": true,
+    "live_GitHub": false
+  },
+  "publication_application": {
+    "recorded_at": {
+      "utc": "2026-11-14T02:25:30.747644+00:00",
+      "melbourne": "2026-11-14T13:25:30.747644+11:00"
+    },
+    "status": "passed_under_available_host_runtime",
+    "isolated_local_fixture": "/workspace/scratch/ce90b953716c/build/calibration-publication-rehearsal",
+    "records_links_and_immutability_passed": true,
+    "manufactured_repo_test_function_passed": true,
+    "source_compact_and_lock_check_passed": true,
+    "live_GitHub": false,
+    "release_receipt": "explicit fake fixture for offline apply rehearsal only",
+    "locked_runtime_execution": "Not completed on preparation host: locked NumPy 2.5.4 is unavailable in offline cache; workstation checks remain mandatory. Available host NumPy 2.3.5 was used for actual numerical controls."
+  },
+  "negative_controls": {
+    "status": "passed",
+    "changed_measurement_rejected": true,
+    "changed_plan_rejected": true
+  },
+  "shell_and_python_syntax": "passed",
+  "locked_workstation_environment": "Not executed here: pinned NumPy 2.5.4 unavailable offline. Mandatory locked checks are in publish/qualify.",
+  "production_calibration_executed": false,
+  "real_full_workstation_arrays_available": false,
+  "live_GitHub_actions": false,
+  "limits": "Synthetic reduced-grid states and archive fixtures are preparation controls, not workstation calibration or successful release/PR/CI/merge evidence."
+}

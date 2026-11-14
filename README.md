@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
+Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-Bounded Maxwell dependency assessment records 61 cases, five withheld prediction checks and verified periodic controls. Available Q3 initial/observation/sampling diagnostics are preserved. The next numerical priority is fixed-observer spacing and focused duration localization, followed by Q2/Q3 transfer.
+35-state Maxwell follow-up assessed: controlled spatial errors approach second order; packet spacing passes fresh checks; Hopfion spacing prediction fails and localized duration consecutive-round closure remains open. Next: calibrate observation on saved fields, with Q2/Q3 evidence inventory proceeding separately.
 
-Hopfion-duration feature localization, physical spacing/domain convergence, discrete initial divergence and observation errors remain open. Maxwell validation does not admit SF motion, isolation, charge, quantum spin or an electron model. Q1 parked; Q2 reference; Q4/Q7 unresolved.
+Observer sensitivity, physical-mesh fit prediction, duration confirmation and isolated-domain acceptance remain qualified. Qx audit is one 15-case survey. No new SF trajectory or electron acceptance. Q1 parked; Q2 reference; Q4/Q7 admission/preparation unresolved.
 
-Next: **s2-003: Fixed-observer Maxwell spacing and localized duration controls**. Run the locally published follow-up: focused duration points, fixed-dt spacing curves, saved-state observer refinement and separate time anchors.
+Next: **s2-004: Saved-state observer quadrature and alignment calibration**. Run the read-only calibration on the archived 35-state follow-up, then assess quadrature readiness and held-out observer prediction separately.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 
