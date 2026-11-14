@@ -1,0 +1,1569 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T00:00:28.403369+00:00",
+    "melbourne": "2026-11-14T11:00:28.403369+11:00"
+  },
+  "role": "controlled-dependency-followup",
+  "status": "complete_pending_review",
+  "config": {
+    "schema": "dependency-followup-v1",
+    "source_run": "20261113t153443z-5d0f27e4",
+    "source_evidence_sha256": "bff7958ed749a887b334a2e2c4d3d5a03f7cb27e1341ab144f4760e1780c5b51",
+    "duration": {
+      "field": "hopfion",
+      "nodes": 65,
+      "dt": 0.004166666666666667,
+      "candidate_levels": [
+        130,
+        146
+      ],
+      "reserved_validation": [
+        133,
+        139,
+        145
+      ],
+      "max_additions": 3
+    },
+    "spacing": {
+      "length": 8.0,
+      "duration": 1.0,
+      "steps": 960,
+      "seed_nodes": [
+        49,
+        65,
+        97,
+        129
+      ],
+      "validation_nodes": [
+        57,
+        81,
+        113
+      ],
+      "candidate_nodes": [
+        49,
+        129
+      ],
+      "hopfion_max_additions": 9,
+      "packet_max_additions": 6,
+      "observer_nodes": 33,
+      "observer_refinement_nodes": [
+        49,
+        65
+      ],
+      "time_anchor_nodes": [
+        49,
+        129
+      ],
+      "time_anchor_steps": 480
+    },
+    "adaptive": {
+      "min_additions": 2,
+      "prediction_tolerance_fraction": 1e-06,
+      "feature_bracket_fraction": 0.03,
+      "validation_tolerance_fraction": 5e-06,
+      "accuracy_budget_fraction": null
+    },
+    "maximum_new_cases": 39,
+    "scope": "Focused duration closure, isolated physical spacing response at fixed dt, saved-state observer refinement, and separately labelled time anchors. Qx transfer is read-only evidence grouping; new SF evolution awaits its own admission/measurement plan."
+  },
+  "environment": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.4",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "source_commit": "38b593415764fa10d2308b2ef4f1eeacb165529c",
+    "source_sha256": {
+      "fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+      "evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735"
+    },
+    "dependency_sha256": {
+      "pyproject.toml": "7533c5330618cded5524ac2bc7c0035cfd2f1688109e433a53c3ac24adf74d0c",
+      "uv.lock": "1256a2e134796077174a1a10bbfa53b3c33239a616ed93b20e08220da063079e"
+    },
+    "code_sha256": {
+      "dependencies.py": "85b6723e6dfcc08e268f3555cf542d77a9fddd13bcd0d2272baac80b03d85409",
+      "followup.py": "305d93314480e344c5f529333299c73b025259840f1bb5247daeb82edb9ffa6e",
+      "__init__.py": "f5218786e324ff53515ce6b472b248a36b2607d0db96685c7277e3fc1a612b58",
+      "qualification.py": "fadd8662184dbe288166e50ab701cb33b6af5e41a8913fe1453f2f05b47c8dcf",
+      "selftest.py": "03e1c37441d9d619cb502fa42fe71923f43f6a434d90c3fbdcec3e0d54b05cca",
+      "followup_report.py": "7b8bcd6fad0a049697d08174eafec9545360634e5af988100feff7dfc53e4c0f",
+      "common.py": "3e246a119df87247397234c69b3418f01aba3d84189a9a9245d0e209c294e736",
+      "numerics.py": "a55f214c38946785351cce15b7479f769b1b5003a15b0ec22031a3d7f855132c",
+      "observer.py": "4fd41f68dc06aa6579414f4994ef2a4999dc4badf748f863bda46ddaf410748b",
+      "qx_audit.py": "b0a057b46f6b555767570bb6dcc08de1e6280f53733e422517e378f6b5ecc9f8",
+      "yee_primitives.py": "aa34b7376067d1ed18a28aa1555de95bb55d446eac49f0a308ebbd4634739f76"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "6",
+      "OPENBLAS_NUM_THREADS": "6",
+      "MKL_NUM_THREADS": "6"
+    }
+  },
+  "source_record_id": "20261113t153443z-5d0f27e4",
+  "source_evidence_sha256": "bff7958ed749a887b334a2e2c4d3d5a03f7cb27e1341ab144f4760e1780c5b51",
+  "blocks": [
+    {
+      "id": "hopfion-duration-localized",
+      "variable": "duration",
+      "response": "sync_native_error",
+      "development": [
+        {
+          "level": 48,
+          "x": 0.2,
+          "y": 0.003946726606132412,
+          "role": "previously_reviewed_development",
+          "case_id": "6e57290106e51455",
+          "measured_at": {
+            "utc": "2026-11-13T15:34:56.016680+00:00",
+            "melbourne": "2026-11-14T02:34:56.016680+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 96,
+          "x": 0.4,
+          "y": 0.00783246147580316,
+          "role": "previously_reviewed_development",
+          "case_id": "fa9f4ad1214b89fd",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:23.575318+00:00",
+            "melbourne": "2026-11-14T02:36:23.575318+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 120,
+          "x": 0.5,
+          "y": 0.009759965812838793,
+          "role": "previously_reviewed_development",
+          "case_id": "793d9299ad565251",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:34.018132+00:00",
+            "melbourne": "2026-11-14T02:36:34.018132+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 240,
+          "x": 1.0,
+          "y": 0.019456249763901142,
+          "role": "previously_reviewed_development",
+          "case_id": "10917f27d6b0d7e1",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:53.827326+00:00",
+            "melbourne": "2026-11-14T02:36:53.827326+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 180,
+          "x": 0.75,
+          "y": 0.014573283757055295,
+          "role": "previously_reviewed_development",
+          "case_id": "4ee13d0b04ad0f93",
+          "measured_at": {
+            "utc": "2026-11-13T15:37:09.082372+00:00",
+            "melbourne": "2026-11-14T02:37:09.082372+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 150,
+          "x": 0.625,
+          "y": 0.012163885658050901,
+          "role": "previously_reviewed_development",
+          "case_id": "eb8da749dbe45304",
+          "measured_at": {
+            "utc": "2026-11-13T15:37:21.823740+00:00",
+            "melbourne": "2026-11-14T02:37:21.823740+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 135,
+          "x": 0.5625,
+          "y": 0.01096203523535692,
+          "role": "previously_reviewed_development",
+          "case_id": "80f5d540eac0edd3",
+          "measured_at": {
+            "utc": "2026-11-13T15:37:33.383390+00:00",
+            "melbourne": "2026-11-14T02:37:33.383390+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 142,
+          "x": 0.5916666666666667,
+          "y": 0.011522829474439047,
+          "role": "previously_reviewed_development",
+          "case_id": "922ebc6a8b96fc6b",
+          "measured_at": {
+            "utc": "2026-11-13T15:37:45.525298+00:00",
+            "melbourne": "2026-11-14T02:37:45.525298+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 210,
+          "x": 0.875,
+          "y": 0.01700038893731892,
+          "role": "previously_reviewed_development",
+          "case_id": "f24bc93468683163",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:02.763214+00:00",
+            "melbourne": "2026-11-14T02:38:02.763214+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 73,
+          "x": 0.30416666666666664,
+          "y": 0.005976469431717513,
+          "role": "previously_reviewed_development",
+          "case_id": "67261dc77ed0c362",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:09.784962+00:00",
+            "melbourne": "2026-11-14T02:38:09.784962+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 195,
+          "x": 0.8125,
+          "y": 0.015783905546098587,
+          "role": "previously_reviewed_development",
+          "case_id": "0f951cd058e3a403",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:25.863139+00:00",
+            "melbourne": "2026-11-14T02:38:25.863139+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 165,
+          "x": 0.6875,
+          "y": 0.013367110732139845,
+          "role": "previously_reviewed_development",
+          "case_id": "245873ce96397769",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:39.678352+00:00",
+            "melbourne": "2026-11-14T02:38:39.678352+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 225,
+          "x": 0.9375,
+          "y": 0.018224072248291184,
+          "role": "previously_reviewed_development",
+          "case_id": "53303119e8e7acf1",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:58.086817+00:00",
+            "melbourne": "2026-11-14T02:38:58.086817+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 72,
+          "x": 0.3,
+          "y": 0.005895532888296925,
+          "role": "previously_reviewed_development",
+          "case_id": "edf1b8a5a75a7462",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:05.116472+00:00",
+            "melbourne": "2026-11-14T02:39:05.116472+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 160,
+          "x": 0.6666666666666666,
+          "y": 0.012965784694544194,
+          "role": "previously_reviewed_development",
+          "case_id": "6ce1c91b603eee4f",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:18.644895+00:00",
+            "melbourne": "2026-11-14T02:39:18.644895+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 216,
+          "x": 0.9,
+          "y": 0.017488925184578626,
+          "role": "previously_reviewed_development",
+          "case_id": "00f26bfd09d452e9",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:36.481138+00:00",
+            "melbourne": "2026-11-14T02:39:36.481138+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 130,
+          "x": 0.5416666666666666,
+          "y": 0.01056144750818425,
+          "role": "adaptive_development",
+          "case_id": "481b5904fba4ee6a",
+          "measured_at": {
+            "utc": "2026-11-14T00:00:40.852923+00:00",
+            "melbourne": "2026-11-14T11:00:40.852923+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 146,
+          "x": 0.6083333333333333,
+          "y": 0.011843323824466049,
+          "role": "adaptive_development",
+          "case_id": "9cc8c8641425f216",
+          "measured_at": {
+            "utc": "2026-11-14T00:00:53.237403+00:00",
+            "melbourne": "2026-11-14T11:00:53.237403+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 138,
+          "x": 0.575,
+          "y": 0.011202372168869736,
+          "role": "adaptive_development",
+          "case_id": "f9d8a53fa727db20",
+          "measured_at": {
+            "utc": "2026-11-14T00:01:04.987083+00:00",
+            "melbourne": "2026-11-14T11:01:04.987083+11:00"
+          },
+          "variable": "duration"
+        }
+      ],
+      "validation": [
+        {
+          "level": 133,
+          "x": 0.5541666666666667,
+          "y": 0.010801806412278158,
+          "role": "fresh_validation",
+          "case_id": "b1e94cedf3d828da",
+          "measured_at": {
+            "utc": "2026-11-14T00:01:17.628530+00:00",
+            "melbourne": "2026-11-14T11:01:17.628530+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 139,
+          "x": 0.5791666666666666,
+          "y": 0.011282484684844751,
+          "role": "fresh_validation",
+          "case_id": "9e2a7b3fc488c94b",
+          "measured_at": {
+            "utc": "2026-11-14T00:01:29.344084+00:00",
+            "melbourne": "2026-11-14T11:01:29.344084+11:00"
+          },
+          "variable": "duration"
+        },
+        {
+          "level": 145,
+          "x": 0.6041666666666666,
+          "y": 0.011763195099757956,
+          "role": "fresh_validation",
+          "case_id": "e84c07518a2495db",
+          "measured_at": {
+            "utc": "2026-11-14T00:01:41.616802+00:00",
+            "melbourne": "2026-11-14T11:01:41.616802+11:00"
+          },
+          "variable": "duration"
+        }
+      ],
+      "models": [
+        {
+          "model": "cubic",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.003945581113222111,
+            0.01568349295287792,
+            -0.0006629334021120218,
+            0.000489635228613535
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 1.2482260293464007e-06,
+          "development_max_residual": 1.145492910301256e-06,
+          "validation_rmse": 3.687594879609922e-07,
+          "validation_max_abs_error": 4.569995819287548e-07
+        },
+        {
+          "model": "linear",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.003951742966763814,
+            0.015471841202321224
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 1.3356057763849e-05,
+          "development_max_residual": 3.266559481610379e-05,
+          "validation_rmse": 3.2120423280196005e-06,
+          "validation_max_abs_error": 5.050974428558175e-06
+        },
+        {
+          "model": "quadratic",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.003965593462348596,
+            0.015396180146790192,
+            7.392012644352551e-05
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 1.4361735433849758e-05,
+          "development_max_residual": 2.0556028318827885e-05,
+          "validation_rmse": 3.7699668544272304e-06,
+          "validation_max_abs_error": 5.708042454236409e-06
+        },
+        {
+          "model": "exponential",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            -5.114696193330504,
+            1.2316732013732692
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 0.0008911756197617475,
+          "development_max_residual": 0.0020610761616133714,
+          "validation_rmse": 0.0005094438534318115,
+          "validation_max_abs_error": 0.000569948089666426
+        },
+        {
+          "model": "constant",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.012132987944635971
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 0.004450253764301534,
+          "development_max_residual": 0.008186261338503559,
+          "validation_rmse": 0.0009366868589393441,
+          "validation_max_abs_error": 0.001331181532357813
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T00:01:05.045335+00:00",
+        "melbourne": "2026-11-14T11:01:05.045335+11:00"
+      },
+      "selection_journal": [
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:00:28.504384+00:00",
+            "melbourne": "2026-11-14T11:00:28.504384+11:00"
+          },
+          "level": 130,
+          "x": 0.5416666666666666,
+          "score": 0.07813305469497248,
+          "bracket": [
+            0.5,
+            0.5625
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5604447808551463
+            },
+            {
+              "kind": "possible_inflection",
+              "x": 0.5722222222222222
+            }
+          ],
+          "predicted_y": 0.010560792896694829,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003945686750261591,
+              0.01568170439887856,
+              -0.0006595336233464621,
+              0.0004879405729641289
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.329295381150994e-06,
+            "development_max_residual": 1.0398558708208175e-06
+          },
+          "round": 1
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:00:40.905693+00:00",
+            "melbourne": "2026-11-14T11:00:40.905693+11:00"
+          },
+          "level": 146,
+          "x": 0.6083333333333333,
+          "score": 0.04168446316387658,
+          "bracket": [
+            0.5916666666666667,
+            0.625
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5607839052703701
+            },
+            {
+              "kind": "possible_inflection",
+              "x": 0.5791666666666666
+            }
+          ],
+          "predicted_y": 0.011843024407878218,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003945624773215631,
+              0.015682843506152122,
+              -0.0006618977211166919,
+              0.0004892293042622791
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.307425481043457e-06,
+            "development_max_residual": 1.1018329167805652e-06
+          },
+          "round": 2
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:00:53.293257+00:00",
+            "melbourne": "2026-11-14T11:00:53.293257+11:00"
+          },
+          "level": 138,
+          "x": 0.575,
+          "score": 0.03646493588371346,
+          "bracket": [
+            0.5625,
+            0.5916666666666667
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5608866060789739
+            },
+            {
+              "kind": "possible_inflection",
+              "x": 0.5763888888888888
+            }
+          ],
+          "predicted_y": 0.011201941598381573,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003945609525923286,
+              0.0156830353107882,
+              -0.0006620992557692195,
+              0.0004892389979688563
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.2741084304460762e-06,
+            "development_max_residual": 1.1170802091259313e-06
+          },
+          "round": 3
+        }
+      ],
+      "stop_reason": "budget_exhausted",
+      "prediction_pass": true,
+      "operating_point": "not_selected: no new accuracy budget declared"
+    },
+    {
+      "id": "hopfion-spacing",
+      "variable": "spacing",
+      "response": "evolution_observed_error",
+      "development": [
+        {
+          "level": 49,
+          "x": 0.16326530612244897,
+          "y": 0.03172292592981522,
+          "role": "seed_development",
+          "case_id": "be876ebb1a7b6c6c",
+          "measured_at": {
+            "utc": "2026-11-14T00:02:15.735948+00:00",
+            "melbourne": "2026-11-14T11:02:15.735948+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 65,
+          "x": 0.12307692307692308,
+          "y": 0.01871765956696763,
+          "role": "seed_development",
+          "case_id": "88ccad6b99a80298",
+          "measured_at": {
+            "utc": "2026-11-14T00:02:16.444475+00:00",
+            "melbourne": "2026-11-14T11:02:16.444475+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 97,
+          "x": 0.08247422680412371,
+          "y": 0.008617782962239438,
+          "role": "seed_development",
+          "case_id": "328005d9e801d024",
+          "measured_at": {
+            "utc": "2026-11-14T00:05:44.799689+00:00",
+            "melbourne": "2026-11-14T11:05:44.799689+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 129,
+          "x": 0.06201550387596899,
+          "y": 0.004915541160079144,
+          "role": "seed_development",
+          "case_id": "059c3202bb3a5794",
+          "measured_at": {
+            "utc": "2026-11-14T00:14:32.863258+00:00",
+            "melbourne": "2026-11-14T11:14:32.863258+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 77,
+          "x": 0.1038961038961039,
+          "y": 0.013504291515487902,
+          "role": "adaptive_development",
+          "case_id": "38ea480dfcbf23ed",
+          "measured_at": {
+            "utc": "2026-11-14T00:16:25.329702+00:00",
+            "melbourne": "2026-11-14T11:16:25.329702+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 55,
+          "x": 0.14545454545454545,
+          "y": 0.025640060194903416,
+          "role": "adaptive_development",
+          "case_id": "9e65940baf29c340",
+          "measured_at": {
+            "utc": "2026-11-14T00:17:13.454409+00:00",
+            "melbourne": "2026-11-14T11:17:13.454409+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 59,
+          "x": 0.13559322033898305,
+          "y": 0.022477698114220897,
+          "role": "adaptive_development",
+          "case_id": "39776b06e456cc41",
+          "measured_at": {
+            "utc": "2026-11-14T00:18:11.885916+00:00",
+            "melbourne": "2026-11-14T11:18:11.885916+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 85,
+          "x": 0.09411764705882353,
+          "y": 0.011148090488361496,
+          "role": "adaptive_development",
+          "case_id": "3cb040948b8e48a8",
+          "measured_at": {
+            "utc": "2026-11-14T00:20:37.667208+00:00",
+            "melbourne": "2026-11-14T11:20:37.667208+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 111,
+          "x": 0.07207207207207207,
+          "y": 0.006608841771580866,
+          "role": "adaptive_development",
+          "case_id": "b14aad27ed931ad7",
+          "measured_at": {
+            "utc": "2026-11-14T00:25:23.038513+00:00",
+            "melbourne": "2026-11-14T11:25:23.038513+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 71,
+          "x": 0.11267605633802817,
+          "y": 0.015788328488745496,
+          "role": "adaptive_development",
+          "case_id": "ff51ac717fa75e1d",
+          "measured_at": {
+            "utc": "2026-11-14T00:26:55.908491+00:00",
+            "melbourne": "2026-11-14T11:26:55.908491+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 51,
+          "x": 0.1568627450980392,
+          "y": 0.029512742425020905,
+          "role": "adaptive_development",
+          "case_id": "401d334def04eb96",
+          "measured_at": {
+            "utc": "2026-11-14T00:27:34.379543+00:00",
+            "melbourne": "2026-11-14T11:27:34.379543+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 61,
+          "x": 0.13114754098360656,
+          "y": 0.021049468609948482,
+          "role": "adaptive_development",
+          "case_id": "02004033589ac853",
+          "measured_at": {
+            "utc": "2026-11-14T00:28:36.202121+00:00",
+            "melbourne": "2026-11-14T11:28:36.202121+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 91,
+          "x": 0.08791208791208792,
+          "y": 0.009761494458598313,
+          "role": "adaptive_development",
+          "case_id": "d7e0ef50156328c5",
+          "measured_at": {
+            "utc": "2026-11-14T00:31:29.800364+00:00",
+            "melbourne": "2026-11-14T11:31:29.800364+11:00"
+          },
+          "variable": "spacing"
+        }
+      ],
+      "validation": [
+        {
+          "level": 57,
+          "x": 0.14035087719298245,
+          "y": 0.02397575755313388,
+          "role": "fresh_validation",
+          "case_id": "0f01f55d97e25f9f",
+          "measured_at": {
+            "utc": "2026-11-14T00:32:21.780442+00:00",
+            "melbourne": "2026-11-14T11:32:21.780442+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 81,
+          "x": 0.09876543209876543,
+          "y": 0.012235516319669184,
+          "role": "fresh_validation",
+          "case_id": "5d5bc5e9131ae7e4",
+          "measured_at": {
+            "utc": "2026-11-14T00:34:28.469287+00:00",
+            "melbourne": "2026-11-14T11:34:28.469287+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 113,
+          "x": 0.07079646017699115,
+          "y": 0.006380470602267801,
+          "role": "fresh_validation",
+          "case_id": "5523af115060fa31",
+          "measured_at": {
+            "utc": "2026-11-14T00:39:39.149754+00:00",
+            "melbourne": "2026-11-14T11:39:39.149754+11:00"
+          },
+          "variable": "spacing"
+        }
+      ],
+      "models": [
+        {
+          "model": "cubic",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            0.004918584408636408,
+            0.015765218303362503,
+            0.012794529059876433,
+            -0.0017351710860403294
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 2.7783389896335214e-05,
+          "development_max_residual": 4.5854111510729156e-05,
+          "validation_rmse": 5.332143093672848e-06,
+          "validation_max_abs_error": 7.865166275272326e-06
+        },
+        {
+          "model": "offset_power",
+          "origin": 0.0,
+          "scale": 0.16326530612244897,
+          "coefficients": [
+            -0.0006336392220500684,
+            0.03241850215898023,
+            1.8327012806186709
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 5.508239415643251e-05,
+          "development_max_residual": 6.19370071149386e-05,
+          "validation_rmse": 3.011986863075937e-05,
+          "validation_max_abs_error": 3.836639384747695e-05
+        },
+        {
+          "model": "quadratic",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            0.0048467588472260875,
+            0.01678634174011605,
+            0.010172262802219995
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 7.42774926775954e-05,
+          "development_max_residual": 8.24374597469188e-05,
+          "validation_rmse": 3.970431438860872e-05,
+          "validation_max_abs_error": 5.268425453346104e-05
+        },
+        {
+          "model": "linear",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            0.00319943487701611,
+            0.027107993494933386
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 0.001115265552008732,
+          "development_max_residual": 0.0017161062830630342,
+          "validation_rmse": 0.0006764406499469707,
+          "validation_max_abs_error": 0.0008300769973725117
+        },
+        {
+          "model": "exponential",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            -4.99373820731053,
+            1.5857819151833876
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 0.0012348510491428549,
+          "development_max_residual": 0.001864729840033592,
+          "validation_rmse": 0.0009512116647685917,
+          "validation_max_abs_error": 0.0013994416599437233
+        },
+        {
+          "model": "constant",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            0.016881917360459176
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 0.009122181214856815,
+          "development_max_residual": 0.01484100856935604,
+          "validation_rmse": 0.0077929882015007465,
+          "validation_max_abs_error": 0.010501446758191375
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T00:31:29.901736+00:00",
+        "melbourne": "2026-11-14T11:31:29.901736+11:00"
+      },
+      "selection_journal": [
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:14:32.876507+00:00",
+            "melbourne": "2026-11-14T11:14:32.876507+11:00"
+          },
+          "level": 77,
+          "x": 0.1038961038961039,
+          "score": 0.42340225600491377,
+          "bracket": [
+            0.08247422680412371,
+            0.12307692307692308
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.013551786451997092,
+          "model": {
+            "model": "quadratic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.004879206039218871,
+              0.01681099573575374,
+              0.01004670418411736
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 0.0003373878837580574,
+            "development_max_residual": 6.84808910070174e-05
+          },
+          "round": 1
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:16:25.353224+00:00",
+            "melbourne": "2026-11-14T11:16:25.353224+11:00"
+          },
+          "level": 55,
+          "x": 0.14545454545454545,
+          "score": 0.40113088577774575,
+          "bracket": [
+            0.12307692307692308,
+            0.16326530612244897
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.025545431192018405,
+          "model": {
+            "model": "quadratic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.004880884720918074,
+              0.01672123496942791,
+              0.010137633522270956
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 0.0002801378169347895,
+            "development_max_residual": 6.550860279162102e-05
+          },
+          "round": 2
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:17:13.512523+00:00",
+            "melbourne": "2026-11-14T11:17:13.512523+11:00"
+          },
+          "level": 59,
+          "x": 0.13559322033898305,
+          "score": 0.22144215860963795,
+          "bracket": [
+            0.12307692307692308,
+            0.14545454545454545
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.02248094337856266,
+          "model": {
+            "model": "cubic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.0049178536110422956,
+              0.015708074569518275,
+              0.013088482378741915,
+              -0.0019901286888874747
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 2.820618558997439e-05,
+            "development_max_residual": 9.523716047657796e-06
+          },
+          "round": 3
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:18:11.960115+00:00",
+            "melbourne": "2026-11-14T11:18:11.960115+11:00"
+          },
+          "level": 85,
+          "x": 0.09411764705882353,
+          "score": 0.21206580315224915,
+          "bracket": [
+            0.08247422680412371,
+            0.1038961038961039
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.01115066873127138,
+          "model": {
+            "model": "cubic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.00491773622331486,
+              0.015714672955522736,
+              0.01306451754251419,
+              -0.001972556191840637
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 2.4150369923296203e-05,
+            "development_max_residual": 9.279021554044198e-06
+          },
+          "round": 4
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:20:37.740568+00:00",
+            "melbourne": "2026-11-14T11:20:37.740568+11:00"
+          },
+          "level": 111,
+          "x": 0.07207207207207207,
+          "score": 0.2022165858447016,
+          "bracket": [
+            0.06201550387596899,
+            0.08247422680412371
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.006604980006865065,
+          "model": {
+            "model": "cubic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.004917838748252865,
+              0.015706097846539896,
+              0.013085072773707827,
+              -0.001984705557064706
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 2.1460582679914976e-05,
+            "development_max_residual": 8.491643410523872e-06
+          },
+          "round": 5
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:25:23.116920+00:00",
+            "melbourne": "2026-11-14T11:25:23.116920+11:00"
+          },
+          "level": 71,
+          "x": 0.11267605633802817,
+          "score": 0.18952067940865439,
+          "bracket": [
+            0.1038961038961039,
+            0.12307692307692308
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.015803782838321505,
+          "model": {
+            "model": "cubic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.004919131917067809,
+              0.015704978028627713,
+              0.013079992331305884,
+              -0.0019796016014038175
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.1985800117792575e-05,
+            "development_max_residual": 8.81358902695209e-06
+          },
+          "round": 6
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:26:55.993378+00:00",
+            "melbourne": "2026-11-14T11:26:55.993378+11:00"
+          },
+          "level": 51,
+          "x": 0.1568627450980392,
+          "score": 0.175957870737281,
+          "bracket": [
+            0.14545454545454545,
+            0.16326530612244897
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.02948187155302348,
+          "model": {
+            "model": "cubic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.004920353594596485,
+              0.01568798446510065,
+              0.013094981802251038,
+              -0.001977582709502081
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.6362949332185505e-05,
+            "development_max_residual": 1.217880429082649e-05
+          },
+          "round": 7
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:27:34.468317+00:00",
+            "melbourne": "2026-11-14T11:27:34.468317+11:00"
+          },
+          "level": 61,
+          "x": 0.13114754098360656,
+          "score": 0.12382600849840207,
+          "bracket": [
+            0.12307692307692308,
+            0.13559322033898305
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.021109681799188734,
+          "model": {
+            "model": "cubic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.00492106725820203,
+              0.01567885895309679,
+              0.013103539959429967,
+              -0.001965192449843082
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 2.045269617537283e-05,
+            "development_max_residual": 2.1010386018528032e-05
+          },
+          "round": 8
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:28:36.299234+00:00",
+            "melbourne": "2026-11-14T11:28:36.299234+11:00"
+          },
+          "level": 91,
+          "x": 0.08791208791208792,
+          "score": 0.11518798747305636,
+          "bracket": [
+            0.08247422680412371,
+            0.09411764705882353
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.13366883186277462
+            },
+            {
+              "kind": "possible_inflection",
+              "x": 0.1416843029447838
+            }
+          ],
+          "predicted_y": 0.009757971213029976,
+          "model": {
+            "model": "cubic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.004918676134041967,
+              0.015757216563326425,
+              0.012814996120354754,
+              -0.0017479325360486913
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 2.9020787772090162e-05,
+            "development_max_residual": 4.596190893564611e-05
+          },
+          "round": 9
+        }
+      ],
+      "stop_reason": "budget_exhausted",
+      "prediction_pass": false,
+      "operating_point": "not_selected: no new accuracy budget declared"
+    },
+    {
+      "id": "packet-spacing",
+      "variable": "spacing",
+      "response": "evolution_observed_error",
+      "development": [
+        {
+          "level": 49,
+          "x": 0.16326530612244897,
+          "y": 0.0016016971434028144,
+          "role": "seed_development",
+          "case_id": "f4fce6dbc2633c32",
+          "measured_at": {
+            "utc": "2026-11-14T00:39:46.364262+00:00",
+            "melbourne": "2026-11-14T11:39:46.364262+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 65,
+          "x": 0.12307692307692308,
+          "y": 0.0009133516966052495,
+          "role": "seed_development",
+          "case_id": "0066b77afe2c8926",
+          "measured_at": {
+            "utc": "2026-11-14T00:39:47.173168+00:00",
+            "melbourne": "2026-11-14T11:39:47.173168+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 97,
+          "x": 0.08247422680412371,
+          "y": 0.0004109633929862827,
+          "role": "seed_development",
+          "case_id": "88c6bae489c8b89b",
+          "measured_at": {
+            "utc": "2026-11-14T00:41:10.352866+00:00",
+            "melbourne": "2026-11-14T11:41:10.352866+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 129,
+          "x": 0.06201550387596899,
+          "y": 0.00023252584761145094,
+          "role": "seed_development",
+          "case_id": "452b8d421a3657f2",
+          "measured_at": {
+            "utc": "2026-11-14T00:44:58.671841+00:00",
+            "melbourne": "2026-11-14T11:44:58.671841+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 77,
+          "x": 0.1038961038961039,
+          "y": 0.000651502819422746,
+          "role": "adaptive_development",
+          "case_id": "732fab177a345cd9",
+          "measured_at": {
+            "utc": "2026-11-14T00:45:34.941020+00:00",
+            "melbourne": "2026-11-14T11:45:34.941020+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 55,
+          "x": 0.14545454545454545,
+          "y": 0.0012733238027348554,
+          "role": "adaptive_development",
+          "case_id": "31da5d11d9a6e78a",
+          "measured_at": {
+            "utc": "2026-11-14T00:45:46.113864+00:00",
+            "melbourne": "2026-11-14T11:45:46.113864+11:00"
+          },
+          "variable": "spacing"
+        }
+      ],
+      "validation": [
+        {
+          "level": 57,
+          "x": 0.14035087719298245,
+          "y": 0.0011859356571404572,
+          "role": "fresh_validation",
+          "case_id": "df3cb8f32d8a0f69",
+          "measured_at": {
+            "utc": "2026-11-14T00:45:58.856522+00:00",
+            "melbourne": "2026-11-14T11:45:58.856522+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 81,
+          "x": 0.09876543209876543,
+          "y": 0.0005889060763960298,
+          "role": "fresh_validation",
+          "case_id": "d22f08eb92aedaf5",
+          "measured_at": {
+            "utc": "2026-11-14T00:46:42.443265+00:00",
+            "melbourne": "2026-11-14T11:46:42.443265+11:00"
+          },
+          "variable": "spacing"
+        },
+        {
+          "level": 113,
+          "x": 0.07079646017699115,
+          "y": 0.0003029482726448627,
+          "role": "fresh_validation",
+          "case_id": "056ba81b7910a1db",
+          "measured_at": {
+            "utc": "2026-11-14T00:49:07.816053+00:00",
+            "melbourne": "2026-11-14T11:49:07.816053+11:00"
+          },
+          "variable": "spacing"
+        }
+      ],
+      "models": [
+        {
+          "model": "cubic",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            0.00023252969922050632,
+            0.0007579200534376252,
+            0.000620687403702403,
+            -9.450171031922841e-06
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 1.1377074383437694e-07,
+          "development_max_residual": 6.559498855456675e-08,
+          "validation_rmse": 8.732114846814731e-08,
+          "validation_max_abs_error": 1.438514102142241e-07
+        },
+        {
+          "model": "offset_power",
+          "origin": 0.0,
+          "scale": 0.16326530612244897,
+          "coefficients": [
+            -2.6545164184082057e-06,
+            0.001604489697092103,
+            1.9844286565926286
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 4.972369321847176e-07,
+          "development_max_residual": 1.9468622538539948e-07,
+          "validation_rmse": 1.3629735699430804e-07,
+          "validation_max_abs_error": 2.164414792643187e-07
+        },
+        {
+          "model": "quadratic",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            0.0002323125181402379,
+            0.0007630442405777861,
+            0.0006065626725337356
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 7.351848650940412e-07,
+          "development_max_residual": 2.966037879276401e-07,
+          "validation_rmse": 1.9999963686047212e-07,
+          "validation_max_abs_error": 2.730880089847187e-07
+        },
+        {
+          "model": "exponential",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            -8.058426120745267,
+            1.649923209174836
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 9.6972543274556e-05,
+          "development_max_residual": 8.389857983084323e-05,
+          "validation_rmse": 4.73210283971611e-05,
+          "validation_max_abs_error": 6.215312713474735e-05
+        },
+        {
+          "model": "linear",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            0.0001513599640759877,
+            0.001372129054542031
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 0.00010705685400498485,
+          "development_max_residual": 8.116588353546326e-05,
+          "validation_rmse": 4.262488419913803e-05,
+          "validation_max_abs_error": 6.048591488410238e-05
+        },
+        {
+          "model": "constant",
+          "origin": 0.06201550387596899,
+          "scale": 0.10124980224647998,
+          "coefficients": [
+            0.0008472274504605667
+          ],
+          "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+          "development_loo_rmse": 0.000571660225204192,
+          "development_max_residual": 0.0007544696929422477,
+          "validation_rmse": 0.00039903759429183133,
+          "validation_max_abs_error": 0.000544279177815704
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T00:45:46.151461+00:00",
+        "melbourne": "2026-11-14T11:45:46.151461+11:00"
+      },
+      "selection_journal": [
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:44:58.683178+00:00",
+            "melbourne": "2026-11-14T11:44:58.683178+11:00"
+          },
+          "level": 77,
+          "x": 0.1038961038961039,
+          "score": 0.4263540022261497,
+          "bracket": [
+            0.08247422680412371,
+            0.12307692307692308
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.0006517686085495909,
+          "model": {
+            "model": "quadratic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.00023233826301125176,
+              0.0007632822357576213,
+              0.0006061488182813704
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.7418070943057957e-06,
+            "development_max_residual": 3.535411540328548e-07
+          },
+          "round": 1
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-14T00:45:34.958757+00:00",
+            "melbourne": "2026-11-14T11:45:34.958757+11:00"
+          },
+          "level": 55,
+          "x": 0.14545454545454545,
+          "score": 0.4008172424719673,
+          "bracket": [
+            0.12307692307692308,
+            0.16326530612244897
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.0012729445488657998,
+          "model": {
+            "model": "quadratic",
+            "origin": 0.06201550387596899,
+            "scale": 0.10124980224647998,
+            "coefficients": [
+              0.00023234765717778554,
+              0.0007627799204065509,
+              0.0006066576731439881
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.464062565299834e-06,
+            "development_max_residual": 3.4659941424016686e-07
+          },
+          "round": 2
+        }
+      ],
+      "stop_reason": "refinement_tolerances_met",
+      "prediction_pass": true,
+      "operating_point": "not_selected: no new accuracy budget declared"
+    }
+  ],
+  "finished_at": {
+    "utc": "2026-11-14T00:56:16.296899+00:00",
+    "melbourne": "2026-11-14T11:56:16.296899+11:00"
+  },
+  "completed_cases": 35,
+  "observer_and_time_controls": [
+    {
+      "field": "hopfion",
+      "nodes": 49,
+      "base_case": "be876ebb1a7b6c6c",
+      "larger_dt_case": "7816de556f6bfc29",
+      "observer_refinement": [
+        {
+          "observer_nodes": 49,
+          "observer_half_extent": 2.0,
+          "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+          "evolution_observed_error": 0.0318351128858139,
+          "observer_baseline_error": 0.02330790132611593,
+          "total_observed_error": 0.0398828389732407,
+          "normalized_cross_term": 3.3908167884976504e-05,
+          "vector_decomposition_closure": 0.0,
+          "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+        },
+        {
+          "observer_nodes": 65,
+          "observer_half_extent": 2.0,
+          "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+          "evolution_observed_error": 0.03176039324398355,
+          "observer_baseline_error": 0.024086330133114377,
+          "total_observed_error": 0.04069946166653422,
+          "normalized_cross_term": 6.757230165183906e-05,
+          "vector_decomposition_closure": 0.0,
+          "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+        }
+      ]
+    },
+    {
+      "field": "hopfion",
+      "nodes": 129,
+      "base_case": "059c3202bb3a5794",
+      "larger_dt_case": "eeffb21bef4b6145",
+      "observer_refinement": [
+        {
+          "observer_nodes": 49,
+          "observer_half_extent": 2.0,
+          "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+          "evolution_observed_error": 0.004913729199335308,
+          "observer_baseline_error": 0.0035372257767456,
+          "total_observed_error": 0.006060578162800936,
+          "normalized_cross_term": 7.39068273456514e-08,
+          "vector_decomposition_closure": 0.0,
+          "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+        },
+        {
+          "observer_nodes": 65,
+          "observer_half_extent": 2.0,
+          "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+          "evolution_observed_error": 0.00491498243805977,
+          "observer_baseline_error": 0.0033860235673633483,
+          "total_observed_error": 0.005945655583825242,
+          "normalized_cross_term": -2.713876437037057e-07,
+          "vector_decomposition_closure": 6.776263578034403e-21,
+          "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+        }
+      ]
+    },
+    {
+      "field": "packet",
+      "nodes": 49,
+      "base_case": "f4fce6dbc2633c32",
+      "larger_dt_case": "085ef9f1575c5b99",
+      "observer_refinement": [
+        {
+          "observer_nodes": 49,
+          "observer_half_extent": 2.0,
+          "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+          "evolution_observed_error": 0.0016014188425251656,
+          "observer_baseline_error": 0.0036192868944247723,
+          "total_observed_error": 0.004059175379843473,
+          "normalized_cross_term": 8.131248309778475e-07,
+          "vector_decomposition_closure": 3.3881317890172014e-21,
+          "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+        },
+        {
+          "observer_nodes": 65,
+          "observer_half_extent": 2.0,
+          "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+          "evolution_observed_error": 0.0016012520010441496,
+          "observer_baseline_error": 0.003599010097505316,
+          "total_observed_error": 0.00401395694891385,
+          "normalized_cross_term": 5.94968734940668e-07,
+          "vector_decomposition_closure": 3.3881317890172014e-21,
+          "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+        }
+      ]
+    },
+    {
+      "field": "packet",
+      "nodes": 129,
+      "base_case": "452b8d421a3657f2",
+      "larger_dt_case": "1e93cdd86f7b8030",
+      "observer_refinement": [
+        {
+          "observer_nodes": 49,
+          "observer_half_extent": 2.0,
+          "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+          "evolution_observed_error": 0.0002324630471840842,
+          "observer_baseline_error": 0.0005196796445196576,
+          "total_observed_error": 0.0005800725065746767,
+          "normalized_cross_term": 1.2378111649640898e-08,
+          "vector_decomposition_closure": 0.0,
+          "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+        },
+        {
+          "observer_nodes": 65,
+          "observer_half_extent": 2.0,
+          "observer_interpolation": "componentwise linear, fixed physical nodes; tensor nodal trapezoidal weights",
+          "evolution_observed_error": 0.00023245741456355039,
+          "observer_baseline_error": 0.0004892597954166426,
+          "total_observed_error": 0.0005596931363644208,
+          "normalized_cross_term": 1.9844809896736905e-08,
+          "vector_decomposition_closure": 0.0,
+          "scope": "Vector differences share one observer and denominator. Scalar error norms are not additive; cancellation is explicitly retained. Observation-node refinement uses the same saved physical state."
+        }
+      ]
+    }
+  ],
+  "qx_transfer": "qx-transfer/qx-audit.json"
+}

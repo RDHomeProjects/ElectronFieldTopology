@@ -1,8 +1,8 @@
 # s2-003: Fixed-observer Maxwell spacing and localized duration controls
 
-Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
+Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Does isolated spacing refinement explain the measured error floor after separati
 
 ## Evidence and present finding
 
-Corrected extrema classification and fixed physical observer are implemented and host-controlled; the production spacing campaign is not yet measured.
+35 configurations completed. Packet spacing passes; Hopfion spacing fresh prediction fails narrowly; localized duration prediction passes but consecutive-round stopping remains open. Observer resolution changes are nonmonotonic.
 
 ## Next action and exit evidence
 
-Run the locally published follow-up: focused duration points, fixed-dt spacing curves, saved-state observer refinement and separate time anchors.
+Calibrate the fixed-state observer before revised physical-mesh fitting; retain the failed fit and duration stopping qualification.
 
 Recorded source/config identities, original gates, held-variable contracts, fresh validation, negative findings and declared unresolved conditions.
 

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "scope": "saved-state observer calibration only; no physical evolution or production mesh selection",
+  "source_record_id": "20261114t000026z-1620e2b1",
+  "cube_half_extent": 2.0,
+  "anchors": {
+    "hopfion": [
+      49,
+      81,
+      129
+    ],
+    "packet": [
+      49,
+      81,
+      129
+    ]
+  },
+  "seed_observer_nodes": [
+    33,
+    49,
+    65,
+    97
+  ],
+  "observer_max_nodes": 257,
+  "adaptive_additions": 4,
+  "validation_observer_nodes": [
+    101,
+    157,
+    229
+  ],
+  "measurement_error_budget": 1e-06,
+  "successive_good_rounds": 2,
+  "cell_gauss_orders": [
+    2,
+    3,
+    4
+  ],
+  "chunk_x": 4,
+  "threads": 6,
+  "fixed_parameters": {
+    "length": 8.0,
+    "duration": 1.0,
+    "steps": 960,
+    "angle_degrees": 0.0,
+    "rotation_code": null
+  },
+  "deferred": [
+    "new physical integrations",
+    "Hopfion physical-mesh curve replacement",
+    "duration confirmation",
+    "new SF trajectories"
+  ]
+}

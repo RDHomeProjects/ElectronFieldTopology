@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
+Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s2-002: Bounded Maxwell dependency assessment](s2/002-maxwell-dependency-assessment/assessments/20261113t234806z-ea32ee1d/README.md) — Bounded Maxwell dependency assessment records 61 cases, five withheld prediction checks and verified periodic controls. Available Q3 initial/observation/sampling diagnostics are preserved. The next numerical priority is fixed-observer spacing and focused duration localization, followed by Q2/Q3 transfer.
+[s2-003: Fixed-observer Maxwell spacing and localized duration controls](s2/003-spacing-observer-controls/assessments/20261114t025301z-f11e7fcb/README.md) — 35-state Maxwell follow-up assessed: controlled spatial errors approach second order; packet spacing passes fresh checks; Hopfion spacing prediction fails and localized duration consecutive-round closure remains open. Next: calibrate observation on saved fields, with Q2/Q3 evidence inventory proceeding separately.
