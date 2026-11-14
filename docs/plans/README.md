@@ -1,6 +1,6 @@
 # Study plans
 
-Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
+Updated: UTC 2026-11-14T23:23:48.283541+00:00; Australia/Melbourne 2026-11-15T10:23:48.283541+11:00.
 
 Each study has a stable stage/number and one current plan below. Earlier flat plan files remain source specifications at their published paths; their historical next-step wording is superseded by the register.
 
@@ -45,4 +45,4 @@ Each study has a stable stage/number and one current plan below. Earlier flat pl
 | [s2-004](s2/004-saved-state-observer-calibration.md) | Saved-state observer quadrature and alignment calibration | assessed | open |
 | [s2-005](s2/005-cell-aware-spacing-measurements.md) | Cell-aware saved-state spacing measurements | prepared | open |
 | [s5-b-012](s5-b/012-rapid-q-screening.md) | Bounded rapid Q2-Q16 static screening and conditional refinement | assessed | open |
-| [s5-b-013](s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | prepared | open |
+| [s5-b-013](s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | assessed | open |

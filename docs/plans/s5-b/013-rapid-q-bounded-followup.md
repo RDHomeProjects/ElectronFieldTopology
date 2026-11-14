@@ -1,8 +1,8 @@
 # s5-b-013: Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls
 
-Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
+Updated: UTC 2026-11-14T23:23:48.283541+00:00; Australia/Melbourne 2026-11-15T10:23:48.283541+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Can a declared additional preparation budget recover strict survivors while pres
 
 ## Evidence and present finding
 
-Completed rapid screen assessed; representation-first legacy selection and explicit allocation reporting prepared. Additional candidate outcomes remain unmeasured.
+Seven jobs; 645/650 added accepted steps; no new strict static survivor or motion. Q5 stopped at iteration 95 on approximate Hopf admission loss. Q4 plateaued; Q6/Q7 residuals finished worse; Q8/Q10 improved. All failures retained.
 
 ## Next action and exit evidence
 
-Run the local field/device audit, then Q6 +200, medium Q4/Q7 +100 each, secondary Q8 +100, and Q5/Q9/Q10 controls +50 each, all in batches of at most 50. Stop measured survivors for later mesh/boost/motion admission.
+Prepare a separate controlled diagnostic tranche: retained-field Q4/Q6 diagnosis, selective fixed-grid Q8/Q10 continuation and Q5 resolution rescue from pre-loss iteration 50. Q7/Q9 deferred pending diagnostics. No production launched by this assessment.
 
 650 additional accepted steps maximum, unchanged action and all scientific gates; exact continuation for screen states, declared optimizer restart for legacy imports, all failures/deferrals and full states retained; no automatic mesh or motion.
 
