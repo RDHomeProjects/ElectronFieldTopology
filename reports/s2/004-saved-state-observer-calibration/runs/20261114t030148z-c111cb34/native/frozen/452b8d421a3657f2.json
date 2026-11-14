@@ -1,0 +1,340 @@
+{
+  "frozen_at": {
+    "utc": "2026-11-14T03:17:59.355753+00:00",
+    "melbourne": "2026-11-14T14:17:59.355753+11:00"
+  },
+  "payload": {
+    "models": {
+      "evolution_observed_error": {
+        "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+        "development": [
+          {
+            "x": 0.03125,
+            "y": 0.00023252584761145094
+          },
+          {
+            "x": 0.020833333333333332,
+            "y": 0.00023246304718408422
+          },
+          {
+            "x": 0.015625,
+            "y": 0.00023245741456355039
+          },
+          {
+            "x": 0.010416666666666666,
+            "y": 0.00023243218428508814
+          },
+          {
+            "x": 0.006289308176100629,
+            "y": 0.00023242610402403847
+          },
+          {
+            "x": 0.005235602094240838,
+            "y": 0.00023242467393748875
+          }
+        ],
+        "models": [
+          {
+            "model": "exponential",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              -8.366972022408406,
+              0.00042237331604551563
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.6162999032643684e-08,
+            "development_max_residual": 1.406604314822162e-08
+          },
+          {
+            "model": "linear",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.00023241824359778666,
+              9.819005539169789e-08
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.616609437961332e-08,
+            "development_max_residual": 1.4069277102910947e-08
+          },
+          {
+            "model": "quadratic",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.0002324247881564464,
+              3.625861424015683e-08,
+              6.368869506579421e-08
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.712393830027815e-08,
+            "development_max_residual": 7.98759379144298e-09
+          },
+          {
+            "model": "constant",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.00023245487860095023
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 4.204308433565177e-08,
+            "development_max_residual": 7.096901050070983e-08
+          },
+          {
+            "model": "cubic",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.00023242310964085303,
+              8.198217671257512e-08,
+              -7.0225493329494e-08,
+              9.062983486701206e-08
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 9.976652557063112e-08,
+            "development_max_residual": 6.9913937813181285e-09
+          }
+        ],
+        "features": [
+          [
+            "possible_inflection",
+            0.013200995807127882
+          ],
+          [
+            "possible_inflection",
+            0.019097222222222224
+          ]
+        ]
+      },
+      "observer_baseline_error": {
+        "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+        "development": [
+          {
+            "x": 0.03125,
+            "y": 0.0004892401372954677
+          },
+          {
+            "x": 0.020833333333333332,
+            "y": 0.0005196796445196577
+          },
+          {
+            "x": 0.015625,
+            "y": 0.0004892597954166427
+          },
+          {
+            "x": 0.010416666666666666,
+            "y": 0.0005205198608547396
+          },
+          {
+            "x": 0.006289308176100629,
+            "y": 0.0005204035152312801
+          },
+          {
+            "x": 0.005235602094240838,
+            "y": 0.0005206549459914979
+          }
+        ],
+        "models": [
+          {
+            "model": "exponential",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              -7.5605680294399855,
+              -0.056363108883854235
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.3985254260297542e-05,
+            "development_max_residual": 1.973242555323735e-05
+          },
+          {
+            "model": "linear",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.0005205765902843675,
+              -2.8455790252347987e-05
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.3987990156414867e-05,
+            "development_max_residual": 1.9952375490214715e-05
+          },
+          {
+            "model": "constant",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.0005099596498848812
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.757663592767878e-05,
+            "development_max_residual": 2.0719512589413504e-05
+          },
+          {
+            "model": "quadratic",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.0005205326699177658,
+              -2.8040169926961895e-05,
+              -4.274132116814532e-07
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 4.340208557292048e-05,
+            "development_max_residual": 2.0006270625074906e-05
+          },
+          {
+            "model": "cubic",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.0005248202517703087,
+              -0.00014483593725890135,
+              0.00034164152333921095,
+              -0.00023150385783776042
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 0.00025031358653625235,
+            "development_max_residual": 1.7461588226732163e-05
+          }
+        ],
+        "features": [
+          [
+            "possible_inflection",
+            0.009045425296629238
+          ],
+          [
+            "possible_inflection",
+            0.013200995807127882
+          ],
+          [
+            "possible_inflection",
+            0.019097222222222224
+          ]
+        ]
+      },
+      "total_observed_error": {
+        "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+        "development": [
+          {
+            "x": 0.03125,
+            "y": 0.0005596832881281974
+          },
+          {
+            "x": 0.020833333333333332,
+            "y": 0.0005800725065746768
+          },
+          {
+            "x": 0.015625,
+            "y": 0.0005596931363644209
+          },
+          {
+            "x": 0.010416666666666666,
+            "y": 0.000580871820562469
+          },
+          {
+            "x": 0.006289308176100629,
+            "y": 0.0005805113507994465
+          },
+          {
+            "x": 0.005235602094240838,
+            "y": 0.0005807698668209454
+          }
+        ],
+        "models": [
+          {
+            "model": "exponential",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              -7.451216447763823,
+              -0.03352862278794536
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 9.392927567095778e-06,
+            "development_max_residual": 1.331719580956116e-05
+          },
+          {
+            "model": "linear",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.000580733646410278,
+              -1.9118898563928355e-05
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 9.393861400961087e-06,
+            "development_max_residual": 1.3404975084791294e-05
+          },
+          {
+            "model": "constant",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.0005736003282083595
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 1.180869714009259e-05,
+            "development_max_residual": 1.391704008016218e-05
+          },
+          {
+            "model": "quadratic",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.0005806881322950802,
+              -1.8688196526767527e-05,
+              -4.4292285467414053e-07
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 2.8851210874222075e-05,
+            "development_max_residual": 1.3460825924992213e-05
+          },
+          {
+            "model": "cubic",
+            "origin": 0.005235602094240838,
+            "scale": 0.026014397905759164,
+            "coefficients": [
+              0.0005835117566092543,
+              -9.560506476930174e-05,
+              0.000224829549971948,
+              -0.0001524588787566099
+            ],
+            "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+            "development_loo_rmse": 0.00016863367796923106,
+            "development_max_residual": 1.178500320278531e-05
+          }
+        ],
+        "features": [
+          [
+            "possible_inflection",
+            0.009045425296629238
+          ],
+          [
+            "possible_inflection",
+            0.013200995807127882
+          ],
+          [
+            "possible_inflection",
+            0.019097222222222224
+          ]
+        ]
+      }
+    },
+    "development_counts": [
+      33,
+      49,
+      65,
+      97,
+      160,
+      192
+    ],
+    "reserved_counts": [
+      101,
+      157,
+      229
+    ]
+  }
+}

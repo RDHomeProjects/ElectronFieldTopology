@@ -22,15 +22,15 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
+Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-35-state Maxwell follow-up assessed: controlled spatial errors approach second order; packet spacing passes fresh checks; Hopfion spacing prediction fails and localized duration consecutive-round closure remains open. Next: calibrate observation on saved fields, with Q2/Q3 evidence inventory proceeding separately.
+Six-state observer calibration assessed: primary cell-aware evolution is stable, but joint uniform-observer and curve checks remain partly unresolved. Next: confirm higher-order anchors and remeasure existing spacing states consistently before revised physical prediction checks.
 
-Observer sensitivity, physical-mesh fit prediction, duration confirmation and isolated-domain acceptance remain qualified. Qx audit is one 15-case survey. No new SF trajectory or electron acceptance. Q1 parked; Q2 reference; Q4/Q7 admission/preparation unresolved.
+Original physical-mesh and observer-fit failures remain. Duration confirmation is separate. No new physical evolution or SF admission. Q1 parked; Q2 reference; Q4/Q7 preparation/admission unresolved; Q2/Q3 inventory may progress separately.
 
-Next: **s2-004: Saved-state observer quadrature and alignment calibration**. Run the read-only calibration on the archived 35-state follow-up, then assess quadrature readiness and held-out observer prediction separately.
+Next: **s2-005: Cell-aware saved-state spacing measurements**. Run the registered anchor checks, then all 16 Hopfion and nine packet states if the common contract passes. Refit descriptively and reserve fresh physical validation separately.
 
 See [the recording rules](docs/governance/repository-layout.md). Existing evidence paths and bytes are preserved; new runs and assessments use canonical stage/study folders.
 

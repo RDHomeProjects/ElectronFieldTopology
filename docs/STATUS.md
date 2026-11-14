@@ -1,18 +1,18 @@
 # Project status
 
-Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
+Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
 
 ## Current position
 
-Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s2-003**, Fixed-observer Maxwell spacing and localized duration controls. Administrative progress is recorded in the study register below; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s2-004**, Saved-state observer quadrature and alignment calibration. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-35-state Maxwell follow-up assessed: controlled spatial errors approach second order; packet spacing passes fresh checks; Hopfion spacing prediction fails and localized duration consecutive-round closure remains open. Next: calibrate observation on saved fields, with Q2/Q3 evidence inventory proceeding separately.
+Six-state observer calibration assessed: primary cell-aware evolution is stable, but joint uniform-observer and curve checks remain partly unresolved. Next: confirm higher-order anchors and remeasure existing spacing states consistently before revised physical prediction checks.
 
-Observer sensitivity, physical-mesh fit prediction, duration confirmation and isolated-domain acceptance remain qualified. Qx audit is one 15-case survey. No new SF trajectory or electron acceptance. Q1 parked; Q2 reference; Q4/Q7 admission/preparation unresolved.
+Original physical-mesh and observer-fit failures remain. Duration confirmation is separate. No new physical evolution or SF admission. Q1 parked; Q2 reference; Q4/Q7 preparation/admission unresolved; Q2/Q3 inventory may progress separately.
 
 ## Next scientific task
 
-[s2-004: Saved-state observer quadrature and alignment calibration](plans/s2/004-saved-state-observer-calibration.md): Run the read-only calibration on the archived 35-state follow-up, then assess quadrature readiness and held-out observer prediction separately.
+[s2-005: Cell-aware saved-state spacing measurements](plans/s2/005-cell-aware-spacing-measurements.md): Run the registered anchor checks, then all 16 Hopfion and nine packet states if the common contract passes. Refit descriptively and reserve fresh physical validation separately.
 
 ## Study register
 
@@ -54,7 +54,8 @@ Observer sensitivity, physical-mesh fit prediction, duration confirmation and is
 | [s2-002](plans/s2/002-maxwell-dependency-assessment.md) | Bounded Maxwell dependency assessment | assessed | bounded |
 | [s2-003](plans/s2/003-spacing-observer-controls.md) | Fixed-observer Maxwell spacing and localized duration controls | assessed | open |
 | [s5-b-011](plans/s5-b/011-controlled-q-dependencies.md) | Controlled dependency transfer to Q2 Q3 and other Q results | prepared | open |
-| [s2-004](plans/s2/004-saved-state-observer-calibration.md) | Saved-state observer quadrature and alignment calibration | prepared | open |
+| [s2-004](plans/s2/004-saved-state-observer-calibration.md) | Saved-state observer quadrature and alignment calibration | assessed | open |
+| [s2-005](plans/s2/005-cell-aware-spacing-measurements.md) | Cell-aware saved-state spacing measurements | prepared | open |
 
 ## Claims and deferred work
 

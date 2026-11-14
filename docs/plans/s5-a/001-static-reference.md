@@ -1,6 +1,6 @@
 # s5-a-001: Static neutral SF reference and recovered evidence
 
-Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
+Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 

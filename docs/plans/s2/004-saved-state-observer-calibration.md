@@ -1,8 +1,8 @@
 # s2-004: Saved-state observer quadrature and alignment calibration
 
-Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
+Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ How much of the measured spacing-curve structure depends on observer integration
 
 ## Evidence and present finding
 
-Prepared six-state calibration at Hopfion/packet N49 N81 N129 with independent cell-aware quadrature, dynamic observer counts and fresh observer validation. Production outcomes are not yet measured.
+82 norm evaluations completed. Five cell references pass jointly; two uniform observers pass; one anchor passes all-response prediction. Cell-aware evolution is stable at all six states; uniform sampling is nonmonotonic.
 
 ## Next action and exit evidence
 
-Run the read-only calibration on the archived 35-state follow-up, then assess quadrature readiness and held-out observer prediction separately.
+Confirm orders 4/5/6 at the six saved anchors, then remeasure every spacing state consistently; retain all earlier failed checks.
 
 Exact state hashes, reproduced 33-node baseline, cell-Gauss order comparisons, two successive observer checks, independent midpoint control and frozen models before reserved observer counts. Failures retained.
 

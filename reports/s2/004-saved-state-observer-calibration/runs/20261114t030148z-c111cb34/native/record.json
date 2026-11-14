@@ -1,0 +1,4390 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T03:01:49.848954+00:00",
+    "melbourne": "2026-11-14T14:01:49.848954+11:00"
+  },
+  "status": "complete_pending_review",
+  "role": "saved-state-calibration",
+  "source_record_id": "20261114t000026z-1620e2b1",
+  "config": {
+    "schema": 1,
+    "scope": "saved-state observer calibration only; no physical evolution or production mesh selection",
+    "source_record_id": "20261114t000026z-1620e2b1",
+    "cube_half_extent": 2.0,
+    "anchors": {
+      "hopfion": [
+        49,
+        81,
+        129
+      ],
+      "packet": [
+        49,
+        81,
+        129
+      ]
+    },
+    "seed_observer_nodes": [
+      33,
+      49,
+      65,
+      97
+    ],
+    "observer_max_nodes": 257,
+    "adaptive_additions": 4,
+    "validation_observer_nodes": [
+      101,
+      157,
+      229
+    ],
+    "measurement_error_budget": 1e-06,
+    "successive_good_rounds": 2,
+    "cell_gauss_orders": [
+      2,
+      3,
+      4
+    ],
+    "chunk_x": 4,
+    "threads": 6,
+    "fixed_parameters": {
+      "length": 8.0,
+      "duration": 1.0,
+      "steps": 960,
+      "angle_degrees": 0.0,
+      "rotation_code": null
+    },
+    "deferred": [
+      "new physical integrations",
+      "Hopfion physical-mesh curve replacement",
+      "duration confirmation",
+      "new SF trajectories"
+    ]
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "source_environment": {
+      "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+      "numpy": "2.5.4",
+      "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+      "source_commit": "38b593415764fa10d2308b2ef4f1eeacb165529c",
+      "source_sha256": {
+        "fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+        "evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735"
+      },
+      "dependency_sha256": {
+        "pyproject.toml": "7533c5330618cded5524ac2bc7c0035cfd2f1688109e433a53c3ac24adf74d0c",
+        "uv.lock": "1256a2e134796077174a1a10bbfa53b3c33239a616ed93b20e08220da063079e"
+      },
+      "code_sha256": {
+        "dependencies.py": "85b6723e6dfcc08e268f3555cf542d77a9fddd13bcd0d2272baac80b03d85409",
+        "followup.py": "305d93314480e344c5f529333299c73b025259840f1bb5247daeb82edb9ffa6e",
+        "__init__.py": "f5218786e324ff53515ce6b472b248a36b2607d0db96685c7277e3fc1a612b58",
+        "qualification.py": "fadd8662184dbe288166e50ab701cb33b6af5e41a8913fe1453f2f05b47c8dcf",
+        "selftest.py": "03e1c37441d9d619cb502fa42fe71923f43f6a434d90c3fbdcec3e0d54b05cca",
+        "followup_report.py": "7b8bcd6fad0a049697d08174eafec9545360634e5af988100feff7dfc53e4c0f",
+        "common.py": "3e246a119df87247397234c69b3418f01aba3d84189a9a9245d0e209c294e736",
+        "numerics.py": "a55f214c38946785351cce15b7479f769b1b5003a15b0ec22031a3d7f855132c",
+        "observer.py": "4fd41f68dc06aa6579414f4994ef2a4999dc4badf748f863bda46ddaf410748b",
+        "qx_audit.py": "b0a057b46f6b555767570bb6dcc08de1e6280f53733e422517e378f6b5ecc9f8",
+        "yee_primitives.py": "aa34b7376067d1ed18a28aa1555de95bb55d446eac49f0a308ebbd4634739f76"
+      },
+      "threads": {
+        "OMP_NUM_THREADS": "6",
+        "OPENBLAS_NUM_THREADS": "6",
+        "MKL_NUM_THREADS": "6"
+      }
+    },
+    "source_commit": "2cdc2d040213b51d9a0952df520a832e86b970db"
+  },
+  "identity": {
+    "source_evidence_sha256": "293f5dc04a5612622c30310ca461a9e43070f4995589e5355427ee54e4702bf7",
+    "plan_sha256": "ea75edd5506113d892ab056c4e35a644e9d9f7325b698a8403f88451cde36689",
+    "code_sha256": {
+      "calibration.py": "5d10c9a21e683749340afb6a9df4c17365f1073d7d7416251abaf9a24f2f16ca",
+      "__init__.py": "22550594f31a41c419b06d4db1a362e60985148c65a7598cb74225f9c6c3ac11",
+      "selftest.py": "5af52cc2d503c2cddf82d768f49f688b5f1997f376a27a191d32f44943532b9c",
+      "runner.py": "7b15928e41e0b996a75256d8598e6a0dfc19dcecd96b927c4671b7458beeb593",
+      "reference/dependencies.py": "85b6723e6dfcc08e268f3555cf542d77a9fddd13bcd0d2272baac80b03d85409",
+      "reference/__init__.py": "f5218786e324ff53515ce6b472b248a36b2607d0db96685c7277e3fc1a612b58",
+      "reference/numerics.py": "a55f214c38946785351cce15b7479f769b1b5003a15b0ec22031a3d7f855132c",
+      "reference/observer.py": "4fd41f68dc06aa6579414f4994ef2a4999dc4badf748f863bda46ddaf410748b",
+      "reference/yee_primitives.py": "aa34b7376067d1ed18a28aa1555de95bb55d446eac49f0a308ebbd4634739f76"
+    },
+    "repo": "/home/rd/ElectronFieldTopology-observer-calibration",
+    "source": "/home/rd/ElectronFieldTopology-dependency-controls/artifacts/dependency-followup/20261114t000026z-1620e2b1",
+    "threads": {
+      "OMP_NUM_THREADS": "6",
+      "OPENBLAS_NUM_THREADS": "6",
+      "MKL_NUM_THREADS": "6"
+    }
+  },
+  "anchors": [
+    {
+      "case_id": "be876ebb1a7b6c6c",
+      "parameters": {
+        "nodes": 49,
+        "length": 8.0,
+        "duration": 1.0,
+        "field": "hopfion",
+        "angle_degrees": 0.0,
+        "rotation_code": null,
+        "steps": 960
+      },
+      "state_sha256": "5c0a11424c61a2b4b113e5ebdd45c8de384061e8eb70a170b4a7db2d7f9afa6c",
+      "gauss_refinement": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:01:50.098651+00:00",
+            "melbourne": "2026-11-14T14:01:50.098651+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 2,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.03176097025030053,
+          "observer_baseline_error": 0.022749055721826957,
+          "total_observed_error": 0.03993757399065544,
+          "normalized_cross_term": 6.873104878381449e-05,
+          "vector_decomposition_closure": 1.6031892736028126e-19,
+          "exact_norm_squared": 37.87158675453461
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:01:50.370409+00:00",
+            "melbourne": "2026-11-14T14:01:50.370409+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 3,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.031760979303767804,
+          "observer_baseline_error": 0.024084395305648865,
+          "total_observed_error": 0.04070649138047912,
+          "normalized_cross_term": 6.820053693589263e-05,
+          "vector_decomposition_closure": 1.0306222634451992e-19,
+          "exact_norm_squared": 37.87156516394578
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:01:51.261315+00:00",
+            "melbourne": "2026-11-14T14:01:51.261315+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 4,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.0317609793045811,
+          "observer_baseline_error": 0.024082391331690278,
+          "total_observed_error": 0.0407053354176962,
+          "normalized_cross_term": 6.820295282845281e-05,
+          "vector_decomposition_closure": 4.580543393324361e-20,
+          "exact_norm_squared": 37.87156516200624
+        }
+      ],
+      "reference_empirical_pass": false,
+      "reference": {
+        "measured_at": {
+          "utc": "2026-11-14T03:01:51.261315+00:00",
+          "melbourne": "2026-11-14T14:01:51.261315+11:00"
+        },
+        "method": "cell-gauss",
+        "order": 4,
+        "observer_nodes": null,
+        "evolution_observed_error": 0.0317609793045811,
+        "observer_baseline_error": 0.024082391331690278,
+        "total_observed_error": 0.0407053354176962,
+        "normalized_cross_term": 6.820295282845281e-05,
+        "vector_decomposition_closure": 4.580543393324361e-20,
+        "exact_norm_squared": 37.87156516200624
+      },
+      "development": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:01:53.582027+00:00",
+            "melbourne": "2026-11-14T14:01:53.582027+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 33,
+          "evolution_observed_error": 0.03172292592981522,
+          "observer_baseline_error": 0.024114982388019252,
+          "total_observed_error": 0.04058588773110512,
+          "normalized_cross_term": 5.933787779884764e-05,
+          "vector_decomposition_closure": 1.8329651504757807e-19,
+          "exact_norm_squared": 37.856114733584036
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:01:53.670009+00:00",
+            "melbourne": "2026-11-14T14:01:53.670009+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 49,
+          "evolution_observed_error": 0.0318351128858139,
+          "observer_baseline_error": 0.023307901326115925,
+          "total_observed_error": 0.03988283897324069,
+          "normalized_cross_term": 3.3908167884976504e-05,
+          "vector_decomposition_closure": 2.2906876450399973e-20,
+          "exact_norm_squared": 37.86468835532828
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:01:53.913333+00:00",
+            "melbourne": "2026-11-14T14:01:53.913333+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 65,
+          "evolution_observed_error": 0.03176039324398355,
+          "observer_baseline_error": 0.024086330133114377,
+          "total_observed_error": 0.04069946166653423,
+          "normalized_cross_term": 6.757230165183906e-05,
+          "vector_decomposition_closure": 2.29050576766431e-19,
+          "exact_norm_squared": 37.86769499702572
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:01:54.459399+00:00",
+            "melbourne": "2026-11-14T14:01:54.459399+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 97,
+          "evolution_observed_error": 0.03171853251245039,
+          "observer_baseline_error": 0.024117318929450373,
+          "total_observed_error": 0.04059030778232094,
+          "normalized_cross_term": 5.9862708775345954e-05,
+          "vector_decomposition_closure": 3.435563639981404e-19,
+          "exact_norm_squared": 37.86984446574384
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:01:56.312410+00:00",
+            "melbourne": "2026-11-14T14:01:56.312410+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 160,
+          "evolution_observed_error": 0.031761575041706985,
+          "observer_baseline_error": 0.024078410256659553,
+          "total_observed_error": 0.04070230775591019,
+          "normalized_cross_term": 6.811036703883506e-05,
+          "vector_decomposition_closure": 2.0612786742536332e-19,
+          "exact_norm_squared": 37.870937779542075
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:02:06.623654+00:00",
+            "melbourne": "2026-11-14T14:02:06.623654+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 257,
+          "evolution_observed_error": 0.031761149668893936,
+          "observer_baseline_error": 0.024082071848671685,
+          "total_observed_error": 0.04070524774582703,
+          "normalized_cross_term": 6.820038123469002e-05,
+          "vector_decomposition_closure": 1.0306288501374643e-19,
+          "exact_norm_squared": 37.871323128856915
+        }
+      ],
+      "adaptive_selections": [
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:01:56.312216+00:00",
+            "melbourne": "2026-11-14T14:01:56.312216+11:00"
+          },
+          "observer_nodes": 160,
+          "last_metric_change": 0.00010915388421328664,
+          "curvature_indicator": 0.00010757855212752826,
+          "growth_factor": 1.65,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 3.981075030724812e-06,
+          "qualifying": false,
+          "successive_qualifying": 0
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:02:06.623479+00:00",
+            "melbourne": "2026-11-14T14:02:06.623479+11:00"
+          },
+          "observer_nodes": 257,
+          "last_metric_change": 0.00011199997358924546,
+          "curvature_indicator": 0.00012545584446251577,
+          "growth_factor": 1.65,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 3.1948301859249795e-07,
+          "qualifying": false,
+          "successive_qualifying": 0
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T03:02:51.419961+00:00",
+        "melbourne": "2026-11-14T14:02:51.419961+11:00"
+      },
+      "models": {
+        "evolution_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.03172292592981522
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0318351128858139
+            },
+            {
+              "x": 0.015625,
+              "y": 0.03176039324398355
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.03171853251245039
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.031761575041706985
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.031761149668893936
+            }
+          ],
+          "models": [
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.03175994821377733
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 4.579936907145989e-05,
+              "development_max_residual": 7.516467203656785e-05,
+              "validation_residuals": [
+                3.647024235504254e-05,
+                -1.1863630566405492e-06,
+                -2.974932154162224e-07
+              ],
+              "validation_max_abs_error": 3.647024235504254e-05
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.031759959714355024,
+                -2.9080218796196723e-08
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 6.720787737030803e-05,
+              "development_max_residual": 7.517117349908203e-05,
+              "validation_residuals": [
+                3.647526219825725e-05,
+                -1.1775255026463816e-06,
+                -2.8650281699849067e-07
+              ],
+              "validation_max_abs_error": 3.647526219825725e-05
+            },
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -3.4495491178985898,
+                -2.2170156029617637e-06
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 6.720885625303958e-05,
+              "development_max_residual": 7.520332970483573e-05,
+              "validation_residuals": [
+                3.645948134802651e-05,
+                -1.187880194160329e-06,
+                -2.9379764339421133e-07
+              ],
+              "validation_max_abs_error": 3.645948134802651e-05
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.031740204161741295,
+                0.00016386406893099546,
+                -0.00016574717883295764
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.00018231020295161733,
+              "development_max_residual": 5.698668870890433e-05,
+              "validation_residuals": [
+                4.501258416224341e-05,
+                -7.314503384703297e-06,
+                -1.7217751853412788e-05
+              ],
+              "validation_max_abs_error": 4.501258416224341e-05
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.03177490865872504,
+                -0.0005980216211639946,
+                0.001997552718548677,
+                -0.001450334753675544
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.0002132822935611068,
+              "development_max_residual": 2.4572828939015134e-05,
+              "validation_residuals": [
+                1.3136706410385446e-06,
+                -2.535211330178394e-05,
+                4.778333647599553e-06
+              ],
+              "validation_max_abs_error": 2.535211330178394e-05
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.008823866614255766
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "observer_baseline_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.024114982388019252
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.023307901326115925
+            },
+            {
+              "x": 0.015625,
+              "y": 0.024086330133114377
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.024117318929450373
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.024078410256659553
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.024082071848671685
+            }
+          ],
+          "models": [
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.023964502480338535
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.000352849540847791,
+              "development_max_residual": 0.0006566011542226101,
+              "validation_residuals": [
+                -0.00015871861454364034,
+                -0.00011766457334633912,
+                -0.0001184045937265947
+              ],
+              "validation_max_abs_error": 0.00015871861454364034
+            },
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -3.7274125464022205,
+                -0.009543750281808473
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.0005073895726946327,
+              "development_max_residual": 0.0006053964542186881,
+              "validation_residuals": [
+                -0.00011933255641236387,
+                -4.8184639721990385e-05,
+                -3.193779593857471e-05
+              ],
+              "validation_max_abs_error": 0.00011933255641236387
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.024054393726460115,
+                -0.00022729789534263342
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.000511751252645904,
+              "development_max_residual": 0.0006057841794177982,
+              "validation_residuals": [
+                -0.00011948232795556263,
+                -4.858815280558634e-05,
+                -3.250102997944676e-05
+              ],
+              "validation_max_abs_error": 0.00011948232795556263
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.024217829334836172,
+                -0.0015831686757613148,
+                0.001371208972932949
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.0013000691412351527,
+              "development_max_residual": 0.00045534584986044874,
+              "validation_residuals": [
+                -0.00019011069438853306,
+                2.1824195673807167e-06,
+                0.00010756941203436676
+              ],
+              "validation_max_abs_error": 0.00019011069438853306
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.023989603513199665,
+                0.0034271902900123133,
+                -0.012855215249776212,
+                0.009537779526407685
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.0028041396865508108,
+              "development_max_residual": 0.0002383054563318658,
+              "validation_residuals": [
+                9.726475576378804e-05,
+                0.00012080244583146174,
+                -3.708258187306787e-05
+              ],
+              "validation_max_abs_error": 0.00012080244583146174
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.008823866614255766
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "total_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.04058588773110512
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.03988283897324069
+            },
+            {
+              "x": 0.015625,
+              "y": 0.04069946166653423
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.04059030778232094
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.04070230775591019
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.04070524774582703
+            }
+          ],
+          "models": [
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.04052767527582305
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.0003514533575380504,
+              "development_max_residual": 0.0006448363025823578,
+              "validation_residuals": [
+                -9.56667728039956e-05,
+                -0.00017702056813025113,
+                -0.0001754197379217337
+              ],
+              "validation_max_abs_error": 0.00017702056813025113
+            },
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -3.202420326081301,
+                -0.008480968718824245
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.00047567285252762007,
+              "development_max_residual": 0.0005678966532541643,
+              "validation_residuals": [
+                -3.64601503681089e-05,
+                -7.259938693184032e-05,
+                -4.547941798658389e-05
+              ],
+              "validation_max_abs_error": 7.259938693184032e-05
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.040663095527974244,
+                -0.0003424219779877424
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.00047831966731488504,
+              "development_max_residual": 0.0005682810445506656,
+              "validation_residuals": [
+                -3.6557704318644635e-05,
+                -7.295763997060972e-05,
+                -4.6006888893133924e-05
+              ],
+              "validation_max_abs_error": 7.295763997060972e-05
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.040818266129495955,
+                -0.0016297258077577871,
+                0.0013018663634941322
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.001148942916770178,
+              "development_max_residual": 0.0004254504440390078,
+              "validation_residuals": [
+                -0.00010361436481508973,
+                -2.4754556609572764e-05,
+                8.698013247056269e-05
+              ],
+              "validation_max_abs_error": 0.00010361436481508973
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.04062779417643433,
+                0.002551803043393694,
+                -0.010571175816187899,
+                0.00796000856186904
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.0031332439402272775,
+              "development_max_residual": 0.0002930925567777437,
+              "validation_residuals": [
+                0.00013622249001575548,
+                7.424295345627441e-05,
+                -3.374305124389382e-05
+              ],
+              "validation_max_abs_error": 0.00013622249001575548
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.008823866614255766
+            ],
+            [
+              "possible_inflection",
+              0.013200995807127882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        }
+      },
+      "validation": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:02:51.420517+00:00",
+            "melbourne": "2026-11-14T14:02:51.420517+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 101,
+          "evolution_observed_error": 0.03172347797142229,
+          "observer_baseline_error": 0.024123221094882175,
+          "total_observed_error": 0.04062334204862705,
+          "normalized_cross_term": 6.194706860386644e-05,
+          "vector_decomposition_closure": 6.871102809778359e-20,
+          "exact_norm_squared": 37.86997933231545
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:02:53.523890+00:00",
+            "melbourne": "2026-11-14T14:02:53.523890+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 157,
+          "evolution_observed_error": 0.03176113457683397,
+          "observer_baseline_error": 0.024082167053684874,
+          "total_observed_error": 0.0407046958439533,
+          "normalized_cross_term": 6.815182413940579e-05,
+          "vector_decomposition_closure": 9.16124444495775e-20,
+          "exact_norm_squared": 37.870913420099384
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:03:03.117655+00:00",
+            "melbourne": "2026-11-14T14:03:03.117655+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 229,
+          "evolution_observed_error": 0.03176024570699275,
+          "observer_baseline_error": 0.02408290707406513,
+          "total_observed_error": 0.040703095013744785,
+          "normalized_cross_term": 6.804232319132811e-05,
+          "vector_decomposition_closure": 0.0,
+          "exact_norm_squared": 37.87126003511746
+        }
+      ],
+      "midpoint_control": {
+        "measured_at": {
+          "utc": "2026-11-14T03:03:34.391275+00:00",
+          "melbourne": "2026-11-14T14:03:34.391275+11:00"
+        },
+        "method": "midpoint",
+        "order": null,
+        "observer_nodes": 257,
+        "evolution_observed_error": 0.03176109768378487,
+        "observer_baseline_error": 0.024080726471109527,
+        "total_observed_error": 0.04070399971397753,
+        "normalized_cross_term": 6.816687926016223e-05,
+        "vector_decomposition_closure": 4.007962761708033e-19,
+        "exact_norm_squared": 37.8716852357392
+      },
+      "original_33_max_difference_from_reference": 0.00011944768659107735,
+      "final_uniform_max_difference_from_reference": 3.1948301859249795e-07,
+      "uniform_observer_pass": false,
+      "fresh_prediction_max_error": 0.00017702056813025113,
+      "fresh_prediction_pass": false,
+      "stop_reason": "bounded_budget_or_independent_rule_unresolved",
+      "scope": "Six fixed native states only; no physical mesh fit or continuum proof. Order agreement is an empirical quadrature check."
+    },
+    {
+      "case_id": "5d5bc5e9131ae7e4",
+      "parameters": {
+        "nodes": 81,
+        "length": 8.0,
+        "duration": 1.0,
+        "field": "hopfion",
+        "angle_degrees": 0.0,
+        "rotation_code": null,
+        "steps": 960
+      },
+      "state_sha256": "9e147af5007169b8926539c041d912ef83bd370ae03abf6f0fffc7216459cf0d",
+      "gauss_refinement": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:19.168303+00:00",
+            "melbourne": "2026-11-14T14:04:19.168303+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 2,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.012239899384813072,
+          "observer_baseline_error": 0.008430814830860403,
+          "total_observed_error": 0.014979433293285417,
+          "normalized_cross_term": 3.4896461253844487e-06,
+          "vector_decomposition_closure": 2.6481264592032724e-20,
+          "exact_norm_squared": 37.87156788013911
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:20.260564+00:00",
+            "melbourne": "2026-11-14T14:04:20.260564+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 3,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.012239899824030143,
+          "observer_baseline_error": 0.008921848988420283,
+          "total_observed_error": 0.015260876662494509,
+          "normalized_cross_term": 3.479819433400345e-06,
+          "vector_decomposition_closure": 2.433413677693086e-20,
+          "exact_norm_squared": 37.871565162169354
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:24.379242+00:00",
+            "melbourne": "2026-11-14T14:04:24.379242+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 4,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.012239899824054452,
+          "observer_baseline_error": 0.008921577634635101,
+          "total_observed_error": 0.01526071861368421,
+          "normalized_cross_term": 3.4798374123382866e-06,
+          "vector_decomposition_closure": 1.0735648578100377e-20,
+          "exact_norm_squared": 37.87156516201892
+        }
+      ],
+      "reference_empirical_pass": true,
+      "reference": {
+        "measured_at": {
+          "utc": "2026-11-14T03:04:24.379242+00:00",
+          "melbourne": "2026-11-14T14:04:24.379242+11:00"
+        },
+        "method": "cell-gauss",
+        "order": 4,
+        "observer_nodes": null,
+        "evolution_observed_error": 0.012239899824054452,
+        "observer_baseline_error": 0.008921577634635101,
+        "total_observed_error": 0.01526071861368421,
+        "normalized_cross_term": 3.4798374123382866e-06,
+        "vector_decomposition_closure": 1.0735648578100377e-20,
+        "exact_norm_squared": 37.87156516201892
+      },
+      "development": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:35.906689+00:00",
+            "melbourne": "2026-11-14T14:04:35.906689+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 33,
+          "evolution_observed_error": 0.012235516319669184,
+          "observer_baseline_error": 0.008934931743131227,
+          "total_observed_error": 0.015221982173001912,
+          "normalized_cross_term": 2.16787641188301e-06,
+          "vector_decomposition_closure": 3.0072084499993276e-20,
+          "exact_norm_squared": 37.856114733584036
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:35.992063+00:00",
+            "melbourne": "2026-11-14T14:04:35.992063+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 49,
+          "evolution_observed_error": 0.012238888547234716,
+          "observer_baseline_error": 0.008932931353172056,
+          "total_observed_error": 0.015245618186318397,
+          "normalized_cross_term": 2.84121845088477e-06,
+          "vector_decomposition_closure": 4.5455832956262444e-20,
+          "exact_norm_squared": 37.86468835532828
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:36.195958+00:00",
+            "melbourne": "2026-11-14T14:04:36.195958+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 65,
+          "evolution_observed_error": 0.012240410731326033,
+          "observer_baseline_error": 0.008922594310910432,
+          "total_observed_error": 0.015259453476546333,
+          "normalized_cross_term": 3.4105762942292963e-06,
+          "vector_decomposition_closure": 3.578915261975484e-20,
+          "exact_norm_squared": 37.86769499702572
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:36.649003+00:00",
+            "melbourne": "2026-11-14T14:04:36.649003+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 97,
+          "evolution_observed_error": 0.012240054979415766,
+          "observer_baseline_error": 0.008921944833467806,
+          "total_observed_error": 0.01525936006214363,
+          "normalized_cross_term": 3.4280239955805445e-06,
+          "vector_decomposition_closure": 3.8650090949790797e-20,
+          "exact_norm_squared": 37.86984446574384
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:38.220463+00:00",
+            "melbourne": "2026-11-14T14:04:38.220463+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 136,
+          "evolution_observed_error": 0.012238357466385059,
+          "observer_baseline_error": 0.008937812125824852,
+          "total_observed_error": 0.015269527342617509,
+          "normalized_cross_term": 3.4965861953790647e-06,
+          "vector_decomposition_closure": 1.8608885145952424e-20,
+          "exact_norm_squared": 37.87069491741489
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:04:44.009026+00:00",
+            "melbourne": "2026-11-14T14:04:44.009026+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 224,
+          "evolution_observed_error": 0.012240001304962021,
+          "observer_baseline_error": 0.008919430389566997,
+          "total_observed_error": 0.015259080559872157,
+          "normalized_cross_term": 3.46566911286512e-06,
+          "vector_decomposition_closure": 2.218719392667221e-20,
+          "exact_norm_squared": 37.871246199644744
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:05:13.206277+00:00",
+            "melbourne": "2026-11-14T14:05:13.206277+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 257,
+          "evolution_observed_error": 0.012239882034828033,
+          "observer_baseline_error": 0.00892184395487056,
+          "total_observed_error": 0.01526034094566339,
+          "normalized_cross_term": 3.4639939963241883e-06,
+          "vector_decomposition_closure": 1.7177147502291073e-20,
+          "exact_norm_squared": 37.871323128856915
+        }
+      ],
+      "adaptive_selections": [
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:04:38.220315+00:00",
+            "melbourne": "2026-11-14T14:04:38.220315+11:00"
+          },
+          "observer_nodes": 136,
+          "last_metric_change": 6.494774426255012e-07,
+          "curvature_indicator": 3.4001200929015263e-06,
+          "growth_factor": 1.4,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 1.623449118975072e-05,
+          "qualifying": false,
+          "successive_qualifying": 0
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:04:44.008841+00:00",
+            "melbourne": "2026-11-14T14:04:44.008841+11:00"
+          },
+          "observer_nodes": 224,
+          "last_metric_change": 1.586729235704583e-05,
+          "curvature_indicator": 1.263940390068487e-06,
+          "growth_factor": 1.65,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 2.1472450681039174e-06,
+          "qualifying": false,
+          "successive_qualifying": 0
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:05:13.206081+00:00",
+            "melbourne": "2026-11-14T14:05:13.206081+11:00"
+          },
+          "observer_nodes": 257,
+          "last_metric_change": 1.8381736257854636e-05,
+          "curvature_indicator": 5.474124389838633e-06,
+          "growth_factor": 1.65,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 3.7766802082027373e-07,
+          "qualifying": false,
+          "successive_qualifying": 0
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T03:05:57.277192+00:00",
+        "melbourne": "2026-11-14T14:05:57.277192+11:00"
+      },
+      "models": {
+        "evolution_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.012235516319669184
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.012238888547234716
+            },
+            {
+              "x": 0.015625,
+              "y": 0.012240410731326033
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.012240054979415766
+            },
+            {
+              "x": 0.007407407407407408,
+              "y": 0.012238357466385059
+            },
+            {
+              "x": 0.004484304932735426,
+              "y": 0.012240001304962021
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.012239882034828033
+            }
+          ],
+          "models": [
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.012239444585482795,
+                4.180755005974439e-06,
+                -8.034762872070073e-06
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.152352350696866e-06,
+              "development_max_residual": 1.4907040678628636e-06,
+              "validation_residuals": [
+                -3.0130917895096476e-07,
+                -6.275403633421855e-07,
+                -4.119271811015013e-07
+              ],
+              "validation_max_abs_error": 6.275403633421855e-07
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.01224024195868023,
+                -3.5247188129612587e-06
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.8215778940330785e-06,
+              "development_max_residual": 1.679366422787168e-06,
+              "validation_residuals": [
+                -8.221069035009576e-07,
+                -4.684171359750633e-07,
+                2.5273526077507213e-07
+              ],
+              "validation_max_abs_error": 8.221069035009576e-07
+            },
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -4.40302622676174,
+                -0.00028802133150467756
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.8216234699211803e-06,
+              "development_max_residual": 1.6794955091815195e-06,
+              "validation_residuals": [
+                -8.22153439971815e-07,
+                -4.683885310614866e-07,
+                2.5281395528257977e-07
+              ],
+              "validation_max_abs_error": 8.22153439971815e-07
+            },
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.0122390159119744
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.841669554142232e-06,
+              "development_max_residual": 3.4995923052158484e-06,
+              "validation_residuals": [
+                -1.262644845300559e-06,
+                -1.3716873937322238e-06,
+                -9.114742728980052e-07
+              ],
+              "validation_max_abs_error": 1.3716873937322238e-06
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.012239693672503686,
+                -2.031531037661545e-06,
+                1.0176665729981203e-05,
+                -1.2385376627539954e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 9.770919767063891e-06,
+              "development_max_residual": 1.2169291450005865e-06,
+              "validation_residuals": [
+                -6.692829704457032e-07,
+                -8.041343440862853e-07,
+                -2.662892716904369e-07
+              ],
+              "validation_max_abs_error": 8.041343440862853e-07
+            }
+          ],
+          "features": [
+            [
+              "turning_point",
+              0.011020182390711666
+            ],
+            [
+              "possible_inflection",
+              0.006351056891158722
+            ],
+            [
+              "possible_inflection",
+              0.009292908846813929
+            ]
+          ]
+        },
+        "observer_baseline_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.008934931743131227
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.008932931353172056
+            },
+            {
+              "x": 0.015625,
+              "y": 0.008922594310910432
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.008921944833467806
+            },
+            {
+              "x": 0.007407407407407408,
+              "y": 0.008937812125824852
+            },
+            {
+              "x": 0.004484304932735426,
+              "y": 0.008919430389566997
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.00892184395487056
+            }
+          ],
+          "models": [
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -4.7190709893084035,
+                0.0012523509929933464
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 7.409189505794637e-06,
+              "development_max_residual": 1.291640540920444e-05,
+              "validation_residuals": [
+                5.044493552248605e-06,
+                3.6076546380270358e-06,
+                2.005561482994883e-06
+              ],
+              "validation_max_abs_error": 5.044493552248605e-06
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.008923466850162065,
+                1.1179430108559617e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 7.410062426068193e-06,
+              "development_max_residual": 1.2913835405499799e-05,
+              "validation_residuals": [
+                5.047221372546373e-06,
+                3.6101304353823582e-06,
+                2.0077887851171344e-06
+              ],
+              "validation_max_abs_error": 5.047221372546373e-06
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.008923740473506008,
+                8.535251046915312e-06,
+                2.7571765540523804e-06
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 8.087500705634078e-06,
+              "development_max_residual": 1.2933575442063486e-05,
+              "validation_residuals": [
+                4.868506543199633e-06,
+                3.664734515020432e-06,
+                2.235871645847251e-06
+              ],
+              "validation_max_abs_error": 4.868506543199633e-06
+            },
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.008927355530134844
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 8.166182856773378e-06,
+              "development_max_residual": 1.0456595690008438e-05,
+              "validation_residuals": [
+                6.444485492560631e-06,
+                6.4750530722121336e-06,
+                5.700338405113803e-06
+              ],
+              "validation_max_abs_error": 6.4750530722121336e-06
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.008922942186268957,
+                2.8444713385437716e-05,
+                -5.5607771443437354e-05,
+                3.9693308997982184e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 8.410038817598708e-05,
+              "development_max_residual": 1.2056167113213764e-05,
+              "validation_residuals": [
+                6.0478083802086025e-06,
+                4.230692229141228e-06,
+                1.7691235836610891e-06
+              ],
+              "validation_max_abs_error": 6.0478083802086025e-06
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.006351056891158722
+            ],
+            [
+              "possible_inflection",
+              0.009292908846813929
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "total_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.015221982173001912
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.015245618186318397
+            },
+            {
+              "x": 0.015625,
+              "y": 0.015259453476546333
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.01525936006214363
+            },
+            {
+              "x": 0.007407407407407408,
+              "y": 0.015269527342617509
+            },
+            {
+              "x": 0.004484304932735426,
+              "y": 0.015259080559872157
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.01526034094566339
+            }
+          ],
+          "models": [
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.015259985424364136,
+                5.638120440438845e-05,
+                -0.0001817833105480476,
+                8.740470867478348e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 5.182545929872694e-06,
+              "development_max_residual": 5.119562603485978e-06,
+              "validation_residuals": [
+                3.3508275380841196e-06,
+                1.8308116516482092e-06,
+                4.2975403119656364e-07
+              ],
+              "validation_max_abs_error": 3.3508275380841196e-06
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.01526174325371005,
+                1.2540547137483522e-05,
+                -5.3263632916762e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.0328910472466466e-05,
+              "development_max_residual": 7.0516166777879336e-06,
+              "validation_residuals": [
+                7.540036373928499e-07,
+                5.845721625756528e-07,
+                1.4575337610681777e-06
+              ],
+              "validation_max_abs_error": 1.4575337610681777e-06
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.015267029158715872,
+                -3.854017988298921e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.075469192279398e-05,
+              "development_max_residual": 8.941537780313494e-06,
+              "validation_residuals": [
+                -2.6984416016308937e-06,
+                1.63942360077024e-06,
+                5.863679515659068e-06
+              ],
+              "validation_max_abs_error": 5.863679515659068e-06
+            },
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -4.182059240175143,
+                -0.002528220763586632
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.0759970680797439e-05,
+              "development_max_residual": 8.950026556297716e-06,
+              "validation_residuals": [
+                -2.701481455478702e-06,
+                1.6420184356449874e-06,
+                5.870193228238799e-06
+              ],
+              "validation_max_abs_error": 5.870193228238799e-06
+            },
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.015253623249451901
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.6848951722632837e-05,
+              "development_max_residual": 3.1641076449989355e-05,
+              "validation_residuals": [
+                -7.515396491677637e-06,
+                -8.237165161096086e-06,
+                -6.866086241593197e-06
+              ],
+              "validation_max_abs_error": 8.237165161096086e-06
+            }
+          ],
+          "features": [
+            [
+              "turning_point",
+              0.008770840990236787
+            ],
+            [
+              "possible_inflection",
+              0.022862655870126845
+            ],
+            [
+              "possible_inflection",
+              0.006351056891158722
+            ],
+            [
+              "possible_inflection",
+              0.009292908846813929
+            ],
+            [
+              "possible_inflection",
+              0.013387345679012345
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        }
+      },
+      "validation": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:05:57.277751+00:00",
+            "melbourne": "2026-11-14T14:05:57.277751+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 101,
+          "evolution_observed_error": 0.0122402785568197,
+          "observer_baseline_error": 0.008920911044642283,
+          "total_observed_error": 0.015261138645943579,
+          "normalized_cross_term": 3.4952797557518457e-06,
+          "vector_decomposition_closure": 4.2944392561114737e-20,
+          "exact_norm_squared": 37.86997933231545
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:05:59.367726+00:00",
+            "melbourne": "2026-11-14T14:05:59.367726+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 157,
+          "evolution_observed_error": 0.012240387599368132,
+          "observer_baseline_error": 0.008920880477062632,
+          "total_observed_error": 0.015261860414612997,
+          "normalized_cross_term": 3.5151862463288407e-06,
+          "vector_decomposition_closure": 7.157222222623243e-22,
+          "exact_norm_squared": 37.870913420099384
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:06:09.098469+00:00",
+            "melbourne": "2026-11-14T14:06:09.098469+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 229,
+          "evolution_observed_error": 0.012239927386247297,
+          "observer_baseline_error": 0.00892165519172973,
+          "total_observed_error": 0.015260489335693494,
+          "normalized_cross_term": 3.4707809840901797e-06,
+          "vector_decomposition_closure": 6.155154776160869e-20,
+          "exact_norm_squared": 37.87126003511746
+        }
+      ],
+      "midpoint_control": {
+        "measured_at": {
+          "utc": "2026-11-14T03:06:40.175508+00:00",
+          "melbourne": "2026-11-14T14:06:40.175508+11:00"
+        },
+        "method": "midpoint",
+        "order": null,
+        "observer_nodes": 257,
+        "evolution_observed_error": 0.012239837671778326,
+        "observer_baseline_error": 0.00892181914901092,
+        "total_observed_error": 0.01526032442255112,
+        "normalized_cross_term": 3.4650183223684035e-06,
+        "vector_decomposition_closure": 1.2882737448347248e-20,
+        "exact_norm_squared": 37.8716852357392
+      },
+      "original_33_max_difference_from_reference": 3.8736440682298964e-05,
+      "final_uniform_max_difference_from_reference": 3.7766802082027373e-07,
+      "uniform_observer_pass": false,
+      "fresh_prediction_max_error": 5.044493552248605e-06,
+      "fresh_prediction_pass": false,
+      "stop_reason": "bounded_budget_or_independent_rule_unresolved",
+      "scope": "Six fixed native states only; no physical mesh fit or continuum proof. Order agreement is an empirical quadrature check."
+    },
+    {
+      "case_id": "059c3202bb3a5794",
+      "parameters": {
+        "nodes": 129,
+        "length": 8.0,
+        "duration": 1.0,
+        "field": "hopfion",
+        "angle_degrees": 0.0,
+        "rotation_code": null,
+        "steps": 960
+      },
+      "state_sha256": "c4144f585463bd49a82a626827d012334e23f220a8bdc7f8fd72b73d3d92e8fc",
+      "gauss_refinement": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:07:28.052828+00:00",
+            "melbourne": "2026-11-14T14:07:28.052828+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 2,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.0049136687100321125,
+          "observer_baseline_error": 0.0033388047629448856,
+          "total_observed_error": 0.005955660789555785,
+          "normalized_cross_term": 1.7813800324014484e-07,
+          "vector_decomposition_closure": 3.421987947451612e-21,
+          "exact_norm_squared": 37.871565569487004
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:07:32.707209+00:00",
+            "melbourne": "2026-11-14T14:07:32.707209+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 3,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.004913668736464996,
+          "observer_baseline_error": 0.0035327581159509064,
+          "total_observed_error": 0.006066501560293903,
+          "normalized_cross_term": 1.7792082351784147e-07,
+          "vector_decomposition_closure": 8.364859517100787e-21,
+          "exact_norm_squared": 37.87156516202989
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:07:52.480495+00:00",
+            "melbourne": "2026-11-14T14:07:52.480495+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 4,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.004913668736465694,
+          "observer_baseline_error": 0.003532715781415949,
+          "total_observed_error": 0.006066476922236382,
+          "normalized_cross_term": 1.779210040409379e-07,
+          "vector_decomposition_closure": 2.437886864610281e-21,
+          "exact_norm_squared": 37.87156516201912
+        }
+      ],
+      "reference_empirical_pass": true,
+      "reference": {
+        "measured_at": {
+          "utc": "2026-11-14T03:07:52.480495+00:00",
+          "melbourne": "2026-11-14T14:07:52.480495+11:00"
+        },
+        "method": "cell-gauss",
+        "order": 4,
+        "observer_nodes": null,
+        "evolution_observed_error": 0.004913668736465694,
+        "observer_baseline_error": 0.003532715781415949,
+        "total_observed_error": 0.006066476922236382,
+        "normalized_cross_term": 1.779210040409379e-07,
+        "vector_decomposition_closure": 2.437886864610281e-21,
+        "exact_norm_squared": 37.87156516201912
+      },
+      "development": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:08:39.144083+00:00",
+            "melbourne": "2026-11-14T14:08:39.144083+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 33,
+          "evolution_observed_error": 0.004915541160079144,
+          "observer_baseline_error": 0.003386027603329859,
+          "total_observed_error": 0.005945615347743394,
+          "normalized_cross_term": -2.7738596362216004e-07,
+          "vector_decomposition_closure": 0.0,
+          "exact_norm_squared": 37.856114733584036
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:08:39.239154+00:00",
+            "melbourne": "2026-11-14T14:08:39.239154+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 49,
+          "evolution_observed_error": 0.004913729199335308,
+          "observer_baseline_error": 0.0035372257767456,
+          "total_observed_error": 0.0060605781628009356,
+          "normalized_cross_term": 7.390682734565143e-08,
+          "vector_decomposition_closure": 6.755738953145305e-21,
+          "exact_norm_squared": 37.86468835532828
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:08:39.447218+00:00",
+            "melbourne": "2026-11-14T14:08:39.447218+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 65,
+          "evolution_observed_error": 0.004914982438059771,
+          "observer_baseline_error": 0.0033860235673633483,
+          "total_observed_error": 0.005945655583825241,
+          "normalized_cross_term": -2.713876437037059e-07,
+          "vector_decomposition_closure": 8.544660187966469e-21,
+          "exact_norm_squared": 37.86769499702572
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:08:39.904259+00:00",
+            "melbourne": "2026-11-14T14:08:39.904259+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 97,
+          "evolution_observed_error": 0.004913468059578948,
+          "observer_baseline_error": 0.003537548813897701,
+          "total_observed_error": 0.00606135228303685,
+          "normalized_cross_term": 8.357151586449362e-08,
+          "vector_decomposition_closure": 5.636471596844491e-21,
+          "exact_norm_squared": 37.86984446574384
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:08:41.489384+00:00",
+            "melbourne": "2026-11-14T14:08:41.489384+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 160,
+          "evolution_observed_error": 0.004913704282696839,
+          "observer_baseline_error": 0.003532653775662214,
+          "total_observed_error": 0.006066665011597668,
+          "normalized_cross_term": 1.802918864495741e-07,
+          "vector_decomposition_closure": 7.246682839172929e-21,
+          "exact_norm_squared": 37.870937779542075
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:08:51.892051+00:00",
+            "melbourne": "2026-11-14T14:08:51.892051+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 224,
+          "evolution_observed_error": 0.004913694343314508,
+          "observer_baseline_error": 0.003532701837149226,
+          "total_observed_error": 0.006066634795619221,
+          "normalized_cross_term": 1.796833736993705e-07,
+          "vector_decomposition_closure": 8.901716918160827e-21,
+          "exact_norm_squared": 37.871246199644744
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:09:20.833074+00:00",
+            "melbourne": "2026-11-14T14:09:20.833074+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 257,
+          "evolution_observed_error": 0.0049126893962942765,
+          "observer_baseline_error": 0.0035385841229613477,
+          "total_observed_error": 0.006052903543263697,
+          "normalized_cross_term": -1.845339568212635e-08,
+          "vector_decomposition_closure": 3.1620042033026044e-21,
+          "exact_norm_squared": 37.871323128856915
+        }
+      ],
+      "adaptive_selections": [
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:08:41.489236+00:00",
+            "melbourne": "2026-11-14T14:08:41.489236+11:00"
+          },
+          "observer_nodes": 160,
+          "last_metric_change": 0.00015152524653435284,
+          "curvature_indicator": 4.02085592974763e-06,
+          "growth_factor": 1.65,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 1.8808936128565656e-07,
+          "qualifying": false,
+          "successive_qualifying": 0
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:08:51.891866+00:00",
+            "melbourne": "2026-11-14T14:08:51.891866+11:00"
+          },
+          "observer_nodes": 224,
+          "last_metric_change": 5.31272856081795e-06,
+          "curvature_indicator": 3.217655752009408e-06,
+          "growth_factor": 1.4,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 1.578733828389023e-07,
+          "qualifying": true,
+          "successive_qualifying": 1
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:09:20.832870+00:00",
+            "melbourne": "2026-11-14T14:09:20.832870+11:00"
+          },
+          "observer_nodes": 257,
+          "last_metric_change": 4.8061487011984844e-08,
+          "curvature_indicator": 2.4991207352121145e-07,
+          "growth_factor": 1.2,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 1.3573378972685061e-05,
+          "qualifying": false,
+          "successive_qualifying": 0
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T03:10:05.007342+00:00",
+        "melbourne": "2026-11-14T14:10:05.007342+11:00"
+      },
+      "models": {
+        "evolution_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.004915541160079144
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.004913729199335308
+            },
+            {
+              "x": 0.015625,
+              "y": 0.004914982438059771
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.004913468059578948
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.004913704282696839
+            },
+            {
+              "x": 0.004484304932735426,
+              "y": 0.004913694343314508
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.0049126893962942765
+            }
+          ],
+          "models": [
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -5.315818210342361,
+                0.0004258256227976152
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 7.194248227780231e-07,
+              "development_max_residual": 8.286705189472499e-07,
+              "validation_residuals": [
+                3.028847673277463e-08,
+                -2.5168794227925506e-07,
+                -3.8554183487676114e-07
+              ],
+              "validation_max_abs_error": 3.8554183487676114e-07
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.004913257015011102,
+                2.0926319305139708e-06
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 7.194344564902967e-07,
+              "development_max_residual": 8.285807927346789e-07,
+              "validation_residuals": [
+                3.034714167460262e-08,
+                -2.516688095838271e-07,
+                -3.8555176584340045e-07
+              ],
+              "validation_max_abs_error": 3.8555176584340045e-07
+            },
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.004913972697051257
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.0425654567886072e-06,
+              "development_max_residual": 1.568463027887268e-06,
+              "validation_residuals": [
+                2.796712087436981e-07,
+                2.7238026990145103e-07,
+                2.9341743342566756e-07
+              ],
+              "validation_max_abs_error": 2.9341743342566756e-07
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.004913275477226449,
+                1.9015172097138726e-06,
+                2.0120697893222568e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.864572799978325e-06,
+              "development_max_residual": 8.550685024156721e-07,
+              "validation_residuals": [
+                1.621108258915982e-08,
+                -2.4902062109328355e-07,
+                -3.703805114396025e-07
+              ],
+              "validation_max_abs_error": 3.703805114396025e-07
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.004913039092936601,
+                8.236620964277279e-06,
+                -1.8269411719907205e-05,
+                1.2499299371922743e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 5.945303987804265e-06,
+              "development_max_residual": 7.8506108108084e-07,
+              "validation_residuals": [
+                4.126465812676755e-07,
+                -5.056294686070495e-08,
+                -5.012401533147429e-07
+              ],
+              "validation_max_abs_error": 5.012401533147429e-07
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.008920209103045003
+            ],
+            [
+              "possible_inflection",
+              0.013200995807127882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "observer_baseline_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.003386027603329859
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0035372257767456
+            },
+            {
+              "x": 0.015625,
+              "y": 0.0033860235673633483
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.003537548813897701
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.003532653775662214
+            },
+            {
+              "x": 0.004484304932735426,
+              "y": 0.003532701837149226
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.0035385841229613477
+            }
+          ],
+          "models": [
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -5.643761065406547,
+                -0.039277251788016825
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 6.368352155698119e-05,
+              "development_max_residual": 9.442472685143935e-05,
+              "validation_residuals": [
+                -2.484692362372332e-05,
+                -5.923001390645104e-06,
+                4.3122731814572955e-06
+              ],
+              "validation_max_abs_error": 2.484692362372332e-05
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.0035394401768868615,
+                -0.0001358875807821842
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 6.372203344870353e-05,
+              "development_max_residual": 9.517907490257712e-05,
+              "validation_residuals": [
+                -2.437412110598957e-05,
+                -5.749495083582842e-06,
+                4.275685084112035e-06
+              ],
+              "validation_max_abs_error": 2.437412110598957e-05
+            },
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.003492966499587041
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 7.894775065664259e-05,
+              "development_max_residual": 0.00010694293222369283,
+              "validation_residuals": [
+                -4.056428040292298e-05,
+                -3.977925472935717e-05,
+                -3.9813999570407e-05
+              ],
+              "validation_max_abs_error": 4.056428040292298e-05
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.0035370146833877754,
+                -0.00011077967774014081,
+                -2.6433784363869217e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.00016108094206702952,
+              "development_max_residual": 9.865892639549304e-05,
+              "validation_residuals": [
+                -2.2516981062397756e-05,
+                -6.097403709203267e-06,
+                2.2825451365901007e-06
+              ],
+              "validation_max_abs_error": 2.2516981062397756e-05
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.003552597720085166,
+                -0.0005284053767774263,
+                0.0011911950571838901,
+                -0.0008239847112078118
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.0008908786770843187,
+              "development_max_residual": 9.404386413200015e-05,
+              "validation_residuals": [
+                -4.865098907130567e-05,
+                -1.9180224155715842e-05,
+                1.0909136196645026e-05
+              ],
+              "validation_max_abs_error": 4.865098907130567e-05
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.008920209103045003
+            ],
+            [
+              "possible_inflection",
+              0.013200995807127882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "total_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.005945615347743394
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0060605781628009356
+            },
+            {
+              "x": 0.015625,
+              "y": 0.005945655583825241
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.00606135228303685
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.006066665011597668
+            },
+            {
+              "x": 0.004484304932735426,
+              "y": 0.006066634795619221
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.006052903543263697
+            }
+          ],
+          "models": [
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -5.10523269647581,
+                -0.017733434052852194
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 4.898263165647458e-05,
+              "development_max_residual": 7.335288356055507e-05,
+              "validation_residuals": [
+                -2.4437519407624966e-05,
+                -1.1232008526181406e-05,
+                -3.307686068899744e-06
+              ],
+              "validation_max_abs_error": 2.4437519407624966e-05
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.006064898404888181,
+                -0.00010646759505725078
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 4.898857894743966e-05,
+              "development_max_residual": 7.361385175269023e-05,
+              "validation_residuals": [
+                -2.4272212940785326e-05,
+                -1.1169756500794409e-05,
+                -3.318013875010066e-06
+              ],
+              "validation_max_abs_error": 2.4272212940785326e-05
+            },
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.006028486389698141
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 6.13355850862329e-05,
+              "development_max_residual": 8.287104195474695e-05,
+              "validation_residuals": [
+                -3.695716408949525e-05,
+                -3.783199192368674e-05,
+                -3.786217652018611e-05
+              ],
+              "validation_max_abs_error": 3.786217652018611e-05
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.006063051139599716,
+                -8.73453183852093e-05,
+                -2.013207304682681e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.00011847842246969524,
+              "development_max_residual": 7.626412019262185e-05,
+              "validation_residuals": [
+                -2.2857807855945593e-05,
+                -1.143472506405941e-05,
+                -4.835997015965356e-06
+              ],
+              "validation_max_abs_error": 2.2857807855945593e-05
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.006073373217095605,
+                -0.00036397720429099273,
+                0.0007864154252204218,
+                -0.000545800809539261
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.0007279563031946468,
+              "development_max_residual": 7.32071402690538e-05,
+              "validation_residuals": [
+                -4.016876342799718e-05,
+                -2.0100679533405566e-05,
+                8.781871431553026e-07
+              ],
+              "validation_max_abs_error": 4.016876342799718e-05
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.013200995807127882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        }
+      },
+      "validation": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:10:05.007866+00:00",
+            "melbourne": "2026-11-14T14:10:05.007866+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 101,
+          "evolution_observed_error": 0.004913693025842513,
+          "observer_baseline_error": 0.003533530779989964,
+          "total_observed_error": 0.006065443553787637,
+          "normalized_cross_term": 1.593865788341603e-07,
+          "vector_decomposition_closure": 6.933730048929984e-22,
+          "exact_norm_squared": 37.86997933231545
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:10:07.080608+00:00",
+            "melbourne": "2026-11-14T14:10:07.080608+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 157,
+          "evolution_observed_error": 0.0049137003167813555,
+          "observer_baseline_error": 0.0035327457543163983,
+          "total_observed_error": 0.006066318381621828,
+          "normalized_cross_term": 1.7547533942514335e-07,
+          "vector_decomposition_closure": 5.367916666967432e-22,
+          "exact_norm_squared": 37.870913420099384
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:10:16.638952+00:00",
+            "melbourne": "2026-11-14T14:10:16.638952+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 229,
+          "evolution_observed_error": 0.004913679279617831,
+          "observer_baseline_error": 0.003532780499157448,
+          "total_observed_error": 0.0060663485662183275,
+          "normalized_cross_term": 1.7580280868640217e-07,
+          "vector_decomposition_closure": 2.3708081623294043e-21,
+          "exact_norm_squared": 37.87126003511746
+        }
+      ],
+      "midpoint_control": {
+        "measured_at": {
+          "utc": "2026-11-14T03:10:47.774914+00:00",
+          "melbourne": "2026-11-14T14:10:47.774914+11:00"
+        },
+        "method": "midpoint",
+        "order": null,
+        "observer_nodes": 257,
+        "evolution_observed_error": 0.004913944014173203,
+        "observer_baseline_error": 0.003505733737970024,
+        "total_observed_error": 0.0060435184701279,
+        "normalized_cross_term": 8.710068280713786e-08,
+        "vector_decomposition_closure": 7.850418132586604e-21,
+        "exact_norm_squared": 37.8716852357392
+      },
+      "original_33_max_difference_from_reference": 0.00014668817808609,
+      "final_uniform_max_difference_from_reference": 1.3573378972685061e-05,
+      "uniform_observer_pass": false,
+      "fresh_prediction_max_error": 2.484692362372332e-05,
+      "fresh_prediction_pass": false,
+      "stop_reason": "bounded_budget_or_independent_rule_unresolved",
+      "scope": "Six fixed native states only; no physical mesh fit or continuum proof. Order agreement is an empirical quadrature check."
+    },
+    {
+      "case_id": "f4fce6dbc2633c32",
+      "parameters": {
+        "nodes": 49,
+        "length": 8.0,
+        "duration": 1.0,
+        "field": "packet",
+        "angle_degrees": 0.0,
+        "rotation_code": null,
+        "steps": 960
+      },
+      "state_sha256": "76045e2ffa9ee6288aa0f10bf0b5cf599dcc2f8efdd37f99f89a095d0df81df9",
+      "gauss_refinement": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:32.139701+00:00",
+            "melbourne": "2026-11-14T14:11:32.139701+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 2,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.0016011051387601761,
+          "observer_baseline_error": 0.003406971180415626,
+          "total_observed_error": 0.0038422800536962705,
+          "normalized_cross_term": 5.921257214853301e-07,
+          "vector_decomposition_closure": 5.669855493771737e-22,
+          "exact_norm_squared": 143.4166409104015
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:32.495086+00:00",
+            "melbourne": "2026-11-14T14:11:32.495086+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 3,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.001601104972037836,
+          "observer_baseline_error": 0.003596692791901806,
+          "total_observed_error": 0.004011489152009759,
+          "normalized_cross_term": 5.923090458892912e-07,
+          "vector_decomposition_closure": 1.889951437657639e-21,
+          "exact_norm_squared": 143.41667077822365
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:33.564863+00:00",
+            "melbourne": "2026-11-14T14:11:33.564863+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 4,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.0016011049720878055,
+          "observer_baseline_error": 0.0035966580056433304,
+          "total_observed_error": 0.004011457962157465,
+          "normalized_cross_term": 5.923090409539682e-07,
+          "vector_decomposition_closure": 2.6459320128858514e-21,
+          "exact_norm_squared": 143.41667076927172
+        }
+      ],
+      "reference_empirical_pass": true,
+      "reference": {
+        "measured_at": {
+          "utc": "2026-11-14T03:11:33.564863+00:00",
+          "melbourne": "2026-11-14T14:11:33.564863+11:00"
+        },
+        "method": "cell-gauss",
+        "order": 4,
+        "observer_nodes": null,
+        "evolution_observed_error": 0.0016011049720878055,
+        "observer_baseline_error": 0.0035966580056433304,
+        "total_observed_error": 0.004011457962157465,
+        "normalized_cross_term": 5.923090409539682e-07,
+        "vector_decomposition_closure": 2.6459320128858514e-21,
+        "exact_norm_squared": 143.41667076927172
+      },
+      "development": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:35.992504+00:00",
+            "melbourne": "2026-11-14T14:11:35.992504+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 33,
+          "evolution_observed_error": 0.0016016971434028146,
+          "observer_baseline_error": 0.003611051356286657,
+          "total_observed_error": 0.004026976078398909,
+          "normalized_cross_term": 6.114106990726114e-07,
+          "vector_decomposition_closure": 1.32347276191933e-21,
+          "exact_norm_squared": 143.36175676921732
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:36.116216+00:00",
+            "melbourne": "2026-11-14T14:11:36.116216+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 49,
+          "evolution_observed_error": 0.0016014188425251656,
+          "observer_baseline_error": 0.0036192868944247727,
+          "total_observed_error": 0.0040591753798434735,
+          "normalized_cross_term": 8.131248309778479e-07,
+          "vector_decomposition_closure": 1.890273063301162e-22,
+          "exact_norm_squared": 143.39226875931618
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:36.437100+00:00",
+            "melbourne": "2026-11-14T14:11:36.437100+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 65,
+          "evolution_observed_error": 0.0016012520010441498,
+          "observer_baseline_error": 0.0035990100975053156,
+          "total_observed_error": 0.00401395694891385,
+          "normalized_cross_term": 5.949687349406682e-07,
+          "vector_decomposition_closure": 4.7253308194093466e-21,
+          "exact_norm_squared": 143.40294546576143
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:37.118760+00:00",
+            "melbourne": "2026-11-14T14:11:37.118760+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 97,
+          "evolution_observed_error": 0.0016011839043925072,
+          "observer_baseline_error": 0.0035984962495049623,
+          "total_observed_error": 0.004014788074935816,
+          "normalized_cross_term": 6.055581332599209e-07,
+          "vector_decomposition_closure": 6.615111389582138e-22,
+          "exact_norm_squared": 143.41057089663644
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:39.218798+00:00",
+            "melbourne": "2026-11-14T14:11:39.218798+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 117,
+          "evolution_observed_error": 0.0016011531985402414,
+          "observer_baseline_error": 0.0035968185820395783,
+          "total_observed_error": 0.004011664702182318,
+          "normalized_cross_term": 5.926582054346991e-07,
+          "vector_decomposition_closure": 2.835009740959123e-21,
+          "exact_norm_squared": 143.41249301828287
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:42.956632+00:00",
+            "melbourne": "2026-11-14T14:11:42.956632+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 164,
+          "evolution_observed_error": 0.0016011269667804496,
+          "observer_baseline_error": 0.003596932837307152,
+          "total_observed_error": 0.004011487791977558,
+          "normalized_cross_term": 5.905009053349484e-07,
+          "vector_decomposition_closure": 1.1339875923186753e-21,
+          "exact_norm_squared": 143.4145549514293
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:11:53.673567+00:00",
+            "melbourne": "2026-11-14T14:11:53.673567+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 197,
+          "evolution_observed_error": 0.001601293716392777,
+          "observer_baseline_error": 0.003575921768949712,
+          "total_observed_error": 0.003991787520468131,
+          "normalized_cross_term": 5.83009544757678e-07,
+          "vector_decomposition_closure": 1.2284809690982043e-21,
+          "exact_norm_squared": 143.41520744780092
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:12:14.254132+00:00",
+            "melbourne": "2026-11-14T14:12:14.254132+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 257,
+          "evolution_observed_error": 0.0016011146202477894,
+          "observer_baseline_error": 0.0035967412093395774,
+          "total_observed_error": 0.0040115464334760575,
+          "normalized_cross_term": 5.923894338017258e-07,
+          "vector_decomposition_closure": 1.889962741565625e-21,
+          "exact_norm_squared": 143.41581300001752
+        }
+      ],
+      "adaptive_selections": [
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:11:39.218655+00:00",
+            "melbourne": "2026-11-14T14:11:39.218655+11:00"
+          },
+          "observer_nodes": 117,
+          "last_metric_change": 8.311260219660485e-07,
+          "curvature_indicator": 2.655863103888552e-07,
+          "growth_factor": 1.2,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 2.0674002485301934e-07,
+          "qualifying": false,
+          "successive_qualifying": 0
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:11:42.956473+00:00",
+            "melbourne": "2026-11-14T14:11:42.956473+11:00"
+          },
+          "observer_nodes": 164,
+          "last_metric_change": 3.123372753498048e-06,
+          "curvature_indicator": 1.1854555010857531e-08,
+          "growth_factor": 1.4,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 2.7483166382177154e-07,
+          "qualifying": true,
+          "successive_qualifying": 1
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:11:53.673415+00:00",
+            "melbourne": "2026-11-14T14:11:53.673415+11:00"
+          },
+          "observer_nodes": 197,
+          "last_metric_change": 1.7691020475982255e-07,
+          "curvature_indicator": 4.592699303269682e-08,
+          "growth_factor": 1.2,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 2.0736236693618196e-05,
+          "qualifying": false,
+          "successive_qualifying": 0
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:12:14.253946+00:00",
+            "melbourne": "2026-11-14T14:12:14.253946+11:00"
+          },
+          "observer_nodes": 257,
+          "last_metric_change": 2.1011068357439967e-05,
+          "curvature_indicator": 1.8516765643671616e-07,
+          "growth_factor": 1.65,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 8.847131859231194e-08,
+          "qualifying": false,
+          "successive_qualifying": 0
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T03:13:05.033527+00:00",
+        "melbourne": "2026-11-14T14:13:05.033527+11:00"
+      },
+      "models": {
+        "evolution_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.0016016971434028146
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0016014188425251656
+            },
+            {
+              "x": 0.015625,
+              "y": 0.0016012520010441498
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.0016011839043925072
+            },
+            {
+              "x": 0.008620689655172414,
+              "y": 0.0016011531985402414
+            },
+            {
+              "x": 0.006134969325153374,
+              "y": 0.0016011269667804496
+            },
+            {
+              "x": 0.00510204081632653,
+              "y": 0.001601293716392777
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.0016011146202477894
+            }
+          ],
+          "models": [
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -6.437057771954772,
+                0.00032771647690818675
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.0998378901086591e-07,
+              "development_max_residual": 1.601800000130757e-07,
+              "validation_residuals": [
+                4.963827102090132e-08,
+                2.7883594776656126e-08,
+                3.158504758953018e-09
+              ],
+              "validation_max_abs_error": 4.963827102090132e-08
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.0016011105784061194,
+                5.248057732051948e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.0999238889880096e-07,
+              "development_max_residual": 1.601872968673857e-07,
+              "validation_residuals": [
+                4.9643966168813614e-08,
+                2.788030805484995e-08,
+                3.1488461946400925e-09
+              ],
+              "validation_max_abs_error": 4.9643966168813614e-08
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.0016011644759128785,
+                2.398625890807068e-08,
+                5.190677907348908e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.1810623035911019e-07,
+              "development_max_residual": 1.2719881736854115e-07,
+              "validation_residuals": [
+                1.770992760969682e-08,
+                4.026812307168434e-08,
+                4.841980800942419e-08
+              ],
+              "validation_max_abs_error": 4.841980800942419e-08
+            },
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.0016012800491657373
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 2.1008862333318176e-07,
+              "development_max_residual": 4.170942370772951e-07,
+              "validation_residuals": [
+                1.0215801061531395e-07,
+                1.4929193093240513e-07,
+                1.6341248698431218e-07
+              ],
+              "validation_max_abs_error": 1.6341248698431218e-07
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.0016011836821298244,
+                -3.5413181956767644e-07,
+                1.6069025580105494e-06,
+                -7.374694645016556e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 2.6455478300371896e-07,
+              "development_max_residual": 1.2250960551964465e-07,
+              "validation_residuals": [
+                -1.485033187132584e-09,
+                3.340438332758225e-08,
+                6.132321370036324e-08
+              ],
+              "validation_max_abs_error": 6.132321370036324e-08
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.005833493323022037
+            ],
+            [
+              "possible_inflection",
+              0.009972446994805255
+            ],
+            [
+              "possible_inflection",
+              0.01358955938697318
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "observer_baseline_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.003611051356286657
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0036192868944247727
+            },
+            {
+              "x": 0.015625,
+              "y": 0.0035990100975053156
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.0035984962495049623
+            },
+            {
+              "x": 0.008620689655172414,
+              "y": 0.0035968185820395783
+            },
+            {
+              "x": 0.006134969325153374,
+              "y": 0.003596932837307152
+            },
+            {
+              "x": 0.00510204081632653,
+              "y": 0.003575921768949712
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.0035967412093395774
+            }
+          ],
+          "models": [
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.003590616322621402,
+                2.6836452641760552e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.2087720038322955e-05,
+              "development_max_residual": 1.5868159472349867e-05,
+              "validation_residuals": [
+                -2.1167581368518318e-06,
+                -3.8131544908464113e-06,
+                -5.784414363651895e-06
+              ],
+              "validation_max_abs_error": 5.784414363651895e-06
+            },
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -5.629433018519189,
+                0.007453526831733971
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.2111490940031038e-05,
+              "development_max_residual": 1.58593628153598e-05,
+              "validation_residuals": [
+                -2.133998076250636e-06,
+                -3.824833308859344e-06,
+                -5.791439978248061e-06
+              ],
+              "validation_max_abs_error": 5.791439978248061e-06
+            },
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.003599282374419717
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.3420349381639224e-05,
+              "development_max_residual": 2.336060547000491e-05,
+              "validation_residuals": [
+                5.685985012995713e-07,
+                2.395346699248825e-06,
+                2.4108224760360612e-06
+              ],
+              "validation_max_abs_error": 2.4108224760360612e-06
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.003587272899779796,
+                5.79037784662783e-05,
+                -3.219932075208087e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.9924052603357113e-05,
+              "development_max_residual": 1.3821785855114288e-05,
+              "validation_residuals": [
+                -1.357946310806199e-07,
+                -4.581607545090655e-06,
+                -8.592706934021713e-06
+              ],
+              "validation_max_abs_error": 8.592706934021713e-06
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.0035908507661878003,
+                -1.2534662122292604e-05,
+                0.00017045003400431496,
+                -0.0001373808924198114
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 4.659951339914275e-05,
+              "development_max_residual": 1.4695324543153535e-05,
+              "validation_residuals": [
+                -3.711564166286596e-06,
+                -5.860232270359957e-06,
+                -6.188971627860054e-06
+              ],
+              "validation_max_abs_error": 6.188971627860054e-06
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.005833493323022037
+            ],
+            [
+              "possible_inflection",
+              0.007505004240607462
+            ],
+            [
+              "possible_inflection",
+              0.009972446994805255
+            ],
+            [
+              "possible_inflection",
+              0.01358955938697318
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "total_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.004026976078398909
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0040591753798434735
+            },
+            {
+              "x": 0.015625,
+              "y": 0.00401395694891385
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.004014788074935816
+            },
+            {
+              "x": 0.008620689655172414,
+              "y": 0.004011664702182318
+            },
+            {
+              "x": 0.006134969325153374,
+              "y": 0.004011487791977558
+            },
+            {
+              "x": 0.00510204081632653,
+              "y": 0.003991787520468131
+            },
+            {
+              "x": 0.00390625,
+              "y": 0.0040115464334760575
+            }
+          ],
+          "models": [
+            {
+              "model": "constant",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.004017672866274516
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 2.0654893920020914e-05,
+              "development_max_residual": 4.150251356895788e-05,
+              "validation_residuals": [
+                2.760850868021962e-06,
+                5.978841630683782e-06,
+                5.970944990961458e-06
+              ],
+              "validation_max_abs_error": 5.978841630683782e-06
+            },
+            {
+              "model": "linear",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.004005950673008098,
+                3.630050820985374e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 2.348524525519964e-05,
+              "development_max_residual": 3.075296365784644e-05,
+              "validation_residuals": [
+                -8.715148544849449e-07,
+                -2.4191292721936763e-06,
+                -5.114397254230019e-06
+              ],
+              "validation_max_abs_error": 5.114397254230019e-06
+            },
+            {
+              "model": "exponential",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                -5.519975929827269,
+                0.009022065246583442
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 2.3532096946057682e-05,
+              "development_max_residual": 3.079486769372742e-05,
+              "validation_residuals": [
+                -9.050693169998861e-07,
+                -2.4385953168561472e-06,
+                -5.123438126642711e-06
+              ],
+              "validation_max_abs_error": 5.123438126642711e-06
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.003998588825513069,
+                0.00010470732530533033,
+                -7.089934478840166e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 5.027419549020612e-05,
+              "development_max_residual": 2.2937777597716036e-05,
+              "validation_residuals": [
+                3.4903477975382555e-06,
+                -4.111177948187654e-06,
+                -1.1297947048534603e-05
+              ],
+              "validation_max_abs_error": 1.1297947048534603e-05
+            },
+            {
+              "model": "cubic",
+              "origin": 0.00390625,
+              "scale": 0.02734375,
+              "coefficients": [
+                0.004008735517831681,
+                -9.505339869944333e-05,
+                0.0005038064761665035,
+                -0.0003896069575773107
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.00012363481992304793,
+              "development_max_residual": 1.5908512168805004e-05,
+              "validation_residuals": [
+                -6.650397870006444e-06,
+                -7.737308775563126e-06,
+                -4.481045637001746e-06
+              ],
+              "validation_max_abs_error": 7.737308775563126e-06
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.005833493323022037
+            ],
+            [
+              "possible_inflection",
+              0.007505004240607462
+            ],
+            [
+              "possible_inflection",
+              0.009972446994805255
+            ],
+            [
+              "possible_inflection",
+              0.01358955938697318
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        }
+      },
+      "validation": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:13:05.034063+00:00",
+            "melbourne": "2026-11-14T14:13:05.034063+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 101,
+          "evolution_observed_error": 0.001601177891155122,
+          "observer_baseline_error": 0.0035987137759184175,
+          "total_observed_error": 0.004014912015406494,
+          "normalized_cross_term": 6.05007011346474e-07,
+          "vector_decomposition_closure": 1.1340153136458788e-21,
+          "exact_norm_squared": 143.41104914180247
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:13:07.400628+00:00",
+            "melbourne": "2026-11-14T14:13:07.400628+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 157,
+          "evolution_observed_error": 0.001601130757234805,
+          "observer_baseline_error": 0.0035968870277204683,
+          "total_observed_error": 0.004011694024643832,
+          "normalized_cross_term": 5.924729554159368e-07,
+          "vector_decomposition_closure": 2.834972818568273e-22,
+          "exact_norm_squared": 143.41436080766178
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:13:16.754036+00:00",
+            "melbourne": "2026-11-14T14:13:16.754036+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 229,
+          "evolution_observed_error": 0.001601116636678753,
+          "observer_baseline_error": 0.003596871551943681,
+          "total_observed_error": 0.004011701921283554,
+          "normalized_cross_term": 5.926928597989339e-07,
+          "vector_decomposition_closure": 7.559862753816418e-22,
+          "exact_norm_squared": 143.41558938198588
+        }
+      ],
+      "midpoint_control": {
+        "measured_at": {
+          "utc": "2026-11-14T03:13:51.938838+00:00",
+          "melbourne": "2026-11-14T14:13:51.938838+11:00"
+        },
+        "method": "midpoint",
+        "order": null,
+        "observer_nodes": 257,
+        "evolution_observed_error": 0.001601101845422421,
+        "observer_baseline_error": 0.003596337921853659,
+        "total_observed_error": 0.004011273789653991,
+        "normalized_cross_term": 5.931438479873129e-07,
+        "vector_decomposition_closure": 2.645924161517538e-21,
+        "exact_norm_squared": 143.41709633593038
+      },
+      "original_33_max_difference_from_reference": 1.551811624144351e-05,
+      "final_uniform_max_difference_from_reference": 8.847131859231194e-08,
+      "uniform_observer_pass": false,
+      "fresh_prediction_max_error": 5.978841630683782e-06,
+      "fresh_prediction_pass": false,
+      "stop_reason": "bounded_budget_or_independent_rule_unresolved",
+      "scope": "Six fixed native states only; no physical mesh fit or continuum proof. Order agreement is an empirical quadrature check."
+    },
+    {
+      "case_id": "d22f08eb92aedaf5",
+      "parameters": {
+        "nodes": 81,
+        "length": 8.0,
+        "duration": 1.0,
+        "field": "packet",
+        "angle_degrees": 0.0,
+        "rotation_code": null,
+        "steps": 960
+      },
+      "state_sha256": "4ca7f8592ed9c8f87d153c79f4f3d10ba9555f394edc38550f2faeeaa8f35e7d",
+      "gauss_refinement": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:14:43.348263+00:00",
+            "melbourne": "2026-11-14T14:14:43.348263+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 2,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.0005886697602025988,
+          "observer_baseline_error": 0.0012484860576909942,
+          "total_observed_error": 0.0014083543307908924,
+          "normalized_cross_term": 7.82123982316766e-08,
+          "vector_decomposition_closure": 9.449757450558036e-23,
+          "exact_norm_squared": 143.41666679781807
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:14:44.708449+00:00",
+            "melbourne": "2026-11-14T14:14:44.708449+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 3,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.0005886697520510561,
+          "observer_baseline_error": 0.0013187165316250978,
+          "total_observed_error": 0.0014709749188231119,
+          "normalized_cross_term": 7.822184404548109e-08,
+          "vector_decomposition_closure": 5.07924448900633e-22,
+          "exact_norm_squared": 143.41667076971265
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:14:49.341900+00:00",
+            "melbourne": "2026-11-14T14:14:49.341900+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 4,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.000588669752051958,
+          "observer_baseline_error": 0.0013187118166507123,
+          "total_observed_error": 0.001470970691853103,
+          "normalized_cross_term": 7.822184393566124e-08,
+          "vector_decomposition_closure": 1.1812196486097431e-23,
+          "exact_norm_squared": 143.41667076927317
+        }
+      ],
+      "reference_empirical_pass": true,
+      "reference": {
+        "measured_at": {
+          "utc": "2026-11-14T03:14:49.341900+00:00",
+          "melbourne": "2026-11-14T14:14:49.341900+11:00"
+        },
+        "method": "cell-gauss",
+        "order": 4,
+        "observer_nodes": null,
+        "evolution_observed_error": 0.000588669752051958,
+        "observer_baseline_error": 0.0013187118166507123,
+        "total_observed_error": 0.001470970691853103,
+        "normalized_cross_term": 7.822184393566124e-08,
+        "vector_decomposition_closure": 1.1812196486097431e-23,
+        "exact_norm_squared": 143.41667076927317
+      },
+      "development": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:00.155383+00:00",
+            "melbourne": "2026-11-14T14:15:00.155383+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 33,
+          "evolution_observed_error": 0.0005889060763960298,
+          "observer_baseline_error": 0.0013164799739160164,
+          "total_observed_error": 0.001469498036458853,
+          "normalized_cross_term": 7.949459061834262e-08,
+          "vector_decomposition_closure": 2.0088425850561262e-22,
+          "exact_norm_squared": 143.36175676921732
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:00.280429+00:00",
+            "melbourne": "2026-11-14T14:15:00.280429+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 49,
+          "evolution_observed_error": 0.0005887679312902152,
+          "observer_baseline_error": 0.0013227271429613516,
+          "total_observed_error": 0.0014747357133404965,
+          "normalized_cross_term": 7.859065255944394e-08,
+          "vector_decomposition_closure": 2.3628413291264524e-23,
+          "exact_norm_squared": 143.39226875931618
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:00.604177+00:00",
+            "melbourne": "2026-11-14T14:15:00.604177+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 65,
+          "evolution_observed_error": 0.0005887266936253855,
+          "observer_baseline_error": 0.0013197996252317056,
+          "total_observed_error": 0.0014720495000163463,
+          "normalized_cross_term": 7.845955994954634e-08,
+          "vector_decomposition_closure": 9.450661638818693e-23,
+          "exact_norm_squared": 143.40294546576143
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:01.294903+00:00",
+            "melbourne": "2026-11-14T14:15:01.294903+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 97,
+          "evolution_observed_error": 0.0005886952222215572,
+          "observer_baseline_error": 0.001319003842033923,
+          "total_observed_error": 0.001471247016129073,
+          "normalized_cross_term": 7.823458250196238e-08,
+          "vector_decomposition_closure": 3.071301716591707e-22,
+          "exact_norm_squared": 143.41057089663644
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:03.414434+00:00",
+            "melbourne": "2026-11-14T14:15:03.414434+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 117,
+          "evolution_observed_error": 0.0005886861576122589,
+          "observer_baseline_error": 0.0013193804930966004,
+          "total_observed_error": 0.0014716508557895628,
+          "normalized_cross_term": 7.843996361803953e-08,
+          "vector_decomposition_closure": 5.90627029366484e-22,
+          "exact_norm_squared": 143.41249301828287
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:07.088135+00:00",
+            "melbourne": "2026-11-14T14:15:07.088135+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 141,
+          "evolution_observed_error": 0.0005886815946124514,
+          "observer_baseline_error": 0.0013189236987964006,
+          "total_observed_error": 0.001471202924208373,
+          "normalized_cross_term": 7.83323011170314e-08,
+          "vector_decomposition_closure": 4.488724432926183e-22,
+          "exact_norm_squared": 143.41380263649046
+        }
+      ],
+      "adaptive_selections": [
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:15:03.414290+00:00",
+            "melbourne": "2026-11-14T14:15:03.414290+11:00"
+          },
+          "observer_nodes": 117,
+          "last_metric_change": 8.024838872731834e-07,
+          "curvature_indicator": 5.1003925831275346e-08,
+          "growth_factor": 1.2,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 6.80163936459758e-07,
+          "qualifying": true,
+          "successive_qualifying": 1
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:15:07.087982+00:00",
+            "melbourne": "2026-11-14T14:15:07.087982+11:00"
+          },
+          "observer_nodes": 141,
+          "last_metric_change": 4.038396604897406e-07,
+          "curvature_indicator": 1.0605018094348188e-08,
+          "growth_factor": 1.2,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 2.3223235526997378e-07,
+          "qualifying": true,
+          "successive_qualifying": 2
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T03:15:13.640696+00:00",
+        "melbourne": "2026-11-14T14:15:13.640696+11:00"
+      },
+      "models": {
+        "evolution_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.0005889060763960298
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0005887679312902152
+            },
+            {
+              "x": 0.015625,
+              "y": 0.0005887266936253855
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.0005886952222215572
+            },
+            {
+              "x": 0.008620689655172414,
+              "y": 0.0005886861576122589
+            },
+            {
+              "x": 0.007142857142857143,
+              "y": 0.0005886815946124514
+            }
+          ],
+          "models": [
+            {
+              "model": "quadratic",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0005886822958834212,
+                6.471649899019507e-08,
+                1.5859919729906886e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 9.807165473972054e-09,
+              "development_max_residual": 2.26728741749109e-09,
+              "validation_residuals": [
+                -1.1566648527644094e-09,
+                7.802191300801051e-10,
+                2.7003105204344638e-09
+              ],
+              "validation_max_abs_error": 2.7003105204344638e-09
+            },
+            {
+              "model": "cubic",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0005886808241904677,
+                9.86772062180797e-08,
+                5.973501052016032e-08,
+                6.679690871146054e-08
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.8676913884972722e-08,
+              "development_max_residual": 9.55629342043289e-10,
+              "validation_residuals": [
+                1.1910795429375537e-10,
+                -1.816695165829385e-09,
+                -4.047996992944877e-09
+              ],
+              "validation_max_abs_error": 4.047996992944877e-09
+            },
+            {
+              "model": "exponential",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                -7.437651658982434,
+                0.0003754278458311214
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 3.579023044789202e-08,
+              "development_max_residual": 2.3553253901712964e-08,
+              "validation_residuals": [
+                -1.1929880187021291e-09,
+                -2.044741388468503e-08,
+                -3.357789725173116e-08
+              ],
+              "validation_max_abs_error": 3.357789725173116e-08
+            },
+            {
+              "model": "linear",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0005886659581971843,
+                2.210476670066453e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 3.5796340327840146e-08,
+              "development_max_residual": 2.356014996052376e-08,
+              "validation_residuals": [
+                -1.193998365022625e-09,
+                -2.0454740321126062e-08,
+                -3.3589596629525834e-08
+              ],
+              "validation_max_abs_error": 3.3589596629525834e-08
+            },
+            {
+              "model": "constant",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0005887439459596498
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 9.392814755897097e-08,
+              "development_max_residual": 1.6213043638007e-07,
+              "validation_residuals": [
+                5.059552208490706e-08,
+                6.425052009710348e-08,
+                6.967717128963935e-08
+              ],
+              "validation_max_abs_error": 6.967717128963935e-08
+            }
+          ],
+          "features": []
+        },
+        "observer_baseline_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.0013164799739160164
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0013227271429613516
+            },
+            {
+              "x": 0.015625,
+              "y": 0.0013197996252317056
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.001319003842033923
+            },
+            {
+              "x": 0.008620689655172414,
+              "y": 0.0013193804930966004
+            },
+            {
+              "x": 0.007142857142857143,
+              "y": 0.0013189236987964006
+            }
+          ],
+          "models": [
+            {
+              "model": "constant",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0013193857960060002
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 2.1984962266862427e-06,
+              "development_max_residual": 3.341346955351406e-06,
+              "validation_residuals": [
+                4.020676013891545e-07,
+                6.116836915421534e-07,
+                6.248906000109068e-07
+              ],
+              "validation_max_abs_error": 6.248906000109068e-07
+            },
+            {
+              "model": "linear",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.001319833054194792,
+                -1.2677037532082707e-06
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 3.941148087302347e-06,
+              "development_max_residual": 3.6140192930730897e-06,
+              "validation_residuals": [
+                6.990794194302891e-07,
+                1.0974665907827544e-06,
+                1.2171233570708404e-06
+              ],
+              "validation_max_abs_error": 1.2171233570708404e-06
+            },
+            {
+              "model": "exponential",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                -6.630249840732123,
+                -0.0009639184272352932
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 3.943038104150051e-06,
+              "development_max_residual": 3.6161390987723366e-06,
+              "validation_residuals": [
+                6.987962772114168e-07,
+                1.0978466616158502e-06,
+                1.2178894105248014e-06
+              ],
+              "validation_max_abs_error": 1.2178894105248014e-06
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0013182953182380194,
+                1.3446500861781714e-05,
+                -1.4927676102206262e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 7.04413762199923e-06,
+              "development_max_residual": 1.6098921553197448e-06,
+              "validation_residuals": [
+                6.955655140275258e-07,
+                -9.012105912462477e-07,
+                -2.1985558452024614e-06
+              ],
+              "validation_max_abs_error": 2.1985558452024614e-06
+            },
+            {
+              "model": "cubic",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0013193672642774277,
+                -1.1289668140352687e-05,
+                5.708263911244258e-05,
+                -4.8653274845415e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.16959851414899e-05,
+              "development_max_residual": 5.428675490318224e-07,
+              "validation_residuals": [
+                -2.3367696496919867e-07,
+                9.903198315418683e-07,
+                2.716750364387642e-06
+              ],
+              "validation_max_abs_error": 2.716750364387642e-06
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.010140428297755882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "total_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.001469498036458853
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0014747357133404965
+            },
+            {
+              "x": 0.015625,
+              "y": 0.0014720495000163463
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.001471247016129073
+            },
+            {
+              "x": 0.008620689655172414,
+              "y": 0.0014716508557895628
+            },
+            {
+              "x": 0.007142857142857143,
+              "y": 0.001471202924208373
+            }
+          ],
+          "models": [
+            {
+              "model": "constant",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0014717306743237846
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.874165259447011e-06,
+              "development_max_residual": 3.005039016711888e-06,
+              "validation_residuals": [
+                5.022512484758983e-07,
+                6.630766811635113e-07,
+                7.129494278953954e-07
+              ],
+              "validation_max_abs_error": 7.129494278953954e-07
+            },
+            {
+              "model": "linear",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0014719675229543782,
+                -6.713211864416365e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 3.4061109937546007e-06,
+              "development_max_residual": 3.1494345166900237e-06,
+              "validation_residuals": [
+                6.595358866023134e-07,
+                9.203263354666362e-07,
+                1.026570331922206e-06
+              ],
+              "validation_max_abs_error": 1.026570331922206e-06
+            },
+            {
+              "model": "exponential",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                -6.521155305681518,
+                -0.00045774916451002276
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 3.407514904815049e-06,
+              "development_max_residual": 3.150763704516668e-06,
+              "validation_residuals": [
+                6.592694361121695e-07,
+                9.204257721904651e-07,
+                1.026879111678744e-06
+              ],
+              "validation_max_abs_error": 1.026879111678744e-06
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0014706503945135071,
+                1.193194616764886e-05,
+                -1.2786113678187155e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 6.2850842564834845e-06,
+              "development_max_residual": 1.4328245612348252e-06,
+              "validation_residuals": [
+                6.565260950162129e-07,
+                -7.91615528789166e-07,
+                -1.8990868346363543e-06
+              ],
+              "validation_max_abs_error": 1.8990868346363543e-06
+            },
+            {
+              "model": "cubic",
+              "origin": 0.007142857142857143,
+              "scale": 0.024107142857142858,
+              "coefficients": [
+                0.0014716085434616447,
+                -1.0178247292672723e-05,
+                5.1579633515616846e-05,
+                -4.3488274971662614e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.0237744348138104e-05,
+              "development_max_residual": 4.824476338338626e-07,
+              "validation_residuals": [
+                -1.7406860945831312e-07,
+                8.991112600002966e-07,
+                2.494413678777452e-06
+              ],
+              "validation_max_abs_error": 2.494413678777452e-06
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.010140428297755882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        }
+      },
+      "validation": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:13.641123+00:00",
+            "melbourne": "2026-11-14T14:15:13.641123+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 101,
+          "evolution_observed_error": 0.0005886933504375649,
+          "observer_baseline_error": 0.001318983728404611,
+          "total_observed_error": 0.0014712284230753087,
+          "normalized_cross_term": 7.823513621912545e-08,
+          "vector_decomposition_closure": 7.087595710286743e-23,
+          "exact_norm_squared": 143.41104914180247
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:16.016962+00:00",
+            "melbourne": "2026-11-14T14:15:16.016962+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 157,
+          "evolution_observed_error": 0.0005886796954395527,
+          "observer_baseline_error": 0.001318774112314458,
+          "total_observed_error": 0.001471067597642621,
+          "normalized_cross_term": 7.833093370044083e-08,
+          "vector_decomposition_closure": 3.5437160232103413e-22,
+          "exact_norm_squared": 143.41436080766178
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:15:26.073768+00:00",
+            "melbourne": "2026-11-14T14:15:26.073768+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 229,
+          "evolution_observed_error": 0.0005886742687883601,
+          "observer_baseline_error": 0.0013187609054059893,
+          "total_observed_error": 0.0014710177248958892,
+          "normalized_cross_term": 7.822542659714347e-08,
+          "vector_decomposition_closure": 4.961159932192024e-22,
+          "exact_norm_squared": 143.41558938198588
+        }
+      ],
+      "midpoint_control": {
+        "measured_at": {
+          "utc": "2026-11-14T03:16:00.774628+00:00",
+          "melbourne": "2026-11-14T14:16:00.774628+11:00"
+        },
+        "method": "midpoint",
+        "order": null,
+        "observer_nodes": 141,
+        "evolution_observed_error": 0.0005886636247167074,
+        "observer_baseline_error": 0.0013185220773710262,
+        "total_observed_error": 0.0014709093970683524,
+        "normalized_cross_term": 7.854912280456419e-08,
+        "vector_decomposition_closure": 5.197315213649775e-22,
+        "exact_norm_squared": 143.41808471153715
+      },
+      "original_33_max_difference_from_reference": 2.2318427346959373e-06,
+      "final_uniform_max_difference_from_reference": 2.3223235526997378e-07,
+      "uniform_observer_pass": true,
+      "fresh_prediction_max_error": 7.129494278953954e-07,
+      "fresh_prediction_pass": true,
+      "stop_reason": "two_successive_and_independent_rule_met",
+      "scope": "Six fixed native states only; no physical mesh fit or continuum proof. Order agreement is an empirical quadrature check."
+    },
+    {
+      "case_id": "452b8d421a3657f2",
+      "parameters": {
+        "nodes": 129,
+        "length": 8.0,
+        "duration": 1.0,
+        "field": "packet",
+        "angle_degrees": 0.0,
+        "rotation_code": null,
+        "steps": 960
+      },
+      "state_sha256": "207e1d58502c3c0e2681ea6461c98bb0b297893184b6d8968ba116b3b0f04dca",
+      "gauss_refinement": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:16:12.508370+00:00",
+            "melbourne": "2026-11-14T14:16:12.508370+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 2,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.00023242243916641106,
+          "observer_baseline_error": 0.0004924509270314696,
+          "total_observed_error": 0.0005555916418767911,
+          "normalized_cross_term": 1.2153966761130772e-08,
+          "vector_decomposition_closure": 2.9530491341642707e-23,
+          "exact_norm_squared": 143.41667015540793
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:16:17.686800+00:00",
+            "melbourne": "2026-11-14T14:16:17.686800+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 3,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.00023242243866897146,
+          "observer_baseline_error": 0.0005203172718400272,
+          "total_observed_error": 0.0005804350170622866,
+          "normalized_cross_term": 1.2154555660216427e-08,
+          "vector_decomposition_closure": 3.986616314057133e-23,
+          "exact_norm_squared": 143.41667076930014
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:16:36.132884+00:00",
+            "melbourne": "2026-11-14T14:16:36.132884+11:00"
+          },
+          "method": "cell-gauss",
+          "order": 4,
+          "observer_nodes": null,
+          "evolution_observed_error": 0.00023242243866899325,
+          "observer_baseline_error": 0.0005203165342456055,
+          "total_observed_error": 0.000580434355860878,
+          "normalized_cross_term": 1.2154555657432033e-08,
+          "vector_decomposition_closure": 1.4765245607621787e-24,
+          "exact_norm_squared": 143.4166707692732
+        }
+      ],
+      "reference_empirical_pass": true,
+      "reference": {
+        "measured_at": {
+          "utc": "2026-11-14T03:16:36.132884+00:00",
+          "melbourne": "2026-11-14T14:16:36.132884+11:00"
+        },
+        "method": "cell-gauss",
+        "order": 4,
+        "observer_nodes": null,
+        "evolution_observed_error": 0.00023242243866899325,
+        "observer_baseline_error": 0.0005203165342456055,
+        "total_observed_error": 0.000580434355860878,
+        "normalized_cross_term": 1.2154555657432033e-08,
+        "vector_decomposition_closure": 1.4765245607621787e-24,
+        "exact_norm_squared": 143.4166707692732
+      },
+      "development": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:17:29.295330+00:00",
+            "melbourne": "2026-11-14T14:17:29.295330+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 33,
+          "evolution_observed_error": 0.00023252584761145094,
+          "observer_baseline_error": 0.0004892401372954677,
+          "total_observed_error": 0.0005596832881281974,
+          "normalized_cross_term": 1.9821201261679133e-08,
+          "vector_decomposition_closure": 6.794614625925132e-23,
+          "exact_norm_squared": 143.36175676921732
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:17:29.445906+00:00",
+            "melbourne": "2026-11-14T14:17:29.445906+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 49,
+          "evolution_observed_error": 0.00023246304718408422,
+          "observer_baseline_error": 0.0005196796445196577,
+          "total_observed_error": 0.0005800725065746768,
+          "normalized_cross_term": 1.2378111649640906e-08,
+          "vector_decomposition_closure": 2.9535516614080655e-24,
+          "exact_norm_squared": 143.39226875931618
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:17:29.780739+00:00",
+            "melbourne": "2026-11-14T14:17:29.780739+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 65,
+          "evolution_observed_error": 0.00023245741456355039,
+          "observer_baseline_error": 0.0004892597954166427,
+          "total_observed_error": 0.0005596931363644209,
+          "normalized_cross_term": 1.9844809896736905e-08,
+          "vector_decomposition_closure": 1.7719990572785047e-23,
+          "exact_norm_squared": 143.40294546576143
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:17:30.458950+00:00",
+            "melbourne": "2026-11-14T14:17:30.458950+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 97,
+          "evolution_observed_error": 0.00023243218428508814,
+          "observer_baseline_error": 0.0005205198608547396,
+          "total_observed_error": 0.000580871820562469,
+          "normalized_cross_term": 1.2446426087782537e-08,
+          "vector_decomposition_closure": 6.201666927733254e-23,
+          "exact_norm_squared": 143.41057089663644
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:17:32.542304+00:00",
+            "melbourne": "2026-11-14T14:17:32.542304+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 160,
+          "evolution_observed_error": 0.00023242610402403847,
+          "observer_baseline_error": 0.0005204035152312801,
+          "total_observed_error": 0.0005805113507994465,
+          "normalized_cross_term": 1.2151715910131636e-08,
+          "vector_decomposition_closure": 3.986678125807383e-23,
+          "exact_norm_squared": 143.41444715476305
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:17:42.155119+00:00",
+            "melbourne": "2026-11-14T14:17:42.155119+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 192,
+          "evolution_observed_error": 0.00023242467393748875,
+          "observer_baseline_error": 0.0005206549459914979,
+          "total_observed_error": 0.0005807698668209454,
+          "normalized_cross_term": 1.219083636686117e-08,
+          "vector_decomposition_closure": 2.953080850864772e-23,
+          "exact_norm_squared": 143.4151298306407
+        }
+      ],
+      "adaptive_selections": [
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:17:32.542161+00:00",
+            "melbourne": "2026-11-14T14:17:32.542161+11:00"
+          },
+          "observer_nodes": 160,
+          "last_metric_change": 3.126006543809686e-05,
+          "curvature_indicator": 1.396503739457453e-08,
+          "growth_factor": 1.65,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 8.698098567458141e-08,
+          "qualifying": true,
+          "successive_qualifying": 1
+        },
+        {
+          "selected_at": {
+            "utc": "2026-11-14T03:17:42.154958+00:00",
+            "melbourne": "2026-11-14T14:17:42.154958+11:00"
+          },
+          "observer_nodes": 192,
+          "last_metric_change": 3.604697630225657e-07,
+          "curvature_indicator": 4.359184967288495e-08,
+          "growth_factor": 1.2,
+          "reason": "bounded refinement from measured residual and local slope change; reserved counts excluded",
+          "max_reference_difference": 3.38411745892382e-07,
+          "qualifying": true,
+          "successive_qualifying": 2
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-14T03:17:59.355753+00:00",
+        "melbourne": "2026-11-14T14:17:59.355753+11:00"
+      },
+      "models": {
+        "evolution_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.00023252584761145094
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.00023246304718408422
+            },
+            {
+              "x": 0.015625,
+              "y": 0.00023245741456355039
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.00023243218428508814
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.00023242610402403847
+            },
+            {
+              "x": 0.005235602094240838,
+              "y": 0.00023242467393748875
+            }
+          ],
+          "models": [
+            {
+              "model": "exponential",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                -8.366972022408406,
+                0.00042237331604551563
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.6162999032643684e-08,
+              "development_max_residual": 1.406604314822162e-08,
+              "validation_residuals": [
+                4.531276364381793e-09,
+                -3.5715378845309256e-09,
+                -9.22194635076274e-09
+              ],
+              "validation_max_abs_error": 9.22194635076274e-09
+            },
+            {
+              "model": "linear",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.00023241824359778666,
+                9.819005539169789e-08
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.616609437961332e-08,
+              "development_max_residual": 1.4069277102910947e-08,
+              "validation_residuals": [
+                4.531777979732612e-09,
+                -3.573527931763831e-09,
+                -9.225689620101984e-09
+              ],
+              "validation_max_abs_error": 9.225689620101984e-09
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.0002324247881564464,
+                3.625861424015683e-08,
+                6.368869506579421e-08
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.712393830027815e-08,
+              "development_max_residual": 7.98759379144298e-09,
+              "validation_residuals": [
+                1.8701682101540922e-09,
+                3.0443186071539043e-10,
+                -5.904972675923031e-10
+              ],
+              "validation_max_abs_error": 1.8701682101540922e-09
+            },
+            {
+              "model": "constant",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.00023245487860095023
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 4.204308433565177e-08,
+              "development_max_residual": 7.096901050070983e-08,
+              "validation_residuals": [
+                2.3183797413713373e-08,
+                2.8627800742253356e-08,
+                3.0616226971236313e-08
+              ],
+              "validation_max_abs_error": 3.0616226971236313e-08
+            },
+            {
+              "model": "cubic",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.00023242310964085303,
+                8.198217671257512e-08,
+                -7.0225493329494e-08,
+                9.062983486701206e-08
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 9.976652557063112e-08,
+              "development_max_residual": 6.9913937813181285e-09,
+              "validation_residuals": [
+                4.630675646399981e-09,
+                4.2582652570624484e-10,
+                -3.90835935899672e-09
+              ],
+              "validation_max_abs_error": 4.630675646399981e-09
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.013200995807127882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "observer_baseline_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.0004892401372954677
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0005196796445196577
+            },
+            {
+              "x": 0.015625,
+              "y": 0.0004892597954166427
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.0005205198608547396
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.0005204035152312801
+            },
+            {
+              "x": 0.005235602094240838,
+              "y": 0.0005206549459914979
+            }
+          ],
+          "models": [
+            {
+              "model": "exponential",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                -7.5605680294399855,
+                -0.056363108883854235
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.3985254260297542e-05,
+              "development_max_residual": 1.973242555323735e-05,
+              "validation_residuals": [
+                -5.340241205585073e-06,
+                -1.1427096788658954e-06,
+                1.223566783858628e-06
+              ],
+              "validation_max_abs_error": 5.340241205585073e-06
+            },
+            {
+              "model": "linear",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.0005205765902843675,
+                -2.8455790252347987e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.3987990156414867e-05,
+              "development_max_residual": 1.9952375490214715e-05,
+              "validation_residuals": [
+                -5.208537916155556e-06,
+                -1.1072670385001192e-06,
+                1.1908923121811557e-06
+              ],
+              "validation_max_abs_error": 5.208537916155556e-06
+            },
+            {
+              "model": "constant",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.0005099596498848812
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.757663592767878e-05,
+              "development_max_residual": 2.0719512589413504e-05,
+              "validation_residuals": [
+                -1.061395245307347e-05,
+                -1.0439314473842365e-05,
+                -1.0355421795204861e-05
+              ],
+              "validation_max_abs_error": 1.061395245307347e-05
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.0005205326699177658,
+                -2.8040169926961895e-05,
+                -4.274132116814532e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 4.340208557292048e-05,
+              "development_max_residual": 2.0006270625074906e-05,
+              "validation_residuals": [
+                -5.1906759207290785e-06,
+                -1.1332919279699203e-06,
+                1.1329417560746423e-06
+              ],
+              "validation_max_abs_error": 5.1906759207290785e-06
+            },
+            {
+              "model": "cubic",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.0005248202517703087,
+                -0.00014483593725890135,
+                0.00034164152333921095,
+                -0.00023150385783776042
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.00025031358653625235,
+              "development_max_residual": 1.7461588226732163e-05,
+              "validation_residuals": [
+                -1.224208589020964e-05,
+                -1.4433811313275136e-06,
+                9.608052353313017e-06
+              ],
+              "validation_max_abs_error": 1.224208589020964e-05
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.009045425296629238
+            ],
+            [
+              "possible_inflection",
+              0.013200995807127882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        },
+        "total_observed_error": {
+          "independent_variable": "observer spacing 4/(M-1), represented as x=1/(M-1)",
+          "development": [
+            {
+              "x": 0.03125,
+              "y": 0.0005596832881281974
+            },
+            {
+              "x": 0.020833333333333332,
+              "y": 0.0005800725065746768
+            },
+            {
+              "x": 0.015625,
+              "y": 0.0005596931363644209
+            },
+            {
+              "x": 0.010416666666666666,
+              "y": 0.000580871820562469
+            },
+            {
+              "x": 0.006289308176100629,
+              "y": 0.0005805113507994465
+            },
+            {
+              "x": 0.005235602094240838,
+              "y": 0.0005807698668209454
+            }
+          ],
+          "models": [
+            {
+              "model": "exponential",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                -7.451216447763823,
+                -0.03352862278794536
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 9.392927567095778e-06,
+              "development_max_residual": 1.331719580956116e-05,
+              "validation_residuals": [
+                -3.4948868992539526e-06,
+                -6.573358033379805e-07,
+                9.400824904000913e-07
+              ],
+              "validation_max_abs_error": 3.4948868992539526e-06
+            },
+            {
+              "model": "linear",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.000580733646410278,
+                -1.9118898563928355e-05
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 9.393861400961087e-06,
+              "development_max_residual": 1.3404975084791294e-05,
+              "validation_residuals": [
+                -3.442387027294746e-06,
+                -6.431939946029749e-07,
+                9.271242728101006e-07
+              ],
+              "validation_max_abs_error": 3.442387027294746e-06
+            },
+            {
+              "model": "constant",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.0005736003282083595
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 1.180869714009259e-05,
+              "development_max_residual": 1.391704008016218e-05,
+              "validation_residuals": [
+                -7.074181165178054e-06,
+                -6.913217308938849e-06,
+                -6.830622261329799e-06
+              ],
+              "validation_max_abs_error": 7.074181165178054e-06
+            },
+            {
+              "model": "quadratic",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.0005806881322950802,
+                -1.8688196526767527e-05,
+                -4.4292285467414053e-07
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 2.8851210874222075e-05,
+              "development_max_residual": 1.3460825924992213e-05,
+              "validation_residuals": [
+                -3.4238768694702746e-06,
+                -6.701632553124046e-07,
+                8.670708513455055e-07
+              ],
+              "validation_max_abs_error": 3.4238768694702746e-06
+            },
+            {
+              "model": "cubic",
+              "origin": 0.005235602094240838,
+              "scale": 0.026014397905759164,
+              "coefficients": [
+                0.0005835117566092543,
+                -9.560506476930174e-05,
+                0.000224829549971948,
+                -0.0001524588787566099
+              ],
+              "units": "response is fractional; z=(x-origin)/scale; polynomial ascending powers, exponential exp(c0+c1*z), offset_power a+b*z^p",
+              "development_loo_rmse": 0.00016863367796923106,
+              "development_max_residual": 1.178500320278531e-05,
+              "validation_residuals": [
+                -8.067644224542367e-06,
+                -8.74375196746385e-07,
+                6.4484286354506365e-06
+              ],
+              "validation_max_abs_error": 8.067644224542367e-06
+            }
+          ],
+          "features": [
+            [
+              "possible_inflection",
+              0.009045425296629238
+            ],
+            [
+              "possible_inflection",
+              0.013200995807127882
+            ],
+            [
+              "possible_inflection",
+              0.019097222222222224
+            ]
+          ]
+        }
+      },
+      "validation": [
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:17:59.356203+00:00",
+            "melbourne": "2026-11-14T14:17:59.356203+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 101,
+          "evolution_observed_error": 0.00023243169480353652,
+          "observer_baseline_error": 0.0005205736023379547,
+          "total_observed_error": 0.0005806745093735376,
+          "normalized_cross_term": 1.2161517635839274e-08,
+          "vector_decomposition_closure": 3.9867725870362926e-23,
+          "exact_norm_squared": 143.41104914180247
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:18:01.716948+00:00",
+            "melbourne": "2026-11-14T14:18:01.716948+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 157,
+          "evolution_observed_error": 0.00023242625080020798,
+          "observer_baseline_error": 0.0005203989643587236,
+          "total_observed_error": 0.0005805135455172984,
+          "normalized_cross_term": 1.2158932362391272e-08,
+          "vector_decomposition_closure": 8.859290058025853e-23,
+          "exact_norm_squared": 143.41436080766178
+        },
+        {
+          "measured_at": {
+            "utc": "2026-11-14T03:18:10.858299+00:00",
+            "melbourne": "2026-11-14T14:18:10.858299+11:00"
+          },
+          "method": "trapezoid",
+          "order": null,
+          "observer_nodes": 229,
+          "evolution_observed_error": 0.000232424262373979,
+          "observer_baseline_error": 0.0005203150716800861,
+          "total_observed_error": 0.0005804309504696893,
+          "normalized_cross_term": 1.2151276705605647e-08,
+          "vector_decomposition_closure": 4.7249142211352614e-23,
+          "exact_norm_squared": 143.41558938198588
+        }
+      ],
+      "midpoint_control": {
+        "measured_at": {
+          "utc": "2026-11-14T03:18:45.217144+00:00",
+          "melbourne": "2026-11-14T14:18:45.217144+11:00"
+        },
+        "method": "midpoint",
+        "order": null,
+        "observer_nodes": 192,
+        "evolution_observed_error": 0.00023242134218065305,
+        "observer_baseline_error": 0.000520431878083946,
+        "total_observed_error": 0.0005802440376096603,
+        "normalized_cross_term": 1.1814123154521395e-08,
+        "vector_decomposition_closure": 3.8389434473824686e-23,
+        "exact_norm_squared": 143.41743327599548
+      },
+      "original_33_max_difference_from_reference": 3.10763969501378e-05,
+      "final_uniform_max_difference_from_reference": 3.38411745892382e-07,
+      "uniform_observer_pass": true,
+      "fresh_prediction_max_error": 5.340241205585073e-06,
+      "fresh_prediction_pass": false,
+      "stop_reason": "two_successive_and_independent_rule_met",
+      "scope": "Six fixed native states only; no physical mesh fit or continuum proof. Order agreement is an empirical quadrature check."
+    }
+  ],
+  "finished_at": {
+    "utc": "2026-11-14T03:19:05.312473+00:00",
+    "melbourne": "2026-11-14T14:19:05.312473+11:00"
+  }
+}

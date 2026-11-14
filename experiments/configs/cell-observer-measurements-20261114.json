@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "scope": "fixed-state cell-aware quadrature confirmation and all-spacing remeasurement; no physical evolution",
+  "source_record_id": "20261114t000026z-1620e2b1",
+  "anchor_nodes": [
+    49,
+    81,
+    129
+  ],
+  "anchor_orders": [
+    4,
+    5,
+    6
+  ],
+  "spacing_orders": [
+    5,
+    6
+  ],
+  "adopted_order": 6,
+  "measurement_error_budget": 1e-06,
+  "expected_spacing_counts": {
+    "hopfion": 16,
+    "packet": 9
+  },
+  "future_physical_validation_nodes": [
+    73,
+    103,
+    123
+  ],
+  "future_physical_validation_run": false,
+  "fixed_parameters": {
+    "length": 8.0,
+    "duration": 1.0,
+    "steps": 960,
+    "angle_degrees": 0.0,
+    "rotation_code": null
+  },
+  "chunk_x": 4,
+  "threads": 6,
+  "max_new_norm_evaluations": 50,
+  "scientific_gate": "All six anchors must pass both 4-to-5 and 5-to-6 all-response comparisons before the other 19 states are measured. Individual later failures are retained; other states continue.",
+  "fit_scope": "all old physical validation points are inspected development context; no fresh physical prediction pass or production grid optimum"
+}

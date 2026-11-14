@@ -1,0 +1,94 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T05:44:03.575370+00:00",
+    "melbourne": "2026-11-14T16:44:03.575370+11:00"
+  },
+  "status": "available_host_controls_passed",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "qualification": {
+    "recorded_at": {
+      "utc": "2026-11-14T05:36:36.872249+00:00",
+      "melbourne": "2026-11-14T16:36:36.872249+11:00"
+    },
+    "kernel": {
+      "manufactured": {
+        "analytic_polynomial_integral": 320.0,
+        "expected": 320.0,
+        "piecewise_kink_integral": 85.33333333333334,
+        "expected_kink": 85.33333333333333,
+        "status": "passed"
+      },
+      "fixed_state_controls": [
+        {
+          "field": "hopfion",
+          "legacy_streamed_max_difference": 2.7755575615628914e-17,
+          "gauss2_to3_max_change": 0.01051419543737056,
+          "raw_arrays_unchanged": true
+        },
+        {
+          "field": "packet",
+          "legacy_streamed_max_difference": 3.469446951953614e-18,
+          "gauss2_to3_max_change": 0.0015167866866837888,
+          "raw_arrays_unchanged": true
+        }
+      ],
+      "status": "qualification_passed"
+    },
+    "fit_controls": {
+      "manufactured_nonnegative_offset_power_max_error": 2.168404344971009e-19,
+      "status": "passed"
+    },
+    "wall_seconds": 0.7601528167724609
+  },
+  "synthetic_all_phase_and_resume": {
+    "status": "passed",
+    "host_only_synthetic_states": 8,
+    "host_only_budget": 0.01,
+    "production_budget_unchanged": 1e-06,
+    "all_measurement_and_fit_phases": true,
+    "resume_reused_sealed_measurements": true,
+    "source_states_unchanged": true,
+    "measurements": 22,
+    "fits": 6,
+    "wall_seconds": 9.56262734400002
+  },
+  "negative_controls": {
+    "status": "passed",
+    "host_only_strict_gate_fixture_budget": 1e-18,
+    "production_budget_unchanged": 1e-06,
+    "failed_anchor_skips_remaining_and_retains_results": true,
+    "tampered_checkpoint_rejected": true
+  },
+  "local_publication_apply": {
+    "recorded_at": {
+      "utc": "2026-11-14T05:41:33.648062+00:00",
+      "melbourne": "2026-11-14T16:41:33.648062+11:00"
+    },
+    "status": "passed_under_available_host_runtime",
+    "local_apply_schema_links_immutable_checks": true,
+    "published_test_functions_passed": true,
+    "actual_input_compact_checks": true,
+    "dynamic_studies": {
+      "assessed": "s2-002",
+      "measurements": "s2-003"
+    },
+    "scope": "Synthetic prior register fixture; source evidence and assessment bytes are actual. No live GitHub, exact ancestry or production fields tested."
+  },
+  "rendered_measured_and_fit_plots_inspected": true,
+  "shell_python_and_staged_whitespace_checks": "passed",
+  "frozen_kernel_matches_completed_calibration": true,
+  "actual_spacing_counts": {
+    "hopfion": 16,
+    "packet": 9
+  },
+  "future_73_103_123_unused_in_source": true,
+  "locked_workstation_environment": "Mandatory local checks are included. Exact locked NumPy 2.5.4 was unavailable in the host offline cache; actual host numerical controls used NumPy 2.3.5.",
+  "full_production_fields_available": false,
+  "production_measurements_executed": false,
+  "live_GitHub_actions": false,
+  "limits": "Synthetic fixtures exercise software and record handling only. No real release, PR, hosted CI, merge, exact-head ancestry or production quadrature outcome is claimed."
+}

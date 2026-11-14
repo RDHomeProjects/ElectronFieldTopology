@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-14T02:53:01.801788+00:00",
-    "melbourne": "2026-11-14T13:53:01.801788+11:00"
+    "utc": "2026-11-14T05:46:29.758713+00:00",
+    "melbourne": "2026-11-14T16:46:29.758713+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
-    "s2-004",
+    "s2-005",
     "s5-b-011",
     "s5-b-010",
     "s5-b-006",
@@ -1386,11 +1386,11 @@
       "number": 4,
       "slug": "saved-state-observer-calibration",
       "title": "Saved-state observer quadrature and alignment calibration",
-      "state": "prepared",
+      "state": "assessed",
       "gate": "open",
       "question": "How much of the measured spacing-curve structure depends on observer integration for fixed physical fields?",
-      "finding": "Prepared six-state calibration at Hopfion/packet N49 N81 N129 with independent cell-aware quadrature, dynamic observer counts and fresh observer validation. Production outcomes are not yet measured.",
-      "next_action": "Run the read-only calibration on the archived 35-state follow-up, then assess quadrature readiness and held-out observer prediction separately.",
+      "finding": "82 norm evaluations completed. Five cell references pass jointly; two uniform observers pass; one anchor passes all-response prediction. Cell-aware evolution is stable at all six states; uniform sampling is nonmonotonic.",
+      "next_action": "Confirm orders 4/5/6 at the six saved anchors, then remeasure every spacing state consistently; retain all earlier failed checks.",
       "exit_evidence": "Exact state hashes, reproduced 33-node baseline, cell-Gauss order comparisons, two successive observer checks, independent midpoint control and frozen models before reserved observer counts. Failures retained.",
       "depends_on": [
         "s2-003"
@@ -1414,6 +1414,53 @@
           "role": "preparation",
           "path": "reports/s2/004-saved-state-observer-calibration/preparation/20261114t025301z-ad7816ce/README.md",
           "label": "Prepared cell-aware and adaptive observer controls"
+        },
+        {
+          "role": "measurement",
+          "path": "reports/s2/004-saved-state-observer-calibration/runs/20261114t030148z-c111cb34/README.md",
+          "label": "Completed six-state observer calibration, with retained failures"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s2/004-saved-state-observer-calibration/assessments/20261114t054629z-91bac8df/README.md",
+          "label": "Compact calibration assessment and saved-state continuation decision"
+        }
+      ]
+    },
+    {
+      "id": "s2-005",
+      "stage": "s2",
+      "number": 5,
+      "slug": "cell-aware-spacing-measurements",
+      "title": "Cell-aware saved-state spacing measurements",
+      "state": "prepared",
+      "gate": "open",
+      "question": "Do consistent cell-aware observations resolve the measurement sensitivity in existing spatial dependency curves?",
+      "finding": "Executable order-4/5/6 anchor confirmation and order-5/6 remeasurement of 25 saved spacing states are prepared. Production results are not yet measured.",
+      "next_action": "Run the registered anchor checks, then all 16 Hopfion and nine packet states if the common contract passes. Refit descriptively and reserve fresh physical validation separately.",
+      "exit_evidence": "Exact field and source hashes; both anchor order comparisons and all-state 5-to-6 comparisons within 1e-6 for all norms; original values retained; development-only frozen fits and no false fresh validation.",
+      "depends_on": [
+        "s2-004"
+      ],
+      "requirements": [
+        "SCI-001",
+        "SCI-002",
+        "SCI-003",
+        "SCI-004",
+        "NUM-001",
+        "NUM-002",
+        "NUM-003",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/cell-observer-measurements-20261114.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s2/005-cell-aware-spacing-measurements/preparation/20261114t054629z-5fb58b15/README.md",
+          "label": "Prepared higher-order confirmation and all-spacing saved-state measurements"
         }
       ]
     }
@@ -1523,8 +1570,8 @@
     }
   ],
   "current": {
-    "latest_assessed_study": "s2-003",
-    "summary": "35-state Maxwell follow-up assessed: controlled spatial errors approach second order; packet spacing passes fresh checks; Hopfion spacing prediction fails and localized duration consecutive-round closure remains open. Next: calibrate observation on saved fields, with Q2/Q3 evidence inventory proceeding separately.",
-    "limits": "Observer sensitivity, physical-mesh fit prediction, duration confirmation and isolated-domain acceptance remain qualified. Qx audit is one 15-case survey. No new SF trajectory or electron acceptance. Q1 parked; Q2 reference; Q4/Q7 admission/preparation unresolved."
+    "latest_assessed_study": "s2-004",
+    "summary": "Six-state observer calibration assessed: primary cell-aware evolution is stable, but joint uniform-observer and curve checks remain partly unresolved. Next: confirm higher-order anchors and remeasure existing spacing states consistently before revised physical prediction checks.",
+    "limits": "Original physical-mesh and observer-fit failures remain. Duration confirmation is separate. No new physical evolution or SF admission. Q1 parked; Q2 reference; Q4/Q7 preparation/admission unresolved; Q2/Q3 inventory may progress separately."
   }
 }
