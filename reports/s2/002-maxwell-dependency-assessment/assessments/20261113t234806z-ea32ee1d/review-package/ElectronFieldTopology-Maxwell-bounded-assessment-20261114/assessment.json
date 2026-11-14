@@ -1,0 +1,311 @@
+{
+  "assessment_recorded_at": {
+    "utc": "2026-11-13T22:44:27.608500+00:00",
+    "melbourne": "2026-11-14T09:44:27.608500+11:00"
+  },
+  "source_archive": "evidence(20261113-223432).zip",
+  "source_archive_sha256": "bff7958ed749a887b334a2e2c4d3d5a03f7cb27e1341ab144f4760e1780c5b51",
+  "run_started": {
+    "utc": "2026-11-13T15:34:44.270925+00:00",
+    "melbourne": "2026-11-14T02:34:44.270925+11:00"
+  },
+  "run_finished": {
+    "utc": "2026-11-13T15:43:33.512867+00:00",
+    "melbourne": "2026-11-14T02:43:33.512867+11:00"
+  },
+  "compute_seconds": 529.241942,
+  "completed_cases": 61,
+  "field_counts": {
+    "hopfion": 36,
+    "packet": 25
+  },
+  "compact_integrity": {
+    "CRC": "all 129 ZIP entries read without CRC error",
+    "root_hashed_members": 128,
+    "mismatches": 0,
+    "missing": 0,
+    "nested_package_hashed_members": 19
+  },
+  "fit_summary": [
+    {
+      "block": "hopfion-dt",
+      "adaptive_used": 4,
+      "adaptive_limit": 9,
+      "model": "cubic",
+      "validation_rmse_fraction": 2.9947861328098705e-08,
+      "validation_max_percentage_points": 3.5551305402163613e-06,
+      "refinement_stop": "refinement_tolerances_met",
+      "validation_pass": true
+    },
+    {
+      "block": "packet-dt",
+      "adaptive_used": 6,
+      "adaptive_limit": 6,
+      "model": "cubic",
+      "validation_rmse_fraction": 1.127552917293962e-08,
+      "validation_max_percentage_points": 1.5696740996107511e-06,
+      "refinement_stop": "refinement_tolerances_met",
+      "validation_pass": true
+    },
+    {
+      "block": "hopfion-duration",
+      "adaptive_used": 9,
+      "adaptive_limit": 9,
+      "model": "cubic",
+      "validation_rmse_fraction": 7.68956363577435e-07,
+      "validation_max_percentage_points": 0.00013210206341708955,
+      "refinement_stop": "budget_exhausted",
+      "validation_pass": true
+    },
+    {
+      "block": "packet-duration",
+      "adaptive_used": 2,
+      "adaptive_limit": 6,
+      "model": "cubic",
+      "validation_rmse_fraction": 1.2027904165462272e-08,
+      "validation_max_percentage_points": 1.7172470321495485e-06,
+      "refinement_stop": "refinement_tolerances_met",
+      "validation_pass": true
+    },
+    {
+      "block": "hopfion-angle",
+      "adaptive_used": 2,
+      "adaptive_limit": 9,
+      "model": "constant",
+      "validation_rmse_fraction": 2.9199747187200657e-18,
+      "validation_max_percentage_points": 4.3368086899420177e-16,
+      "refinement_stop": "refinement_tolerances_met",
+      "validation_pass": true
+    }
+  ],
+  "late_time_diagnostics": {
+    "hopfion": [
+      {
+        "parameters": {
+          "nodes": 65,
+          "length": 8.0,
+          "duration": 1.0,
+          "field": "hopfion",
+          "angle_degrees": 0.0,
+          "rotation_code": null,
+          "steps": 240
+        },
+        "dt": 0.004166666666666667,
+        "E_error": 0.01947040009758427,
+        "B_synchronized_error": 0.019442139932890925,
+        "sync_native_error": 0.019456249763901142,
+        "collocated_error": 0.02264491802656656,
+        "initial_discrete_divergence_normalized": 0.03349923971387615,
+        "max_discrete_divergence_change_normalized": 6.59399556923259e-14,
+        "poynting_balance": {
+          "samples": 61,
+          "integrated_flux": 0.5025489657575565,
+          "energy_change": -0.5082681737305705,
+          "defect": -0.005719207973014062,
+          "defect_over_initial_energy": -0.0002995209125995072,
+          "defect_over_transport": -0.011252343287671156
+        },
+        "coarser_flux_quadrature": {
+          "samples": 31,
+          "integrated_flux": 0.5027487791239744,
+          "energy_change": -0.5082681737305705,
+          "defect": -0.0055193946065961175,
+          "defect_over_initial_energy": -0.00028905647728932524,
+          "defect_over_transport": -0.010859217420766365
+        },
+        "modified_energy_relative_drift": null,
+        "physical_energy_relative_change": null
+      },
+      {
+        "parameters": {
+          "nodes": 65,
+          "length": 8.0,
+          "field": "hopfion",
+          "duration": 1.0,
+          "steps": 480,
+          "angle_degrees": 0.0,
+          "rotation_code": null
+        },
+        "dt": 0.0020833333333333333,
+        "E_error": 0.019484940428705917,
+        "B_synchronized_error": 0.019457588949978323,
+        "sync_native_error": 0.019471244925794193,
+        "collocated_error": 0.02265587832826705,
+        "initial_discrete_divergence_normalized": 0.03349922949558019,
+        "max_discrete_divergence_change_normalized": 9.296937318661714e-14,
+        "poynting_balance": {
+          "samples": 121,
+          "integrated_flux": 0.5024957000929099,
+          "energy_change": -0.5082643377227924,
+          "defect": -0.005768637629882556,
+          "defect_over_initial_energy": -0.0003021058199079704,
+          "defect_over_transport": -0.011349680081290246
+        },
+        "coarser_flux_quadrature": {
+          "samples": 61,
+          "integrated_flux": 0.502545657372311,
+          "energy_change": -0.5082643377227924,
+          "defect": -0.005718680350481398,
+          "defect_over_initial_energy": -0.00029948953755116624,
+          "defect_over_transport": -0.01125139012527054
+        },
+        "modified_energy_relative_drift": null,
+        "physical_energy_relative_change": null
+      },
+      {
+        "parameters": {
+          "nodes": 65,
+          "length": 8.0,
+          "field": "hopfion",
+          "duration": 1.0,
+          "steps": 960,
+          "angle_degrees": 0.0,
+          "rotation_code": null
+        },
+        "dt": 0.0010416666666666667,
+        "E_error": 0.019486007845363952,
+        "B_synchronized_error": 0.019458994700094483,
+        "sync_native_error": 0.01947248169468314,
+        "collocated_error": 0.022656532732104797,
+        "initial_discrete_divergence_normalized": 0.033499224247413376,
+        "max_discrete_divergence_change_normalized": 1.3384637349354844e-13,
+        "poynting_balance": {
+          "samples": 241,
+          "integrated_flux": 0.5024822702350863,
+          "energy_change": -0.5082632814140524,
+          "defect": -0.005781011178966122,
+          "defect_over_initial_energy": -0.00030275288160885633,
+          "defect_over_transport": -0.011374048431912339
+        },
+        "coarser_flux_quadrature": {
+          "samples": 121,
+          "integrated_flux": 0.5024947598385027,
+          "energy_change": -0.5082632814140524,
+          "defect": -0.005768521575549745,
+          "defect_over_initial_energy": -0.00030209879821282043,
+          "defect_over_transport": -0.011349475333927316
+        },
+        "modified_energy_relative_drift": null,
+        "physical_energy_relative_change": null
+      }
+    ],
+    "packet": [
+      {
+        "parameters": {
+          "nodes": 65,
+          "length": 8.0,
+          "duration": 1.0,
+          "field": "packet",
+          "angle_degrees": 0.0,
+          "rotation_code": null,
+          "steps": 240
+        },
+        "dt": 0.004166666666666667,
+        "E_error": 0.001001125800370628,
+        "B_synchronized_error": 0.0009703025100398419,
+        "sync_native_error": 0.0009858346284132415,
+        "collocated_error": 0.0019217646197619688,
+        "initial_discrete_divergence_normalized": 0.002064675109481552,
+        "max_discrete_divergence_change_normalized": 6.784576929654061e-14,
+        "poynting_balance": {
+          "samples": 61,
+          "integrated_flux": -2.0561029220489284,
+          "energy_change": 2.0186599984027254,
+          "defect": -0.03744292364620305,
+          "defect_over_initial_energy": -0.000561417247416219,
+          "defect_over_transport": -0.018210627126044245
+        },
+        "coarser_flux_quadrature": {
+          "samples": 31,
+          "integrated_flux": -2.0531544359833895,
+          "energy_change": 2.0186599984027254,
+          "defect": -0.03449443758066417,
+          "defect_over_initial_energy": -0.0005172078008836489,
+          "defect_over_transport": -0.016800702848318635
+        },
+        "modified_energy_relative_drift": 0.0,
+        "physical_energy_relative_change": 1.7271222718662216e-07
+      },
+      {
+        "parameters": {
+          "nodes": 65,
+          "length": 8.0,
+          "field": "packet",
+          "duration": 1.0,
+          "steps": 480,
+          "angle_degrees": 0.0,
+          "rotation_code": null
+        },
+        "dt": 0.0020833333333333333,
+        "E_error": 0.0010015899289253518,
+        "B_synchronized_error": 0.0009715550440807718,
+        "sync_native_error": 0.0009866867763894177,
+        "collocated_error": 0.0019219308232570134,
+        "initial_discrete_divergence_normalized": 0.00206467510948156,
+        "max_discrete_divergence_change_normalized": 9.61040538983166e-14,
+        "poynting_balance": {
+          "samples": 121,
+          "integrated_flux": -2.056865317435027,
+          "energy_change": 2.0186847364721956,
+          "defect": -0.03818058096283128,
+          "defect_over_initial_energy": -0.0005724765652141451,
+          "defect_over_transport": -0.018562508998131007
+        },
+        "coarser_flux_quadrature": {
+          "samples": 61,
+          "integrated_flux": -2.0561283202699907,
+          "energy_change": 2.0186847364721956,
+          "defect": -0.03744358379779511,
+          "defect_over_initial_energy": -0.0005614260888994132,
+          "defect_over_transport": -0.018210723245560074
+        },
+        "modified_energy_relative_drift": 2.220446049250313e-16,
+        "physical_energy_relative_change": 1.7244694383578008e-07
+      },
+      {
+        "parameters": {
+          "nodes": 65,
+          "length": 8.0,
+          "field": "packet",
+          "duration": 1.0,
+          "steps": 960,
+          "angle_degrees": 0.0,
+          "rotation_code": null
+        },
+        "dt": 0.0010416666666666667,
+        "E_error": 0.00100148875579164,
+        "B_synchronized_error": 0.0009718412376009829,
+        "sync_native_error": 0.0009867763472740155,
+        "collocated_error": 0.0019219011966446525,
+        "initial_discrete_divergence_normalized": 0.0020646751094815594,
+        "max_discrete_divergence_change_normalized": 1.358199773120226e-13,
+        "poynting_balance": {
+          "samples": 241,
+          "integrated_flux": -2.057057645772295,
+          "energy_change": 2.0186926454882155,
+          "defect": -0.03836500028407963,
+          "defect_over_initial_energy": -0.0005752414769035733,
+          "defect_over_transport": -0.018650425457413956
+        },
+        "coarser_flux_quadrature": {
+          "samples": 121,
+          "integrated_flux": -2.056873404192622,
+          "energy_change": 2.0186926454882155,
+          "defect": -0.038180758704406514,
+          "defect_over_initial_energy": -0.0005724789746850553,
+          "defect_over_transport": -0.018562522431658107
+        },
+        "modified_energy_relative_drift": 2.220446049250313e-16,
+        "physical_energy_relative_change": 1.723176681345251e-07
+      }
+    ]
+  },
+  "full_fields_scope": {
+    "manifest_count": 61,
+    "declared_bytes": 1078596569,
+    "manifest_to_case_receipts_crosschecked": true,
+    "full_arrays_supplied": false,
+    "independent_NPZ_CRC_or_metric_replay": false
+  },
+  "disposition": "Bounded numerical-control extension completed; five held-out prediction checks passed; Hopfion-duration refinement criterion remains open. No full-grid/domain or physical-model admission."
+}

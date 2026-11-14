@@ -1,0 +1,162 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-13T15:35:18.888137+00:00",
+    "melbourne": "2026-11-14T02:35:18.888137+11:00"
+  },
+  "models": [
+    {
+      "model": "cubic",
+      "origin": 0.0020833333333333333,
+      "scale": 0.014583333333333334,
+      "coefficients": [
+        0.00394129097711267,
+        5.019135853017653e-05,
+        -8.431863761320925e-05,
+        1.280882563092333e-05
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 1.2862369588128435e-07,
+      "development_max_residual": 5.112004823875499e-08
+    },
+    {
+      "model": "quadratic",
+      "origin": 0.0020833333333333333,
+      "scale": 0.014583333333333334,
+      "coefficients": [
+        0.003941656708019746,
+        4.3624298317093095e-05,
+        -6.574776382939366e-05
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 8.166306246095908e-07,
+      "development_max_residual": 4.775397154134498e-07
+    },
+    {
+      "model": "linear",
+      "origin": 0.0020833333333333333,
+      "scale": 0.014583333333333334,
+      "coefficients": [
+        0.003951637782380785,
+        -2.3341855856085515e-05
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 9.164522268610203e-06,
+      "development_max_residual": 1.0322834484689791e-05
+    },
+    {
+      "model": "exponential",
+      "origin": 0.0020833333333333333,
+      "scale": 0.014583333333333334,
+      "coefficients": [
+        -5.533620364488099,
+        -0.00593171996197834
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 9.177237868039734e-06,
+      "development_max_residual": 1.0341774986032462e-05
+    },
+    {
+      "model": "constant",
+      "origin": 0.0020833333333333333,
+      "scale": 0.014583333333333334,
+      "coefficients": [
+        0.003940647316366072
+      ],
+      "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+      "development_loo_rmse": 1.1071967191775598e-05,
+      "development_max_residual": 2.0658816202249672e-05
+    }
+  ],
+  "rows": [
+    {
+      "level": 12,
+      "x": 0.016666666666666666,
+      "y": 0.003919988500163822,
+      "role": "seed_development",
+      "case_id": "9f8053f12af61f05",
+      "measured_at": {
+        "utc": "2026-11-13T15:34:47.060804+00:00",
+        "melbourne": "2026-11-14T02:34:47.060804+11:00"
+      }
+    },
+    {
+      "level": 24,
+      "x": 0.008333333333333333,
+      "y": 0.003948360306094207,
+      "role": "seed_development",
+      "case_id": "14068766b1c1903c",
+      "measured_at": {
+        "utc": "2026-11-13T15:34:50.633827+00:00",
+        "melbourne": "2026-11-14T02:34:50.633827+11:00"
+      }
+    },
+    {
+      "level": 48,
+      "x": 0.004166666666666667,
+      "y": 0.003946726606132412,
+      "role": "seed_development",
+      "case_id": "6e57290106e51455",
+      "measured_at": {
+        "utc": "2026-11-13T15:34:56.016680+00:00",
+        "melbourne": "2026-11-14T02:34:56.016680+11:00"
+      }
+    },
+    {
+      "level": 96,
+      "x": 0.0020833333333333333,
+      "y": 0.003941314947896095,
+      "role": "seed_development",
+      "case_id": "39533f49973c1a96",
+      "measured_at": {
+        "utc": "2026-11-13T15:35:04.677818+00:00",
+        "melbourne": "2026-11-14T02:35:04.677818+11:00"
+      }
+    },
+    {
+      "level": 29,
+      "x": 0.006896551724137932,
+      "y": 0.003949137344953677,
+      "role": "adaptive_development",
+      "case_id": "c273539b55a94b1f",
+      "measured_at": {
+        "utc": "2026-11-13T15:35:08.399213+00:00",
+        "melbourne": "2026-11-14T02:35:08.399213+11:00"
+      }
+    },
+    {
+      "level": 16,
+      "x": 0.0125,
+      "y": 0.003938794603923994,
+      "role": "adaptive_development",
+      "case_id": "b7c8df914144f17e",
+      "measured_at": {
+        "utc": "2026-11-13T15:35:11.614447+00:00",
+        "melbourne": "2026-11-14T02:35:11.614447+11:00"
+      }
+    },
+    {
+      "level": 30,
+      "x": 0.006666666666666667,
+      "y": 0.003949133416101246,
+      "role": "adaptive_development",
+      "case_id": "3b3946f5a50b7592",
+      "measured_at": {
+        "utc": "2026-11-13T15:35:16.010275+00:00",
+        "melbourne": "2026-11-14T02:35:16.010275+11:00"
+      }
+    },
+    {
+      "level": 14,
+      "x": 0.014285714285714287,
+      "y": 0.003931722805663118,
+      "role": "adaptive_development",
+      "case_id": "a9e1ab74e9d555ba",
+      "measured_at": {
+        "utc": "2026-11-13T15:35:18.872553+00:00",
+        "melbourne": "2026-11-14T02:35:18.872553+11:00"
+      }
+    }
+  ],
+  "stop_reason": "refinement_tolerances_met",
+  "adaptive_budget": 9
+}

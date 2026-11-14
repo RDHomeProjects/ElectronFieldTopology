@@ -1,0 +1,2230 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-13T15:34:44.270925+00:00",
+    "melbourne": "2026-11-14T02:34:44.270925+11:00"
+  },
+  "status": "complete_pending_review",
+  "role": "local-bounded-validation",
+  "environment": {
+    "source_commit": "50a1337739f5063bfb459c8d7111077b9ccffd33",
+    "tracked_worktree_status": "",
+    "source_sha256": {
+      "fields.py": "1926edeeabb360b77f87eb8f00bcce412ab102b540d9d5282e56007e0f577688",
+      "evolution.py": "c1a3b8820fc192ce25fca332004623be838d400404830ddbabaf97d35d3d8735"
+    },
+    "dependency_sha256": {
+      "pyproject.toml": "7533c5330618cded5524ac2bc7c0035cfd2f1688109e433a53c3ac24adf74d0c",
+      "uv.lock": "1256a2e134796077174a1a10bbfa53b3c33239a616ed93b20e08220da063079e"
+    },
+    "python": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_count": 12,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "6",
+      "OPENBLAS_NUM_THREADS": "6",
+      "MKL_NUM_THREADS": "6"
+    },
+    "package_sha256": {
+      "dependencies.py": "93ba55ad79a34f98e8e4627879c87331a71569f708e8fc0a3d151284152f9a15",
+      "manage.py": "3e00b9a73f57ea9d00f56c79e135b423e6e1f31938c7fa0c2eebcbe0cbc836a2",
+      "render_report.py": "6929379f2abf90c3e67306e38626ba93554904088e6588a36abe2a93df30840d",
+      "PLAN.json": "a65f44e45a41e2127f9467b28c61cb5db106bf8f9c1c1c7c1802f75940c5b24a",
+      "extension.py": "d35fa3cbba76ab8cbd31db88a6d1e10749279ca33170f3a5006c45a5bf2e570c",
+      "qualification.py": "1dae6e23c2687a2aabab19b58c229ce8380ae40638fde3c138c71ebb5287b6ce",
+      "numerics.py": "9e9ce2405885fc17554e6036b7d31354f6e1bd6867ca2318e4ba4e56e75af25b",
+      "yee_primitives.py": "aa34b7376067d1ed18a28aa1555de95bb55d446eac49f0a308ebbd4634739f76"
+    }
+  },
+  "config": {
+    "schema": "maxwell-bounded-dependencies-v1",
+    "nodes": 65,
+    "length": 8.0,
+    "fixed_dt": 0.004166666666666667,
+    "baseline_duration": 0.2,
+    "phase": 0.0,
+    "boundary_layers": 2,
+    "max_case_count": 80,
+    "adaptive": {
+      "min_additions": 2,
+      "max_additions": 6,
+      "hopfion_max_additions": 9,
+      "prediction_tolerance_fraction": 1e-06,
+      "feature_bracket_fraction": 0.03,
+      "validation_tolerance_fraction": 5e-06,
+      "accuracy_budget_fraction": null
+    },
+    "blocks": [
+      {
+        "id": "hopfion-dt",
+        "field": "hopfion",
+        "variable": "dt",
+        "seed": [
+          12,
+          24,
+          48,
+          96
+        ],
+        "validation": [
+          18,
+          36,
+          72
+        ],
+        "candidates": [
+          12,
+          96
+        ]
+      },
+      {
+        "id": "packet-dt",
+        "field": "packet",
+        "variable": "dt",
+        "seed": [
+          12,
+          24,
+          48,
+          96
+        ],
+        "validation": [
+          18,
+          36,
+          72
+        ],
+        "candidates": [
+          12,
+          96
+        ]
+      },
+      {
+        "id": "hopfion-duration",
+        "field": "hopfion",
+        "variable": "duration",
+        "seed": [
+          48,
+          96,
+          120,
+          240
+        ],
+        "validation": [
+          72,
+          160,
+          216
+        ],
+        "candidates": [
+          48,
+          240
+        ]
+      },
+      {
+        "id": "packet-duration",
+        "field": "packet",
+        "variable": "duration",
+        "seed": [
+          48,
+          96,
+          120,
+          240
+        ],
+        "validation": [
+          72,
+          160,
+          216
+        ],
+        "candidates": [
+          48,
+          240
+        ]
+      },
+      {
+        "id": "hopfion-angle",
+        "field": "hopfion",
+        "variable": "angle_degrees",
+        "seed": [
+          0,
+          30,
+          60,
+          90
+        ],
+        "validation": [
+          15,
+          45,
+          75
+        ],
+        "candidates": [
+          0,
+          90
+        ]
+      }
+    ],
+    "packet_cubic_rotation_controls": [
+      "x90",
+      "y90"
+    ],
+    "late_time_dt_checks": [
+      480,
+      960
+    ],
+    "snapshot_policy": "Retain compressed float64 native final E and B_half, plus Fourier final E/B for packet cases. Compact evidence excludes full fields.",
+    "scope": "Separate classical Maxwell numerical-control extension; fixed grid and box; no spatial/domain convergence, SF admission, isolation, particle, charge or quantum claim."
+  },
+  "blocks": [
+    {
+      "id": "hopfion-dt",
+      "variable": "dt",
+      "field": "hopfion",
+      "development": [
+        {
+          "level": 12,
+          "x": 0.016666666666666666,
+          "y": 0.003919988500163822,
+          "role": "seed_development",
+          "case_id": "9f8053f12af61f05",
+          "measured_at": {
+            "utc": "2026-11-13T15:34:47.060804+00:00",
+            "melbourne": "2026-11-14T02:34:47.060804+11:00"
+          }
+        },
+        {
+          "level": 24,
+          "x": 0.008333333333333333,
+          "y": 0.003948360306094207,
+          "role": "seed_development",
+          "case_id": "14068766b1c1903c",
+          "measured_at": {
+            "utc": "2026-11-13T15:34:50.633827+00:00",
+            "melbourne": "2026-11-14T02:34:50.633827+11:00"
+          }
+        },
+        {
+          "level": 48,
+          "x": 0.004166666666666667,
+          "y": 0.003946726606132412,
+          "role": "seed_development",
+          "case_id": "6e57290106e51455",
+          "measured_at": {
+            "utc": "2026-11-13T15:34:56.016680+00:00",
+            "melbourne": "2026-11-14T02:34:56.016680+11:00"
+          }
+        },
+        {
+          "level": 96,
+          "x": 0.0020833333333333333,
+          "y": 0.003941314947896095,
+          "role": "seed_development",
+          "case_id": "39533f49973c1a96",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:04.677818+00:00",
+            "melbourne": "2026-11-14T02:35:04.677818+11:00"
+          }
+        },
+        {
+          "level": 29,
+          "x": 0.006896551724137932,
+          "y": 0.003949137344953677,
+          "role": "adaptive_development",
+          "case_id": "c273539b55a94b1f",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:08.399213+00:00",
+            "melbourne": "2026-11-14T02:35:08.399213+11:00"
+          }
+        },
+        {
+          "level": 16,
+          "x": 0.0125,
+          "y": 0.003938794603923994,
+          "role": "adaptive_development",
+          "case_id": "b7c8df914144f17e",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:11.614447+00:00",
+            "melbourne": "2026-11-14T02:35:11.614447+11:00"
+          }
+        },
+        {
+          "level": 30,
+          "x": 0.006666666666666667,
+          "y": 0.003949133416101246,
+          "role": "adaptive_development",
+          "case_id": "3b3946f5a50b7592",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:16.010275+00:00",
+            "melbourne": "2026-11-14T02:35:16.010275+11:00"
+          }
+        },
+        {
+          "level": 14,
+          "x": 0.014285714285714287,
+          "y": 0.003931722805663118,
+          "role": "adaptive_development",
+          "case_id": "a9e1ab74e9d555ba",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:18.872553+00:00",
+            "melbourne": "2026-11-14T02:35:18.872553+11:00"
+          }
+        }
+      ],
+      "validation": [
+        {
+          "level": 18,
+          "x": 0.011111111111111112,
+          "y": 0.003943123440573926,
+          "role": "validation",
+          "case_id": "5f3ce4865ecef63f",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:22.084088+00:00",
+            "melbourne": "2026-11-14T02:35:22.084088+11:00"
+          }
+        },
+        {
+          "level": 36,
+          "x": 0.005555555555555556,
+          "y": 0.003948603471499016,
+          "role": "validation",
+          "case_id": "8f73b6262860f3a5",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:26.666786+00:00",
+            "melbourne": "2026-11-14T02:35:26.666786+11:00"
+          }
+        },
+        {
+          "level": 72,
+          "x": 0.002777777777777778,
+          "y": 0.003943469287323816,
+          "role": "validation",
+          "case_id": "1203b4c7c2a65605",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:33.923793+00:00",
+            "melbourne": "2026-11-14T02:35:33.923793+11:00"
+          }
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-13T15:35:18.888137+00:00",
+        "melbourne": "2026-11-14T02:35:18.888137+11:00"
+      },
+      "stop_reason": "refinement_tolerances_met",
+      "models": [
+        {
+          "model": "cubic",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            0.00394129097711267,
+            5.019135853017653e-05,
+            -8.431863761320925e-05,
+            1.280882563092333e-05
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 1.2862369588128435e-07,
+          "development_max_residual": 5.112004823875499e-08,
+          "validation_rmse": 2.9947861328098705e-08,
+          "validation_max_abs_error": 3.555130540216361e-08
+        },
+        {
+          "model": "quadratic",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            0.003941656708019746,
+            4.3624298317093095e-05,
+            -6.574776382939366e-05
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 8.166306246095908e-07,
+          "development_max_residual": 4.775397154134498e-07,
+          "validation_rmse": 2.667585659528458e-07,
+          "validation_max_abs_error": 3.429303786972246e-07
+        },
+        {
+          "model": "linear",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            0.003951637782380785,
+            -2.3341855856085515e-05
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 9.164522268610203e-06,
+          "development_max_residual": 1.0322834484689791e-05,
+          "validation_rmse": 5.519558216827996e-06,
+          "validation_max_abs_error": 7.056978111441743e-06
+        },
+        {
+          "model": "exponential",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            -5.533620364488099,
+            -0.00593171996197834
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 9.177237868039734e-06,
+          "development_max_residual": 1.0341774986032462e-05,
+          "validation_rmse": 5.531260472868191e-06,
+          "validation_max_abs_error": 7.0713969442222704e-06
+        },
+        {
+          "model": "constant",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            0.003940647316366072
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 1.1071967191775598e-05,
+          "development_max_residual": 2.0658816202249672e-05,
+          "validation_rmse": 5.079209770510707e-06,
+          "validation_max_abs_error": 7.95615513294462e-06
+        }
+      ],
+      "selection_journal": [
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:04.681998+00:00",
+            "melbourne": "2026-11-14T02:35:04.681998+11:00"
+          },
+          "level": 29,
+          "x": 0.006896551724137932,
+          "score": 1.530775479061657,
+          "bracket": [
+            0.004166666666666667,
+            0.008333333333333333
+          ],
+          "reason": "turning_point",
+          "features": [
+            {
+              "kind": "turning_point",
+              "x": 0.007012550086184472
+            }
+          ],
+          "predicted_y": 0.003949015394876311,
+          "model": {
+            "model": "quadratic",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              0.0039414470578364655,
+              4.4807418421618215e-05,
+              -6.628248983681208e-05
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 2.6117450093971014e-06,
+            "development_max_residual": 2.3119239565046884e-07
+          },
+          "round": 1
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:08.407277+00:00",
+            "melbourne": "2026-11-14T02:35:08.407277+11:00"
+          },
+          "level": 16,
+          "x": 0.0125,
+          "score": 0.6027086257129226,
+          "bracket": [
+            0.008333333333333333,
+            0.016666666666666666
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "turning_point",
+              "x": 0.00702084855953106
+            }
+          ],
+          "predicted_y": 0.003939679383397603,
+          "model": {
+            "model": "quadratic",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              0.0039414439375390015,
+              4.503952208312723e-05,
+              -6.651385703351844e-05
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 2.2180971190405244e-06,
+            "development_max_residual": 2.058768067084854e-07
+          },
+          "round": 2
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:11.625510+00:00",
+            "melbourne": "2026-11-14T02:35:11.625510+11:00"
+          },
+          "level": 30,
+          "x": 0.006666666666666667,
+          "score": 0.9381208724263544,
+          "bracket": [
+            0.004166666666666667,
+            0.006896551724137932
+          ],
+          "reason": "turning_point",
+          "features": [
+            {
+              "kind": "turning_point",
+              "x": 0.006773019554277209
+            }
+          ],
+          "predicted_y": 0.003949130137072733,
+          "model": {
+            "model": "cubic",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              0.003941295889452736,
+              5.0035752407004855e-05,
+              -8.380624072693363e-05,
+              1.2457575132630061e-05
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 3.059356987952958e-07,
+            "development_max_residual": 4.323596751801273e-08
+          },
+          "round": 3
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:16.025608+00:00",
+            "melbourne": "2026-11-14T02:35:16.025608+11:00"
+          },
+          "level": 14,
+          "x": 0.014285714285714287,
+          "score": 0.290848020774876,
+          "bracket": [
+            0.0125,
+            0.016666666666666666
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "turning_point",
+              "x": 0.00677291750851111
+            }
+          ],
+          "predicted_y": 0.0039317852761190245,
+          "model": {
+            "model": "cubic",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              0.0039412956832255855,
+              5.004577469154485e-05,
+              -8.383022686009553e-05,
+              1.2471756999304056e-05
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 2.8055443333819235e-07,
+            "development_max_residual": 4.401332892936538e-08
+          },
+          "round": 4
+        }
+      ],
+      "empirical_prediction_check": true,
+      "operating_conditions": "not_selected: no accuracy budget declared",
+      "scope": "Primary model selected by development leave-one-out residual, frozen before block validation; validation does not select the winning model."
+    },
+    {
+      "id": "packet-dt",
+      "variable": "dt",
+      "field": "packet",
+      "development": [
+        {
+          "level": 12,
+          "x": 0.016666666666666666,
+          "y": 0.00020123650524778234,
+          "role": "seed_development",
+          "case_id": "f7ae76eb6f22b43a",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:36.674691+00:00",
+            "melbourne": "2026-11-14T02:35:36.674691+11:00"
+          }
+        },
+        {
+          "level": 24,
+          "x": 0.008333333333333333,
+          "y": 0.00019980059153270995,
+          "role": "seed_development",
+          "case_id": "b393e897bf734253",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:39.635188+00:00",
+            "melbourne": "2026-11-14T02:35:39.635188+11:00"
+          }
+        },
+        {
+          "level": 48,
+          "x": 0.004166666666666667,
+          "y": 0.00019962431419679382,
+          "role": "seed_development",
+          "case_id": "1c035c3932dad9ae",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:43.025873+00:00",
+            "melbourne": "2026-11-14T02:35:43.025873+11:00"
+          }
+        },
+        {
+          "level": 96,
+          "x": 0.0020833333333333333,
+          "y": 0.00019937493738864982,
+          "role": "seed_development",
+          "case_id": "de8b76fea469c715",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:47.235834+00:00",
+            "melbourne": "2026-11-14T02:35:47.235834+11:00"
+          }
+        },
+        {
+          "level": 32,
+          "x": 0.00625,
+          "y": 0.0001997471305790566,
+          "role": "adaptive_development",
+          "case_id": "6a98f9797668fa26",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:50.351460+00:00",
+            "melbourne": "2026-11-14T02:35:50.351460+11:00"
+          }
+        },
+        {
+          "level": 27,
+          "x": 0.007407407407407408,
+          "y": 0.0001997808279939533,
+          "role": "adaptive_development",
+          "case_id": "c4c50b8bd8ccf2cd",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:53.391380+00:00",
+            "melbourne": "2026-11-14T02:35:53.391380+11:00"
+          }
+        },
+        {
+          "level": 16,
+          "x": 0.0125,
+          "y": 0.00020003894153685422,
+          "role": "adaptive_development",
+          "case_id": "a7c6eb770e66dbf4",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:56.227751+00:00",
+            "melbourne": "2026-11-14T02:35:56.227751+11:00"
+          }
+        },
+        {
+          "level": 19,
+          "x": 0.010526315789473684,
+          "y": 0.00019986947304082524,
+          "role": "adaptive_development",
+          "case_id": "97ba43c71ef501bf",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:59.104092+00:00",
+            "melbourne": "2026-11-14T02:35:59.104092+11:00"
+          }
+        },
+        {
+          "level": 25,
+          "x": 0.008,
+          "y": 0.0001997936939176338,
+          "role": "adaptive_development",
+          "case_id": "0ce128f1c37b188b",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:02.171656+00:00",
+            "melbourne": "2026-11-14T02:36:02.171656+11:00"
+          }
+        },
+        {
+          "level": 14,
+          "x": 0.014285714285714287,
+          "y": 0.00020037041468084832,
+          "role": "adaptive_development",
+          "case_id": "7fee8cb52d63ec33",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:04.955384+00:00",
+            "melbourne": "2026-11-14T02:36:04.955384+11:00"
+          }
+        }
+      ],
+      "validation": [
+        {
+          "level": 18,
+          "x": 0.011111111111111112,
+          "y": 0.00019990430530996792,
+          "role": "validation",
+          "case_id": "d36a31df4b950cac",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:07.836107+00:00",
+            "melbourne": "2026-11-14T02:36:07.836107+11:00"
+          }
+        },
+        {
+          "level": 36,
+          "x": 0.005555555555555556,
+          "y": 0.00019971717679718624,
+          "role": "validation",
+          "case_id": "d8b7584c688072e9",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:11.050850+00:00",
+            "melbourne": "2026-11-14T02:36:11.050850+11:00"
+          }
+        },
+        {
+          "level": 72,
+          "x": 0.002777777777777778,
+          "y": 0.00019947475061875375,
+          "role": "validation",
+          "case_id": "daf9b17a1d4a18a4",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:14.854636+00:00",
+            "melbourne": "2026-11-14T02:36:14.854636+11:00"
+          }
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-13T15:36:04.970948+00:00",
+        "melbourne": "2026-11-14T02:36:04.970948+11:00"
+      },
+      "stop_reason": "refinement_tolerances_met",
+      "models": [
+        {
+          "model": "cubic",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            0.00019936263218713586,
+            2.8481625532229536e-06,
+            -6.821001259955495e-06,
+            5.8370590692917445e-06
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 5.248320816968609e-08,
+          "development_max_residual": 2.3011912667178676e-08,
+          "validation_rmse": 1.127552917293962e-08,
+          "validation_max_abs_error": 1.569674099610751e-08
+        },
+        {
+          "model": "exponential",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            -8.520937650733899,
+            0.007482007235944498
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 3.2007607916884464e-07,
+          "development_max_residual": 4.875969956942778e-07,
+          "validation_rmse": 1.9104362958035402e-07,
+          "validation_max_abs_error": 2.732253257417777e-07
+        },
+        {
+          "model": "linear",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            0.0001992508928913676,
+            1.4981178214578497e-06
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 3.206673559765633e-07,
+          "development_max_residual": 4.874945349568735e-07,
+          "validation_rmse": 1.9178494895933492e-07,
+          "validation_max_abs_error": 2.7399385182596647e-07
+        },
+        {
+          "model": "quadratic",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            0.00019954692493328482,
+            -2.782567981666711e-07,
+            1.7549716376278742e-06
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 3.302471931477273e-07,
+          "development_max_residual": 2.1286547503631434e-07,
+          "validation_rmse": 1.1993337652035114e-07,
+          "validation_max_abs_error": 1.4290556630920854e-07
+        },
+        {
+          "model": "constant",
+          "origin": 0.0020833333333333333,
+          "scale": 0.014583333333333334,
+          "coefficients": [
+            0.00019996368301151074
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 5.440662061411943e-07,
+          "development_max_residual": 1.2728222362716067e-06,
+          "validation_rmse": 3.1798632561174256e-07,
+          "validation_max_abs_error": 4.889323927569826e-07
+        }
+      ],
+      "selection_journal": [
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:47.240096+00:00",
+            "melbourne": "2026-11-14T02:35:47.240096+11:00"
+          },
+          "level": 32,
+          "x": 0.00625,
+          "score": 1.4706094608092573,
+          "bracket": [
+            0.004166666666666667,
+            0.008333333333333333
+          ],
+          "reason": "possible_inflection",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.00625
+            }
+          ],
+          "predicted_y": 0.00019981042115308983,
+          "model": {
+            "model": "exponential",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              -8.520774152304861,
+              0.00921415991382783
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 4.864790684520258e-07,
+            "development_max_residual": 2.730149665056169e-07
+          },
+          "round": 1
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:50.359672+00:00",
+            "melbourne": "2026-11-14T02:35:50.359672+11:00"
+          },
+          "level": 27,
+          "x": 0.007407407407407408,
+          "score": 0.7343847934740456,
+          "bracket": [
+            0.00625,
+            0.008333333333333333
+          ],
+          "reason": "possible_inflection",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.007291666666666667
+            }
+          ],
+          "predicted_y": 0.00019994386563619733,
+          "model": {
+            "model": "exponential",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              -8.520854438071526,
+              0.009259727511123155
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 4.1208385851760446e-07,
+            "development_max_residual": 2.608595043989423e-07
+          },
+          "round": 2
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:53.402103+00:00",
+            "melbourne": "2026-11-14T02:35:53.402103+11:00"
+          },
+          "level": 16,
+          "x": 0.0125,
+          "score": 0.7121756052870568,
+          "bracket": [
+            0.008333333333333333,
+            0.016666666666666666
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.007870370370370371
+            }
+          ],
+          "predicted_y": 0.00020010967738710633,
+          "model": {
+            "model": "cubic",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              0.00019937364229799724,
+              2.477288663141614e-06,
+              -5.553266606237483e-06,
+              4.9387677534902985e-06
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 3.000485757583883e-07,
+            "development_max_residual": 4.2932499024514285e-09
+          },
+          "round": 3
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:56.239738+00:00",
+            "melbourne": "2026-11-14T02:35:56.239738+11:00"
+          },
+          "level": 19,
+          "x": 0.010526315789473684,
+          "score": 0.340493918639299,
+          "bracket": [
+            0.008333333333333333,
+            0.0125
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.007870370370370371
+            }
+          ],
+          "predicted_y": 0.00019985959150941405,
+          "model": {
+            "model": "cubic",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              0.00019936613798975127,
+              2.7708657632657685e-06,
+              -6.628514070610693e-06,
+              5.72535206143695e-06
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 1.23379761287305e-07,
+            "development_max_residual": 1.9077950296175457e-08
+          },
+          "round": 4
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:35:59.117437+00:00",
+            "melbourne": "2026-11-14T02:35:59.117437+11:00"
+          },
+          "level": 25,
+          "x": 0.008,
+          "score": 0.3211848538484449,
+          "bracket": [
+            0.007407407407407408,
+            0.008333333333333333
+          ],
+          "reason": "possible_inflection",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.007870370370370371
+            }
+          ],
+          "predicted_y": 0.00019978322524566618,
+          "model": {
+            "model": "cubic",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              0.00019936614138897407,
+              2.7594455013470675e-06,
+              -6.571936167272406e-06,
+              5.679728398487904e-06
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 9.752698094647913e-08,
+            "development_max_residual": 1.847152102452186e-08
+          },
+          "round": 5
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:36:02.186248+00:00",
+            "melbourne": "2026-11-14T02:36:02.186248+11:00"
+          },
+          "level": 14,
+          "x": 0.014285714285714287,
+          "score": 0.3107235760900196,
+          "bracket": [
+            0.0125,
+            0.016666666666666666
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.008166666666666666
+            }
+          ],
+          "predicted_y": 0.00020040122042709417,
+          "model": {
+            "model": "cubic",
+            "origin": 0.0020833333333333333,
+            "scale": 0.014583333333333334,
+            "coefficients": [
+              0.00019936534047651887,
+              2.7786618290626915e-06,
+              -6.609564764236598e-06,
+              5.698687355898453e-06
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 9.374743908454228e-08,
+            "development_max_residual": 1.970314162101942e-08
+          },
+          "round": 6
+        }
+      ],
+      "empirical_prediction_check": true,
+      "operating_conditions": "not_selected: no accuracy budget declared",
+      "scope": "Primary model selected by development leave-one-out residual, frozen before block validation; validation does not select the winning model."
+    },
+    {
+      "id": "hopfion-duration",
+      "variable": "duration",
+      "field": "hopfion",
+      "development": [
+        {
+          "level": 48,
+          "x": 0.2,
+          "y": 0.003946726606132412,
+          "role": "seed_development",
+          "case_id": "6e57290106e51455",
+          "measured_at": {
+            "utc": "2026-11-13T15:34:56.016680+00:00",
+            "melbourne": "2026-11-14T02:34:56.016680+11:00"
+          }
+        },
+        {
+          "level": 96,
+          "x": 0.4,
+          "y": 0.00783246147580316,
+          "role": "seed_development",
+          "case_id": "fa9f4ad1214b89fd",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:23.575318+00:00",
+            "melbourne": "2026-11-14T02:36:23.575318+11:00"
+          }
+        },
+        {
+          "level": 120,
+          "x": 0.5,
+          "y": 0.009759965812838793,
+          "role": "seed_development",
+          "case_id": "793d9299ad565251",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:34.018132+00:00",
+            "melbourne": "2026-11-14T02:36:34.018132+11:00"
+          }
+        },
+        {
+          "level": 240,
+          "x": 1.0,
+          "y": 0.019456249763901142,
+          "role": "seed_development",
+          "case_id": "10917f27d6b0d7e1",
+          "measured_at": {
+            "utc": "2026-11-13T15:36:53.827326+00:00",
+            "melbourne": "2026-11-14T02:36:53.827326+11:00"
+          }
+        },
+        {
+          "level": 180,
+          "x": 0.75,
+          "y": 0.014573283757055295,
+          "role": "adaptive_development",
+          "case_id": "4ee13d0b04ad0f93",
+          "measured_at": {
+            "utc": "2026-11-13T15:37:09.082372+00:00",
+            "melbourne": "2026-11-14T02:37:09.082372+11:00"
+          }
+        },
+        {
+          "level": 150,
+          "x": 0.625,
+          "y": 0.012163885658050901,
+          "role": "adaptive_development",
+          "case_id": "eb8da749dbe45304",
+          "measured_at": {
+            "utc": "2026-11-13T15:37:21.823740+00:00",
+            "melbourne": "2026-11-14T02:37:21.823740+11:00"
+          }
+        },
+        {
+          "level": 135,
+          "x": 0.5625,
+          "y": 0.01096203523535692,
+          "role": "adaptive_development",
+          "case_id": "80f5d540eac0edd3",
+          "measured_at": {
+            "utc": "2026-11-13T15:37:33.383390+00:00",
+            "melbourne": "2026-11-14T02:37:33.383390+11:00"
+          }
+        },
+        {
+          "level": 142,
+          "x": 0.5916666666666667,
+          "y": 0.011522829474439047,
+          "role": "adaptive_development",
+          "case_id": "922ebc6a8b96fc6b",
+          "measured_at": {
+            "utc": "2026-11-13T15:37:45.525298+00:00",
+            "melbourne": "2026-11-14T02:37:45.525298+11:00"
+          }
+        },
+        {
+          "level": 210,
+          "x": 0.875,
+          "y": 0.01700038893731892,
+          "role": "adaptive_development",
+          "case_id": "f24bc93468683163",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:02.763214+00:00",
+            "melbourne": "2026-11-14T02:38:02.763214+11:00"
+          }
+        },
+        {
+          "level": 73,
+          "x": 0.30416666666666664,
+          "y": 0.005976469431717513,
+          "role": "adaptive_development",
+          "case_id": "67261dc77ed0c362",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:09.784962+00:00",
+            "melbourne": "2026-11-14T02:38:09.784962+11:00"
+          }
+        },
+        {
+          "level": 195,
+          "x": 0.8125,
+          "y": 0.015783905546098587,
+          "role": "adaptive_development",
+          "case_id": "0f951cd058e3a403",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:25.863139+00:00",
+            "melbourne": "2026-11-14T02:38:25.863139+11:00"
+          }
+        },
+        {
+          "level": 165,
+          "x": 0.6875,
+          "y": 0.013367110732139845,
+          "role": "adaptive_development",
+          "case_id": "245873ce96397769",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:39.678352+00:00",
+            "melbourne": "2026-11-14T02:38:39.678352+11:00"
+          }
+        },
+        {
+          "level": 225,
+          "x": 0.9375,
+          "y": 0.018224072248291184,
+          "role": "adaptive_development",
+          "case_id": "53303119e8e7acf1",
+          "measured_at": {
+            "utc": "2026-11-13T15:38:58.086817+00:00",
+            "melbourne": "2026-11-14T02:38:58.086817+11:00"
+          }
+        }
+      ],
+      "validation": [
+        {
+          "level": 72,
+          "x": 0.3,
+          "y": 0.005895532888296925,
+          "role": "validation",
+          "case_id": "edf1b8a5a75a7462",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:05.116472+00:00",
+            "melbourne": "2026-11-14T02:39:05.116472+11:00"
+          }
+        },
+        {
+          "level": 160,
+          "x": 0.6666666666666666,
+          "y": 0.012965784694544194,
+          "role": "validation",
+          "case_id": "6ce1c91b603eee4f",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:18.644895+00:00",
+            "melbourne": "2026-11-14T02:39:18.644895+11:00"
+          }
+        },
+        {
+          "level": 216,
+          "x": 0.9,
+          "y": 0.017488925184578626,
+          "role": "validation",
+          "case_id": "00f26bfd09d452e9",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:36.481138+00:00",
+            "melbourne": "2026-11-14T02:39:36.481138+11:00"
+          }
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-13T15:38:58.127347+00:00",
+        "melbourne": "2026-11-14T02:38:58.127347+11:00"
+      },
+      "stop_reason": "budget_exhausted",
+      "models": [
+        {
+          "model": "cubic",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.003946009433568726,
+            0.015681842771681564,
+            -0.0006619485807634446,
+            0.00049002264402109
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 1.497030435379816e-06,
+          "development_max_residual": 1.3055613659928092e-06,
+          "validation_rmse": 7.68956363577435e-07,
+          "validation_max_abs_error": 1.3210206341708955e-06
+        },
+        {
+          "model": "linear",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.003950016532491169,
+            0.015476074238596049
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 1.5998905779897906e-05,
+          "development_max_residual": 3.0158992813923702e-05,
+          "validation_rmse": 9.501202098530781e-06,
+          "validation_max_abs_error": 1.1941810461334884e-05
+        },
+        {
+          "model": "quadratic",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.003963534334744413,
+            0.015397255504163232,
+            7.703889225461313e-05
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 1.9416290584969517e-05,
+          "development_max_residual": 1.8421032738882154e-05,
+          "validation_rmse": 6.0124613505803686e-06,
+          "validation_max_abs_error": 6.190618191053571e-06
+        },
+        {
+          "model": "exponential",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            -5.124735696341935,
+            1.2374944236940388
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 0.0010178472080237726,
+          "development_max_residual": 0.002001062565047689,
+          "validation_rmse": 0.0007361821782997151,
+          "validation_max_abs_error": 0.0010472756807715592
+        },
+        {
+          "model": "constant",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.012351491129164904
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 0.0048948432622126226,
+          "development_max_residual": 0.008404764523032491,
+          "validation_rmse": 0.004776678834574718,
+          "validation_max_abs_error": 0.006455958240867979
+        }
+      ],
+      "selection_journal": [
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:36:53.835943+00:00",
+            "melbourne": "2026-11-14T02:36:53.835943+11:00"
+          },
+          "level": 180,
+          "x": 0.75,
+          "score": 0.6252011413030273,
+          "bracket": [
+            0.5,
+            1.0
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.45
+            }
+          ],
+          "predicted_y": 0.014610274004566201,
+          "model": {
+            "model": "linear",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003949017562594963,
+              0.01550728209741271
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 6.075402146850764e-06,
+            "development_max_residual": 6.6233888550183695e-06
+          },
+          "round": 1
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:37:09.098721+00:00",
+            "melbourne": "2026-11-14T02:37:09.098721+11:00"
+          },
+          "level": 150,
+          "x": 0.625,
+          "score": 1.5631767976441702,
+          "bracket": [
+            0.5,
+            0.75
+          ],
+          "reason": "possible_inflection",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.625
+            }
+          ],
+          "predicted_y": 0.01217891930401762,
+          "model": {
+            "model": "linear",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003947968870010891,
+              0.015493553758130314
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 2.7163283708215128e-05,
+            "development_max_residual": 2.6503321670187652e-05
+          },
+          "round": 2
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:37:21.843638+00:00",
+            "melbourne": "2026-11-14T02:37:21.843638+11:00"
+          },
+          "level": 135,
+          "x": 0.5625,
+          "score": 0.7812993350726416,
+          "bracket": [
+            0.5,
+            0.625
+          ],
+          "reason": "possible_inflection",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5625
+            }
+          ],
+          "predicted_y": 0.010961543008178086,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003946633974567677,
+              0.01567987595406482,
+              -0.0006607203188807001,
+              0.0004904071024874536
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 4.6738708878797125e-06,
+            "development_max_residual": 5.090783270454702e-07
+          },
+          "round": 3
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:37:33.405722+00:00",
+            "melbourne": "2026-11-14T02:37:33.405722+11:00"
+          },
+          "level": 142,
+          "x": 0.5916666666666667,
+          "score": 0.3906657866250047,
+          "bracket": [
+            0.5625,
+            0.625
+          ],
+          "reason": "possible_inflection",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.59375
+            }
+          ],
+          "predicted_y": 0.011522536511816967,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003946608143471591,
+              0.0156806833328293,
+              -0.0006620189868501748,
+              0.0004909086458889899
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 4.495937821913208e-06,
+            "development_max_residual": 6.117617896359007e-07
+          },
+          "round": 4
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:37:45.550195+00:00",
+            "melbourne": "2026-11-14T02:37:45.550195+11:00"
+          },
+          "level": 210,
+          "x": 0.875,
+          "score": 0.31281771351898413,
+          "bracket": [
+            0.75,
+            1.0
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5770833333333334
+            }
+          ],
+          "predicted_y": 0.017000799691977687,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003946597637544443,
+              0.015680841886974252,
+              -0.0006619386811989418,
+              0.0004906712383078494
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 4.121058109708389e-06,
+            "development_max_residual": 6.422040084719249e-07
+          },
+          "round": 5
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:38:02.791272+00:00",
+            "melbourne": "2026-11-14T02:38:02.791272+11:00"
+          },
+          "level": 73,
+          "x": 0.30416666666666664,
+          "score": 0.2502609562610414,
+          "bracket": [
+            0.2,
+            0.4
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5770833333333334
+            }
+          ],
+          "predicted_y": 0.005978304091623397,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003946570054560658,
+              0.01568200739452032,
+              -0.0006654549185248438,
+              0.0004929622752624523
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 2.1297391735498453e-06,
+            "development_max_residual": 7.220305307514135e-07
+          },
+          "round": 6
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:38:09.815547+00:00",
+            "melbourne": "2026-11-14T02:38:09.815547+11:00"
+          },
+          "level": 195,
+          "x": 0.8125,
+          "score": 0.15643207295202222,
+          "bracket": [
+            0.75,
+            0.875
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5770833333333334
+            }
+          ],
+          "predicted_y": 0.015784518798317115,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003946058944596008,
+              0.01568045330573227,
+              -0.0006574933850156105,
+              0.0004869109226191051
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 1.979510255565224e-06,
+            "development_max_residual": 1.2428173002234158e-06
+          },
+          "round": 7
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:38:25.898424+00:00",
+            "melbourne": "2026-11-14T02:38:25.898424+11:00"
+          },
+          "level": 165,
+          "x": 0.6875,
+          "score": 0.15639427277103468,
+          "bracket": [
+            0.625,
+            0.75
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5770833333333334
+            }
+          ],
+          "predicted_y": 0.013367231090274996,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.003946008924063368,
+              0.015681776997550335,
+              -0.0006616029176981817,
+              0.0004897276296483732
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 1.916205823056871e-06,
+            "development_max_residual": 1.3016966971890823e-06
+          },
+          "round": 8
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:38:39.717447+00:00",
+            "melbourne": "2026-11-14T02:38:39.717447+11:00"
+          },
+          "level": 225,
+          "x": 0.9375,
+          "score": 0.15634267585633552,
+          "bracket": [
+            0.875,
+            1.0
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [
+            {
+              "kind": "possible_inflection",
+              "x": 0.5770833333333334
+            }
+          ],
+          "predicted_y": 0.018224057333362388,
+          "model": {
+            "model": "cubic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.0039460090414488525,
+              0.01568184815754423,
+              -0.000661955655038815,
+              0.0004900192665403009
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 1.774648383423134e-06,
+            "development_max_residual": 1.3057431355115168e-06
+          },
+          "round": 9
+        }
+      ],
+      "empirical_prediction_check": true,
+      "operating_conditions": "not_selected: no accuracy budget declared",
+      "scope": "Primary model selected by development leave-one-out residual, frozen before block validation; validation does not select the winning model."
+    },
+    {
+      "id": "packet-duration",
+      "variable": "duration",
+      "field": "packet",
+      "development": [
+        {
+          "level": 48,
+          "x": 0.2,
+          "y": 0.00019962431419679382,
+          "role": "seed_development",
+          "case_id": "1c035c3932dad9ae",
+          "measured_at": {
+            "utc": "2026-11-13T15:35:43.025873+00:00",
+            "melbourne": "2026-11-14T02:35:43.025873+11:00"
+          }
+        },
+        {
+          "level": 96,
+          "x": 0.4,
+          "y": 0.0003977713073747806,
+          "role": "seed_development",
+          "case_id": "dd6e5b696d137a47",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:40.770612+00:00",
+            "melbourne": "2026-11-14T02:39:40.770612+11:00"
+          }
+        },
+        {
+          "level": 120,
+          "x": 0.5,
+          "y": 0.0004965477646796142,
+          "role": "seed_development",
+          "case_id": "c8df2eed4822d458",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:45.434958+00:00",
+            "melbourne": "2026-11-14T02:39:45.434958+11:00"
+          }
+        },
+        {
+          "level": 240,
+          "x": 1.0,
+          "y": 0.0009858346284132415,
+          "role": "seed_development",
+          "case_id": "553f77031f0cb516",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:52.207522+00:00",
+            "melbourne": "2026-11-14T02:39:52.207522+11:00"
+          }
+        },
+        {
+          "level": 180,
+          "x": 0.75,
+          "y": 0.0007422640832438017,
+          "role": "adaptive_development",
+          "case_id": "4601b1ecb5e99e62",
+          "measured_at": {
+            "utc": "2026-11-13T15:39:57.946178+00:00",
+            "melbourne": "2026-11-14T02:39:57.946178+11:00"
+          }
+        },
+        {
+          "level": 150,
+          "x": 0.625,
+          "y": 0.0006196470433768453,
+          "role": "adaptive_development",
+          "case_id": "eaa263dae9256dd8",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:03.125279+00:00",
+            "melbourne": "2026-11-14T02:40:03.125279+11:00"
+          }
+        }
+      ],
+      "validation": [
+        {
+          "level": 72,
+          "x": 0.3,
+          "y": 0.00029877970058652206,
+          "role": "validation",
+          "case_id": "2a29df13a6ec58b4",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:06.905368+00:00",
+            "melbourne": "2026-11-14T02:40:06.905368+11:00"
+          }
+        },
+        {
+          "level": 160,
+          "x": 0.6666666666666666,
+          "y": 0.0006605762360304016,
+          "role": "validation",
+          "case_id": "c8377a964a8e0f64",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:12.247040+00:00",
+            "melbourne": "2026-11-14T02:40:12.247040+11:00"
+          }
+        },
+        {
+          "level": 216,
+          "x": 0.9,
+          "y": 0.0008886864744309289,
+          "role": "validation",
+          "case_id": "95914bd45e600726",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:18.523160+00:00",
+            "melbourne": "2026-11-14T02:40:18.523160+11:00"
+          }
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-13T15:40:03.140049+00:00",
+        "melbourne": "2026-11-14T02:40:03.140049+11:00"
+      },
+      "stop_reason": "refinement_tolerances_met",
+      "models": [
+        {
+          "model": "cubic",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.00019962316955721873,
+            0.0007939739429933825,
+            -4.659727353038999e-06,
+            -3.103524602040262e-06
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 6.418381663981181e-08,
+          "development_max_residual": 5.635761213609869e-09,
+          "validation_rmse": 1.2027904165462272e-08,
+          "validation_max_abs_error": 1.7172470321495485e-08
+        },
+        {
+          "model": "quadratic",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.00019955960224026287,
+            0.0007956060781927569,
+            -9.281503833198952e-06
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 3.5571914845893584e-07,
+          "development_max_residual": 1.12263042178996e-07,
+          "validation_rmse": 7.845745616195542e-08,
+          "validation_max_abs_error": 8.563793044169023e-08
+        },
+        {
+          "model": "linear",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.00020096611063754853,
+            0.0007862479041616824
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 2.0344553350949114e-06,
+          "development_max_residual": 1.37938638598953e-06,
+          "validation_rmse": 6.354703039754003e-07,
+          "validation_max_abs_error": 9.655146318717465e-07
+        },
+        {
+          "model": "exponential",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            -8.12686422051385,
+            1.2446778221184345
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 0.00012861212786886703,
+          "development_max_residual": 9.586903730656214e-05,
+          "validation_rmse": 3.980007610339111e-05,
+          "validation_max_abs_error": 4.981359935086658e-05
+        },
+        {
+          "model": "constant",
+          "origin": 0.2,
+          "scale": 0.8,
+          "coefficients": [
+            0.0005736148568808462
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 0.00030088504665097733,
+          "development_max_residual": 0.0004122197715323953,
+          "validation_rmse": 0.00024655409736644267,
+          "validation_max_abs_error": 0.0003150716175500827
+        }
+      ],
+      "selection_journal": [
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:39:52.213069+00:00",
+            "melbourne": "2026-11-14T02:39:52.213069+11:00"
+          },
+          "level": 180,
+          "x": 0.75,
+          "score": 0.6259283718414741,
+          "bracket": [
+            0.5,
+            1.0
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.0007420329140333056,
+          "model": {
+            "model": "quadratic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.00019961240048749047,
+              0.0007950267923081417,
+              -8.802181640531005e-06
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 8.311540705286378e-07,
+            "development_max_residual": 4.765483721210547e-08
+          },
+          "round": 1
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:39:57.957654+00:00",
+            "melbourne": "2026-11-14T02:39:57.957654+11:00"
+          },
+          "level": 150,
+          "x": 0.625,
+          "score": 0.3130010978597115,
+          "bracket": [
+            0.5,
+            0.75
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.0006195859275487811,
+          "model": {
+            "model": "quadratic",
+            "origin": 0.2,
+            "scale": 0.8,
+            "coefficients": [
+              0.00019956612182328004,
+              0.0007955072853393097,
+              -9.189211632080797e-06
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 4.0029577327621826e-07,
+            "development_max_residual": 1.3004106022183274e-07
+          },
+          "round": 2
+        }
+      ],
+      "empirical_prediction_check": true,
+      "operating_conditions": "not_selected: no accuracy budget declared",
+      "scope": "Primary model selected by development leave-one-out residual, frozen before block validation; validation does not select the winning model."
+    },
+    {
+      "id": "hopfion-angle",
+      "variable": "angle_degrees",
+      "field": "hopfion",
+      "development": [
+        {
+          "level": 0,
+          "x": 0.0,
+          "y": 0.003946726606132412,
+          "role": "seed_development",
+          "case_id": "6e57290106e51455",
+          "measured_at": {
+            "utc": "2026-11-13T15:34:56.016680+00:00",
+            "melbourne": "2026-11-14T02:34:56.016680+11:00"
+          }
+        },
+        {
+          "level": 30,
+          "x": 30.0,
+          "y": 0.003946726606132404,
+          "role": "seed_development",
+          "case_id": "78b75524369a8500",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:23.694316+00:00",
+            "melbourne": "2026-11-14T02:40:23.694316+11:00"
+          }
+        },
+        {
+          "level": 60,
+          "x": 60.0,
+          "y": 0.0039467266061324145,
+          "role": "seed_development",
+          "case_id": "65c7d02194a85e37",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:28.804947+00:00",
+            "melbourne": "2026-11-14T02:40:28.804947+11:00"
+          }
+        },
+        {
+          "level": 90,
+          "x": 90.0,
+          "y": 0.003946726606132412,
+          "role": "seed_development",
+          "case_id": "4424e243328f578d",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:33.858567+00:00",
+            "melbourne": "2026-11-14T02:40:33.858567+11:00"
+          }
+        },
+        {
+          "level": 14,
+          "x": 14.0,
+          "y": 0.00394672660613241,
+          "role": "adaptive_development",
+          "case_id": "801aaaca970d3a58",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:38.960845+00:00",
+            "melbourne": "2026-11-14T02:40:38.960845+11:00"
+          }
+        },
+        {
+          "level": 44,
+          "x": 44.0,
+          "y": 0.003946726606132404,
+          "role": "adaptive_development",
+          "case_id": "82f4dd61ee1eafc5",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:44.102617+00:00",
+            "melbourne": "2026-11-14T02:40:44.102617+11:00"
+          }
+        }
+      ],
+      "validation": [
+        {
+          "level": 15,
+          "x": 15.0,
+          "y": 0.003946726606132408,
+          "role": "validation",
+          "case_id": "9ef969d9a501f426",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:49.209865+00:00",
+            "melbourne": "2026-11-14T02:40:49.209865+11:00"
+          }
+        },
+        {
+          "level": 45,
+          "x": 45.0,
+          "y": 0.003946726606132411,
+          "role": "validation",
+          "case_id": "54836c23ee5b89e1",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:54.335001+00:00",
+            "melbourne": "2026-11-14T02:40:54.335001+11:00"
+          }
+        },
+        {
+          "level": 75,
+          "x": 75.0,
+          "y": 0.003946726606132407,
+          "role": "validation",
+          "case_id": "719fb7a6a7d15a33",
+          "measured_at": {
+            "utc": "2026-11-13T15:40:59.440105+00:00",
+            "melbourne": "2026-11-14T02:40:59.440105+11:00"
+          }
+        }
+      ],
+      "frozen_at": {
+        "utc": "2026-11-13T15:40:44.104845+00:00",
+        "melbourne": "2026-11-14T02:40:44.104845+11:00"
+      },
+      "stop_reason": "refinement_tolerances_met",
+      "models": [
+        {
+          "model": "constant",
+          "origin": 0.0,
+          "scale": 90.0,
+          "coefficients": [
+            0.003946726606132411
+          ],
+          "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+          "development_loo_rmse": 5.143584306931009e-18,
+          "development_max_residual": 6.938893903907228e-18,
+          "validation_rmse": 2.9199747187200657e-18,
+          "validation_max_abs_error": 4.336808689942018e-18
+        }
+      ],
+      "selection_journal": [
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:40:33.860133+00:00",
+            "melbourne": "2026-11-14T02:40:33.860133+11:00"
+          },
+          "level": 14,
+          "x": 14.0,
+          "score": 0.33333564629796797,
+          "bracket": [
+            0.0,
+            30.0
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.003946726606132411,
+          "model": {
+            "model": "constant",
+            "origin": 0.0,
+            "scale": 90.0,
+            "coefficients": [
+              0.003946726606132411
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 5.3291597382576615e-18,
+            "development_max_residual": 6.938893903907228e-18
+          },
+          "round": 1
+        },
+        {
+          "recorded_at": {
+            "utc": "2026-11-13T15:40:38.963130+00:00",
+            "melbourne": "2026-11-14T02:40:38.963130+11:00"
+          },
+          "level": 44,
+          "x": 44.0,
+          "score": 0.33333564629796797,
+          "bracket": [
+            30.0,
+            60.0
+          ],
+          "reason": "coverage_residual_and_model_disagreement",
+          "features": [],
+          "predicted_y": 0.003946726606132411,
+          "model": {
+            "model": "constant",
+            "origin": 0.0,
+            "scale": 90.0,
+            "coefficients": [
+              0.003946726606132411
+            ],
+            "units": "response is fractional relative L2; z=(x-origin)/scale; polynomial coefficients in ascending z powers, exponential exp(c0+c1*z)",
+            "development_loo_rmse": 4.0867375419132386e-18,
+            "development_max_residual": 6.938893903907228e-18
+          },
+          "round": 2
+        }
+      ],
+      "empirical_prediction_check": true,
+      "operating_conditions": "not_selected: no accuracy budget declared",
+      "scope": "Primary model selected by development leave-one-out residual, frozen before block validation; validation does not select the winning model."
+    }
+  ],
+  "scope": "Separate classical Maxwell numerical-control extension; fixed grid and box; no spatial/domain convergence, SF admission, isolation, particle, charge or quantum claim.",
+  "AI_assistance": "Code and analysis prepared with AI assistance; not independent scientific peer review.",
+  "finished_at": {
+    "utc": "2026-11-13T15:43:33.512867+00:00",
+    "melbourne": "2026-11-14T02:43:33.512867+11:00"
+  },
+  "controls": [
+    {
+      "kind": "periodic_cubic_rotation",
+      "case_id": "c210b36681663453",
+      "rotation_code": "x90"
+    },
+    {
+      "kind": "periodic_cubic_rotation",
+      "case_id": "dfde282af0e6e0b7",
+      "rotation_code": "y90"
+    },
+    {
+      "kind": "late_time_dt_interaction_check",
+      "case_id": "4d539e52ef306dd5",
+      "field": "hopfion",
+      "steps": 480
+    },
+    {
+      "kind": "late_time_dt_interaction_check",
+      "case_id": "88ccad6b99a80298",
+      "field": "hopfion",
+      "steps": 960
+    },
+    {
+      "kind": "late_time_dt_interaction_check",
+      "case_id": "e8b2429291b0c313",
+      "field": "packet",
+      "steps": 480
+    },
+    {
+      "kind": "late_time_dt_interaction_check",
+      "case_id": "0066b77afe2c8926",
+      "field": "packet",
+      "steps": 960
+    }
+  ],
+  "packet_numerical_checks": [
+    {
+      "case_id": "0066b77afe2c8926",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "0ce128f1c37b188b",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "1c035c3932dad9ae",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "2a29df13a6ec58b4",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "4601b1ecb5e99e62",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "553f77031f0cb516",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "6a98f9797668fa26",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "7fee8cb52d63ec33",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "95914bd45e600726",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "97ba43c71ef501bf",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "a7c6eb770e66dbf4",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "b393e897bf734253",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "c210b36681663453",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "c4c50b8bd8ccf2cd",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "c8377a964a8e0f64",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "c8df2eed4822d458",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "d36a31df4b950cac",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "d8b7584c688072e9",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "daf9b17a1d4a18a4",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "dd6e5b696d137a47",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "de8b76fea469c715",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "dfde282af0e6e0b7",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "e8b2429291b0c313",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "eaa263dae9256dd8",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    },
+    {
+      "case_id": "f7ae76eb6f22b43a",
+      "fourier_exact_pass": true,
+      "fourier_energy_pass": true,
+      "yee_modified_energy_pass": true,
+      "yee_divergence_preservation_pass": true
+    }
+  ],
+  "all_packet_controls_pass": true,
+  "completed_cases": 61
+}

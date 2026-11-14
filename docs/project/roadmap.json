@@ -1,11 +1,13 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-13T08:03:47.791011+00:00",
-    "melbourne": "2026-11-13T19:03:47.791011+11:00"
+    "utc": "2026-11-13T23:48:06.180452+00:00",
+    "melbourne": "2026-11-14T10:48:06.180452+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
+    "s2-003",
+    "s5-b-011",
     "s5-b-010",
     "s5-b-006",
     "s5-b-007",
@@ -1174,7 +1176,7 @@
       "gate": "open",
       "question": "Which fresh intermediate-Q families can be strictly prepared and retain controlled motion across physical mesh, time step and domain changes?",
       "finding": "Twelve initial-only controls show negligible fine-grid padding effect but strong alignment dependence reversing the speed bias. Finer zero-phase errors are about 0.072% z and 0.098% x, not convergence or motion admission. Original gates and unresolved Q4/Q7 outcomes remain.",
-      "next_action": "Compare D4 and independent variational D2 SF initial vector fields on identical finest-grid states at four alignments in x/z, retaining native and qualified common observables. Run separate analytical Maxwell/Yee controls; review phase/refinement trends before short SF evolution. Keep focused literature plan and five assessment dimensions.",
+      "next_action": "Apply the separately registered controlled Q-dependency transfer; preserve all earlier preparation, admission and motion outcomes.",
       "exit_evidence": "Authenticated source/config/lock identity, all-seed representation/preparation and motion outcomes, original gates, selected-parent lineage, matched field comparisons, finite core diagnostics and verified full-field Release retention; incomplete comparisons remain explicit.",
       "depends_on": [
         "s5-b-006",
@@ -1243,6 +1245,128 @@
           "role": "assessment",
           "path": "reports/s5-b/010-intermediate-q-survey/assessments/20261112t231901z-d2d4a113/README.md",
           "label": "Q3 boundary assessment and independent SF/Maxwell method controls"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/010-intermediate-q-survey/assessments/20261113t234806z-dcc9e69f/README.md",
+          "label": "Available observation, initial-field, initialization and sampling-boundary evidence reconciliation"
+        }
+      ]
+    },
+    {
+      "id": "s2-002",
+      "stage": "s2",
+      "number": 2,
+      "slug": "maxwell-dependency-assessment",
+      "title": "Bounded Maxwell dependency assessment",
+      "state": "assessed",
+      "gate": "bounded",
+      "question": "What do matched Maxwell controls and isolated-variable fits establish?",
+      "finding": "61 workstation cases completed; all five frozen-model validation checks and periodic controls passed. Hopfion-duration feature localization remains open. Initial discrete divergence and spatial/observation floors remain.",
+      "next_action": "Retain the measured reference and verified full-field archive; continue in the separately registered spacing study.",
+      "exit_evidence": "Recorded source/config identities, original gates, held-variable contracts, fresh validation, negative findings and declared unresolved conditions.",
+      "depends_on": [
+        "s2-001"
+      ],
+      "requirements": [
+        "SCI-001",
+        "SCI-002",
+        "SCI-003",
+        "SCI-004",
+        "NUM-001",
+        "NUM-002",
+        "NUM-003",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/controlled-dependencies-20261114.md"
+      ],
+      "records": [
+        {
+          "role": "measurement",
+          "path": "reports/s2/002-maxwell-dependency-assessment/runs/20261113t153443z-5d0f27e4/README.md",
+          "label": "61-case workstation run and download-verified full-state archive"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s2/002-maxwell-dependency-assessment/assessments/20261113t234806z-ea32ee1d/README.md",
+          "label": "Independent compact assessment, coupled-refinement qualification and host adaptive preparation"
+        }
+      ]
+    },
+    {
+      "id": "s2-003",
+      "stage": "s2",
+      "number": 3,
+      "slug": "spacing-observer-controls",
+      "title": "Fixed-observer Maxwell spacing and localized duration controls",
+      "state": "prepared",
+      "gate": "open",
+      "question": "Does isolated spacing refinement explain the measured error floor after separating observation error?",
+      "finding": "Corrected extrema classification and fixed physical observer are implemented and host-controlled; the production spacing campaign is not yet measured.",
+      "next_action": "Run the locally published follow-up: focused duration points, fixed-dt spacing curves, saved-state observer refinement and separate time anchors.",
+      "exit_evidence": "Recorded source/config identities, original gates, held-variable contracts, fresh validation, negative findings and declared unresolved conditions.",
+      "depends_on": [
+        "s2-002"
+      ],
+      "requirements": [
+        "SCI-001",
+        "SCI-002",
+        "SCI-003",
+        "SCI-004",
+        "NUM-001",
+        "NUM-002",
+        "NUM-003",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/controlled-dependencies-20261114.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s2/003-spacing-observer-controls/preparation/20261113t234806z-210f30b4/README.md",
+          "label": "Prepared corrected acquisition and fixed-observer follow-up"
+        }
+      ]
+    },
+    {
+      "id": "s5-b-011",
+      "stage": "s5-b",
+      "number": 11,
+      "slug": "controlled-q-dependencies",
+      "title": "Controlled dependency transfer to Q2 Q3 and other Q results",
+      "state": "prepared",
+      "gate": "open",
+      "question": "Which existing Qx comparisons isolate a variable, and what fresh measurements are required?",
+      "finding": "Read-only evidence grouping retains original admissions and failures. Existing three-point Q3 temporal data cannot supply new fresh validated fits; Q4/Q7 motion remains unqualified.",
+      "next_action": "After Maxwell spacing assessment, qualify Q2 then measure one Q3 variable with fresh validation. Run the supplied Qx audit now without new SF evolution or altered gates.",
+      "exit_evidence": "Recorded source/config identities, original gates, held-variable contracts, fresh validation, negative findings and declared unresolved conditions.",
+      "depends_on": [
+        "s2-003",
+        "s5-b-010"
+      ],
+      "requirements": [
+        "SCI-001",
+        "SCI-002",
+        "SCI-003",
+        "SCI-004",
+        "NUM-001",
+        "NUM-002",
+        "NUM-003",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/controlled-dependencies-20261114.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s5-b/011-controlled-q-dependencies/preparation/20261113t234806z-469bebc4/README.md",
+          "label": "Prepared read-only Qx dependency audit and measurement contract"
         }
       ]
     }
@@ -1352,8 +1476,8 @@
     }
   ],
   "current": {
-    "latest_assessed_study": "s5-b-010",
-    "summary": "Twelve initial-only controls show negligible fine-grid padding effect but strong alignment dependence reversing the speed bias. Finer zero-phase errors are about 0.072% z and 0.098% x, not convergence or motion admission. Original gates and unresolved Q4/Q7 outcomes remain.",
-    "limits": "SF production method comparison and Maxwell benchmark are prepared, not completed. Same reconstruction can share error; common D4 observer is not continuum truth. No full-field replay, phase averaging/favorable selection, new trajectory acceptance, charge/spin/electron validation or changed original gate."
+    "latest_assessed_study": "s2-002",
+    "summary": "Bounded Maxwell dependency assessment records 61 cases, five withheld prediction checks and verified periodic controls. Available Q3 initial/observation/sampling diagnostics are preserved. The next numerical priority is fixed-observer spacing and focused duration localization, followed by Q2/Q3 transfer.",
+    "limits": "Hopfion-duration feature localization, physical spacing/domain convergence, discrete initial divergence and observation errors remain open. Maxwell validation does not admit SF motion, isolation, charge, quantum spin or an electron model. Q1 parked; Q2 reference; Q4/Q7 unresolved."
   }
 }

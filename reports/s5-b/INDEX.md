@@ -1,6 +1,6 @@
 # S5-B: Neutral physical-time dynamics
 
-Updated: UTC 2026-11-13T08:03:47.791011+00:00; Australia/Melbourne 2026-11-13T19:03:47.791011+11:00.
+Updated: UTC 2026-11-13T23:48:06.180452+00:00; Australia/Melbourne 2026-11-14T10:48:06.180452+11:00.
 
 Active dynamics track; general isolated-motion acceptance remains open.
 
@@ -16,6 +16,7 @@ Active dynamics track; general isolated-motion acceptance remains open.
 | [s5-b-008](../../docs/plans/s5-b/008-tail-domain-screening.md) | Stationary tail-domain screening | assessed | open |
 | [s5-b-009](../../docs/plans/s5-b/009-q1-tail-settling.md) | Paired Q1 stationary tail settling | assessed | open |
 | [s5-b-010](../../docs/plans/s5-b/010-intermediate-q-survey.md) | Fresh Q3 Q4 Q7 survey and detailed motion | assessed | open |
+| [s5-b-011](../../docs/plans/s5-b/011-controlled-q-dependencies.md) | Controlled dependency transfer to Q2 Q3 and other Q results | prepared | open |
 
 Study indexes distinguish preparation, measurements and assessment. A planned record has no measured results.
 
@@ -29,3 +30,4 @@ Study indexes distinguish preparation, measurements and assessment. A planned re
 - [s5-b-008 evidence index](008-tail-domain-screening/README.md)
 - [s5-b-009 evidence index](009-q1-tail-settling/README.md)
 - [s5-b-010 evidence index](010-intermediate-q-survey/README.md)
+- [s5-b-011 evidence index](011-controlled-q-dependencies/README.md)
