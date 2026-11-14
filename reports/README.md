@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-14T02:53:01.801788+00:00; Australia/Melbourne 2026-11-14T13:53:01.801788+11:00.
+Updated: UTC 2026-11-14T05:46:29.758713+00:00; Australia/Melbourne 2026-11-14T16:46:29.758713+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s2-003: Fixed-observer Maxwell spacing and localized duration controls](s2/003-spacing-observer-controls/assessments/20261114t025301z-f11e7fcb/README.md) — 35-state Maxwell follow-up assessed: controlled spatial errors approach second order; packet spacing passes fresh checks; Hopfion spacing prediction fails and localized duration consecutive-round closure remains open. Next: calibrate observation on saved fields, with Q2/Q3 evidence inventory proceeding separately.
+[s2-004: Saved-state observer quadrature and alignment calibration](s2/004-saved-state-observer-calibration/assessments/20261114t054629z-91bac8df/README.md) — Six-state observer calibration assessed: primary cell-aware evolution is stable, but joint uniform-observer and curve checks remain partly unresolved. Next: confirm higher-order anchors and remeasure existing spacing states consistently before revised physical prediction checks.
