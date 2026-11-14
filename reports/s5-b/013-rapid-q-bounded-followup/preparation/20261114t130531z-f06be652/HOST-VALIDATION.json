@@ -1,0 +1,70 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-14T12:56:05.957727+00:00",
+    "melbourne": "2026-11-14T23:56:05.957727+11:00"
+  },
+  "status": "host_regression_controls_and_local_publication_rehearsal_passed",
+  "reports": {
+    "actual-past-selection-ledger": {
+      "path": "validation/actual-past-selection-ledger.json",
+      "sha256": "423969ce530232d8b8dfe1aae548a4709dbbbd19b5c6304553cb9b4acac3601c",
+      "status": "completed_host_control"
+    },
+    "end-to-end-smoke": {
+      "path": "validation/end-to-end-smoke.json",
+      "sha256": "200ac250b28421b08391bb34e4a3dff3db3c21181caaaf4161d9410c82af8920",
+      "status": "passed"
+    },
+    "host-qualification": {
+      "path": "validation/host-qualification.json",
+      "sha256": "f95c4a4d9ec9e074c0a1c02e24f2031193f0d65e685472331b5da4d9a87f63f2",
+      "status": "completed_host_control"
+    },
+    "publication-rehearsal": {
+      "path": "validation/publication-rehearsal.json",
+      "sha256": "f3085ea7190fd7231c41b17501fb93062de35c9a4dc411d863420ab42462ddfd",
+      "status": "passed"
+    },
+    "startup-error-status": {
+      "path": "validation/startup-error-status.json",
+      "sha256": "125efbf4318bfd5259593bac0afb5e645dcc2fe4c00d36cb15a7631cf3fc9a87",
+      "status": "passed"
+    }
+  },
+  "production_budget": {
+    "jobs": 7,
+    "batch_steps": 50,
+    "maximum_additional_accepted_steps": 650,
+    "automatic_mesh": false,
+    "motion": false
+  },
+  "actual_past_selection": {
+    "q4-axial22": "q4-axial22-medium-fresh",
+    "q7-trefoil": "q7-trefoil-medium-fresh"
+  },
+  "exact_optimizer_branch_retained": true,
+  "math_and_gate_files_unchanged": true,
+  "live_github_contacted": false,
+  "cuda_executed_here": false,
+  "scope": [
+    "Actual completed compact evidence replayed for selection/ledger regression.",
+    "Synthetic 33-cubed CPU numerical fixtures exercised audit, exact continuation, legacy restart, mid-batch interruption and cached batch resume.",
+    "Local clone/fetch/bundle/staging retry was rehearsed with injected DNS failure and original working files unchanged.",
+    "Host Python 3.12.14, NumPy 2.3.5, SciPy 1.17.0; delivered frozen uv pytest controls run on the workstation.",
+    "Original production GPU qualification was assessed from supplied evidence; full original fields and the actual new continuation/device audit remain workstation tasks."
+  ],
+  "tested_source_sha256": {
+    "followup_worker.py": "7aed1cd088d3a5112063ae021d11b49532a1a701a51946c644247df61d297ea0",
+    "handover.py": "d4eed4fb7c6091f5e6fee44facea8dfb3d5ac925bb35e37ec59b0d1ecbdead98",
+    "patches/runner.py": "f219b664f21e8ab1e104a3ad3e32cf547b47e1efaa04f4c2f81f37687c9ee618",
+    "publication.py": "977587ab3e1bb5494e83f11532ed49d77946b622687779902ea04ed0ae3cbefa",
+    "runtime.py": "1e8c5ae814db59b0955a1badc45d996411f2b9480a7673cc793fcec0c76535c6",
+    "science/__init__.py": "07e7a37f7b73a6da535a34ed60b66bf8b8ea6d6f678ca53f89ab1211f69337ec",
+    "science/audit.py": "dabfd0e757e1b3c2c6915ec14f6a8b9a79790839ca4dfe51a82bda21ae393b64",
+    "science/common.py": "3cc3b58dfa30db4ab7cba269d8b85b5406160c5935ddd95b0faaf4fc83e86e44",
+    "science/relationships.py": "b6f38862f7dc6d78f36f07a0ed8336be56aadc7817ee5932bd80c6bc369425bd",
+    "science/runner.py": "a6221eecbd47d484ac7efab75407729839ee0f4cebca56da69c41e156f9d1b8e",
+    "science/selection.py": "07370436c4ca8b8a48b56f8d93cd3d192c5e976781eb816a0a0805e71b7de4e9",
+    "tests/test_rapid_q_followup.py": "1f530a36e0106f93eda5b50d63d502704156d366f85e3e17533092ed3c785bbd"
+  }
+}

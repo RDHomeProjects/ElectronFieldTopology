@@ -1,6 +1,6 @@
 # S3-C: Classified perturbations
 
-Updated: UTC 2026-11-14T09:25:42.642598+00:00; Australia/Melbourne 2026-11-14T20:25:42.642598+11:00.
+Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
 
 Controlled perturbation observations, not a full stability proof.
 

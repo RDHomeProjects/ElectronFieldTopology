@@ -22,13 +22,13 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-14T09:25:42.642598+00:00; Australia/Melbourne 2026-11-14T20:25:42.642598+11:00.
+Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-Six-state observer calibration assessed: primary cell-aware evolution is stable, but joint uniform-observer and curve checks remain partly unresolved. Next: confirm higher-order anchors and remeasure existing spacing states consistently before revised physical prediction checks.
+30 variants over Q2-Q16; seven prior states reused; four branches extended; no newly stationary survivor or motion. CUDA controls passed. Coarsest unresolved reuse masked better medium Q4/Q7 endpoints; capacity and exhausted budgets need explicit reporting.
 
-Original physical-mesh and observer-fit failures remain. Duration confirmation is separate. No new physical evolution or SF admission. Q1 parked; Q2 reference; Q4/Q7 preparation/admission unresolved; Q2/Q3 inventory may progress separately.
+Compact evidence assessed; local full-field replay and bounded continuation pending. No new stationary candidate, spatial/domain closure, motion, electric charge or quantum spin claim.
 
 Next: **s2-005: Cell-aware saved-state spacing measurements**. Run the registered anchor checks, then all 16 Hopfion and nine packet states if the common contract passes. Refit descriptively and reserve fresh physical validation separately.
 

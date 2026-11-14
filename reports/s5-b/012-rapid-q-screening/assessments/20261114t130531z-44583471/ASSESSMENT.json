@@ -1,0 +1,1033 @@
+{
+  "assessed_at": {
+    "utc": "2026-11-14T12:11:02.550424+00:00",
+    "melbourne": "2026-11-14T23:11:02.550424+11:00"
+  },
+  "source_filename": "evidence(20261114-120326).zip",
+  "source_sha256": "ed884f71077cc200a1414e535b306f35141a932a4f545c8230c808f3ca95c70c",
+  "source_commit": "05bee2679ac5cb7b9613df91ad4446d88b584c59",
+  "completion": "complete_pending_review",
+  "started_at": {
+    "utc": "2026-11-14T09:43:21.083174+00:00",
+    "melbourne": "2026-11-14T20:43:21.083174+11:00"
+  },
+  "finished_at": {
+    "utc": "2026-11-14T11:12:37.261455+00:00",
+    "melbourne": "2026-11-14T22:12:37.261455+11:00"
+  },
+  "screen_elapsed_minutes": 89.26963801666668,
+  "crc_passed": true,
+  "hashes_checked": 195,
+  "sealed_results_checked": 55,
+  "code_and_config_identity_match": true,
+  "recorded_cpu_audits_passed": 202,
+  "monotone_recorded_energy_histories": true,
+  "full_fields_manifest_count": 77,
+  "full_fields_manifest_GiB": 4.343878334388137,
+  "full_fields_replayed": false,
+  "counts": {
+    "q_values": 15,
+    "seed_variants": 30,
+    "reused_past_states": 7,
+    "priority_branches": 4,
+    "confirmation_branches": 0,
+    "conditional_motion_followups": 0,
+    "hard_Q_rejections": 0
+  },
+  "broad_disposition": {
+    "static_survivor": 2,
+    "priority_continue": 5,
+    "prior_unresolved": 4,
+    "boundary_followup": 1,
+    "defer_slow": 12,
+    "defer_resolution": 6
+  },
+  "recorded_relaxation_branches": 20,
+  "accepted_steps_recorded": 1545,
+  "benchmark": {
+    "recorded_at": {
+      "utc": "2026-11-14T09:43:14.970223+00:00",
+      "melbourne": "2026-11-14T20:43:14.970223+11:00"
+    },
+    "status": "backend_qualification_passed",
+    "requested_backend": "auto",
+    "cuda_unavailable": null,
+    "cuda_dst_vs_scipy_max": 1.3322676295501878e-15,
+    "cuda_identity": {
+      "execution_backend": "cuda-cupy-float64",
+      "device_id": 0,
+      "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+      "compute_capability": "75",
+      "cupy": "14.2.0",
+      "cuda_runtime": 12090,
+      "cuda_driver": 13000,
+      "precision": "float64"
+    },
+    "rows": [
+      {
+        "nodes": 97,
+        "results": {
+          "cpu": {
+            "mean_step_seconds": 3.666348353755893,
+            "diagnostics_and_audit_seconds": 8.835623504011892,
+            "checkpoint_seconds": 5.325608178973198,
+            "estimated_50_step_three_observation_seconds": 225.80111273674993,
+            "initial_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            },
+            "endpoint_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            }
+          },
+          "cuda": {
+            "mean_step_seconds": 0.15025576049811207,
+            "diagnostics_and_audit_seconds": 7.223544926964678,
+            "checkpoint_seconds": 2.608491729013622,
+            "estimated_50_step_three_observation_seconds": 37.0088979928405,
+            "initial_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            },
+            "endpoint_audit": {
+              "passed": true,
+              "energy_abs_difference": 4.440892098500626e-16,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            }
+          }
+        },
+        "cpu_cuda_field_max_difference": 7.771561172376096e-16,
+        "estimated_speedup": 6.101265505944865,
+        "selected_backend": "cuda"
+      },
+      {
+        "nodes": 121,
+        "results": {
+          "cpu": {
+            "mean_step_seconds": 8.12782371987123,
+            "diagnostics_and_audit_seconds": 19.496666360995732,
+            "checkpoint_seconds": 5.181849887012504,
+            "estimated_50_step_three_observation_seconds": 480.42673473758623,
+            "initial_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            },
+            "endpoint_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            }
+          },
+          "cuda": {
+            "mean_step_seconds": 0.2872591428749729,
+            "diagnostics_and_audit_seconds": 16.294817173969932,
+            "checkpoint_seconds": 5.1814968480030075,
+            "estimated_50_step_three_observation_seconds": 78.79189920966746,
+            "initial_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            },
+            "endpoint_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            }
+          }
+        },
+        "cpu_cuda_field_max_difference": 1.0547118733938987e-15,
+        "estimated_speedup": 6.097412799495506,
+        "selected_backend": "cuda"
+      },
+      {
+        "nodes": 145,
+        "results": {
+          "cpu": {
+            "mean_step_seconds": 13.516678114494425,
+            "diagnostics_and_audit_seconds": 40.82866728701629,
+            "checkpoint_seconds": 9.06107045605313,
+            "estimated_50_step_three_observation_seconds": 825.5031189539295,
+            "initial_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            },
+            "endpoint_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            }
+          },
+          "cuda": {
+            "mean_step_seconds": 0.49741507550061215,
+            "diagnostics_and_audit_seconds": 37.85097707097884,
+            "checkpoint_seconds": 9.153382797027007,
+            "estimated_50_step_three_observation_seconds": 165.88383337904816,
+            "initial_audit": {
+              "passed": true,
+              "energy_abs_difference": 0.0,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            },
+            "endpoint_audit": {
+              "passed": true,
+              "energy_abs_difference": 4.440892098500626e-16,
+              "gradient_max_abs_difference": 0.0,
+              "reference": "independent CPU sf_readmission.static_value_gradient"
+            }
+          }
+        },
+        "cpu_cuda_field_max_difference": 1.106753577673203e-15,
+        "estimated_speedup": 4.976392829478669,
+        "selected_backend": "cuda"
+      }
+    ],
+    "scope": "50-step cost is an estimate from synchronized completed optimizer steps plus CPU audits and checkpoint timing; no whole-campaign speed promise",
+    "identity": {
+      "source_commit": "05bee2679ac5cb7b9613df91ad4446d88b584c59",
+      "package_sha256": "ac95fc3d0e4fde75c50443ed33ae4b7d86cac5c91feb1cb186c54bb2a8bec93b",
+      "source_manifest_sha256": "33595669df5b9b43b57f58655e9d116a4d936ea401c4fce25be1a4ffef71d4ba",
+      "plan_sha256": "aae0535a43f26a222ea88fcd6372b2662669615eefd9914a6a83e26bd6bc93f2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "threads": {
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4",
+        "MKL_NUM_THREADS": "4"
+      }
+    }
+  },
+  "late_history_fit_checks": [
+    {
+      "seed": "q2-bent",
+      "metric": "relative_force_l2",
+      "model": "constant",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.0033986668757695526
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0009231247249355212,
+      "RMSE_div_mean_test": 0.2906457472784587,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q2-bent",
+      "metric": "relative_force_l2",
+      "model": "linear",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.00290947908705072,
+        0.001324883594446836
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0013489247948889796,
+      "RMSE_div_mean_test": 0.4247088659231111,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q2-bent",
+      "metric": "relative_force_l2",
+      "model": "quadratic",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.0025923960159729195,
+        0.004292343390681327,
+        -0.004106177321669024
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0007796870504992801,
+      "RMSE_div_mean_test": 0.24548440672686908,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q2-bent",
+      "metric": "relative_force_l2",
+      "model": "exponential",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        -5.8760729824096805,
+        0.4301160603487432
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.001392560271693375,
+      "RMSE_div_mean_test": 0.43844749237421304,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q2-bent",
+      "metric": "acceleration_max",
+      "model": "constant",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.024488715558455366
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.00687105713355197,
+      "RMSE_div_mean_test": 0.3378364985230677,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q2-bent",
+      "metric": "acceleration_max",
+      "model": "linear",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.025567570675724027,
+        -0.002921899275935964
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.005943025571888662,
+      "RMSE_div_mean_test": 0.29220699388974614,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q2-bent",
+      "metric": "acceleration_max",
+      "model": "quadratic",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.023596747135948025,
+        0.01552228823580557,
+        -0.025521863707615167
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.00617665962872243,
+      "RMSE_div_mean_test": 0.30369432548404146,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q2-bent",
+      "metric": "acceleration_max",
+      "model": "exponential",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        -3.674119976059083,
+        -0.1340921600003987
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.005759265734484275,
+      "RMSE_div_mean_test": 0.2831718805394699,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q5-axial5-1",
+      "metric": "relative_force_l2",
+      "model": "constant",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.09775429658524452
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0671084963623991,
+      "RMSE_div_mean_test": 2.099384517875703,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q5-axial5-1",
+      "metric": "relative_force_l2",
+      "model": "linear",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.10178085866260203,
+        -0.010840744054424
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.061221766194713985,
+      "RMSE_div_mean_test": 1.915227356788207,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q5-axial5-1",
+      "metric": "relative_force_l2",
+      "model": "quadratic",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.11448517256851272,
+        -0.12720798907495023,
+        0.1548004635594155
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0990065036286537,
+      "RMSE_div_mean_test": 3.097263866032023,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q5-axial5-1",
+      "metric": "relative_force_l2",
+      "model": "exponential",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        -2.3397725051373697,
+        -0.1688769598143086
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.05211239124977879,
+      "RMSE_div_mean_test": 1.6302547860477157,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q5-axial5-1",
+      "metric": "acceleration_max",
+      "model": "constant",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.6959204550121559
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.48843113362716545,
+      "RMSE_div_mean_test": 2.2854455679455943,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q5-axial5-1",
+      "metric": "acceleration_max",
+      "model": "linear",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.7402335325772023,
+        -0.11930443959820167
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.423643401268261,
+      "RMSE_div_mean_test": 1.9822936482935414,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q5-axial5-1",
+      "metric": "acceleration_max",
+      "model": "quadratic",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.7433420820182739,
+        -0.1477777075878465,
+        0.03787728310548971
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.43273799808682967,
+      "RMSE_div_mean_test": 2.0248486873978173,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q5-axial5-1",
+      "metric": "acceleration_max",
+      "model": "exponential",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        -0.3439573527745646,
+        -0.23831877708703395
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.3635741226284145,
+      "RMSE_div_mean_test": 1.7012201106227833,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q6-axial6-1",
+      "metric": "relative_force_l2",
+      "model": "constant",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.02628301293759372
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.025603673396347112,
+      "RMSE_div_mean_test": 37.39751319153522,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q6-axial6-1",
+      "metric": "relative_force_l2",
+      "model": "linear",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.0783280439431761,
+        -0.134309757433761
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.045911107807153136,
+      "RMSE_div_mean_test": 67.05917675472945,
+      "predictions_positive": false,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q6-axial6-1",
+      "metric": "relative_force_l2",
+      "model": "quadratic",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.11988588935018854,
+        -0.47697114467440377,
+        0.4427426919251125
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.06000779685924652,
+      "RMSE_div_mean_test": 87.64923454143147,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q6-axial6-1",
+      "metric": "relative_force_l2",
+      "model": "exponential",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        -2.3484533222118693,
+        -6.7518814788268715
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0006155737186020612,
+      "RMSE_div_mean_test": 0.8991259146848584,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q6-axial6-1",
+      "metric": "acceleration_max",
+      "model": "constant",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.1951250108321986
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.18935849376890262,
+      "RMSE_div_mean_test": 32.67319067993771,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q6-axial6-1",
+      "metric": "acceleration_max",
+      "model": "linear",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.5829329468964373,
+        -1.0007946737141642
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.3435098117998229,
+      "RMSE_div_mean_test": 59.27149798235413,
+      "predictions_positive": false,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q6-axial6-1",
+      "metric": "acceleration_max",
+      "model": "quadratic",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.8894846636296889,
+        -3.5284386236839977,
+        3.265894344412825
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.43794622244425807,
+      "RMSE_div_mean_test": 75.56619272089695,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q6-axial6-1",
+      "metric": "acceleration_max",
+      "model": "exponential",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        -0.30974601221220927,
+        -6.928549790362215
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.004971779791807918,
+      "RMSE_div_mean_test": 0.8578643921547628,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q8-trefoil32-1-2",
+      "metric": "relative_force_l2",
+      "model": "constant",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        185,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.0020403930595479596
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0009336271387647407,
+      "RMSE_div_mean_test": 0.6292220647959479,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q8-trefoil32-1-2",
+      "metric": "relative_force_l2",
+      "model": "linear",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        185,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.0037411947467620244,
+        -0.004563126477891395
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0019563697251413453,
+      "RMSE_div_mean_test": 1.3185038725271125,
+      "predictions_positive": false,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q8-trefoil32-1-2",
+      "metric": "relative_force_l2",
+      "model": "quadratic",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        185,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.0048380502681400735,
+        -0.013327022000335777,
+        0.011844447100180363
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.001517305047103229,
+      "RMSE_div_mean_test": 1.0225943259605499,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q8-trefoil32-1-2",
+      "metric": "relative_force_l2",
+      "model": "exponential",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        185,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        -5.579415858487543,
+        -2.0241186670015887
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.0011154367146877185,
+      "RMSE_div_mean_test": 0.7517534180654016,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q8-trefoil32-1-2",
+      "metric": "acceleration_max",
+      "model": "constant",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        185,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.05914461890639878
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.032119179728026206,
+      "RMSE_div_mean_test": 1.1843566875805303,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q8-trefoil32-1-2",
+      "metric": "acceleration_max",
+      "model": "linear",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        185,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.1200952169508293,
+        -0.16352599475335017
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.055177543220273684,
+      "RMSE_div_mean_test": 2.0346065145671384,
+      "predictions_positive": false,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q8-trefoil32-1-2",
+      "metric": "acceleration_max",
+      "model": "quadratic",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        185,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        0.17525854330630616,
+        -0.6042819734829087,
+        0.5956838326952577
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.09618059555542101,
+      "RMSE_div_mean_test": 3.546545476133218,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    },
+    {
+      "seed": "q8-trefoil32-1-2",
+      "metric": "acceleration_max",
+      "model": "exponential",
+      "train_iterations": [
+        100,
+        175
+      ],
+      "test_iterations": [
+        180,
+        185,
+        190,
+        195,
+        200
+      ],
+      "coefficients": [
+        -2.1884902077856827,
+        -2.2527373601868366
+      ],
+      "x_normalization": "(iteration-100)/100",
+      "RMSE": 0.012356378055794637,
+      "RMSE_div_mean_test": 0.4556267970904686,
+      "predictions_positive": true,
+      "scope": "Retrospective time-ordered within-run check; no prospective or cross-candidate validation"
+    }
+  ],
+  "legacy_candidates_for_recovery": [
+    {
+      "rest_id": "q4-axial22-medium-fresh",
+      "nodes": 121,
+      "iterations": 1200,
+      "force": 0.00016979860357199805,
+      "acceleration": 0.0019882973631413434,
+      "force_gate_multiple": 1.6979860357199803,
+      "acceleration_gate_multiple": 1.9882973631413434,
+      "tail": 0.00017521072231253522,
+      "checkpoint": "rest/q4-axial22-medium-fresh/latest.npz",
+      "checkpoint_sha256": "1be554aee7d4b9f040460636dfd63972ccdc85bc35afbdd56ee6b41f072929ab",
+      "source_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+      "scope": "Prior compact metrics, not remeasured fields; native unresolved status preserved"
+    },
+    {
+      "rest_id": "q7-trefoil-medium-fresh",
+      "nodes": 121,
+      "iterations": 1200,
+      "force": 0.00017940288265448742,
+      "acceleration": 0.0035355805783470495,
+      "force_gate_multiple": 1.794028826544874,
+      "acceleration_gate_multiple": 3.5355805783470493,
+      "tail": 0.00033957411467610947,
+      "checkpoint": "rest/q7-trefoil-medium-fresh/latest.npz",
+      "checkpoint_sha256": "05b540ded1583f58abe44b9a5c4f3e463c24c983ab2fc7076c08b5ae75aecdf1",
+      "source_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+      "scope": "Prior compact metrics, not remeasured fields; native unresolved status preserved"
+    }
+  ],
+  "issues": [
+    "Prior reuse selected the smallest mesh when no stationary state existed, masking substantially closer medium-grid Q4/Q7 endpoints.",
+    "Only one priority branch per Q was extended: q5-trefoil32-1-1 passed the priority rule but was omitted under capacity, without an explicit deferral entry.",
+    "Four budget-exhausted priority endpoints still say priority_continue; distinguish measured eligibility from actual completed/scheduled work.",
+    "Force ratios just above the 0.05 compute cutoff deferred Q9/Q10 trefoil seeds; cutoff is not a validated suitability boundary.",
+    "Global curve fits mix initial transients and late relaxation; positive in-sample/LOO fit ranking does not validate threshold-crossing extrapolation."
+  ],
+  "disposition": "Completed bounded screening and device implementation evidence; no newly admitted stationary candidate, no new motion and no Q-sector rejection.",
+  "assessment_html_sha256": "fb12ec7d4a4d0ab523154648c172c63090937b1c369f4ef737ef5bc8d659e827"
+}

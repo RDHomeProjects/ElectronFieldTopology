@@ -6,6 +6,7 @@ from .common import load,save,sha,canonical,stamp,log,memory_guard
 from .engine import Engine,checkpoint,restore
 from .catalogue import catalogue
 from .policy import representation,stationary,classify,interval,trend
+from electron_field_topology.rapid_q_followup.selection import select_prior,allocation_ledger
 
 def sealed(path,value=None):
  p=Path(path);h=p.with_suffix(p.suffix+'.sha256')
@@ -58,8 +59,8 @@ def reuse(seed,past,past_run,out,p):
   match=seed['family']=='reference' and key=='q2-reference' or row.get('lineage',{}).get('seed_sha256')==canonical(seed)
   if match:candidates.append((key,row))
  if not candidates:return None
- # Prefer actual stationary endpoints, then the least expensive geometry.
- key,row=min(candidates,key=lambda kv:(kv[1]['status']!='stationary',kv[1]['nodes'],kv[0]))
+ selection=select_prior(candidates,p)
+ key,row=next(kv for kv in candidates if kv[0]==selection['primary_rest_id'])
  source=(past_run/row['checkpoint']).resolve()
  if not source.is_relative_to(past_run.resolve()) or sha(source)!=row['checkpoint_sha256']:raise ValueError('Past field hash mismatch: '+key)
  with zipfile.ZipFile(source) as z:
@@ -70,7 +71,7 @@ def reuse(seed,past,past_run,out,p):
  g=Grid((row['nodes'],)*3,(row['length'],)*3,'fixed');m=metrics(n,g,p);dest=out/'reused'/f'{seed["id"]}.npz';dest.parent.mkdir(exist_ok=True);shutil.copy2(source,dest)
  c=classify(m,m,seed['q'],p,m['tail_fraction'])
  if row['status']!='stationary':c={'decision':'prior_unresolved','reason':'Previously allocated preparation retained; no automatic repeat or physical Q rejection'}
- return {'recorded_at':stamp(),'seed':seed,'q':seed['q'],'nodes':row['nodes'],'length':row['length'],'backend':'cpu-audited-prior','iteration':row.get('native_result',{}).get('iterations',0),'initial':m,'metrics':m,'classification':c,'checkpoint':dest.relative_to(out).as_posix(),'checkpoint_sha256':sha(dest),'field_key':'field','origin':'authenticated prior survey state','prior_rest_id':key,'prior_native_status':row['status'],'prior_source_checkpoint_sha256':row['checkpoint_sha256'],'scope':'Existing evidence reused, not fresh screening or a new motion certificate'}
+ return {'recorded_at':stamp(),'seed':seed,'q':seed['q'],'nodes':row['nodes'],'length':row['length'],'backend':'cpu-audited-prior','iteration':row.get('native_result',{}).get('iterations',0),'initial':m,'metrics':m,'classification':c,'checkpoint':dest.relative_to(out).as_posix(),'checkpoint_sha256':sha(dest),'field_key':'field','origin':'authenticated prior survey state','prior_rest_id':key,'prior_native_status':row['status'],'prior_selection':selection,'prior_source_checkpoint_sha256':row['checkpoint_sha256'],'scope':'Existing evidence reused, not fresh screening or a new motion certificate'}
 
 def report(out,r):
  rows=[]
@@ -80,7 +81,7 @@ def report(out,r):
   w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
  import html
  table=''.join('<tr>'+''.join('<td>'+html.escape(str(v[k]))+'</td>' for k in rows[0])+'</tr>' for v in rows);heads=''.join('<th>'+k+'</th>' for k in rows[0])
- text='''<!doctype html><html><meta charset="utf-8"><title>Rapid Q screening</title><style>body{font:15px/1.6 system-ui;margin:25px}table{border-collapse:collapse}td,th{padding:7px;border-bottom:1px solid #ddd;text-align:left}</style><h1>Rapid SF Q screening</h1><p>'''+html.escape(json.dumps(r['finished_at']))+'''</p><p>Static D4 preparation only. No physical-time trajectory, exact integer-topology certificate, stability proof or electron acceptance. Early force decay sets compute priority; it does not certify future stationarity or motion. Unresolved/capacity-limited configurations are deferred, not rejected Q values.</p><p>'''+html.escape(json.dumps(r['counts']))+'''</p><p><a href="prior-survey-outcomes.json">Retained prior outcomes</a> · <a href="screening.csv">Decision table</a> · <a href="record.json">Full provenance and decisions</a> · <a href="motion-followup-queue.json">Conditional follow-up queue</a></p><table><tr>'''+heads+'''</tr>'''+table+'''</table><p>Original acceptance gates and all prior failures remain unchanged. CPU float64 stationarity/tail audits govern every decision. CUDA is used only with the exact local accuracy/timing receipt; no mid-branch backend fallback. GPU success is not inferred from NumPy host tests. All historical back-tests are retrospective and correlated, with unresolved endpoints censored.</p></html>'''
+ text='''<!doctype html><html><meta charset="utf-8"><title>Rapid Q screening</title><style>body{font:15px/1.6 system-ui;margin:25px}table{border-collapse:collapse}td,th{padding:7px;border-bottom:1px solid #ddd;text-align:left}</style><h1>Rapid SF Q screening</h1><p>'''+html.escape(json.dumps(r['finished_at']))+'''</p><p>Static D4 preparation only. No physical-time trajectory, exact integer-topology certificate, stability proof or electron acceptance. See record.json allocation_ledger for completed budgets and explicit capacity deferrals. A priority_continue label alone does not schedule more work. Early force decay sets compute priority; it does not certify future stationarity or motion. Unresolved/capacity-limited configurations are deferred, not rejected Q values.</p><p>'''+html.escape(json.dumps(r['counts']))+'''</p><p><a href="prior-survey-outcomes.json">Retained prior outcomes</a> · <a href="screening.csv">Decision table</a> · <a href="record.json">Full provenance and decisions</a> · <a href="motion-followup-queue.json">Conditional follow-up queue</a></p><table><tr>'''+heads+'''</tr>'''+table+'''</table><p>Original acceptance gates and all prior failures remain unchanged. CPU float64 stationarity/tail audits govern every decision. CUDA is used only with the exact local accuracy/timing receipt; no mid-branch backend fallback. GPU success is not inferred from NumPy host tests. All historical back-tests are retrospective and correlated, with unresolved endpoints censored.</p></html>'''
  (out/'REPORT.html').write_text(text);(out/'SUMMARY.md').write_text('# Rapid Q screening\n\n'+json.dumps(r['finished_at'])+'\n\nStatus: **complete_pending_review**.\n\n'+json.dumps(r['counts'])+'\n\nNo new motion, Q elimination or physical acceptance. Deferred branches and prior failures retained.\n')
 def run(repo,past_run,out,config,benchmark_receipt,past_evidence):
  from electron_field_topology.sf_time import Grid
@@ -137,6 +138,7 @@ def run(repo,past_run,out,config,benchmark_receipt,past_evidence):
   else:save(choice_file,{'recorded_at':stamp(),'seeds':choice_payload,'policy':'At most one early-priority configuration per Q; no cross-Q raw-energy cutoff'})
   for row in choices:
    seed=row['seed'];state('priority',seed);g=Grid((row['nodes'],)*3,(row['length'],)*3,'fixed');r['priority'].append(branch(seed,g,engine(row['nodes']),p['priority_iterations'],out,out/'branches'/seed['id']/str(row['nodes']),p,identity))
+  r['allocation_ledger']=allocation_ledger(r['broad'],r['priority']);r['deferrals'].extend(v for v in r['allocation_ledger'] if v['allocation_status'].startswith('deferred_') or v['allocation_status']=='budget_exhausted_unresolved')
   survivors=[v for v in r['priority']+r['broad'] if v['classification']['decision']=='static_survivor' and v['origin'].startswith('new static')];by_q={}
   for v in survivors:
    if v['q'] not in by_q or v['metrics']['relative_force_l2']<by_q[v['q']]['metrics']['relative_force_l2']:by_q[v['q']]=v

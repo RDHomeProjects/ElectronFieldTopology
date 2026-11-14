@@ -1,8 +1,8 @@
 # s5-b-012: Bounded rapid Q2-Q16 static screening and conditional refinement
 
-Updated: UTC 2026-11-14T09:25:42.642598+00:00; Australia/Melbourne 2026-11-14T20:25:42.642598+11:00.
+Updated: UTC 2026-11-14T13:05:31.051617+00:00; Australia/Melbourne 2026-11-15T00:05:31.051617+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Can conservative early static triage reduce candidate-search cost without treati
 
 ## Evidence and present finding
 
-Retrospective replay of 18 preparation records retained all eight later-stationary endpoints, while also prioritizing six unresolved endpoints. These inspected correlated records are not independent validation. CPU controls passed; actual CUDA qualification and new Q screening remain pending.
+30 variants over Q2-Q16; seven prior states reused; four branches extended; no newly stationary survivor or motion. CUDA controls passed. Coarsest unresolved reuse masked better medium Q4/Q7 endpoints; capacity and exhausted budgets need explicit reporting.
 
 ## Next action and exit evidence
 
-Leave the active measurement analysis untouched. On the workstation, qualify/time the D4 static CPU/CUDA engines, then run the isolated bounded Q2-Q16 funnel and review deferrals and conditional motion follow-ups.
+Use the separately registered bounded follow-up; retain all original evidence, original gates and unresolved states.
 
 Frozen policy/catalogue/source/backend identities; conservative four-way decisions; unchanged strict stationarity and tail gates; all fields/checkpoints retained; no motion or general Q rejection from static triage.
 
