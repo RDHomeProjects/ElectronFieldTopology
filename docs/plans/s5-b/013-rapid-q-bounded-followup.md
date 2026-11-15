@@ -1,6 +1,6 @@
 # s5-b-013: Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls
 
-Updated: UTC 2026-11-14T23:23:48.283541+00:00; Australia/Melbourne 2026-11-15T10:23:48.283541+11:00.
+Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -10,11 +10,11 @@ Can a declared additional preparation budget recover strict survivors while pres
 
 ## Evidence and present finding
 
-Seven jobs; 645/650 added accepted steps; no new strict static survivor or motion. Q5 stopped at iteration 95 on approximate Hopf admission loss. Q4 plateaued; Q6/Q7 residuals finished worse; Q8/Q10 improved. All failures retained.
+Targeted600-step campaign completed; no strict survivor. Q8 force passes but acceleration1.203x limit. Q10 worsened late; finer Q5 retains tail failure. Original gates and all unresolved findings preserved.
 
 ## Next action and exit evidence
 
-Prepare a separate controlled diagnostic tranche: retained-field Q4/Q6 diagnosis, selective fixed-grid Q8/Q10 continuation and Q5 resolution rescue from pre-loss iteration 50. Q7/Q9 deferred pending diagnostics. No production launched by this assessment.
+Use separately registered campaign2 for user-requested Q8/Q10 continuation, Q4 conjugacy-memory comparison and fixed-spacing Q5 domain test.
 
 650 additional accepted steps maximum, unchanged action and all scientific gates; exact continuation for screen states, declared optimizer restart for legacy imports, all failures/deferrals and full states retained; no automatic mesh or motion.
 
