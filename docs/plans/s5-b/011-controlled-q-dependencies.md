@@ -1,6 +1,6 @@
 # s5-b-011: Controlled dependency transfer to Q2 Q3 and other Q results
 
-Updated: UTC 2026-11-14T23:23:48.283541+00:00; Australia/Melbourne 2026-11-15T10:23:48.283541+11:00.
+Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
 
 State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 

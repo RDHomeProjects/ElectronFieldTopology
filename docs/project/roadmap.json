@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-14T23:23:48.283541+00:00",
-    "melbourne": "2026-11-15T10:23:48.283541+11:00"
+    "utc": "2026-11-15T14:03:46.573611+00:00",
+    "melbourne": "2026-11-16T01:03:46.573611+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
     "s2-005",
-    "s5-b-013",
+    "s5-b-014",
     "s5-b-011",
     "s5-b-010",
     "s5-b-006",
@@ -1516,8 +1516,8 @@
       "state": "assessed",
       "gate": "open",
       "question": "Can a declared additional preparation budget recover strict survivors while preserving gates, geometry, optimizer identity and all deferrals?",
-      "finding": "Seven jobs; 645/650 added accepted steps; no new strict static survivor or motion. Q5 stopped at iteration 95 on approximate Hopf admission loss. Q4 plateaued; Q6/Q7 residuals finished worse; Q8/Q10 improved. All failures retained.",
-      "next_action": "Prepare a separate controlled diagnostic tranche: retained-field Q4/Q6 diagnosis, selective fixed-grid Q8/Q10 continuation and Q5 resolution rescue from pre-loss iteration 50. Q7/Q9 deferred pending diagnostics. No production launched by this assessment.",
+      "finding": "Targeted600-step campaign completed; no strict survivor. Q8 force passes but acceleration1.203x limit. Q10 worsened late; finer Q5 retains tail failure. Original gates and all unresolved findings preserved.",
+      "next_action": "Use separately registered campaign2 for user-requested Q8/Q10 continuation, Q4 conjugacy-memory comparison and fixed-spacing Q5 domain test.",
       "exit_evidence": "650 additional accepted steps maximum, unchanged action and all scientific gates; exact continuation for screen states, declared optimizer restart for legacy imports, all failures/deferrals and full states retained; no automatic mesh or motion.",
       "depends_on": [
         "s5-b-012"
@@ -1546,6 +1546,48 @@
           "role": "assessment",
           "path": "reports/s5-b/013-rapid-q-bounded-followup/assessments/20261114t231325z-431f3acf/README.md",
           "label": "Completed 645-step bounded follow-up; unresolved gates and Q5 representation loss retained"
+        },
+        {
+          "role": "assessment",
+          "path": "reports/s5-b/013-rapid-q-bounded-followup/assessments/20261115t112200z-c4215257/README.md",
+          "label": "Completed targeted600-step analysis: Q8 near gate, Q10 rebound, Q5 domain limits"
+        }
+      ]
+    },
+    {
+      "id": "s5-b-014",
+      "stage": "s5-b",
+      "number": 14,
+      "slug": "targeted-q-campaign2",
+      "title": "Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons",
+      "state": "prepared",
+      "gate": "open",
+      "question": "Can recent-progress-bounded continuation and single-variable optimizer/domain controls clarify admission while preserving every scientific gate?",
+      "finding": "Prepared only; production outcomes pending. Completed targeted600-step evidence and assessment recorded separately.",
+      "next_action": "Qualify local CPU/GPU endpoints, then Q8 +150 and at most two recent-progress-conditional +50 batches (250 maximum); Q10 +150 before read-only diagnosis; Q4 exact versus memory-cleared +50 each with alpha held equal; Q5 fixed-spacing domain control +50 each. No Q6 relaxation yet.",
+      "exit_evidence": "600 added accepted production steps maximum; all original gates, source hashes, paired controls, full fields, failed/unresolved outcomes, timing components and Q6/Q7/Q9 deferrals retained; no automatic motion.",
+      "depends_on": [
+        "s5-b-013"
+      ],
+      "requirements": [
+        "SCI-001",
+        "SCI-003",
+        "SCI-004",
+        "NUM-001",
+        "NUM-003",
+        "SRCH-001",
+        "SRCH-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/targeted-q-campaign2-20261115.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s5-b/014-targeted-q-campaign2/preparation/20261115t140346z-abb6a9ff/README.md",
+          "label": "Frozen campaign2 plan with mandatory local CPU/GPU qualification"
         }
       ]
     }

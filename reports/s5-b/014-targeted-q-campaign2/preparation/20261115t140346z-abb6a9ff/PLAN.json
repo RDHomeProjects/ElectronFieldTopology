@@ -1,0 +1,56 @@
+{
+  "format": "EFT-campaign2-v1",
+  "completed_evidence_sha256": "c4215257a2a52622866ada5847378eeefd89147d0aaad2a8da0b44741bf1f605",
+  "q8": {
+    "initial_batch_steps": 150,
+    "extension_batch_steps": 50,
+    "maximum_extensions": 2,
+    "maximum": 250,
+    "nodes": 121,
+    "box": 23.04
+  },
+  "q10": {
+    "continuation_steps": 150,
+    "diagnose_after_continuation": true,
+    "nodes": 145,
+    "box": 23.04
+  },
+  "q4": {
+    "steps_per_arm": 50,
+    "arms": [
+      "exact_optimizer_continuation",
+      "clear_conjugacy_memory_only"
+    ],
+    "alpha_held_equal": true,
+    "nodes": 121,
+    "box": 23.04,
+    "Q6_production_steps": 0
+  },
+  "q5": {
+    "steps_per_arm": 50,
+    "common_parent": "completed q5-fine-restart native iteration100",
+    "nodes": [
+      121,
+      145
+    ],
+    "boxes": [
+      23.04,
+      27.648
+    ],
+    "spacing": 0.192,
+    "embedding": "exact aligned index embedding in vacuum; no interpolation",
+    "both_arms_restart_conjugacy_and_alpha": true
+  },
+  "maximum_additional_steps": 600,
+  "paired_observation_interval": 5,
+  "cpu_threads": 4,
+  "disk_reserve_gib": 12,
+  "memory_reserve_gib": 4,
+  "extensions_rule": "Only Q8 after150 and200: uniformly sampled 50-step recent-window median joint gate multiple improves >=5% versus previous50, and median acceleration does not worsen >10%. No improvement-from-run-start override.",
+  "deferred": [
+    "q6-further-relaxation-pending-q4-comparison",
+    "q7-trefoil",
+    "q9-trefoil32-3-1"
+  ],
+  "motion_execution": false
+}

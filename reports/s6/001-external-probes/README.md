@@ -1,6 +1,6 @@
 # s6-001: External-field and interaction benchmarks — evidence index
 
-Updated: UTC 2026-11-14T23:23:48.283541+00:00; Australia/Melbourne 2026-11-15T10:23:48.283541+11:00.
+Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
 
 [Current study plan](../../../docs/plans/s6/001-external-probes.md). State: planned; scientific gate: open.
 
