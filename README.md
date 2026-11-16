@@ -22,13 +22,13 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-30 variants over Q2-Q16; seven prior states reused; four branches extended; no newly stationary survivor or motion. CUDA controls passed. Coarsest unresolved reuse masked better medium Q4/Q7 endpoints; capacity and exhausted budgets need explicit reporting.
+Completed allocations assessed; Q2 reference and Q3 stationary controls retained. No new motion-ready survivor from rapid screening and follow-ups. Final Q8 audit supports parking the unchanged route; higher Q structural diversity is supported but a full long campaign is not justified now.
 
-Compact evidence assessed; local full-field replay and bounded continuation pending. No new stationary candidate, spatial/domain closure, motion, electric charge or quantum spin claim.
+Numerical allocation closure; Q sectors remain open. Benchmark-first desk recommendation only; no new production launch.
 
 Next: **s2-005: Cell-aware saved-state spacing measurements**. Run the registered anchor checks, then all 16 Hopfion and nine packet states if the common contract passes. Refit descriptively and reserve fresh physical validation separately.
 

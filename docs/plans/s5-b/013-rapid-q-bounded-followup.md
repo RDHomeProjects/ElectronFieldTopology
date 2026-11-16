@@ -1,6 +1,6 @@
 # s5-b-013: Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ Targeted600-step campaign completed; no strict survivor. Q8 force passes but acc
 
 ## Next action and exit evidence
 
-Use separately registered campaign2 for user-requested Q8/Q10 continuation, Q4 conjugacy-memory comparison and fixed-spacing Q5 domain test.
+Allocation closed and unchanged route parked. Preserve fields, failures and deferrals; consult the Q-range closure and benchmark-first higher-Q feasibility assessment before new numerical work.
 
 650 additional accepted steps maximum, unchanged action and all scientific gates; exact continuation for screen states, declared optimizer restart for legacy imports, all failures/deferrals and full states retained; no automatic mesh or motion.
 

@@ -1,6 +1,6 @@
 # s0-002: Repository layout and plan reconciliation
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 State: **assessed**. Scientific gate: **not-applicable**. State records workflow progress, not a physical claim.
 

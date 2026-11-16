@@ -1,6 +1,6 @@
 # s5-c-001: Charged-model equation audit — evidence index
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 [Current study plan](../../../docs/plans/s5-c/001-charged-model-audit.md). State: assessed; scientific gate: blocked.
 

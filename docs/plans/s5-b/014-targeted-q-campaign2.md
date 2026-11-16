@@ -1,8 +1,8 @@
 # s5-b-014: Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,11 +10,11 @@ Can recent-progress-bounded continuation and single-variable optimizer/domain co
 
 ## Evidence and present finding
 
-Prepared only; production outcomes pending. Completed targeted600-step evidence and assessment recorded separately.
+Completed500 of600 possible steps; optional Q8 budget correctly withheld; no new strict survivor. Final Q2/Q8 consistency audit passed; paired Q8 CG and L-BFGS remained unresolved within their declared budgets.
 
 ## Next action and exit evidence
 
-Qualify local CPU/GPU endpoints, then Q8 +150 and at most two recent-progress-conditional +50 batches (250 maximum); Q10 +150 before read-only diagnosis; Q4 exact versus memory-cleared +50 each with alpha held equal; Q5 fixed-spacing domain control +50 each. No Q6 relaxation yet.
+Allocation closed and unchanged route parked. Preserve fields, failures and deferrals; consult the Q-range closure and benchmark-first higher-Q feasibility assessment before new numerical work.
 
 600 added accepted production steps maximum; all original gates, source hashes, paired controls, full fields, failed/unresolved outcomes, timing components and Q6/Q7/Q9 deferrals retained; no automatic motion.
 

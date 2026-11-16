@@ -1,14 +1,14 @@
 # Project status
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 ## Current position
 
-Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-012**, Bounded rapid Q2-Q16 static screening and conditional refinement. Administrative progress is recorded in the study register below; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-015**, Q2 to Q16 allocation closure and higher Q feasibility review. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-30 variants over Q2-Q16; seven prior states reused; four branches extended; no newly stationary survivor or motion. CUDA controls passed. Coarsest unresolved reuse masked better medium Q4/Q7 endpoints; capacity and exhausted budgets need explicit reporting.
+Completed allocations assessed; Q2 reference and Q3 stationary controls retained. No new motion-ready survivor from rapid screening and follow-ups. Final Q8 audit supports parking the unchanged route; higher Q structural diversity is supported but a full long campaign is not justified now.
 
-Compact evidence assessed; local full-field replay and bounded continuation pending. No new stationary candidate, spatial/domain closure, motion, electric charge or quantum spin claim.
+Numerical allocation closure; Q sectors remain open. Benchmark-first desk recommendation only; no new production launch.
 
 ## Next scientific task
 
@@ -58,7 +58,8 @@ Compact evidence assessed; local full-field replay and bounded continuation pend
 | [s2-005](plans/s2/005-cell-aware-spacing-measurements.md) | Cell-aware saved-state spacing measurements | prepared | open |
 | [s5-b-012](plans/s5-b/012-rapid-q-screening.md) | Bounded rapid Q2-Q16 static screening and conditional refinement | assessed | open |
 | [s5-b-013](plans/s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | assessed | open |
-| [s5-b-014](plans/s5-b/014-targeted-q-campaign2.md) | Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons | prepared | open |
+| [s5-b-014](plans/s5-b/014-targeted-q-campaign2.md) | Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons | assessed | open |
+| [s5-b-015](plans/s5-b/015-q2-q16-closure-higher-q-review.md) | Q2 to Q16 allocation closure and higher Q feasibility review | assessed | open |
 
 ## Claims and deferred work
 

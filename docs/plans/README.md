@@ -1,6 +1,6 @@
 # Study plans
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 Each study has a stable stage/number and one current plan below. Earlier flat plan files remain source specifications at their published paths; their historical next-step wording is superseded by the register.
 
@@ -46,4 +46,5 @@ Each study has a stable stage/number and one current plan below. Earlier flat pl
 | [s2-005](s2/005-cell-aware-spacing-measurements.md) | Cell-aware saved-state spacing measurements | prepared | open |
 | [s5-b-012](s5-b/012-rapid-q-screening.md) | Bounded rapid Q2-Q16 static screening and conditional refinement | assessed | open |
 | [s5-b-013](s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | assessed | open |
-| [s5-b-014](s5-b/014-targeted-q-campaign2.md) | Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons | prepared | open |
+| [s5-b-014](s5-b/014-targeted-q-campaign2.md) | Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons | assessed | open |
+| [s5-b-015](s5-b/015-q2-q16-closure-higher-q-review.md) | Q2 to Q16 allocation closure and higher Q feasibility review | assessed | open |

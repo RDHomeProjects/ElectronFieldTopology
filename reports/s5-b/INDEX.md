@@ -1,6 +1,6 @@
 # S5-B: Neutral physical-time dynamics
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 Active dynamics track; general isolated-motion acceptance remains open.
 
@@ -19,7 +19,8 @@ Active dynamics track; general isolated-motion acceptance remains open.
 | [s5-b-011](../../docs/plans/s5-b/011-controlled-q-dependencies.md) | Controlled dependency transfer to Q2 Q3 and other Q results | prepared | open |
 | [s5-b-012](../../docs/plans/s5-b/012-rapid-q-screening.md) | Bounded rapid Q2-Q16 static screening and conditional refinement | assessed | open |
 | [s5-b-013](../../docs/plans/s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | assessed | open |
-| [s5-b-014](../../docs/plans/s5-b/014-targeted-q-campaign2.md) | Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons | prepared | open |
+| [s5-b-014](../../docs/plans/s5-b/014-targeted-q-campaign2.md) | Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons | assessed | open |
+| [s5-b-015](../../docs/plans/s5-b/015-q2-q16-closure-higher-q-review.md) | Q2 to Q16 allocation closure and higher Q feasibility review | assessed | open |
 
 Study indexes distinguish preparation, measurements and assessment. A planned record has no measured results.
 
@@ -37,3 +38,4 @@ Study indexes distinguish preparation, measurements and assessment. A planned re
 - [s5-b-012 evidence index](012-rapid-q-screening/README.md)
 - [s5-b-013 evidence index](013-rapid-q-bounded-followup/README.md)
 - [s5-b-014 evidence index](014-targeted-q-campaign2/README.md)
+- [s5-b-015 evidence index](015-q2-q16-closure-higher-q-review/README.md)
