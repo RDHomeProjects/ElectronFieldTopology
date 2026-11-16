@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-012: Bounded rapid Q2-Q16 static screening and conditional refinement](s5-b/012-rapid-q-screening/assessments/20261114t130531z-44583471/README.md) — 30 variants over Q2-Q16; seven prior states reused; four branches extended; no newly stationary survivor or motion. CUDA controls passed. Coarsest unresolved reuse masked better medium Q4/Q7 endpoints; capacity and exhausted budgets need explicit reporting.
+[s5-b-015: Q2 to Q16 allocation closure and higher Q feasibility review](s5-b/015-q2-q16-closure-higher-q-review/assessments/20261116t142049z-2dd92530/README.md) — Completed allocations assessed; Q2 reference and Q3 stationary controls retained. No new motion-ready survivor from rapid screening and follow-ups. Final Q8 audit supports parking the unchanged route; higher Q structural diversity is supported but a full long campaign is not justified now.

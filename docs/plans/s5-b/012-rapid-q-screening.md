@@ -1,6 +1,6 @@
 # s5-b-012: Bounded rapid Q2-Q16 static screening and conditional refinement
 
-Updated: UTC 2026-11-15T14:03:46.573611+00:00; Australia/Melbourne 2026-11-16T01:03:46.573611+11:00.
+Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
 
 State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
@@ -14,7 +14,7 @@ Can conservative early static triage reduce candidate-search cost without treati
 
 ## Next action and exit evidence
 
-Use the separately registered bounded follow-up; retain all original evidence, original gates and unresolved states.
+Allocation closed and unchanged route parked. Preserve fields, failures and deferrals; consult the Q-range closure and benchmark-first higher-Q feasibility assessment before new numerical work.
 
 Frozen policy/catalogue/source/backend identities; conservative four-way decisions; unchanged strict stationarity and tail gates; all fields/checkpoints retained; no motion or general Q rejection from static triage.
 
