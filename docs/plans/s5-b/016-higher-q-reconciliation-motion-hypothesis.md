@@ -1,8 +1,8 @@
 # s5-b-016: Higher Q reconciliation and motion dependent stability hypothesis
 
-Updated: UTC 2026-11-17T08:25:41.218472+00:00; Australia/Melbourne 2026-11-17T19:25:41.218472+11:00.
+Updated: UTC 2026-11-17T12:02:43.904795+00:00; Australia/Melbourne 2026-11-17T23:02:43.904795+11:00.
 
-State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
+State: **assessed**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
 ## Question and scope
 
@@ -10,13 +10,13 @@ Do retained Q22 and Q18 records establish reproduction readiness, and could genu
 
 ## Evidence and present finding
 
-Desk assessment distinguishes Lorentz translation from internal rotation and periodic states. Original allocations remain parked. Local source reconciliation and frozen-field diagnostics are prepared; their results are pending.
+Completed records reconcile supported historical Q22 cable and Q17/Q19 static branches with unresolved later D4 preparation. Q18 hyperbolic reproduction remains incomplete. Internal rotation modestly improves Q2 residuals but offers no useful Q8 rescue. All declared document references are covered.
 
 ## Next action and exit evidence
 
-Collect pinned Q22/Q18 models, seed/endpoint records and archive references; optionally replay read-only Q2/Q8 instantaneous balance probes. Review evidence before executing the conditional Q22 cable/link pilot or a later Q18 hyperbolic case.
+Record completed findings; compare one authenticated successful field under native cell and D4 operators at unchanged grid and box before allocating bounded readmission. Preserve Q2-Q16 closure; defer broad Q17-Q32 work and Q8 rotation rescue.
 
-Pinned repository snapshot, explicit missing-field/size deferrals, unchanged gate and source identities, motion-hypothesis assessment, and a conditional benchmark-first pilot contract. Zero relaxation and physical-time steps in this tranche.
+Unchanged final and original compact archives, all 57 declared reference occurrences, 21 duplicate curves verified inside the original Q22 archive, completed probe receipts, explicit full-field limits and assessed historical/static versus current D4 distinctions.
 
 ## Traceability
 
