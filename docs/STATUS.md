@@ -1,14 +1,14 @@
 # Project status
 
-Updated: UTC 2026-11-17T08:25:41.218472+00:00; Australia/Melbourne 2026-11-17T19:25:41.218472+11:00.
+Updated: UTC 2026-11-17T12:02:43.904795+00:00; Australia/Melbourne 2026-11-17T23:02:43.904795+11:00.
 
 ## Current position
 
-Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-015**, Q2 to Q16 allocation closure and higher Q feasibility review. Administrative progress is recorded in the study register below; no new trajectory is produced.
+Preservation baseline: PR54, commit `8cffc20fad3017373541b2b165eaf51215b50460`. The latest assessed scientific activity is **s5-b-016**, Higher Q reconciliation and motion dependent stability hypothesis. Administrative progress is recorded in the study register below; no new trajectory is produced.
 
-Completed allocations assessed; Q2 reference and Q3 stationary controls retained. No new motion-ready survivor from rapid screening and follow-ups. Final Q8 audit supports parking the unchanged route; higher Q structural diversity is supported but a full long campaign is not justified now.
+Completed records reconcile supported historical Q22 cable and Q17/Q19 static branches with unresolved later D4 preparation. Q18 hyperbolic reproduction remains incomplete. Internal rotation modestly improves Q2 residuals but offers no useful Q8 rescue. All declared document references are covered.
 
-Numerical allocation closure; Q sectors remain open. Benchmark-first desk recommendation only; no new production launch.
+Historical finite-grid static support; current D4 readiness and physical-time stability remain open. No new numerical allocation.
 
 ## Next scientific task
 
@@ -60,7 +60,7 @@ Numerical allocation closure; Q sectors remain open. Benchmark-first desk recomm
 | [s5-b-013](plans/s5-b/013-rapid-q-bounded-followup.md) | Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls | assessed | open |
 | [s5-b-014](plans/s5-b/014-targeted-q-campaign2.md) | Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons | assessed | open |
 | [s5-b-015](plans/s5-b/015-q2-q16-closure-higher-q-review.md) | Q2 to Q16 allocation closure and higher Q feasibility review | assessed | open |
-| [s5-b-016](plans/s5-b/016-higher-q-reconciliation-motion-hypothesis.md) | Higher Q reconciliation and motion dependent stability hypothesis | prepared | open |
+| [s5-b-016](plans/s5-b/016-higher-q-reconciliation-motion-hypothesis.md) | Higher Q reconciliation and motion dependent stability hypothesis | assessed | open |
 
 ## Claims and deferred work
 

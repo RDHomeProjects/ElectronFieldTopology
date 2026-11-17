@@ -1,0 +1,252 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-17T08:28:34.176155+00:00",
+    "melbourne": "2026-11-17T19:28:34.176155+11:00"
+  },
+  "status": "complete_pending_review",
+  "results": [
+    {
+      "field": "Q2",
+      "recorded_at": {
+        "utc": "2026-11-17T08:26:39.028550+00:00",
+        "melbourne": "2026-11-17T19:26:39.028550+11:00"
+      },
+      "path": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/rest/q2-reference/latest.npz",
+      "expected_sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930",
+      "status": "diagnostic_complete_not_stability_acceptance",
+      "metrics": {
+        "energy": 1.99948549715528,
+        "relative_force_l2": 1.1542460483787707e-05,
+        "acceleration_max": 6.636497024101145e-05,
+        "acceleration_rms": 8.366182125980412e-07,
+        "minimum_corner_cone": 0.9338021913610102,
+        "hopf_integral": -1.9961557335587894,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3972169307717207,
+        "mean_topological_b": [
+          -1.1953179288986849e-18,
+          2.0126580464510174e-17,
+          -6.18706716583301e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "probe": {
+        "recorded_at": {
+          "utc": "2026-11-17T08:27:40.980910+00:00",
+          "melbourne": "2026-11-17T19:27:40.980910+11:00"
+        },
+        "probe_axis": "target-space north axis; NOT spatial spin or center-of-mass translation",
+        "probe_frequency": 0.01,
+        "fit": {
+          "omega_squared_unconstrained": 5.239430873708632e-06,
+          "omega_squared_clipped": 5.239430873708632e-06,
+          "omega_clipped": 0.002288980313088916,
+          "cap": 0.05,
+          "identifiable": true,
+          "clipped_at_boundary": false,
+          "scope": "Instantaneous least-squares balance at a frozen field; no stationary or dynamical stability acceptance"
+        },
+        "static_acceleration": {
+          "l2_rms": 1.520322966932415e-06,
+          "maximum": 6.636497024285895e-05,
+          "maximum_index": [
+            60,
+            60,
+            61
+          ]
+        },
+        "fitted_ansatz_residual": {
+          "l2_rms": 1.4626979913640245e-06,
+          "maximum": 6.476659793724794e-05,
+          "maximum_index": [
+            60,
+            60,
+            61
+          ]
+        },
+        "rms_ratio": 0.9620968854501609,
+        "maximum_ratio": 0.9759154219498352,
+        "qualifications": {
+          "cpu_array_nonzero_rate_allclose": true,
+          "even_velocity_max_difference": 0.0,
+          "quadratic_prediction_max_difference": 3.907985046680551e-14,
+          "sphere_acceleration_constraint_max_error": 2.157569946542679e-15
+        },
+        "predicted_samples": [
+          {
+            "omega": 0.0,
+            "omega_squared": 0.0,
+            "l2_rms": 1.520322966932415e-06,
+            "maximum": 6.636497024285895e-05,
+            "maximum_index": [
+              60,
+              60,
+              61
+            ]
+          },
+          {
+            "omega": 0.01,
+            "omega_squared": 0.0001,
+            "l2_rms": 7.639874436729727e-06,
+            "maximum": 8.79456316832353e-05,
+            "maximum_index": [
+              63,
+              68,
+              63
+            ]
+          },
+          {
+            "omega": 0.02,
+            "omega_squared": 0.0004,
+            "l2_rms": 3.127222332430019e-05,
+            "maximum": 0.0003264169596522279,
+            "maximum_index": [
+              63,
+              49,
+              63
+            ]
+          },
+          {
+            "omega": 0.002288980313088916,
+            "omega_squared": 5.239430873708631e-06,
+            "l2_rms": 1.4626979913640071e-06,
+            "maximum": 6.476659793728658e-05,
+            "maximum_index": [
+              60,
+              60,
+              61
+            ]
+          }
+        ],
+        "wall_seconds": 45.316502534085885,
+        "relaxation_steps": 0,
+        "physical_time_steps": 0,
+        "stability_certified": false,
+        "gate_override": false,
+        "massless_radiation_warning": "A lower t0 residual does not supply a localized, non-radiating periodic solution or remove the massless far-field obstruction."
+      }
+    },
+    {
+      "field": "Q8",
+      "recorded_at": {
+        "utc": "2026-11-17T08:27:41.096700+00:00",
+        "melbourne": "2026-11-17T19:27:41.096700+11:00"
+      },
+      "path": "/home/rd/ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q8-continuation-2/latest.npz",
+      "expected_sha256": "1c781889663026f12823e0d5a5c7b73f47c34a6fb37d75413456b69636fa0e4c",
+      "status": "diagnostic_complete_not_stability_acceptance",
+      "metrics": {
+        "energy": 5.913760757341213,
+        "relative_force_l2": 8.80192959807609e-05,
+        "acceleration_max": 0.0012090998942414692,
+        "acceleration_rms": 1.1253295465907045e-05,
+        "minimum_corner_cone": 0.8688326556654924,
+        "hopf_integral": -7.960946914687035,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.6089266652887864,
+        "mean_topological_b": [
+          -5.852594285316698e-09,
+          1.9485467175713377e-06,
+          -2.9795488607454547e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate"
+      },
+      "probe": {
+        "recorded_at": {
+          "utc": "2026-11-17T08:28:33.824227+00:00",
+          "melbourne": "2026-11-17T19:28:33.824227+11:00"
+        },
+        "probe_axis": "target-space north axis; NOT spatial spin or center-of-mass translation",
+        "probe_frequency": 0.01,
+        "fit": {
+          "omega_squared_unconstrained": 1.7208250958341356e-08,
+          "omega_squared_clipped": 1.7208250958341356e-08,
+          "omega_clipped": 0.00013118022319824494,
+          "cap": 0.05,
+          "identifiable": true,
+          "clipped_at_boundary": false,
+          "scope": "Instantaneous least-squares balance at a frozen field; no stationary or dynamical stability acceptance"
+        },
+        "static_acceleration": {
+          "l2_rms": 2.0499327415170583e-05,
+          "maximum": 0.0012090998942414692,
+          "maximum_index": [
+            63,
+            49,
+            61
+          ]
+        },
+        "fitted_ansatz_residual": {
+          "l2_rms": 2.0499327261758466e-05,
+          "maximum": 0.0012091143291243522,
+          "maximum_index": [
+            63,
+            49,
+            61
+          ]
+        },
+        "rms_ratio": 0.9999999925162365,
+        "maximum_ratio": 1.0000119385362216,
+        "qualifications": {
+          "cpu_array_nonzero_rate_allclose": true,
+          "even_velocity_max_difference": 0.0,
+          "quadratic_prediction_max_difference": 2.9753977059954195e-14,
+          "sphere_acceleration_constraint_max_error": 2.1871144309274907e-15
+        },
+        "predicted_samples": [
+          {
+            "omega": 0.0,
+            "omega_squared": 0.0,
+            "l2_rms": 2.0499327415170583e-05,
+            "maximum": 0.0012090998942414692,
+            "maximum_index": [
+              63,
+              49,
+              61
+            ]
+          },
+          {
+            "omega": 0.01,
+            "omega_squared": 0.0001,
+            "l2_rms": 2.5150517189720556e-05,
+            "maximum": 0.0012948138980833116,
+            "maximum_index": [
+              63,
+              49,
+              61
+            ]
+          },
+          {
+            "omega": 0.02,
+            "omega_squared": 0.0004,
+            "l2_rms": 6.179253252546224e-05,
+            "maximum": 0.0017568570381848888,
+            "maximum_index": [
+              59,
+              64,
+              62
+            ]
+          },
+          {
+            "omega": 0.00013118022319824494,
+            "omega_squared": 1.720825095834136e-08,
+            "l2_rms": 2.049932726175951e-05,
+            "maximum": 0.0012091143291251248,
+            "maximum_index": [
+              63,
+              49,
+              61
+            ]
+          }
+        ],
+        "wall_seconds": 39.07256653998047,
+        "relaxation_steps": 0,
+        "physical_time_steps": 0,
+        "stability_certified": false,
+        "gate_override": false,
+        "massless_radiation_warning": "A lower t0 residual does not supply a localized, non-radiating periodic solution or remove the massless far-field obstruction."
+      }
+    }
+  ],
+  "scope": "No relaxation, field evolution, new model term or dynamic gate acceptance"
+}

@@ -22,13 +22,13 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-17T08:25:41.218472+00:00; Australia/Melbourne 2026-11-17T19:25:41.218472+11:00.
+Updated: UTC 2026-11-17T12:02:43.904795+00:00; Australia/Melbourne 2026-11-17T23:02:43.904795+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
-Completed allocations assessed; Q2 reference and Q3 stationary controls retained. No new motion-ready survivor from rapid screening and follow-ups. Final Q8 audit supports parking the unchanged route; higher Q structural diversity is supported but a full long campaign is not justified now.
+Completed records reconcile supported historical Q22 cable and Q17/Q19 static branches with unresolved later D4 preparation. Q18 hyperbolic reproduction remains incomplete. Internal rotation modestly improves Q2 residuals but offers no useful Q8 rescue. All declared document references are covered.
 
-Numerical allocation closure; Q sectors remain open. Benchmark-first desk recommendation only; no new production launch.
+Historical finite-grid static support; current D4 readiness and physical-time stability remain open. No new numerical allocation.
 
 Next: **s2-005: Cell-aware saved-state spacing measurements**. Run the registered anchor checks, then all 16 Hopfion and nine packet states if the common contract passes. Refit descriptively and reserve fresh physical validation separately.
 

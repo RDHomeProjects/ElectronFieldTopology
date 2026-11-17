@@ -1,6 +1,6 @@
 # Research reports
 
-Updated: UTC 2026-11-17T08:25:41.218472+00:00; Australia/Melbourne 2026-11-17T19:25:41.218472+11:00.
+Updated: UTC 2026-11-17T12:02:43.904795+00:00; Australia/Melbourne 2026-11-17T23:02:43.904795+11:00.
 
 Browse by stage below. Dates identify runs within a study, not new top-level project stages. A catalog entry links to the original report; it does not recalculate or reaccept it.
 
@@ -28,4 +28,4 @@ The irregular pre-policy folders are frozen compatibility locations. They remain
 
 ## Current assessment
 
-[s5-b-015: Q2 to Q16 allocation closure and higher Q feasibility review](s5-b/015-q2-q16-closure-higher-q-review/assessments/20261116t142049z-2dd92530/README.md) — Completed allocations assessed; Q2 reference and Q3 stationary controls retained. No new motion-ready survivor from rapid screening and follow-ups. Final Q8 audit supports parking the unchanged route; higher Q structural diversity is supported but a full long campaign is not justified now.
+[s5-b-016: Higher Q reconciliation and motion dependent stability hypothesis](s5-b/016-higher-q-reconciliation-motion-hypothesis/assessments/20261117t115317z-a784e58f/README.md) — Completed records reconcile supported historical Q22 cable and Q17/Q19 static branches with unresolved later D4 preparation. Q18 hyperbolic reproduction remains incomplete. Internal rotation modestly improves Q2 residuals but offers no useful Q8 rescue. All declared document references are covered.
