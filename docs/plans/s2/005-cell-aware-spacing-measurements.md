@@ -1,6 +1,6 @@
 # s2-005: Cell-aware saved-state spacing measurements
 
-Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
+Updated: UTC 2026-11-17T08:25:41.218472+00:00; Australia/Melbourne 2026-11-17T19:25:41.218472+11:00.
 
 State: **prepared**. Scientific gate: **open**. State records workflow progress, not a physical claim.
 
