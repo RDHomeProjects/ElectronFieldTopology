@@ -1,6 +1,6 @@
 # s1-a-001: Analytical Hopfion reference — evidence index
 
-Updated: UTC 2026-11-17T12:02:43.904795+00:00; Australia/Melbourne 2026-11-17T23:02:43.904795+11:00.
+Updated: UTC 2026-11-17T13:27:59.068523+00:00; Australia/Melbourne 2026-11-18T00:27:59.068523+11:00.
 
 [Current study plan](../../../docs/plans/s1-a/001-analytical-reference.md). State: assessed; scientific gate: bounded.
 
