@@ -1,6 +1,6 @@
 # s5-b-014: Targeted Q8 Q10 continuation and controlled Q4 Q5 comparisons — evidence index
 
-Updated: UTC 2026-11-16T21:34:48.287905+00:00; Australia/Melbourne 2026-11-17T08:34:48.287905+11:00.
+Updated: UTC 2026-11-17T08:25:41.218472+00:00; Australia/Melbourne 2026-11-17T19:25:41.218472+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/014-targeted-q-campaign2.md). State: assessed; scientific gate: open.
 

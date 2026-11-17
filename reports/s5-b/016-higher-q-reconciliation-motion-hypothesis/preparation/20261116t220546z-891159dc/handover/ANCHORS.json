@@ -1,0 +1,70 @@
+{
+  "Q2": {
+    "archive_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+    "checkpoint": "rest/q2-reference/latest.npz",
+    "checkpoint_sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930",
+    "nodes": 127,
+    "length": 20.16,
+    "field_key": "field",
+    "expected_metrics": {
+      "energy": 1.99948549715528,
+      "relative_force_l2": 1.1542460483789047e-05,
+      "acceleration_max": 6.636497024101145e-05,
+      "acceleration_rms": 8.366182125980412e-07,
+      "minimum_corner_cone": 0.9338021913610102,
+      "hopf_integral": -1.9961557335587894,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3972169307717207,
+      "mean_topological_b": [
+        -1.1953179288986849e-18,
+        2.0126580464510174e-17,
+        -6.18706716583301e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0003015441669190186
+    }
+  },
+  "Q8": {
+    "archive_sha256": "9f3f41872b55fa161d58fff0972e2e87895c95557f021b2942392afdff1dc25f",
+    "checkpoint": "jobs/q8-continuation-2/latest.npz",
+    "checkpoint_sha256": "1c781889663026f12823e0d5a5c7b73f47c34a6fb37d75413456b69636fa0e4c",
+    "nodes": 121,
+    "length": 23.04,
+    "field_key": "n",
+    "native_iteration": 750,
+    "expected_metrics": {
+      "recorded_at": {
+        "utc": "2026-11-15T15:33:16.000302+00:00",
+        "melbourne": "2026-11-16T02:33:16.000302+11:00"
+      },
+      "iteration": 750,
+      "energy": 5.913760757341213,
+      "relative_force_l2": 8.80192959807609e-05,
+      "acceleration_max": 0.0012090998942414692,
+      "acceleration_rms": 1.1253295465907045e-05,
+      "minimum_corner_cone": 0.8688326556654924,
+      "hopf_integral": -7.960946914687035,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.6089266652887864,
+      "mean_topological_b": [
+        -5.852594285316698e-09,
+        1.9485467175713377e-06,
+        -2.9795488607454547e-05
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0005857915015796818,
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "optimizer_alpha": 0.10229345649675535,
+      "step": {
+        "energy": 5.913760757341213,
+        "objective_calls": 3,
+        "accepted_step_max": 9.264765765905347e-05
+      }
+    }
+  }
+}
