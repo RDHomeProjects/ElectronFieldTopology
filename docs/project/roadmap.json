@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "updated_at": {
-    "utc": "2026-11-17T12:02:43.904795+00:00",
-    "melbourne": "2026-11-17T23:02:43.904795+11:00"
+    "utc": "2026-11-17T13:27:59.068523+00:00",
+    "melbourne": "2026-11-18T00:27:59.068523+11:00"
   },
   "baseline_commit": "8cffc20fad3017373541b2b165eaf51215b50460",
   "priority": [
     "s2-005",
-    "s5-b-016",
+    "s5-b-017",
     "s5-b-011",
     "s5-b-010",
     "s5-b-006",
@@ -1675,6 +1675,44 @@
           "role": "assessment",
           "path": "reports/s5-b/016-higher-q-reconciliation-motion-hypothesis/assessments/20261117t115317z-a784e58f/README.md",
           "label": "Reconciled static benchmarks, motion-probe outcomes and operator compatibility decision"
+        }
+      ]
+    },
+    {
+      "id": "s5-b-017",
+      "stage": "s5-b",
+      "number": 17,
+      "slug": "adaptive-q17-q32-screen",
+      "title": "Adaptive Q17 to Q32 candidate screening",
+      "state": "prepared",
+      "gate": "open",
+      "question": "Which declared higher-Q starts survive controlled adaptive D4 preparation, mesh/domain checks and bounded coasting screens?",
+      "finding": "Campaign prepared, not measured. Curve fits choose additional optimizer iteration counts and observation intervals; original measured gates determine promotion. Native operator comparison is included.",
+      "next_action": "Run qualified local CPU/CUDA screening with retained Q2 control, authenticated native Q22 or Q17 comparison, fair bootstrap coverage and bounded adaptive refinement.",
+      "exit_evidence": "All declared candidate outcomes, forward-validated fit choices/rejections, measured admission gates, explicit capacity/budget deferrals, full-field hashes and conditional short motion/time-step comparisons.",
+      "depends_on": [
+        "s5-b-016"
+      ],
+      "requirements": [
+        "SCI-001",
+        "SCI-003",
+        "SCI-004",
+        "NUM-001",
+        "NUM-002",
+        "NUM-003",
+        "BND-001",
+        "REL-002",
+        "REP-001",
+        "REP-002"
+      ],
+      "specifications": [
+        "docs/models/adaptive-q17-q32-screen-20261117.md"
+      ],
+      "records": [
+        {
+          "role": "preparation",
+          "path": "reports/s5-b/017-adaptive-q17-q32-screen/preparation/20261117t123557z-be77a419/README.md",
+          "label": "Adaptive batch/fitting policy, native comparison and bounded CPU/CUDA Q17-Q32 campaign"
         }
       ]
     }

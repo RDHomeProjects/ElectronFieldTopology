@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "result": {
+    "recorded_at": {
+      "utc": "2026-11-17T13:03:07.378940+00:00",
+      "melbourne": "2026-11-18T00:03:07.378940+11:00"
+    },
+    "status": "screen_failed",
+    "reason": [
+      "shape",
+      "speed"
+    ],
+    "backend": "cpu",
+    "backend_qualification": {},
+    "identity": "c172d4831987fc2b56f6b228d21bf40c74479ce6bad094a816b02e807bd34f6e",
+    "admission": {
+      "fixed_projection_max": 0.0,
+      "historical_shape_floor": 0.003795400812422178,
+      "initial_tail": 0.0,
+      "initial_guard": 1.799004882837709e-05,
+      "known_coasting_tail": 0.0,
+      "hopf_integral": -0.9915504668564228,
+      "minimum_corner_cone": 0.7926583759526176,
+      "unit_error": 3.3306690738754696e-16,
+      "tangency_error": 1.6653345369377348e-16
+    },
+    "dt": 0.01,
+    "time": 0.1,
+    "final": {
+      "recorded_at": {
+        "utc": "2026-11-17T13:03:06.609378+00:00",
+        "melbourne": "2026-11-18T00:03:06.609378+11:00"
+      },
+      "step": 10,
+      "time": 0.1,
+      "energy": 2.031378300413896,
+      "continuum_energy": 2.008339065709352,
+      "momentum": [
+        -7.162852428057998e-05,
+        1.3098727012423903e-06,
+        0.462582616934084
+      ],
+      "unit_error": 2.220446049250313e-16,
+      "tangency_error": 2.220446049250313e-16,
+      "centroid": [
+        -6.835202144996383e-06,
+        -0.00038909701293325915,
+        0.025198195824559386
+      ],
+      "rms_radius": 2.060278592056901,
+      "source_power": 0.0,
+      "source_force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "boundary": "fixed_reflecting",
+      "shape_relative": 0.023391282345263706,
+      "tail_fraction": 6.334671277300012e-19,
+      "hopf_integral": -0.9928112260210492,
+      "minimum_corner_cone": 0.8193565808948232,
+      "speed": 0.22951427072097658,
+      "speed_relative": 0.23495243093007806,
+      "gates": {
+        "energy": true,
+        "momentum": true,
+        "shape": false,
+        "speed": false,
+        "tail": true,
+        "representation": true,
+        "constraints": true
+      }
+    },
+    "final_sha256": "352b39003216b09c666998c4e2c30a882bbff635ff6e00e6391f952f1b892ddc",
+    "input_identity": "7a92e07c30fe1460fc38cbb855874f692cee44589e0596805a3262f45b60afa0",
+    "physical_Q_rejected": false,
+    "scope": "Short coasting screen, not long-time/continuum stability or electron acceptance"
+  },
+  "scope": "Nonstationary Q1 control with exact production evolution kernels and independent trilinear fixture; no higher-Q or retained-Q2 admission claim",
+  "control_inputs": {
+    "seed": {
+      "id": "nonstationary-host-control",
+      "q": 1,
+      "kind": "axial",
+      "alpha": 1,
+      "beta": 1,
+      "scale": 1.4,
+      "cutoff": 3.0,
+      "amplitude": 1.0
+    },
+    "grid": [
+      65,
+      65,
+      65
+    ],
+    "lengths": [
+      12.0,
+      12.0,
+      12.0
+    ],
+    "dt": 0.01,
+    "duration": 0.1,
+    "beta": 0.3,
+    "initial_relaxation_steps": 0
+  },
+  "legacy_reference": "Independent eight-corner normalized-trilinear value fixture; actual installed initializer is checked on the zbook",
+  "cache_replay_and_tampered_final_rejection": true
+}
