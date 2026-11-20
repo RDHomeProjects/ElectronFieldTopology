@@ -1,0 +1,64 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-20T11:47:15.848099+00:00",
+    "melbourne": "2026-11-20T22:47:15.848099+11:00"
+  },
+  "status": "preflight_pass",
+  "package_files": 42,
+  "source_identity": "18be438af37f89d826ce6693b9af3b3a3d648ab766e8fcaf3b42ba39e7caa1de",
+  "q21_state": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q17-q32-policy-v2/20261120t003653z-a200a9db/continuation/q21-axial-7-3/state-0.npz",
+  "q21_endpoint": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q17-q32-policy-v2/20261120t003653z-a200a9db/continuation/q21-axial-7-3/endpoint.npz",
+  "q2_control": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/sources/q2-reference.npz",
+  "q22_inventory": {
+    "recorded_at": {
+      "utc": "2026-11-20T11:47:15.847128+00:00",
+      "melbourne": "2026-11-20T22:47:15.847128+11:00"
+    },
+    "status": "deferred_missing_exact_historical_field",
+    "expected_sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1",
+    "checked": [
+      {
+        "path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz",
+        "status": "absent"
+      }
+    ],
+    "reason": "Historical Q22 checkpoint unavailable in declared locations; no fresh-seed substitution, regeneration, resampling or Q17 replacement"
+  },
+  "host": {
+    "total_gib": 15.26858901977539,
+    "available_gib": 10.509742736816406,
+    "swap_free_gib": 1.1656646728515625
+  },
+  "new_optimizer_attempt_ceiling": 40,
+  "q22_optimizer_steps": 0,
+  "physical_time_steps": 0,
+  "backend_probe": {
+    "recorded_at": {
+      "utc": "2026-11-20T11:47:19.363603+00:00",
+      "melbourne": "2026-11-20T22:47:19.363603+11:00"
+    },
+    "status": "backend_probe_pass",
+    "requested": "auto",
+    "selected": "cuda",
+    "source_backend": "cuda",
+    "backend_transfer": false,
+    "cuda_identity": {
+      "execution_backend": "cuda-cupy-float64",
+      "device_id": 0,
+      "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+      "compute_capability": "75",
+      "cupy": "14.2.0",
+      "cuda_runtime": 12090,
+      "cuda_driver": 13000,
+      "precision": "float64"
+    },
+    "energy_gradient_audit": {
+      "passed": true,
+      "energy_abs_difference": 0.0,
+      "gradient_max_abs_difference": 0.0,
+      "reference": "independent CPU sf_readmission.static_value_gradient"
+    },
+    "optimizer_steps": 0,
+    "physical_time_steps": 0
+  }
+}

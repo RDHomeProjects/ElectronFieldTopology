@@ -5,3 +5,5 @@ Historical cell-functional static successes, current D4 readiness and physical-t
 Recorded assessment: [browser report](assessment/ASSESSMENT.html) · [Markdown assessment](assessment/ASSESSMENT.md).
 
 Bounded evaluation plan: [PLAN.json](preparation/58458a2a/handover/PLAN.json). Q21: at most 20 attempted updates per paired arm, identical initial alpha and geometry. Historical Q22: exact-hash native field comparison only; explicit deferral if unavailable. No motion, resampling or enlarged domain is scheduled.
+
+Completed evaluations: [browser report](results/20261120t114719z-48b7d4cf/b674cee9/REPORT.html) · [full measured record](results/20261120t114719z-48b7d4cf/b674cee9/record.json).
