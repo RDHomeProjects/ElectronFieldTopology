@@ -1,0 +1,77 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Q17–Q32 policy-v2 results assessment</title><style>body{font:16px/1.55 system-ui;max-width:1200px;margin:30px auto;padding:0 20px;color:#172033}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:8px;border-bottom:1px solid #ddd;text-align:left}img{max-width:100%}pre{white-space:pre-wrap}h1,h2,h3{line-height:1.25}code{overflow-wrap:anywhere}</style><pre># Q17–Q32 corrected-policy continuation assessment
+
+Assessment date: 20 November 2026, Australia/Melbourne. Machine-readable outputs include UTC and Melbourne timestamps.
+
+## Outcome
+
+The run completed normally, but none of the six continued branches passed stationary preparation or boundary admission. All six stopped because the corrected rule recorded three successive decisions without recent measured joint force/acceleration progress. None exhausted its 500-total-attempt ceiling. The continuation used 225 additional attempts; 1,513 of the maximum additional allocation were unused. Total charged campaign work is 5,950 attempts, including the original 5,692 broad attempts and 33 original Q18 mesh attempts.
+
+The 500 ceiling was applied correctly. It was never a commitment to run 500 iterations regardless of evidence. All six stopped below iteration 300. Consequently this run supplies no observations in the 300–500 range and does not experimentally compare a trajectory at 300 with one at 500.
+
+No new mesh, domain or physical-time steps were taken. The consolidated record preserves all 34 seed dispositions across Q17–Q32: no admitted stationary parent is available for the next stage. This is a bounded result for the tested seeds, action, meshes and box; it does not rule out these Q sectors or all other configurations.
+
+## Measured endpoints
+
+Each table entry is divided by its own original threshold. A value of one is the limit; larger values fail. Force gate = 1e-4, maximum acceleration gate = 1e-3, tail gate = 7.5e-4, guard gate = 1e-3. Metrics are fractions/model quantities, not SI electron measurements. Family names describe seed construction, not independently certified final knot types.
+
+| Branch | Iterations | Extra attempts | Force / gate | Acceleration / gate | Tail / gate | Guard / gate |
+|---|---:|---:|---:|---:|---:|---:|
+| Q18 axial | 217 → 277 | 60 | 35.6 | 39.2 | 1.43 | 2.16 |
+| Q21 axial | 210 → 295 | 85 | 21.6 | 26.8 | 2.09 | 3.15 |
+| Q22 cable | 200 → 225 | 25 | 18.3 | 53.3 | 1.37 | 2.20 |
+| Q24 torus72 | 210 → 240 | 30 | 262.6 | 746.8 | 1.51 | 2.56 |
+| Q30 axial | 210 → 225 | 15 | 216.6 | 748.1 | 2.14 | 3.17 |
+| Q30 torus72 | 215 → 225 | 10 | 410.0 | 1136.5 | 3.05 | 5.10 |
+
+![Measured continuation histories](figures/continuation-histories.png)
+
+The dotted vertical line marks the retained parent from which continuation began. Lines show actual recorded observations, with logarithmic vertical scales. The horizontal dashed line is the stationary threshold. These are optimizer trajectories, not physical motion, and no extrapolation is drawn as measured data.
+
+![Endpoint admission ratios](figures/endpoint-gates.png)
+
+## What changed
+
+- **Q21 axial is the strongest diagnostic target.** Force improved by 64.0% and acceleration by 56.1% from its retained parent. Its final values remain 21.6 and 26.8 times their gates. The best observed joint residual was at iteration 292, approximately 24.3 times the limiting gate; force then rebounded. Tail and guard still fail by 2.09 and 3.15 times their gates.
+- **Q18 axial improved acceleration but worsened force.** Acceleration fell 21.5%, while force rose 76.3% at the endpoint. The best observed joint value in this continuation was at iteration 269, about 29.5 times the limiting gate. Endpoint tails improved only about 2% and remain above both boundary limits.
+- **Q22 cable retains partial progress, not admission.** Acceleration fell 30.3%, but endpoint force was 13.0% worse than at the iteration-200 parent. Its force and acceleration remain 18.3 and 53.3 times their gates. No force model passed the registered forward-validation limit in its terminal fit window, so a dependable joint gate-crossing forecast is unavailable.
+- **Q24 torus72 showed conflicting behaviour.** Endpoint force fell 45.7%, but acceleration rose 26.8% and tail fraction rose 15.8%. Its best observed joint residual at iteration 220 was substantially better than its endpoint, but still hundreds of times the acceleration gate.
+- **Both Q30 variants deteriorated in joint residual.** Axial force and acceleration rose 7.2% and 18.7%; torus72 rose 62.2% and 47.8%. Neither terminal force history yielded an accepted forward-validated model. Park these variants pending the focused findings.
+
+The best observed iteration is a measurement, not necessarily a still-retained full optimizer checkpoint. Rolling slots may have overwritten that state. No recommendation assumes that iteration 269 or 292 can be restored without checking the actual field manifest.
+
+All recorded energies decrease, but energy descent does not itself establish stationarity. There was no recorded Armijo-stall or energy-increase termination. Representation conditions stayed satisfied in the newly recorded observations; the largest recorded charge-relative error among these continuations is about 1.52%, below the 5% representation screen. No topology-loss stop was recorded.
+
+## Is the corrected stopping rule working?
+
+Yes, on the recorded decisions. I reproduced all 48 decisions using the exact delivered policy, carried epoch/counter state and saved fits. All six final stop windows contain 15 or 16 distinct current-epoch observations, rather than the one-observation reset window that caused the earlier defect. The final three supported plateau counters are 1, 2, 3. The migration does not count the original terminal vote twice.
+
+I independently refitted the 18 terminal metric windows. Accepted model sets and order match in every panel; the largest absolute held-out relative-error difference is about 1.36e-8. Four of the six final force panels accept no model. The accepted acceleration and energy fits cannot substitute for a failed force fit or a measured gate pass.
+
+However, a policy stop is not a proof of an asymptotic plateau or physical instability. The decisions use short, overlapping windows and are not independent statistical trials. In Q21 and Q22 acceleration continues to improve while force oscillates or rebounds. The defensible conclusion is that the declared joint-progress condition was no longer met, not that all further improvement is impossible. Larger ceilings alone do not change this condition.
+
+## Recommended next steps
+
+1. **Record the completed run and this assessment.** Retain original findings, all 34 dispositions, corrected decisions, full-field declarations and the old Q18 refinement linkage. Keep the numerical run stopped. Do not override the plateau decisions merely to spend the remaining 1,513 attempts.
+2. **Do a read-only spatial and optimizer diagnosis on the zbook, without new relaxation.** Prioritize the retained Q21 endpoint, use Q22 cable as a contrasting family, and include the retained Q2 reference as an instrument control. Reproduce force, acceleration and boundary metrics; locate their spatial maxima; report interior-versus-shell contributions, raw projected-force norms and the normalizing denominator separately, energy-density profiles, alpha history, and force/acceleration correlations. Inspect Q18 as a secondary comparator if those findings remain ambiguous. The compact histories cannot reveal whether the residual is concentrated near a boundary or in an interior core.
+3. **Choose one controlled intervention only after that diagnosis.** If the residual is boundary-dominated, compare Q21 in a larger box at unchanged spacing before allocating further relaxation. Its current grid is 97³, length 23.04 and spacing 0.24; adding eight nodes per side gives 113³ and length 26.88. Preserve central samples exactly and report both original common-region masks and new-boundary masks. A lower tail fraction caused merely by moving the measuring shell is not evidence of improved stationarity. If the residual is interior/optimizer dominated instead, design one matched optimizer-memory comparison, holding alpha, grid and box equal, rather than changing domain and optimizer together. Neither intervention is authorized or executed by this assessment bundle.
+4. **Keep Q24 and Q30 variants, the remaining unresolved seeds, and new motion work deferred.** Resume refinement/domain/motion progression only when a particular parent meets the applicable registered gates. Retain the old Q18 mesh work separately: 33 charged attempts, checkpoint iteration 32, last measured iteration 30. A new parent requires new lineage and must not inherit that old child silently.
+
+If the focused diagnosis does not identify a repair supported by measurements, the appropriate next milestone is a model/initialization/optimizer feasibility review rather than another automatic expansion of Q range or relaxation budgets. No physical-time experiment occurred here, so this run does not resolve whether a different moving-state construction could be stable.
+
+## Verification and limits
+
+The uploaded SHA-256 matches the terminal output: `cc17e740f2217cb072420c715d22a11cf1cf15b1d81e9c585251a89869edd643`. ZIP CRCs and all 140 compact payload hashes pass. The exact delivered package identity is authenticated against the retained original 37-payload handover. Thirty-five of those payloads appear directly in the result ZIP; two validation text logs were omitted by the compact snapshot filter and are supplied by the unchanged original delivery included here.
+
+The nested original evidence verifies all 775 payloads and all 128 declared numerical-source copies. Original history prefixes are unchanged. New result seals, committed history pointers, endpoint declarations and parent-copy hashes agree. Migration receipts report byte-equal optimizer arrays/scalars and successful CPU metric replays. Recorded independent CPU/CUDA gradient audits all pass.
+
+There are 36 declared local NPZ files in this continuation. Their contents were not uploaded, so this assessment independently verifies the compact declarations and receipts, not the actual local full-field bytes or new field metrics. No solver steps, source modification, GitHub access or remote publication was performed here. The workstation is needed for the proposed field diagnosis, not to complete this compact-evidence assessment.
+
+## Included files
+
+- `ASSESSMENT.html` and `ASSESSMENT.md`: browser/readable assessment.
+- `ENDPOINTS.csv` and `ENDPOINTS.json`: exact values and comparisons.
+- `VALIDATION.json`: verification, all 48 replayed decisions and 18 independent refits.
+- `review.py`: read-only reproduction using Python, NumPy and SciPy.
+- `figures/`: high-resolution PNG and SVG plots.
+- `data/`: unchanged completed evidence and original delivered handover.
+</pre></html>

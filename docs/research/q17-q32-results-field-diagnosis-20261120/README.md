@@ -9,3 +9,5 @@ The corrected continuation completed with 225 additional attempts. All six candi
 This record includes all non-field files, logs, telemetry and the full executed handover, not only the compact ZIP filter. The 36 float64 NPZ files remain local with their original hashes; preflight additionally verifies Q2, for 37 field hash/CRC checks. No remote full-field archive is claimed. Existing earlier graphics and findings are preserved.
 
 The planned diagnosis has zero optimizer steps and zero physical-time steps. It compares Q2, Q21 parent/endpoint and Q22 parent/endpoint without resampling or changing gates, then reconciles differences in field identity, operator, grid and metric definitions. No claim of a resolved same-field disagreement is made before replay.
+
+Field diagnosis (complete_pending_review): [browser report](diagnosis/20261120t102323z-20c8c4fa/complete_pending_review-c2d762d4/REPORT.html) · [claim reconciliation](diagnosis/20261120t102323z-20c8c4fa/complete_pending_review-c2d762d4/RECONCILIATION.json).

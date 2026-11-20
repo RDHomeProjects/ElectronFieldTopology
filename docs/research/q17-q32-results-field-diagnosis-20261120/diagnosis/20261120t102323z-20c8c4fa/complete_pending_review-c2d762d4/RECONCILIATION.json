@@ -1,0 +1,94 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-20T10:48:47.703952+00:00",
+    "melbourne": "2026-11-20T21:48:47.703952+11:00"
+  },
+  "claims": [
+    {
+      "comparison": "Earlier Q2 stationary admission versus current high-Q failures",
+      "status": "positive_control_reproduced",
+      "reason": "Q2 and Q17\u2013Q32 are different sectors and retained configurations. The earlier positive Q2 result is preserved; it is not disproved by failures of these high-Q seeds.",
+      "q2_source_sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930",
+      "earlier_q2_metrics": {
+        "energy": 1.99948549715528,
+        "relative_force_l2": 1.1542460483787707e-05,
+        "acceleration_max": 6.636497024101145e-05,
+        "acceleration_rms": 8.366182125980412e-07,
+        "minimum_corner_cone": 0.9338021913610102,
+        "hopf_integral": -1.9961557335587894,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3972169307717207,
+        "mean_topological_b": [
+          -1.1953179288986849e-18,
+          2.0126580464510174e-17,
+          -6.18706716583301e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0003015441669190186,
+        "guard_fraction": 0.0006463789224437667
+      }
+    },
+    {
+      "comparison": "Earlier small cell-energy residual versus D4 stationarity",
+      "status": "different_operator_and_metric_verified_by_prior_same_field_record",
+      "reason": "A recorded same-field Q17 comparison already showed a small historical cell residual alongside failed D4 stationarity. The residual definitions are not numerically interchangeable.",
+      "same_field_sha256": "3e3ce644e184fc8702b13bb001e30708b785019f55ced3ecf2c28f75c9638216",
+      "cell_energy": 11.001911455703274,
+      "cell_tangent_gradient_component_rms": 0.0009666328844385231,
+      "d4_energy": 10.980248708635992,
+      "d4_force_ratio": 0.12457705418196816,
+      "d4_acceleration_max": 12.35389398467288,
+      "scope": "Authenticated prior comparison, not a new replay of the native Q17 full field in this diagnosis"
+    },
+    {
+      "comparison": "Earlier Q22 benchmark versus current Q22 cable endpoint",
+      "status": "different_checkpoint_geometry_and_metric",
+      "historical_field_sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1",
+      "current_field_sha256": "af524854573a78415b9fdc80ed1e4b841096c74fbb45f24fc6aa7e2f8c3625c3",
+      "historical_nodes": 129,
+      "historical_length": 15.36,
+      "current_nodes": 161,
+      "current_length": 23.04,
+      "reason": "Equal Q labels do not identify the same configuration. The historical 129-grid/15.36-box native checkpoint is not the current 161-grid/23.04-box cable-family checkpoint; current force is a normalized D4 ratio."
+    },
+    {
+      "comparison": "Energy improvement versus force/acceleration admission",
+      "status": "different_observables",
+      "reason": "The measured energy decreases while residuals oscillate or rebound. Energy descent is preserved as a finding but does not imply either stationarity gate passes."
+    },
+    {
+      "comparison": "500-attempt ceiling versus stopping below 300",
+      "status": "ceiling_not_fixed_execution_length",
+      "additional_attempts": 225,
+      "unused_additional_attempts": 1513,
+      "reason": "All six reached the corrected registered joint-progress stopping condition. No production observations were obtained in the 300\u2013500 range."
+    },
+    {
+      "comparison": "Boundary fractions versus D4 total static action",
+      "status": "density_definitions_distinguished_without_changing_gates",
+      "reason": "Registered tail/guard fractions use continuum energy_density; the D4 total action uses hamiltonian_density with its sigma correction. Both densities are reported on identical fields. A diagnostic density comparison does not replace the registered gates."
+    }
+  ],
+  "parent_endpoint_comparisons": [
+    {
+      "seed": "q21-axial-7-3",
+      "numerator_factor_endpoint_over_parent": 0.36138067988879946,
+      "denominator_factor_endpoint_over_parent": 1.0048177884479597,
+      "force_ratio_factor_reconstructed": 0.3596479720437549,
+      "endpoint_acceleration_peak_in_guard": false,
+      "endpoint_guard_force_squared_fraction": 1.5683141456049755e-06,
+      "scope": "Exact normalization decomposition and measured localization; these do not alone prove boundary causation"
+    },
+    {
+      "seed": "q22-cable-source-family",
+      "numerator_factor_endpoint_over_parent": 1.1313880834246415,
+      "denominator_factor_endpoint_over_parent": 1.0014191821384524,
+      "force_ratio_factor_reconstructed": 1.1297847131394574,
+      "endpoint_acceleration_peak_in_guard": false,
+      "endpoint_guard_force_squared_fraction": 4.7663494895591915e-06,
+      "scope": "Exact normalization decomposition and measured localization; these do not alone prove boundary causation"
+    }
+  ],
+  "unresolved": "No exact prior assertion was specified by the user. The named documented comparisons are assessed here; unlisted earlier assertions remain unassessed until their field, operator, metric, gate and provenance are identified.",
+  "genuine_contradiction_test": "A disagreement is unexplained only after matching the exact field bytes, operator/source, grid/box, boundary prescription, metric definition, threshold and measurement stage. A failed same-field Q2 replay is a blocking discrepancy, not something to explain away."
+}

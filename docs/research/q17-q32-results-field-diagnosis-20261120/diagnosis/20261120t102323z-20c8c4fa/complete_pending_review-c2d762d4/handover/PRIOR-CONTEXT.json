@@ -1,0 +1,148 @@
+{
+  "q2": {
+    "recorded_at": {
+      "utc": "2026-11-18T10:59:01.907145+00:00",
+      "melbourne": "2026-11-18T21:59:01.907145+11:00"
+    },
+    "status": "control_pass",
+    "source": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/rest/q2-reference/latest.npz",
+    "sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930",
+    "metrics": {
+      "energy": 1.99948549715528,
+      "relative_force_l2": 1.1542460483787707e-05,
+      "acceleration_max": 6.636497024101145e-05,
+      "acceleration_rms": 8.366182125980412e-07,
+      "minimum_corner_cone": 0.9338021913610102,
+      "hopf_integral": -1.9961557335587894,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3972169307717207,
+      "mean_topological_b": [
+        -1.1953179288986849e-18,
+        2.0126580464510174e-17,
+        -6.18706716583301e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0003015441669190186,
+      "guard_fraction": 0.0006463789224437667
+    },
+    "nodes": 127,
+    "length": 20.16,
+    "q": 2,
+    "field": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/sources/q2-reference.npz"
+  },
+  "native_operator_comparison": {
+    "recorded_at": {
+      "utc": "2026-11-17T13:41:07.929881+00:00",
+      "melbourne": "2026-11-18T00:41:07.929881+11:00"
+    },
+    "status": "native_operator_comparison_complete",
+    "field": "Q17",
+    "q": 17,
+    "source": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/007-higher-q-motion/20261108t022631z-7e649031/sources/q17.npz",
+    "source_sha256": "3e3ce644e184fc8702b13bb001e30708b785019f55ced3ecf2c28f75c9638216",
+    "shape": [
+      129,
+      129,
+      129
+    ],
+    "lengths": [
+      15.36,
+      15.36,
+      15.36
+    ],
+    "spacing": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "cell_energy": 11.001911455703274,
+    "cell_tangent_gradient_component_rms": 0.0009666328844385231,
+    "d4_metrics": {
+      "energy": 10.980248708635992,
+      "relative_force_l2": 0.12457705418196816,
+      "acceleration_max": 12.35389398467288,
+      "acceleration_rms": 0.055668858000020555,
+      "minimum_corner_cone": 0.9465833230719094,
+      "hopf_integral": -16.985621297093182,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.40642473395068907,
+      "mean_topological_b": [
+        -3.4893081992435254e-07,
+        2.1520039804733562e-05,
+        -1.5253579811895828e-05
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.01767637239126956,
+      "guard_fraction": 0.07504330362972114
+    },
+    "d4_stationary": false,
+    "field_resampled": false,
+    "field_projected": false,
+    "relaxation_steps": 0,
+    "scope": "Identical retained field bytes/grid/box; operator metrics have different definitions. Individual D4 failure does not block other families."
+  },
+  "anchors": {
+    "Q2": {
+      "archive_sha256": "c066b7f2bab8308cf68945b0b6e5de837585775647634ffd721b3e84bee87517",
+      "checkpoint": "rest/q2-reference/latest.npz",
+      "checkpoint_sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930",
+      "nodes": 127,
+      "length": 20.16,
+      "field_key": "field",
+      "expected_metrics": {
+        "energy": 1.99948549715528,
+        "relative_force_l2": 1.1542460483789047e-05,
+        "acceleration_max": 6.636497024101145e-05,
+        "acceleration_rms": 8.366182125980412e-07,
+        "minimum_corner_cone": 0.9338021913610102,
+        "hopf_integral": -1.9961557335587894,
+        "unit_error": 2.220446049250313e-16,
+        "max_neighbour_angle": 0.3972169307717207,
+        "mean_topological_b": [
+          -1.1953179288986849e-18,
+          2.0126580464510174e-17,
+          -6.18706716583301e-06
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0003015441669190186
+      }
+    },
+    "Q17": {
+      "q": 17,
+      "nodes": 129,
+      "spacing": 0.12,
+      "length": 15.36,
+      "sha256": "3e3ce644e184fc8702b13bb001e30708b785019f55ced3ecf2c28f75c9638216",
+      "energy": 11.001911455714588,
+      "cpu_residual": 0.0009666328844385231,
+      "path": "ElectronFieldTopology-q18-study/artifacts/q18-neighbours-20261102T022100+1100-165739/cases/q17-neighbour-129-pass0002/final.npz"
+    },
+    "Q22": {
+      "q": 22,
+      "nodes": 129,
+      "spacing": 0.12,
+      "length": 15.36,
+      "sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1",
+      "energy": 12.591379809579184,
+      "cpu_residual": 0.0008815516255655406,
+      "path": "ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz"
+    }
+  },
+  "parent_results": {
+    "recorded_at": {
+      "utc": "2026-11-17T11:53:17.263945+00:00",
+      "melbourne": "2026-11-17T22:53:17.263945+11:00"
+    },
+    "study_id": "s5-b-016",
+    "study_slug": "higher-q-reconciliation-motion-hypothesis",
+    "source_commit": "dfcdd9ef3509cf0b3e6970986c8458d69f084b27",
+    "measurement_id": "20261117t114258z-f6c4cae0",
+    "original_collection_id": "20261117t082634z-ee428350",
+    "assessment_id": "20261117t115317z-a784e58f",
+    "evidence_sha256": "62ac6afb159d91664fe36bd3d6b52732cb9294d98ab5e527a5c28d3a4afec24e",
+    "original_evidence_sha256": "12d331160bff607d89250dc05811659aee11db5795b0ad1af4b9299de8c28893",
+    "production_started": false,
+    "relaxation_steps": 0,
+    "physical_time_steps": 0
+  }
+}
