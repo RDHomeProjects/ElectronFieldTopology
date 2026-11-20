@@ -1,0 +1,194 @@
+{
+  "iteration": 277,
+  "remaining_attempts": 223,
+  "fit_epoch_start": 200,
+  "plateau_epoch": 200,
+  "policy_version": 2,
+  "models": {
+    "relative_force_l2": {
+      "accepted": [
+        {
+          "model": "quadratic",
+          "coefficients": [
+            0.6297128977457666,
+            -1.0921348651602785,
+            1.4633740357231022
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 0.003899558023413424,
+          "held_out_relative_error": 0.18354230935178262,
+          "validation_errors": [
+            0.20557462360714723,
+            0.161509995096418
+          ],
+          "score": 0.18954230935178262
+        },
+        {
+          "model": "linear",
+          "coefficients": [
+            0.3880435466126556,
+            0.4002077083111744
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 0.003899558023413424,
+          "held_out_relative_error": 0.19875230248177644,
+          "validation_errors": [
+            0.2226147221715106,
+            0.17488988279204232
+          ],
+          "score": 0.20275230248177645
+        }
+      ],
+      "rejected": [
+        {
+          "model": "exponential_floor",
+          "coefficients": [
+            0.5931497153329665,
+            3.369814862378243e-08,
+            4.132196779371521e-05
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 0.003899558023413424,
+          "held_out_relative_error": 0.3821739671957379,
+          "validation_errors": [
+            0.38772896434207266,
+            0.3766189700494031
+          ],
+          "score": 0.3881739671957379,
+          "reason": "forward prediction error exceeds limit"
+        }
+      ],
+      "reason": "forward validation; model spread is not a confidence interval"
+    },
+    "acceleration_max": {
+      "accepted": [
+        {
+          "model": "quadratic",
+          "coefficients": [
+            0.8877597525313835,
+            -0.5369800633191162,
+            0.60048486394379
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 0.04234401724117608,
+          "held_out_relative_error": 0.05244669837490512,
+          "validation_errors": [
+            0.060077506741723595,
+            0.04481589000808664
+          ],
+          "score": 0.05844669837490512
+        },
+        {
+          "model": "linear",
+          "coefficients": [
+            0.7885924966610536,
+            0.07539182883743845
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 0.04234401724117608,
+          "held_out_relative_error": 0.09253167662876889,
+          "validation_errors": [
+            0.09868421674177424,
+            0.08637913651576354
+          ],
+          "score": 0.0965316766287689
+        },
+        {
+          "model": "exponential_floor",
+          "coefficients": [
+            0.8272307312603151,
+            5.0705971125200024e-09,
+            8.113205238412203e-05
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 0.04234401724117608,
+          "held_out_relative_error": 0.11383989030290682,
+          "validation_errors": [
+            0.1134154761894763,
+            0.11426430441633735
+          ],
+          "score": 0.11983989030290683
+        }
+      ],
+      "rejected": [],
+      "reason": "forward validation; model spread is not a confidence interval"
+    },
+    "energy": {
+      "accepted": [
+        {
+          "model": "linear",
+          "coefficients": [
+            1.000000594055306,
+            -8.92582041110239e-06
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 10.852761626220714,
+          "held_out_relative_error": 1.234459128439407e-06,
+          "validation_errors": [
+            1.3108003238626694e-06,
+            1.1581179330161446e-06
+          ],
+          "score": 0.0040012344591284395
+        },
+        {
+          "model": "quadratic",
+          "coefficients": [
+            0.9999996484587932,
+            -3.08662761565989e-06,
+            -5.725845578559097e-06
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 10.852761626220714,
+          "held_out_relative_error": 2.2782680274364746e-07,
+          "validation_errors": [
+            3.3486906516453687e-07,
+            1.2078454032275804e-07
+          ],
+          "score": 0.006000227826802744
+        },
+        {
+          "model": "exponential_floor",
+          "coefficients": [
+            0.9999252688122063,
+            7.540334028188348e-05,
+            0.12573203128924332
+          ],
+          "origin": 252.0,
+          "scale": 25.0,
+          "normal": 10.852761626220714,
+          "held_out_relative_error": 1.3476081957274675e-06,
+          "validation_errors": [
+            1.4316351118262008e-06,
+            1.2635812796287342e-06
+          ],
+          "score": 0.006001347608195728
+        }
+      ],
+      "rejected": [],
+      "reason": "forward validation; model spread is not a confidence interval"
+    }
+  },
+  "gate_pass": false,
+  "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+  "recent_improvement": {
+    "relative_force_l2": -0.22493498783406046,
+    "acceleration_max": -0.13147873606199928
+  },
+  "recent_joint_progress": false,
+  "energy_nonincreasing": true,
+  "progress_evidence_sufficient": true,
+  "distinct_epoch_observations": 16,
+  "plateau_count": 3,
+  "action": "stop",
+  "reason": "repeated absence of measured joint progress after exploratory allocation; not a physical Q rejection",
+  "steps": 0,
+  "observe": 2
+}

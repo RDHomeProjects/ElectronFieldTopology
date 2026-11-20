@@ -1,0 +1,3477 @@
+[
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T00:38:33.167472+00:00",
+      "melbourne": "2026-11-20T11:38:33.167472+11:00"
+    },
+    "decision_id": "cae0f1291dfc23ed8aa56c646ef5e2a5a8673359abbdd4b7e2b7ec8b19bea632",
+    "iteration": 210,
+    "remaining_attempts": 290,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [],
+        "rejected": [],
+        "reason": "insufficient distinct recent observations"
+      },
+      "acceleration_max": {
+        "accepted": [],
+        "rejected": [],
+        "reason": "insufficient distinct recent observations"
+      },
+      "energy": {
+        "accepted": [],
+        "rejected": [],
+        "reason": "insufficient distinct recent observations"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": -0.6148559222594651,
+      "acceleration_max": -0.16630366698454538
+    },
+    "recent_joint_progress": null,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": false,
+    "distinct_epoch_observations": 6,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T00:58:04.106042+00:00",
+      "melbourne": "2026-11-20T11:58:04.106042+11:00"
+    },
+    "decision_id": "d7cd38a43e5e2770ae083a36ad0b39775b4be989fe7a3e79ccc1283634731d3c",
+    "iteration": 215,
+    "remaining_attempts": 285,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.3794130893391688,
+              0.4440782016622132
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.2677260990678417,
+            "validation_errors": [
+              0.250340416434116,
+              0.2851117817015674
+            ],
+            "score": 0.27172609906784173,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.42553217180991454,
+              0.13108701325614092,
+              0.3056617498716018
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.32381270651149346,
+            "validation_errors": [
+              0.10938158522998244,
+              0.5382438277930045
+            ],
+            "score": 0.32981270651149347,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.6129652361919173,
+              6.2277423899077135e-09,
+              1.5011210283945255e-05
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.29137126974538596,
+            "validation_errors": [
+              0.4536737102160053,
+              0.1290688292747667
+            ],
+            "score": 0.29737126974538597,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.736694828354558,
+              2.1655648240473963e-08,
+              0.00013890804021470427
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.1729177236807659,
+            "validation_errors": [
+              0.2964986905376355,
+              0.04933675682389635
+            ],
+            "score": 0.17891772368076592
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6714496093429817,
+              0.12405833275094359
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.2428743942832577,
+            "validation_errors": [
+              0.29420766269583976,
+              0.19154112587067565
+            ],
+            "score": 0.2468743942832577
+          }
+        ],
+        "rejected": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.6989345209136534,
+              -0.06247042443318016,
+              0.1821607394528433
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.344116176901195,
+            "validation_errors": [
+              0.33734180308832545,
+              0.3508905507140645
+            ],
+            "score": 0.350116176901195,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              1.000002675428663,
+              -1.9467041607238568e-05
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 3.5746756349921553e-06,
+            "validation_errors": [
+              1.869200252221065e-06,
+              5.280151017763246e-06
+            ],
+            "score": 0.004003574675634993
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.9999999411076259,
+              -9.103326460045221e-07,
+              -1.812215916321732e-05
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 2.393885129678348e-06,
+            "validation_errors": [
+              2.1412078122889055e-06,
+              2.6465624470677906e-06
+            ],
+            "score": 0.006002393885129679
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9997918916783901,
+              0.00021084806949254195,
+              0.09622696374901026
+            ],
+            "origin": 200.0,
+            "scale": 15.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 3.858526959320692e-06,
+            "validation_errors": [
+              2.1395319331802365e-06,
+              5.577521985461148e-06
+            ],
+            "score": 0.006003858526959321
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": -0.4092014995467934,
+      "acceleration_max": 0.030949859314776708
+    },
+    "recent_joint_progress": false,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 9,
+    "plateau_count": 1,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:10:51.601013+00:00",
+      "melbourne": "2026-11-20T12:10:51.601013+11:00"
+    },
+    "decision_id": "7106b49326f13c33f6c9baa65eb513734c16c1050c48551bc1bb9f88a37e09de",
+    "iteration": 220,
+    "remaining_attempts": 280,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.5334746277128429,
+              0.04863690287643376
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 1.0707417886366146,
+            "validation_errors": [
+              1.0368196313749691,
+              1.1046639458982603
+            ],
+            "score": 1.0747417886366146,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.31235275340179,
+              1.4866709769093613,
+              -1.4121098372482728
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.5322935750584905,
+            "validation_errors": [
+              0.679590214951227,
+              0.3849969351657542
+            ],
+            "score": 0.5382935750584905,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.5592114545824906,
+              1.962553100749059e-08,
+              0.0002442899310025604
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.6773195152446838,
+            "validation_errors": [
+              0.5454581081862456,
+              0.8091809223031219
+            ],
+            "score": 0.6833195152446838,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.7329483030384488,
+              6.87269101281835e-09,
+              0.00011979342068749134
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.07754903315527037,
+            "validation_errors": [
+              0.08356731814942535,
+              0.07153074816111538
+            ],
+            "score": 0.08354903315527037
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.6609761624269312,
+              0.33661904455228825,
+              -0.277681552922707
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.16405862168936497,
+            "validation_errors": [
+              0.24060715767530372,
+              0.08751008570342621
+            ],
+            "score": 0.17005862168936497
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.7044582371382888,
+              0.05383967123430158
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.16890654889142664,
+            "validation_errors": [
+              0.1986581039064071,
+              0.1391549938764462
+            ],
+            "score": 0.17290654889142665
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              1.000004851602302,
+              -3.389859814228849e-05
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 3.6187554017544805e-06,
+            "validation_errors": [
+              4.690937714977872e-06,
+              2.5465730885310893e-06
+            ],
+            "score": 0.004003618755401755
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.000000363412052,
+              -4.710303090851677e-06,
+              -2.8662101488793848e-05
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 3.7732059543683627e-06,
+            "validation_errors": [
+              3.6275071366889152e-06,
+              3.91890477204781e-06
+            ],
+            "score": 0.006003773205954369
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.999360384733519,
+              0.0006445779944068718,
+              0.05395203949173313
+            ],
+            "origin": 200.0,
+            "scale": 20.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 3.981719986399186e-06,
+            "validation_errors": [
+              5.165852685646495e-06,
+              2.797587287151878e-06
+            ],
+            "score": 0.0060039817199864
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.5370433582689557,
+      "acceleration_max": 0.16732356289817554
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 12,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:19:25.197019+00:00",
+      "melbourne": "2026-11-20T12:19:25.197019+11:00"
+    },
+    "decision_id": "6b3d0cda6a84c6b2ad6794203ebf8c8b6dfbe6236f865c7a23a787fe868f29c2",
+    "iteration": 225,
+    "remaining_attempts": 275,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              2.657902847352105e-11,
+              0.5718502686910127,
+              0.1512271403609
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.17518855296421262,
+            "validation_errors": [
+              0.34598775162990514,
+              0.004389354298520104
+            ],
+            "score": 0.18118855296421263
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.578059275240827,
+              -0.09396024409664717
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.1791673516193422,
+            "validation_errors": [
+              0.334263356743979,
+              0.024071346494705402
+            ],
+            "score": 0.1831673516193422
+          }
+        ],
+        "rejected": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.38772373489304907,
+              1.1037351298939877,
+              -1.1773285257083026
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.6401050176235754,
+            "validation_errors": [
+              0.6677693725593538,
+              0.6124406626877971
+            ],
+            "score": 0.6461050176235754,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.6528385281215884,
+              0.5180311110039214,
+              -0.5856009087423022
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.05530436959788032,
+            "validation_errors": [
+              0.025242468038057922,
+              0.08536627115770272
+            ],
+            "score": 0.06130436959788032
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.7475110540646417,
+              -0.07770022828679139
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.1720379072616881,
+            "validation_errors": [
+              0.23313939869639358,
+              0.11093641582698266
+            ],
+            "score": 0.1760379072616881
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              2.8229249969725892e-09,
+              0.7456879798711257,
+              0.10319576154738631
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.17376149960180726,
+            "validation_errors": [
+              0.2332648781853707,
+              0.11425812101824381
+            ],
+            "score": 0.17976149960180726
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              1.000004644355493,
+              -4.175395592222208e-05
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 1.3052680113042565e-06,
+            "validation_errors": [
+              9.102522339358301e-07,
+              1.700283788672683e-06
+            ],
+            "score": 0.004001305268011304
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9992293440106191,
+              0.0007754553368729476,
+              0.055292946456937234
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 9.798623366142305e-07,
+            "validation_errors": [
+              5.670105602673683e-07,
+              1.3927141129610927e-06
+            ],
+            "score": 0.0060009798623366145
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.000002584397615,
+              -2.8791573718966766e-05,
+              -1.2741956477261716e-05
+            ],
+            "origin": 200.0,
+            "scale": 25.0,
+            "normal": 12.348020067910149,
+            "held_out_relative_error": 6.184063385959235e-06,
+            "validation_errors": [
+              7.031835586118755e-06,
+              5.336291185799714e-06
+            ],
+            "score": 0.006006184063385959
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.32658153257399664,
+      "acceleration_max": 0.04138422924239584
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 15,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:26:25.782998+00:00",
+      "melbourne": "2026-11-20T12:26:25.782998+11:00"
+    },
+    "decision_id": "66b3a32d3e8a70d4e2233bed500667f76931255c2181160dd88a8055295d99c4",
+    "iteration": 230,
+    "remaining_attempts": 270,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.5275407683940322,
+              0.48396335545225,
+              -0.7044513357959413
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.17738941968994698,
+            "validation_errors": [
+              0.10464080059781958,
+              0.25013803878207436
+            ],
+            "score": 0.183389419689947
+          }
+        ],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6446559940494558,
+              -0.23492537164226052
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.5514227065016527,
+            "validation_errors": [
+              0.4205280803230328,
+              0.6823173326802726
+            ],
+            "score": 0.5554227065016527,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              5.218702127398632e-13,
+              0.6393159289378554,
+              0.40122438863802745
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.5834208839417969,
+            "validation_errors": [
+              0.4388171322988209,
+              0.728024635584773
+            ],
+            "score": 0.5894208839417969,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.7089349169265848,
+              0.2013644248205351,
+              -0.3003795352437864
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.036221663770035814,
+            "validation_errors": [
+              0.027585608310841163,
+              0.044857719229230465
+            ],
+            "score": 0.04222166377003581
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.7588730961375014,
+              -0.1051712445208568
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.11503722307982514,
+            "validation_errors": [
+              0.10177527577762237,
+              0.1282991703820279
+            ],
+            "score": 0.11903722307982514
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              1.4127649970963777e-15,
+              0.7582808143667965,
+              0.14418892626684085
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.11747639781031849,
+            "validation_errors": [
+              0.10340359045334688,
+              0.1315492051672901
+            ],
+            "score": 0.1234763978103185
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              1.0000013775606424,
+              -4.491823597099236e-05
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 12.347996193362356,
+            "held_out_relative_error": 1.5569500276733272e-06,
+            "validation_errors": [
+              1.104503555378728e-06,
+              2.0093964999679265e-06
+            ],
+            "score": 0.004001556950027674
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9998632584402871,
+              0.0001396322519187735,
+              0.3910647787685138
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 12.347996193362356,
+            "held_out_relative_error": 5.622114265051266e-07,
+            "validation_errors": [
+              5.93250660735115e-07,
+              5.311721922751381e-07
+            ],
+            "score": 0.006000562211426505
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.0000029800223982,
+              -5.475463158293735e-05,
+              9.63885197749752e-06
+            ],
+            "origin": 204.0,
+            "scale": 26.0,
+            "normal": 12.347996193362356,
+            "held_out_relative_error": 6.480600035924414e-07,
+            "validation_errors": [
+              1.0060717233888212e-06,
+              2.900482837960615e-07
+            ],
+            "score": 0.006000648060003592
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.44969228903767516,
+      "acceleration_max": 0.2505481145472116
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:29:03.918341+00:00",
+      "melbourne": "2026-11-20T12:29:03.918341+11:00"
+    },
+    "decision_id": "bee059309b16b5b104b6402f4da3a68609dbf79871c93fc38f4f8846e62c85dc",
+    "iteration": 235,
+    "remaining_attempts": 265,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.7106599524044034,
+              -0.4116903961853457
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.22171033662684064,
+            "validation_errors": [
+              0.042646892420111125,
+              0.4007737808335702
+            ],
+            "score": 0.22571033662684065
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.3194293741130854,
+              0.5027483191507864,
+              2.5889663667927287
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.23675374393509105,
+            "validation_errors": [
+              0.23968977538592173,
+              0.23381771248426036
+            ],
+            "score": 0.24275374393509105
+          }
+        ],
+        "rejected": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.8159941259804202,
+              -1.0621438812130732,
+              0.6378272377641786
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 0.00866730050016218,
+            "held_out_relative_error": 0.3240606917593553,
+            "validation_errors": [
+              0.4807527097504584,
+              0.16736867376825224
+            ],
+            "score": 0.3300606917593553,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.8107713016687657,
+              -0.2550841024879766
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.04353865988117636,
+            "validation_errors": [
+              0.043223063546887486,
+              0.04385425621546524
+            ],
+            "score": 0.047538659881176365
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              3.2388171124131576e-19,
+              0.8181162710047715,
+              0.3735116932162698
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.06539960787139404,
+            "validation_errors": [
+              0.07180297026730187,
+              0.05899624547548621
+            ],
+            "score": 0.07139960787139404
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.8095118187271609,
+              -0.24730661640831728,
+              -0.0076265137740431
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 0.07377044601630366,
+            "held_out_relative_error": 0.06646696669638759,
+            "validation_errors": [
+              0.0790251430778862,
+              0.05390879031488898
+            ],
+            "score": 0.0724669666963876
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999966555484717,
+              -3.819006499164469e-05
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 12.347905689626327,
+            "held_out_relative_error": 3.636402523004914e-06,
+            "validation_errors": [
+              3.5230547122379873e-06,
+              3.749750333771841e-06
+            ],
+            "score": 0.004003636402523005
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.999946092514176,
+              5.49789124171904e-05,
+              1.2646878803343116
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 12.347905689626327,
+            "held_out_relative_error": 6.972311646853763e-07,
+            "validation_errors": [
+              1.067467191873371e-06,
+              3.269951374973815e-07
+            ],
+            "score": 0.006000697231164686
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.0000005030483003,
+              -6.1948922987445e-05,
+              2.329766404065904e-05
+            ],
+            "origin": 210.0,
+            "scale": 25.0,
+            "normal": 12.347905689626327,
+            "held_out_relative_error": 1.270518298622255e-06,
+            "validation_errors": [
+              1.773339655933152e-06,
+              7.676969413113579e-07
+            ],
+            "score": 0.006001270518298622
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": -0.3002204179120714,
+      "acceleration_max": 0.10530862940951008
+    },
+    "recent_joint_progress": false,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 1,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:30:43.085207+00:00",
+      "melbourne": "2026-11-20T12:30:43.085207+11:00"
+    },
+    "decision_id": "3b78a2c2f2275a2fb4fef7a35d873bc5d616e5d932b39d747f8df0c00e8f7182",
+    "iteration": 240,
+    "remaining_attempts": 260,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.7408931138093852,
+              -0.5374690065672438,
+              0.274927169556895
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.06787510257562043,
+            "validation_errors": [
+              0.04402973294422155,
+              0.0917204722070193
+            ],
+            "score": 0.07387510257562044
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6954901826012704,
+              -0.25709945666538137
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.11723621830465206,
+            "validation_errors": [
+              0.06323343334804096,
+              0.17123900326126315
+            ],
+            "score": 0.12123621830465206
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.5280173850120602,
+              0.43081699408113144,
+              18.088594763615045
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.11703817679782813,
+            "validation_errors": [
+              0.1870547389901333,
+              0.04702161460552294
+            ],
+            "score": 0.12303817679782814
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.8742899431627035,
+              -0.2676996241975679
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.03646508416182591,
+            "validation_errors": [
+              0.03902384880975003,
+              0.03390631951390179
+            ],
+            "score": 0.04046508416182591
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              7.547125714146725e-18,
+              0.8804645148947052,
+              0.35851413080247224
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.03627383680059871,
+            "validation_errors": [
+              0.05702014885159121,
+              0.015527524749606211
+            ],
+            "score": 0.04227383680059871
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.858528424829417,
+              -0.17037000949454909,
+              -0.09544030546016911
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.05057822786172202,
+            "validation_errors": [
+              0.01951018549002764,
+              0.08164627023341639
+            ],
+            "score": 0.056578227861722015
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.999995645533204,
+              -2.8622521723873215e-05
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 12.347769431144954,
+            "held_out_relative_error": 3.1610354958402342e-06,
+            "validation_errors": [
+              3.089767063176556e-06,
+              3.232303928503912e-06
+            ],
+            "score": 0.0040031610354958405
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.9999979062638146,
+              -4.258285438871377e-05,
+              1.3689342323735927e-05
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 12.347769431144954,
+            "held_out_relative_error": 9.25491576633813e-07,
+            "validation_errors": [
+              9.560174046422541e-07,
+              8.949657486253719e-07
+            ],
+            "score": 0.006000925491576634
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9999504745003588,
+              4.761094286685327e-05,
+              0.9521211282076304
+            ],
+            "origin": 215.0,
+            "scale": 25.0,
+            "normal": 12.347769431144954,
+            "held_out_relative_error": 1.0586972005707758e-06,
+            "validation_errors": [
+              1.0452616959652034e-06,
+              1.072132705176348e-06
+            ],
+            "score": 0.006001058697200571
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.4939394899926812,
+      "acceleration_max": 0.37691212543426283
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:32:23.980119+00:00",
+      "melbourne": "2026-11-20T12:32:23.980119+11:00"
+    },
+    "decision_id": "5ce3cdf2cf9af54e4bae16e73cbd07e054b639aa31e86f8ec4a199b853ff2537",
+    "iteration": 245,
+    "remaining_attempts": 255,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.5957938531447315,
+              -0.17740117400343958
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.045542026451792644,
+            "validation_errors": [
+              0.009131017563658958,
+              0.08195303533992633
+            ],
+            "score": 0.04954202645179265
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              1.0591220563128966e-19,
+              0.5950704369948705,
+              0.3301251944880127
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.0705504874304922,
+            "validation_errors": [
+              0.033885012683574155,
+              0.10721596217741025
+            ],
+            "score": 0.07655048743049221
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.5329618116026169,
+              0.21059560809483444,
+              -0.3804652007923094
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.20637927401892936,
+            "validation_errors": [
+              0.2843846766467353,
+              0.12837387139112344
+            ],
+            "score": 0.21237927401892936
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.8117751394936622,
+              -0.24941347224360078
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.03256222930816274,
+            "validation_errors": [
+              0.01871533896074179,
+              0.0464091196555837
+            ],
+            "score": 0.03656222930816275
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              6.921330825672396e-16,
+              0.8167606926186594,
+              0.35786079605614407
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.03239962958077344,
+            "validation_errors": [
+              0.0007329592581298972,
+              0.06406629990341699
+            ],
+            "score": 0.03839962958077344
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.7902820991271385,
+              -0.11669089479671016,
+              -0.13014623937065006
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.04657046946087203,
+            "validation_errors": [
+              0.09082361852577034,
+              0.0023173203959737207
+            ],
+            "score": 0.05257046946087203
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999987588843581,
+              -2.4079759292378227e-05
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 12.347638250922788,
+            "held_out_relative_error": 2.117960561218184e-06,
+            "validation_errors": [
+              2.5641921798733266e-06,
+              1.6717289425630418e-06
+            ],
+            "score": 0.004002117960561219
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9999620941616066,
+              3.8850291379964674e-05,
+              1.006726840056665
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 12.347638250922788,
+            "held_out_relative_error": 4.0644287568529977e-07,
+            "validation_errors": [
+              3.54280823073077e-07,
+              4.5860492829752247e-07
+            ],
+            "score": 0.006000406442875686
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.00000084363424,
+              -3.6953385958595084e-05,
+              1.2623730867937833e-05
+            ],
+            "origin": 220.0,
+            "scale": 25.0,
+            "normal": 12.347638250922788,
+            "held_out_relative_error": 5.251046222058778e-07,
+            "validation_errors": [
+              1.6329971684292136e-07,
+              8.869095275688342e-07
+            ],
+            "score": 0.006000525104622206
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.29411319242571454,
+      "acceleration_max": 0.21728610318292754
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:34:05.646463+00:00",
+      "melbourne": "2026-11-20T12:34:05.646463+11:00"
+    },
+    "decision_id": "498d28751e191e6f76419ac083bdf8e6aab6817f73b5f689e327be67683ee8c7",
+    "iteration": 250,
+    "remaining_attempts": 250,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6401617015291572,
+              -0.281913817326379
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.2070027364737687,
+            "validation_errors": [
+              0.33564582712093155,
+              0.07835964582660586
+            ],
+            "score": 0.21100273647376871
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.41571842326713593,
+              0.3773471767565534,
+              4.908246467496393
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.22190657064071928,
+            "validation_errors": [
+              0.16400282262843463,
+              0.27981031865300393
+            ],
+            "score": 0.22790657064071929
+          }
+        ],
+        "rejected": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.7404446111986789,
+              -0.9011750301766143,
+              0.607240452912514
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 0.0062925526401269565,
+            "held_out_relative_error": 0.2779145371043865,
+            "validation_errors": [
+              0.015374654819930614,
+              0.5404544193888424
+            ],
+            "score": 0.2839145371043865,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.5224636318363827,
+              0.32552700752943803,
+              2.1855005713843263
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.015684870485850565,
+            "validation_errors": [
+              0.02853293691881412,
+              0.0028368040528870086
+            ],
+            "score": 0.021684870485850563
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.789937513343056,
+              -0.26423618348867506
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.06795923433866632,
+            "validation_errors": [
+              0.05692953233748299,
+              0.07898893633984964
+            ],
+            "score": 0.07195923433866633
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.8455791108018214,
+              -0.607830951937159,
+              0.3369250947442874
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 0.062299300681027285,
+            "held_out_relative_error": 0.07545731988293039,
+            "validation_errors": [
+              0.10781766894294491,
+              0.04309697082291588
+            ],
+            "score": 0.0814573198829304
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999969796920408,
+              -1.956352268381822e-05
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 12.347578207449898,
+            "held_out_relative_error": 2.159003518160735e-06,
+            "validation_errors": [
+              2.525293839584904e-06,
+              1.7927131967365653e-06
+            ],
+            "score": 0.0040021590035181605
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.999973827970175,
+              2.596439767665207e-05,
+              1.548735644688521
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 12.347578207449898,
+            "held_out_relative_error": 5.481134051934044e-07,
+            "validation_errors": [
+              3.1824131197067563e-07,
+              7.779854984161331e-07
+            ],
+            "score": 0.006000548113405194
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.999999284667509,
+              -3.3797073629832166e-05,
+              1.3957257041200049e-05
+            ],
+            "origin": 225.0,
+            "scale": 25.0,
+            "normal": 12.347578207449898,
+            "held_out_relative_error": 8.592232449146603e-07,
+            "validation_errors": [
+              6.651126959386341e-07,
+              1.0533337938906863e-06
+            ],
+            "score": 0.006000859223244915
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.1370110230337912,
+      "acceleration_max": 0.08847445104160145
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:35:43.433272+00:00",
+      "melbourne": "2026-11-20T12:35:43.433272+11:00"
+    },
+    "decision_id": "85748dd9626f9b42586c94e18b9f005cd60f7da21b398ecc313a6836a12fc6f7",
+    "iteration": 255,
+    "remaining_attempts": 245,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6126995709527204,
+              0.032790533869529626
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.6290102157193512,
+            "validation_errors": [
+              0.3815206413332008,
+              0.8764997901055017
+            ],
+            "score": 0.6330102157193512,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.6410188502819683,
+              -0.1420850388703032,
+              0.1714809837759909
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.7975897695291156,
+            "validation_errors": [
+              0.3396950233573899,
+              1.2554845157008414
+            ],
+            "score": 0.8035897695291156,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.6295046022282438,
+              9.264405653244047e-09,
+              0.00027763005355301495
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.5342468026796894,
+            "validation_errors": [
+              0.38290999561977707,
+              0.6855836097396018
+            ],
+            "score": 0.5402468026796894,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6097881754136497,
+              0.021721006772351868
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 0.0641951310789406,
+            "held_out_relative_error": 0.3632710407717107,
+            "validation_errors": [
+              0.4526570993822828,
+              0.2738849821611386
+            ],
+            "score": 0.3672710407717107,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.7075254998604847,
+              -0.5818208557158961,
+              0.5918262379815169
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 0.0641951310789406,
+            "held_out_relative_error": 0.5070135594266361,
+            "validation_errors": [
+              0.3787854420335244,
+              0.6352416768197479
+            ],
+            "score": 0.5130135594266361,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.611364837155422,
+              0.08049546979251314,
+              10.075044472434929
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 0.0641951310789406,
+            "held_out_relative_error": 0.3092873328159473,
+            "validation_errors": [
+              0.42772723880961244,
+              0.1908474268222821
+            ],
+            "score": 0.3152873328159473,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999994068945707,
+              -1.5942671269820377e-05
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 12.347478072908594,
+            "held_out_relative_error": 7.180213286623019e-07,
+            "validation_errors": [
+              6.418902346523703e-07,
+              7.941524226722335e-07
+            ],
+            "score": 0.004000718021328662
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9999542307142741,
+              4.5766073491878173e-05,
+              0.43181645217011816
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 12.347478072908594,
+            "held_out_relative_error": 1.1435565188226631e-06,
+            "validation_errors": [
+              5.178174201608087e-07,
+              1.7692956174845175e-06
+            ],
+            "score": 0.006001143556518823
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.9999999408618125,
+              -1.9239994838744973e-05,
+              3.233317728286958e-06
+            ],
+            "origin": 230.0,
+            "scale": 25.0,
+            "normal": 12.347478072908594,
+            "held_out_relative_error": 1.2360036627986742e-06,
+            "validation_errors": [
+              6.459412949369995e-07,
+              1.826066030660349e-06
+            ],
+            "score": 0.006001236003662798
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.2862240111614233,
+      "acceleration_max": 0.11572598480107461
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:37:24.114712+00:00",
+      "melbourne": "2026-11-20T12:37:24.114712+11:00"
+    },
+    "decision_id": "922dee7a62daf84eca37cabd851f3e5b95ed24dbb24df46b707aa5ecf0cefc6e",
+    "iteration": 260,
+    "remaining_attempts": 240,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.6395316766134647,
+              0.18164971712816214,
+              99.99999999999999
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.24847949109958467,
+            "validation_errors": [
+              0.13577122472800737,
+              0.36118775747116194
+            ],
+            "score": 0.2544794910995847
+          }
+        ],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6074760493289519,
+              0.08470740380345752
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.2654389498274575,
+            "validation_errors": [
+              0.16906832681229916,
+              0.36180957284261595
+            ],
+            "score": 0.26943894982745753,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.7067442874829384,
+              -0.5282880682996665,
+              0.6010963392975243
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.3406147798806229,
+            "validation_errors": [
+              0.3596531312508354,
+              0.32157642851041035
+            ],
+            "score": 0.3466147798806229,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.5448265411932935,
+              0.1553924972319756
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.31942591407328047,
+            "validation_errors": [
+              0.2549551115308195,
+              0.3838967166157415
+            ],
+            "score": 0.3234259140732805,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.6208980766690217,
+              -0.31436004063636075,
+              0.460633958550474
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.37435978656890323,
+            "validation_errors": [
+              0.3587062521908419,
+              0.3900133209469645
+            ],
+            "score": 0.38035978656890324,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.6244651047831036,
+              6.838989636549851e-09,
+              4.564305005251871e-05
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.2868877244760554,
+            "validation_errors": [
+              0.17320494136860007,
+              0.40057050758351065
+            ],
+            "score": 0.2928877244760554,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999997572422253,
+              -1.5211752055846615e-05
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 12.347428980347967,
+            "held_out_relative_error": 2.8915316148175586e-07,
+            "validation_errors": [
+              4.176406834272051e-07,
+              1.6066563953630662e-07
+            ],
+            "score": 0.0040002891531614815
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.9999996384597514,
+              -1.4478253404484517e-05,
+              -7.192603758704908e-07
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 12.347428980347967,
+            "held_out_relative_error": 3.27833585600741e-07,
+            "validation_errors": [
+              2.7037779203145785e-07,
+              3.852893791700241e-07
+            ],
+            "score": 0.0060003278335856005
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9998920676526858,
+              0.00010787156716529395,
+              0.1520597356306346
+            ],
+            "origin": 235.0,
+            "scale": 25.0,
+            "normal": 12.347428980347967,
+            "held_out_relative_error": 3.6765905234541723e-07,
+            "validation_errors": [
+              6.95348984199058e-07,
+              3.996912049177649e-08
+            ],
+            "score": 0.006000367659052345
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": -0.558667966583298,
+      "acceleration_max": -0.6254910991635305
+    },
+    "recent_joint_progress": false,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 1,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:38:17.072528+00:00",
+      "melbourne": "2026-11-20T12:38:17.072528+11:00"
+    },
+    "decision_id": "4a1965304a69a55edbfd0d6996e45e321202a83cd64bf2c5c02db2c437ae4f1b",
+    "iteration": 265,
+    "remaining_attempts": 235,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6272034682734136,
+              -0.00865652509150784
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.4701383770808366,
+            "validation_errors": [
+              0.7967894480688829,
+              0.14348730609279042
+            ],
+            "score": 0.4741383770808366,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.5664739555502002,
+              0.3663568428763217,
+              -0.3677338135952416
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.4987797264229826,
+            "validation_errors": [
+              0.6813355701307623,
+              0.31622388271520296
+            ],
+            "score": 0.5047797264229826,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              8.69387548257768e-09,
+              0.627023164455539,
+              0.013305444883761383
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.41915680397639593,
+            "validation_errors": [
+              0.6971919856634169,
+              0.141121622289375
+            ],
+            "score": 0.42515680397639594,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.5172889083353113,
+              0.5381915994232905,
+              -0.5360016794051566
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.22305505306651396,
+            "validation_errors": [
+              0.30031670436964153,
+              0.1457934017633864
+            ],
+            "score": 0.22905505306651397
+          }
+        ],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6058070690419782,
+              -0.00842061734551097
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.35070901056143167,
+            "validation_errors": [
+              0.38119290743125617,
+              0.3202251136916072
+            ],
+            "score": 0.35470901056143167,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              1.0646773903872114e-09,
+              0.6055435426399167,
+              0.013115452780960308
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.26990586171758046,
+            "validation_errors": [
+              0.26391837671098994,
+              0.275893346724171
+            ],
+            "score": 0.27590586171758047,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999996681764142,
+              -1.5387370823044113e-05
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 12.34739340461143,
+            "held_out_relative_error": 2.1850548172782958e-07,
+            "validation_errors": [
+              4.6287535824684424e-08,
+              3.9072342763097473e-07
+            ],
+            "score": 0.0040002185054817275
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9998918864939796,
+              0.00010796925687020647,
+              0.15383443143556702
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 12.34739340461143,
+            "held_out_relative_error": 2.0477352120056842e-07,
+            "validation_errors": [
+              2.218613695307472e-07,
+              1.8768567287038965e-07
+            ],
+            "score": 0.0060002047735212005
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.9999995907227689,
+              -1.4909083557450786e-05,
+              -4.690030142406609e-07
+            ],
+            "origin": 240.0,
+            "scale": 25.0,
+            "normal": 12.34739340461143,
+            "held_out_relative_error": 5.281721703228064e-07,
+            "validation_errors": [
+              4.310541173871838e-07,
+              6.25290223258429e-07
+            ],
+            "score": 0.006000528172170323
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.10150760604550921,
+      "acceleration_max": 0.26023614879593254
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:39:07.761423+00:00",
+      "melbourne": "2026-11-20T12:39:07.761423+11:00"
+    },
+    "decision_id": "5e1eee90408e89db762d22453c7f6e567cb53b74a28308f9bfa3ecc6e8be8638",
+    "iteration": 270,
+    "remaining_attempts": 230,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.5844747285237573,
+              0.30718170958969926,
+              -0.3108353649581641
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.07244864375940038,
+            "validation_errors": [
+              0.07417665608496446,
+              0.0707206314338363
+            ],
+            "score": 0.07844864375940039
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              1.227013022994369e-11,
+              0.6356385797458388,
+              0.014986382955229239
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.07503513483465735,
+            "validation_errors": [
+              0.009412287600235257,
+              0.14065798206907942
+            ],
+            "score": 0.08103513483465735
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.635807729605428,
+              -0.009806864174622527
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.09415065165590422,
+            "validation_errors": [
+              0.03041920208701467,
+              0.15788210122479376
+            ],
+            "score": 0.09815065165590423
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.5322769644926119,
+              0.5672067701599359,
+              -0.6440119537942626
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.047490575811311844,
+            "validation_errors": [
+              0.008613526553184188,
+              0.0863676250694395
+            ],
+            "score": 0.05349057581131184
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6386325148823794,
+              -0.08955386178390161
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.23270375956870087,
+            "validation_errors": [
+              0.28182106799331225,
+              0.1835864511440895
+            ],
+            "score": 0.23670375956870088
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              1.2050437043890656e-15,
+              0.6361047015960114,
+              0.1394314689940613
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.23611656351156016,
+            "validation_errors": [
+              0.2826034468640111,
+              0.1896296801591092
+            ],
+            "score": 0.24211656351156016
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              1.0000008254030521,
+              -1.547362951886198e-05
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 12.347341716580582,
+            "held_out_relative_error": 3.802792322842272e-07,
+            "validation_errors": [
+              4.00419437810406e-07,
+              3.601390267580484e-07
+            ],
+            "score": 0.004000380279232284
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.0000006591943833,
+              -1.4447267375343204e-05,
+              -1.0064389622865882e-06
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 12.347341716580582,
+            "held_out_relative_error": 3.0544624650670264e-07,
+            "validation_errors": [
+              3.848507501740246e-07,
+              2.2604174283938074e-07
+            ],
+            "score": 0.006000305446246507
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9998989963129331,
+              0.00010202647084285365,
+              0.16447770911911153
+            ],
+            "origin": 245.0,
+            "scale": 25.0,
+            "normal": 12.347341716580582,
+            "held_out_relative_error": 6.262678997608625e-07,
+            "validation_errors": [
+              6.684119161614528e-07,
+              5.841238833602723e-07
+            ],
+            "score": 0.006000626267899761
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.1310255043436628,
+      "acceleration_max": 0.14355398693513563
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:39:56.766979+00:00",
+      "melbourne": "2026-11-20T12:39:56.766979+11:00"
+    },
+    "decision_id": "e6f5512f260388547707901bb92e60750a9bee2ab6f55dbe4ed5e055910c359a",
+    "iteration": 275,
+    "remaining_attempts": 225,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.6010710558456283,
+              0.49327432096241186,
+              -0.7730392502985343
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.1795712209865003,
+            "validation_errors": [
+              0.25037226392267325,
+              0.10877017805032736
+            ],
+            "score": 0.1855712209865003
+          }
+        ],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.7287348584412228,
+              -0.2950677952860189
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.5099200069934936,
+            "validation_errors": [
+              0.6842478521562911,
+              0.335592161830696
+            ],
+            "score": 0.5139200069934936,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              3.1520978588717102e-12,
+              0.7249778148543933,
+              0.4612372842177547
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 0.004592734782478746,
+            "held_out_relative_error": 0.5568563747793196,
+            "validation_errors": [
+              0.7170573286963252,
+              0.3966554208623141
+            ],
+            "score": 0.5628563747793196,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.7107633401070018,
+              -0.27963405993127394
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.029442087500854138,
+            "validation_errors": [
+              0.003572347442718393,
+              0.05531182755898988
+            ],
+            "score": 0.03344208750085414
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              8.710832235642796e-20,
+              0.7145490317403335,
+              0.4689723548337348
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.07199246273289285,
+            "validation_errors": [
+              0.04549079560027345,
+              0.09849412986551226
+            ],
+            "score": 0.07799246273289286
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.659407661993733,
+              0.037494547724539966,
+              -0.3109726805883514
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.17183911524368867,
+            "validation_errors": [
+              0.23282551620369374,
+              0.11085271428368361
+            ],
+            "score": 0.17783911524368867
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999997853393354,
+              -1.5391693302554888e-05
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 12.347316636980787,
+            "held_out_relative_error": 7.951417943926588e-07,
+            "validation_errors": [
+              6.583420427642759e-07,
+              9.319415460210416e-07
+            ],
+            "score": 0.004000795141794393
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9999365789965707,
+              6.356984082262454e-05,
+              0.2784617644039908
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 12.347316636980787,
+            "held_out_relative_error": 5.229307698283359e-07,
+            "validation_errors": [
+              3.672608277547928e-07,
+              6.78600711901879e-07
+            ],
+            "score": 0.006000522930769829
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.0000001496742108,
+              -1.7641512911535143e-05,
+              2.206147341871881e-06
+            ],
+            "origin": 250.0,
+            "scale": 25.0,
+            "normal": 12.347316636980787,
+            "held_out_relative_error": 6.344669549634991e-07,
+            "validation_errors": [
+              5.870352602411747e-07,
+              6.818986496858236e-07
+            ],
+            "score": 0.006000634466954964
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.24649356996089286,
+      "acceleration_max": 0.08254768483243677
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:40:45.797485+00:00",
+      "melbourne": "2026-11-20T12:40:45.797485+11:00"
+    },
+    "decision_id": "14bc2c84632f811179811f2e19f517e7d225f6d2288f0c8604f2df0d13f0b629",
+    "iteration": 280,
+    "remaining_attempts": 220,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.697371280697792,
+              -0.3597387622848486
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 0.0044308888473416075,
+            "held_out_relative_error": 0.1552801694569761,
+            "validation_errors": [
+              0.1668608127846079,
+              0.14369952612934428
+            ],
+            "score": 0.1592801694569761
+          }
+        ],
+        "rejected": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.5611722474465995,
+              0.48130961573002146,
+              -0.824722406941058
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 0.0044308888473416075,
+            "held_out_relative_error": 0.5647728845297251,
+            "validation_errors": [
+              0.656046740387867,
+              0.47349902867158306
+            ],
+            "score": 0.5707728845297251,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              3.375363527940256e-13,
+              0.6922118008842965,
+              0.6143050323775324
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 0.0044308888473416075,
+            "held_out_relative_error": 0.27828122115985376,
+            "validation_errors": [
+              0.2821517715419183,
+              0.27441067077778925
+            ],
+            "score": 0.28428122115985377,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              6.776266551643692e-17,
+              0.6340437218898294,
+              0.4463305932278057
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.004927782889917151,
+            "validation_errors": [
+              0.00556276230035971,
+              0.0042928034794745915
+            ],
+            "score": 0.01092778288991715
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6285982450003784,
+              -0.2332876785624746
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.03982392064030121,
+            "validation_errors": [
+              0.04221286789764181,
+              0.037434973382960604
+            ],
+            "score": 0.0438239206403012
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.6087479602930743,
+              -0.11070935067213811,
+              -0.12019890443774314
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.15493772226980845,
+            "validation_errors": [
+              0.18903959509378696,
+              0.12083584944582997
+            ],
+            "score": 0.16093772226980846
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999999053967072,
+              -1.3091115562441819e-05
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 12.347266240668217,
+            "held_out_relative_error": 1.524547235999315e-06,
+            "validation_errors": [
+              1.5642559980125266e-06,
+              1.4848384739861031e-06
+            ],
+            "score": 0.004001524547236
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.0000006990148902,
+              -1.7991820578837773e-05,
+              4.805575212099875e-06
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 12.347266240668217,
+            "held_out_relative_error": 9.919353573674484e-07,
+            "validation_errors": [
+              1.2116464758763931e-06,
+              7.722242388585035e-07
+            ],
+            "score": 0.006000991935357368
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9999729912097107,
+              2.7664742736504337e-05,
+              0.6523739983105877
+            ],
+            "origin": 255.0,
+            "scale": 25.0,
+            "normal": 12.347266240668217,
+            "held_out_relative_error": 1.0927087961052763e-06,
+            "validation_errors": [
+              1.2995280846248744e-06,
+              8.858895075856784e-07
+            ],
+            "score": 0.0060010927087961055
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": 0.6141708220025385,
+      "acceleration_max": 0.3862505468303839
+    },
+    "recent_joint_progress": true,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 0,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:41:35.341180+00:00",
+      "melbourne": "2026-11-20T12:41:35.341180+11:00"
+    },
+    "decision_id": "cf7f714917a9608bf3b7b8a64a799c640dd9d2e2cac6d5d2087d077893ad5f9e",
+    "iteration": 285,
+    "remaining_attempts": 215,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [],
+        "rejected": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6805174825710013,
+              -0.3489068376363324
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 0.0044308888473416075,
+            "held_out_relative_error": 0.5491763014662758,
+            "validation_errors": [
+              0.6866139142459521,
+              0.41173868868659946
+            ],
+            "score": 0.5531763014662758,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.8460385040452998,
+              -1.3710226582499452,
+              1.0022750673851135
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 0.0044308888473416075,
+            "held_out_relative_error": 0.3032269098540551,
+            "validation_errors": [
+              0.5671561702925005,
+              0.03929764941560965
+            ],
+            "score": 0.3092269098540551,
+            "reason": "forward prediction error exceeds limit"
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.393881466306992,
+              0.4644853523840965,
+              4.410778939540428
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 0.0044308888473416075,
+            "held_out_relative_error": 0.40722543456454746,
+            "validation_errors": [
+              0.5840538431992314,
+              0.23039702592986352
+            ],
+            "score": 0.41322543456454747,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.45571270578961287,
+              0.5442854756272442,
+              99.99999998650429
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.0590390794762199,
+            "validation_errors": [
+              0.018939460958481865,
+              0.09913869799395793
+            ],
+            "score": 0.0650390794762199
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.7499425685775771,
+              -1.014665197081407,
+              0.7267561078488504
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.13576981285283715,
+            "validation_errors": [
+              0.09117278227176336,
+              0.18036684343391093
+            ],
+            "score": 0.14176981285283716
+          },
+          {
+            "model": "linear",
+            "coefficients": [
+              0.6299222096479001,
+              -0.2735224312557662
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 0.064434805659712,
+            "held_out_relative_error": 0.23986107189622508,
+            "validation_errors": [
+              0.2933055742151803,
+              0.18641656957726985
+            ],
+            "score": 0.24386107189622508
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999986248525734,
+              -1.0757909348219822e-05
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 12.347239705996408,
+            "held_out_relative_error": 1.5732270321260561e-06,
+            "validation_errors": [
+              1.81129131540918e-06,
+              1.335162748842932e-06
+            ],
+            "score": 0.004001573227032126
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9999860616102267,
+              1.418487125354705e-05,
+              1.5947289267053115
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 12.347239705996408,
+            "held_out_relative_error": 2.0724501449838558e-07,
+            "validation_errors": [
+              3.7143649357580837e-07,
+              4.305353542096278e-08
+            ],
+            "score": 0.006000207245014499
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              1.0000001274545969,
+              -2.0036690290728396e-05,
+              9.0986663225076e-06
+            ],
+            "origin": 260.0,
+            "scale": 25.0,
+            "normal": 12.347239705996408,
+            "held_out_relative_error": 2.8949937627264e-07,
+            "validation_errors": [
+              1.1015571340545154e-07,
+              4.688430391398285e-07
+            ],
+            "score": 0.006000289499376273
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": -0.3918737254063172,
+      "acceleration_max": -0.020682325363908738
+    },
+    "recent_joint_progress": false,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 1,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:42:26.212222+00:00",
+      "melbourne": "2026-11-20T12:42:26.212222+11:00"
+    },
+    "decision_id": "1d7705a7d9d8701f2155cff9102031c2a1038d7212190ffdae8bbba39cb22098",
+    "iteration": 290,
+    "remaining_attempts": 210,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.7472822376717433,
+              -0.29806060236587034
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 0.0034861968495752695,
+            "held_out_relative_error": 0.062020850575431906,
+            "validation_errors": [
+              0.12362512573552416,
+              0.0004165754153396532
+            ],
+            "score": 0.0660208505754319
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.5013584171039408,
+              0.5324957587107757,
+              6.154875459772226
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 0.0034861968495752695,
+            "held_out_relative_error": 0.1844642588700907,
+            "validation_errors": [
+              0.23519406853590166,
+              0.13373444920427977
+            ],
+            "score": 0.19046425887009072
+          }
+        ],
+        "rejected": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.9685373675379346,
+              -1.6643424595816245,
+              1.3397603411381331
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 0.0034861968495752695,
+            "held_out_relative_error": 1.0524377362707882,
+            "validation_errors": [
+              1.3779474535840983,
+              0.726928018957478
+            ],
+            "score": 1.0584377362707882,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.7564120316413031,
+              -0.1494048528279856
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 0.042751625905447295,
+            "held_out_relative_error": 0.04283848208231147,
+            "validation_errors": [
+              0.06126961148034244,
+              0.024407352684280494
+            ],
+            "score": 0.046838482082311464
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.630562332236261,
+              0.2031622076527663,
+              4.188614699456904
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 0.042751625905447295,
+            "held_out_relative_error": 0.08846207308512173,
+            "validation_errors": [
+              0.10252654059110192,
+              0.07439760557914155
+            ],
+            "score": 0.09446207308512174
+          }
+        ],
+        "rejected": [
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.8219013939635533,
+              -0.5538109682280318,
+              0.39655600509167493
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 0.042751625905447295,
+            "held_out_relative_error": 0.27491932301718036,
+            "validation_errors": [
+              0.3558174180272075,
+              0.19402122800715316
+            ],
+            "score": 0.28091932301718037,
+            "reason": "forward prediction error exceeds limit"
+          }
+        ],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999984553641627,
+              -8.569015268357683e-06
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 12.347203080812282,
+            "held_out_relative_error": 5.044215251415161e-07,
+            "validation_errors": [
+              4.3834189869151637e-07,
+              5.705011515915157e-07
+            ],
+            "score": 0.004000504421525141
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.9999890488312677,
+              1.0841228353421126e-05,
+              1.7944826108023129
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 12.347203080812282,
+            "held_out_relative_error": 9.537486273566269e-07,
+            "validation_errors": [
+              1.1511653170750329e-06,
+              7.563319376382207e-07
+            ],
+            "score": 0.006000953748627357
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.9999995078877031,
+              -1.5068497644653032e-05,
+              6.3733179802911685e-06
+            ],
+            "origin": 265.0,
+            "scale": 25.0,
+            "normal": 12.347203080812282,
+            "held_out_relative_error": 1.1421938867300769e-06,
+            "validation_errors": [
+              1.4788765245063035e-06,
+              8.055112489538504e-07
+            ],
+            "score": 0.0060011421938867306
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": -0.08530327277343264,
+      "acceleration_max": 0.07555668759048266
+    },
+    "recent_joint_progress": false,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 2,
+    "action": "continue",
+    "reason": "observed slope/curvature turn",
+    "steps": 5,
+    "observe": 2,
+    "turn_detected": true,
+    "predicted_pass": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-20T01:43:15.007053+00:00",
+      "melbourne": "2026-11-20T12:43:15.007053+11:00"
+    },
+    "decision_id": "dae19a649a1935b96ca6ac37da20e8f66f9d6ede9a0a09d2a82b7ea4d2db617f",
+    "iteration": 295,
+    "remaining_attempts": 205,
+    "fit_epoch_start": 200,
+    "plateau_epoch": 200,
+    "policy_version": 2,
+    "models": {
+      "relative_force_l2": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.62024767698487,
+              0.043511388801660424
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 0.002801905866076795,
+            "held_out_relative_error": 0.14072302944546577,
+            "validation_errors": [
+              0.1025536763049455,
+              0.17889238258598608
+            ],
+            "score": 0.14472302944546578
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.6425471519629937,
+              7.0233220067920655e-09,
+              0.00019317515860160024
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 0.002801905866076795,
+            "held_out_relative_error": 0.14373402452005568,
+            "validation_errors": [
+              0.08324942501095207,
+              0.2042186240291593
+            ],
+            "score": 0.1497340245200557
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.6451412488413572,
+              -0.11020995365663104,
+              0.15073738784164414
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 0.002801905866076795,
+            "held_out_relative_error": 0.16139887666490288,
+            "validation_errors": [
+              0.1363610953706073,
+              0.18643665795919848
+            ],
+            "score": 0.16739887666490288
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "acceleration_max": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.8305351157425723,
+              -0.07484035295809363
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 0.03446927294797592,
+            "held_out_relative_error": 0.05205290105376843,
+            "validation_errors": [
+              0.06901861369902496,
+              0.0350871884085119
+            ],
+            "score": 0.056052901053768436
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              3.472970609014192e-16,
+              0.8308526153915452,
+              0.09381271276278205
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 0.03446927294797592,
+            "held_out_relative_error": 0.05169521313794187,
+            "validation_errors": [
+              0.0699988052571608,
+              0.03339162101872294
+            ],
+            "score": 0.05769521313794187
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.8185248566784923,
+              -0.0006752971257709531,
+              -0.07272540433562204
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 0.03446927294797592,
+            "held_out_relative_error": 0.05719263789709315,
+            "validation_errors": [
+              0.04569909919574744,
+              0.06868617659843886
+            ],
+            "score": 0.06319263789709315
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      },
+      "energy": {
+        "accepted": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.9999994078163401,
+              -6.5097028033441035e-06
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 12.347157377546262,
+            "held_out_relative_error": 2.59049615500193e-07,
+            "validation_errors": [
+              2.3996222917244206e-07,
+              2.781370018279439e-07
+            ],
+            "score": 0.0040002590496155
+          },
+          {
+            "model": "exponential_floor",
+            "coefficients": [
+              0.999971911096044,
+              2.7643481761657957e-05,
+              0.2694735801170902
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 12.347157377546262,
+            "held_out_relative_error": 1.4536909438877717e-07,
+            "validation_errors": [
+              1.1669252702420028e-07,
+              1.7404566175335408e-07
+            ],
+            "score": 0.006000145369094389
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.9999995253010746,
+              -7.235187726244158e-06,
+              7.114022067355912e-07
+            ],
+            "origin": 270.0,
+            "scale": 25.0,
+            "normal": 12.347157377546262,
+            "held_out_relative_error": 2.0508750357967093e-07,
+            "validation_errors": [
+              2.1956122128578084e-07,
+              1.9061378587356102e-07
+            ],
+            "score": 0.00600020508750358
+          }
+        ],
+        "rejected": [],
+        "reason": "forward validation; model spread is not a confidence interval"
+      }
+    },
+    "gate_pass": false,
+    "method": "adaptive optimizer iteration count; optimizer alpha policy unchanged",
+    "recent_improvement": {
+      "relative_force_l2": -0.47027296041461647,
+      "acceleration_max": 0.007129436137968345
+    },
+    "recent_joint_progress": false,
+    "energy_nonincreasing": true,
+    "progress_evidence_sufficient": true,
+    "distinct_epoch_observations": 16,
+    "plateau_count": 3,
+    "action": "stop",
+    "reason": "repeated absence of measured joint progress after exploratory allocation; not a physical Q rejection",
+    "steps": 0,
+    "observe": 2
+  }
+]

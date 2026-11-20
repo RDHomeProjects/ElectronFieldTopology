@@ -1,0 +1,7 @@
+The saved Q17–Q32 policy decisions exposed six preparation stops that counted unsupported stagnation evidence after an optimizer epoch reset. Record the verified audit, retain all original negative findings, and provide a separate checkpoint-preserving continuation for those six branches.
+
+The corrected rule requires epoch-local plateau memory and eight distinct observations before a stagnation vote. The selected branches retain their CUDA optimizer state, CG memory, alpha, float64 precision, grid, box, CPU diagnostics and scientific gates. Their total attempted-step ceilings rise from 300 to 500, including original and interrupted work: at most 1,738 additional attempts across the six. Fits still determine bounded allocations and closer observations around turns; gates remain measured.
+
+The other 23 preparation stops and five representation cases are not reopened. Mesh, domain and motion remain explicitly deferred pending corrected preparation review. The old Q18 partial refinement retains its 33 charged attempts and old-parent identity. Documentation and results are additive under the linked research record; protected earlier run identities and graphics are preserved.
+
+Validation is documented in the handover's HOST-VALIDATION.json. Retained full-field hash/CRC, actual CPU metric replay and CUDA identity/gradient checks run locally before continuation. Publication does not certify a stationary candidate, long-time stability or electron acceptance.

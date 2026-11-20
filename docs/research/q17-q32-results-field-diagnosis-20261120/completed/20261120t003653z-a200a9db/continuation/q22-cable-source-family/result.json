@@ -1,0 +1,69 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-20T01:27:23.855225+00:00",
+    "melbourne": "2026-11-20T12:27:23.855225+11:00"
+  },
+  "seed": {
+    "id": "q22-cable-source-family",
+    "q": 22,
+    "kind": "cable",
+    "alpha": 4,
+    "beta": 1,
+    "scale": 4.0,
+    "cutoff": 7.2,
+    "amplitude": 8.0
+  },
+  "q": 22,
+  "nodes": 161,
+  "length": 23.04,
+  "backend": "cuda",
+  "iteration": 225,
+  "attempts": 225,
+  "status": "preparation_unresolved",
+  "reason": "repeated absence of measured joint progress after exploratory allocation; not a physical Q rejection",
+  "metrics": {
+    "recorded_at": {
+      "utc": "2026-11-20T01:23:35.808273+00:00",
+      "melbourne": "2026-11-20T12:23:35.808273+11:00"
+    },
+    "iteration": 225,
+    "attempts": 225,
+    "optimizer_alpha": 0.12089258196146309,
+    "optimizer_memory_present": true,
+    "optimizer_epoch": 1,
+    "recovered_checkpoint_observation": false,
+    "energy": 12.483569401507706,
+    "relative_force_l2": 0.001829415190997703,
+    "acceleration_max": 0.05333108141355414,
+    "acceleration_rms": 0.00035669127254522154,
+    "minimum_corner_cone": 0.9255932580511061,
+    "hopf_integral": -21.95925153275083,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.4747133447867935,
+    "mean_topological_b": [
+      7.413315339996893e-10,
+      8.46067334556341e-07,
+      -2.62013337215185e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.0010297388773481328,
+    "guard_fraction": 0.0021973005772205224,
+    "backend_audit": {
+      "passed": true,
+      "energy_abs_difference": 0.0,
+      "gradient_max_abs_difference": 0.0,
+      "reference": "independent CPU sf_readmission.static_value_gradient"
+    }
+  },
+  "strict_stationary": false,
+  "boundary_admitted": false,
+  "physical_Q_rejected": false,
+  "identity": "66dc800c3f6a00a6b734921f74f9e94c9d5f51e70c927a65b2e985e313e34dca",
+  "endpoint": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q17-q32-policy-v2/20261120t003653z-a200a9db/continuation/q22-cable-source-family/endpoint.npz",
+  "checkpoint_sha256": "af524854573a78415b9fdc80ed1e4b841096c74fbb45f24fc6aa7e2f8c3625c3",
+  "original_attempts": 200,
+  "additional_attempts": 25,
+  "total_attempt_ceiling": 500,
+  "parent_checkpoint_sha256": "83af4cff1b5a88ecf28e5369c3adbdd8a2825d0fa7afb9122f070f46c83b70ba",
+  "policy_version": 2
+}
