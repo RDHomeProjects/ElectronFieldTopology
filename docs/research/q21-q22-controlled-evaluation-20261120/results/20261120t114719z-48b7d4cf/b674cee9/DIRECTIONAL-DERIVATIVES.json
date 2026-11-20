@@ -1,0 +1,74 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-20T11:48:24.930479+00:00",
+    "melbourne": "2026-11-20T22:48:24.930479+11:00"
+  },
+  "passed": true,
+  "energy": 12.347072371150139,
+  "rows": [
+    {
+      "direction": "negative_projected_gradient",
+      "differences": [
+        {
+          "epsilon": 0.001,
+          "predicted": -0.0037760999491558518,
+          "centered_difference": -0.003776042869496621,
+          "absolute_error": 5.707965923095609e-08,
+          "tolerance": 7.652199898311703e-06,
+          "passed": true
+        },
+        {
+          "epsilon": 0.0003,
+          "predicted": -0.0037760999491558518,
+          "centered_difference": -0.0037760948146114974,
+          "absolute_error": 5.134544354360587e-09,
+          "tolerance": 7.652199898311703e-06,
+          "passed": true
+        },
+        {
+          "epsilon": 0.0001,
+          "predicted": -0.0037760999491558518,
+          "centered_difference": -0.0037760993798485742,
+          "absolute_error": 5.693072775356245e-10,
+          "tolerance": 7.652199898311703e-06,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "direction": "deterministic_smooth_tangent",
+      "differences": [
+        {
+          "epsilon": 0.001,
+          "predicted": 0.0011979071156804446,
+          "centered_difference": 0.0011979035079434652,
+          "absolute_error": 3.607736979386461e-09,
+          "tolerance": 2.4958142313608893e-06,
+          "passed": true
+        },
+        {
+          "epsilon": 0.0003,
+          "predicted": 0.0011979071156804446,
+          "centered_difference": 0.0011979067930193803,
+          "absolute_error": 3.226610643166511e-10,
+          "tolerance": 2.4958142313608893e-06,
+          "passed": true
+        },
+        {
+          "epsilon": 0.0001,
+          "predicted": 0.0011979071156804446,
+          "centered_difference": 0.001197907071315285,
+          "absolute_error": 4.4365159549558664e-11,
+          "tolerance": 2.4958142313608893e-06,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "energy_gradient_calls": 13,
+  "optimizer_attempts": 0,
+  "physical_time_steps": 0,
+  "scope": "Centered constrained retractions on the exact Q21 endpoint; no accepted optimization updates"
+}
