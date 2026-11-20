@@ -1,0 +1,445 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-20T10:45:08.059321+00:00",
+    "melbourne": "2026-11-20T21:45:08.059321+11:00"
+  },
+  "id": "q21-axial-7-3-endpoint",
+  "source_sha256": "ce3ebec77d77f6c22e01e4d3424c86f693b7ab3daa898e1d875027359433ed08",
+  "field_array_sha256_before": "c3d14183a0ea9a1be4542f76e02f780c34ab6f67372466f7883b008cec86b2f4",
+  "field_array_sha256_after": "c3d14183a0ea9a1be4542f76e02f780c34ab6f67372466f7883b008cec86b2f4",
+  "q": 21,
+  "shape": [
+    97,
+    97,
+    97
+  ],
+  "lengths": [
+    23.04,
+    23.04,
+    23.04
+  ],
+  "spacing": [
+    0.24,
+    0.24,
+    0.24
+  ],
+  "reference_metrics": {
+    "energy": 12.347072371150139,
+    "relative_force_l2": 0.0021617808369545394,
+    "acceleration_max": 0.026782056536655736,
+    "acceleration_rms": 0.00037435184192114124,
+    "minimum_corner_cone": 0.7967911085886914,
+    "hopf_integral": -20.718051592877597,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.7357409276400833,
+    "mean_topological_b": [
+      2.433152936227647e-07,
+      8.884995154809963e-07,
+      -0.00014841198598617133
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.001569382023907253,
+    "guard_fraction": 0.003150297578275691
+  },
+  "metric_replay_passed": true,
+  "strict_stationary": false,
+  "boundary_admitted": false,
+  "force_decomposition": {
+    "raw_energy_gradient_l2": 0.2524147166257309,
+    "projected_force_numerator_l2": 2.445326666970229,
+    "registered_sigma_denominator_l2": 1131.1630786842993,
+    "free_node_sigma_denominator_l2_diagnostic": 1130.5322563416933,
+    "held_node_sigma_denominator_l2_diagnostic": 37.77205249261135,
+    "registered_ratio_reconstructed": 0.002161780836954549
+  },
+  "energy_definition_check": {
+    "registered_boundary_density": "sf_time.densities.energy_density (continuum density)",
+    "d4_action_density": "sf_time.densities.hamiltonian_density",
+    "registered_continuum_energy": 12.302384701405112,
+    "d4_static_action": 12.347072371150139,
+    "d4_hamiltonian_energy": 12.347072371150142,
+    "hamiltonian_tail_fraction_diagnostic": 0.0015883580976076522,
+    "hamiltonian_guard_fraction_diagnostic": 0.00316784361939757,
+    "gate_definition_changed": false
+  },
+  "regions": {
+    "held_layers": {
+      "nodes": 108316,
+      "volume_fraction": 0.11867996533259996,
+      "force_l2": 0.0,
+      "acceleration_l2": 0.0,
+      "force_max": 0.0,
+      "acceleration_max": 0.0,
+      "force_squared_fraction": 0.0,
+      "acceleration_squared_fraction": 0.0,
+      "registered_energy_fraction": 3.828589202569852e-05,
+      "hamiltonian_energy_fraction_diagnostic": 8.88066422084895e-05
+    },
+    "registered_tail": {
+      "nodes": 419634,
+      "volume_fraction": 0.45978570638114635,
+      "force_l2": 0.0015291560899730787,
+      "acceleration_l2": 0.0015249405091687734,
+      "force_max": 2.5945786781775266e-05,
+      "acceleration_max": 2.58707571412931e-05,
+      "force_squared_fraction": 3.910478202088564e-07,
+      "acceleration_squared_fraction": 6.060513131243788e-06,
+      "registered_energy_fraction": 0.001569382023907253,
+      "hamiltonian_energy_fraction_diagnostic": 0.0015883580976076522
+    },
+    "registered_guard": {
+      "nodes": 554762,
+      "volume_fraction": 0.6078431157709279,
+      "force_l2": 0.0030623400472483903,
+      "acceleration_l2": 0.003046109112277404,
+      "force_max": 5.212999170986636e-05,
+      "acceleration_max": 5.177411839684347e-05,
+      "force_squared_fraction": 1.5683141456049755e-06,
+      "acceleration_squared_fraction": 2.4182127431923964e-05,
+      "registered_energy_fraction": 0.003150297578275691,
+      "hamiltonian_energy_fraction_diagnostic": 0.00316784361939757
+    },
+    "interior_outside_guard": {
+      "nodes": 357911,
+      "volume_fraction": 0.3921568842290722,
+      "force_l2": 2.4453247494492754,
+      "acceleration_l2": 0.6194310223981555,
+      "force_max": 0.09802329255325744,
+      "acceleration_max": 0.026782056536655736,
+      "force_squared_fraction": 0.9999984316858543,
+      "acceleration_squared_fraction": 0.999975817872568,
+      "registered_energy_fraction": 0.9968497024217244,
+      "hamiltonian_energy_fraction_diagnostic": 0.9968321563806024
+    }
+  },
+  "force_peaks": [
+    {
+      "index": [
+        58,
+        48,
+        48
+      ],
+      "coordinates": [
+        2.4000000000000004,
+        0.0,
+        0.0
+      ],
+      "value": 0.09802329255325744,
+      "nearest_face_distance": 9.12,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        58,
+        47,
+        49
+      ],
+      "coordinates": [
+        2.4000000000000004,
+        -0.2400000000000002,
+        0.2400000000000002
+      ],
+      "value": 0.09406508708559234,
+      "nearest_face_distance": 9.12,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        58,
+        49,
+        48
+      ],
+      "coordinates": [
+        2.4000000000000004,
+        0.2400000000000002,
+        0.0
+      ],
+      "value": 0.09300846124508405,
+      "nearest_face_distance": 9.12,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        58,
+        50,
+        47
+      ],
+      "coordinates": [
+        2.4000000000000004,
+        0.4800000000000004,
+        -0.2400000000000002
+      ],
+      "value": 0.08858330004963336,
+      "nearest_face_distance": 9.12,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        57,
+        54,
+        49
+      ],
+      "coordinates": [
+        2.16,
+        1.4399999999999995,
+        0.2400000000000002
+      ],
+      "value": 0.08433266632900359,
+      "nearest_face_distance": 9.36,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        58,
+        49,
+        47
+      ],
+      "coordinates": [
+        2.4000000000000004,
+        0.2400000000000002,
+        -0.2400000000000002
+      ],
+      "value": 0.0839035772566647,
+      "nearest_face_distance": 9.12,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        41,
+        49,
+        48
+      ],
+      "coordinates": [
+        -1.6799999999999997,
+        0.2400000000000002,
+        0.0
+      ],
+      "value": 0.0828469305879634,
+      "nearest_face_distance": 9.84,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        54,
+        45,
+        48
+      ],
+      "coordinates": [
+        1.4399999999999995,
+        -0.7200000000000006,
+        0.0
+      ],
+      "value": 0.08078873034585844,
+      "nearest_face_distance": 10.08,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        43,
+        45,
+        48
+      ],
+      "coordinates": [
+        -1.1999999999999993,
+        -0.7200000000000006,
+        0.0
+      ],
+      "value": 0.0798450437414562,
+      "nearest_face_distance": 10.32,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        58,
+        48,
+        49
+      ],
+      "coordinates": [
+        2.4000000000000004,
+        0.0,
+        0.2400000000000002
+      ],
+      "value": 0.07979668282062846,
+      "nearest_face_distance": 9.12,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    }
+  ],
+  "acceleration_peaks": [
+    {
+      "index": [
+        42,
+        49,
+        47
+      ],
+      "coordinates": [
+        -1.4399999999999995,
+        0.2400000000000002,
+        -0.2400000000000002
+      ],
+      "value": 0.026782056536655736,
+      "nearest_face_distance": 10.08,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        41,
+        49,
+        48
+      ],
+      "coordinates": [
+        -1.6799999999999997,
+        0.2400000000000002,
+        0.0
+      ],
+      "value": 0.02534357622987701,
+      "nearest_face_distance": 9.84,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        50,
+        59,
+        44
+      ],
+      "coordinates": [
+        0.4800000000000004,
+        2.6400000000000006,
+        -0.9600000000000009
+      ],
+      "value": 0.02389772060343774,
+      "nearest_face_distance": 8.879999999999999,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        37,
+        53,
+        45
+      ],
+      "coordinates": [
+        -2.6400000000000006,
+        1.1999999999999993,
+        -0.7200000000000006
+      ],
+      "value": 0.023359344740349397,
+      "nearest_face_distance": 8.879999999999999,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        57,
+        54,
+        50
+      ],
+      "coordinates": [
+        2.16,
+        1.4399999999999995,
+        0.4800000000000004
+      ],
+      "value": 0.02329042433484541,
+      "nearest_face_distance": 9.36,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        58,
+        53,
+        50
+      ],
+      "coordinates": [
+        2.4000000000000004,
+        1.1999999999999993,
+        0.4800000000000004
+      ],
+      "value": 0.022797389436026494,
+      "nearest_face_distance": 9.12,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        42,
+        50,
+        49
+      ],
+      "coordinates": [
+        -1.4399999999999995,
+        0.4800000000000004,
+        0.2400000000000002
+      ],
+      "value": 0.022661581992958785,
+      "nearest_face_distance": 10.08,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        38,
+        46,
+        49
+      ],
+      "coordinates": [
+        -2.4000000000000004,
+        -0.4800000000000004,
+        0.2400000000000002
+      ],
+      "value": 0.02206306415508565,
+      "nearest_face_distance": 9.12,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        53,
+        50,
+        46
+      ],
+      "coordinates": [
+        1.1999999999999993,
+        0.4800000000000004,
+        -0.4800000000000004
+      ],
+      "value": 0.021926950728869025,
+      "nearest_face_distance": 10.32,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    },
+    {
+      "index": [
+        41,
+        48,
+        47
+      ],
+      "coordinates": [
+        -1.6799999999999997,
+        0.0,
+        -0.2400000000000002
+      ],
+      "value": 0.021460428253020476,
+      "nearest_face_distance": 9.84,
+      "in_registered_tail": false,
+      "in_registered_guard": false
+    }
+  ],
+  "profile_scope": "Every cube-shell grid layer plus radial bins of one grid spacing; metrics always use all nodes",
+  "optimizer_steps": 0,
+  "physical_time_steps": 0,
+  "field_resampled": false,
+  "field_projected_by_diagnosis": false,
+  "scope": "Instantaneous static acceleration evaluation, not time evolution; side-by-side density definitions are diagnostic, not replacement gates"
+}
