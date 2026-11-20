@@ -47,3 +47,5 @@ Original explanatory prose and figures: [CC BY 4.0](LICENSE-DOCS.md).
 Third-party works retain their own terms; this repository links to papers rather than relicensing them.
 
 See [NOTICE](NOTICE) and [CITATION.cff](CITATION.cff). Please cite the project and the primary papers used when publishing results.
+
+[Q17–Q32 stopping-policy audit and targeted continuation](docs/research/q17-q32-policy-v2-20261120/README.md)

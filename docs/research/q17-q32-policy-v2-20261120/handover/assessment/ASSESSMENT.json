@@ -1,0 +1,256 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-19T23:27:12.549592+00:00",
+    "melbourne": "2026-11-20T10:27:12.549592+11:00"
+  },
+  "source_archive_sha256": "1967a35025b750e89f52aa6d6ca6c34d525628c9573521e17e62dd01d63705d0",
+  "verification": {
+    "recorded_at": {
+      "utc": "2026-11-19T23:27:12.546305+00:00",
+      "melbourne": "2026-11-20T10:27:12.546305+11:00"
+    },
+    "archive_sha256": "1967a35025b750e89f52aa6d6ca6c34d525628c9573521e17e62dd01d63705d0",
+    "zip_crc_pass": true,
+    "compact_payloads_verified": 775,
+    "numerical_source_copies_verified": 128,
+    "original_handover_manifest_reconstructed": true,
+    "local_full_field_declarations": 339,
+    "local_full_fields_verified_here": false,
+    "solver_steps": 0
+  },
+  "broad_attempts": 5692,
+  "total_attempts": 5725,
+  "mesh_q18": {
+    "attempts": 33,
+    "last_accepted_checkpoint_iteration": 32,
+    "last_observed_iteration": 30,
+    "completed_mesh_branches": 0
+  },
+  "source_code_defect_confirmed_on_actual_decisions": true,
+  "original_decisions_reproduced": 881,
+  "terminal_curve_windows_checked": 87,
+  "accepted_model_sets_reproduced": 87,
+  "changed_terminal_actions": 6,
+  "unaffected_preparation_stops_on_recorded_trajectories": 23,
+  "representation_cases_unchanged": 5,
+  "stationary_passes": 0,
+  "fully_admitted_stationary_passes": 0,
+  "mesh_capacity_deferrals_recorded": 25,
+  "limited_recovery_attempt_ceiling": 538,
+  "recommended_immediate_action": "Keep original campaign paused; do not resume unchanged r2 launcher",
+  "correction_code_provided": "corrected/policy_v2.py, offline only; no production continuation launcher",
+  "affected": [
+    {
+      "seed": "q18-axial-6-3",
+      "decisions_verified": 33,
+      "reset_events": [
+        {
+          "iteration": 202,
+          "old_count_entering_epoch": 0,
+          "new_count_entering_epoch": 0
+        }
+      ],
+      "short_window_votes": [
+        {
+          "iteration": 202,
+          "distinct_rows": 2,
+          "old_plateau_count": 1,
+          "old_action": "continue"
+        },
+        {
+          "iteration": 212,
+          "distinct_rows": 7,
+          "old_plateau_count": 2,
+          "old_action": "continue"
+        }
+      ],
+      "terminal": {
+        "old_action": "stop",
+        "corrected_action": "continue",
+        "old_count": 3,
+        "corrected_count": 1,
+        "iteration": 217,
+        "remaining_attempts": 83,
+        "progress_evidence_sufficient": true,
+        "distinct_epoch_observations": 10
+      }
+    },
+    {
+      "seed": "q21-axial-7-3",
+      "decisions_verified": 34,
+      "reset_events": [
+        {
+          "iteration": 200,
+          "old_count_entering_epoch": 1,
+          "new_count_entering_epoch": 1
+        }
+      ],
+      "short_window_votes": [
+        {
+          "iteration": 200,
+          "distinct_rows": 1,
+          "old_plateau_count": 2,
+          "old_action": "continue"
+        },
+        {
+          "iteration": 210,
+          "distinct_rows": 6,
+          "old_plateau_count": 3,
+          "old_action": "stop"
+        }
+      ],
+      "terminal": {
+        "old_action": "stop",
+        "corrected_action": "continue",
+        "old_count": 3,
+        "corrected_count": 0,
+        "iteration": 210,
+        "remaining_attempts": 90,
+        "progress_evidence_sufficient": false,
+        "distinct_epoch_observations": 6
+      }
+    },
+    {
+      "seed": "q22-cable-source-family",
+      "decisions_verified": 31,
+      "reset_events": [
+        {
+          "iteration": 200,
+          "old_count_entering_epoch": 2,
+          "new_count_entering_epoch": 2
+        }
+      ],
+      "short_window_votes": [
+        {
+          "iteration": 200,
+          "distinct_rows": 1,
+          "old_plateau_count": 3,
+          "old_action": "stop"
+        }
+      ],
+      "terminal": {
+        "old_action": "stop",
+        "corrected_action": "continue",
+        "old_count": 3,
+        "corrected_count": 0,
+        "iteration": 200,
+        "remaining_attempts": 100,
+        "progress_evidence_sufficient": false,
+        "distinct_epoch_observations": 1
+      }
+    },
+    {
+      "seed": "q24-torus72-5-2",
+      "decisions_verified": 33,
+      "reset_events": [
+        {
+          "iteration": 200,
+          "old_count_entering_epoch": 1,
+          "new_count_entering_epoch": 1
+        }
+      ],
+      "short_window_votes": [
+        {
+          "iteration": 200,
+          "distinct_rows": 1,
+          "old_plateau_count": 2,
+          "old_action": "continue"
+        },
+        {
+          "iteration": 210,
+          "distinct_rows": 6,
+          "old_plateau_count": 3,
+          "old_action": "stop"
+        }
+      ],
+      "terminal": {
+        "old_action": "stop",
+        "corrected_action": "continue",
+        "old_count": 3,
+        "corrected_count": 0,
+        "iteration": 210,
+        "remaining_attempts": 90,
+        "progress_evidence_sufficient": false,
+        "distinct_epoch_observations": 6
+      }
+    },
+    {
+      "seed": "q30-axial-6-5",
+      "decisions_verified": 33,
+      "reset_events": [
+        {
+          "iteration": 200,
+          "old_count_entering_epoch": 1,
+          "new_count_entering_epoch": 1
+        }
+      ],
+      "short_window_votes": [
+        {
+          "iteration": 200,
+          "distinct_rows": 1,
+          "old_plateau_count": 2,
+          "old_action": "continue"
+        },
+        {
+          "iteration": 210,
+          "distinct_rows": 6,
+          "old_plateau_count": 3,
+          "old_action": "stop"
+        }
+      ],
+      "terminal": {
+        "old_action": "stop",
+        "corrected_action": "continue",
+        "old_count": 3,
+        "corrected_count": 0,
+        "iteration": 210,
+        "remaining_attempts": 90,
+        "progress_evidence_sufficient": false,
+        "distinct_epoch_observations": 6
+      }
+    },
+    {
+      "seed": "q30-torus72-8-2",
+      "decisions_verified": 35,
+      "reset_events": [
+        {
+          "iteration": 205,
+          "old_count_entering_epoch": 0,
+          "new_count_entering_epoch": 0
+        }
+      ],
+      "short_window_votes": [
+        {
+          "iteration": 205,
+          "distinct_rows": 4,
+          "old_plateau_count": 1,
+          "old_action": "continue"
+        },
+        {
+          "iteration": 210,
+          "distinct_rows": 7,
+          "old_plateau_count": 2,
+          "old_action": "continue"
+        }
+      ],
+      "terminal": {
+        "old_action": "stop",
+        "corrected_action": "continue",
+        "old_count": 3,
+        "corrected_count": 1,
+        "iteration": 215,
+        "remaining_attempts": 85,
+        "progress_evidence_sufficient": true,
+        "distinct_epoch_observations": 10
+      }
+    }
+  ],
+  "limitations": [
+    "Decision replay used saved fits; terminal-window refits were checked separately",
+    "No new physical field metrics or solver steps",
+    "No prediction of convergence or suitability for motion",
+    "Full fields remain on the workstation",
+    "Corrected continuation needs an explicit policy identity and checkpoint migration",
+    "Original records and measurements must remain unchanged"
+  ]
+}
