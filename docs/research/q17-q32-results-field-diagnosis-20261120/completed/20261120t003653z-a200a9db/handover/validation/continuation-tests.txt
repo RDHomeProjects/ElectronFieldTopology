@@ -1,0 +1,45 @@
+test_500_ceiling_charges_last_attempt_only (test_continuation.ContinuationTests.test_500_ceiling_charges_last_attempt_only) ... {"recorded_at": {"utc": "2026-11-19T23:50:39.671545+00:00", "melbourne": "2026-11-20T10:50:39.671545+11:00"}, "message": "Candidate observation", "seed": "budget-control", "nodes": 65, "iteration": 0, "attempts": 0, "force": 0.7561827834958783, "acceleration": 4.850156094109967}
+{"recorded_at": {"utc": "2026-11-19T23:50:42.838944+00:00", "melbourne": "2026-11-20T10:50:42.838944+11:00"}, "message": "Candidate observation", "seed": "budget-control", "nodes": 65, "iteration": 1, "attempts": 500, "force": 0.7324381892197335, "acceleration": 4.009652771110055}
+ok
+test_actual_cuda_origin_host_migration_preserves_all_memory (test_continuation.ContinuationTests.test_actual_cuda_origin_host_migration_preserves_all_memory) ... ok
+test_additive_publication_real_local_git_fixture (test_continuation.ContinuationTests.test_additive_publication_real_local_git_fixture) ... Cloning into '/tmp/tmpwpda4i6b/publication'...
+done.
+{"recorded_at": {"utc": "2026-11-19T23:50:51.337563+00:00", "melbourne": "2026-11-20T10:50:51.337563+11:00"}, "message": "Local publication command", "argv": ["git", "remote", "set-url", "origin", "/tmp/tmpwpda4i6b/origin.git"], "checkout": "/tmp/tmpwpda4i6b/publication"}
+{"recorded_at": {"utc": "2026-11-19T23:50:51.339228+00:00", "melbourne": "2026-11-20T10:50:51.339228+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/tmp/tmpwpda4i6b/publication"}
+{"recorded_at": {"utc": "2026-11-19T23:50:51.341332+00:00", "melbourne": "2026-11-20T10:50:51.341332+11:00"}, "message": "Local publication command", "argv": ["git", "fetch", "origin", "main"], "checkout": "/tmp/tmpwpda4i6b/publication"}
+From /tmp/tmpwpda4i6b/origin
+ * branch            main       -> FETCH_HEAD
+{"recorded_at": {"utc": "2026-11-19T23:50:51.350372+00:00", "melbourne": "2026-11-20T10:50:51.350372+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "origin/main"], "checkout": "/tmp/tmpwpda4i6b/publication"}
+{"recorded_at": {"utc": "2026-11-19T23:50:51.352224+00:00", "melbourne": "2026-11-20T10:50:51.352224+11:00"}, "message": "Local publication command", "argv": ["git", "switch", "-c", "analysis/q17-q32-policy-v2-recovery-20261120", "282c0e0ea1b5c333c34abb2714538cfa22ef38a6"], "checkout": "/tmp/tmpwpda4i6b/publication"}
+Switched to a new branch 'analysis/q17-q32-policy-v2-recovery-20261120'
+{"recorded_at": {"utc": "2026-11-19T23:50:51.357455+00:00", "melbourne": "2026-11-20T10:50:51.357455+11:00"}, "message": "Local publication command", "argv": ["git", "add", "--", "README.md", "docs/research/q17-q32-policy-v2-20261120"], "checkout": "/tmp/tmpwpda4i6b/publication"}
+{"recorded_at": {"utc": "2026-11-19T23:50:51.434037+00:00", "melbourne": "2026-11-20T10:50:51.434037+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/tmp/tmpwpda4i6b/publication"}
+{"recorded_at": {"utc": "2026-11-19T23:50:51.357318+00:00", "melbourne": "2026-11-20T10:50:51.357318+11:00"}, "message": "Publication changes prepared locally", "kind": "preparation", "phase": "applied", "branch": "analysis/q17-q32-policy-v2-recovery-20261120", "base": "282c0e0ea1b5c333c34abb2714538cfa22ef38a6", "package_sha256": "62cb32c7053e9aa92e51f4c2dc30714cb00fc638e3998bc22a2d966ecfb85f4c", "pr": null}
+{"recorded_at": {"utc": "2026-11-19T23:50:51.443449+00:00", "melbourne": "2026-11-20T10:50:51.443449+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/tmp/tmpwpda4i6b/publication"}
+{"recorded_at": {"utc": "2026-11-19T23:50:51.357318+00:00", "melbourne": "2026-11-20T10:50:51.357318+11:00"}, "message": "Publication record already prepared", "kind": "preparation", "phase": "applied", "branch": "analysis/q17-q32-policy-v2-recovery-20261120", "base": "282c0e0ea1b5c333c34abb2714538cfa22ef38a6", "package_sha256": "62cb32c7053e9aa92e51f4c2dc30714cb00fc638e3998bc22a2d966ecfb85f4c", "pr": null}
+ok
+test_branch_driver_seals_and_reuses_real_terminal_checkpoint (test_continuation.ContinuationTests.test_branch_driver_seals_and_reuses_real_terminal_checkpoint) ... {"recorded_at": {"utc": "2026-11-19T23:50:53.806950+00:00", "melbourne": "2026-11-20T10:50:53.806950+11:00"}, "message": "Candidate observation", "seed": "driver-control", "nodes": 65, "iteration": 0, "attempts": 0, "force": 0.7561827834958783, "acceleration": 4.850156094109967}
+{"recorded_at": {"utc": "2026-11-19T23:50:56.188485+00:00", "melbourne": "2026-11-20T10:50:56.188485+11:00"}, "message": "Candidate observation", "seed": "driver-control", "nodes": 65, "iteration": 198, "attempts": 499, "force": 0.7561827834958783, "acceleration": 4.850156094109967}
+{"recorded_at": {"utc": "2026-11-19T23:50:59.873581+00:00", "melbourne": "2026-11-20T10:50:59.873581+11:00"}, "message": "Candidate observation", "seed": "driver-control", "nodes": 65, "iteration": 199, "attempts": 500, "force": 0.7324381892197335, "acceleration": 4.009652771110055}
+ok
+test_epoch_400_requires_new_evidence (test_continuation.ContinuationTests.test_epoch_400_requires_new_evidence) ... ok
+test_evidence_crc_coverage_and_full_field_exclusion (test_continuation.ContinuationTests.test_evidence_crc_coverage_and_full_field_exclusion) ... ok
+test_host_pressure_requires_low_available_memory (test_continuation.ContinuationTests.test_host_pressure_requires_low_available_memory) ... ok
+test_merged_pr_without_number_and_squash_ancestry_is_recognized (test_continuation.ContinuationTests.test_merged_pr_without_number_and_squash_ancestry_is_recognized) ... {"recorded_at": {"utc": "2026-11-19T23:51:01.915015+00:00", "melbourne": "2026-11-20T10:51:01.915015+11:00"}, "message": "Publication merged", "pr": {"state": "MERGED", "headRefOid": "fixture-head", "mergeCommit": {"oid": "different-squash-oid"}, "url": "https://example.invalid/pr/80"}}
+ok
+test_migration_does_not_double_count_terminal_vote (test_continuation.ContinuationTests.test_migration_does_not_double_count_terminal_vote) ... ok
+test_numerical_algorithms_and_fit_functions_unchanged (test_continuation.ContinuationTests.test_numerical_algorithms_and_fit_functions_unchanged) ... ok
+test_pending_decision_is_reused_after_interruption (test_continuation.ContinuationTests.test_pending_decision_is_reused_after_interruption) ... ok
+test_real_archive_selection_and_500_budget (test_continuation.ContinuationTests.test_real_archive_selection_and_500_budget) ... ok
+test_real_optimizer_pause_resume_across_cg_reset_is_bitwise_equal (test_continuation.ContinuationTests.test_real_optimizer_pause_resume_across_cg_reset_is_bitwise_equal) ... {"recorded_at": {"utc": "2026-11-19T23:51:04.363574+00:00", "melbourne": "2026-11-20T10:51:04.363574+11:00"}, "message": "Candidate observation", "seed": "small-control", "nodes": 65, "iteration": 0, "attempts": 0, "force": 0.7561827834958783, "acceleration": 4.850156094109967}
+{"recorded_at": {"utc": "2026-11-19T23:51:06.663832+00:00", "melbourne": "2026-11-20T10:51:06.663832+11:00"}, "message": "Candidate observation", "seed": "small-control", "nodes": 65, "iteration": 198, "attempts": 0, "force": 0.7561827834958783, "acceleration": 4.850156094109967}
+{"recorded_at": {"utc": "2026-11-19T23:51:12.614074+00:00", "melbourne": "2026-11-20T10:51:12.614074+11:00"}, "message": "Candidate observation", "seed": "small-control", "nodes": 65, "iteration": 199, "attempts": 1, "force": 0.7324381892197335, "acceleration": 4.009652771110055}
+{"recorded_at": {"utc": "2026-11-19T23:51:17.815132+00:00", "melbourne": "2026-11-20T10:51:17.815132+11:00"}, "message": "Candidate observation", "seed": "small-control", "nodes": 65, "iteration": 200, "attempts": 2, "force": 0.658102745533775, "acceleration": 3.0723144019237623}
+{"recorded_at": {"utc": "2026-11-19T23:51:22.171546+00:00", "melbourne": "2026-11-20T10:51:22.171546+11:00"}, "message": "Candidate observation", "seed": "small-control", "nodes": 65, "iteration": 202, "attempts": 4, "force": 0.40643419942635906, "acceleration": 1.3969837064362904}
+ok
+test_service_limits_and_nonroot_worker_command (test_continuation.ContinuationTests.test_service_limits_and_nonroot_worker_command) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 46.510s
+
+OK

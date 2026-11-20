@@ -49,3 +49,5 @@ Third-party works retain their own terms; this repository links to papers rather
 See [NOTICE](NOTICE) and [CITATION.cff](CITATION.cff). Please cite the project and the primary papers used when publishing results.
 
 [Q17–Q32 stopping-policy audit and targeted continuation](docs/research/q17-q32-policy-v2-20261120/README.md)
+
+[Q17–Q32 complete results, assessment and retained-field diagnosis](docs/research/q17-q32-results-field-diagnosis-20261120/README.md)
