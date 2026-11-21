@@ -1,5 +1,130 @@
 # Matter Waves visual explanation gallery
 
+{"utc": "2026-11-21T14:24:16.100803+00:00", "melbourne": "2026-11-22T01:24:16.100803+11:00"}
+
+## Current movie presentation
+
+[Download the focused smooth rotations](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/matter-waves-interior-orbits.zip). Extract and open viewer.html locally. Each movie is a camera orbit of a **fixed** retained state: 30 fps, 600 frames over 20 playback seconds, fitted bounds, a single 3D panel and a labelled opacity wedge with native-derived energy cross-sections (viridis: energy/contour level, log scale; coolwarm surface: internal nₓ). Low-density holes remain unpainted. All Q1–Q16 are included; Q1 remains parked context. No physical evolution or physical spinning is implied.
+
+### Q2: q2-retained-reference
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/replace-q2-retained-reference-broad-0.png)
+
+Fixed optimizer state: iteration 0 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/replace-q2-retained-reference-broad-0.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/replace-q2-retained-reference-broad-0.json).
+
+### Q10: q10-trefoil32-2-2
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/replace-sequence-q10-optimizer.png)
+
+Fixed optimizer state: iteration 450 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/replace-sequence-q10-optimizer.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/replace-sequence-q10-optimizer.json).
+
+### Q2: q2-reference
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/replace-sequence-q2-reference-dt0.01.png)
+
+Frozen saved state: model t=0.2; step 20 · camera motion only. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/replace-sequence-q2-reference-dt0.01.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/replace-sequence-q2-reference-dt0.01.json).
+
+### Q3: q3-axial
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/replace-sequence-q3-axial-coarse-fresh-z-dt0.01.png)
+
+Frozen saved state: model t=0.2; step 20 · camera motion only. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/replace-sequence-q3-axial-coarse-fresh-z-dt0.01.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/replace-sequence-q3-axial-coarse-fresh-z-dt0.01.json).
+
+### Q3: q3-axial
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/replace-sequence-q3-axial-domain-warm-z-dt0.01.png)
+
+Frozen saved state: model t=0.5; step 50 · camera motion only. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/replace-sequence-q3-axial-domain-warm-z-dt0.01.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/replace-sequence-q3-axial-domain-warm-z-dt0.01.json).
+
+### Q3: q3-axial
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/replace-sequence-q3-axial-fine-warm-x-dt0.01.png)
+
+Frozen saved state: model t=0.2; step 20 · camera motion only. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/replace-sequence-q3-axial-fine-warm-x-dt0.01.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/replace-sequence-q3-axial-fine-warm-x-dt0.01.json).
+
+### Q1: q1 retained rest parent
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q01-additional-orbit.png)
+
+Fixed retained optimizer state · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q01-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q01-additional-orbit.json).
+
+### Q4: q4-axial41
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q04-additional-orbit.png)
+
+Fixed optimizer state: iteration 225 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q04-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q04-additional-orbit.json).
+
+### Q5: q5-trefoil32-1-1
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q05-additional-orbit.png)
+
+Fixed optimizer state: iteration 50 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q05-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q05-additional-orbit.json).
+
+### Q6: q6-axial6-1
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q06-additional-orbit.png)
+
+Fixed optimizer state: iteration 400 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q06-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q06-additional-orbit.json).
+
+### Q7: q7-trefoil
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q07-additional-orbit.png)
+
+Fixed optimizer state: iteration 1300 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q07-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q07-additional-orbit.json).
+
+### Q8: q8-trefoil32-1-2
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q08-additional-orbit.png)
+
+Fixed optimizer state: iteration 750 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q08-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q08-additional-orbit.json).
+
+### Q9: q9-trefoil32-3-1
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q09-additional-orbit.png)
+
+Fixed optimizer state: iteration 100 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q09-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q09-additional-orbit.json).
+
+### Q11: q11-axial11-1
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q11-additional-orbit.png)
+
+Fixed optimizer state: iteration 50 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q11-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q11-additional-orbit.json).
+
+### Q12: q12-axial4-3
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q12-additional-orbit.png)
+
+Fixed optimizer state: iteration 50 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q12-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q12-additional-orbit.json).
+
+### Q13: q13-axial13-1
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q13-additional-orbit.png)
+
+Fixed optimizer state: iteration 50 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q13-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q13-additional-orbit.json).
+
+### Q14: q14-axial7-2
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q14-additional-orbit.png)
+
+Fixed optimizer state: iteration 50 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q14-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q14-additional-orbit.json).
+
+### Q15: q15-axial5-3
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q15-additional-orbit.png)
+
+Fixed optimizer state: iteration 50 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q15-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q15-additional-orbit.json).
+
+### Q16: q16-axial4-4
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/thumbnails/q16-additional-orbit.png)
+
+Fixed optimizer state: iteration 50 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/interior-orbits-c3b56d80ba47/q16-additional-orbit.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/provenance/q16-additional-orbit.json).
+
+## Preserved analysis figures and earlier movie versions
+
+Original images, charts, saved-time/optimizer movies and scientific records remain unchanged in the earlier collection. New rotations replace the active movie presentation only.
+
+
 {"utc": "2026-11-21T02:12:02.017028+00:00", "melbourne": "2026-11-21T13:12:02.017028+11:00"}
 
 ## Current movie presentation

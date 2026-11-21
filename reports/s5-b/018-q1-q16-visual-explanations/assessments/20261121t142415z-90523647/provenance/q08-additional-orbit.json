@@ -1,0 +1,338 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-21T12:54:28.095157+00:00",
+    "melbourne": "2026-11-21T23:54:28.095157+11:00"
+  },
+  "identity_hash": "36e4ed157a1bec131c6c2344a5117f875c9ef3243e33a57954b9c7fb89cc3742",
+  "identity": {
+    "version": "EFT-interior-orbit-v1",
+    "source_sha256": "1c781889663026f12823e0d5a5c7b73f47c34a6fb37d75413456b69636fa0e4c",
+    "source_state": {
+      "id": "q8-continuation-2",
+      "q": 8,
+      "seed": "q8-trefoil32-1-2",
+      "stage": "campaign2",
+      "iteration": 750,
+      "nodes": 121,
+      "lengths": [
+        23.04,
+        23.04,
+        23.04
+      ],
+      "sha256": "1c781889663026f12823e0d5a5c7b73f47c34a6fb37d75413456b69636fa0e4c",
+      "kind": "static",
+      "model": "SF-relativistic-neutral-v1",
+      "outcome": "retained unresolved state",
+      "interpretation": "Near-ready native750 passed force/tail but failed maximum acceleration. Final paired CG/L-BFGS audit produced no jointly passing observation. Final audit stop condition met; keep native750 plus both final optimizer fields.",
+      "recorded_metrics": {
+        "campaign": "campaign2",
+        "arm": "q8-continuation-2",
+        "native_iteration": 750,
+        "nodes": 121,
+        "box": 23.04,
+        "force": 8.80192959807609e-05,
+        "force_gate_multiple": 0.8801929598076089,
+        "acceleration": 0.0012090998942414692,
+        "acceleration_gate_multiple": 1.2090998942414692,
+        "tail": 0.0005857915015796818,
+        "tail_gate_multiple": 0.7810553354395756
+      },
+      "home_path": "ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q8-continuation-2/stage-0750.npz"
+    },
+    "settings": {
+      "fps": 30,
+      "seconds": 20,
+      "width": 1920,
+      "height": 1080,
+      "segment_frames": 120,
+      "elevation": 24.0,
+      "start_azimuth": -55.0,
+      "surface_grid_cap": 81,
+      "iso_fraction_fallback": null,
+      "wedge_degrees": 50.0,
+      "wedge_alpha": 0.1,
+      "surface_alpha": 0.96,
+      "wedge_direction": 0.0,
+      "occupancy": 0.78,
+      "padding": 0.06,
+      "crf": 18
+    },
+    "absolute_energy_level": 0.02828382478874522,
+    "renderer_sha256": "c2910cfbf58f35a17837b925f2a03d18655125fddfe7f1c33611c693bfb374ca",
+    "fixture": false
+  },
+  "source_path": "/home/rd/ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q8-continuation-2/stage-0750.npz",
+  "source": {
+    "id": "q8-continuation-2",
+    "q": 8,
+    "seed": "q8-trefoil32-1-2",
+    "stage": "campaign2",
+    "iteration": 750,
+    "nodes": 121,
+    "lengths": [
+      23.04,
+      23.04,
+      23.04
+    ],
+    "sha256": "1c781889663026f12823e0d5a5c7b73f47c34a6fb37d75413456b69636fa0e4c",
+    "kind": "static",
+    "model": "SF-relativistic-neutral-v1",
+    "outcome": "retained unresolved state",
+    "interpretation": "Near-ready native750 passed force/tail but failed maximum acceleration. Final paired CG/L-BFGS audit produced no jointly passing observation. Final audit stop condition met; keep native750 plus both final optimizer fields.",
+    "recorded_metrics": {
+      "campaign": "campaign2",
+      "arm": "q8-continuation-2",
+      "native_iteration": 750,
+      "nodes": 121,
+      "box": 23.04,
+      "force": 8.80192959807609e-05,
+      "force_gate_multiple": 0.8801929598076089,
+      "acceleration": 0.0012090998942414692,
+      "acceleration_gate_multiple": 1.2090998942414692,
+      "tail": 0.0005857915015796818,
+      "tail_gate_multiple": 0.7810553354395756
+    },
+    "home_path": "ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q8-continuation-2/stage-0750.npz"
+  },
+  "geometry": {
+    "native_grid": [
+      121,
+      121,
+      121
+    ],
+    "native_spacing": [
+      0.192,
+      0.192,
+      0.192
+    ],
+    "native_crop_index_low": [
+      40,
+      41,
+      49
+    ],
+    "native_crop_index_high_inclusive": [
+      76,
+      79,
+      71
+    ],
+    "native_crop_grid": [
+      37,
+      39,
+      23
+    ],
+    "display_crop_grid": [
+      37,
+      39,
+      23
+    ],
+    "display_origin": [
+      -3.84,
+      -3.6479999999999997,
+      -2.112
+    ],
+    "display_spacing": [
+      0.192,
+      0.192,
+      0.192
+    ],
+    "original_box_lengths": [
+      23.04,
+      23.04,
+      23.04
+    ],
+    "absolute_energy_level": 0.02828382478874522,
+    "density": "D4-derived continuum T00; native derivatives before optional display interpolation",
+    "interior_sections": {
+      "quantity": "native-derived D4 continuum T00, trilinear display sampling",
+      "sampling_grid": [
+        65,
+        65
+      ],
+      "planes": "two radial vertical planes at fixed opacity wedge edges",
+      "mask": "all triangle vertex energies >= same absolute isovalue; low-density holes remain unpainted",
+      "triangles": 9581,
+      "color_scale": "log10(T00 / contour level)",
+      "max_ratio": 3.0667557877400284
+    },
+    "triangles": 28208,
+    "triangle_deletion": false,
+    "field_components": "x,y,z array axes; internal component last",
+    "cache_sha256": "d95e30e486ca11c847afef140038966df43fe998b1db154d92bb2f767e3f3f43"
+  },
+  "camera": {
+    "contour_bounds": [
+      [
+        -3.543764684248001,
+        -3.3423672550041905,
+        -1.7667228501166392
+      ],
+      [
+        2.801137823602769,
+        3.3413200104713754,
+        1.76614488619627
+      ]
+    ],
+    "view_bounds": [
+      [
+        -4.4583159391431995,
+        -4.087526131086991,
+        -4.087291490780768
+      ],
+      [
+        3.715689078497967,
+        4.0864788865541755,
+        4.0867135268603985
+      ]
+    ],
+    "view_center": [
+      -0.371313430322616,
+      -0.000523622266407564,
+      -0.00028898196018456446
+    ],
+    "rotation_safe_radius": 3.8556627441703615,
+    "view_half_length": 4.087002508820583,
+    "physical_box_modified": false,
+    "scene_created_at": {
+      "utc": "2026-11-21T12:51:05.378987+00:00",
+      "melbourne": "2026-11-21T23:51:05.378987+11:00"
+    },
+    "intended_scene_fraction": [
+      0.97,
+      0.73
+    ],
+    "orthographic_zoom": 2.100597274383923,
+    "fit_target_fraction": 0.78,
+    "projected_fit_samples_fraction": [
+      [
+        0.4338270738083703,
+        0.7401142984187946
+      ],
+      [
+        0.42391248231091544,
+        0.7011143013484618
+      ],
+      [
+        0.4158587613892424,
+        0.6780554777863
+      ],
+      [
+        0.42959740056253237,
+        0.7199385606221234
+      ],
+      [
+        0.43140815228164686,
+        0.7513509798439924
+      ],
+      [
+        0.4214824557404881,
+        0.7687680792962289
+      ],
+      [
+        0.41746498094913576,
+        0.7711641634586316
+      ],
+      [
+        0.4314957307599304,
+        0.7577588509809234
+      ],
+      [
+        0.43357670138714,
+        0.7315611241971605
+      ],
+      [
+        0.4232380176529328,
+        0.6916219672004553
+      ],
+      [
+        0.41714818233914513,
+        0.6768342857457945
+      ],
+      [
+        0.4314014350463665,
+        0.7193739385656508
+      ],
+      [
+        0.4338270738083705,
+        0.7512224363207671
+      ],
+      [
+        0.42391248231091544,
+        0.7690790229783605
+      ],
+      [
+        0.41585876138924227,
+        0.7717545425634647
+      ],
+      [
+        0.42959740056253226,
+        0.7590666641640791
+      ],
+      [
+        0.43140815228164686,
+        0.7322694588204391
+      ],
+      [
+        0.4214824557404881,
+        0.6943518282638854
+      ],
+      [
+        0.41746498094913576,
+        0.6863941481237823
+      ],
+      [
+        0.43149573075993053,
+        0.7285645535462436
+      ],
+      [
+        0.43357670138714,
+        0.75967926944744
+      ],
+      [
+        0.4232380176529328,
+        0.7773769672906435
+      ],
+      [
+        0.41714818233914513,
+        0.78
+      ],
+      [
+        0.43140143504636663,
+        0.7673053274284994
+      ]
+    ],
+    "wedge_triangles": 4460,
+    "wedge_coordinate_frame": "fixed data-space azimuth about contour center; no rotating cut or field removal"
+  },
+  "video": {
+    "sha256": "1be4dd7aa7254a863e4a488d5bce0b3352a1aa081c415102e295074237ade664",
+    "probe": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "30/1",
+          "nb_read_frames": "600"
+        }
+      ],
+      "format": {
+        "duration": "20.000000"
+      }
+    },
+    "full_decode": "passed"
+  },
+  "poster_sha256": "d25b69c2936934e1f62151617e1aafee6ec265e0cb7b74e10193e864353265b9",
+  "animation_kind": "camera-only; one fixed retained state",
+  "frozen_state_label": "Fixed optimizer state: iteration 750 \u00b7 no physical elapsed time",
+  "playback_seconds": 20,
+  "frames": 600,
+  "camera_step_degrees": 0.6,
+  "seam_step_degrees": 0.6,
+  "physical_intermediate_states_generated": 0,
+  "scientific_fields_written": 0,
+  "opacity_scope": "Fixed angular surface transparency plus sampled interior energy cross-sections. Low-density holes are not filled. No energy or field is removed.",
+  "interpretation": "Near-ready native750 passed force/tail but failed maximum acceleration. Final paired CG/L-BFGS audit produced no jointly passing observation. Final audit stop condition met; keep native750 plus both final optimizer fields.",
+  "limits": "Appearance and opacity do not change numerical outcomes or establish stability/electron properties."
+}
