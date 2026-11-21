@@ -1,6 +1,6 @@
 # s5-b-018: Q1 to Q16 retained-field visual explanations — evidence index
 
-Updated: UTC 2026-11-21T02:12:01.916295+00:00; Australia/Melbourne 2026-11-21T13:12:01.916295+11:00.
+Updated: UTC 2026-11-21T02:14:49.573878+00:00; Australia/Melbourne 2026-11-21T13:14:49.573878+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/018-q1-q16-visual-explanations.md). State: assessed; scientific gate: not-applicable.
 
@@ -13,5 +13,6 @@ Authenticated spatial coverage Q1–Q16 and bounded saved-state/camera/optimizer
 | assessment | [Release media download and checksum verification](assessments/20261121t004804z-774ceff4/README.md) |
 | preparation | [Focused movie presentation revision; source states unchanged](preparation/20261121t014527z-cd596e38/README.md) |
 | assessment | [Focused smooth camera rotations supersede active MP4 presentation](assessments/20261121t021201z-9d94c488/README.md) |
+| assessment | [Release media download and checksum verification](assessments/20261121t021449z-13b3a70f/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.

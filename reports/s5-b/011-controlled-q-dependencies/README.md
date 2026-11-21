@@ -1,6 +1,6 @@
 # s5-b-011: Controlled dependency transfer to Q2 Q3 and other Q results — evidence index
 
-Updated: UTC 2026-11-21T02:12:01.916295+00:00; Australia/Melbourne 2026-11-21T13:12:01.916295+11:00.
+Updated: UTC 2026-11-21T02:14:49.573878+00:00; Australia/Melbourne 2026-11-21T13:14:49.573878+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/011-controlled-q-dependencies.md). State: prepared; scientific gate: open.
 

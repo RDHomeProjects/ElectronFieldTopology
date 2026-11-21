@@ -1,6 +1,6 @@
 # s5-b-008: Stationary tail-domain screening — evidence index
 
-Updated: UTC 2026-11-21T02:12:01.916295+00:00; Australia/Melbourne 2026-11-21T13:12:01.916295+11:00.
+Updated: UTC 2026-11-21T02:14:49.573878+00:00; Australia/Melbourne 2026-11-21T13:14:49.573878+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/008-tail-domain-screening.md). State: assessed; scientific gate: open.
 

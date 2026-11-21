@@ -1,6 +1,6 @@
 # S3-D: Helicity and linking
 
-Updated: UTC 2026-11-21T02:12:01.916295+00:00; Australia/Melbourne 2026-11-21T13:12:01.916295+11:00.
+Updated: UTC 2026-11-21T02:14:49.573878+00:00; Australia/Melbourne 2026-11-21T13:14:49.573878+11:00.
 
 Selected fibers and finite instruments, not a whole-topology certificate.
 
