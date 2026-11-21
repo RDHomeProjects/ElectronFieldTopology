@@ -1,6 +1,6 @@
 # s5-b-016: Higher Q reconciliation and motion dependent stability hypothesis — evidence index
 
-Updated: UTC 2026-11-17T13:27:59.068523+00:00; Australia/Melbourne 2026-11-18T00:27:59.068523+11:00.
+Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/016-higher-q-reconciliation-motion-hypothesis.md). State: assessed; scientific gate: open.
 

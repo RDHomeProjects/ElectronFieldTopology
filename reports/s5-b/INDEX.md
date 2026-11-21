@@ -1,6 +1,6 @@
 # S5-B: Neutral physical-time dynamics
 
-Updated: UTC 2026-11-17T13:27:59.068523+00:00; Australia/Melbourne 2026-11-18T00:27:59.068523+11:00.
+Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
 
 Active dynamics track; general isolated-motion acceptance remains open.
 
@@ -23,6 +23,7 @@ Active dynamics track; general isolated-motion acceptance remains open.
 | [s5-b-015](../../docs/plans/s5-b/015-q2-q16-closure-higher-q-review.md) | Q2 to Q16 allocation closure and higher Q feasibility review | assessed | open |
 | [s5-b-016](../../docs/plans/s5-b/016-higher-q-reconciliation-motion-hypothesis.md) | Higher Q reconciliation and motion dependent stability hypothesis | assessed | open |
 | [s5-b-017](../../docs/plans/s5-b/017-adaptive-q17-q32-screen.md) | Adaptive Q17 to Q32 candidate screening | prepared | open |
+| [s5-b-018](../../docs/plans/s5-b/018-q1-q16-visual-explanations.md) | Q1 to Q16 retained-field visual explanations | assessed | not-applicable |
 
 Study indexes distinguish preparation, measurements and assessment. A planned record has no measured results.
 
@@ -43,3 +44,4 @@ Study indexes distinguish preparation, measurements and assessment. A planned re
 - [s5-b-015 evidence index](015-q2-q16-closure-higher-q-review/README.md)
 - [s5-b-016 evidence index](016-higher-q-reconciliation-motion-hypothesis/README.md)
 - [s5-b-017 evidence index](017-adaptive-q17-q32-screen/README.md)
+- [s5-b-018 evidence index](018-q1-q16-visual-explanations/README.md)

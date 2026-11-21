@@ -1,0 +1,119 @@
+{
+  "source": {
+    "id": "q5-domain-control",
+    "q": 5,
+    "seed": "q5-trefoil32-1-1",
+    "stage": "campaign2",
+    "iteration": 150,
+    "nodes": 121,
+    "lengths": [
+      23.04,
+      23.04,
+      23.04
+    ],
+    "sha256": "c31bf984aebb8a6b7ed58f55e7533f45c523119a94d05f821ca7a6814a2b8ea2",
+    "kind": "static",
+    "model": "SF-relativistic-neutral-v1",
+    "outcome": "retained unresolved state",
+    "interpretation": "Trefoil exact continuation lost representation at native95; restarted coarse/fine fields retained representation but tail failed. Fixed-spacing domain pair still failed readiness. Axial variant also unresolved. If reopened, diagnose newly released boundary layers before another domain change; retain iteration50 pre-loss parent.",
+    "recorded_metrics": {
+      "campaign": "campaign2",
+      "arm": "q5-domain-control",
+      "native_iteration": 150,
+      "nodes": 121,
+      "box": 23.04,
+      "force": 0.014609735438125172,
+      "force_gate_multiple": 146.0973543812517,
+      "acceleration": 0.21560403889813864,
+      "acceleration_gate_multiple": 215.60403889813864,
+      "tail": 0.0018087911181670579,
+      "tail_gate_multiple": 2.4117214908894105
+    },
+    "home_path": "ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q5-domain-control/stage-0150.npz"
+  },
+  "embedded_source_metadata": {
+    "written_utc": "2026-11-15T18:21:06.644060+00:00",
+    "written_melbourne": "2026-11-16T05:21:06.644060+11:00",
+    "iteration": "150"
+  },
+  "array_order": "axes x,y,z; internal component last; no axis permutation",
+  "source_path": "/home/rd/ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q5-domain-control/stage-0150.npz",
+  "identity": {
+    "version": "EFT-visual-collection-v1",
+    "selection_hash": "00fb76398671c5c4c45cdc35004c7448b4eb9dd6ba6292f36df770ebb2c6be75",
+    "settings_hash": "9a2b541aba03fd8e6defcaf67507141b52e429908a7a75794041bf01a2ff09b5",
+    "renderer_sha256": "79fa3250e7e257e363c4aa18cada85efa4e6f05ddc693f249aba51d3f77a1039",
+    "operator_sha256": {
+      "sf_time.py": "9922d0764a64b7df0d37d610a8d6b778f33c847d35ff5bc58d82904e3cde2a47",
+      "sf_dynamics.py": "772cfca6eda32a7ef58c01db2eb79a0146411116e61e6ceeb271128ad9b0bc2a",
+      "sf_renderer.py": "96c63b740a2291181b873f0b6882f7bb2ce06a36be5709c55eb4643cfd2f2434",
+      "sf_preview.py": "fd724ada6cdc3eefecd670ccaeaa919ff55a64c601dc189d53d47f39ced77c0e",
+      "sf_topology.py": "c8c0fa86dba70853aedbbed3eee73e3ef038542201431fe8c28c984308d507ac",
+      "skyrme.py": "92025eb0ceb5b0b81c8a73b3ac8616be8f9fd566f59621146e517c275cd5207d"
+    }
+  },
+  "rendered_at": {
+    "utc": "2026-11-20T23:35:05.170493+00:00",
+    "melbourne": "2026-11-21T10:35:05.170493+11:00"
+  },
+  "settings": {
+    "width": 3840,
+    "height": 2160,
+    "display_nodes": 49,
+    "max_triangles": 18000,
+    "axis_half_length": 14.0,
+    "azimuth": -55.0,
+    "recorded_at": {
+      "utc": "2026-11-20T23:35:05.170493+00:00",
+      "melbourne": "2026-11-21T10:35:05.170493+11:00"
+    }
+  },
+  "display": {
+    "display_grid": [
+      49,
+      49,
+      49
+    ],
+    "data_grid": [
+      121,
+      121,
+      121
+    ],
+    "energy_isosurface": 0.05509713025335763,
+    "preimage_status": "closed_components",
+    "peak_display_position": [
+      -0.19200000000000017,
+      -0.9599999999999991,
+      -0.38400000000000034
+    ],
+    "density": "D4-derived continuum T00, native derivatives then display interpolation",
+    "triangles_before_display_decimation": 1712,
+    "triangle_stride": 1,
+    "field_color_range": [
+      -1.0,
+      1.0
+    ],
+    "acceleration_range": [
+      1e-08,
+      100.0
+    ],
+    "sha256": "5f205c2a21010335e1c439bf4c72910421362ff12c964d06f141a4c0066da226"
+  },
+  "curve_files": {
+    "preimage-000.npz": "89b68739d9e7c0ae536494fd17634ee1fac4e4c1162efb021e741e30948d403c"
+  },
+  "camera_video": null,
+  "physical_time_seconds_SI": null,
+  "interpretation": "The internal unit vector n maps each spatial point to an internal sphere; it is not electromagnetic B or material velocity. The surface is a threshold of D4-derived continuum energy density, not the original cell/Gauss density and not automatically a knot core. A selected-target preimage curve follows points with the same internal direction; failed extraction stays unresolved. Axes and boxes use dimensionless model length. Q labels a Hopf sector, not one unique shape, electric charge or quantum spin. Pixel resolution does not refine the numerical grid. A pleasing geometry, falling energy or low residual does not prove physical stability, isolated motion or an electron model.",
+  "resource_qualification": {
+    "recorded_at": {
+      "utc": "2026-11-20T23:35:05.170346+00:00",
+      "melbourne": "2026-11-21T10:35:05.170346+11:00"
+    },
+    "screen_idle_asserted": true,
+    "available_ram_kib": 10643072,
+    "load": 1.880859375,
+    "gpu_used": false,
+    "threads": 1
+  }
+}

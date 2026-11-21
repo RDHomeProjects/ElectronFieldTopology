@@ -1,6 +1,6 @@
 # s5-b-012: Bounded rapid Q2-Q16 static screening and conditional refinement — evidence index
 
-Updated: UTC 2026-11-17T13:27:59.068523+00:00; Australia/Melbourne 2026-11-18T00:27:59.068523+11:00.
+Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/012-rapid-q-screening.md). State: assessed; scientific gate: open.
 
@@ -10,5 +10,7 @@ Updated: UTC 2026-11-17T13:27:59.068523+00:00; Australia/Melbourne 2026-11-18T00
 |---|---|
 | preparation | [Retrospective triage replay, bounded policy and host controls](preparation/20261114t092542z-fd7655f4/README.md) |
 | assessment | [Completed rapid screen, qualified GPU and retained selection/deferral limitations](assessments/20261114t130531z-44583471/README.md) |
+| assessment | [Additive visual explanations; original numerical findings unchanged](../018-q1-q16-visual-explanations/assessments/20261121t004527z-249b40b8/README.md) |
+| assessment | [Release media download and checksum verification](../018-q1-q16-visual-explanations/assessments/20261121t004804z-774ceff4/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.

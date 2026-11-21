@@ -10,6 +10,8 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Start here
 
+[Q1–Q16 visual explanation gallery](docs/visual-gallery/README.md).
+
 1. [Project purpose and scope](docs/01-purpose-and-scope.md)
 2. [Physics baseline and hypotheses](docs/02-physics-and-hypotheses.md)
 3. [Requirements and acceptance criteria](docs/03-requirements.md)
@@ -22,7 +24,7 @@ The first task is to reproduce known electromagnetic knots and establish reliabl
 
 ## Current capability
 
-Updated: UTC 2026-11-17T13:27:59.068523+00:00; Australia/Melbourne 2026-11-18T00:27:59.068523+11:00.
+Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
 
 Use [the roadmap](docs/06-development-plan.md), [status](docs/STATUS.md), [study plans](docs/plans/README.md) and [stage reports](reports/README.md). These derive from [one project register](docs/project/roadmap.json).
 
