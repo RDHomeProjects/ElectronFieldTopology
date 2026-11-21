@@ -1,6 +1,6 @@
 # s5-b-006: Focused motion, mesh and domain convergence — evidence index
 
-Updated: UTC 2026-11-21T14:24:16.020936+00:00; Australia/Melbourne 2026-11-22T01:24:16.020936+11:00.
+Updated: UTC 2026-11-21T14:31:34.583497+00:00; Australia/Melbourne 2026-11-22T01:31:34.583497+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/006-focused-motion-convergence.md). State: assessed; scientific gate: open.
 
@@ -21,5 +21,6 @@ The boundary-admitted T1 temporal tranche is assessed: six complete trajectories
 | assessment | [Focused smooth camera rotations supersede active MP4 presentation](../018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/README.md) |
 | assessment | [Release media download and checksum verification](../018-q1-q16-visual-explanations/assessments/20261121t021449z-13b3a70f/README.md) |
 | assessment | [All Q1–Q16 smooth rotations with sampled energy interior sections](../018-q1-q16-visual-explanations/assessments/20261121t142415z-90523647/README.md) |
+| assessment | [Release media download and checksum verification](../018-q1-q16-visual-explanations/assessments/20261121t143134z-5cc88452/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.

@@ -1,6 +1,6 @@
 # s0-003: Full workstation archives and temporary-cache policy
 
-Updated: UTC 2026-11-21T14:24:16.020936+00:00; Australia/Melbourne 2026-11-22T01:24:16.020936+11:00.
+Updated: UTC 2026-11-21T14:31:34.583497+00:00; Australia/Melbourne 2026-11-22T01:31:34.583497+11:00.
 
 State: **assessed**. Scientific gate: **not-applicable**. State records workflow progress, not a physical claim.
 

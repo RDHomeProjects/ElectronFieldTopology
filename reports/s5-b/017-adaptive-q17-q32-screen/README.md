@@ -1,6 +1,6 @@
 # s5-b-017: Adaptive Q17 to Q32 candidate screening — evidence index
 
-Updated: UTC 2026-11-21T14:24:16.020936+00:00; Australia/Melbourne 2026-11-22T01:24:16.020936+11:00.
+Updated: UTC 2026-11-21T14:31:34.583497+00:00; Australia/Melbourne 2026-11-22T01:31:34.583497+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/017-adaptive-q17-q32-screen.md). State: prepared; scientific gate: open.
 

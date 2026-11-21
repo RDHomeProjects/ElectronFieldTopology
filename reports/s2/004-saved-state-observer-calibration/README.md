@@ -1,6 +1,6 @@
 # s2-004: Saved-state observer quadrature and alignment calibration — evidence index
 
-Updated: UTC 2026-11-21T14:24:16.020936+00:00; Australia/Melbourne 2026-11-22T01:24:16.020936+11:00.
+Updated: UTC 2026-11-21T14:31:34.583497+00:00; Australia/Melbourne 2026-11-22T01:31:34.583497+11:00.
 
 [Current study plan](../../../docs/plans/s2/004-saved-state-observer-calibration.md). State: assessed; scientific gate: open.
 
