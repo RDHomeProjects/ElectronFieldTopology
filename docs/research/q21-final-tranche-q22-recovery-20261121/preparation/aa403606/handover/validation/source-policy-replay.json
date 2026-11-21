@@ -1,0 +1,110 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-20T23:57:05.361114+00:00",
+    "melbourne": "2026-11-21T10:57:05.361114+11:00"
+  },
+  "iteration": 315,
+  "charged_attempts": 0,
+  "maximum_attempts": 20,
+  "fit_admission": false,
+  "budget_extension": false,
+  "action": "continue",
+  "next_attempts": 5,
+  "measured_joint_progress": {
+    "relative_force_l2": {
+      "previous_median": 0.0027182030365786175,
+      "recent_median": 0.0021747422495691547,
+      "fractional_improvement": 0.19993384588868424
+    },
+    "acceleration_max": {
+      "previous_median": 0.02716658708354213,
+      "recent_median": 0.024453496393204766,
+      "fractional_improvement": 0.09986866152874208
+    }
+  },
+  "fits": {
+    "relative_force_l2": {
+      "status": "descriptive_fit_complete",
+      "x_origin_iteration": 300,
+      "models": [
+        {
+          "model": "linear",
+          "coefficients_highest_power_first": [
+            -5.5375999326116965e-05,
+            0.002776796274766487
+          ],
+          "holdout_relative_rmse": 0.09387455165021448,
+          "holdout_points": 3
+        },
+        {
+          "model": "quadratic",
+          "coefficients_highest_power_first": [
+            -1.297585888060834e-05,
+            0.00013926188388300802,
+            0.0023226412139451947
+          ],
+          "holdout_relative_rmse": 0.9324067363455114,
+          "holdout_points": 3
+        },
+        {
+          "model": "exponential",
+          "coefficients_highest_power_first": [
+            -0.026505538162611416,
+            -5.8907722209443945
+          ],
+          "holdout_relative_rmse": 0.14295938129284305,
+          "holdout_points": 3
+        }
+      ],
+      "admission_inferred": false,
+      "budget_extension": false
+    },
+    "acceleration_max": {
+      "status": "descriptive_fit_complete",
+      "x_origin_iteration": 300,
+      "models": [
+        {
+          "model": "linear",
+          "coefficients_highest_power_first": [
+            -0.00028239263917340877,
+            0.028022909376273025
+          ],
+          "holdout_relative_rmse": 0.12095566158159482,
+          "holdout_points": 3
+        },
+        {
+          "model": "quadratic",
+          "coefficients_highest_power_first": [
+            -8.166952042790668e-05,
+            0.0009426501672451898,
+            0.025164476161296297
+          ],
+          "holdout_relative_rmse": 0.44708080079479645,
+          "holdout_points": 3
+        },
+        {
+          "model": "exponential",
+          "coefficients_highest_power_first": [
+            -0.011796206106553794,
+            -3.577856540365409
+          ],
+          "holdout_relative_rmse": 0.12055655632506213,
+          "holdout_points": 3
+        }
+      ],
+      "admission_inferred": false,
+      "budget_extension": false
+    }
+  },
+  "valid_model_names": {
+    "relative_force_l2": [
+      "linear",
+      "exponential"
+    ],
+    "acceleration_max": [
+      "linear",
+      "exponential"
+    ]
+  },
+  "reason": "first_declared_five_attempt_probe"
+}

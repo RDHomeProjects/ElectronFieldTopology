@@ -1,0 +1,268 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-20T23:41:21.658946+00:00",
+    "melbourne": "2026-11-21T10:41:21.658946+11:00"
+  },
+  "name": "Final bounded Q21 exact tranche and broad local Q22 recovery",
+  "source_run_id": "20261120t114719z-48b7d4cf",
+  "source_evidence_sha256": "b674cee9dca4af58fa4bf1e949aaf76db815fe14fdb43b4b51fbc43b8e2c42b9",
+  "source_compact_files": {
+    "identity.json": "c89169cf3c400dcf4abb8f69045977ec465b84d5c9cc37b1ed4c91a9e6ec3a09",
+    "record.json": "e4466393a0658e9f5dd8495c77c96c1af6a9cb7012419954731fe915bbacfafc",
+    "FIELD-MANIFEST.json": "586836dec8abaf622970fbae7d974c6118ce983050f91c301f0f37c78e4cbf34",
+    "q21/exact/record.json": "81dc47d02b74ee37142578d281b9bffd84b31eae9a1da2f11946720c7cee18e4",
+    "q21/exact/DONE.json": "6b036fb7449efc0e30c3a89a9dda945541af40463d47956657bf9dd18f8052ba",
+    "q21/exact/control.json": "9eff70e9737671572eaa3c54fa734dd0e5a0bf16fc9cbf5ac26402106df93507",
+    "q21/exact/endpoint.seal.json": "2b96252e7715e640c8fb5d63812075c38c0643c66671788803087dfb828123dc"
+  },
+  "q21": {
+    "q": 21,
+    "nodes": 97,
+    "length": 23.04,
+    "source_iteration": 315,
+    "source_identity": "7c462da1975125792e888e57b00af7b02511fb33b4ff45626d6db60644e34245",
+    "source_field": {
+      "path": "q21/exact/endpoint.npz",
+      "sha256": "ad5e13216a4271a212c6a67c810d4394666dc570c33c3a48ff0dc005b01cf7b0",
+      "bytes": 72788752
+    },
+    "expected_metrics": {
+      "energy": 12.346971059771901,
+      "relative_force_l2": 0.0017121806275099038,
+      "acceleration_max": 0.02081109372963749,
+      "acceleration_rms": 0.00029753564152454874,
+      "minimum_corner_cone": 0.7961231796293727,
+      "hopf_integral": -20.71690527372869,
+      "unit_error": 3.3306690738754696e-16,
+      "max_neighbour_angle": 0.7359883390778398,
+      "mean_topological_b": [
+        2.3577787706687003e-07,
+        4.625243956834502e-07,
+        -0.0001490732902275281
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0015660099180685894,
+      "guard_fraction": 0.003143884848177767
+    },
+    "expected_alpha": 0.1231312693637336,
+    "first_probe_attempts": 5,
+    "maximum_additional_attempts": 20,
+    "maximum_native_iteration_without_interruption": 335,
+    "retain_optimizer_memory": true,
+    "observe_every_accepted_step": true
+  },
+  "q22": {
+    "q": 22,
+    "nodes": 129,
+    "spacing": 0.12,
+    "length": 15.36,
+    "sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1",
+    "energy": 12.591379809579184,
+    "cpu_residual": 0.0008815516255655406,
+    "path": "ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz"
+  },
+  "q2": {
+    "id": "q2-control",
+    "q": 2,
+    "nodes": 127,
+    "length": 20.16,
+    "kind": "control",
+    "original_relative_path": "sources/q2-reference.npz",
+    "key": "field",
+    "expected": {
+      "energy": 1.99948549715528,
+      "relative_force_l2": 1.1542460483787707e-05,
+      "acceleration_max": 6.636497024101145e-05,
+      "acceleration_rms": 8.366182125980412e-07,
+      "minimum_corner_cone": 0.9338021913610102,
+      "hopf_integral": -1.9961557335587894,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3972169307717207,
+      "mean_topological_b": [
+        -1.1953179288986849e-18,
+        2.0126580464510174e-17,
+        -6.18706716583301e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0003015441669190186,
+      "guard_fraction": 0.0006463789224437667
+    },
+    "sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930"
+  },
+  "registered_gates": {
+    "recorded_at": {
+      "utc": "2026-11-17T12:24:24.905487+00:00",
+      "melbourne": "2026-11-17T23:24:24.905487+11:00"
+    },
+    "q_values": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "grids": [
+      97,
+      129,
+      161,
+      193
+    ],
+    "length": 23.04,
+    "confirmation_nodes": 193,
+    "maximum_mesh_branches": 4,
+    "maximum_domain_branches": 2,
+    "domain_nodes": 209,
+    "maximum_motion_branches": 2,
+    "bootstrap_steps": 40,
+    "branch_attempt_budget": 500,
+    "mesh_attempt_budget": 300,
+    "domain_attempt_budget": 150,
+    "batch_limits": [
+      5,
+      75
+    ],
+    "observe_limits": [
+      2,
+      20
+    ],
+    "initial_observe": 5,
+    "fit_window": 16,
+    "fit_minimum": 8,
+    "validation_relative_limit": 0.25,
+    "model_disagreement_limit": 0.25,
+    "recent_joint_progress": 0.005,
+    "minimum_before_plateau": 150,
+    "plateau_decisions": 3,
+    "cpu_threads": 4,
+    "disk_reserve_gib": 40,
+    "host_reserve_gib": 6,
+    "gpu_speedup_required": 1.15,
+    "gpu_memory_bytes_per_node": 1100,
+    "benchmark_steps": 3,
+    "force_limit": 0.0001,
+    "acceleration_limit": 0.001,
+    "charge_relative_error": 0.05,
+    "unit_limit": 1e-10,
+    "initial_tail_limit": 0.00075,
+    "tail_guard_limit": 0.001,
+    "shell_width": 2.0,
+    "guard_width": 3.0,
+    "qualification_rtol": 2e-10,
+    "qualification_atol": 2e-11,
+    "mesh_energy_limit": 0.02,
+    "motion": {
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "confirmation_dt": 0.005,
+      "duration": 0.2,
+      "observe_time": 0.01,
+      "milestones": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "speed_stop_from_time": 0.1,
+      "energy_relative": 0.001,
+      "momentum_scaled": 0.001,
+      "shape_relative": 0.01,
+      "speed_relative": 0.01,
+      "runtime_tail_safety": 0.0009,
+      "tail_fraction": 0.001,
+      "temporal_field_limit": 0.0001,
+      "temporal_rate_limit": 0.001
+    },
+    "no_overall_wall_time_cap": true,
+    "motion_execution": "conditional short screens, not long-time stability",
+    "scope": "Static adaptive screening with bounded mesh/domain checks and conditional short motion; unchanged continuum action and scientific gates",
+    "fallback_confirmation_nodes": 225,
+    "domain_padding_nodes_per_side": 8,
+    "maximum_turn_snapshots_per_optimizer_epoch": 2
+  },
+  "resources": {
+    "memory_high_gib": 7,
+    "memory_max_gib": 8,
+    "swap_max_gib": 1,
+    "minimum_available_gib": 10,
+    "minimum_swap_free_gib": 1,
+    "disk_reserve_gib": 40
+  },
+  "adaptive_policy": {
+    "window_points": 16,
+    "comparison_window_points": 8,
+    "minimum_recent_joint_improvement": 0.005,
+    "minimum_new_accepted_points_between_decisions": 5,
+    "minimum_batch_attempts": 5,
+    "maximum_batch_attempts": 10,
+    "holdout_points": 3,
+    "holdout_relative_rmse_limit": 0.25,
+    "maximum_forecast_disagreement": 0.25,
+    "maximum_forecast_fractional_change": 0.15,
+    "gate_distance_fraction": 0.2,
+    "turn_distance_fraction": 0.5,
+    "minimum_valid_models_per_metric": 2,
+    "uncertain_fit_action": "minimum five-attempt probe only when recent measured joint progress passes; hard total budget unchanged"
+  },
+  "recovery": {
+    "project_directory_prefixes": [
+      "ElectronFieldTopology",
+      "Matter-Waves"
+    ],
+    "download_archive_name_tokens": [
+      "electronfieldtopology",
+      "matter-waves",
+      "evidence"
+    ],
+    "archive_extensions": [
+      ".zip",
+      ".tar",
+      ".tar.gz",
+      ".tgz",
+      ".tar.bz2",
+      ".tar.xz"
+    ],
+    "maximum_filesystem_entries": 120000,
+    "maximum_archive_members": 200000,
+    "maximum_nested_depth": 3,
+    "maximum_candidate_and_nested_stream_bytes": 68719476736,
+    "maximum_nested_archive_bytes": 8589934592,
+    "exclude_directories": [
+      ".git",
+      ".venv",
+      "venv",
+      "node_modules",
+      "__pycache__",
+      ".cache"
+    ],
+    "no_wall_time_cap": true,
+    "network_access": false,
+    "absence_scope": "Only declared roots, supported archives and recorded limits; never a proof that no copy exists globally"
+  },
+  "budget_accounting": {
+    "previous_campaign_attempts": 5990,
+    "new_attempt_ceiling": 20,
+    "maximum_aggregate_after_this_tranche": 6010,
+    "no_automatic_reuse_of_old_unused_budget": true
+  },
+  "q22_optimizer_steps": 0,
+  "physical_time_steps": 0,
+  "deferred": [
+    "Memory reset arm",
+    "Fixed-box mesh comparison pending this tranche assessment",
+    "Domain enlargement",
+    "Motion simulations",
+    "New Q candidates",
+    "Another same-grid tranche without separate review"
+  ]
+}
