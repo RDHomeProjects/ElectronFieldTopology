@@ -1,6 +1,6 @@
 # s5-b-009: Paired Q1 stationary tail settling — evidence index
 
-Updated: UTC 2026-11-17T13:27:59.068523+00:00; Australia/Melbourne 2026-11-18T00:27:59.068523+11:00.
+Updated: UTC 2026-11-21T00:45:27.817264+00:00; Australia/Melbourne 2026-11-21T11:45:27.817264+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/009-q1-tail-settling.md). State: assessed; scientific gate: open.
 
@@ -12,5 +12,6 @@ Paired Q1 full fields independently replayed. L20.16 remains a 0.120638% rest-ta
 | measurement | [Paired Q1 tail-settling measurements](runs/20261105t212644z-103ef9f4/README.md) |
 | verification | [Full tail-screen fields and logs: verified Release archive](../../../data/archives/20261106t125605z-da3924bf/README.md) |
 | assessment | [Verified Q1 correction, endpoint/controller qualification and motion handoff](assessments/20261106t130524z-7c67deae/ASSESSMENT.md) |
+| assessment | [Additive visual explanations; original numerical findings unchanged](../018-q1-q16-visual-explanations/assessments/20261121t004527z-249b40b8/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.

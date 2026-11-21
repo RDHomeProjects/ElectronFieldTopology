@@ -117,3 +117,7 @@ field. Slice offers a cross-section if volume opacity hides detail.
 The maintainer confirmed Outline -> Volume resolved the initial blank/outline-only
 view in ParaView5.11.2. This establishes display compatibility for the wave example,
 not numerical/scientific acceptance of future knot trajectories.
+
+## Companion visual explanations
+
+See the [Q1–Q16 visual explanation gallery](visual-gallery/README.md). Numerical records and scientific outcomes remain unchanged.

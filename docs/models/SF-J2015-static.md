@@ -51,3 +51,7 @@ Preimage diagnostics use face-consistent Kuhn tetrahedra, solving two linear com
 Targets use a reproducible amplitude-.005 smooth perturbation (seed 35, eight declared sinusoidal modes, radial envelope) to avoid silently enforcing seed symmetry. The initial W amplitude is a conditioning input, not a changed coupling. Conditioning records are retained; target energies are not fitted by adjusting model coefficients.
 
 Full experiments run locally with explicit iteration/time caps, checkpoints and retained failure statuses. Hosted CI runs only the energy/gradient instrument and small controls. The bibliography, measured report and immutable configuration record actual evidence. AI assisted derivation, implementation and reporting; primary sources and independent controls remain essential.
+
+## Companion visual explanations
+
+See the [Q1–Q16 visual explanation gallery](../visual-gallery/README.md). Numerical records and scientific outcomes remain unchanged.

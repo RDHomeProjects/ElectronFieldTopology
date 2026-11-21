@@ -1,6 +1,6 @@
 # Study plans
 
-Updated: UTC 2026-11-17T13:27:59.068523+00:00; Australia/Melbourne 2026-11-18T00:27:59.068523+11:00.
+Updated: UTC 2026-11-21T00:45:27.817264+00:00; Australia/Melbourne 2026-11-21T11:45:27.817264+11:00.
 
 Each study has a stable stage/number and one current plan below. Earlier flat plan files remain source specifications at their published paths; their historical next-step wording is superseded by the register.
 
@@ -50,3 +50,4 @@ Each study has a stable stage/number and one current plan below. Earlier flat pl
 | [s5-b-015](s5-b/015-q2-q16-closure-higher-q-review.md) | Q2 to Q16 allocation closure and higher Q feasibility review | assessed | open |
 | [s5-b-016](s5-b/016-higher-q-reconciliation-motion-hypothesis.md) | Higher Q reconciliation and motion dependent stability hypothesis | assessed | open |
 | [s5-b-017](s5-b/017-adaptive-q17-q32-screen.md) | Adaptive Q17 to Q32 candidate screening | prepared | open |
+| [s5-b-018](s5-b/018-q1-q16-visual-explanations.md) | Q1 to Q16 retained-field visual explanations | assessed | not-applicable |

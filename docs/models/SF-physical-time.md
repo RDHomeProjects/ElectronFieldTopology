@@ -168,3 +168,7 @@ SCI-001/003/004, MOD-001/002, NUM-001/002/003 and REP-001/002 receive this imple
 and its recorded controls. BND-001 for open boundaries, full NUM-005 soliton stability,
 S6 interactions and S7 quantum/experimental acceptance remain open. AI assisted
 derivation, software and reporting; external scientific peer review is not claimed.
+
+## Companion visual explanations
+
+See the [Q1–Q16 visual explanation gallery](../visual-gallery/README.md). Numerical records and scientific outcomes remain unchanged.
