@@ -1,6 +1,6 @@
 # Preserved report locations
 
-Updated: UTC 2026-11-21T02:14:49.573878+00:00; Australia/Melbourne 2026-11-21T13:14:49.573878+11:00.
+Updated: UTC 2026-11-21T14:31:34.583497+00:00; Australia/Melbourne 2026-11-22T01:31:34.583497+11:00.
 
 Every existing report root is assigned a stage and study. Original bytes, basenames and paths remain unchanged. New records must use the canonical layout.
 

@@ -1,6 +1,6 @@
 # s0-002: Repository layout and plan reconciliation — evidence index
 
-Updated: UTC 2026-11-21T02:14:49.573878+00:00; Australia/Melbourne 2026-11-21T13:14:49.573878+11:00.
+Updated: UTC 2026-11-21T14:31:34.583497+00:00; Australia/Melbourne 2026-11-22T01:31:34.583497+11:00.
 
 [Current study plan](../../../docs/plans/s0/002-repository-governance.md). State: assessed; scientific gate: not-applicable.
 
