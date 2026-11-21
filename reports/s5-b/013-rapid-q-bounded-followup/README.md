@@ -1,6 +1,6 @@
 # s5-b-013: Fixed-configuration Q6 continuation, medium Q4 Q7 reassessment and bounded controls — evidence index
 
-Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
+Updated: UTC 2026-11-21T02:14:49.573878+00:00; Australia/Melbourne 2026-11-21T13:14:49.573878+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/013-rapid-q-bounded-followup.md). State: assessed; scientific gate: open.
 
@@ -13,5 +13,7 @@ Targeted600-step campaign completed; no strict survivor. Q8 force passes but acc
 | assessment | [Completed targeted600-step analysis: Q8 near gate, Q10 rebound, Q5 domain limits](assessments/20261115t112200z-c4215257/README.md) |
 | assessment | [Additive visual explanations; original numerical findings unchanged](../018-q1-q16-visual-explanations/assessments/20261121t004527z-249b40b8/README.md) |
 | assessment | [Release media download and checksum verification](../018-q1-q16-visual-explanations/assessments/20261121t004804z-774ceff4/README.md) |
+| assessment | [Focused smooth camera rotations supersede active MP4 presentation](../018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/README.md) |
+| assessment | [Release media download and checksum verification](../018-q1-q16-visual-explanations/assessments/20261121t021449z-13b3a70f/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.

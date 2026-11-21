@@ -1,6 +1,6 @@
 # s4-c-001: Return-map diagnosis and feasibility — evidence index
 
-Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
+Updated: UTC 2026-11-21T02:14:49.573878+00:00; Australia/Melbourne 2026-11-21T13:14:49.573878+11:00.
 
 [Current study plan](../../../docs/plans/s4-c/001-returnmap-feasibility.md). State: assessed; scientific gate: bounded.
 
