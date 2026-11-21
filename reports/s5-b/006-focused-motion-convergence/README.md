@@ -1,6 +1,6 @@
 # s5-b-006: Focused motion, mesh and domain convergence — evidence index
 
-Updated: UTC 2026-11-21T00:45:27.817264+00:00; Australia/Melbourne 2026-11-21T11:45:27.817264+11:00.
+Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/006-focused-motion-convergence.md). State: assessed; scientific gate: open.
 
@@ -17,5 +17,6 @@ The boundary-admitted T1 temporal tranche is assessed: six complete trajectories
 | verification | [Full audit/temporal fields and snapshots: verified Release archive](../../../data/archives/20261107t233600z-d1c399ad/README.md) |
 | assessment | [Tail-controlled temporal assessment, retained Q1 speed deficit and physical-grid decision](assessments/20261108t010058z-672ebb4c/ASSESSMENT.md) |
 | assessment | [Additive visual explanations; original numerical findings unchanged](../018-q1-q16-visual-explanations/assessments/20261121t004527z-249b40b8/README.md) |
+| assessment | [Release media download and checksum verification](../018-q1-q16-visual-explanations/assessments/20261121t004804z-774ceff4/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.

@@ -1,6 +1,6 @@
 # s5-a-001: Static neutral SF reference and recovered evidence — evidence index
 
-Updated: UTC 2026-11-21T00:45:27.817264+00:00; Australia/Melbourne 2026-11-21T11:45:27.817264+11:00.
+Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
 
 [Current study plan](../../../docs/plans/s5-a/001-static-reference.md). State: assessed; scientific gate: open.
 

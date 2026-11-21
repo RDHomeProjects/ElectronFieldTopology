@@ -1,6 +1,6 @@
 # s2-005: Cell-aware saved-state spacing measurements — evidence index
 
-Updated: UTC 2026-11-21T00:45:27.817264+00:00; Australia/Melbourne 2026-11-21T11:45:27.817264+11:00.
+Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
 
 [Current study plan](../../../docs/plans/s2/005-cell-aware-spacing-measurements.md). State: prepared; scientific gate: open.
 

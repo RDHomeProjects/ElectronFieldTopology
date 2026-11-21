@@ -1,6 +1,6 @@
 # s5-b-010: Fresh Q3 Q4 Q7 survey and detailed motion — evidence index
 
-Updated: UTC 2026-11-21T00:45:27.817264+00:00; Australia/Melbourne 2026-11-21T11:45:27.817264+11:00.
+Updated: UTC 2026-11-21T00:48:04.059517+00:00; Australia/Melbourne 2026-11-21T11:48:04.059517+11:00.
 
 [Current study plan](../../../docs/plans/s5-b/010-intermediate-q-survey.md). State: assessed; scientific gate: open.
 
@@ -18,5 +18,6 @@ Twelve initial-only controls show negligible fine-grid padding effect but strong
 | assessment | [Q3 boundary assessment and independent SF/Maxwell method controls](assessments/20261112t231901z-d2d4a113/README.md) |
 | assessment | [Available observation, initial-field, initialization and sampling-boundary evidence reconciliation](assessments/20261113t234806z-dcc9e69f/README.md) |
 | assessment | [Additive visual explanations; original numerical findings unchanged](../018-q1-q16-visual-explanations/assessments/20261121t004527z-249b40b8/README.md) |
+| assessment | [Release media download and checksum verification](../018-q1-q16-visual-explanations/assessments/20261121t004804z-774ceff4/README.md) |
 
 Published records are append-only. Corrections require a dated superseding assessment and reason; keep earlier files and original hashes.
