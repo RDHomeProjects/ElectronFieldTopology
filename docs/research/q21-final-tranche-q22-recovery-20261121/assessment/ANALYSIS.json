@@ -1,0 +1,240 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-20T13:45:29.692773+00:00",
+    "melbourne": "2026-11-21T00:45:29.692773+11:00"
+  },
+  "arm_summary": [
+    {
+      "arm": "exact",
+      "initial": {
+        "energy": 12.347072371150139,
+        "relative_force_l2": 0.0021617808369545394,
+        "acceleration_max": 0.026782056536655736,
+        "acceleration_rms": 0.00037435184192114124,
+        "minimum_corner_cone": 0.7967911085886914,
+        "hopf_integral": -20.718051592877597,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.7357409276400833,
+        "mean_topological_b": [
+          2.433152936227647e-07,
+          8.884995154809963e-07,
+          -0.00014841198598617133
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.001569382023907253,
+        "guard_fraction": 0.003150297578275691
+      },
+      "final": {
+        "energy": 12.346971059771901,
+        "relative_force_l2": 0.0017121806275099038,
+        "acceleration_max": 0.02081109372963749,
+        "acceleration_rms": 0.00029753564152454874,
+        "minimum_corner_cone": 0.7961231796293727,
+        "hopf_integral": -20.71690527372869,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.7359883390778398,
+        "mean_topological_b": [
+          2.3577787706687003e-07,
+          4.625243956834502e-07,
+          -0.0001490732902275281
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0015660099180685894,
+        "guard_fraction": 0.003143884848177767
+      },
+      "changes_percent": {
+        "energy": -0.0008205295570662408,
+        "relative_force_l2": -20.797677625731048,
+        "acceleration_max": -22.294638945467028,
+        "tail_fraction": -0.21486838687422294,
+        "guard_fraction": -0.20355950314490112
+      },
+      "best_joint_iteration": 312,
+      "best_joint_gate_multiple": 19.769691219747568,
+      "final_force_gate_multiple": 17.121806275099036,
+      "final_acceleration_gate_multiple": 20.811093729637488,
+      "final_tail_gate_multiple": 2.0880132240914526,
+      "final_guard_gate_multiple": 3.143884848177767
+    },
+    {
+      "arm": "memory-reset",
+      "initial": {
+        "energy": 12.347072371150139,
+        "relative_force_l2": 0.0021617808369545394,
+        "acceleration_max": 0.026782056536655736,
+        "acceleration_rms": 0.00037435184192114124,
+        "minimum_corner_cone": 0.7967911085886914,
+        "hopf_integral": -20.718051592877597,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.7357409276400833,
+        "mean_topological_b": [
+          2.433152936227647e-07,
+          8.884995154809963e-07,
+          -0.00014841198598617133
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.001569382023907253,
+        "guard_fraction": 0.003150297578275691
+      },
+      "final": {
+        "energy": 12.347013580345871,
+        "relative_force_l2": 0.002321336776509152,
+        "acceleration_max": 0.023773553637338903,
+        "acceleration_rms": 0.0003752055489998203,
+        "minimum_corner_cone": 0.7961805145205519,
+        "hopf_integral": -20.71741871432102,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.7358058451476299,
+        "mean_topological_b": [
+          2.391242410320135e-07,
+          6.677115740097382e-07,
+          -0.0001487685586375542
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.001567416998287639,
+        "guard_fraction": 0.0031465686463298397
+      },
+      "changes_percent": {
+        "energy": -0.0004761517750972999,
+        "relative_force_l2": 7.380763897388909,
+        "acceleration_max": -11.233278128582814,
+        "tail_fraction": -0.12521015212864084,
+        "guard_fraction": -0.11836760982727457
+      },
+      "best_joint_iteration": 312,
+      "best_joint_gate_multiple": 21.779119275202678,
+      "final_force_gate_multiple": 23.21336776509152,
+      "final_acceleration_gate_multiple": 23.773553637338903,
+      "final_tail_gate_multiple": 2.0898893310501854,
+      "final_guard_gate_multiple": 3.1465686463298397
+    }
+  ],
+  "fits": [
+    {
+      "arm": "exact",
+      "quantity": "relative_force_l2",
+      "model": "linear",
+      "holdout_relative_rmse": 0.16506049412075774,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [
+        402.75703025630247
+      ],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "exact",
+      "quantity": "relative_force_l2",
+      "model": "quadratic",
+      "holdout_relative_rmse": 0.4757705619994394,
+      "passes_original_holdout_limit": false,
+      "formal_future_gate_crossings": [
+        321.108176943807
+      ],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "exact",
+      "quantity": "relative_force_l2",
+      "model": "exponential",
+      "holdout_relative_rmse": 0.10659103957442857,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [
+        561.4932323434643
+      ],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "exact",
+      "quantity": "acceleration_max",
+      "model": "linear",
+      "holdout_relative_rmse": 0.13277203806777818,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [
+        455.91704149263484
+      ],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "exact",
+      "quantity": "acceleration_max",
+      "model": "quadratic",
+      "holdout_relative_rmse": 0.20710551397641425,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [
+        328.96383462941606
+      ],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "exact",
+      "quantity": "acceleration_max",
+      "model": "exponential",
+      "holdout_relative_rmse": 0.12400828570301277,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [
+        744.4812104687169
+      ],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "memory-reset",
+      "quantity": "relative_force_l2",
+      "model": "linear",
+      "holdout_relative_rmse": 0.2911597574810785,
+      "passes_original_holdout_limit": false,
+      "formal_future_gate_crossings": [],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "memory-reset",
+      "quantity": "relative_force_l2",
+      "model": "quadratic",
+      "holdout_relative_rmse": 0.5407502432749172,
+      "passes_original_holdout_limit": false,
+      "formal_future_gate_crossings": [],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "memory-reset",
+      "quantity": "relative_force_l2",
+      "model": "exponential",
+      "holdout_relative_rmse": 0.22832223055759193,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "memory-reset",
+      "quantity": "acceleration_max",
+      "model": "linear",
+      "holdout_relative_rmse": 0.14233245724187657,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "memory-reset",
+      "quantity": "acceleration_max",
+      "model": "quadratic",
+      "holdout_relative_rmse": 0.242285576082414,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [
+        387.6364346219381
+      ],
+      "forecast_is_admission": false
+    },
+    {
+      "arm": "memory-reset",
+      "quantity": "acceleration_max",
+      "model": "exponential",
+      "holdout_relative_rmse": 0.12206179830104001,
+      "passes_original_holdout_limit": true,
+      "formal_future_gate_crossings": [],
+      "forecast_is_admission": false
+    }
+  ],
+  "reset_jointly_better_paired_observations_excluding_start": 12,
+  "paired_post_start_observations": 20,
+  "q22_status": "deferred_missing_exact_historical_field",
+  "new_simulations": 0
+}

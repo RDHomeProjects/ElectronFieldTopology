@@ -1,0 +1,359 @@
+rd@zbook:~/ElectronFieldTopology-repository-admin$ unzip -n \
+  "$HOME/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120.zip" \
+  -d "$HOME/Downloads"
+
+package="$HOME/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120"
+backend="auto"
+
+(
+  set -euo pipefail
+  bash "$package/RUN.sh" verify
+  bash "$package/RUN.sh" install
+  bash "$package/RUN.sh" publish
+  bash "$package/RUN.sh" merge
+  bash "$package/RUN.sh" preflight --backend "$backend"
+  bash "$package/RUN.sh" run --backend "$backend"
+  bash "$package/RUN.sh" status
+)
+Archive:  /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120.zip
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/ENGINE-PROVENANCE.json  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/HOST-VALIDATION.json  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/MODEL.md  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/PLAN.json  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/PR-BODY.md  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/README.md  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/REFERENCES.json  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/RUN.sh  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/SHA256SUMS  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/SOURCES.json  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/ASSESSMENT.html  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/ASSESSMENT.md  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/DIAGNOSTIC-SUMMARY.csv  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/DIAGNOSTIC-SUMMARY.json  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/README.md  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/SHA256SUMS  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/VALIDATION.json  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/data/diagnostic-evidence.zip  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/figures/density-definition-gates.png  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/figures/density-definition-gates.svg  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/figures/interior-residuals.png  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/figures/interior-residuals.svg  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/figures/normalization-comparison.png  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/figures/normalization-comparison.svg  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/figures/q21-core-slices.svg  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/figures/q22-core-slices.svg  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/prior/q2-q16-closure.txt  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/prior/reconciled-static-results.txt  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/assessment/review.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/common.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/engine.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/evaluations.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/handover.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/integrity.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/probe.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/publication.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/supervision.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/test_host.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/validation/host-tests.txt  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/validation/local-publication-rehearsal.py  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/validation/probe-control.json  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/validation/publication-rehearsal.txt  
+  inflating: /home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/worker.py  
+{"recorded_at": {"utc": "2026-11-20T11:46:21.253707+00:00", "melbourne": "2026-11-20T22:46:21.253707+11:00"}, "message": "Q21/Q22 handover verified", "payload_files": 42, "maximum_new_optimizer_attempts": 40, "physical_time_steps": 0}
+Cloning into '/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120'...
+done.
+{"recorded_at": {"utc": "2026-11-20T11:46:21.984656+00:00", "melbourne": "2026-11-20T22:46:21.984656+11:00"}, "message": "Local publication command", "argv": ["git", "remote", "set-url", "origin", "https://github.com/RDHomeProjects/ElectronFieldTopology.git"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:21.986366+00:00", "melbourne": "2026-11-20T22:46:21.986366+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:22.432752+00:00", "melbourne": "2026-11-20T22:46:22.432752+11:00"}, "message": "Local publication command", "argv": ["git", "fetch", "origin", "main"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+remote: Enumerating objects: 299, done.
+remote: Counting objects: 100% (299/299), done.
+remote: Compressing objects: 100% (208/208), done.
+remote: Total 299 (delta 92), reused 283 (delta 80), pack-reused 0 (from 0)
+Receiving objects: 100% (299/299), 16.41 MiB | 22.35 MiB/s, done.
+Resolving deltas: 100% (92/92), completed with 1 local object.
+From https://github.com/RDHomeProjects/ElectronFieldTopology
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+{"recorded_at": {"utc": "2026-11-20T11:46:24.464333+00:00", "melbourne": "2026-11-20T22:46:24.464333+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "origin/main"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:24.465718+00:00", "melbourne": "2026-11-20T22:46:24.465718+11:00"}, "message": "Local publication command", "argv": ["git", "switch", "-c", "analysis/q21-q22-assessment-and-plan-20261120-58458a2a", "ae9650808fc91db6b7b7a64545e69095f32c4aac"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+Switched to a new branch 'analysis/q21-q22-assessment-and-plan-20261120-58458a2a'
+{"recorded_at": {"utc": "2026-11-20T11:46:24.579668+00:00", "melbourne": "2026-11-20T22:46:24.579668+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:24.605429+00:00", "melbourne": "2026-11-20T22:46:24.605429+11:00"}, "message": "Local publication command", "argv": ["git", "add", "--", "README.md", "docs/research/q21-q22-controlled-evaluation-20261120"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:24.815525+00:00", "melbourne": "2026-11-20T22:46:24.815525+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:24.821165+00:00", "melbourne": "2026-11-20T22:46:24.821165+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/project_records.py", "check", "--compare-ref", "ae9650808fc91db6b7b7a64545e69095f32c4aac"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"migration": false, "protected_files": 964, "stages": 15, "studies": 44}
+{"recorded_at": {"utc": "2026-11-20T11:46:25.875902+00:00", "melbourne": "2026-11-20T22:46:25.875902+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/check_docs.py"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+Documentation checks passed: 398 Markdown files; local targets and fences.
+{"recorded_at": {"utc": "2026-11-20T11:46:26.151049+00:00", "melbourne": "2026-11-20T22:46:26.151049+11:00"}, "message": "Assessment or completed evaluations staged locally", "kind": "assessment-and-plan", "branch": "analysis/q21-q22-assessment-and-plan-20261120-58458a2a", "destination": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120/docs/research/q21-q22-controlled-evaluation-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:26.209818+00:00", "melbourne": "2026-11-20T22:46:26.209818+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:26.211427+00:00", "melbourne": "2026-11-20T22:46:26.211427+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:26.219921+00:00", "melbourne": "2026-11-20T22:46:26.219921+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/project_records.py", "check", "--compare-ref", "ae9650808fc91db6b7b7a64545e69095f32c4aac"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"migration": false, "protected_files": 964, "stages": 15, "studies": 44}
+{"recorded_at": {"utc": "2026-11-20T11:46:27.303922+00:00", "melbourne": "2026-11-20T22:46:27.303922+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/check_docs.py"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+Documentation checks passed: 398 Markdown files; local targets and fences.
+{"recorded_at": {"utc": "2026-11-20T11:46:27.566865+00:00", "melbourne": "2026-11-20T22:46:27.566865+11:00"}, "message": "Local publication command", "argv": ["git", "commit", "-m", "Record Q21/Q22 assessment-and-plan"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+[analysis/q21-q22-assessment-and-plan-20261120-58458a2a 96c3aa9] Record Q21/Q22 assessment-and-plan
+ 65 files changed, 5264 insertions(+)
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/.gitattributes
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/README.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/ASSESSMENT.html
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/ASSESSMENT.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/DIAGNOSTIC-SUMMARY.csv
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/DIAGNOSTIC-SUMMARY.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/README.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/SHA256SUMS
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/VALIDATION.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/data/diagnostic-evidence.zip
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/figures/density-definition-gates.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/figures/density-definition-gates.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/figures/interior-residuals.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/figures/interior-residuals.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/figures/normalization-comparison.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/figures/normalization-comparison.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/figures/q21-core-slices.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/figures/q22-core-slices.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/prior/q2-q16-closure.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/prior/reconciled-static-results.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/assessment/review.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/ENGINE-PROVENANCE.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/HOST-VALIDATION.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/MODEL.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/PLAN.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/PR-BODY.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/README.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/REFERENCES.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/RUN.sh
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/SHA256SUMS
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/SOURCES.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/ASSESSMENT.html
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/ASSESSMENT.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/DIAGNOSTIC-SUMMARY.csv
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/DIAGNOSTIC-SUMMARY.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/README.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/SHA256SUMS
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/VALIDATION.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/data/diagnostic-evidence.zip
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/figures/density-definition-gates.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/figures/density-definition-gates.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/figures/interior-residuals.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/figures/interior-residuals.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/figures/normalization-comparison.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/figures/normalization-comparison.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/figures/q21-core-slices.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/figures/q22-core-slices.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/prior/q2-q16-closure.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/prior/reconciled-static-results.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/assessment/review.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/common.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/engine.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/evaluations.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/handover.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/integrity.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/probe.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/publication.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/supervision.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/test_host.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/validation/host-tests.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/validation/local-publication-rehearsal.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/validation/probe-control.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/validation/publication-rehearsal.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/preparation/58458a2a/handover/worker.py
+{"recorded_at": {"utc": "2026-11-20T11:46:27.702013+00:00", "melbourne": "2026-11-20T22:46:27.702013+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:27.707143+00:00", "melbourne": "2026-11-20T22:46:27.707143+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:27.717957+00:00", "melbourne": "2026-11-20T22:46:27.717957+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:27.719346+00:00", "melbourne": "2026-11-20T22:46:27.719346+11:00"}, "message": "Local publication command", "argv": ["git", "push", "-u", "origin", "analysis/q21-q22-assessment-and-plan-20261120-58458a2a"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+Enumerating objects: 63, done.
+Counting objects: 100% (63/63), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (57/57), done.
+Writing objects: 100% (59/59), 8.30 MiB | 2.63 MiB/s, done.
+Total 59 (delta 5), reused 5 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 4 local objects.
+remote: 
+remote: Create a pull request for 'analysis/q21-q22-assessment-and-plan-20261120-58458a2a' on GitHub by visiting:
+remote:      https://github.com/RDHomeProjects/ElectronFieldTopology/pull/new/analysis/q21-q22-assessment-and-plan-20261120-58458a2a
+remote: 
+To https://github.com/RDHomeProjects/ElectronFieldTopology.git
+ * [new branch]      analysis/q21-q22-assessment-and-plan-20261120-58458a2a -> analysis/q21-q22-assessment-and-plan-20261120-58458a2a
+branch 'analysis/q21-q22-assessment-and-plan-20261120-58458a2a' set up to track 'origin/analysis/q21-q22-assessment-and-plan-20261120-58458a2a'.
+{"recorded_at": {"utc": "2026-11-20T11:46:34.581228+00:00", "melbourne": "2026-11-20T22:46:34.581228+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "create", "--repo", "RDHomeProjects/ElectronFieldTopology", "--base", "main", "--head", "analysis/q21-q22-assessment-and-plan-20261120-58458a2a", "--title", "Record field-diagnosis assessment and controlled Q21/Q22 evaluation plan", "--body-file", "/home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/PR-BODY.md"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:37.648568+00:00", "melbourne": "2026-11-20T22:46:37.648568+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:38.371467+00:00", "melbourne": "2026-11-20T22:46:38.371467+11:00"}, "message": "Publication PR created or verified", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-q22-assessment-and-plan-20261120-58458a2a", "headRefOid": "96c3aa9da205e3683125a3eb4cb0f930ebe86369", "mergeCommit": null, "number": 84, "state": "OPEN", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84"}}
+{"recorded_at": {"utc": "2026-11-20T11:46:38.443809+00:00", "melbourne": "2026-11-20T22:46:38.443809+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:38.445637+00:00", "melbourne": "2026-11-20T22:46:38.445637+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:39.026175+00:00", "melbourne": "2026-11-20T22:46:39.026175+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "statusCheckRollup"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:46:39.742774+00:00", "melbourne": "2026-11-20T22:46:39.742774+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "checks", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84", "--repo", "RDHomeProjects/ElectronFieldTopology", "--watch", "--interval", "10"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+All checks were successful
+0 cancelled, 0 failing, 2 successful, 0 skipped, and 0 pending checks
+
+   NAME                                         DESCRIPTION  ELAPSED  URL                                                         
+✓  Documentation integrity/docs (push)                       14s      https://github.com/RDHomeProjects/ElectronFieldTopology/a...
+✓  Documentation integrity/docs (pull_request)               11s      https://github.com/RDHomeProjects/ElectronFieldTopology/a...
+{"recorded_at": {"utc": "2026-11-20T11:47:02.126254+00:00", "melbourne": "2026-11-20T22:47:02.126254+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "merge", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84", "--repo", "RDHomeProjects/ElectronFieldTopology", "--squash", "--delete-branch", "--match-head-commit", "96c3aa9da205e3683125a3eb4cb0f930ebe86369"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+✓ Squashed and merged pull request #84 (Record field-diagnosis assessment and controlled Q21/Q22 evaluation plan)
+✓ Deleted remote branch analysis/q21-q22-assessment-and-plan-20261120-58458a2a
+{"recorded_at": {"utc": "2026-11-20T11:47:08.399982+00:00", "melbourne": "2026-11-20T22:47:08.399982+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T11:47:09.121668+00:00", "melbourne": "2026-11-20T22:47:09.121668+11:00"}, "message": "Publication merged", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-q22-assessment-and-plan-20261120-58458a2a", "headRefOid": "96c3aa9da205e3683125a3eb4cb0f930ebe86369", "mergeCommit": {"oid": "8d6e414d34316088e14517824ed2d596468372e4"}, "number": 84, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84"}}
+{"recorded_at": {"utc": "2026-11-20T11:47:10.457348+00:00", "melbourne": "2026-11-20T22:47:10.457348+11:00"}, "message": "Evaluation preflight", "status": "preflight_pass", "package_files": 42, "source_identity": "18be438af37f89d826ce6693b9af3b3a3d648ab766e8fcaf3b42ba39e7caa1de", "q21_state": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q17-q32-policy-v2/20261120t003653z-a200a9db/continuation/q21-axial-7-3/state-0.npz", "q21_endpoint": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q17-q32-policy-v2/20261120t003653z-a200a9db/continuation/q21-axial-7-3/endpoint.npz", "q2_control": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/sources/q2-reference.npz", "q22_inventory": {"recorded_at": {"utc": "2026-11-20T11:47:10.456321+00:00", "melbourne": "2026-11-20T22:47:10.456321+11:00"}, "status": "deferred_missing_exact_historical_field", "expected_sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1", "checked": [{"path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz", "status": "absent"}], "reason": "Historical Q22 checkpoint unavailable in declared locations; no fresh-seed substitution, regeneration, resampling or Q17 replacement"}, "host": {"total_gib": 15.26858901977539, "available_gib": 10.625873565673828, "swap_free_gib": 1.1656646728515625}, "new_optimizer_attempt_ceiling": 40, "q22_optimizer_steps": 0, "physical_time_steps": 0, "backend_probe": {"recorded_at": {"utc": "2026-11-20T11:47:14.453303+00:00", "melbourne": "2026-11-20T22:47:14.453303+11:00"}, "status": "backend_probe_pass", "requested": "auto", "selected": "cuda", "source_backend": "cuda", "backend_transfer": false, "cuda_identity": {"execution_backend": "cuda-cupy-float64", "device_id": 0, "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design", "compute_capability": "75", "cupy": "14.2.0", "cuda_runtime": 12090, "cuda_driver": 13000, "precision": "float64"}, "energy_gradient_audit": {"passed": true, "energy_abs_difference": 0.0, "gradient_max_abs_difference": 0.0, "reference": "independent CPU sf_readmission.static_value_gradient"}, "optimizer_steps": 0, "physical_time_steps": 0}}
+[sudo] password for rd: 
+Running as unit: matter-waves-q21-q22-evaluation.service; invocation ID: 79ecaa8363bd4fe08a980930801d9df1
+{"recorded_at": {"utc": "2026-11-20T11:47:26.822868+00:00", "melbourne": "2026-11-20T22:47:26.822868+11:00"}, "message": "Bounded evaluation service requested", "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf", "maximum_q21_attempts": 40, "q22_inventory": {"recorded_at": {"utc": "2026-11-20T11:47:15.847128+00:00", "melbourne": "2026-11-20T22:47:15.847128+11:00"}, "status": "deferred_missing_exact_historical_field", "expected_sha256": "1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1", "checked": [{"path": "/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz", "status": "absent"}], "reason": "Historical Q22 checkpoint unavailable in declared locations; no fresh-seed substitution, regeneration, resampling or Q17 replacement"}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/REPORT.html"}
+{"recorded_at": {"utc": "2026-11-20T11:47:26.893369+00:00", "melbourne": "2026-11-20T22:47:26.893369+11:00"}, "message": "Publication status", "phase": "merged", "kind": "assessment-and-plan", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-q22-assessment-and-plan-20261120-58458a2a", "headRefOid": "96c3aa9da205e3683125a3eb4cb0f930ebe86369", "mergeCommit": {"oid": "8d6e414d34316088e14517824ed2d596468372e4"}, "number": 84, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84"}}
+{"recorded_at": {"utc": "2026-11-20T11:47:26.899428+00:00", "melbourne": "2026-11-20T22:47:26.899428+11:00"}, "message": "Q21/Q22 evaluation status", "runner_alive": false, "service_active": true, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf", "status": {"recorded_at": {"utc": "2026-11-20T11:47:19.595946+00:00", "melbourne": "2026-11-20T22:47:19.595946+11:00"}, "status": "starting", "phase": "supervisor-launch", "physical_time_steps": 0}, "heartbeat": null, "telemetry": null, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ bash "$package/RUN.sh" status
+{"recorded_at": {"utc": "2026-11-20T11:48:05.785568+00:00", "melbourne": "2026-11-20T22:48:05.785568+11:00"}, "message": "Publication status", "phase": "merged", "kind": "assessment-and-plan", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-q22-assessment-and-plan-20261120-58458a2a", "headRefOid": "96c3aa9da205e3683125a3eb4cb0f930ebe86369", "mergeCommit": {"oid": "8d6e414d34316088e14517824ed2d596468372e4"}, "number": 84, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84"}}
+{"recorded_at": {"utc": "2026-11-20T11:48:05.790635+00:00", "melbourne": "2026-11-20T22:48:05.790635+11:00"}, "message": "Q21/Q22 evaluation status", "runner_alive": true, "service_active": true, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf", "status": {"recorded_at": {"utc": "2026-11-20T11:47:19.595946+00:00", "melbourne": "2026-11-20T22:47:19.595946+11:00"}, "status": "starting", "phase": "supervisor-launch", "physical_time_steps": 0}, "heartbeat": {"recorded_at": {"utc": "2026-11-20T11:47:57.644681+00:00", "melbourne": "2026-11-20T22:47:57.644681+11:00"}, "pid": 1282840, "process_identity": {"pid": 1282840, "start_ticks": "154440664", "boot_id": "6d55658c-0d38-4bf7-b4a9-5f7b418d6fc0"}, "operation": {"name": "controls-and-source-authentication"}}, "telemetry": {"recorded_at": {"utc": "2026-11-20T11:48:01.949991+00:00", "melbourne": "2026-11-20T22:48:01.949991+11:00"}, "host": {"total_gib": 15.26858901977539, "available_gib": 10.096702575683594, "swap_free_gib": 1.1656646728515625}, "pressure": {"some": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 11996547476.0}, "full": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 11994987765.0}}, "cgroup": {"memory.current": 470126592, "memory.peak": 1742254080, "memory.swap.current": 0, "memory.events": {"low": 0, "high": 0, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}, "memory.pressure": {"some": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 0.0}, "full": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 0.0}}}}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ bash "$package/RUN.sh" status
+{"recorded_at": {"utc": "2026-11-20T13:38:06.258956+00:00", "melbourne": "2026-11-21T00:38:06.258956+11:00"}, "message": "Publication status", "phase": "merged", "kind": "assessment-and-plan", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-q22-assessment-and-plan-20261120-58458a2a", "headRefOid": "96c3aa9da205e3683125a3eb4cb0f930ebe86369", "mergeCommit": {"oid": "8d6e414d34316088e14517824ed2d596468372e4"}, "number": 84, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/84"}}
+{"recorded_at": {"utc": "2026-11-20T13:38:06.264088+00:00", "melbourne": "2026-11-21T00:38:06.264088+11:00"}, "message": "Q21/Q22 evaluation status", "runner_alive": false, "service_active": false, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf", "status": {"recorded_at": {"utc": "2026-11-20T11:59:17.086432+00:00", "melbourne": "2026-11-20T22:59:17.086432+11:00"}, "status": "complete_pending_review", "phase": {"name": "complete", "arm": null, "iteration": 315, "charged_arm_attempts": 20, "relative_force_l2": 0.002321336776509152, "acceleration_max": 0.023773553637338903}, "charged_q21_attempts": 40, "maximum_q21_attempts": 40, "error": null, "q22_status": "deferred_missing_exact_historical_field", "physical_time_steps": 0}, "heartbeat": {"recorded_at": {"utc": "2026-11-20T11:59:12.787804+00:00", "melbourne": "2026-11-20T22:59:12.787804+11:00"}, "pid": 1282840, "process_identity": {"pid": 1282840, "start_ticks": "154440664", "boot_id": "6d55658c-0d38-4bf7-b4a9-5f7b418d6fc0"}, "operation": {"name": "q21-paired-test", "arm": "memory-reset", "iteration": 315, "charged_arm_attempts": 20, "relative_force_l2": 0.002321336776509152, "acceleration_max": 0.023773553637338903}}, "telemetry": {"recorded_at": {"utc": "2026-11-20T11:59:17.665657+00:00", "melbourne": "2026-11-20T22:59:17.665657+11:00"}, "host": {"total_gib": 15.26858901977539, "available_gib": 10.074268341064453, "swap_free_gib": 1.1734771728515625}, "pressure": {"some": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 11996547487.0}, "full": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 11994987776.0}}, "cgroup": {"memory.current": 1033826304, "memory.peak": 1742254080, "memory.swap.current": 0, "memory.events": {"low": 0, "high": 0, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}, "memory.pressure": {"some": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 0.0}, "full": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 0.0}}}}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ (
+  set -euo pipefail
+  bash "$package/RUN.sh" record-results
+  bash "$package/RUN.sh" publish
+  bash "$package/RUN.sh" merge
+  bash "$package/RUN.sh" status
+)
+{"recorded_at": {"utc": "2026-11-20T13:38:27.675878+00:00", "melbourne": "2026-11-21T00:38:27.675878+11:00"}, "message": "Local publication command", "argv": ["git", "remote", "get-url", "origin"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:27.677479+00:00", "melbourne": "2026-11-21T00:38:27.677479+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:27.687269+00:00", "melbourne": "2026-11-21T00:38:27.687269+11:00"}, "message": "Local publication command", "argv": ["git", "fetch", "origin", "main"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 897 bytes | 897.00 KiB/s, done.
+From https://github.com/RDHomeProjects/ElectronFieldTopology
+ * branch            main       -> FETCH_HEAD
+   ae96508..8d6e414  main       -> origin/main
+{"recorded_at": {"utc": "2026-11-20T13:38:29.012719+00:00", "melbourne": "2026-11-21T00:38:29.012719+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "origin/main"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:29.014225+00:00", "melbourne": "2026-11-21T00:38:29.014225+11:00"}, "message": "Local publication command", "argv": ["git", "switch", "-c", "analysis/q21-q22-results-20261120-b674cee9", "8d6e414d34316088e14517824ed2d596468372e4"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+Switched to a new branch 'analysis/q21-q22-results-20261120-b674cee9'
+{"recorded_at": {"utc": "2026-11-20T13:38:29.026325+00:00", "melbourne": "2026-11-21T00:38:29.026325+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:29.074081+00:00", "melbourne": "2026-11-21T00:38:29.074081+11:00"}, "message": "Local publication command", "argv": ["git", "add", "--", "README.md", "docs/research/q21-q22-controlled-evaluation-20261120"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:29.381544+00:00", "melbourne": "2026-11-21T00:38:29.381544+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:29.417516+00:00", "melbourne": "2026-11-21T00:38:29.417516+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/project_records.py", "check", "--compare-ref", "8d6e414d34316088e14517824ed2d596468372e4"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"migration": false, "protected_files": 964, "stages": 15, "studies": 44}
+{"recorded_at": {"utc": "2026-11-20T13:38:30.484911+00:00", "melbourne": "2026-11-21T00:38:30.484911+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/check_docs.py"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+Documentation checks passed: 404 Markdown files; local targets and fences.
+{"recorded_at": {"utc": "2026-11-20T13:38:30.773092+00:00", "melbourne": "2026-11-21T00:38:30.773092+11:00"}, "message": "Assessment or completed evaluations staged locally", "kind": "results", "branch": "analysis/q21-q22-results-20261120-b674cee9", "destination": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120/docs/research/q21-q22-controlled-evaluation-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:30.836008+00:00", "melbourne": "2026-11-21T00:38:30.836008+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:30.837688+00:00", "melbourne": "2026-11-21T00:38:30.837688+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:30.874217+00:00", "melbourne": "2026-11-21T00:38:30.874217+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/project_records.py", "check", "--compare-ref", "8d6e414d34316088e14517824ed2d596468372e4"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"migration": false, "protected_files": 964, "stages": 15, "studies": 44}
+{"recorded_at": {"utc": "2026-11-20T13:38:31.950249+00:00", "melbourne": "2026-11-21T00:38:31.950249+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/check_docs.py"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+Documentation checks passed: 404 Markdown files; local targets and fences.
+{"recorded_at": {"utc": "2026-11-20T13:38:32.224582+00:00", "melbourne": "2026-11-21T00:38:32.224582+11:00"}, "message": "Local publication command", "argv": ["git", "commit", "-m", "Record Q21/Q22 results"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+[analysis/q21-q22-results-20261120-b674cee9 5b5301a] Record Q21/Q22 results
+ 76 files changed, 2 insertions(+)
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/BACKEND.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/DERIVATIVE-SEAL.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/DIRECTIONAL-DERIVATIVES.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/FIELD-MANIFEST.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/LAUNCH-CONFIG.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/PAIRED-COMPARISON.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/PREFLIGHT.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/Q22-INVENTORY.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/REPORT.html
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/SHA256SUMS
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/SUMMARY.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/evidence.zip
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/ENGINE-PROVENANCE.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/HOST-VALIDATION.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/MODEL.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/PLAN.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/PR-BODY.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/README.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/REFERENCES.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/RUN.sh
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/SHA256SUMS
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/SOURCES.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/ASSESSMENT.html
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/ASSESSMENT.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/DIAGNOSTIC-SUMMARY.csv
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/DIAGNOSTIC-SUMMARY.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/README.md
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/SHA256SUMS
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/VALIDATION.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/data/diagnostic-evidence.zip
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/figures/density-definition-gates.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/figures/density-definition-gates.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/figures/interior-residuals.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/figures/interior-residuals.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/figures/normalization-comparison.png
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/figures/normalization-comparison.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/figures/q21-core-slices.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/figures/q22-core-slices.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/prior/q2-q16-closure.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/prior/reconciled-static-results.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/assessment/review.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/common.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/engine.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/evaluations.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/handover.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/integrity.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/probe.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/publication.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/supervision.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/test_host.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/validation/host-tests.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/validation/local-publication-rehearsal.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/validation/probe-control.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/validation/publication-rehearsal.txt
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/handover/worker.py
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/identity.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21-comparison.svg
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/exact/DONE.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/exact/INTERVENTION.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/exact/attempt-ledger.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/exact/control.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/exact/endpoint.seal.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/exact/record.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/exact/state-0.seal.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/exact/state-1.seal.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/memory-reset/DONE.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/memory-reset/INTERVENTION.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/memory-reset/attempt-ledger.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/memory-reset/control.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/memory-reset/endpoint.seal.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/memory-reset/record.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/memory-reset/state-0.seal.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/q21/memory-reset/state-1.seal.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/record.json
+ create mode 100644 docs/research/q21-q22-controlled-evaluation-20261120/results/20261120t114719z-48b7d4cf/b674cee9/telemetry.jsonl
+{"recorded_at": {"utc": "2026-11-20T13:38:32.271326+00:00", "melbourne": "2026-11-21T00:38:32.271326+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:32.275591+00:00", "melbourne": "2026-11-21T00:38:32.275591+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:32.285628+00:00", "melbourne": "2026-11-21T00:38:32.285628+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:32.286888+00:00", "melbourne": "2026-11-21T00:38:32.286888+11:00"}, "message": "Local publication command", "argv": ["git", "push", "-u", "origin", "analysis/q21-q22-results-20261120-b674cee9"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+Enumerating objects: 75, done.
+Counting objects: 100% (75/75), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (69/69), done.
+Writing objects: 100% (70/70), 8.49 MiB | 2.48 MiB/s, done.
+Total 70 (delta 13), reused 1 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (13/13), completed with 5 local objects.
+remote: 
+remote: Create a pull request for 'analysis/q21-q22-results-20261120-b674cee9' on GitHub by visiting:
+remote:      https://github.com/RDHomeProjects/ElectronFieldTopology/pull/new/analysis/q21-q22-results-20261120-b674cee9
+remote: 
+To https://github.com/RDHomeProjects/ElectronFieldTopology.git
+ * [new branch]      analysis/q21-q22-results-20261120-b674cee9 -> analysis/q21-q22-results-20261120-b674cee9
+branch 'analysis/q21-q22-results-20261120-b674cee9' set up to track 'origin/analysis/q21-q22-results-20261120-b674cee9'.
+{"recorded_at": {"utc": "2026-11-20T13:38:40.231445+00:00", "melbourne": "2026-11-21T00:38:40.231445+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "create", "--repo", "RDHomeProjects/ElectronFieldTopology", "--base", "main", "--head", "analysis/q21-q22-results-20261120-b674cee9", "--title", "Record measured Q21 paired test and native historical Q22 comparison", "--body-file", "/home/rd/Downloads/ElectronFieldTopology-Q21-Q22-evaluation-20261120/PR-BODY.md"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:43.518662+00:00", "melbourne": "2026-11-21T00:38:43.518662+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:44.187902+00:00", "melbourne": "2026-11-21T00:38:44.187902+11:00"}, "message": "Publication PR created or verified", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-q22-results-20261120-b674cee9", "headRefOid": "5b5301a2d18e9d037aea7427542da9b923c6f47c", "mergeCommit": null, "number": 85, "state": "OPEN", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85"}}
+{"recorded_at": {"utc": "2026-11-20T13:38:44.277185+00:00", "melbourne": "2026-11-21T00:38:44.277185+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:44.281009+00:00", "melbourne": "2026-11-21T00:38:44.281009+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:44.930150+00:00", "melbourne": "2026-11-21T00:38:44.930150+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "statusCheckRollup"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:38:45.737626+00:00", "melbourne": "2026-11-21T00:38:45.737626+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "checks", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85", "--repo", "RDHomeProjects/ElectronFieldTopology", "--watch", "--interval", "10"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+All checks were successful
+0 cancelled, 0 failing, 2 successful, 0 skipped, and 0 pending checks
+
+   NAME                                         DESCRIPTION  ELAPSED  URL                                                         
+✓  Documentation integrity/docs (push)                       13s      https://github.com/RDHomeProjects/ElectronFieldTopology/a...
+✓  Documentation integrity/docs (pull_request)               10s      https://github.com/RDHomeProjects/ElectronFieldTopology/a...
+{"recorded_at": {"utc": "2026-11-20T13:39:08.448518+00:00", "melbourne": "2026-11-21T00:39:08.448518+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "merge", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85", "--repo", "RDHomeProjects/ElectronFieldTopology", "--squash", "--delete-branch", "--match-head-commit", "5b5301a2d18e9d037aea7427542da9b923c6f47c"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+✓ Squashed and merged pull request #85 (Record measured Q21 paired test and native historical Q22 comparison)
+✓ Deleted remote branch analysis/q21-q22-results-20261120-b674cee9
+{"recorded_at": {"utc": "2026-11-20T13:39:13.723423+00:00", "melbourne": "2026-11-21T00:39:13.723423+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120"}
+{"recorded_at": {"utc": "2026-11-20T13:39:14.747124+00:00", "melbourne": "2026-11-21T00:39:14.747124+11:00"}, "message": "Publication merged", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-q22-results-20261120-b674cee9", "headRefOid": "5b5301a2d18e9d037aea7427542da9b923c6f47c", "mergeCommit": {"oid": "168132f3dacc516a7b8c9278d45269b31c8edc13"}, "number": 85, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85"}}
+{"recorded_at": {"utc": "2026-11-20T13:39:14.818183+00:00", "melbourne": "2026-11-21T00:39:14.818183+11:00"}, "message": "Publication status", "phase": "merged", "kind": "results", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-q22-results-20261120-b674cee9", "headRefOid": "5b5301a2d18e9d037aea7427542da9b923c6f47c", "mergeCommit": {"oid": "168132f3dacc516a7b8c9278d45269b31c8edc13"}, "number": 85, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/85"}}
+{"recorded_at": {"utc": "2026-11-20T13:39:14.822815+00:00", "melbourne": "2026-11-21T00:39:14.822815+11:00"}, "message": "Q21/Q22 evaluation status", "runner_alive": false, "service_active": false, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf", "status": {"recorded_at": {"utc": "2026-11-20T11:59:17.086432+00:00", "melbourne": "2026-11-20T22:59:17.086432+11:00"}, "status": "complete_pending_review", "phase": {"name": "complete", "arm": null, "iteration": 315, "charged_arm_attempts": 20, "relative_force_l2": 0.002321336776509152, "acceleration_max": 0.023773553637338903}, "charged_q21_attempts": 40, "maximum_q21_attempts": 40, "error": null, "q22_status": "deferred_missing_exact_historical_field", "physical_time_steps": 0}, "heartbeat": {"recorded_at": {"utc": "2026-11-20T11:59:12.787804+00:00", "melbourne": "2026-11-20T22:59:12.787804+11:00"}, "pid": 1282840, "process_identity": {"pid": 1282840, "start_ticks": "154440664", "boot_id": "6d55658c-0d38-4bf7-b4a9-5f7b418d6fc0"}, "operation": {"name": "q21-paired-test", "arm": "memory-reset", "iteration": 315, "charged_arm_attempts": 20, "relative_force_l2": 0.002321336776509152, "acceleration_max": 0.023773553637338903}}, "telemetry": {"recorded_at": {"utc": "2026-11-20T11:59:17.665657+00:00", "melbourne": "2026-11-20T22:59:17.665657+11:00"}, "host": {"total_gib": 15.26858901977539, "available_gib": 10.074268341064453, "swap_free_gib": 1.1734771728515625}, "pressure": {"some": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 11996547487.0}, "full": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 11994987776.0}}, "cgroup": {"memory.current": 1033826304, "memory.peak": 1742254080, "memory.swap.current": 0, "memory.events": {"low": 0, "high": 0, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}, "memory.pressure": {"some": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 0.0}, "full": {"avg10": 0.0, "avg60": 0.0, "avg300": 0.0, "total": 0.0}}}}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ 

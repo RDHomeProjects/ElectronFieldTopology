@@ -55,3 +55,5 @@ See [NOTICE](NOTICE) and [CITATION.cff](CITATION.cff). Please cite the project a
 [Q17–Q32 complete results, assessment and retained-field diagnosis](docs/research/q17-q32-results-field-diagnosis-20261120/README.md)
 
 [Q21 controlled evaluation and historical Q22 operator comparison](docs/research/q21-q22-controlled-evaluation-20261120/README.md)
+
+[Q21 final exact tranche and historical Q22 recovery](docs/research/q21-final-tranche-q22-recovery-20261121/README.md)
