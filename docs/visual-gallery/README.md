@@ -1,4 +1,51 @@
-# Q1–Q16 visual explanation gallery
+# Matter Waves visual explanation gallery
+
+{"utc": "2026-11-21T02:12:02.017028+00:00", "melbourne": "2026-11-21T13:12:02.017028+11:00"}
+
+## Current movie presentation
+
+[Download the focused smooth rotations](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/focused-orbits-94b2955e8a76/matter-waves-focused-orbits.zip). Extract and open viewer.html locally. Each movie is a camera orbit of a **fixed** retained state: 30 fps, 600 frames over 20 playback seconds, fitted bounds, a single 3D panel and a labelled opacity wedge. No physical evolution or physical spinning is implied.
+
+### Q2: q2-retained-reference
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/thumbnails/replace-q2-retained-reference-broad-0.png)
+
+Fixed optimizer state: iteration 0 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/focused-orbits-94b2955e8a76/replace-q2-retained-reference-broad-0.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/provenance/replace-q2-retained-reference-broad-0.json).
+
+### Q10: q10-trefoil32-2-2
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/thumbnails/replace-sequence-q10-optimizer.png)
+
+Fixed optimizer state: iteration 450 · no physical elapsed time. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/focused-orbits-94b2955e8a76/replace-sequence-q10-optimizer.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/provenance/replace-sequence-q10-optimizer.json).
+
+### Q2: q2-reference
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/thumbnails/replace-sequence-q2-reference-dt0.01.png)
+
+Frozen saved state: model t=0.2; step 20 · camera motion only. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/focused-orbits-94b2955e8a76/replace-sequence-q2-reference-dt0.01.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/provenance/replace-sequence-q2-reference-dt0.01.json).
+
+### Q3: q3-axial
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/thumbnails/replace-sequence-q3-axial-coarse-fresh-z-dt0.01.png)
+
+Frozen saved state: model t=0.2; step 20 · camera motion only. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/focused-orbits-94b2955e8a76/replace-sequence-q3-axial-coarse-fresh-z-dt0.01.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/provenance/replace-sequence-q3-axial-coarse-fresh-z-dt0.01.json).
+
+### Q3: q3-axial
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/thumbnails/replace-sequence-q3-axial-domain-warm-z-dt0.01.png)
+
+Frozen saved state: model t=0.5; step 50 · camera motion only. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/focused-orbits-94b2955e8a76/replace-sequence-q3-axial-domain-warm-z-dt0.01.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/provenance/replace-sequence-q3-axial-domain-warm-z-dt0.01.json).
+
+### Q3: q3-axial
+
+![Focused energy contour](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/thumbnails/replace-sequence-q3-axial-fine-warm-x-dt0.01.png)
+
+Frozen saved state: model t=0.2; step 20 · camera motion only. [Play/download MP4](https://github.com/RDHomeProjects/ElectronFieldTopology/releases/download/focused-orbits-94b2955e8a76/replace-sequence-q3-axial-fine-warm-x-dt0.01.mp4) · [Exact source and camera](../../reports/s5-b/018-q1-q16-visual-explanations/assessments/20261121t021201z-9d94c488/provenance/replace-sequence-q3-axial-fine-warm-x-dt0.01.json).
+
+## Preserved analysis figures and earlier movie versions
+
+Original images, charts, saved-time/optimizer movies and scientific records remain unchanged in the earlier collection. New rotations replace the active movie presentation only.
+
 
 {"utc": "2026-11-21T00:45:27.908621+00:00", "melbourne": "2026-11-21T11:45:27.908621+11:00"}
 

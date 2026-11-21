@@ -1,0 +1,485 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-21T01:45:19.175973+00:00",
+    "melbourne": "2026-11-21T12:45:19.175973+11:00"
+  },
+  "original_output": "/home/rd/Matter-Waves-visual-output-20261121",
+  "original_collection_sha256": "0f97d040efc4c28af13da193b83c124da32c36e813d30d4c40aa71a6e61c6440",
+  "original_seal_sha256": "7ee801f56794e33d2b6d70cadc3e9bfc300fd5ee7b32ee2b402eb3f1a53fe299",
+  "all_q": false,
+  "cases": [
+    {
+      "id": "replace-q2-retained-reference-broad-0",
+      "source": {
+        "id": "q2-retained-reference-broad-0",
+        "q": 2,
+        "seed": "q2-retained-reference",
+        "stage": "broad",
+        "iteration": 0,
+        "nodes": 127,
+        "lengths": [
+          20.16,
+          20.16,
+          20.16
+        ],
+        "sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930",
+        "kind": "static",
+        "model": "SF-relativistic-neutral-v1",
+        "outcome": "static_survivor",
+        "interpretation": "Stationarity and tail admitted; short original motion reference passes. Bent alternative remains unresolved. No new production allocation; long-time and physical mesh/domain motion convergence remain open.",
+        "recorded_metrics": {
+          "force": 1.1542460483787707e-05,
+          "acceleration": 6.636497024101145e-05,
+          "tail": 0.0003015441669190186
+        },
+        "home_path": "ElectronFieldTopology-rapid-q-screen/artifacts/rapid-q-screen/20261114t094318z-7800d5c4/reused/q2-retained-reference.npz"
+      },
+      "source_path": "/home/rd/ElectronFieldTopology-rapid-q-screen/artifacts/rapid-q-screen/20261114t094318z-7800d5c4/reused/q2-retained-reference.npz",
+      "level": 0.02397661918747962,
+      "replaces": "q2-retained-reference-broad-0/camera.mp4",
+      "old_movie_sha256": "d902a9faded86ef1dc7dbc4920447ce4e428672b1dfe03898f1767c44cb149ac",
+      "old_kind": "camera-only",
+      "selection_rule": "same fixed camera source",
+      "parent_visual_sha256": "2b6c502d20bb3e793dafae3fa3c4bf97f292c25b386b974cccffab818740c5ee"
+    },
+    {
+      "id": "replace-sequence-q10-optimizer",
+      "source": {
+        "id": "q10-continuation-2",
+        "q": 10,
+        "seed": "q10-trefoil32-2-2",
+        "stage": "campaign2",
+        "iteration": 450,
+        "nodes": 145,
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "sha256": "dfb98e0b6ac47be63b7fbe9baaff3298d9cd476ca5a5c0b7521d8778946434fe",
+        "kind": "static",
+        "model": "SF-relativistic-neutral-v1",
+        "outcome": "retained unresolved state",
+        "interpretation": "Delayed early improvement reversed; native450 force/acceleration fail although energy declined. Further blind continuation lacks measured joint-progress support; retain endpoint and earlier native checkpoints.",
+        "recorded_metrics": {
+          "campaign": "campaign2",
+          "arm": "q10-continuation-2",
+          "native_iteration": 450,
+          "nodes": 145,
+          "box": 23.04,
+          "force": 0.001113025454188321,
+          "force_gate_multiple": 11.13025454188321,
+          "acceleration": 0.01184850053090468,
+          "acceleration_gate_multiple": 11.84850053090468,
+          "tail": 0.0003844358755305608,
+          "tail_gate_multiple": 0.512581167374081
+        },
+        "home_path": "ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q10-continuation-2/stage-0450.npz"
+      },
+      "source_path": "/home/rd/ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q10-continuation-2/stage-0450.npz",
+      "level": 0.02932697521650575,
+      "replaces": "sequence-q10-optimizer/sequence.mp4",
+      "old_movie_sha256": "0645b1f7fbd4d203ecc82cdb9f37a64bed73661a5ca2859093d15a4066545e70",
+      "old_kind": "optimizer",
+      "selection_rule": "last actually saved state of former optimizer sequence; now frozen",
+      "parent_visual_sha256": "a124fa7287795b15225781bd75c7cb86824729edcb6209ae08130ec73057f25f"
+    },
+    {
+      "id": "replace-sequence-q2-reference-dt0.01",
+      "source": {
+        "id": "q2-reference-dt0.01-step-20",
+        "q": 2,
+        "seed": "q2-reference",
+        "stage": "q2-reference-dt0.01",
+        "iteration": null,
+        "nodes": [
+          127,
+          127,
+          135
+        ],
+        "lengths": [
+          20.16,
+          20.16,
+          20.16
+        ],
+        "sha256": "89b274871b730533e489725db0f586f9d3f213673205b32a85b0a639987df980",
+        "kind": "physical-time",
+        "time": 0.2,
+        "step": 20,
+        "model": "SF-relativistic-neutral-v1",
+        "outcome": "case final disposition: screen_pass",
+        "interpretation": "Actually saved evolution state. Short numerical control; long-time convergence remains open. At this saved milestone the recorded relative speed error was 0.8449984%; original case gates passed=True. Case status labels the whole recorded case, not an inferred failure at every earlier frame.",
+        "recorded_metrics": {
+          "recorded_model_time": 0.2,
+          "case_final_status": "screen_pass",
+          "original_motion_measurements": {
+            "time": 0.2,
+            "fitted_centroid_velocity": [
+              5.372168606146665e-15,
+              6.6919963735316535e-16,
+              0.2974650047783956
+            ],
+            "expected_velocity": [
+              0.0,
+              0.0,
+              0.3
+            ],
+            "speed_absolute_error": 0.002534995221604386,
+            "speed_relative_error": 0.00844998407201462,
+            "translated_static_field_relative_l2": 0.002096233490935528,
+            "max_energy_relative_drift": 1.9335784303031868e-13,
+            "max_momentum_drift_over_initial_energy": 6.03458474154764e-08,
+            "final": {
+              "continuum_energy": 2.0939091599235202,
+              "centroid": [
+                4.250884114096147e-15,
+                -1.955735127598428e-15,
+                0.059492904836987645
+              ],
+              "radius_99": 4.826583831121415,
+              "boundary_shell_width": 2.0,
+              "boundary_shell_energy_fraction": 0.0002744898920826893,
+              "initial_light_cone_clearance": 5.193923264041597,
+              "hopf_integral": -1.9962459859319583,
+              "minimum_corner_cone": 0.9343344218145552,
+              "mean_topological_b": [
+                1.318064663901113e-19,
+                4.8519425495682533e-17,
+                -5.904520234788823e-06
+              ],
+              "topology_scope": "Anisotropic-grid Coulomb quadrature, periodic auxiliary inversion of a fixed-box field; not an exact integer certificate."
+            },
+            "checks": {
+              "energy": true,
+              "momentum": true,
+              "constraints": true,
+              "shape": true,
+              "speed": true,
+              "topology": true,
+              "tail": true
+            },
+            "bounded_case_gates_pass": true,
+            "scope": "Bounded fixed-box motion diagnostics. Case pass is insufficient without temporal, spatial and domain convergence."
+          },
+          "milestone_decision": {
+            "recorded_at": {
+              "utc": "2026-11-09T14:06:03.605352+00:00",
+              "melbourne": "2026-11-10T01:06:03.605352+11:00"
+            },
+            "failed_original_checks": [],
+            "stop_checks": [],
+            "stop": false,
+            "speed_stop_eligible": true
+          }
+        },
+        "home_path": "ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/cases/q2-reference-dt0.01/attempt-001/snapshots/step-000020.npz"
+      },
+      "source_path": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/cases/q2-reference-dt0.01/attempt-001/snapshots/step-000020.npz",
+      "level": 0.025869742641018104,
+      "replaces": "sequence-q2-reference-dt0.01/sequence.mp4",
+      "old_movie_sha256": "148e6697c9cee748647412c65ab2de92e32850ca870c1738f7c2626ccae018c8",
+      "old_kind": "physical-time",
+      "selection_rule": "last actually saved state of former physical-time sequence; now frozen",
+      "parent_visual_sha256": "fee093884d5ec14a5a6acc82ccc0356f7a33b2347e9f4cf3567ea5c80d9db14d"
+    },
+    {
+      "id": "replace-sequence-q3-axial-coarse-fresh-z-dt0.01",
+      "source": {
+        "id": "q3-axial-coarse-fresh-z-dt0.01-step-20",
+        "q": 3,
+        "seed": "q3-axial",
+        "stage": "q3-axial-coarse-fresh-z-dt0.01",
+        "iteration": null,
+        "nodes": [
+          97,
+          97,
+          103
+        ],
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "sha256": "6124cc6884930fcd00b799c196ade3ef540151d011ae24f9f42d22e6c3e33a36",
+        "kind": "physical-time",
+        "time": 0.2,
+        "step": 20,
+        "model": "SF-relativistic-neutral-v1",
+        "outcome": "case final disposition: screen_failed",
+        "interpretation": "Actually saved evolution state. Mixed Q3 motion, alignment, mesh and domain outcomes remain unresolved. At this saved milestone the recorded relative speed error was 2.347803%; original case gates passed=False. Case status labels the whole recorded case, not an inferred failure at every earlier frame.",
+        "recorded_metrics": {
+          "recorded_model_time": 0.2,
+          "case_final_status": "screen_failed",
+          "original_motion_measurements": {
+            "time": 0.2,
+            "fitted_centroid_velocity": [
+              2.997454188916614e-07,
+              -2.7929135518954067e-06,
+              0.2929565907639734
+            ],
+            "expected_velocity": [
+              0.0,
+              0.0,
+              0.3
+            ],
+            "speed_absolute_error": 0.007043409796139798,
+            "speed_relative_error": 0.023478032653799327,
+            "translated_static_field_relative_l2": 0.004311816424734984,
+            "max_energy_relative_drift": 6.502787493399636e-14,
+            "max_momentum_drift_over_initial_energy": 3.4075835235664607e-06,
+            "final": {
+              "continuum_energy": 2.911903594688269,
+              "centroid": [
+                0.0001359447173202705,
+                -0.0032317374341964927,
+                0.05819092504750885
+              ],
+              "radius_99": 5.174018765003504,
+              "boundary_shell_width": 2.0,
+              "boundary_shell_energy_fraction": 0.0002384908324776039,
+              "initial_light_cone_clearance": 6.287790309948987,
+              "hopf_integral": -2.972569085629458,
+              "minimum_corner_cone": 0.8566873018121286,
+              "mean_topological_b": [
+                1.3954948580398761e-08,
+                -3.440340277760851e-10,
+                -2.0189043466451707e-05
+              ],
+              "topology_scope": "Anisotropic-grid Coulomb quadrature, periodic auxiliary inversion of a fixed-box field; not an exact integer certificate."
+            },
+            "checks": {
+              "energy": true,
+              "momentum": true,
+              "constraints": true,
+              "shape": true,
+              "speed": false,
+              "topology": true,
+              "tail": true
+            },
+            "bounded_case_gates_pass": false,
+            "scope": "Bounded fixed-box motion diagnostics. Case pass is insufficient without temporal, spatial and domain convergence."
+          },
+          "milestone_decision": {
+            "recorded_at": {
+              "utc": "2026-11-09T20:27:45.733923+00:00",
+              "melbourne": "2026-11-10T07:27:45.733923+11:00"
+            },
+            "failed_original_checks": [
+              "speed"
+            ],
+            "stop_checks": [
+              "speed"
+            ],
+            "stop": true,
+            "speed_stop_eligible": true
+          }
+        },
+        "home_path": "ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/cases/q3-axial-coarse-fresh-z-dt0.01/attempt-001/snapshots/step-000020.npz"
+      },
+      "source_path": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/cases/q3-axial-coarse-fresh-z-dt0.01/attempt-001/snapshots/step-000020.npz",
+      "level": 0.029439959433367323,
+      "replaces": "sequence-q3-axial-coarse-fresh-z-dt0.01/sequence.mp4",
+      "old_movie_sha256": "fde865162230a856e8e95e43b35409ab85ba852cd8ae06b0246691b4f3292045",
+      "old_kind": "physical-time",
+      "selection_rule": "last actually saved state of former physical-time sequence; now frozen",
+      "parent_visual_sha256": "2859aeae2cbd920149c5a41584565ec86fca9ca302e2569be432c01cb33b1f42"
+    },
+    {
+      "id": "replace-sequence-q3-axial-domain-warm-z-dt0.01",
+      "source": {
+        "id": "q3-axial-domain-warm-z-dt0.01-step-50",
+        "q": 3,
+        "seed": "q3-axial",
+        "stage": "q3-axial-domain-warm-z-dt0.01",
+        "iteration": null,
+        "nodes": [
+          169,
+          169,
+          179
+        ],
+        "lengths": [
+          26.88,
+          26.88,
+          26.88
+        ],
+        "sha256": "9e2130d69987ab73833a880f3907bcd86c3e44442d06011381eb68543a5cb1d0",
+        "kind": "physical-time",
+        "time": 0.5,
+        "step": 50,
+        "model": "SF-relativistic-neutral-v1",
+        "outcome": "case final disposition: screen_pass",
+        "interpretation": "Actually saved evolution state. Mixed Q3 motion, alignment, mesh and domain outcomes remain unresolved. At this saved milestone the recorded relative speed error was 0.9672171%; original case gates passed=True. Case status labels the whole recorded case, not an inferred failure at every earlier frame.",
+        "recorded_metrics": {
+          "recorded_model_time": 0.5,
+          "case_final_status": "screen_pass",
+          "original_motion_measurements": {
+            "time": 0.5,
+            "fitted_centroid_velocity": [
+              1.1608687223062515e-07,
+              -4.432229383943645e-07,
+              0.297098348694679
+            ],
+            "expected_velocity": [
+              0.0,
+              0.0,
+              0.3
+            ],
+            "speed_absolute_error": 0.002901651341493973,
+            "speed_relative_error": 0.009672171138313245,
+            "translated_static_field_relative_l2": 0.0016081555657762702,
+            "max_energy_relative_drift": 9.512916409738375e-13,
+            "max_momentum_drift_over_initial_energy": 7.449840540128709e-07,
+            "final": {
+              "continuum_energy": 2.926565253454052,
+              "centroid": [
+                0.0007704745992947624,
+                -0.0027522580703291974,
+                0.14580343624071318
+              ],
+              "radius_99": 5.281442331311057,
+              "boundary_shell_width": 2.0,
+              "boundary_shell_energy_fraction": 0.00012696944101213477,
+              "initial_light_cone_clearance": 8.012754232448229,
+              "hopf_integral": -2.9949119435003593,
+              "minimum_corner_cone": 0.93816697378265,
+              "mean_topological_b": [
+                1.566674499641927e-09,
+                1.0393420198864485e-09,
+                -2.4357328838678956e-06
+              ],
+              "topology_scope": "Anisotropic-grid Coulomb quadrature, periodic auxiliary inversion of a fixed-box field; not an exact integer certificate."
+            },
+            "checks": {
+              "energy": true,
+              "momentum": true,
+              "constraints": true,
+              "shape": true,
+              "speed": true,
+              "topology": true,
+              "tail": true
+            },
+            "bounded_case_gates_pass": true,
+            "scope": "Bounded fixed-box motion diagnostics. Case pass is insufficient without temporal, spatial and domain convergence."
+          },
+          "milestone_decision": {
+            "recorded_at": {
+              "utc": "2026-11-10T05:40:28.255937+00:00",
+              "melbourne": "2026-11-10T16:40:28.255937+11:00"
+            },
+            "failed_original_checks": [],
+            "stop_checks": [],
+            "stop": false,
+            "speed_stop_eligible": true
+          }
+        },
+        "home_path": "ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/cases/q3-axial-domain-warm-z-dt0.01/attempt-002/snapshots/step-000050.npz"
+      },
+      "source_path": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/cases/q3-axial-domain-warm-z-dt0.01/attempt-002/snapshots/step-000050.npz",
+      "level": 0.02730326714377738,
+      "replaces": "sequence-q3-axial-domain-warm-z-dt0.01/sequence.mp4",
+      "old_movie_sha256": "22c5f71786e1d9696c3d1f028357ac22b86b16d0cfb0a4efbfd008ea825c2607",
+      "old_kind": "physical-time",
+      "selection_rule": "last actually saved state of former physical-time sequence; now frozen",
+      "parent_visual_sha256": "917a30b554e2fca1a7091983d62588f4af317e1d1c319eb4a9aa6992a8794d06"
+    },
+    {
+      "id": "replace-sequence-q3-axial-fine-warm-x-dt0.01",
+      "source": {
+        "id": "q3-axial-fine-warm-x-dt0.01-step-20",
+        "q": 3,
+        "seed": "q3-axial",
+        "stage": "q3-axial-fine-warm-x-dt0.01",
+        "iteration": null,
+        "nodes": [
+          153,
+          145,
+          145
+        ],
+        "lengths": [
+          23.04,
+          23.04,
+          23.04
+        ],
+        "sha256": "22e554416b533933129f5d0ae999296f5ffd2aec80fbd4037b68d74ed63809d5",
+        "kind": "physical-time",
+        "time": 0.2,
+        "step": 20,
+        "model": "SF-relativistic-neutral-v1",
+        "outcome": "case final disposition: screen_pass",
+        "interpretation": "Actually saved evolution state. Mixed Q3 motion, alignment, mesh and domain outcomes remain unresolved. At this saved milestone the recorded relative speed error was 0.8196939%; original case gates passed=True. Case status labels the whole recorded case, not an inferred failure at every earlier frame.",
+        "recorded_metrics": {
+          "recorded_model_time": 0.2,
+          "case_final_status": "screen_pass",
+          "original_motion_measurements": {
+            "time": 0.2,
+            "fitted_centroid_velocity": [
+              0.29754354744975575,
+              0.00011367606083495876,
+              1.120515176560469e-06
+            ],
+            "expected_velocity": [
+              0.3,
+              0.0,
+              0.0
+            ],
+            "speed_absolute_error": 0.002459081664760776,
+            "speed_relative_error": 0.00819693888253592,
+            "translated_static_field_relative_l2": 0.002656546421920632,
+            "max_energy_relative_drift": 1.7356730457185014e-12,
+            "max_momentum_drift_over_initial_energy": 2.1747210253535733e-05,
+            "final": {
+              "continuum_energy": 2.9273983928894167,
+              "centroid": [
+                0.060236981971962415,
+                -0.002669963449300648,
+                -0.0026976662037575586
+              ],
+              "radius_99": 5.236488056997376,
+              "boundary_shell_width": 2.0,
+              "boundary_shell_energy_fraction": 0.000248214715398496,
+              "initial_light_cone_clearance": 6.22327496103066,
+              "hopf_integral": -2.994830544690992,
+              "minimum_corner_cone": 0.9380110284876014,
+              "mean_topological_b": [
+                2.106914360667102e-09,
+                -6.889983683555503e-09,
+                -3.987948796612584e-06
+              ],
+              "topology_scope": "Anisotropic-grid Coulomb quadrature, periodic auxiliary inversion of a fixed-box field; not an exact integer certificate."
+            },
+            "checks": {
+              "energy": true,
+              "momentum": true,
+              "constraints": true,
+              "shape": true,
+              "speed": true,
+              "topology": true,
+              "tail": true
+            },
+            "bounded_case_gates_pass": true,
+            "scope": "Bounded fixed-box motion diagnostics. Case pass is insufficient without temporal, spatial and domain convergence."
+          },
+          "milestone_decision": {
+            "recorded_at": {
+              "utc": "2026-11-10T03:14:20.116244+00:00",
+              "melbourne": "2026-11-10T14:14:20.116244+11:00"
+            },
+            "failed_original_checks": [],
+            "stop_checks": [],
+            "stop": false,
+            "speed_stop_eligible": true
+          }
+        },
+        "home_path": "ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/cases/q3-axial-fine-warm-x-dt0.01/attempt-001/snapshots/step-000020.npz"
+      },
+      "source_path": "/home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/010-intermediate-q-survey/20261109t134425z-89d28344/cases/q3-axial-fine-warm-x-dt0.01/attempt-001/snapshots/step-000020.npz",
+      "level": 0.02623201638291715,
+      "replaces": "sequence-q3-axial-fine-warm-x-dt0.01/sequence.mp4",
+      "old_movie_sha256": "6011ea211b51dbb4f73aad7792a2b81d9450aab1b59362a2b4f0ae41e663e31d",
+      "old_kind": "physical-time",
+      "selection_rule": "last actually saved state of former physical-time sequence; now frozen",
+      "parent_visual_sha256": "41cbab6582c575cdf908ff7a654cdd2dc798570b132d6826b23b3bb93965d57d"
+    }
+  ],
+  "replacement_count": 6
+}
