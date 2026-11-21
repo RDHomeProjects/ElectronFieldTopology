@@ -5,3 +5,5 @@ Historical cell-functional static successes, current D4 readiness and physical-t
 Recorded assessment: [browser report](assessment/ASSESSMENT.html) · [Markdown assessment](assessment/ASSESSMENT.md).
 
 Final bounded evaluation plan: [PLAN.json](preparation/aa403606/handover/PLAN.json). Q21: at most 20 additional exact-continuation attempts from iteration 315, beginning with five, with measured-progress and curve-fit scheduling. Q22: broadened local project/ZIP/tar recovery, exact-hash native field comparison only, explicit coverage and deferral if unavailable. No motion, resampling or enlarged domain is scheduled.
+
+Completed evaluations: [browser report](results/20261121t144934z-f5b92a5c/fbaea1e1/REPORT.html) · [full measured record](results/20261121t144934z-f5b92a5c/fbaea1e1/record.json).

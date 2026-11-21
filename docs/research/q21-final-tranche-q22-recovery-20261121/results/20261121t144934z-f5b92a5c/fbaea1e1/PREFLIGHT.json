@@ -1,0 +1,49 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-21T14:49:30.210681+00:00",
+    "melbourne": "2026-11-22T01:49:30.210681+11:00"
+  },
+  "status": "preflight_pass",
+  "package_files": 43,
+  "source_identity": "18be438af37f89d826ce6693b9af3b3a3d648ab766e8fcaf3b42ba39e7caa1de",
+  "source_checkpoint": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/q21/exact/endpoint.npz",
+  "source_sha256": "ad5e13216a4271a212c6a67c810d4394666dc570c33c3a48ff0dc005b01cf7b0",
+  "explicit_q22": null,
+  "host": {
+    "total_gib": 15.26858901977539,
+    "available_gib": 11.416923522949219,
+    "swap_free_gib": 1.9905624389648438
+  },
+  "maximum_new_q21_attempts": 20,
+  "q22_optimizer_steps": 0,
+  "physical_time_steps": 0,
+  "backend_probe": {
+    "recorded_at": {
+      "utc": "2026-11-21T14:49:33.945882+00:00",
+      "melbourne": "2026-11-22T01:49:33.945882+11:00"
+    },
+    "status": "backend_probe_pass",
+    "requested": "auto",
+    "selected": "cuda",
+    "source_backend": "cuda",
+    "backend_transfer": false,
+    "cuda_identity": {
+      "execution_backend": "cuda-cupy-float64",
+      "device_id": 0,
+      "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+      "compute_capability": "75",
+      "cupy": "14.2.0",
+      "cuda_runtime": 12090,
+      "cuda_driver": 13000,
+      "precision": "float64"
+    },
+    "energy_gradient_audit": {
+      "passed": true,
+      "energy_abs_difference": 0.0,
+      "gradient_max_abs_difference": 0.0,
+      "reference": "independent CPU sf_readmission.static_value_gradient"
+    },
+    "optimizer_steps": 0,
+    "physical_time_steps": 0
+  }
+}

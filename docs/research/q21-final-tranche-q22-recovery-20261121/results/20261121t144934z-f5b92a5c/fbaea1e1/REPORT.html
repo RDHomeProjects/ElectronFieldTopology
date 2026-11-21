@@ -1,0 +1,1105 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Final Q21 tranche and native Q22 recovery</title><style>body{font:16px/1.5 system-ui;max-width:1200px;margin:30px auto;padding:20px}pre{white-space:pre-wrap;overflow-wrap:anywhere}img{max-width:100%}details{margin:20px 0}</style><h1>Q21 final bounded tranche and historical Q22 recovery</h1><p>Q21 retains exact iteration-315 optimizer memory, grid, box and gates. Its new allocation is capped at 20 charged attempts. Q22 is a local inventory and same-field native cell/D4 evaluation, without relaxation, normalization or resampling. Historical positive static findings remain recorded within their original limits.</p><p><a href="handover/assessment/ASSESSMENT.html">Assessment of the completed comparison</a> · <a href="record.json">Full measured record</a> · <a href="recovery/INVENTORY.json">Q22 search coverage and deferral</a></p><h2>Measured Q21 progress</h2><img src="q21-tranche.svg" alt="Q21 measured force and acceleration gate ratios"/><pre>{
+  &quot;reason&quot;: &quot;declared_final_tranche_budget_reached&quot;,
+  &quot;source_iteration&quot;: 315,
+  &quot;final_iteration&quot;: 335,
+  &quot;new_attempts_charged&quot;: 20,
+  &quot;accepted_new_steps&quot;: 20,
+  &quot;final&quot;: {
+    &quot;recorded_at&quot;: {
+      &quot;utc&quot;: &quot;2026-11-21T14:59:03.683856+00:00&quot;,
+      &quot;melbourne&quot;: &quot;2026-11-22T01:59:03.683856+11:00&quot;
+    },
+    &quot;iteration&quot;: 335,
+    &quot;new_attempt&quot;: 20,
+    &quot;alpha&quot;: 0.18170968107390317,
+    &quot;objective_calls&quot;: 2,
+    &quot;metrics&quot;: {
+      &quot;energy&quot;: 12.346938152045725,
+      &quot;relative_force_l2&quot;: 0.001465082449825075,
+      &quot;acceleration_max&quot;: 0.01882438091430968,
+      &quot;acceleration_rms&quot;: 0.00026648509101438815,
+      &quot;minimum_corner_cone&quot;: 0.7960368402761949,
+      &quot;hopf_integral&quot;: -20.716576822019494,
+      &quot;unit_error&quot;: 3.3306690738754696e-16,
+      &quot;max_neighbour_angle&quot;: 0.7354094793888927,
+      &quot;mean_topological_b&quot;: [
+        2.7863454935046204e-07,
+        2.9539185112757014e-07,
+        -0.0001492657208973572
+      ],
+      &quot;scope&quot;: &quot;finite-grid Coulomb-gauge integral, not an exact integer certificate&quot;,
+      &quot;tail_fraction&quot;: 0.0015648992688830797,
+      &quot;guard_fraction&quot;: 0.003141797821240132
+    },
+    &quot;gates&quot;: {
+      &quot;representation&quot;: true,
+      &quot;strict_stationary&quot;: false,
+      &quot;boundary_admitted&quot;: false,
+      &quot;all_readiness_gates&quot;: false
+    },
+    &quot;step&quot;: {
+      &quot;energy&quot;: 12.346938152045725,
+      &quot;objective_calls&quot;: 2,
+      &quot;accepted_step_max&quot;: 0.0016908343348040888
+    },
+    &quot;backend_audit&quot;: {
+      &quot;passed&quot;: true,
+      &quot;energy_abs_difference&quot;: 0.0,
+      &quot;gradient_max_abs_difference&quot;: 0.0,
+      &quot;reference&quot;: &quot;independent CPU sf_readmission.static_value_gradient&quot;
+    },
+    &quot;scope&quot;: &quot;New final-tranche observation; previous history is retained separately&quot;
+  }
+}</pre><details><summary>Allocation decisions, fits and forecasts</summary><pre>[
+  {
+    &quot;recorded_at&quot;: {
+      &quot;utc&quot;: &quot;2026-11-21T14:53:59.802902+00:00&quot;,
+      &quot;melbourne&quot;: &quot;2026-11-22T01:53:59.802902+11:00&quot;
+    },
+    &quot;iteration&quot;: 315,
+    &quot;charged_attempts&quot;: 0,
+    &quot;maximum_attempts&quot;: 20,
+    &quot;fit_admission&quot;: false,
+    &quot;budget_extension&quot;: false,
+    &quot;action&quot;: &quot;continue&quot;,
+    &quot;next_attempts&quot;: 5,
+    &quot;measured_joint_progress&quot;: {
+      &quot;relative_force_l2&quot;: {
+        &quot;previous_median&quot;: 0.0027182030365786175,
+        &quot;recent_median&quot;: 0.0021747422495691547,
+        &quot;fractional_improvement&quot;: 0.19993384588868424
+      },
+      &quot;acceleration_max&quot;: {
+        &quot;previous_median&quot;: 0.02716658708354213,
+        &quot;recent_median&quot;: 0.024453496393204766,
+        &quot;fractional_improvement&quot;: 0.09986866152874208
+      }
+    },
+    &quot;fits&quot;: {
+      &quot;relative_force_l2&quot;: {
+        &quot;status&quot;: &quot;descriptive_fit_complete&quot;,
+        &quot;x_origin_iteration&quot;: 300,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -5.53759993261169e-05,
+              0.0027767962747664854
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.09387455165021448,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -1.2975858880608323e-05,
+              0.00013926188388300816,
+              0.002322641213945194
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.9324067363455102,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.026505538162611163,
+              -5.890772220944393
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.14295938129284305,
+            &quot;holdout_points&quot;: 3
+          }
+        ],
+        &quot;admission_inferred&quot;: false,
+        &quot;budget_extension&quot;: false
+      },
+      &quot;acceleration_max&quot;: {
+        &quot;status&quot;: &quot;descriptive_fit_complete&quot;,
+        &quot;x_origin_iteration&quot;: 300,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.0002823926391734101,
+              0.02802290937627302
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.12095566158159482,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -8.166952042790671e-05,
+              0.0009426501672451922,
+              0.025164476161296287
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.4470808007947981,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.01179620610655377,
+              -3.5778565403654077
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.12055655632506207,
+            &quot;holdout_points&quot;: 3
+          }
+        ],
+        &quot;admission_inferred&quot;: false,
+        &quot;budget_extension&quot;: false
+      }
+    },
+    &quot;valid_model_names&quot;: {
+      &quot;relative_force_l2&quot;: [
+        &quot;linear&quot;,
+        &quot;exponential&quot;
+      ],
+      &quot;acceleration_max&quot;: [
+        &quot;linear&quot;,
+        &quot;exponential&quot;
+      ]
+    },
+    &quot;reason&quot;: &quot;first_declared_five_attempt_probe&quot;
+  },
+  {
+    &quot;recorded_at&quot;: {
+      &quot;utc&quot;: &quot;2026-11-21T14:55:16.150077+00:00&quot;,
+      &quot;melbourne&quot;: &quot;2026-11-22T01:55:16.150077+11:00&quot;
+    },
+    &quot;iteration&quot;: 320,
+    &quot;charged_attempts&quot;: 5,
+    &quot;maximum_attempts&quot;: 20,
+    &quot;fit_admission&quot;: false,
+    &quot;budget_extension&quot;: false,
+    &quot;action&quot;: &quot;continue&quot;,
+    &quot;next_attempts&quot;: 5,
+    &quot;measured_joint_progress&quot;: {
+      &quot;relative_force_l2&quot;: {
+        &quot;previous_median&quot;: 0.0025416720845611003,
+        &quot;recent_median&quot;: 0.001659333241308804,
+        &quot;fractional_improvement&quot;: 0.347148968827212
+      },
+      &quot;acceleration_max&quot;: {
+        &quot;previous_median&quot;: 0.025877642329240433,
+        &quot;recent_median&quot;: 0.020634471462738866,
+        &quot;fractional_improvement&quot;: 0.20261393212692513
+      }
+    },
+    &quot;fits&quot;: {
+      &quot;relative_force_l2&quot;: {
+        &quot;status&quot;: &quot;descriptive_fit_complete&quot;,
+        &quot;x_origin_iteration&quot;: 305,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.0001273360397578424,
+              0.0029731049729435233
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.17787205203701617,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              3.1387355528536368e-06,
+              -0.00017441707305064697,
+              0.0030829607172934014
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.2335134627447308,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.06374518378302826,
+              -5.797638573935751
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.16452494934400777,
+            &quot;holdout_points&quot;: 3
+          }
+        ],
+        &quot;admission_inferred&quot;: false,
+        &quot;budget_extension&quot;: false
+      },
+      &quot;acceleration_max&quot;: {
+        &quot;status&quot;: &quot;descriptive_fit_complete&quot;,
+        &quot;x_origin_iteration&quot;: 305,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.000757687674436708,
+              0.029727198960375584
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.10461354315171473,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              3.187343935829067e-05,
+              -0.001235789264811069,
+              0.030842769337915785
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.05775960489984448,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.030206885855815095,
+              -3.5201779071005515
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.07223400710291031,
+            &quot;holdout_points&quot;: 3
+          }
+        ],
+        &quot;admission_inferred&quot;: false,
+        &quot;budget_extension&quot;: false
+      }
+    },
+    &quot;valid_model_names&quot;: {
+      &quot;relative_force_l2&quot;: [
+        &quot;linear&quot;,
+        &quot;quadratic&quot;,
+        &quot;exponential&quot;
+      ],
+      &quot;acceleration_max&quot;: [
+        &quot;linear&quot;,
+        &quot;quadratic&quot;,
+        &quot;exponential&quot;
+      ]
+    },
+    &quot;reason&quot;: &quot;measured_progress_only_minimum_probe_due_to_fit_uncertainty&quot;,
+    &quot;forecast_candidates&quot;: [
+      {
+        &quot;horizon&quot;: 5,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [
+              0.0004263841777866753,
+              0.0008501134774219167,
+              0.0008480743496036566
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.49963697149108355,
+            &quot;maximum_predicted_fractional_change&quot;: 0.5571914694086915,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.014573445471641425,
+              0.01887635978501067,
+              0.016174560278546392
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.2660297553236451,
+            &quot;maximum_predicted_fractional_change&quot;: 0.2508523044376241,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: true,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 6,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [
+              0.00029904813802883326,
+              0.0008043845620382688,
+              0.0007957007115164038
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.63508353919452,
+            &quot;maximum_predicted_fractional_change&quot;: 0.6894325036543307,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.013815757797204717,
+              0.018947381533889522,
+              0.015693282725326083
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.326994920470228,
+            &quot;maximum_predicted_fractional_change&quot;: 0.28980122536128694,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 7,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [
+              0.00017171209827099082,
+              0.0007649331177603282,
+              0.0007465614572632765
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.7946044009075286,
+            &quot;maximum_predicted_fractional_change&quot;: 0.8216735378999704,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.013058070122768009,
+              0.01908215016148495,
+              0.015226325690206096
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.39563583239203665,
+            &quot;maximum_predicted_fractional_change&quot;: 0.3287501462849499,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 8,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [
+              4.437605851314837e-05,
+              0.0007317591445880948,
+              0.0007004568443942837
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.9813353835800652,
+            &quot;maximum_predicted_fractional_change&quot;: 0.9539145721456102,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.012300382448331301,
+              0.01928066566779696,
+              0.014773263063060815
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.47249434262896284,
+            &quot;maximum_predicted_fractional_change&quot;: 0.3676990672086128,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 9,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [
+              -8.295998124469408e-05,
+              0.0007048626425215686,
+              0.0006571994657444164
+            ],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.01154269477389459,
+              0.019542928052825554,
+              0.014333681412763928
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.5581422558901634,
+            &quot;maximum_predicted_fractional_change&quot;: 0.4066479881322759,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 10,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [
+              -0.00021029602100253652,
+              0.0006842436115607501,
+              0.0006166134876563862
+            ],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.010785007099457882,
+              0.01986893731657073,
+              0.013907179609922061
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.6531827783853406,
+            &quot;maximum_predicted_fractional_change&quot;: 0.44559690905593885,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      }
+    ],
+    &quot;scheduling_events&quot;: [
+      {
+        &quot;quantity&quot;: &quot;relative_force_l2&quot;,
+        &quot;model&quot;: &quot;linear&quot;,
+        &quot;kind&quot;: &quot;formal_gate_crossing&quot;,
+        &quot;distance&quot;: 7.56317204781433,
+        &quot;scheduling_distance_fraction&quot;: 0.2
+      },
+      {
+        &quot;quantity&quot;: &quot;relative_force_l2&quot;,
+        &quot;model&quot;: &quot;quadratic&quot;,
+        &quot;kind&quot;: &quot;quadratic_turn&quot;,
+        &quot;distance&quot;: 12.784607864156097,
+        &quot;scheduling_distance_fraction&quot;: 0.5
+      },
+      {
+        &quot;quantity&quot;: &quot;relative_force_l2&quot;,
+        &quot;model&quot;: &quot;exponential&quot;,
+        &quot;kind&quot;: &quot;formal_gate_crossing&quot;,
+        &quot;distance&quot;: 38.53662183571961,
+        &quot;scheduling_distance_fraction&quot;: 0.2
+      },
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;linear&quot;,
+        &quot;kind&quot;: &quot;formal_gate_crossing&quot;,
+        &quot;distance&quot;: 22.91430153820623,
+        &quot;scheduling_distance_fraction&quot;: 0.2
+      },
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;quadratic&quot;,
+        &quot;kind&quot;: &quot;quadratic_turn&quot;,
+        &quot;distance&quot;: 4.385878802088314,
+        &quot;scheduling_distance_fraction&quot;: 0.5
+      },
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;exponential&quot;,
+        &quot;kind&quot;: &quot;formal_gate_crossing&quot;,
+        &quot;distance&quot;: 97.1458659476295,
+        &quot;scheduling_distance_fraction&quot;: 0.2
+      }
+    ],
+    &quot;scope&quot;: &quot;Recent measured joint progress permits a bounded probe. Fit agreement, relative-change and turn/crossing distance constrain block size; none grants scientific admission.&quot;
+  },
+  {
+    &quot;recorded_at&quot;: {
+      &quot;utc&quot;: &quot;2026-11-21T14:56:32.831253+00:00&quot;,
+      &quot;melbourne&quot;: &quot;2026-11-22T01:56:32.831253+11:00&quot;
+    },
+    &quot;iteration&quot;: 325,
+    &quot;charged_attempts&quot;: 10,
+    &quot;maximum_attempts&quot;: 20,
+    &quot;fit_admission&quot;: false,
+    &quot;budget_extension&quot;: false,
+    &quot;action&quot;: &quot;continue&quot;,
+    &quot;next_attempts&quot;: 5,
+    &quot;measured_joint_progress&quot;: {
+      &quot;relative_force_l2&quot;: {
+        &quot;previous_median&quot;: 0.0017048866971023935,
+        &quot;recent_median&quot;: 0.0011410093145400773,
+        &quot;fractional_improvement&quot;: 0.3307418513621321
+      },
+      &quot;acceleration_max&quot;: {
+        &quot;previous_median&quot;: 0.02064856065677387,
+        &quot;recent_median&quot;: 0.019042616437283097,
+        &quot;fractional_improvement&quot;: 0.07777511692874028
+      }
+    },
+    &quot;fits&quot;: {
+      &quot;relative_force_l2&quot;: {
+        &quot;status&quot;: &quot;descriptive_fit_complete&quot;,
+        &quot;x_origin_iteration&quot;: 310,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -4.844930767465007e-05,
+              0.0018463972851718003
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.4184018202623591,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              3.1730664631719762e-06,
+              -9.604530462222966e-05,
+              0.001957454611382819
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.6495747814253185,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.03278464343427994,
+              -6.30952236728634
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.388861333012525,
+            &quot;holdout_points&quot;: 3
+          }
+        ],
+        &quot;admission_inferred&quot;: false,
+        &quot;budget_extension&quot;: false
+      },
+      &quot;acceleration_max&quot;: {
+        &quot;status&quot;: &quot;descriptive_fit_complete&quot;,
+        &quot;x_origin_iteration&quot;: 310,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.00036785565798109625,
+              0.023446310978183636
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.07375430139577661,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              1.1881545601232944e-05,
+              -0.0005460788419995885,
+              0.02386216507422678
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.11625565321501533,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.017027351322313918,
+              -3.7576936938334904
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.06138596654196214,
+            &quot;holdout_points&quot;: 3
+          }
+        ],
+        &quot;admission_inferred&quot;: false,
+        &quot;budget_extension&quot;: false
+      }
+    },
+    &quot;valid_model_names&quot;: {
+      &quot;relative_force_l2&quot;: [],
+      &quot;acceleration_max&quot;: [
+        &quot;linear&quot;,
+        &quot;quadratic&quot;,
+        &quot;exponential&quot;
+      ]
+    },
+    &quot;reason&quot;: &quot;measured_progress_only_minimum_probe_due_to_fit_uncertainty&quot;,
+    &quot;forecast_candidates&quot;: [
+      {
+        &quot;horizon&quot;: 5,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.01608919781856171,
+              0.017693206474728187,
+              0.016601857035307
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.09661621906243661,
+            &quot;maximum_predicted_fractional_change&quot;: 0.1577574660114417,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: true,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 6,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.015721342160580614,
+              0.017634271002379145,
+              0.016321564474998003
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.11720254174952585,
+            &quot;maximum_predicted_fractional_change&quot;: 0.17701409303622673,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 7,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.015353486502599519,
+              0.017599098621232576,
+              0.01604600415152236
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.13994836953971532,
+            &quot;maximum_predicted_fractional_change&quot;: 0.19627072006101165,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 8,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.014985630844618422,
+              0.017587689331288472,
+              0.015775096169554192
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.16494723447024065,
+            &quot;maximum_predicted_fractional_change&quot;: 0.21552734708579668,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 9,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.014617775186637327,
+              0.01760004313254683,
+              0.015508761982656829
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.1922956809347207,
+            &quot;maximum_predicted_fractional_change&quot;: 0.2347839741105816,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      },
+      {
+        &quot;horizon&quot;: 10,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.01424991952865623,
+              0.017636160025007654,
+              0.015246924370509162
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.22209334906265704,
+            &quot;maximum_predicted_fractional_change&quot;: 0.25404060113536664,
+            &quot;passes&quot;: false
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: false,
+        &quot;aligned&quot;: false
+      }
+    ],
+    &quot;scheduling_events&quot;: [
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;linear&quot;,
+        &quot;kind&quot;: &quot;formal_gate_crossing&quot;,
+        &quot;distance&quot;: 46.01934411278548,
+        &quot;scheduling_distance_fraction&quot;: 0.2
+      },
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;quadratic&quot;,
+        &quot;kind&quot;: &quot;quadratic_turn&quot;,
+        &quot;distance&quot;: 7.980126505718335,
+        &quot;scheduling_distance_fraction&quot;: 0.5
+      },
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;exponential&quot;,
+        &quot;kind&quot;: &quot;formal_gate_crossing&quot;,
+        &quot;distance&quot;: 170.00009340974657,
+        &quot;scheduling_distance_fraction&quot;: 0.2
+      }
+    ],
+    &quot;scope&quot;: &quot;Recent measured joint progress permits a bounded probe. Fit agreement, relative-change and turn/crossing distance constrain block size; none grants scientific admission.&quot;
+  },
+  {
+    &quot;recorded_at&quot;: {
+      &quot;utc&quot;: &quot;2026-11-21T14:57:49.799450+00:00&quot;,
+      &quot;melbourne&quot;: &quot;2026-11-22T01:57:49.799450+11:00&quot;
+    },
+    &quot;iteration&quot;: 330,
+    &quot;charged_attempts&quot;: 15,
+    &quot;maximum_attempts&quot;: 20,
+    &quot;fit_admission&quot;: false,
+    &quot;budget_extension&quot;: false,
+    &quot;action&quot;: &quot;continue&quot;,
+    &quot;next_attempts&quot;: 5,
+    &quot;measured_joint_progress&quot;: {
+      &quot;relative_force_l2&quot;: {
+        &quot;previous_median&quot;: 0.0012925309966815824,
+        &quot;recent_median&quot;: 0.0010157317287727025,
+        &quot;fractional_improvement&quot;: 0.2141529051291835
+      },
+      &quot;acceleration_max&quot;: {
+        &quot;previous_median&quot;: 0.01967658953477173,
+        &quot;recent_median&quot;: 0.01853009210721887,
+        &quot;fractional_improvement&quot;: 0.05826708055920027
+      }
+    },
+    &quot;fits&quot;: {
+      &quot;relative_force_l2&quot;: {
+        &quot;status&quot;: &quot;descriptive_fit_complete&quot;,
+        &quot;x_origin_iteration&quot;: 315,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -2.8257869848119522e-05,
+              0.0014944329974494782
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.4506200108631056,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              1.2139512577605668e-06,
+              -4.646713871452802e-05,
+              0.0015369212914710987
+            ],
+            &quot;holdout_relative_rmse&quot;: 1.4451497109648734,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.024314851169320122,
+              -6.5111583357448595
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.3872384466417318,
+            &quot;holdout_points&quot;: 3
+          }
+        ],
+        &quot;admission_inferred&quot;: false,
+        &quot;budget_extension&quot;: false
+      },
+      &quot;acceleration_max&quot;: {
+        &quot;status&quot;: &quot;descriptive_fit_complete&quot;,
+        &quot;x_origin_iteration&quot;: 315,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.00015207444212897813,
+              0.02033766244853269
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.042444109690919295,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              6.93689878606955e-06,
+              -0.00025612792392002055,
+              0.020580453906045116
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.17372880787022704,
+            &quot;holdout_points&quot;: 3
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients_highest_power_first&quot;: [
+              -0.007946301920394595,
+              -3.894854716595975
+            ],
+            &quot;holdout_relative_rmse&quot;: 0.04255291960937139,
+            &quot;holdout_points&quot;: 3
+          }
+        ],
+        &quot;admission_inferred&quot;: false,
+        &quot;budget_extension&quot;: false
+      }
+    },
+    &quot;valid_model_names&quot;: {
+      &quot;relative_force_l2&quot;: [],
+      &quot;acceleration_max&quot;: [
+        &quot;linear&quot;,
+        &quot;quadratic&quot;,
+        &quot;exponential&quot;
+      ]
+    },
+    &quot;reason&quot;: &quot;measured_progress_only_minimum_probe_due_to_fit_uncertainty&quot;,
+    &quot;forecast_candidates&quot;: [
+      {
+        &quot;horizon&quot;: 5,
+        &quot;metrics&quot;: {
+          &quot;relative_force_l2&quot;: {
+            &quot;predictions&quot;: [],
+            &quot;positive&quot;: false,
+            &quot;relative_model_spread&quot;: null,
+            &quot;maximum_predicted_fractional_change&quot;: null,
+            &quot;passes&quot;: false
+          },
+          &quot;acceleration_max&quot;: {
+            &quot;predictions&quot;: [
+              0.017296173605953126,
+              0.018232654942072525,
+              0.017356629271275202
+            ],
+            &quot;positive&quot;: true,
+            &quot;relative_model_spread&quot;: 0.05395525372367392,
+            &quot;maximum_predicted_fractional_change&quot;: 0.026448428386667833,
+            &quot;passes&quot;: true
+          }
+        },
+        &quot;turn_and_gate_distance_constraint_pass&quot;: true,
+        &quot;aligned&quot;: false
+      }
+    ],
+    &quot;scheduling_events&quot;: [
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;linear&quot;,
+        &quot;kind&quot;: &quot;formal_gate_crossing&quot;,
+        &quot;distance&quot;: 112.15918715737871,
+        &quot;scheduling_distance_fraction&quot;: 0.2
+      },
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;quadratic&quot;,
+        &quot;kind&quot;: &quot;quadratic_turn&quot;,
+        &quot;distance&quot;: 3.461270073189489,
+        &quot;scheduling_distance_fraction&quot;: 0.5
+      },
+      {
+        &quot;quantity&quot;: &quot;acceleration_max&quot;,
+        &quot;model&quot;: &quot;exponential&quot;,
+        &quot;kind&quot;: &quot;formal_gate_crossing&quot;,
+        &quot;distance&quot;: 364.15757450058584,
+        &quot;scheduling_distance_fraction&quot;: 0.2
+      }
+    ],
+    &quot;scope&quot;: &quot;Recent measured joint progress permits a bounded probe. Fit agreement, relative-change and turn/crossing distance constrain block size; none grants scientific admission.&quot;
+  }
+]</pre></details><h2>status</h2><pre>&quot;complete_pending_review&quot;</pre><h2>q2</h2><pre>{
+  &quot;recorded_at&quot;: {
+    &quot;utc&quot;: &quot;2026-11-21T14:50:04.248662+00:00&quot;,
+    &quot;melbourne&quot;: &quot;2026-11-22T01:50:04.248662+11:00&quot;
+  },
+  &quot;metrics&quot;: {
+    &quot;energy&quot;: 1.99948549715528,
+    &quot;relative_force_l2&quot;: 1.1542460483787707e-05,
+    &quot;acceleration_max&quot;: 6.636497024101145e-05,
+    &quot;acceleration_rms&quot;: 8.366182125980412e-07,
+    &quot;minimum_corner_cone&quot;: 0.9338021913610102,
+    &quot;hopf_integral&quot;: -1.9961557335587894,
+    &quot;unit_error&quot;: 2.220446049250313e-16,
+    &quot;max_neighbour_angle&quot;: 0.3972169307717207,
+    &quot;mean_topological_b&quot;: [
+      -1.1953179288986849e-18,
+      2.0126580464510174e-17,
+      -6.18706716583301e-06
+    ],
+    &quot;scope&quot;: &quot;finite-grid Coulomb-gauge integral, not an exact integer certificate&quot;,
+    &quot;tail_fraction&quot;: 0.0003015441669190186,
+    &quot;guard_fraction&quot;: 0.0006463789224437667
+  },
+  &quot;gates&quot;: {
+    &quot;representation&quot;: true,
+    &quot;strict_stationary&quot;: true,
+    &quot;boundary_admitted&quot;: true,
+    &quot;all_readiness_gates&quot;: true
+  },
+  &quot;source_sha256&quot;: &quot;8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930&quot;
+}</pre><h2>q22</h2><pre>{
+  &quot;recorded_at&quot;: {
+    &quot;utc&quot;: &quot;2026-11-21T14:53:40.521357+00:00&quot;,
+    &quot;melbourne&quot;: &quot;2026-11-22T01:53:40.521357+11:00&quot;
+  },
+  &quot;status&quot;: &quot;deferred_missing_exact_historical_field&quot;,
+  &quot;expected_sha256&quot;: &quot;1412f284fa0634519babc384329b10cebb924986c97ef7833d3ff8955abafcc1&quot;,
+  &quot;roots&quot;: [
+    &quot;/home/rd/ElectronFieldTopology-q21-q22-evaluation-record-20261120&quot;,
+    &quot;/home/rd/ElectronFieldTopology-Q2-imagery&quot;,
+    &quot;/home/rd/ElectronFieldTopology-Q3-Q4-Q7-assessment-publication&quot;,
+    &quot;/home/rd/ElectronFieldTopology-Q3-initialization-publication&quot;,
+    &quot;/home/rd/ElectronFieldTopology-Q3-method-alignment-publication&quot;,
+    &quot;/home/rd/ElectronFieldTopology-Q3-observation-publication&quot;,
+    &quot;/home/rd/ElectronFieldTopology-Q3-sampling-boundary-publication&quot;,
+    &quot;/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117&quot;,
+    &quot;/home/rd/ElectronFieldTopology-admin-backups&quot;,
+    &quot;/home/rd/ElectronFieldTopology-admin-logs&quot;,
+    &quot;/home/rd/ElectronFieldTopology-campaign2&quot;,
+    &quot;/home/rd/ElectronFieldTopology-cell-observer-measurements&quot;,
+    &quot;/home/rd/ElectronFieldTopology-dependency-controls&quot;,
+    &quot;/home/rd/ElectronFieldTopology-focused-orbits-20261121&quot;,
+    &quot;/home/rd/ElectronFieldTopology-followup-assessment-20261115&quot;,
+    &quot;/home/rd/ElectronFieldTopology-higher-q-reconciliation-20261117&quot;,
+    &quot;/home/rd/ElectronFieldTopology-interior-orbits-20261121&quot;,
+    &quot;/home/rd/ElectronFieldTopology-lowq-motion&quot;,
+    &quot;/home/rd/ElectronFieldTopology-observer-calibration&quot;,
+    &quot;/home/rd/ElectronFieldTopology-policy-v2-record-20261120&quot;,
+    &quot;/home/rd/ElectronFieldTopology-q-range-closure-20261117&quot;,
+    &quot;/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121&quot;,
+    &quot;/home/rd/ElectronFieldTopology-rapid-q-followup&quot;,
+    &quot;/home/rd/ElectronFieldTopology-rapid-q-screen&quot;,
+    &quot;/home/rd/ElectronFieldTopology-rapid-q-screen-incomplete-20261114T092538Z&quot;,
+    &quot;/home/rd/ElectronFieldTopology-reconciliation-results-20261117&quot;,
+    &quot;/home/rd/ElectronFieldTopology-repository-admin&quot;,
+    &quot;/home/rd/ElectronFieldTopology-results-diagnosis-record-20261120&quot;,
+    &quot;/home/rd/ElectronFieldTopology-visual-q1-q16-20261121&quot;,
+    &quot;/home/rd/Matter-Waves-focused-orbits-20261121&quot;,
+    &quot;/home/rd/Matter-Waves-focused-orbits-20261121-output&quot;,
+    &quot;/home/rd/Matter-Waves-focused-orbits-20261121-output-browser-env&quot;,
+    &quot;/home/rd/Matter-Waves-focused-orbits-20261121-output-cache&quot;,
+    &quot;/home/rd/Matter-Waves-focused-orbits-20261121-output-release&quot;,
+    &quot;/home/rd/Matter-Waves-interior-orbits-20261121&quot;,
+    &quot;/home/rd/Matter-Waves-interior-orbits-20261121-output&quot;,
+    &quot;/home/rd/Matter-Waves-interior-orbits-20261121-output-browser-env&quot;,
+    &quot;/home/rd/Matter-Waves-interior-orbits-20261121-output-cache&quot;,
+    &quot;/home/rd/Matter-Waves-interior-orbits-20261121-output-release&quot;,
+    &quot;/home/rd/Matter-Waves-visual-collection-20261121&quot;,
+    &quot;/home/rd/Matter-Waves-visual-output-20261121&quot;,
+    &quot;/home/rd/Matter-Waves-visual-output-20261121-browser-env&quot;,
+    &quot;/home/rd/Matter-Waves-visual-output-20261121-release&quot;,
+    &quot;/home/rd/Matter-Waves-visual-snapshots&quot;,
+    &quot;/home/rd/Matter-Waves-visual-source-collector-20261121&quot;
+  ],
+  &quot;expected_location&quot;: &quot;/home/rd/ElectronFieldTopology-q22-study/artifacts/q22-fresh-20261101T102757+1100/cases/q22-129-fresh-20261101T103312+1100-pass002/final.npz&quot;,
+  &quot;downloads_archive_filter&quot;: [
+    &quot;electronfieldtopology&quot;,
+    &quot;matter-waves&quot;,
+    &quot;evidence&quot;
+  ],
+  &quot;limits&quot;: {
+    &quot;project_directory_prefixes&quot;: [
+      &quot;ElectronFieldTopology&quot;,
+      &quot;Matter-Waves&quot;
+    ],
+    &quot;download_archive_name_tokens&quot;: [
+      &quot;electronfieldtopology&quot;,
+      &quot;matter-waves&quot;,
+      &quot;evidence&quot;
+    ],
+    &quot;archive_extensions&quot;: [
+      &quot;.zip&quot;,
+      &quot;.tar&quot;,
+      &quot;.tar.gz&quot;,
+      &quot;.tgz&quot;,
+      &quot;.tar.bz2&quot;,
+      &quot;.tar.xz&quot;
+    ],
+    &quot;maximum_filesystem_entries&quot;: 120000,
+    &quot;maximum_archive_members&quot;: 200000,
+    &quot;maximum_nested_depth&quot;: 3,
+    &quot;maximum_candidate_and_nested_stream_bytes&quot;: 68719476736,
+    &quot;maximum_nested_archive_bytes&quot;: 8589934592,
+    &quot;exclude_directories&quot;: [
+      &quot;.git&quot;,
+      &quot;.venv&quot;,
+      &quot;venv&quot;,
+      &quot;node_modules&quot;,
+      &quot;__pycache__&quot;,
+      &quot;.cache&quot;
+    ],
+    &quot;no_wall_time_cap&quot;: true,
+    &quot;network_access&quot;: false,
+    &quot;absence_scope&quot;: &quot;Only declared roots, supported archives and recorded limits; never a proof that no copy exists globally&quot;
+  },
+  &quot;charged_work&quot;: {
+    &quot;recorded_at&quot;: {
+      &quot;utc&quot;: &quot;2026-11-21T14:53:40.518986+00:00&quot;,
+      &quot;melbourne&quot;: &quot;2026-11-22T01:53:40.518986+11:00&quot;
+    },
+    &quot;stream_bytes_charged&quot;: 68695595358,
+    &quot;filesystem_entries&quot;: 74769,
+    &quot;archive_members&quot;: 6240,
+    &quot;attempted_candidates&quot;: 2671,
+    &quot;archive_streams&quot;: 45
+  },
+  &quot;coverage_gaps&quot;: [
+    {
+      &quot;locator&quot;: &quot;/home/rd/Downloads/ElectronFieldTopology-Q21-Q22-assessment-20261121.zip!ElectronFieldTopology-Q21-Q22-assessment-20261121/data/completed-evidence.zip!handover/assessment/data/diagnostic-evidence.zip!handover/assessment/data/completed-evidence.zip!handover/assessment/data/source-evidence.zip&quot;,
+      &quot;reason&quot;: &quot;nested archive depth limit&quot;
+    },
+    {
+      &quot;locator&quot;: &quot;/home/rd/Downloads/ElectronFieldTopology-Q21-Q22-assessment-20261121.zip!ElectronFieldTopology-Q21-Q22-assessment-20261121/data/completed-evidence.zip!handover/assessment/data/diagnostic-evidence.zip!handover/assessment/data/delivered-handover.zip!ElectronFieldTopology-policy-v2-continuation-20261120/assessment/data/source-evidence.zip&quot;,
+      &quot;reason&quot;: &quot;nested archive depth limit&quot;
+    },
+    {
+      &quot;locator&quot;: &quot;declared inventory&quot;,
+      &quot;reason&quot;: &quot;Candidate/nested/archive-hash stream budget reached before: /home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/006-focused-motion-convergence/20261104t142830z-d061b67b/cases/q2-n101-L16-a0-cubic/attempt-001/latest.npz&quot;
+    }
+  ],
+  &quot;coverage_gap_count&quot;: 3,
+  &quot;coverage_gap_details_truncated&quot;: false,
+  &quot;stop_reason&quot;: &quot;Candidate/nested/archive-hash stream budget reached before: /home/rd/ElectronFieldTopology-repository-admin/artifacts/s5-b/006-focused-motion-convergence/20261104t142830z-d061b67b/cases/q2-n101-L16-a0-cubic/attempt-001/latest.npz&quot;,
+  &quot;coverage_complete_for_declared_scan&quot;: false,
+  &quot;not_a_global_absence_proof&quot;: true,
+  &quot;source_modified&quot;: false,
+  &quot;scope&quot;: &quot;Declared local project roots and matching Download archives/NPZs only. Git object databases, excluded caches, external backups and unsupported archive formats are not claimed searched. Exact SHA determines eligibility; filenames do not.&quot;
+}</pre><h2>deferred</h2><pre>[
+  &quot;Memory reset arm&quot;,
+  &quot;Fixed-box mesh comparison pending this tranche assessment&quot;,
+  &quot;Domain enlargement&quot;,
+  &quot;Motion simulations&quot;,
+  &quot;New Q candidates&quot;,
+  &quot;Another same-grid tranche without separate review&quot;,
+  &quot;Native Q22 operator comparison: exact field not recovered within declared local coverage/limits&quot;
+]</pre><h2>error</h2><pre>null</pre><p>Boundary failure remains failure. A measured strict-stationarity result is not motion readiness when another gate fails. Formal curve crossings are scheduling diagnostics only. Search limits, permissions and omitted roots remain explicit; missing bytes are not a negative Q22 result.</p></html>
