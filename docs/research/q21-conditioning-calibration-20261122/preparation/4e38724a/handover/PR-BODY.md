@@ -1,0 +1,5 @@
+Record the completed literature-campaign assessment and the next controlled Q21 conditioning study. The larger-box endpoint passes boundary admission while force and maximum acceleration remain above their original limits.
+
+Add a localized/spectral residual audit, seven matched numerical-shift measurements, up to four adaptive measurements and a qualified interpolated/extrapolated-value confirmation. Linear, quadratic and exponential fits must predict better than a constant baseline. A selected value is actually rerun before longer comparison; unsupported optima and failed gates remain explicit. The grid, box, action, alpha initialization and scientific gates stay fixed. Maximum new optimizer attempts 580; physical-time steps0.
+
+Existing results and graphics remain in place. The workstation checks source merge ancestry and published bytes, runs source/Q2/backend replays, and publishes only compact evidence and full-field hashes. See HOST-VALIDATION.json for host tests and their limits; a host test is not a zbook production result.
