@@ -1,0 +1,72 @@
+{
+  "arm": {
+    "id": "curvature-plus",
+    "kind": "curvature",
+    "amplitude": 0.02,
+    "optimizer": "cg",
+    "cap": 100
+  },
+  "status": "deferred_no_qualified_negative_direction",
+  "reason": "No negative direction qualified by both finite-difference scales and Hessian symmetry",
+  "charged_attempts": 0,
+  "accepted_steps": 0,
+  "initialization": {},
+  "history": [
+    {
+      "step": 0,
+      "iteration": 335,
+      "metrics": {
+        "energy": 12.346938152045725,
+        "relative_force_l2": 0.001465082449825075,
+        "acceleration_max": 0.01882438091430968,
+        "acceleration_rms": 0.00026648509101438815,
+        "minimum_corner_cone": 0.7960368402761949,
+        "hopf_integral": -20.716576822019494,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.7354094793888927,
+        "mean_topological_b": [
+          2.7863454935046204e-07,
+          2.9539185112757014e-07,
+          -0.0001492657208973572
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0015648992688830797,
+        "guard_fraction": 0.003141797821240132
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": false,
+        "all_readiness_gates": false
+      }
+    }
+  ],
+  "final": {
+    "step": 0,
+    "iteration": 335,
+    "metrics": {
+      "energy": 12.346938152045725,
+      "relative_force_l2": 0.001465082449825075,
+      "acceleration_max": 0.01882438091430968,
+      "acceleration_rms": 0.00026648509101438815,
+      "minimum_corner_cone": 0.7960368402761949,
+      "hopf_integral": -20.716576822019494,
+      "unit_error": 3.3306690738754696e-16,
+      "max_neighbour_angle": 0.7354094793888927,
+      "mean_topological_b": [
+        2.7863454935046204e-07,
+        2.9539185112757014e-07,
+        -0.0001492657208973572
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0015648992688830797,
+      "guard_fraction": 0.003141797821240132
+    },
+    "gates": {
+      "representation": true,
+      "strict_stationary": false,
+      "boundary_admitted": false,
+      "all_readiness_gates": false
+    }
+  }
+}

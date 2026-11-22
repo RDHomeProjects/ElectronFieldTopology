@@ -1,0 +1,82 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-22T01:03:59.875580+00:00",
+    "melbourne": "2026-11-22T12:03:59.875580+11:00"
+  },
+  "source_run": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c",
+  "endpoint": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/q21/exact/endpoint.npz",
+  "endpoint_sha256": "e2a7d4e300f9f7e7e0993f42e56b7f33eacaba4c7b32f0a3ed91d108fca23da0",
+  "q2": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/sources/q2-reference.npz",
+  "compact_members": 89,
+  "retained_fields_verified": 22,
+  "source_modified": false,
+  "probe": {
+    "recorded_at": {
+      "utc": "2026-11-22T01:03:59.574712+00:00",
+      "melbourne": "2026-11-22T12:03:59.574712+11:00"
+    },
+    "status": "preflight_pass",
+    "backend": {
+      "requested": "auto",
+      "selected": "cuda",
+      "automatic_cpu_reason": null,
+      "source_backend": "cuda",
+      "backend_transfer": false,
+      "bitwise_trajectory_claimed": false,
+      "device": {
+        "execution_backend": "cuda-cupy-float64",
+        "device_id": 0,
+        "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+        "compute_capability": "75",
+        "cupy": "14.2.0",
+        "cuda_runtime": 12090,
+        "cuda_driver": 13000,
+        "precision": "float64"
+      },
+      "audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      }
+    },
+    "q21_metrics": {
+      "energy": 12.346938152045725,
+      "relative_force_l2": 0.001465082449825075,
+      "acceleration_max": 0.01882438091430968,
+      "acceleration_rms": 0.00026648509101438815,
+      "minimum_corner_cone": 0.7960368402761949,
+      "hopf_integral": -20.716576822019494,
+      "unit_error": 3.3306690738754696e-16,
+      "max_neighbour_angle": 0.7354094793888927,
+      "mean_topological_b": [
+        2.7863454935046204e-07,
+        2.9539185112757014e-07,
+        -0.0001492657208973572
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0015648992688830797,
+      "guard_fraction": 0.003141797821240132
+    },
+    "q2_metrics": {
+      "energy": 1.99948549715528,
+      "relative_force_l2": 1.1542460483787707e-05,
+      "acceleration_max": 6.636497024101145e-05,
+      "acceleration_rms": 8.366182125980412e-07,
+      "minimum_corner_cone": 0.9338021913610102,
+      "hopf_integral": -1.9961557335587894,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3972169307717207,
+      "mean_topological_b": [
+        -1.1953179288986849e-18,
+        2.0126580464510174e-17,
+        -6.18706716583301e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0003015441669190186,
+      "guard_fraction": 0.0006463789224437667
+    },
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0
+  }
+}

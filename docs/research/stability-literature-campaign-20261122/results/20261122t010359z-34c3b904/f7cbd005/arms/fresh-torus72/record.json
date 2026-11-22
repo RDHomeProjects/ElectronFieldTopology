@@ -1,0 +1,208 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-22T07:02:44.992094+00:00",
+    "melbourne": "2026-11-22T18:02:44.992094+11:00"
+  },
+  "arm": {
+    "id": "fresh-torus72",
+    "kind": "fresh",
+    "family": "torus72",
+    "alpha": 7,
+    "beta": 1,
+    "map_amplitude": 4.0,
+    "optimizer": "cg",
+    "cap": 100
+  },
+  "status": "preparation_unresolved",
+  "reason": "representation_unresolved",
+  "charged_attempts": 0,
+  "accepted_steps": 0,
+  "initialization": {
+    "factor_changed": "fresh",
+    "source_shape": [
+      97,
+      97,
+      97
+    ],
+    "source_lengths": [
+      23.04,
+      23.04,
+      23.04
+    ],
+    "optimizer_memory_reset": true,
+    "degree_formula": "2*alpha+7*beta",
+    "algebraic_degree": 21,
+    "initial_family_is_not_final_knot_identification": true,
+    "shape": [
+      97,
+      97,
+      97
+    ],
+    "lengths": [
+      23.04,
+      23.04,
+      23.04
+    ],
+    "spacing": [
+      0.24,
+      0.24,
+      0.24
+    ],
+    "held_layer_correction": 0.0,
+    "optimizer_counter_offset": 335,
+    "offset_is_not_new_work": true,
+    "alpha_initial": 0.18170968107390317
+  },
+  "backend": {
+    "requested": "auto",
+    "selected": "cuda",
+    "automatic_cpu_reason": null,
+    "source_backend": "cuda",
+    "backend_transfer": false,
+    "bitwise_trajectory_claimed": false,
+    "device": {
+      "execution_backend": "cuda-cupy-float64",
+      "device_id": 0,
+      "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+      "compute_capability": "75",
+      "cupy": "14.2.0",
+      "cuda_runtime": 12090,
+      "cuda_driver": 13000,
+      "precision": "float64"
+    },
+    "audit": {
+      "passed": true,
+      "energy_abs_difference": 0.0,
+      "gradient_max_abs_difference": 0.0,
+      "reference": "independent CPU sf_readmission.static_value_gradient"
+    }
+  },
+  "history": [
+    {
+      "recorded_at": {
+        "utc": "2026-11-22T07:02:36.943499+00:00",
+        "melbourne": "2026-11-22T18:02:36.943499+11:00"
+      },
+      "step": 0,
+      "iteration": 335,
+      "metrics": {
+        "energy": 27.25033617066463,
+        "relative_force_l2": 1.3031886599747986,
+        "acceleration_max": 17.469689416583282,
+        "acceleration_rms": 0.680572990429385,
+        "minimum_corner_cone": 0.3779371851291376,
+        "hopf_integral": -19.87020355878975,
+        "unit_error": 5.551115123125783e-16,
+        "max_neighbour_angle": 1.5442864866514394,
+        "mean_topological_b": [
+          -1.3681701978868023e-18,
+          1.4694301114241983e-06,
+          0.0010734342136097781
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0,
+        "guard_fraction": 7.717049452646168e-19
+      },
+      "gates": {
+        "representation": false,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      }
+    }
+  ],
+  "final": {
+    "recorded_at": {
+      "utc": "2026-11-22T07:02:36.943499+00:00",
+      "melbourne": "2026-11-22T18:02:36.943499+11:00"
+    },
+    "step": 0,
+    "iteration": 335,
+    "metrics": {
+      "energy": 27.25033617066463,
+      "relative_force_l2": 1.3031886599747986,
+      "acceleration_max": 17.469689416583282,
+      "acceleration_rms": 0.680572990429385,
+      "minimum_corner_cone": 0.3779371851291376,
+      "hopf_integral": -19.87020355878975,
+      "unit_error": 5.551115123125783e-16,
+      "max_neighbour_angle": 1.5442864866514394,
+      "mean_topological_b": [
+        -1.3681701978868023e-18,
+        1.4694301114241983e-06,
+        0.0010734342136097781
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0,
+      "guard_fraction": 7.717049452646168e-19
+    },
+    "gates": {
+      "representation": false,
+      "strict_stationary": false,
+      "boundary_admitted": true,
+      "all_readiness_gates": false
+    }
+  },
+  "decisions": [],
+  "geometry": {
+    "e2": 11.613452015683453,
+    "e4": 15.636884154981185,
+    "continuum_scaling_proxy": -0.14764706439214545,
+    "scaling_proxy_scope": "Continuum E2=E4 is a diagnostic, not a finite-box/discrete stationarity certificate. Actual mapped-scale energies are recorded separately.",
+    "energy_centroid": [
+      0.005143508560048391,
+      -8.182436322132827e-18,
+      2.6303508212335624e-18
+    ],
+    "energy_covariance_eigenvalues": [
+      4.096253119949225,
+      11.287008765604455,
+      11.291263681079826
+    ],
+    "rms_extent": 5.164738673605229,
+    "core_voxel_volume_n3_negative": 626.2824959999999,
+    "scope": "Energy/core geometry proxies; not exact core length, twist, writhe or knot classification."
+  },
+  "curves": {
+    "extraction": {
+      "status": "closed_piecewise_linear_preimages",
+      "target": [
+        0.11,
+        -0.07,
+        -0.991463564635635
+      ],
+      "components": 1,
+      "segments": 1816,
+      "ambiguous_tetrahedra": 0,
+      "scope": "Near-south regular-target preimage of tetrahedrally interpolated sampled field. No knot name inferred; refinement qualification still required."
+    },
+    "curves": [
+      {
+        "points": 1816,
+        "length": 120.27772533027084,
+        "integrated_polygon_bending": 3236.7479365743748,
+        "writhe_128": -10.609900975583313,
+        "writhe_256": -10.607731070457362,
+        "writhe_sampling_difference": 0.002169905125951388,
+        "writhe_quadrature_qualified": true,
+        "framed_twist_128": -10.454861803018401,
+        "framed_twist_256": -10.403750127388566,
+        "twist_quadrature_qualified": false,
+        "framing": "Projected spatial gradient of n dot U along the extracted regular-target preimage. No Tw+Wr identification with total Hopf charge; mesh qualification remains separate."
+      }
+    ],
+    "scope": "Rod-motivated length/bending/writhe diagnostics; the energy functional is unchanged. No geometric quantity grants stability or topology admission."
+  },
+  "endpoint": {
+    "path": "endpoint.npz",
+    "sha256": "1965f24d3be23db528adac239a18df918337e52424b9a58f9e47de4c9dd7e46c"
+  },
+  "best": {
+    "path": "best-a00000.npz",
+    "sha256": "1965f24d3be23db528adac239a18df918337e52424b9a58f9e47de4c9dd7e46c",
+    "step": 0,
+    "score": 17469.689416583282
+  },
+  "physical_time_steps": 0,
+  "physical_Q_rejection": false
+}

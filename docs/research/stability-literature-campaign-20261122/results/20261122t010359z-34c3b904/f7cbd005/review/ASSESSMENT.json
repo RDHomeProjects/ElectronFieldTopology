@@ -1,0 +1,1149 @@
+{
+  "source_run": "20261122t010359z-34c3b904",
+  "source_evidence_sha256": "98e2079684c8a60a68453c9ddcff52c94fc6c990d5bc0465cd1183c4a830a1c4",
+  "scientific_disposition": "No strict stationary or fully admitted Q21 observation; larger-domain boundary admission achieved",
+  "integrity": {
+    "zip_crc": "pass",
+    "unique_members": 242,
+    "manifest_coverage": "pass",
+    "matching_members": 240,
+    "mismatches": [
+      "telemetry.jsonl"
+    ],
+    "telemetry_matching_prefix": {
+      "rows": 4310,
+      "bytes": 3254808
+    },
+    "telemetry_archived_rows": 4311,
+    "diagnosis": "Supervisor appended one telemetry sample after hashing and before ZIP capture; confirmed prefix equality. Original archive retained unchanged."
+  },
+  "optimizer_attempts": 1412,
+  "maximum_optimizer_attempts": 2300,
+  "branches_declared": 19,
+  "branches_relaxed": 15,
+  "initial_representation_failures": 2,
+  "curvature_deferrals": 2,
+  "all_new_backend_audits_pass": true,
+  "Q2_control_passes": true,
+  "strict_stationary_observations": 0,
+  "physical_integration_attempts": 0,
+  "field_manifest": {
+    "declared_files": 82,
+    "declared_bytes": 8274371476,
+    "local_full_bytes_replayed_by_reviewer": false
+  },
+  "endpoints": {
+    "exact-cg": {
+      "status": "preparation_unresolved",
+      "reason": "repeated_measured_joint_progress_failure",
+      "charged_attempts": 90,
+      "accepted_steps": 90,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T01:21:16.253027+00:00",
+          "melbourne": "2026-11-22T12:21:16.253027+11:00"
+        },
+        "step": 90,
+        "iteration": 425,
+        "charged_attempt": 90,
+        "alpha": 0.12089258196146309,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.346802317703146,
+          "relative_force_l2": 0.0014546038965091077,
+          "acceleration_max": 0.014040709290790463,
+          "acceleration_rms": 0.00025537877250873754,
+          "minimum_corner_cone": 0.7945624435663449,
+          "hopf_integral": -20.71504701832239,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7372363499512157,
+          "mean_topological_b": [
+            5.758981530803182e-07,
+            -5.738497971388456e-07,
+            -0.00015008607351203518
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015600364632073441,
+          "guard_fraction": 0.0031324878152075813
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346802317703146,
+          "objective_calls": 3,
+          "accepted_step_max": 0.0019030403897677148
+        }
+      },
+      "best_retained": {
+        "path": "best-a00052.npz",
+        "sha256": "afb2f8b54e2684f3c09b2eea7b567309892e59e231630bc749ad4a0174f0be65",
+        "step": 52,
+        "score": 12.91333827554702
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "ac46c79702d4d917e6a0310ce8bb4d5ed0abfd3ba85cfef4b42ebffc1f8226c8"
+      }
+    },
+    "restart-cg": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T01:37:46.756822+00:00",
+          "melbourne": "2026-11-22T12:37:46.756822+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.10384593717069675,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.346836409259916,
+          "relative_force_l2": 0.0007464584337266052,
+          "acceleration_max": 0.014141032445793966,
+          "acceleration_rms": 0.00015366580353050056,
+          "minimum_corner_cone": 0.7949907837360254,
+          "hopf_integral": -20.71542387002918,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7365681605280929,
+          "mean_topological_b": [
+            4.6349057687956203e-07,
+            -3.210260042380443e-07,
+            -0.00014990345709315259
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015613270094343157,
+          "guard_fraction": 0.0031349709980220838
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346836409259916,
+          "objective_calls": 3,
+          "accepted_step_max": 0.0008139192746988549
+        }
+      },
+      "best_retained": {
+        "path": "best-a00084.npz",
+        "sha256": "2b150275439909c6f407c525a38c31600145dab009ffdd8c1606e80389a42763",
+        "step": 84,
+        "score": 12.809289345976438
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "8ad29fd361913f642e206b4daf8154489df90a331f898148a2d6da7eabd195c4"
+      }
+    },
+    "sobolev-sd": {
+      "status": "preparation_unresolved",
+      "reason": "repeated_measured_joint_progress_failure",
+      "charged_attempts": 82,
+      "accepted_steps": 82,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T01:51:22.456684+00:00",
+          "melbourne": "2026-11-22T12:51:22.456684+11:00"
+        },
+        "step": 82,
+        "iteration": 417,
+        "charged_attempt": 82,
+        "alpha": 0.06894565328877571,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.346919432694,
+          "relative_force_l2": 0.0009031545102488653,
+          "acceleration_max": 0.01762714605629982,
+          "acceleration_rms": 0.0001961786831309186,
+          "minimum_corner_cone": 0.7958409631388399,
+          "hopf_integral": -20.71636383474606,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7358420690595883,
+          "mean_topological_b": [
+            2.882648596848309e-07,
+            2.0387281691613917e-07,
+            -0.00014938461485105965
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015642970916380206,
+          "guard_fraction": 0.003140642890998067
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346919432694,
+          "objective_calls": 3,
+          "accepted_step_max": 0.0007624248022908409,
+          "method": "sd",
+          "lbfgs_pairs": 0
+        }
+      },
+      "best_retained": {
+        "path": "best-a00081.npz",
+        "sha256": "5834fcb3948db0603b28f0c692c3182e732b2a22edff4c0010f28140d56e9570",
+        "step": 81,
+        "score": 16.474038516771408
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "40cf976a95f40b91adeb1bcc8286e74ea5ee372536043ba684269ed1e22d3720"
+      }
+    },
+    "damped-inertial": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T02:08:00.625427+00:00",
+          "melbourne": "2026-11-22T13:08:00.625427+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.15897785265159473,
+        "objective_calls": 2,
+        "metrics": {
+          "energy": 12.346877698426894,
+          "relative_force_l2": 0.0009932571280184483,
+          "acceleration_max": 0.014465563914673567,
+          "acceleration_rms": 0.0001967677149349871,
+          "minimum_corner_cone": 0.7953906713432505,
+          "hopf_integral": -20.715876087658234,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7364055019462765,
+          "mean_topological_b": [
+            3.650071369882569e-07,
+            -4.951920423855258e-08,
+            -0.00014963224162604173
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015628027165962767,
+          "guard_fraction": 0.0031377718826272327
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346877698426894,
+          "objective_calls": 2,
+          "accepted_step_max": 0.00094298151272944,
+          "method": "inertial",
+          "lbfgs_pairs": 0
+        }
+      },
+      "best_retained": {
+        "path": "best-a00098.npz",
+        "sha256": "4de236ee2b6f06bef0ef703d6ba8aa3e6d507109fe76c5a83bc37f5a21edbe77",
+        "step": 98,
+        "score": 14.461683543074471
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "ea0cfdba6af4b1c62b242ba3e67951a6e9da335358b92031db0ba480fc141b01"
+      }
+    },
+    "projected-lbfgs": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T02:25:25.261716+00:00",
+          "melbourne": "2026-11-22T13:25:25.261716+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.20443227047860701,
+        "objective_calls": 2,
+        "metrics": {
+          "energy": 12.345938446418074,
+          "relative_force_l2": 0.009428771298045499,
+          "acceleration_max": 0.12489526196752526,
+          "acceleration_rms": 0.0011894044553077692,
+          "minimum_corner_cone": 0.7902889121473243,
+          "hopf_integral": -20.71118442675826,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7451222588797303,
+          "mean_topological_b": [
+            1.9451899447973388e-06,
+            -2.796957299568211e-06,
+            -0.00015218713162403245
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.001536881084833952,
+          "guard_fraction": 0.0030916531072526306
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.345938446418074,
+          "objective_calls": 2,
+          "accepted_step_max": 0.0036210828732832316,
+          "method": "lbfgs",
+          "lbfgs_pairs": 3
+        }
+      },
+      "best_retained": {
+        "path": "best-a00002.npz",
+        "sha256": "cb7d286543a72e5c32780613808a3dcf62aa133a6c13bc2ea1736936bf9bc1e0",
+        "step": 2,
+        "score": 16.711091059930705
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "b870e83266b81ccb57b9f510a075d71361124735566aab9fd7d87f700a184aab"
+      }
+    },
+    "bend-m20": {
+      "status": "preparation_unresolved",
+      "reason": "repeated_measured_joint_progress_failure",
+      "charged_attempts": 90,
+      "accepted_steps": 90,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T02:40:32.031118+00:00",
+          "melbourne": "2026-11-22T13:40:32.031118+11:00"
+        },
+        "step": 90,
+        "iteration": 425,
+        "charged_attempt": 90,
+        "alpha": 0.12089258196146309,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.346810366440083,
+          "relative_force_l2": 0.0034407181650283974,
+          "acceleration_max": 0.033329834435905495,
+          "acceleration_rms": 0.0004903450478287045,
+          "minimum_corner_cone": 0.7918958528561767,
+          "hopf_integral": -20.713537147814577,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7422352894240567,
+          "mean_topological_b": [
+            3.2415083822500395e-07,
+            5.577575410957484e-06,
+            -0.00015086035519275658
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.001569069494236683,
+          "guard_fraction": 0.0031574063326455177
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 1.7763568394002505e-15,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346810366440081,
+          "objective_calls": 3,
+          "accepted_step_max": 0.004937661481733539
+        }
+      },
+      "best_retained": {
+        "path": "best-a00072.npz",
+        "sha256": "18ed13a62b6f795423672acce7595bfeafdeb4db0c0897a66c34cbd90524865b",
+        "step": 72,
+        "score": 20.502568597828684
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "5b14d2ecec92df2c11283cff6dacbed998be12b995205e0ce64930a0004c43ab"
+      }
+    },
+    "bend-m10": {
+      "status": "preparation_unresolved",
+      "reason": "repeated_measured_joint_progress_failure",
+      "charged_attempts": 80,
+      "accepted_steps": 80,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T02:53:58.066791+00:00",
+          "melbourne": "2026-11-22T13:53:58.066791+11:00"
+        },
+        "step": 80,
+        "iteration": 415,
+        "charged_attempt": 80,
+        "alpha": 0.07036874417766406,
+        "objective_calls": 2,
+        "metrics": {
+          "energy": 12.346886917780608,
+          "relative_force_l2": 0.0008387279286340269,
+          "acceleration_max": 0.025572983669183626,
+          "acceleration_rms": 0.0001941983777488308,
+          "minimum_corner_cone": 0.7965231086423363,
+          "hopf_integral": -20.714754173634653,
+          "unit_error": 2.220446049250313e-16,
+          "max_neighbour_angle": 0.7367302755030618,
+          "mean_topological_b": [
+            5.506241186496205e-07,
+            3.7024370202042242e-06,
+            -0.00015034213077490493
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015640138628720307,
+          "guard_fraction": 0.0031423402383111837
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346886917780608,
+          "objective_calls": 2,
+          "accepted_step_max": 0.00018006991641395905
+        }
+      },
+      "best_retained": {
+        "path": "best-a00060.npz",
+        "sha256": "cc6b213912507b7ec762d1d53a8d29a3ba22deb9dfcce59b58cb4b48487c68ff",
+        "step": 60,
+        "score": 20.984583453086184
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "9d05d56d546a850b8e06784f2e8e3d7da45d2408c1a7926fa5d808d7d69209a0"
+      }
+    },
+    "bend-p10": {
+      "status": "preparation_unresolved",
+      "reason": "repeated_measured_joint_progress_failure",
+      "charged_attempts": 80,
+      "accepted_steps": 80,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T03:07:31.152580+00:00",
+          "melbourne": "2026-11-22T14:07:31.152580+11:00"
+        },
+        "step": 80,
+        "iteration": 415,
+        "charged_attempt": 80,
+        "alpha": 0.14073748835532812,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.346610101379031,
+          "relative_force_l2": 0.0016787459110428609,
+          "acceleration_max": 0.0221616837341495,
+          "acceleration_rms": 0.00027777325493610406,
+          "minimum_corner_cone": 0.7931114407536106,
+          "hopf_integral": -20.71517395155445,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7394638846715009,
+          "mean_topological_b": [
+            4.570961756262337e-08,
+            -3.777562820411629e-06,
+            -0.00014990741413427558
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015620043113598187,
+          "guard_fraction": 0.003136901784146868
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 1.7763568394002505e-15,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346610101379033,
+          "objective_calls": 3,
+          "accepted_step_max": 0.0020906066794572358
+        }
+      },
+      "best_retained": {
+        "path": "best-a00055.npz",
+        "sha256": "96bbe87a5f0e4e73379d61208b54a2da17e92936a585a05e56254a787f9edd49",
+        "step": 55,
+        "score": 17.434036721923512
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "d27079cff5378161685589a8080038994348663c50ed7dfeef1655fab864c1ff"
+      }
+    },
+    "bend-p20": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T03:24:14.375123+00:00",
+          "melbourne": "2026-11-22T14:24:14.375123+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.10384593717069675,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.346653573250956,
+          "relative_force_l2": 0.002157293099470846,
+          "acceleration_max": 0.01786954079858733,
+          "acceleration_rms": 0.0003443250930126922,
+          "minimum_corner_cone": 0.7914343131385071,
+          "hopf_integral": -20.713584189150275,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7421651110959441,
+          "mean_topological_b": [
+            8.775072032975594e-08,
+            -5.003865760531577e-06,
+            -0.00015083409058315128
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.001566467732554946,
+          "guard_fraction": 0.0031503798648817092
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346653573250956,
+          "objective_calls": 3,
+          "accepted_step_max": 0.0031905032333764795
+        }
+      },
+      "best_retained": {
+        "path": "best-a00079.npz",
+        "sha256": "237d8d09eb1fa0c299f686a957356c95db5148b339b2553e5825e8bed6da42c5",
+        "step": 79,
+        "score": 10.023231639995927
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "286d2129a6fa85a15c4942cbc785416a76bc81bd9a982be9c78990f8b7261852"
+      }
+    },
+    "scale-98": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T03:41:04.486883+00:00",
+          "melbourne": "2026-11-22T14:41:04.486883+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.10384593717069675,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.346745653980237,
+          "relative_force_l2": 0.0011836500300929746,
+          "acceleration_max": 0.015475457283235022,
+          "acceleration_rms": 0.00020761567723304582,
+          "minimum_corner_cone": 0.79318592341342,
+          "hopf_integral": -20.712982040230123,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7381385836276187,
+          "mean_topological_b": [
+            3.8150109367200774e-07,
+            -7.998118959234181e-07,
+            -0.000151220445692135
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.001551681734124574,
+          "guard_fraction": 0.0031164271633384215
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 1.7763568394002505e-15,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.34674565398024,
+          "objective_calls": 3,
+          "accepted_step_max": 0.0016026951412295635
+        }
+      },
+      "best_retained": {
+        "path": "best-a00099.npz",
+        "sha256": "df521a79282b65908a33e14b971eb1cf9d2059ec4e7d5fc63fb5a1a3975980a1",
+        "step": 99,
+        "score": 15.093210264359305
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "f7390b4a27f340e9740091e8aaefe5582284abfb52dbbce9cacfab59ae5ec211"
+      }
+    },
+    "scale-102": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T03:57:52.748664+00:00",
+          "melbourne": "2026-11-22T14:57:52.748664+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.10384593717069675,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.346989089852222,
+          "relative_force_l2": 0.002476052667723054,
+          "acceleration_max": 0.029158421430921042,
+          "acceleration_rms": 0.0004362417605311112,
+          "minimum_corner_cone": 0.7978894499822694,
+          "hopf_integral": -20.721553664379087,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7313916410257855,
+          "mean_topological_b": [
+            8.551533707286712e-07,
+            -3.8518121489637777e-07,
+            -0.00014662037347508457
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015869463997492963,
+          "guard_fraction": 0.0031863617940919874
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.346989089852222,
+          "objective_calls": 3,
+          "accepted_step_max": 0.002945379581065568
+        }
+      },
+      "best_retained": {
+        "path": "best-a00100.npz",
+        "sha256": "64e2f592a0b268d44d1f7522bb170b634dc11569a76a7968a760675b7c2640a2",
+        "step": 100,
+        "score": 29.15842143092104
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "64e2f592a0b268d44d1f7522bb170b634dc11569a76a7968a760675b7c2640a2"
+      }
+    },
+    "mesh-129": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T04:37:55.930744+00:00",
+          "melbourne": "2026-11-22T15:37:55.930744+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.10384593717069675,
+        "objective_calls": 4,
+        "metrics": {
+          "energy": 12.381821962302359,
+          "relative_force_l2": 0.002568368900866646,
+          "acceleration_max": 0.03231831459612272,
+          "acceleration_rms": 0.0004727926488244966,
+          "minimum_corner_cone": 0.8861709758352171,
+          "hopf_integral": -20.917034178673553,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.533492025409747,
+          "mean_topological_b": [
+            -2.829957387470884e-07,
+            -1.5516069377197126e-07,
+            -4.441927242443238e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0016905402516443461,
+          "guard_fraction": 0.003221637186874531
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 3.552713678800501e-15,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.381821962302356,
+          "objective_calls": 4,
+          "accepted_step_max": 0.0027993984944928
+        }
+      },
+      "best_retained": {
+        "path": "best-a00100.npz",
+        "sha256": "70e62eabe61a22326ce1bc72d7e67063f5fd228926e2c8d74e750f07d5590a3f",
+        "step": 100,
+        "score": 32.31831459612272
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "70e62eabe61a22326ce1bc72d7e67063f5fd228926e2c8d74e750f07d5590a3f"
+      }
+    },
+    "mesh-161": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T05:58:16.362558+00:00",
+          "melbourne": "2026-11-22T16:58:16.362558+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.051922968585348374,
+        "objective_calls": 5,
+        "metrics": {
+          "energy": 12.388489420650066,
+          "relative_force_l2": 0.001182587362964892,
+          "acceleration_max": 0.037460742280367595,
+          "acceleration_rms": 0.00026866742068255167,
+          "minimum_corner_cone": 0.9270668725793207,
+          "hopf_integral": -20.966282871596984,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.42527161565208843,
+          "mean_topological_b": [
+            -4.324238749762263e-08,
+            -6.798543103585366e-08,
+            -1.8220354195848553e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015662838469910486,
+          "guard_fraction": 0.0032286947236439905
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 1.7763568394002505e-15,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.388489420650064,
+          "objective_calls": 5,
+          "accepted_step_max": 0.0022532078792549203
+        }
+      },
+      "best_retained": {
+        "path": "best-a00099.npz",
+        "sha256": "03a2d9ba574cc45c4b44715e0faac39f2db4c045dd75b4431b5b696f385b3f1a",
+        "step": 99,
+        "score": 36.86957974838284
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "8426b51d070c439e20a8fd0b864ff26f23117ac307e8119686104b39c32899b3"
+      }
+    },
+    "domain-pad-8": {
+      "status": "preparation_unresolved",
+      "reason": "declared_branch_budget_reached",
+      "charged_attempts": 100,
+      "accepted_steps": 100,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T06:26:03.135536+00:00",
+          "melbourne": "2026-11-22T17:26:03.135536+11:00"
+        },
+        "step": 100,
+        "iteration": 435,
+        "charged_attempt": 100,
+        "alpha": 0.10384593717069675,
+        "objective_calls": 3,
+        "metrics": {
+          "energy": 12.335476182859466,
+          "relative_force_l2": 0.0007397062221743367,
+          "acceleration_max": 0.011103379568828006,
+          "acceleration_rms": 0.00010940915956731205,
+          "minimum_corner_cone": 0.7964725817676264,
+          "hopf_integral": -20.718182272695348,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7336952705547949,
+          "mean_topological_b": [
+            1.9380066839219708e-07,
+            -4.020615256686858e-07,
+            -9.424217976912069e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0006032372566216835,
+          "guard_fraction": 0.0011256889254787515
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.335476182859466,
+          "objective_calls": 3,
+          "accepted_step_max": 0.0016519782945960898
+        }
+      },
+      "best_retained": {
+        "path": "best-a00098.npz",
+        "sha256": "e055c40c3be8fd349787d5cbfe25e8495df06a62a55799d7fa0dc88764a50e83",
+        "step": 98,
+        "score": 10.937022798139104
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "8e243fe892495c7278145cc3ecc1ad859f8bf1d2c43a7363c6b7dfb092732fdc"
+      }
+    },
+    "domain-pad-16": {
+      "status": "preparation_unresolved",
+      "reason": "repeated_measured_joint_progress_failure",
+      "charged_attempts": 90,
+      "accepted_steps": 90,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T07:02:05.802695+00:00",
+          "melbourne": "2026-11-22T18:02:05.802695+11:00"
+        },
+        "step": 90,
+        "iteration": 425,
+        "charged_attempt": 90,
+        "alpha": 0.060446290980731544,
+        "objective_calls": 4,
+        "metrics": {
+          "energy": 12.330679939551016,
+          "relative_force_l2": 0.0006208179365358624,
+          "acceleration_max": 0.017465804189698644,
+          "acceleration_rms": 9.397409514690219e-05,
+          "minimum_corner_cone": 0.7967914007515488,
+          "hopf_integral": -20.71842905838561,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7332600691065962,
+          "mean_topological_b": [
+            4.6983381977804766e-08,
+            -1.1109383560674847e-07,
+            -6.337020398775088e-05
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.00026241467153673387,
+          "guard_fraction": 0.0004682157538838666
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": true,
+          "all_readiness_gates": false
+        },
+        "backend_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "optimizer": {
+          "energy": 12.330679939551016,
+          "objective_calls": 4,
+          "accepted_step_max": 0.0005677723765823963
+        }
+      },
+      "best_retained": {
+        "path": "best-a00088.npz",
+        "sha256": "54ba233e6b6c7641659a53b160310f289f73ed8ed84b4ebb522dce3c4c278686",
+        "step": 88,
+        "score": 17.128462380050962
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "aa42276416d5eccac218e2028dcc3bc66a2bc80bf46a5fcb59849b545c7971a4"
+      }
+    },
+    "fresh-torus72": {
+      "status": "preparation_unresolved",
+      "reason": "representation_unresolved",
+      "charged_attempts": 0,
+      "accepted_steps": 0,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T07:02:36.943499+00:00",
+          "melbourne": "2026-11-22T18:02:36.943499+11:00"
+        },
+        "step": 0,
+        "iteration": 335,
+        "metrics": {
+          "energy": 27.25033617066463,
+          "relative_force_l2": 1.3031886599747986,
+          "acceleration_max": 17.469689416583282,
+          "acceleration_rms": 0.680572990429385,
+          "minimum_corner_cone": 0.3779371851291376,
+          "hopf_integral": -19.87020355878975,
+          "unit_error": 5.551115123125783e-16,
+          "max_neighbour_angle": 1.5442864866514394,
+          "mean_topological_b": [
+            -1.3681701978868023e-18,
+            1.4694301114241983e-06,
+            0.0010734342136097781
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0,
+          "guard_fraction": 7.717049452646168e-19
+        },
+        "gates": {
+          "representation": false,
+          "strict_stationary": false,
+          "boundary_admitted": true,
+          "all_readiness_gates": false
+        }
+      },
+      "best_retained": {
+        "path": "best-a00000.npz",
+        "sha256": "1965f24d3be23db528adac239a18df918337e52424b9a58f9e47de4c9dd7e46c",
+        "step": 0,
+        "score": 17469.689416583282
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "1965f24d3be23db528adac239a18df918337e52424b9a58f9e47de4c9dd7e46c"
+      }
+    },
+    "fresh-torus23": {
+      "status": "preparation_unresolved",
+      "reason": "representation_unresolved",
+      "charged_attempts": 0,
+      "accepted_steps": 0,
+      "final": {
+        "recorded_at": {
+          "utc": "2026-11-22T07:02:54.750564+00:00",
+          "melbourne": "2026-11-22T18:02:54.750564+11:00"
+        },
+        "step": 0,
+        "iteration": 335,
+        "metrics": {
+          "energy": 13.374115175055072,
+          "relative_force_l2": 3.0487442804097973,
+          "acceleration_max": 142.1812085688014,
+          "acceleration_rms": 1.148062908068032,
+          "minimum_corner_cone": -0.9968528962329515,
+          "hopf_integral": -1.1132637732383281,
+          "unit_error": 4.440892098500626e-16,
+          "max_neighbour_angle": 2.9201122761206264,
+          "mean_topological_b": [
+            -6.498360325716511e-19,
+            5.196367199308512e-18,
+            0.002761782116257288
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0,
+          "guard_fraction": 2.5954477232576717e-15
+        },
+        "gates": {
+          "representation": false,
+          "strict_stationary": false,
+          "boundary_admitted": true,
+          "all_readiness_gates": false
+        }
+      },
+      "best_retained": {
+        "path": "best-a00000.npz",
+        "sha256": "41a3cfdc11185c25ea96599eae45d86dd56654368f625051f5a476e907368685",
+        "step": 0,
+        "score": 142181.2085688014
+      },
+      "endpoint": {
+        "path": "endpoint.npz",
+        "sha256": "41a3cfdc11185c25ea96599eae45d86dd56654368f625051f5a476e907368685"
+      }
+    },
+    "curvature-minus": {
+      "status": "deferred_no_qualified_negative_direction",
+      "reason": "No negative direction qualified by both finite-difference scales and Hessian symmetry",
+      "charged_attempts": 0,
+      "accepted_steps": 0,
+      "final": {
+        "step": 0,
+        "iteration": 335,
+        "metrics": {
+          "energy": 12.346938152045725,
+          "relative_force_l2": 0.001465082449825075,
+          "acceleration_max": 0.01882438091430968,
+          "acceleration_rms": 0.00026648509101438815,
+          "minimum_corner_cone": 0.7960368402761949,
+          "hopf_integral": -20.716576822019494,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7354094793888927,
+          "mean_topological_b": [
+            2.7863454935046204e-07,
+            2.9539185112757014e-07,
+            -0.0001492657208973572
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015648992688830797,
+          "guard_fraction": 0.003141797821240132
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        }
+      },
+      "best_retained": null,
+      "endpoint": null
+    },
+    "curvature-plus": {
+      "status": "deferred_no_qualified_negative_direction",
+      "reason": "No negative direction qualified by both finite-difference scales and Hessian symmetry",
+      "charged_attempts": 0,
+      "accepted_steps": 0,
+      "final": {
+        "step": 0,
+        "iteration": 335,
+        "metrics": {
+          "energy": 12.346938152045725,
+          "relative_force_l2": 0.001465082449825075,
+          "acceleration_max": 0.01882438091430968,
+          "acceleration_rms": 0.00026648509101438815,
+          "minimum_corner_cone": 0.7960368402761949,
+          "hopf_integral": -20.716576822019494,
+          "unit_error": 3.3306690738754696e-16,
+          "max_neighbour_angle": 0.7354094793888927,
+          "mean_topological_b": [
+            2.7863454935046204e-07,
+            2.9539185112757014e-07,
+            -0.0001492657208973572
+          ],
+          "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+          "tail_fraction": 0.0015648992688830797,
+          "guard_fraction": 0.003141797821240132
+        },
+        "gates": {
+          "representation": true,
+          "strict_stationary": false,
+          "boundary_admitted": false,
+          "all_readiness_gates": false
+        }
+      },
+      "best_retained": null,
+      "endpoint": null
+    }
+  },
+  "recommendations": [
+    "Repair sealing and record assessment without rerunning preparations.",
+    "Use retained domain-pad-16 endpoint on129^3,L30.72,h0.24 for a localized residual/conditioning audit. Measure whether remaining acceleration is core, old-held-layer or outer-shell localized before assigning more optimizer work.",
+    "Keep matched restart-CG control; investigate a correction method using measured spectrum/line-search data rather than another broad method sweep.",
+    "Treat fresh torus72/torus23 as unresolved sampling starts; qualify representation versus spacing at fixed box/profile before relaxation.",
+    "Do not extrapolate admission from a fitted energy minimum or from an eight-direction Hessian test.",
+    "Motion stays deferred until measured gates pass; no mass/potential or coupling change is justified as an automatic repair."
+  ]
+}
