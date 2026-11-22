@@ -1,0 +1,866 @@
+[
+  {
+    "recorded_at": {
+      "utc": "2026-11-22T12:20:50.050141+00:00",
+      "melbourne": "2026-11-22T23:20:50.050141+11:00"
+    },
+    "log2_shift": 1.5,
+    "shift": 2.8284271247461903,
+    "reason": "bounded_right_extension_of_measured_improvement",
+    "fits": {
+      "score": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              -2.263932588566226,
+              14.753764132038663
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 3.1469594810862436,
+            "range_normalized_rmse": 0.452879377606438,
+            "skill_vs_constant": -0.38052558900203404,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              2.6840498042547987,
+              -2.2639325885662216,
+              14.455536376010361
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 4.939172117969349,
+            "range_normalized_rmse": 0.7107969480131127,
+            "skill_vs_constant": -2.400716900471128,
+            "validated": false,
+            "turn_log2_shift": 0.5304291131007326,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -0.02028354599314386,
+              6.334438324453597,
+              0.7769099274883526,
+              3.470103696312618,
+              -2.542166417837821
+            ],
+            "leave_one_out_turn_spread": null
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.17385578161093002,
+              2.679319648042531
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 3.077026528507946,
+            "range_normalized_rmse": 0.44281531665230456,
+            "skill_vs_constant": -0.31985019138185744,
+            "validated": false
+          }
+        ],
+        "points": 7,
+        "sampled_range": [
+          -5.0,
+          1.0
+        ],
+        "constant_leave_one_out_rmse": 2.6783598166656666,
+        "measured_response_range": 6.9487807056231645,
+        "trajectory_variation_floor": 0.17301185492888127,
+        "admission_inferred": false
+      },
+      "median_force": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.0007356700931115672,
+              0.000901658836146498
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 0.0003268336508541767,
+            "range_normalized_rmse": 0.31707194876107864,
+            "skill_vs_constant": 0.3089930066156742,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.00026137021216879574,
+              0.000735670093111567,
+              0.0008726177014610765
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 0.00046209294014246176,
+            "range_normalized_rmse": 0.44829138204339347,
+            "skill_vs_constant": -0.3812986238280327,
+            "validated": false,
+            "turn_log2_shift": -10.444000794969664,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -10.393295546009242,
+              -14.076552435260243,
+              -9.317967965844232,
+              -7.0530841339092785,
+              -3.785848640991162
+            ],
+            "leave_one_out_turn_spread": null
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.7750099989936563,
+              -7.068875032140416
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 0.00031568842069468623,
+            "range_normalized_rmse": 0.3062595986960693,
+            "skill_vs_constant": 0.3553170014687751,
+            "validated": false
+          }
+        ],
+        "points": 7,
+        "sampled_range": [
+          -5.0,
+          1.0
+        ],
+        "constant_leave_one_out_rmse": 0.00039317468168360614,
+        "measured_response_range": 0.0010307870252516528,
+        "trajectory_variation_floor": 1e-12,
+        "admission_inferred": false
+      },
+      "median_acceleration": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              -0.0022639325885662246,
+              0.014753764132038667
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 0.0031469594810862402,
+            "range_normalized_rmse": 0.45287937760643754,
+            "skill_vs_constant": -0.38052558900203004,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.002684049804254817,
+              -0.002263932588566224,
+              0.014455536376010358
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 0.004939172117969347,
+            "range_normalized_rmse": 0.7107969480131126,
+            "skill_vs_constant": -2.400716900471123,
+            "validated": false,
+            "turn_log2_shift": 0.5304291131007184,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -0.02028354599315585,
+              6.334438324453384,
+              0.7769099274883677,
+              3.4701036963126253,
+              -2.5421664178378216
+            ],
+            "leave_one_out_turn_spread": null
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              -0.17385578161093052,
+              -4.228435630939607
+            ],
+            "x_origin": -2.0,
+            "x_scale": 6.0,
+            "leave_one_out_rmse": 0.0030770265285079345,
+            "range_normalized_rmse": 0.44281531665230295,
+            "skill_vs_constant": -0.3198501913818468,
+            "validated": false
+          }
+        ],
+        "points": 7,
+        "sampled_range": [
+          -5.0,
+          1.0
+        ],
+        "constant_leave_one_out_rmse": 0.0026783598166656678,
+        "measured_response_range": 0.006948780705623164,
+        "trajectory_variation_floor": 1e-12,
+        "admission_inferred": false
+      }
+    },
+    "admission_inferred": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-22T12:33:02.166520+00:00",
+      "melbourne": "2026-11-22T23:33:02.166520+11:00"
+    },
+    "log2_shift": -2.359681,
+    "shift": 0.19483422071687362,
+    "reason": "additional_measurement_near_curve_turn",
+    "fits": {
+      "score": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              7.609617431762295,
+              17.035129888956853
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 8.832615382283901,
+            "range_normalized_rmse": 0.4094692488541676,
+            "skill_vs_constant": -0.45527444871766853,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              36.05391175038004,
+              8.843535532736848,
+              12.905063629829549
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 9.062403423543476,
+            "range_normalized_rmse": 0.4201219414687416,
+            "skill_vs_constant": -0.5319798325812266,
+            "validated": false,
+            "turn_log2_shift": -2.359680918408716,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -1.9638058018193032,
+              -2.4547460957032716,
+              -2.3594489561287095,
+              -2.3203902186721024,
+              -2.3570962014014225,
+              -2.301830871116708,
+              -2.6482203345499227,
+              0.5304291131006931
+            ],
+            "leave_one_out_turn_spread": 3.1786494476506157
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.284005825044506,
+              2.781485901819444
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 8.343876878051233,
+            "range_normalized_rmse": 0.3868119294133529,
+            "skill_vs_constant": -0.29867966232173604,
+            "validated": false
+          }
+        ],
+        "points": 8,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 7.3217832365216955,
+        "measured_response_range": 21.57088818513362,
+        "trajectory_variation_floor": 0.17592323567892942,
+        "admission_inferred": false
+      },
+      "median_force": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.0018096307694576387,
+              0.0012015101089704878
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0008862754976834271,
+            "range_normalized_rmse": 0.3292264619704944,
+            "skill_vs_constant": 0.17477271797826976,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.0036216546076201996,
+              0.0019335791833429454,
+              0.0007866404659563021
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0009199709221865876,
+            "range_normalized_rmse": 0.34174336605141026,
+            "skill_vs_constant": 0.11083104086469042,
+            "validated": false,
+            "turn_log2_shift": -3.2976550676981575,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -2.625968198497567,
+              -3.346950923669058,
+              -3.243721194382989,
+              -3.1219964952100505,
+              -3.604646204408758,
+              -3.178733880305136,
+              -3.3484535128352944,
+              -10.444000794969657
+            ],
+            "leave_one_out_turn_spread": 7.81803259647209
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              1.3038973332779398,
+              -6.899476989837654
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0007980000779629126,
+            "range_normalized_rmse": 0.296434622198877,
+            "skill_vs_constant": 0.330975596814019,
+            "validated": false
+          }
+        ],
+        "points": 8,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 0.000975622829317805,
+        "measured_response_range": 0.0026919935061685777,
+        "trajectory_variation_floor": 1e-12,
+        "admission_inferred": false
+      },
+      "median_acceleration": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.004615589286171719,
+              0.016307186232680026
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.006514122444259117,
+            "range_normalized_rmse": 0.41366496721642015,
+            "skill_vs_constant": -0.5108446864070355,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.02594562224884037,
+              0.005503558756878448,
+              0.013335049956208756
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0065849507192939204,
+            "range_normalized_rmse": 0.41816276048343015,
+            "skill_vs_constant": -0.5438782341898847,
+            "validated": false,
+            "turn_log2_shift": -2.2518866637041013,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -1.9354853931550657,
+              -2.362049913421721,
+              -2.2442015219826796,
+              -2.228961180357086,
+              -2.2527747601288546,
+              -2.1241817881012053,
+              -2.582970790075156,
+              0.5304291131007091
+            ],
+            "leave_one_out_turn_spread": 3.113399903175865
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.18420078158060654,
+              -4.150535163829053
+            ],
+            "x_origin": -1.5625,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.006284724939544966,
+            "range_normalized_rmse": 0.39909758502808906,
+            "skill_vs_constant": -0.4063082872783004,
+            "validated": false
+          }
+        ],
+        "points": 8,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 0.0052996355766530365,
+        "measured_response_range": 0.015747338934918982,
+        "trajectory_variation_floor": 1e-12,
+        "admission_inferred": false
+      }
+    },
+    "admission_inferred": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-22T12:45:18.950318+00:00",
+      "melbourne": "2026-11-22T23:45:18.950318+11:00"
+    },
+    "log2_shift": 1.25,
+    "shift": 2.378414230005442,
+    "reason": "local_midpoint_refinement_when_fit_is_uncertain",
+    "fits": {
+      "score": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              7.717921662787602,
+              16.82879812047673
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 8.267714435962693,
+            "range_normalized_rmse": 0.3832811317273758,
+            "skill_vs_constant": -0.46667247521353716,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              32.880426269471116,
+              7.547290789433698,
+              13.431920486336777
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 8.576791425596689,
+            "range_normalized_rmse": 0.3976095630363382,
+            "skill_vs_constant": -0.5783812156657369,
+            "validated": false,
+            "turn_log2_shift": -2.397072536191256,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -1.9719029023477324,
+              -2.4832269207586797,
+              -2.3929168273260975,
+              -2.379175819445022,
+              -2.423485521746783,
+              -2.353847213262571,
+              -2.697541141748215,
+              1.5133101790565016,
+              -2.359680918408714
+            ],
+            "leave_one_out_turn_spread": 4.210851320804717
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.2871478431704235,
+              2.7746381901228214
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 7.815110512769199,
+            "range_normalized_rmse": 0.3622989672792089,
+            "skill_vs_constant": -0.31048620455877685,
+            "validated": false
+          }
+        ],
+        "points": 9,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 6.826826992428481,
+        "measured_response_range": 21.57088818513362,
+        "trajectory_variation_floor": 0.17883461642897758,
+        "admission_inferred": false
+      },
+      "median_force": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.0018282914452981138,
+              0.0011591662946923882
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0008326067304000309,
+            "range_normalized_rmse": 0.3092900218712086,
+            "skill_vs_constant": 0.1727524128087019,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.003377683055517753,
+              0.0018107631746804424,
+              0.0008102177764320052
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.00086360806024247,
+            "range_normalized_rmse": 0.32080614543220565,
+            "skill_vs_constant": 0.11000196283015584,
+            "validated": false,
+            "turn_log2_shift": -3.3933884357992783,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -2.6721950277466164,
+              -3.433414335083814,
+              -3.366715006991784,
+              -3.274315467782388,
+              -3.711002648796458,
+              -3.2973760406338863,
+              -3.4259804821888533,
+              -10.09952878441581,
+              -3.2976550676981544
+            ],
+            "leave_one_out_turn_spread": 7.427333756669194
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              1.3093268764253037,
+              -6.922390579506955
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0007489617660194593,
+            "range_normalized_rmse": 0.2782182662414483,
+            "skill_vs_constant": 0.3306165502169466,
+            "validated": false
+          }
+        ],
+        "points": 9,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 0.0009154237224641413,
+        "measured_response_range": 0.0026919935061685777,
+        "trajectory_variation_floor": 1e-12,
+        "admission_inferred": false
+      },
+      "median_acceleration": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.004681596663913056,
+              0.0161817370926751
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.006088924669458644,
+            "range_normalized_rmse": 0.3866637210657059,
+            "skill_vs_constant": -0.5225422742283119,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.023547162327406022,
+              0.004559400168040326,
+              0.013749079182406622
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.006241008963772114,
+            "range_normalized_rmse": 0.3963214984807986,
+            "skill_vs_constant": -0.5995498166201509,
+            "validated": false,
+            "turn_log2_shift": -2.2803680773655413,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -1.941849298954833,
+              -2.3821524767359903,
+              -2.2638131913770168,
+              -2.275056633837554,
+              -2.308615105319073,
+              -2.160894058244168,
+              -2.6290800489064754,
+              1.5133101790565229,
+              -2.251886663704099
+            ],
+            "leave_one_out_turn_spread": 4.1423902279629985
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.18593284660150514,
+              -4.154686677007194
+            ],
+            "x_origin": -1.6510756666666666,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.005876589059757823,
+            "range_normalized_rmse": 0.37317981685951795,
+            "skill_vs_constant": -0.4182043143670737,
+            "validated": false
+          }
+        ],
+        "points": 9,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 0.004934645071849704,
+        "measured_response_range": 0.015747338934918982,
+        "trajectory_variation_floor": 1e-12,
+        "admission_inferred": false
+      }
+    },
+    "admission_inferred": false
+  },
+  {
+    "recorded_at": {
+      "utc": "2026-11-22T12:57:35.107237+00:00",
+      "melbourne": "2026-11-22T23:57:35.107237+11:00"
+    },
+    "log2_shift": 1.125,
+    "shift": 2.1810154653305154,
+    "reason": "local_midpoint_refinement_when_fit_is_uncertain",
+    "fits": {
+      "score": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              8.463517298254825,
+              17.37912509748101
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 7.0829993185692635,
+            "range_normalized_rmse": 0.32835918752065,
+            "skill_vs_constant": -0.13297055156758786,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              32.056171456277305,
+              10.072197817400992,
+              13.823867858093676
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 6.549048187515733,
+            "range_normalized_rmse": 0.3036058659851222,
+            "skill_vs_constant": 0.0314086336306032,
+            "validated": false,
+            "turn_log2_shift": -2.3821331805275143,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -1.9579327759737897,
+              -2.4681382491929806,
+              -2.378068932783904,
+              -2.364523738599188,
+              -2.4064737520209762,
+              -2.3370135730694805,
+              -2.621687073816984,
+              -2.136015198252769,
+              -2.343903700029091,
+              -2.39707253619126
+            ],
+            "leave_one_out_turn_spread": 0.6637542978431945
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.36075291937843873,
+              2.80777673786044
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 6.8875817160659665,
+            "range_normalized_rmse": 0.31929986641963126,
+            "skill_vs_constant": -0.0713163935401977,
+            "validated": false
+          }
+        ],
+        "points": 10,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 6.654384465202746,
+        "measured_response_range": 21.57088818513362,
+        "trajectory_variation_floor": 0.1829840168224447,
+        "admission_inferred": false
+      },
+      "median_force": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.0018778916495285451,
+              0.0012544612431212346
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0007122436129049091,
+            "range_normalized_rmse": 0.26457850335553784,
+            "skill_vs_constant": 0.3936239532975483,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.003232678179273448,
+              0.002040117710078512,
+              0.0008959342582270104
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0006692722480596938,
+            "range_normalized_rmse": 0.24861584789342459,
+            "skill_vs_constant": 0.46458498707386675,
+            "validated": true,
+            "turn_log2_shift": -3.412017474560804,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -2.6874692115118357,
+              -3.4513053971533534,
+              -3.385962057378568,
+              -3.289857698792625,
+              -3.7443412153059827,
+              -3.296525648857187,
+              -3.4840781209318816,
+              -4.3960906682563605,
+              -3.3152091550030294,
+              -3.393388435799281
+            ],
+            "leave_one_out_turn_spread": 1.7086214567445248
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              1.373776581227234,
+              -6.846158031061005
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.0006483692180515414,
+            "range_normalized_rmse": 0.24085095917424526,
+            "skill_vs_constant": 0.4975073810856011,
+            "validated": true
+          }
+        ],
+        "points": 10,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 0.000914655488407955,
+        "measured_response_range": 0.0026919935061685777,
+        "trajectory_variation_floor": 1e-12,
+        "admission_inferred": false
+      },
+      "median_acceleration": {
+        "status": "measured_curve_fit",
+        "parameter_coordinate": "log2(Sobolev_shift)",
+        "models": [
+          {
+            "model": "linear",
+            "coefficients": [
+              0.006152367824892062,
+              0.016796770172459546
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.005398594424218285,
+            "range_normalized_rmse": 0.34282582260594874,
+            "skill_vs_constant": -0.1393234237726506,
+            "validated": false
+          },
+          {
+            "model": "quadratic",
+            "coefficients": [
+              0.025050835946972105,
+              0.007409498353757167,
+              0.014018454428339808
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.004768725809020796,
+            "range_normalized_rmse": 0.3028274065052586,
+            "skill_vs_constant": 0.11102340486889217,
+            "validated": false,
+            "turn_log2_shift": -2.322248182656142,
+            "turn_is_minimum": true,
+            "leave_one_out_turns": [
+              -1.9671556799886232,
+              -2.4209876079093147,
+              -2.311335487945687,
+              -2.315297676740957,
+              -2.3532777639745706,
+              -2.233072068484414,
+              -2.585493265166667,
+              -2.1360151982527706,
+              -2.288617697119263,
+              -2.2803680773655426
+            ],
+            "leave_one_out_turn_spread": 0.6183375851780437
+          },
+          {
+            "model": "exponential",
+            "coefficients": [
+              0.28371143465483933,
+              -4.119391170454787
+            ],
+            "x_origin": -1.3609681,
+            "x_scale": 6.5,
+            "leave_one_out_rmse": 0.005359331874232287,
+            "range_normalized_rmse": 0.3403325410332168,
+            "skill_vs_constant": -0.12281168954426613,
+            "validated": false
+          }
+        ],
+        "points": 10,
+        "sampled_range": [
+          -5.0,
+          1.5
+        ],
+        "constant_leave_one_out_rmse": 0.005057748019130658,
+        "measured_response_range": 0.015747338934918982,
+        "trajectory_variation_floor": 1e-12,
+        "admission_inferred": false
+      }
+    },
+    "admission_inferred": false
+  }
+]

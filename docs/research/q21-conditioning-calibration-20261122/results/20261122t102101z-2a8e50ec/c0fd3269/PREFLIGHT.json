@@ -1,0 +1,104 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-22T10:21:01.947006+00:00",
+    "melbourne": "2026-11-22T21:21:01.947006+11:00"
+  },
+  "source_run": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/stability-literature-campaign/20261122t010359z-34c3b904",
+  "endpoint": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/stability-literature-campaign/20261122t010359z-34c3b904/arms/domain-pad-16/endpoint.npz",
+  "endpoint_sha256": "aa42276416d5eccac218e2028dcc3bc66a2bc80bf46a5fcb59849b545c7971a4",
+  "evidence_sha256": "f7cbd005053107b121b52e8bee614bf381cd5ffdfd65f499fd9f84b6a13bba20",
+  "q2": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/sources/q2-reference.npz",
+  "matching_compact_payloads": 250,
+  "original_scientific_hashes_checked": 239,
+  "merge_check": {
+    "recorded_at": {
+      "utc": "2026-11-22T10:18:14.287250+00:00",
+      "melbourne": "2026-11-22T21:18:14.287250+11:00"
+    },
+    "status": "merged_source_verified_on_workstation",
+    "pr": {
+      "baseRefName": "main",
+      "headRefOid": "3c8e1fe2f05072cd825d4b96fac3365be16a0602",
+      "mergeCommit": {
+        "oid": "2b080bbd008010965044a54572d722c99e0be1b2"
+      },
+      "number": 92,
+      "state": "MERGED",
+      "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/92"
+    },
+    "source_document": "docs/research/stability-literature-campaign-20261122/results/20261122t010359z-34c3b904/f7cbd005",
+    "evidence_sha256": "f7cbd005053107b121b52e8bee614bf381cd5ffdfd65f499fd9f84b6a13bba20",
+    "package_sha256": "4e38724a5e0b42ee2abaaaa0741e4273d053744c175511c76c8a01350b27138a",
+    "verification": "Live gh state, exact PR head, merge ancestry and published scientific/evidence bytes"
+  },
+  "probe": {
+    "recorded_at": {
+      "utc": "2026-11-22T10:21:01.608214+00:00",
+      "melbourne": "2026-11-22T21:21:01.608214+11:00"
+    },
+    "status": "preflight_pass",
+    "backend": {
+      "requested": "auto",
+      "automatic_cpu_reason": null,
+      "selected": "cuda",
+      "device": {
+        "execution_backend": "cuda-cupy-float64",
+        "device_id": 0,
+        "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+        "compute_capability": "75",
+        "cupy": "14.2.0",
+        "cuda_runtime": 12090,
+        "cuda_driver": 13000,
+        "precision": "float64"
+      },
+      "source_backend": "cuda",
+      "backend_transfer": false,
+      "bitwise_trajectory_claimed": false,
+      "audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      }
+    },
+    "q21_metrics": {
+      "energy": 12.330679939551016,
+      "relative_force_l2": 0.0006208179365358624,
+      "acceleration_max": 0.017465804189698644,
+      "acceleration_rms": 9.397409514690219e-05,
+      "minimum_corner_cone": 0.7967914007515488,
+      "hopf_integral": -20.71842905838561,
+      "unit_error": 3.3306690738754696e-16,
+      "max_neighbour_angle": 0.7332600691065962,
+      "mean_topological_b": [
+        4.6983381977804766e-08,
+        -1.1109383560674847e-07,
+        -6.337020398775088e-05
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.00026241467153673387,
+      "guard_fraction": 0.0004682157538838666
+    },
+    "q2_metrics": {
+      "energy": 1.99948549715528,
+      "relative_force_l2": 1.1542460483787707e-05,
+      "acceleration_max": 6.636497024101145e-05,
+      "acceleration_rms": 8.366182125980412e-07,
+      "minimum_corner_cone": 0.9338021913610102,
+      "hopf_integral": -1.9961557335587894,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3972169307717207,
+      "mean_topological_b": [
+        -1.1953179288986849e-18,
+        2.0126580464510174e-17,
+        -6.18706716583301e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0003015441669190186,
+      "guard_fraction": 0.0006463789224437667
+    },
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0
+  },
+  "package_sha256": "4e38724a5e0b42ee2abaaaa0741e4273d053744c175511c76c8a01350b27138a"
+}

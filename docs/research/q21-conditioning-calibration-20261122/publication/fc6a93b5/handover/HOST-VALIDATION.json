@@ -1,0 +1,43 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-22T23:11:06.977761+00:00",
+    "melbourne": "2026-11-23T10:11:06.977761+11:00"
+  },
+  "status": "pass",
+  "tests": 9,
+  "passed": 9,
+  "test_log": "validation/host-tests.txt",
+  "runtime_python": "3.12.14",
+  "controls": [
+    "Actual reviewed compact archive:182 payload hashes,580 accepted updates,593 gate observations,registered source identity and independent recorded-response checks",
+    "Unsafe compact paths and altered payloads are rejected",
+    "Full-field SHA256, byte-size and ZIP CRC mechanism validated with synthetic containers, including corruption after recomputing a container hash",
+    "Active process and held worker-lock protection",
+    "Field verification cache reused only with unchanged identity/fingerprints; touches/corruption invalidate it",
+    "Merged preparation check exercises live-state validation plus actual local Git ancestry and preparation blobs using a synthetic PR response",
+    "Real local Git rehearsal stages the complete production compact/review payloads against a temporary bare repository",
+    "An already-recorded raw result is accepted byte-for-byte while the detailed analysis is added",
+    "Original chart, original CRLF CSV and numerical branch remain unchanged",
+    "Repeated install is idempotent; unexpected staged content and changed immutable files are rejected",
+    "All immutable Git blobs and navigation links are checked after a simulated local merge",
+    "No numerical-execution mode is exposed"
+  ],
+  "local_git_rehearsal": {
+    "remote": "Temporary local bare repository only",
+    "raw_production_compact_bytes_used": true,
+    "review_and_charts_used": true,
+    "full_field_verification_receipt": "Explicitly synthetic local fixture; no workstation fields invented",
+    "github_connections": 0,
+    "pr_responses": "Synthetic only for host control; actual source/results PRs are checked on zbook"
+  },
+  "workstation_checks_pending": [
+    "All52 actual retained full-field SHA256 hashes, sizes and NPZ CRCs",
+    "Exact inactive completed source run and unchanged local scientific metadata",
+    "Live preparation PR93 state, exact head/merge, main ancestry and preparation payload bytes",
+    "Current repository project-record/documentation checks and registered remote checks",
+    "Actual result PR publication/merge and exact published-payload verification"
+  ],
+  "new_production_optimizer_attempts": 0,
+  "new_physical_time_steps": 0,
+  "scope": "Recording-only host controls. Actual workstation field availability, GitHub merges and scientific field-metric replays are not claimed here."
+}
