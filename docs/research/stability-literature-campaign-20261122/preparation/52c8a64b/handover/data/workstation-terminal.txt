@@ -1,0 +1,233 @@
+rd@zbook:~/ElectronFieldTopology-repository-admin$ python3 - <<'PY'
+from pathlib import Path
+
+values = {
+    line.split(":", 1)[0]: int(line.split()[1])
+    for line in Path("/proc/meminfo").read_text().splitlines()
+    if len(line.split()) > 1 and line.split()[1].isdigit()
+}
+for key, minimum in (("MemAvailable", 10), ("SwapFree", 1)):
+    gib = values[key] / 1024**2
+    print(f"{key}: {gib:.3f} GiB; required >= {minimum} GiB; "
+          f"{'PASS' if gib >= minimum else 'FAIL'}")
+PY
+MemAvailable: 11.614 GiB; required >= 10 GiB; PASS
+SwapFree: 0.993 GiB; required >= 1 GiB; FAIL
+rd@zbook:~/ElectronFieldTopology-repository-admin$ (
+  set -euo pipefail
+
+  swap_extra="$(sudo mktemp /swap-matter-waves.XXXXXX)"
+  echo "Additional swap file: $swap_extra"
+
+  sudo chmod 600 "$swap_extra"
+  sudo dd if=/dev/zero of="$swap_extra" \
+    bs=1M count=1024 conv=notrunc status=progress
+  sudo mkswap "$swap_extra"
+  sudo swapon "$swap_extra"
+
+  swapon --show
+  free -h
+)
+Additional swap file: /swap-matter-waves.0uWnF8
+1024+0 records in
+1024+0 records out
+1073741824 bytes (1.1 GB, 1.0 GiB) copied, 0.438574 s, 2.4 GB/s
+Setting up swapspace version 1, size = 1024 MiB (1073737728 bytes)
+no label, UUID=b23ece48-9ce5-4bfb-9bc6-98fed27b7d39
+NAME                      TYPE  SIZE USED PRIO
+/swapfile                 file    2G   1G   -2
+/swap-matter-waves.0uWnF8 file 1024M   0B   -3
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.8Gi       786Mi       622Mi        11Gi        11Gi
+Swap:          3.0Gi       1.0Gi       2.0Gi
+rd@zbook:~/ElectronFieldTopology-repository-admin$ package="$HOME/Downloads/ElectronFieldTopology-Q21-final-tranche-Q22-recovery-20261121"
+
+(
+  set -euo pipefail
+  bash "$package/RUN.sh" preflight --backend auto
+  bash "$package/RUN.sh" run --backend auto
+  bash "$package/RUN.sh" status
+)
+{"recorded_at": {"utc": "2026-11-21T14:49:24.290570+00:00", "melbourne": "2026-11-22T01:49:24.290570+11:00"}, "message": "Evaluation preflight", "status": "preflight_pass", "package_files": 43, "source_identity": "18be438af37f89d826ce6693b9af3b3a3d648ab766e8fcaf3b42ba39e7caa1de", "source_checkpoint": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-q22-controlled-evaluation/20261120t114719z-48b7d4cf/q21/exact/endpoint.npz", "source_sha256": "ad5e13216a4271a212c6a67c810d4394666dc570c33c3a48ff0dc005b01cf7b0", "explicit_q22": null, "host": {"total_gib": 15.26858901977539, "available_gib": 11.442798614501953, "swap_free_gib": 1.9964218139648438}, "maximum_new_q21_attempts": 20, "q22_optimizer_steps": 0, "physical_time_steps": 0, "backend_probe": {"recorded_at": {"utc": "2026-11-21T14:49:28.589769+00:00", "melbourne": "2026-11-22T01:49:28.589769+11:00"}, "status": "backend_probe_pass", "requested": "auto", "selected": "cuda", "source_backend": "cuda", "backend_transfer": false, "cuda_identity": {"execution_backend": "cuda-cupy-float64", "device_id": 0, "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design", "compute_capability": "75", "cupy": "14.2.0", "cuda_runtime": 12090, "cuda_driver": 13000, "precision": "float64"}, "energy_gradient_audit": {"passed": true, "energy_abs_difference": 0.0, "gradient_max_abs_difference": 0.0, "reference": "independent CPU sf_readmission.static_value_gradient"}, "optimizer_steps": 0, "physical_time_steps": 0}}
+Running as unit: matter-waves-q21-final-tranche.service; invocation ID: bb827dfed2d74ffc8f7ee1ae112c18ca
+{"recorded_at": {"utc": "2026-11-21T14:49:34.211773+00:00", "melbourne": "2026-11-22T01:49:34.211773+11:00"}, "message": "Bounded evaluation service requested", "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c", "maximum_q21_attempts": 20, "recovery_configuration": {"recorded_at": {"utc": "2026-11-21T14:49:34.163118+00:00", "melbourne": "2026-11-22T01:49:34.163118+11:00"}, "explicit_q22": null, "extra_roots": []}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/REPORT.html"}
+{"recorded_at": {"utc": "2026-11-21T14:49:34.281101+00:00", "melbourne": "2026-11-22T01:49:34.281101+11:00"}, "message": "Publication status", "phase": "merged", "kind": "assessment-and-plan", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-final-tranche-assessment-and-plan-20261121-aa403606", "headRefOid": "3bc620f2e9e92da4925cfe83db5556bdebbc6aec", "mergeCommit": {"oid": "af8f4532b934fe1005e1ebbf078f11ad8f561dd7"}, "number": 89, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/89"}}
+{"recorded_at": {"utc": "2026-11-21T14:49:34.285345+00:00", "melbourne": "2026-11-22T01:49:34.285345+11:00"}, "message": "Final Q21 tranche/Q22 recovery status", "runner_alive": false, "service_active": true, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c", "status": {"recorded_at": {"utc": "2026-11-21T14:49:34.173038+00:00", "melbourne": "2026-11-22T01:49:34.173038+11:00"}, "status": "starting", "phase": "supervisor-launch", "physical_time_steps": 0}, "heartbeat": null, "telemetry": null, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ package="$HOME/Downloads/ElectronFieldTopology-Q21-final-tranche-Q22-recovery-20261121"
+bash "$package/RUN.sh" status
+{"recorded_at": {"utc": "2026-11-21T14:50:25.714304+00:00", "melbourne": "2026-11-22T01:50:25.714304+11:00"}, "message": "Publication status", "phase": "merged", "kind": "assessment-and-plan", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-final-tranche-assessment-and-plan-20261121-aa403606", "headRefOid": "3bc620f2e9e92da4925cfe83db5556bdebbc6aec", "mergeCommit": {"oid": "af8f4532b934fe1005e1ebbf078f11ad8f561dd7"}, "number": 89, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/89"}}
+{"recorded_at": {"utc": "2026-11-21T14:50:25.724858+00:00", "melbourne": "2026-11-22T01:50:25.724858+11:00"}, "message": "Final Q21 tranche/Q22 recovery status", "runner_alive": true, "service_active": true, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c", "status": {"recorded_at": {"utc": "2026-11-21T14:50:04.271260+00:00", "melbourne": "2026-11-22T01:50:04.271260+11:00"}, "status": "working", "phase": {"name": "controls-and-source-replay"}, "new_q21_attempts_charged": 0, "maximum_new_q21_attempts": 20, "q22_status": null, "physical_time_steps": 0, "error": null}, "heartbeat": {"recorded_at": {"utc": "2026-11-21T14:50:20.078521+00:00", "melbourne": "2026-11-22T01:50:20.078521+11:00"}, "pid": 1316196, "process_identity": {"pid": 1316196, "start_ticks": "164173403", "boot_id": "6d55658c-0d38-4bf7-b4a9-5f7b418d6fc0"}, "operation": {"name": "q22-local-inventory", "candidate": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/broad/q19-axial-19-1/optimizer/state-0.npz"}}, "telemetry": {"recorded_at": {"utc": "2026-11-21T14:50:24.347453+00:00", "melbourne": "2026-11-22T01:50:24.347453+11:00"}, "host": {"total_gib": 15.26858901977539, "available_gib": 11.554244995117188, "swap_free_gib": 1.9516487121582031}, "pressure": {"some": {"avg10": 0.78, "avg60": 2.86, "avg300": 0.97, "total": 12092218859.0}, "full": {"avg10": 0.78, "avg60": 2.86, "avg300": 0.97, "total": 12090638604.0}}, "cgroup": {"memory.current": 5089906688, "memory.peak": 5103280128, "memory.swap.current": 0, "memory.events": {"low": 0, "high": 0, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}, "memory.pressure": {"some": {"avg10": 1.05, "avg60": 3.84, "avg300": 1.3, "total": 4386437.0}, "full": {"avg10": 1.05, "avg60": 3.84, "avg300": 1.3, "total": 4386437.0}}}}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ bash "$package/RUN.sh" status
+{"recorded_at": {"utc": "2026-11-21T14:57:50.845948+00:00", "melbourne": "2026-11-22T01:57:50.845948+11:00"}, "message": "Publication status", "phase": "merged", "kind": "assessment-and-plan", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-final-tranche-assessment-and-plan-20261121-aa403606", "headRefOid": "3bc620f2e9e92da4925cfe83db5556bdebbc6aec", "mergeCommit": {"oid": "af8f4532b934fe1005e1ebbf078f11ad8f561dd7"}, "number": 89, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/89"}}
+{"recorded_at": {"utc": "2026-11-21T14:57:50.855765+00:00", "melbourne": "2026-11-22T01:57:50.855765+11:00"}, "message": "Final Q21 tranche/Q22 recovery status", "runner_alive": true, "service_active": true, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c", "status": {"recorded_at": {"utc": "2026-11-21T14:57:49.811818+00:00", "melbourne": "2026-11-22T01:57:49.811818+11:00"}, "status": "working", "phase": {"name": "q21-final-adaptive-tranche", "candidate": null, "iteration": 330, "charged_attempts": 16, "block_attempt_limit": 20, "relative_force_l2": 0.0008484115229814288, "acceleration_max": 0.017766057916470283}, "new_q21_attempts_charged": 16, "maximum_new_q21_attempts": 20, "physical_time_steps": 0, "error": null}, "heartbeat": {"recorded_at": {"utc": "2026-11-21T14:57:50.161773+00:00", "melbourne": "2026-11-22T01:57:50.161773+11:00"}, "pid": 1316196, "process_identity": {"pid": 1316196, "start_ticks": "164173403", "boot_id": "6d55658c-0d38-4bf7-b4a9-5f7b418d6fc0"}, "operation": {"name": "q21-final-adaptive-tranche", "candidate": null, "iteration": 330, "charged_attempts": 16, "block_attempt_limit": 20, "relative_force_l2": 0.0008484115229814288, "acceleration_max": 0.017766057916470283}}, "telemetry": {"recorded_at": {"utc": "2026-11-21T14:57:49.666568+00:00", "melbourne": "2026-11-22T01:57:49.666568+11:00"}, "host": {"total_gib": 15.26858901977539, "available_gib": 10.87398910522461, "swap_free_gib": 1.9280471801757812}, "pressure": {"some": {"avg10": 0.14, "avg60": 0.31, "avg300": 0.66, "total": 12096272901.0}, "full": {"avg10": 0.14, "avg60": 0.31, "avg300": 0.66, "total": 12094689867.0}}, "cgroup": {"memory.current": 6323159040, "memory.peak": 7518003200, "memory.swap.current": 0, "memory.events": {"low": 0, "high": 27809, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}, "memory.pressure": {"some": {"avg10": 0.16, "avg60": 0.44, "avg300": 0.89, "total": 9356354.0}, "full": {"avg10": 0.16, "avg60": 0.44, "avg300": 0.89, "total": 9356354.0}}}}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ bash "$package/RUN.sh" status
+{"recorded_at": {"utc": "2026-11-21T23:21:26.205206+00:00", "melbourne": "2026-11-22T10:21:26.205206+11:00"}, "message": "Publication status", "phase": "merged", "kind": "assessment-and-plan", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-final-tranche-assessment-and-plan-20261121-aa403606", "headRefOid": "3bc620f2e9e92da4925cfe83db5556bdebbc6aec", "mergeCommit": {"oid": "af8f4532b934fe1005e1ebbf078f11ad8f561dd7"}, "number": 89, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/89"}}
+{"recorded_at": {"utc": "2026-11-21T23:21:26.210073+00:00", "melbourne": "2026-11-22T10:21:26.210073+11:00"}, "message": "Final Q21 tranche/Q22 recovery status", "runner_alive": false, "service_active": false, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c", "status": {"recorded_at": {"utc": "2026-11-21T14:59:11.645722+00:00", "melbourne": "2026-11-22T01:59:11.645722+11:00"}, "status": "complete_pending_review", "phase": {"name": "complete", "candidate": null, "iteration": 335, "charged_attempts": 20, "block_attempt_limit": 20, "relative_force_l2": 0.001465082449825075, "acceleration_max": 0.01882438091430968}, "new_q21_attempts_charged": 20, "maximum_new_q21_attempts": 20, "q22_status": "deferred_missing_exact_historical_field", "physical_time_steps": 0, "error": null}, "heartbeat": {"recorded_at": {"utc": "2026-11-21T14:59:05.181554+00:00", "melbourne": "2026-11-22T01:59:05.181554+11:00"}, "pid": 1316196, "process_identity": {"pid": 1316196, "start_ticks": "164173403", "boot_id": "6d55658c-0d38-4bf7-b4a9-5f7b418d6fc0"}, "operation": {"name": "q21-final-adaptive-tranche", "candidate": null, "iteration": 334, "charged_attempts": 20, "block_attempt_limit": 20, "relative_force_l2": 0.0011935164368943813, "acceleration_max": 0.017407144017826677}}, "telemetry": {"recorded_at": {"utc": "2026-11-21T14:59:14.725807+00:00", "melbourne": "2026-11-22T01:59:14.725807+11:00"}, "host": {"total_gib": 15.26858901977539, "available_gib": 11.039592742919922, "swap_free_gib": 1.9282913208007812}, "pressure": {"some": {"avg10": 0.08, "avg60": 0.25, "avg300": 0.55, "total": 12096553803.0}, "full": {"avg10": 0.08, "avg60": 0.25, "avg300": 0.55, "total": 12094970762.0}}, "cgroup": {"memory.current": 6309543936, "memory.peak": 7518003200, "memory.swap.current": 0, "memory.events": {"low": 0, "high": 27809, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}, "memory.pressure": {"some": {"avg10": 0.07, "avg60": 0.32, "avg300": 0.74, "total": 9716417.0}, "full": {"avg10": 0.07, "avg60": 0.32, "avg300": 0.74, "total": 9716417.0}}}}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ (
+  set -euo pipefail
+  bash "$package/RUN.sh" record-results
+  bash "$package/RUN.sh" publish
+  bash "$package/RUN.sh" merge
+  bash "$package/RUN.sh" status
+)
+{"recorded_at": {"utc": "2026-11-21T23:23:09.802720+00:00", "melbourne": "2026-11-22T10:23:09.802720+11:00"}, "message": "Local publication command", "argv": ["git", "remote", "get-url", "origin"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:09.813081+00:00", "melbourne": "2026-11-22T10:23:09.813081+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:09.828943+00:00", "melbourne": "2026-11-22T10:23:09.828943+11:00"}, "message": "Local publication command", "argv": ["git", "fetch", "origin", "main"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 899 bytes | 899.00 KiB/s, done.
+From https://github.com/RDHomeProjects/ElectronFieldTopology
+ * branch            main       -> FETCH_HEAD
+   a7a0f07..af8f453  main       -> origin/main
+{"recorded_at": {"utc": "2026-11-21T23:23:10.861783+00:00", "melbourne": "2026-11-22T10:23:10.861783+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "origin/main"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:10.863213+00:00", "melbourne": "2026-11-22T10:23:10.863213+11:00"}, "message": "Local publication command", "argv": ["git", "switch", "-c", "analysis/q21-final-tranche-results-20261121-fbaea1e1", "af8f4532b934fe1005e1ebbf078f11ad8f561dd7"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+Switched to a new branch 'analysis/q21-final-tranche-results-20261121-fbaea1e1'
+{"recorded_at": {"utc": "2026-11-21T23:23:10.878967+00:00", "melbourne": "2026-11-22T10:23:10.878967+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:10.926367+00:00", "melbourne": "2026-11-22T10:23:10.926367+11:00"}, "message": "Local publication command", "argv": ["git", "add", "--", "README.md", "docs/research/q21-final-tranche-q22-recovery-20261121"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:11.299722+00:00", "melbourne": "2026-11-22T10:23:11.299722+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:11.311383+00:00", "melbourne": "2026-11-22T10:23:11.311383+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/project_records.py", "check", "--compare-ref", "af8f4532b934fe1005e1ebbf078f11ad8f561dd7"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"migration": false, "protected_files": 964, "stages": 15, "studies": 45}
+{"recorded_at": {"utc": "2026-11-21T23:23:13.046643+00:00", "melbourne": "2026-11-22T10:23:13.046643+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/check_docs.py"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+Documentation checks passed: 431 Markdown files; local targets and fences.
+{"recorded_at": {"utc": "2026-11-21T23:23:13.401609+00:00", "melbourne": "2026-11-22T10:23:13.401609+11:00"}, "message": "Assessment or completed evaluations staged locally", "kind": "results", "branch": "analysis/q21-final-tranche-results-20261121-fbaea1e1", "destination": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121/docs/research/q21-final-tranche-q22-recovery-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:13.472129+00:00", "melbourne": "2026-11-22T10:23:13.472129+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:13.475613+00:00", "melbourne": "2026-11-22T10:23:13.475613+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:13.480478+00:00", "melbourne": "2026-11-22T10:23:13.480478+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/project_records.py", "check", "--compare-ref", "af8f4532b934fe1005e1ebbf078f11ad8f561dd7"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"migration": false, "protected_files": 964, "stages": 15, "studies": 45}
+{"recorded_at": {"utc": "2026-11-21T23:23:14.720397+00:00", "melbourne": "2026-11-22T10:23:14.720397+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/check_docs.py"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+Documentation checks passed: 431 Markdown files; local targets and fences.
+{"recorded_at": {"utc": "2026-11-21T23:23:15.044053+00:00", "melbourne": "2026-11-22T10:23:15.044053+11:00"}, "message": "Local publication command", "argv": ["git", "commit", "-m", "Record Q21/Q22 results"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[analysis/q21-final-tranche-results-20261121-fbaea1e1 37713ae] Record Q21/Q22 results
+ 91 files changed, 2 insertions(+)
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/BACKEND.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/FIELD-MANIFEST.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/LAUNCH-CONFIG.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/PREFLIGHT.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/Q22-INVENTORY.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/REPORT.html
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/SEARCH-CONFIG.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/SHA256SUMS
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/SUMMARY.md
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/evidence.zip
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/ENGINE-PROVENANCE.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/HOST-VALIDATION.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/MODEL.md
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/PLAN.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/PR-BODY.md
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/README.md
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/RUN.sh
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/SHA256SUMS
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/SOURCES.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/ANALYSIS.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/ASSESSMENT.html
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/ASSESSMENT.md
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/FIT-COMPARISON.csv
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/MEASUREMENTS.csv
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/README.md
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/SHA256SUMS
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/VALIDATION.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/audit.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/data/completed-evidence.zip
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/data/workstation-terminal.txt
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/figures/derivative-check.png
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/figures/derivative-check.svg
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/figures/fit-limits.png
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/figures/fit-limits.svg
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/figures/measured-gates.png
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/assessment/figures/measured-gates.svg
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/common.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/continuation.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/engine.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/evaluations.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/handover.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/integrity.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/planner.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/probe.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/publication.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/recovery.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/supervision.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/test_host.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/validation/host-tests.txt
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/validation/local-publication-rehearsal.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/validation/probe-control.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/validation/publication-rehearsal.txt
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/validation/source-policy-replay.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/handover/worker.py
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/identity.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21-tranche.svg
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/DONE.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/PARENT-HISTORY.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/PARENT-REPLAY.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/attempt-ledger.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/control.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/endpoint.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/record.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00001-i00316.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00002-i00317.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00003-i00318.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00004-i00319.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00005-i00320.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00006-i00321.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00007-i00322.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00008-i00323.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00009-i00324.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00010-i00325.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00011-i00326.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00012-i00327.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00013-i00328.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00014-i00329.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00015-i00330.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00016-i00331.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00017-i00332.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00018-i00333.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00019-i00334.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/a00020-i00335.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/q21/exact/states/initial-i00315.seal.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/record.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/recovery/BUDGET.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/recovery/INVENTORY.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/recovery/SEARCH-IDENTITY.json
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/recovery/candidates.jsonl
+ create mode 100644 docs/research/q21-final-tranche-q22-recovery-20261121/results/20261121t144934z-f5b92a5c/fbaea1e1/telemetry.jsonl
+{"recorded_at": {"utc": "2026-11-21T23:23:15.072507+00:00", "melbourne": "2026-11-22T10:23:15.072507+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:15.079603+00:00", "melbourne": "2026-11-22T10:23:15.079603+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:15.091818+00:00", "melbourne": "2026-11-22T10:23:15.091818+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:15.093114+00:00", "melbourne": "2026-11-22T10:23:15.093114+11:00"}, "message": "Local publication command", "argv": ["git", "push", "-u", "origin", "analysis/q21-final-tranche-results-20261121-fbaea1e1"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+Enumerating objects: 92, done.
+Counting objects: 100% (92/92), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (85/85), done.
+Writing objects: 100% (87/87), 9.59 MiB | 2.54 MiB/s, done.
+Total 87 (delta 31), reused 5 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (31/31), completed with 5 local objects.
+remote: 
+remote: Create a pull request for 'analysis/q21-final-tranche-results-20261121-fbaea1e1' on GitHub by visiting:
+remote:      https://github.com/RDHomeProjects/ElectronFieldTopology/pull/new/analysis/q21-final-tranche-results-20261121-fbaea1e1
+remote: 
+To https://github.com/RDHomeProjects/ElectronFieldTopology.git
+ * [new branch]      analysis/q21-final-tranche-results-20261121-fbaea1e1 -> analysis/q21-final-tranche-results-20261121-fbaea1e1
+branch 'analysis/q21-final-tranche-results-20261121-fbaea1e1' set up to track 'origin/analysis/q21-final-tranche-results-20261121-fbaea1e1'.
+{"recorded_at": {"utc": "2026-11-21T23:23:22.953904+00:00", "melbourne": "2026-11-22T10:23:22.953904+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "create", "--repo", "RDHomeProjects/ElectronFieldTopology", "--base", "main", "--head", "analysis/q21-final-tranche-results-20261121-fbaea1e1", "--title", "Record final Q21 adaptive tranche and Q22 recovery outcomes", "--body-file", "/home/rd/Downloads/ElectronFieldTopology-Q21-final-tranche-Q22-recovery-20261121/PR-BODY.md"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:26.290006+00:00", "melbourne": "2026-11-22T10:23:26.290006+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:26.910304+00:00", "melbourne": "2026-11-22T10:23:26.910304+11:00"}, "message": "Publication PR created or verified", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-final-tranche-results-20261121-fbaea1e1", "headRefOid": "37713ae4ddb725c51efea06436affdaa584f5293", "mergeCommit": null, "number": 90, "state": "OPEN", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90"}}
+{"recorded_at": {"utc": "2026-11-21T23:23:26.985334+00:00", "melbourne": "2026-11-22T10:23:26.985334+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:26.988194+00:00", "melbourne": "2026-11-22T10:23:26.988194+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:27.653045+00:00", "melbourne": "2026-11-22T10:23:27.653045+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "statusCheckRollup"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:28.391508+00:00", "melbourne": "2026-11-22T10:23:28.391508+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "checks", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90", "--repo", "RDHomeProjects/ElectronFieldTopology", "--watch", "--interval", "10"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+All checks were successful
+0 cancelled, 0 failing, 2 successful, 0 skipped, and 0 pending checks
+
+   NAME                                         DESCRIPTION  ELAPSED  URL                                                         
+✓  Documentation integrity/docs (push)                       16s      https://github.com/RDHomeProjects/ElectronFieldTopology/a...
+✓  Documentation integrity/docs (pull_request)               12s      https://github.com/RDHomeProjects/ElectronFieldTopology/a...
+{"recorded_at": {"utc": "2026-11-21T23:23:51.039701+00:00", "melbourne": "2026-11-22T10:23:51.039701+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "merge", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90", "--repo", "RDHomeProjects/ElectronFieldTopology", "--squash", "--delete-branch", "--match-head-commit", "37713ae4ddb725c51efea06436affdaa584f5293"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+✓ Squashed and merged pull request #90 (Record final Q21 adaptive tranche and Q22 recovery outcomes)
+✓ Deleted remote branch analysis/q21-final-tranche-results-20261121-fbaea1e1
+{"recorded_at": {"utc": "2026-11-21T23:23:55.440438+00:00", "melbourne": "2026-11-22T10:23:55.440438+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-q21-final-tranche-record-20261121"}
+{"recorded_at": {"utc": "2026-11-21T23:23:56.042003+00:00", "melbourne": "2026-11-22T10:23:56.042003+11:00"}, "message": "Publication merged", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-final-tranche-results-20261121-fbaea1e1", "headRefOid": "37713ae4ddb725c51efea06436affdaa584f5293", "mergeCommit": {"oid": "62586615cfe2658c5ceac89d6ad179d87cb600aa"}, "number": 90, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90"}}
+{"recorded_at": {"utc": "2026-11-21T23:23:56.123158+00:00", "melbourne": "2026-11-22T10:23:56.123158+11:00"}, "message": "Publication status", "phase": "merged", "kind": "results", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-final-tranche-results-20261121-fbaea1e1", "headRefOid": "37713ae4ddb725c51efea06436affdaa584f5293", "mergeCommit": {"oid": "62586615cfe2658c5ceac89d6ad179d87cb600aa"}, "number": 90, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/90"}}
+{"recorded_at": {"utc": "2026-11-21T23:23:56.127998+00:00", "melbourne": "2026-11-22T10:23:56.127998+11:00"}, "message": "Final Q21 tranche/Q22 recovery status", "runner_alive": false, "service_active": false, "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c", "status": {"recorded_at": {"utc": "2026-11-21T14:59:11.645722+00:00", "melbourne": "2026-11-22T01:59:11.645722+11:00"}, "status": "complete_pending_review", "phase": {"name": "complete", "candidate": null, "iteration": 335, "charged_attempts": 20, "block_attempt_limit": 20, "relative_force_l2": 0.001465082449825075, "acceleration_max": 0.01882438091430968}, "new_q21_attempts_charged": 20, "maximum_new_q21_attempts": 20, "q22_status": "deferred_missing_exact_historical_field", "physical_time_steps": 0, "error": null}, "heartbeat": {"recorded_at": {"utc": "2026-11-21T14:59:05.181554+00:00", "melbourne": "2026-11-22T01:59:05.181554+11:00"}, "pid": 1316196, "process_identity": {"pid": 1316196, "start_ticks": "164173403", "boot_id": "6d55658c-0d38-4bf7-b4a9-5f7b418d6fc0"}, "operation": {"name": "q21-final-adaptive-tranche", "candidate": null, "iteration": 334, "charged_attempts": 20, "block_attempt_limit": 20, "relative_force_l2": 0.0011935164368943813, "acceleration_max": 0.017407144017826677}}, "telemetry": {"recorded_at": {"utc": "2026-11-21T14:59:14.725807+00:00", "melbourne": "2026-11-22T01:59:14.725807+11:00"}, "host": {"total_gib": 15.26858901977539, "available_gib": 11.039592742919922, "swap_free_gib": 1.9282913208007812}, "pressure": {"some": {"avg10": 0.08, "avg60": 0.25, "avg300": 0.55, "total": 12096553803.0}, "full": {"avg10": 0.08, "avg60": 0.25, "avg300": 0.55, "total": 12094970762.0}}, "cgroup": {"memory.current": 6309543936, "memory.peak": 7518003200, "memory.swap.current": 0, "memory.events": {"low": 0, "high": 27809, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}, "memory.pressure": {"some": {"avg10": 0.07, "avg60": 0.32, "avg300": 0.74, "total": 9716417.0}, "full": {"avg10": 0.07, "avg60": 0.32, "avg300": 0.74, "total": 9716417.0}}}}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-final-tranche-q22-recovery/20261121t144934z-f5b92a5c/evidence.zip"}
+rd@zbook:~/ElectronFieldTopology-repository-admin$ 
