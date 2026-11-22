@@ -1,0 +1,5 @@
+Record the scientific assessment of the completed Q21 iteration 315–335 tranche and a controlled literature-guided stability campaign. Q21 still fails both stationarity gates and boundary admission; Q22 remains deferred because the exact historical field was not recovered within an incomplete bounded inventory. Preserve all original results, images, historical native-cell successes and scientific gates.
+
+Add matched optimizer, symmetry-breaking, scale, mesh, domain, family and constrained-curvature comparisons, measured geometry, validated dependency fits and explicit applicability dispositions for isospin, coupling and existence theory. Keep a2300-attempt global preparation ceiling, sequential CPU/CUDA qualification and bounded conditional rest/boost checks only after measured static/boundary/mesh admission. Publication is additive through the workstation's separate Git clone.
+
+Validation: see HOST-VALIDATION.json for small-grid controls and local publication rehearsal. Workstation preflight authenticates all source files,22 retained checkpoints and the Q2/exact335 metrics. Preparation success does not certify physical stability or an electron model.

@@ -420,3 +420,5 @@ See [the Q3 diagnostics, Yang-Mills/SF and quantum-state review plan](../../repo
 ## Independent methods and focused review — 13 November 2026
 
 See [the independent-method controls and retained Yang-Mills/SF and quantum-state plan](../../reports/s5-b/010-intermediate-q-survey/assessments/20261112t231901z-d2d4a113/LITERATURE-PLAN.md). Existing Bode, Maxwell benchmark, nonlinear and soliton-quantization assessments are reused. New review targets are not completed equation or proof audits.
+
+[Stability diagnosis bibliography](stability-diagnosis-20261122.bib) — focused reference-chain review and controlled experiments.
