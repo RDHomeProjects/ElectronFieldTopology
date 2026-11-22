@@ -61,3 +61,5 @@ See [NOTICE](NOTICE) and [CITATION.cff](CITATION.cff). Please cite the project a
 [Literature-guided stability diagnosis](docs/research/stability-literature-campaign-20261122/README.md)
 
 [Q21 conditioning calibration](docs/research/q21-conditioning-calibration-20261122/README.md)
+
+[Completed Q21 conditioning results and scientific review](docs/research/q21-conditioning-calibration-20261122/assessments/20261122t224236z-e1ab1173/ASSESSMENT.html)

@@ -1,0 +1,199 @@
+{
+  "allocated": true,
+  "trial": {
+    "recorded_at": {
+      "utc": "2026-11-22T13:22:09.781500+00:00",
+      "melbourne": "2026-11-23T00:22:09.781500+11:00"
+    },
+    "qualified_for_longer_comparison": true,
+    "candidate_measured_response": {
+      "eligible": true,
+      "reason": "matched_update_response",
+      "accepted_steps": 30,
+      "window_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "median_force": 0.0007117029013958954,
+      "median_acceleration": 0.012633676988579149,
+      "score": 12.633676988579149,
+      "trajectory_score_mad": 0.7485336688636473,
+      "scope": "Last10 observations through accepted update30. MAD describes within-trajectory variation, not independent statistical uncertainty."
+    },
+    "baseline_matched_response": {
+      "eligible": true,
+      "reason": "matched_update_response",
+      "accepted_steps": 30,
+      "window_steps": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "median_force": 0.0008882578968284427,
+      "median_acceleration": 0.013728647770575732,
+      "score": 13.728647770575732,
+      "trajectory_score_mad": 0.6909837173938413,
+      "scope": "Last10 observations through accepted update30. MAD describes within-trajectory variation, not independent statistical uncertainty."
+    },
+    "actual_readiness": false,
+    "prediction_grants_admission": false
+  },
+  "longer_comparison_allocated": true,
+  "longer_comparison": {
+    "matched_accepted_horizon": true,
+    "baseline_final": {
+      "recorded_at": {
+        "utc": "2026-11-22T13:57:48.976748+00:00",
+        "melbourne": "2026-11-23T00:57:48.976748+11:00"
+      },
+      "accepted_step": 120,
+      "iteration": 545,
+      "charged_attempt": 120,
+      "alpha": 0.07804371375790048,
+      "metrics": {
+        "energy": 12.330612369970662,
+        "relative_force_l2": 0.0005080358743111837,
+        "acceleration_max": 0.011130909127140686,
+        "acceleration_rms": 7.171222146106029e-05,
+        "minimum_corner_cone": 0.7969850339693431,
+        "hopf_integral": -20.719686253901678,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.7322032941202992,
+        "mean_topological_b": [
+          1.5523065402699487e-07,
+          -4.1345192956542736e-07,
+          -6.308592959988684e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002636171225295157,
+        "guard_fraction": 0.0004703509342736766
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "objective_calls": 3,
+      "optimization_seconds": 0.462095970986411,
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "step": {
+        "energy": 12.330612369970659,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0004748034354218429
+      }
+    },
+    "candidate_final": {
+      "recorded_at": {
+        "utc": "2026-11-22T14:33:29.719041+00:00",
+        "melbourne": "2026-11-23T01:33:29.719041+11:00"
+      },
+      "accepted_step": 120,
+      "iteration": 545,
+      "charged_attempt": 120,
+      "alpha": 0.07804371375790048,
+      "metrics": {
+        "energy": 12.330612771813275,
+        "relative_force_l2": 0.0005759890276075359,
+        "acceleration_max": 0.011644143160389328,
+        "acceleration_rms": 7.522443771853653e-05,
+        "minimum_corner_cone": 0.797010614373659,
+        "hopf_integral": -20.71970801788426,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.7320173640672369,
+        "mean_topological_b": [
+          1.602133391921336e-07,
+          -4.202103681495477e-07,
+          -6.308370208319726e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00026363705491737544,
+        "guard_fraction": 0.00047038613215737775
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "objective_calls": 3,
+      "optimization_seconds": 0.49156745709478855,
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "step": {
+        "energy": 12.330612771813275,
+        "objective_calls": 3,
+        "accepted_step_max": 0.000586143411190497
+      }
+    },
+    "baseline_final_window": {
+      "eligible": true,
+      "reason": "matched_update_response",
+      "accepted_steps": 120,
+      "window_steps": [
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "median_force": 0.0003993575835222822,
+      "median_acceleration": 0.01167777668306599,
+      "score": 11.67777668306599,
+      "trajectory_score_mad": 0.17799642255708914,
+      "scope": "Last10 observations through accepted update120. MAD describes within-trajectory variation, not independent statistical uncertainty."
+    },
+    "candidate_final_window": {
+      "eligible": true,
+      "reason": "matched_update_response",
+      "accepted_steps": 120,
+      "window_steps": [
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "median_force": 0.0004913895437787675,
+      "median_acceleration": 0.011705899434822708,
+      "score": 11.705899434822708,
+      "trajectory_score_mad": 0.19291511389723315,
+      "scope": "Last10 observations through accepted update120. MAD describes within-trajectory variation, not independent statistical uncertainty."
+    },
+    "interpretation": "Compare120 accepted updates only if both reached120. Earlier scientific stops are reported explicitly; do not compare unequal horizons as a matched optimum."
+  }
+}

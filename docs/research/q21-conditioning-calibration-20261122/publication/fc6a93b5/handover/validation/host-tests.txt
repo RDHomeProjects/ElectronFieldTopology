@@ -1,0 +1,48 @@
+test_active_recorded_process_is_rejected (__main__.RecordControls.test_active_recorded_process_is_rejected) ... ok
+test_field_verification_cache_invalidates_on_change (__main__.RecordControls.test_field_verification_cache_invalidates_on_change) ... {"recorded_at": {"utc": "2026-11-22T23:08:38.770580+00:00", "melbourne": "2026-11-23T10:08:38.770580+11:00"}, "message": "Retained full fields verified", "completed": 1, "total": 1}
+{"recorded_at": {"utc": "2026-11-22T23:08:38.771656+00:00", "melbourne": "2026-11-23T10:08:38.771656+11:00"}, "message": "Reused complete field verification; scientific metadata and every field fingerprint rechecked", "fields": 1, "verified_at": {"utc": "2026-11-22T23:08:38.770715+00:00", "melbourne": "2026-11-23T10:08:38.770715+11:00"}}
+{"recorded_at": {"utc": "2026-11-22T23:08:38.772080+00:00", "melbourne": "2026-11-23T10:08:38.772080+11:00"}, "message": "Retained full fields verified", "completed": 1, "total": 1}
+ok
+test_full_field_hash_and_crc_checks (__main__.RecordControls.test_full_field_hash_and_crc_checks) ... ok
+test_live_plan_check_validates_pr_and_preparation_bytes (__main__.RecordControls.test_live_plan_check_validates_pr_and_preparation_bytes) ... {"recorded_at": {"utc": "2026-11-22T23:08:38.920852+00:00", "melbourne": "2026-11-23T10:08:38.920852+11:00"}, "message": "Workstation publication command", "argv": ["git", "merge-base", "--is-ancestor", "adca10aba0c824be0d9ca3a3353aa37ee065e77d", "HEAD"], "argument_count": 5, "checkout": "/tmp/tmpcvi2m0fa/repo"}
+{"recorded_at": {"utc": "2026-11-22T23:08:38.955449+00:00", "melbourne": "2026-11-23T10:08:38.955449+11:00"}, "message": "Workstation publication command", "argv": ["git", "merge-base", "--is-ancestor", "adca10aba0c824be0d9ca3a3353aa37ee065e77d", "HEAD"], "argument_count": 5, "checkout": "/tmp/tmpcvi2m0fa/repo"}
+ok
+test_no_numerical_execution_entrypoint (__main__.RecordControls.test_no_numerical_execution_entrypoint) ... ok
+test_real_git_additive_publication_and_merged_byte_verification (__main__.RecordControls.test_real_git_additive_publication_and_merged_byte_verification) ... Cloning into '/tmp/tmpl74sqei5/publication'...
+done.
+{"recorded_at": {"utc": "2026-11-22T23:08:39.488104+00:00", "melbourne": "2026-11-23T10:08:39.488104+11:00"}, "message": "Workstation publication command", "argv": ["git", "remote", "set-url", "origin", "/tmp/tmpl74sqei5/remote.git"], "argument_count": 5, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.490618+00:00", "melbourne": "2026-11-23T10:08:39.490618+11:00"}, "message": "Workstation publication command", "argv": ["git", "status", "--porcelain"], "argument_count": 3, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.518312+00:00", "melbourne": "2026-11-23T10:08:39.518312+11:00"}, "message": "Workstation publication command", "argv": ["git", "fetch", "origin", "main"], "argument_count": 4, "checkout": "/tmp/tmpl74sqei5/publication"}
+From /tmp/tmpl74sqei5/remote
+ * branch            main       -> FETCH_HEAD
+{"recorded_at": {"utc": "2026-11-22T23:08:39.533990+00:00", "melbourne": "2026-11-23T10:08:39.533990+11:00"}, "message": "Workstation publication command", "argv": ["git", "rev-parse", "origin/main"], "argument_count": 3, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.536743+00:00", "melbourne": "2026-11-23T10:08:39.536743+11:00"}, "message": "Workstation publication command", "argv": ["git", "switch", "-c", "analysis/q21-conditioning-results-and-review-20261123-947b9434", "efe970c2293b62259c92263b646996522042444c"], "argument_count": 5, "checkout": "/tmp/tmpl74sqei5/publication"}
+Switched to a new branch 'analysis/q21-conditioning-results-and-review-20261123-947b9434'
+{"recorded_at": {"utc": "2026-11-22T23:08:39.573720+00:00", "melbourne": "2026-11-23T10:08:39.573720+11:00"}, "message": "Workstation publication command", "argv": ["git", "branch", "--show-current"], "argument_count": 3, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.638134+00:00", "melbourne": "2026-11-23T10:08:39.638134+11:00"}, "message": "Workstation publication command", "argv": ["git", "add", "--", "<240 explicitly scoped paths>"], "argument_count": 243, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.725323+00:00", "melbourne": "2026-11-23T10:08:39.725323+11:00"}, "message": "Workstation publication command", "argv": ["git", "diff", "--cached", "--name-only"], "argument_count": 4, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.729682+00:00", "melbourne": "2026-11-23T10:08:39.729682+11:00"}, "message": "Workstation publication command", "argv": ["git", "diff", "--cached", "--check"], "argument_count": 4, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.752654+00:00", "melbourne": "2026-11-23T10:08:39.752654+11:00"}, "message": "Complete results and scientific analysis staged", "branch": "analysis/q21-conditioning-results-and-review-20261123-947b9434", "immutable_files": 237, "assessment_browser": "/tmp/tmpl74sqei5/publication/docs/research/q21-conditioning-calibration-20261122/assessments/20261122t224236z-e1ab1173/ASSESSMENT.html", "retained_field_files": 1, "new_optimizer_attempts": 0}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.872364+00:00", "melbourne": "2026-11-23T10:08:39.872364+11:00"}, "message": "Workstation publication command", "argv": ["git", "branch", "--show-current"], "argument_count": 3, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.901736+00:00", "melbourne": "2026-11-23T10:08:39.901736+11:00"}, "message": "Workstation publication command", "argv": ["git", "diff", "--cached", "--name-only"], "argument_count": 4, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.905684+00:00", "melbourne": "2026-11-23T10:08:39.905684+11:00"}, "message": "Workstation publication command", "argv": ["git", "diff", "--cached", "--check"], "argument_count": 4, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:39.924205+00:00", "melbourne": "2026-11-23T10:08:39.924205+11:00"}, "message": "Results and scientific assessment already prepared", "phase": "applied"}
+{"recorded_at": {"utc": "2026-11-22T23:08:40.346495+00:00", "melbourne": "2026-11-23T10:08:40.346495+11:00"}, "message": "Workstation publication command", "argv": ["git", "diff", "--cached", "--name-only"], "argument_count": 4, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:40.556574+00:00", "melbourne": "2026-11-23T10:08:40.556574+11:00"}, "message": "Workstation publication command", "argv": ["git", "fetch", "origin", "main"], "argument_count": 4, "checkout": "/tmp/tmpl74sqei5/publication"}
+From /tmp/tmpl74sqei5/remote
+ * branch            main       -> FETCH_HEAD
+{"recorded_at": {"utc": "2026-11-22T23:08:40.568875+00:00", "melbourne": "2026-11-23T10:08:40.568875+11:00"}, "message": "Workstation publication command", "argv": ["git", "merge-base", "--is-ancestor", "981f171d7c5b67f1e1fc4604d32a2d6e366976aa", "origin/main"], "argument_count": 5, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:40.707168+00:00", "melbourne": "2026-11-23T10:08:40.707168+11:00"}, "message": "Workstation publication command", "argv": ["git", "show", "origin/main:README.md"], "argument_count": 3, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:40.710131+00:00", "melbourne": "2026-11-23T10:08:40.710131+11:00"}, "message": "Workstation publication command", "argv": ["git", "show", "origin/main:docs/research/q21-conditioning-calibration-20261122/README.md"], "argument_count": 3, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:40.713421+00:00", "melbourne": "2026-11-23T10:08:40.713421+11:00"}, "message": "Workstation publication command", "argv": ["git", "show", "origin/main:docs/research/q21-conditioning-calibration-20261122/README.md"], "argument_count": 3, "checkout": "/tmp/tmpl74sqei5/publication"}
+{"recorded_at": {"utc": "2026-11-22T23:08:40.720689+00:00", "melbourne": "2026-11-23T10:08:40.720689+11:00"}, "message": "Complete results and detailed scientific review merged and byte-verified", "pr": {"state": "MERGED", "headRefOid": "981f171d7c5b67f1e1fc4604d32a2d6e366976aa", "mergeCommit": {"oid": "981f171d7c5b67f1e1fc4604d32a2d6e366976aa"}, "url": "synthetic-local-only"}, "verified_payloads": 237, "assessment_browser": "/tmp/tmpl74sqei5/publication/docs/research/q21-conditioning-calibration-20261122/assessments/20261122t224236z-e1ab1173/ASSESSMENT.html"}
+{"recorded_at": {"utc": "2026-11-22T23:08:40.810615+00:00", "melbourne": "2026-11-23T10:08:40.810615+11:00"}, "message": "Results and scientific assessment already prepared", "phase": "merged"}
+ok
+test_reviewed_archive_and_registered_outcomes (__main__.RecordControls.test_reviewed_archive_and_registered_outcomes) ... ok
+test_unsafe_compact_members_are_rejected (__main__.RecordControls.test_unsafe_compact_members_are_rejected) ... ok
+test_worker_lock_prevents_concurrent_recording (__main__.RecordControls.test_worker_lock_prevents_concurrent_recording) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.174s
+
+OK

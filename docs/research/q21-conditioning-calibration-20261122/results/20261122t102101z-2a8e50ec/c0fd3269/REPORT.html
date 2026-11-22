@@ -1,0 +1,422 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Q21 conditioning calibration</title><style>body{font:17px system-ui;max-width:1100px;margin:3rem auto;padding:0 1rem;line-height:1.5}table{border-collapse:collapse}td,th{padding:.4rem;border:1px solid #bbb}img{width:100%}pre{white-space:pre-wrap}a{color:#075985}</style><h1>Q21 conditioning calibration</h1><p>complete_pending_review · 580 /580 charged attempts; physical-time steps:0.</p><p>The unchanged129³ field occupies a30.72 box with0.24 spacing. Only the numerical Sobolev shift is varied in consistently restarted cases. The exact-memory control is separate. These are preparations, not motion simulations or a proof of stability.</p><p>The response uses medians over accepted updates21–30. Lower joint score is better; score1 corresponds to the force and acceleration thresholds. Topology, representation and boundary gates are also checked at every update. A favorable fit never grants admission.</p><p><a href="sampling.csv">Matched samples CSV</a> · <a href="measurements.csv">Every measured update CSV</a> · <a href="record.json">Full record</a> · <a href="RESIDUAL-AUDIT.json">Localized and spectral audit</a> · <a href="handover/PROTOCOL.md">Protocol</a></p><h2>Joint normalized residual</h2><img src="conditioning-response.svg" alt="Actual matched measurements and validated parameter curves"><h2>Median force</h2><img src="force-response.svg" alt="Actual matched measurements and validated parameter curves"><h2>Median maximum acceleration</h2><img src="acceleration-response.svg" alt="Actual matched measurements and validated parameter curves"><table><tr><th>Case</th><th>Shift</th><th>Joint score</th><th>Final readiness</th></tr><tr><td>scan-00</td><td>0.03125</td><td>16.77669016070065</td><td>False</td></tr><tr><td>scan-01</td><td>0.0625</td><td>16.329597330917093</td><td>False</td></tr><tr><td>scan-02</td><td>0.125</td><td>12.633676988579149</td><td>False</td></tr><tr><td>scan-baseline</td><td>0.25</td><td>13.728647770575732</td><td>False</td></tr><tr><td>scan-04</td><td>0.5</td><td>13.991351963373717</td><td>False</td></tr><tr><td>scan-05</td><td>1</td><td>18.382582707873738</td><td>False</td></tr><tr><td>scan-06</td><td>2</td><td>11.433802002250573</td><td>False</td></tr><tr><td>adaptive-00</td><td>2.828427</td><td>33.00469018738419</td><td>False</td></tr><tr><td>adaptive-01</td><td>0.1948342</td><td>15.178143972635608</td><td>False</td></tr><tr><td>adaptive-02</td><td>2.378414</td><td>22.332067890519603</td><td>False</td></tr><tr><td>adaptive-03</td><td>2.181015</td><td>11.934985732898394</td><td>False</td></tr></table><h2>Selection and confirmation</h2><pre>{
+  &quot;selection&quot;: {
+    &quot;log2_shift&quot;: -3,
+    &quot;shift&quot;: 0.125,
+    &quot;mode&quot;: &quot;best_measured_value_without_validated_optimum&quot;,
+    &quot;source_case&quot;: &quot;scan-02&quot;,
+    &quot;fits&quot;: {
+      &quot;score&quot;: {
+        &quot;status&quot;: &quot;measured_curve_fit&quot;,
+        &quot;parameter_coordinate&quot;: &quot;log2(Sobolev_shift)&quot;,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients&quot;: [
+              6.033413838450462,
+              16.884203337064413
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 7.069253063278791,
+            &quot;range_normalized_rmse&quot;: 0.32772192793391003,
+            &quot;skill_vs_constant&quot;: -0.1781374921291723,
+            &quot;validated&quot;: false
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients&quot;: [
+              26.902391191939127,
+              8.84331503165261,
+              13.846564853789324
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 6.926817805811476,
+            &quot;range_normalized_rmse&quot;: 0.32111880356346895,
+            &quot;skill_vs_constant&quot;: -0.1311402301250677,
+            &quot;validated&quot;: false,
+            &quot;turn_log2_shift&quot;: -2.203306288406731,
+            &quot;turn_is_minimum&quot;: true,
+            &quot;leave_one_out_turns&quot;: [
+              -1.7998162441002339,
+              -2.288941493317303,
+              -2.192338520716513,
+              -2.1885027386748495,
+              -2.2056210343429727,
+              -2.1151551399240183,
+              -2.411371226069922,
+              -1.6987354677907436,
+              -2.1770500674958386,
+              -2.163879658112516,
+              -2.3821331805275197
+            ],
+            &quot;leave_one_out_turn_spread&quot;: 0.7126357582791782
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients&quot;: [
+              0.2302278986466978,
+              2.7779310402722057
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 6.874834536404587,
+            &quot;range_normalized_rmse&quot;: 0.318708922757415,
+            &quot;skill_vs_constant&quot;: -0.11422633656328895,
+            &quot;validated&quot;: false
+          }
+        ],
+        &quot;points&quot;: 11,
+        &quot;sampled_range&quot;: [
+          -5.0,
+          1.5
+        ],
+        &quot;constant_leave_one_out_rmse&quot;: 6.512916950051006,
+        &quot;measured_response_range&quot;: 21.57088818513362,
+        &quot;trajectory_variation_floor&quot;: 0.1871334172159118,
+        &quot;admission_inferred&quot;: false
+      },
+      &quot;median_force&quot;: {
+        &quot;status&quot;: &quot;measured_curve_fit&quot;,
+        &quot;parameter_coordinate&quot;: &quot;log2(Sobolev_shift)&quot;,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients&quot;: [
+              0.0016092493201170304,
+              0.0012325103445297565
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 0.0007241615309065212,
+            &quot;range_normalized_rmse&quot;: 0.2690056752540966,
+            &quot;skill_vs_constant&quot;: 0.3019372995876518,
+            &quot;validated&quot;: false
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients&quot;: [
+              0.0026713255130397834,
+              0.001888263950934343,
+              0.000930882094391323
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 0.0007220963527822907,
+            &quot;range_normalized_rmse&quot;: 0.26823851956835726,
+            &quot;skill_vs_constant&quot;: 0.3059131202607659,
+            &quot;validated&quot;: false,
+            &quot;turn_log2_shift&quot;: -3.4322791380686155,
+            &quot;turn_is_minimum&quot;: true,
+            &quot;leave_one_out_turns&quot;: [
+              -2.6498323055736654,
+              -3.463200996846372,
+              -3.405720020106065,
+              -3.285166458261674,
+              -3.7728665699451254,
+              -3.2070297845737326,
+              -3.500699873850868,
+              -5.368337900345373,
+              -3.3226384268946063,
+              -3.4555382134772676,
+              -3.4120174745608063
+            ],
+            &quot;leave_one_out_turn_spread&quot;: 2.7185055947717074
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients&quot;: [
+              1.2130708612909589,
+              -6.85058345664972
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 0.0006812146580380582,
+            &quot;range_normalized_rmse&quot;: 0.2530521178736451,
+            &quot;skill_vs_constant&quot;: 0.3822802303390318,
+            &quot;validated&quot;: false
+          }
+        ],
+        &quot;points&quot;: 11,
+        &quot;sampled_range&quot;: [
+          -5.0,
+          1.5
+        ],
+        &quot;constant_leave_one_out_rmse&quot;: 0.000866738791013544,
+        &quot;measured_response_range&quot;: 0.0026919935061685777,
+        &quot;trajectory_variation_floor&quot;: 1e-12,
+        &quot;admission_inferred&quot;: false
+      },
+      &quot;median_acceleration&quot;: {
+        &quot;status&quot;: &quot;measured_curve_fit&quot;,
+        &quot;parameter_coordinate&quot;: &quot;log2(Sobolev_shift)&quot;,
+        &quot;models&quot;: [
+          {
+            &quot;model&quot;: &quot;linear&quot;,
+            &quot;coefficients&quot;: [
+              0.004132719206851555,
+              0.016354789768863082
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 0.005487365167582887,
+            &quot;range_normalized_rmse&quot;: 0.34846301271987695,
+            &quot;skill_vs_constant&quot;: -0.19696835405241475,
+            &quot;validated&quot;: false
+          },
+          {
+            &quot;model&quot;: &quot;quadratic&quot;,
+            &quot;coefficients&quot;: [
+              0.020810440774974372,
+              0.006306328309011385,
+              0.014005013672717377
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 0.005261644006936447,
+            &quot;range_normalized_rmse&quot;: 0.3341290886467808,
+            &quot;skill_vs_constant&quot;: -0.10051981524056242,
+            &quot;validated&quot;: false,
+            &quot;turn_log2_shift&quot;: -2.119840432892261,
+            &quot;turn_is_minimum&quot;: true,
+            &quot;leave_one_out_turns&quot;: [
+              -1.7923778576754343,
+              -2.2197289655272687,
+              -2.0944813388916677,
+              -2.1145592874273498,
+              -2.128039804980121,
+              -1.9943085144209236,
+              -2.3529909230270762,
+              -1.6987354677907403,
+              -2.1011482393879284,
+              -1.9958982464740251,
+              -2.322248182656147
+            ],
+            &quot;leave_one_out_turn_spread&quot;: 0.654255455236336
+          },
+          {
+            &quot;model&quot;: &quot;exponential&quot;,
+            &quot;coefficients&quot;: [
+              0.16686880477922347,
+              -4.147472083558197
+            ],
+            &quot;x_origin&quot;: -1.134971,
+            &quot;x_scale&quot;: 6.5,
+            &quot;leave_one_out_rmse&quot;: 0.005419441015190519,
+            &quot;range_normalized_rmse&quot;: 0.3441496393510121,
+            &quot;skill_vs_constant&quot;: -0.16751893258240913,
+            &quot;validated&quot;: false
+          }
+        ],
+        &quot;points&quot;: 11,
+        &quot;sampled_range&quot;: [
+          -5.0,
+          1.5
+        ],
+        &quot;constant_leave_one_out_rmse&quot;: 0.005015595775276233,
+        &quot;measured_response_range&quot;: 0.015747338934918982,
+        &quot;trajectory_variation_floor&quot;: 1e-12,
+        &quot;admission_inferred&quot;: false
+      }
+    }
+  },
+  &quot;validation&quot;: {
+    &quot;allocated&quot;: true,
+    &quot;trial&quot;: {
+      &quot;recorded_at&quot;: {
+        &quot;utc&quot;: &quot;2026-11-22T13:22:09.781500+00:00&quot;,
+        &quot;melbourne&quot;: &quot;2026-11-23T00:22:09.781500+11:00&quot;
+      },
+      &quot;qualified_for_longer_comparison&quot;: true,
+      &quot;candidate_measured_response&quot;: {
+        &quot;eligible&quot;: true,
+        &quot;reason&quot;: &quot;matched_update_response&quot;,
+        &quot;accepted_steps&quot;: 30,
+        &quot;window_steps&quot;: [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        &quot;median_force&quot;: 0.0007117029013958954,
+        &quot;median_acceleration&quot;: 0.012633676988579149,
+        &quot;score&quot;: 12.633676988579149,
+        &quot;trajectory_score_mad&quot;: 0.7485336688636473,
+        &quot;scope&quot;: &quot;Last10 observations through accepted update30. MAD describes within-trajectory variation, not independent statistical uncertainty.&quot;
+      },
+      &quot;baseline_matched_response&quot;: {
+        &quot;eligible&quot;: true,
+        &quot;reason&quot;: &quot;matched_update_response&quot;,
+        &quot;accepted_steps&quot;: 30,
+        &quot;window_steps&quot;: [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        &quot;median_force&quot;: 0.0008882578968284427,
+        &quot;median_acceleration&quot;: 0.013728647770575732,
+        &quot;score&quot;: 13.728647770575732,
+        &quot;trajectory_score_mad&quot;: 0.6909837173938413,
+        &quot;scope&quot;: &quot;Last10 observations through accepted update30. MAD describes within-trajectory variation, not independent statistical uncertainty.&quot;
+      },
+      &quot;actual_readiness&quot;: false,
+      &quot;prediction_grants_admission&quot;: false
+    },
+    &quot;longer_comparison_allocated&quot;: true,
+    &quot;longer_comparison&quot;: {
+      &quot;matched_accepted_horizon&quot;: true,
+      &quot;baseline_final&quot;: {
+        &quot;recorded_at&quot;: {
+          &quot;utc&quot;: &quot;2026-11-22T13:57:48.976748+00:00&quot;,
+          &quot;melbourne&quot;: &quot;2026-11-23T00:57:48.976748+11:00&quot;
+        },
+        &quot;accepted_step&quot;: 120,
+        &quot;iteration&quot;: 545,
+        &quot;charged_attempt&quot;: 120,
+        &quot;alpha&quot;: 0.07804371375790048,
+        &quot;metrics&quot;: {
+          &quot;energy&quot;: 12.330612369970662,
+          &quot;relative_force_l2&quot;: 0.0005080358743111837,
+          &quot;acceleration_max&quot;: 0.011130909127140686,
+          &quot;acceleration_rms&quot;: 7.171222146106029e-05,
+          &quot;minimum_corner_cone&quot;: 0.7969850339693431,
+          &quot;hopf_integral&quot;: -20.719686253901678,
+          &quot;unit_error&quot;: 3.3306690738754696e-16,
+          &quot;max_neighbour_angle&quot;: 0.7322032941202992,
+          &quot;mean_topological_b&quot;: [
+            1.5523065402699487e-07,
+            -4.1345192956542736e-07,
+            -6.308592959988684e-05
+          ],
+          &quot;scope&quot;: &quot;finite-grid Coulomb-gauge integral, not an exact integer certificate&quot;,
+          &quot;tail_fraction&quot;: 0.0002636171225295157,
+          &quot;guard_fraction&quot;: 0.0004703509342736766
+        },
+        &quot;gates&quot;: {
+          &quot;representation&quot;: true,
+          &quot;strict_stationary&quot;: false,
+          &quot;boundary_admitted&quot;: true,
+          &quot;all_readiness_gates&quot;: false
+        },
+        &quot;objective_calls&quot;: 3,
+        &quot;optimization_seconds&quot;: 0.462095970986411,
+        &quot;backend_audit&quot;: {
+          &quot;passed&quot;: true,
+          &quot;energy_abs_difference&quot;: 3.552713678800501e-15,
+          &quot;gradient_max_abs_difference&quot;: 0.0,
+          &quot;reference&quot;: &quot;independent CPU sf_readmission.static_value_gradient&quot;
+        },
+        &quot;step&quot;: {
+          &quot;energy&quot;: 12.330612369970659,
+          &quot;objective_calls&quot;: 3,
+          &quot;accepted_step_max&quot;: 0.0004748034354218429
+        }
+      },
+      &quot;candidate_final&quot;: {
+        &quot;recorded_at&quot;: {
+          &quot;utc&quot;: &quot;2026-11-22T14:33:29.719041+00:00&quot;,
+          &quot;melbourne&quot;: &quot;2026-11-23T01:33:29.719041+11:00&quot;
+        },
+        &quot;accepted_step&quot;: 120,
+        &quot;iteration&quot;: 545,
+        &quot;charged_attempt&quot;: 120,
+        &quot;alpha&quot;: 0.07804371375790048,
+        &quot;metrics&quot;: {
+          &quot;energy&quot;: 12.330612771813275,
+          &quot;relative_force_l2&quot;: 0.0005759890276075359,
+          &quot;acceleration_max&quot;: 0.011644143160389328,
+          &quot;acceleration_rms&quot;: 7.522443771853653e-05,
+          &quot;minimum_corner_cone&quot;: 0.797010614373659,
+          &quot;hopf_integral&quot;: -20.71970801788426,
+          &quot;unit_error&quot;: 3.3306690738754696e-16,
+          &quot;max_neighbour_angle&quot;: 0.7320173640672369,
+          &quot;mean_topological_b&quot;: [
+            1.602133391921336e-07,
+            -4.202103681495477e-07,
+            -6.308370208319726e-05
+          ],
+          &quot;scope&quot;: &quot;finite-grid Coulomb-gauge integral, not an exact integer certificate&quot;,
+          &quot;tail_fraction&quot;: 0.00026363705491737544,
+          &quot;guard_fraction&quot;: 0.00047038613215737775
+        },
+        &quot;gates&quot;: {
+          &quot;representation&quot;: true,
+          &quot;strict_stationary&quot;: false,
+          &quot;boundary_admitted&quot;: true,
+          &quot;all_readiness_gates&quot;: false
+        },
+        &quot;objective_calls&quot;: 3,
+        &quot;optimization_seconds&quot;: 0.49156745709478855,
+        &quot;backend_audit&quot;: {
+          &quot;passed&quot;: true,
+          &quot;energy_abs_difference&quot;: 0.0,
+          &quot;gradient_max_abs_difference&quot;: 0.0,
+          &quot;reference&quot;: &quot;independent CPU sf_readmission.static_value_gradient&quot;
+        },
+        &quot;step&quot;: {
+          &quot;energy&quot;: 12.330612771813275,
+          &quot;objective_calls&quot;: 3,
+          &quot;accepted_step_max&quot;: 0.000586143411190497
+        }
+      },
+      &quot;baseline_final_window&quot;: {
+        &quot;eligible&quot;: true,
+        &quot;reason&quot;: &quot;matched_update_response&quot;,
+        &quot;accepted_steps&quot;: 120,
+        &quot;window_steps&quot;: [
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120
+        ],
+        &quot;median_force&quot;: 0.0003993575835222822,
+        &quot;median_acceleration&quot;: 0.01167777668306599,
+        &quot;score&quot;: 11.67777668306599,
+        &quot;trajectory_score_mad&quot;: 0.17799642255708914,
+        &quot;scope&quot;: &quot;Last10 observations through accepted update120. MAD describes within-trajectory variation, not independent statistical uncertainty.&quot;
+      },
+      &quot;candidate_final_window&quot;: {
+        &quot;eligible&quot;: true,
+        &quot;reason&quot;: &quot;matched_update_response&quot;,
+        &quot;accepted_steps&quot;: 120,
+        &quot;window_steps&quot;: [
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120
+        ],
+        &quot;median_force&quot;: 0.0004913895437787675,
+        &quot;median_acceleration&quot;: 0.011705899434822708,
+        &quot;score&quot;: 11.705899434822708,
+        &quot;trajectory_score_mad&quot;: 0.19291511389723315,
+        &quot;scope&quot;: &quot;Last10 observations through accepted update120. MAD describes within-trajectory variation, not independent statistical uncertainty.&quot;
+      },
+      &quot;interpretation&quot;: &quot;Compare120 accepted updates only if both reached120. Earlier scientific stops are reported explicitly; do not compare unequal horizons as a matched optimum.&quot;
+    }
+  }
+}</pre><h2>Interpretation</h2><p>Linear, quadratic and exponential response models use log₂(shift). They must outperform a constant predictor under leave-one-out validation. Additional measurements concentrate near turns and unresolved best regions. Extrapolation is bounded. A longer comparison is allocated only after a new measured trial improves the joint response. A measured best setting without fit support is explicitly labelled as such.</p><p>All original gates remain fixed. Passing static readiness would still require spatial/domain confirmation and controlled physical-time tests. Positive curvature in a finite tested subspace does not certify global stability.</p></html>
