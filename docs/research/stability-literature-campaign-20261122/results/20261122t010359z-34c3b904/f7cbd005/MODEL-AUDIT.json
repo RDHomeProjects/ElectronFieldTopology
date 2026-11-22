@@ -1,0 +1,70 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-22T01:04:59.014466+00:00",
+    "melbourne": "2026-11-22T12:04:59.014466+11:00"
+  },
+  "normalization_K": 0.002238903000979517,
+  "K_definition": "1/(32*pi^2*sqrt(2))",
+  "continuum_static_energy": "K integral[sum_i |partial_i n|^2 + sum_i<j |partial_i n cross partial_j n|^2] d3x",
+  "potential_U": 0,
+  "target": "S2 unit vector",
+  "boundary": "Two fixed north layers on each face",
+  "discrete_sigma": "Fourth-order positive nodal sigma form; not D4-transpose-D4 alone",
+  "quartic_derivatives": "Skew D4 with constant-zero exterior for n-NORTH",
+  "d4": {
+    "energy": 12.346938152045725,
+    "relative_force_l2": 0.001465082449825075,
+    "acceleration_max": 0.01882438091430968,
+    "acceleration_rms": 0.00026648509101438815,
+    "minimum_corner_cone": 0.7960368402761949,
+    "hopf_integral": -20.716576822019494,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.7354094793888927,
+    "mean_topological_b": [
+      2.7863454935046204e-07,
+      2.9539185112757014e-07,
+      -0.0001492657208973572
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.0015648992688830797,
+    "guard_fraction": 0.003141797821240132
+  },
+  "d4_gates": {
+    "representation": true,
+    "strict_stationary": false,
+    "boundary_admitted": false,
+    "all_readiness_gates": false
+  },
+  "decomposition": {
+    "e2": 6.009150837379537,
+    "e4": 6.337787314666189,
+    "continuum_scaling_proxy": -0.026616840000304096,
+    "scaling_proxy_scope": "Continuum E2=E4 is a diagnostic, not a finite-box/discrete stationarity certificate. Actual mapped-scale energies are recorded separately.",
+    "energy_centroid": [
+      -0.03186204421614341,
+      -0.07482810494951384,
+      0.00038529895040496405
+    ],
+    "energy_covariance_eigenvalues": [
+      2.1498040953116435,
+      6.153369775121401,
+      6.179453963933403
+    ],
+    "rms_extent": 3.8056047921935416,
+    "core_voxel_volume_n3_negative": 297.188352,
+    "scope": "Energy/core geometry proxies; not exact core length, twist, writhe or knot classification."
+  },
+  "native_cell_on_same_q21_field": {
+    "energy": 12.505234870697851,
+    "e2": 5.984911029619397,
+    "e4": 6.520323841078453,
+    "historical_style_tangent_gradient_rms": 0.3397480867696717,
+    "minimum_corner_cone": 0.7960368402761949,
+    "minimum_interpolant_norm": 0.9409118457535638
+  },
+  "source_array_before": "1dfdef93f4a4d611eda83bb78d830e85ae0bec63a447c71a5987325fa2a426b5",
+  "source_array_after": "1dfdef93f4a4d611eda83bb78d830e85ae0bec63a447c71a5987325fa2a426b5",
+  "optimizer_steps": 0,
+  "physical_time_steps": 0,
+  "scope": "Different discrete functionals and residual norms are named separately; no cell-to-D4 admission transfer or recovered-Q22 claim. Units are dimensionless model units, not SI electron units."
+}

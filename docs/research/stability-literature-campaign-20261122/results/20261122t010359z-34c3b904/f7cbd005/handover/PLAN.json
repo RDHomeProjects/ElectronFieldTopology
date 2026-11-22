@@ -1,0 +1,286 @@
+{
+  "name": "Literature-guided controlled stability diagnosis",
+  "date_melbourne": "2026-11-22",
+  "q": 21,
+  "nodes": 97,
+  "length": 23.04,
+  "arms": [
+    {
+      "id": "exact-cg",
+      "kind": "exact",
+      "optimizer": "cg",
+      "cap": 500
+    },
+    {
+      "id": "restart-cg",
+      "kind": "identity",
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "sobolev-sd",
+      "kind": "identity",
+      "optimizer": "sd",
+      "cap": 100
+    },
+    {
+      "id": "damped-inertial",
+      "kind": "identity",
+      "optimizer": "inertial",
+      "cap": 100
+    },
+    {
+      "id": "projected-lbfgs",
+      "kind": "identity",
+      "optimizer": "lbfgs",
+      "cap": 100
+    },
+    {
+      "id": "bend-m20",
+      "kind": "bend",
+      "amplitude": -0.02,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "bend-m10",
+      "kind": "bend",
+      "amplitude": -0.01,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "bend-p10",
+      "kind": "bend",
+      "amplitude": 0.01,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "bend-p20",
+      "kind": "bend",
+      "amplitude": 0.02,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "scale-98",
+      "kind": "scale",
+      "factor": 0.98,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "scale-102",
+      "kind": "scale",
+      "factor": 1.02,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "mesh-129",
+      "kind": "mesh",
+      "nodes": 129,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "mesh-161",
+      "kind": "mesh",
+      "nodes": 161,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "domain-pad-8",
+      "kind": "domain",
+      "padding": 8,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "domain-pad-16",
+      "kind": "domain",
+      "padding": 16,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "fresh-torus72",
+      "kind": "fresh",
+      "family": "torus72",
+      "alpha": 7,
+      "beta": 1,
+      "map_amplitude": 4.0,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "fresh-torus23",
+      "kind": "fresh",
+      "family": "torus23",
+      "alpha": 5,
+      "beta": 3,
+      "map_amplitude": 1.0,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "curvature-minus",
+      "kind": "curvature",
+      "amplitude": -0.02,
+      "optimizer": "cg",
+      "cap": 100
+    },
+    {
+      "id": "curvature-plus",
+      "kind": "curvature",
+      "amplitude": 0.02,
+      "optimizer": "cg",
+      "cap": 100
+    }
+  ],
+  "maximum_new_optimizer_attempts": 2300,
+  "first_probe": 20,
+  "minimum_before_plateau": 80,
+  "plateau_decisions": 3,
+  "adaptive_policy": {
+    "window_points": 16,
+    "comparison_window_points": 8,
+    "minimum_recent_joint_improvement": 0.005,
+    "minimum_new_accepted_points_between_decisions": 5,
+    "minimum_batch_attempts": 5,
+    "maximum_batch_attempts": 10,
+    "holdout_points": 3,
+    "holdout_relative_rmse_limit": 0.25,
+    "maximum_forecast_disagreement": 0.25,
+    "maximum_forecast_fractional_change": 0.15,
+    "gate_distance_fraction": 0.2,
+    "turn_distance_fraction": 0.5,
+    "minimum_valid_models_per_metric": 2,
+    "uncertain_fit_action": "minimum five-attempt probe only when recent measured joint progress passes; hard total budget unchanged"
+  },
+  "registered_gates": {
+    "recorded_at": {
+      "utc": "2026-11-17T12:24:24.905487+00:00",
+      "melbourne": "2026-11-17T23:24:24.905487+11:00"
+    },
+    "q_values": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "grids": [
+      97,
+      129,
+      161,
+      193
+    ],
+    "length": 23.04,
+    "confirmation_nodes": 193,
+    "maximum_mesh_branches": 4,
+    "maximum_domain_branches": 2,
+    "domain_nodes": 209,
+    "maximum_motion_branches": 2,
+    "bootstrap_steps": 40,
+    "branch_attempt_budget": 500,
+    "mesh_attempt_budget": 300,
+    "domain_attempt_budget": 150,
+    "batch_limits": [
+      5,
+      75
+    ],
+    "observe_limits": [
+      2,
+      20
+    ],
+    "initial_observe": 5,
+    "fit_window": 16,
+    "fit_minimum": 8,
+    "validation_relative_limit": 0.25,
+    "model_disagreement_limit": 0.25,
+    "recent_joint_progress": 0.005,
+    "minimum_before_plateau": 150,
+    "plateau_decisions": 3,
+    "cpu_threads": 4,
+    "disk_reserve_gib": 40,
+    "host_reserve_gib": 6,
+    "gpu_speedup_required": 1.15,
+    "gpu_memory_bytes_per_node": 1100,
+    "benchmark_steps": 3,
+    "force_limit": 0.0001,
+    "acceleration_limit": 0.001,
+    "charge_relative_error": 0.05,
+    "unit_limit": 1e-10,
+    "initial_tail_limit": 0.00075,
+    "tail_guard_limit": 0.001,
+    "shell_width": 2.0,
+    "guard_width": 3.0,
+    "qualification_rtol": 2e-10,
+    "qualification_atol": 2e-11,
+    "mesh_energy_limit": 0.02,
+    "motion": {
+      "beta": 0.3,
+      "axis": 2,
+      "dt": 0.01,
+      "confirmation_dt": 0.005,
+      "duration": 0.2,
+      "observe_time": 0.01,
+      "milestones": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "speed_stop_from_time": 0.1,
+      "energy_relative": 0.001,
+      "momentum_scaled": 0.001,
+      "shape_relative": 0.01,
+      "speed_relative": 0.01,
+      "runtime_tail_safety": 0.0009,
+      "tail_fraction": 0.001,
+      "temporal_field_limit": 0.0001,
+      "temporal_rate_limit": 0.001
+    },
+    "no_overall_wall_time_cap": true,
+    "motion_execution": "conditional short screens, not long-time stability",
+    "scope": "Static adaptive screening with bounded mesh/domain checks and conditional short motion; unchanged continuum action and scientific gates",
+    "fallback_confirmation_nodes": 225,
+    "domain_padding_nodes_per_side": 8,
+    "maximum_turn_snapshots_per_optimizer_epoch": 2
+  },
+  "resources": {
+    "memory_high_gib": 7,
+    "memory_max_gib": 8,
+    "swap_max_gib": 1,
+    "minimum_available_gib": 10,
+    "minimum_swap_free_gib": 1,
+    "disk_reserve_gib": 40,
+    "initial_disk_free_gib": 56
+  },
+  "physical_time_steps": "Conditional; at most300 charged integration/qualification call allocations",
+  "scope": "Separate one-factor preparations and optimizer comparisons; no model mutation or unadmitted physical-time evolution",
+  "retention": "Every accepted update is measured; two alternating full restart states plus best joint-residual checkpoint and endpoint retained per arm. Best force and best acceleration observations remain distinct.",
+  "cpu_threads": 4,
+  "hessian_basis": 8,
+  "hessian_epsilons": [
+    0.001,
+    0.0005
+  ],
+  "mesh_energy_limit": 0.02,
+  "motion": "Q2 and mesh-admitted Q21: paired rest/boost, dt0.01 and0.005, duration0.2; explicit deferral if no candidate qualifies",
+  "no_wall_time_cap": true,
+  "maximum_motion_integration_calls": 300
+}

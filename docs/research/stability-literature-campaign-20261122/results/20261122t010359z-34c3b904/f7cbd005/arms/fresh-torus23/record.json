@@ -1,0 +1,188 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-22T07:03:02.815268+00:00",
+    "melbourne": "2026-11-22T18:03:02.815268+11:00"
+  },
+  "arm": {
+    "id": "fresh-torus23",
+    "kind": "fresh",
+    "family": "torus23",
+    "alpha": 5,
+    "beta": 3,
+    "map_amplitude": 1.0,
+    "optimizer": "cg",
+    "cap": 100
+  },
+  "status": "preparation_unresolved",
+  "reason": "representation_unresolved",
+  "charged_attempts": 0,
+  "accepted_steps": 0,
+  "initialization": {
+    "factor_changed": "fresh",
+    "source_shape": [
+      97,
+      97,
+      97
+    ],
+    "source_lengths": [
+      23.04,
+      23.04,
+      23.04
+    ],
+    "optimizer_memory_reset": true,
+    "degree_formula": "3*alpha+2*beta",
+    "algebraic_degree": 21,
+    "initial_family_is_not_final_knot_identification": true,
+    "shape": [
+      97,
+      97,
+      97
+    ],
+    "lengths": [
+      23.04,
+      23.04,
+      23.04
+    ],
+    "spacing": [
+      0.24,
+      0.24,
+      0.24
+    ],
+    "held_layer_correction": 0.0,
+    "optimizer_counter_offset": 335,
+    "offset_is_not_new_work": true,
+    "alpha_initial": 0.18170968107390317
+  },
+  "backend": {
+    "requested": "auto",
+    "selected": "cuda",
+    "automatic_cpu_reason": null,
+    "source_backend": "cuda",
+    "backend_transfer": false,
+    "bitwise_trajectory_claimed": false,
+    "device": {
+      "execution_backend": "cuda-cupy-float64",
+      "device_id": 0,
+      "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+      "compute_capability": "75",
+      "cupy": "14.2.0",
+      "cuda_runtime": 12090,
+      "cuda_driver": 13000,
+      "precision": "float64"
+    },
+    "audit": {
+      "passed": true,
+      "energy_abs_difference": 0.0,
+      "gradient_max_abs_difference": 0.0,
+      "reference": "independent CPU sf_readmission.static_value_gradient"
+    }
+  },
+  "history": [
+    {
+      "recorded_at": {
+        "utc": "2026-11-22T07:02:54.750564+00:00",
+        "melbourne": "2026-11-22T18:02:54.750564+11:00"
+      },
+      "step": 0,
+      "iteration": 335,
+      "metrics": {
+        "energy": 13.374115175055072,
+        "relative_force_l2": 3.0487442804097973,
+        "acceleration_max": 142.1812085688014,
+        "acceleration_rms": 1.148062908068032,
+        "minimum_corner_cone": -0.9968528962329515,
+        "hopf_integral": -1.1132637732383281,
+        "unit_error": 4.440892098500626e-16,
+        "max_neighbour_angle": 2.9201122761206264,
+        "mean_topological_b": [
+          -6.498360325716511e-19,
+          5.196367199308512e-18,
+          0.002761782116257288
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0,
+        "guard_fraction": 2.5954477232576717e-15
+      },
+      "gates": {
+        "representation": false,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      }
+    }
+  ],
+  "final": {
+    "recorded_at": {
+      "utc": "2026-11-22T07:02:54.750564+00:00",
+      "melbourne": "2026-11-22T18:02:54.750564+11:00"
+    },
+    "step": 0,
+    "iteration": 335,
+    "metrics": {
+      "energy": 13.374115175055072,
+      "relative_force_l2": 3.0487442804097973,
+      "acceleration_max": 142.1812085688014,
+      "acceleration_rms": 1.148062908068032,
+      "minimum_corner_cone": -0.9968528962329515,
+      "hopf_integral": -1.1132637732383281,
+      "unit_error": 4.440892098500626e-16,
+      "max_neighbour_angle": 2.9201122761206264,
+      "mean_topological_b": [
+        -6.498360325716511e-19,
+        5.196367199308512e-18,
+        0.002761782116257288
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0,
+      "guard_fraction": 2.5954477232576717e-15
+    },
+    "gates": {
+      "representation": false,
+      "strict_stationary": false,
+      "boundary_admitted": true,
+      "all_readiness_gates": false
+    }
+  },
+  "decisions": [],
+  "geometry": {
+    "e2": 4.271049576857437,
+    "e4": 9.103065598197638,
+    "continuum_scaling_proxy": -0.3612961274890698,
+    "scaling_proxy_scope": "Continuum E2=E4 is a diagnostic, not a finite-box/discrete stationarity certificate. Actual mapped-scale energies are recorded separately.",
+    "energy_centroid": [
+      -4.1636796044134433e-16,
+      4.490615025536597e-16,
+      3.928385044150286e-16
+    ],
+    "energy_covariance_eigenvalues": [
+      10.932038050021644,
+      12.164886603383055,
+      12.184006851235175
+    ],
+    "rms_extent": 5.939775374931267,
+    "core_voxel_volume_n3_negative": 2.5712639999999998,
+    "scope": "Energy/core geometry proxies; not exact core length, twist, writhe or knot classification."
+  },
+  "curves": {
+    "extraction": {
+      "status": "open_or_nonmanifold_preimage",
+      "non_degree_two_vertices": 68,
+      "ambiguous_tetrahedra": 0,
+      "segments": 148
+    },
+    "curves": [],
+    "scope": "Rod-motivated length/bending/writhe diagnostics; the energy functional is unchanged. No geometric quantity grants stability or topology admission."
+  },
+  "endpoint": {
+    "path": "endpoint.npz",
+    "sha256": "41a3cfdc11185c25ea96599eae45d86dd56654368f625051f5a476e907368685"
+  },
+  "best": {
+    "path": "best-a00000.npz",
+    "sha256": "41a3cfdc11185c25ea96599eae45d86dd56654368f625051f5a476e907368685",
+    "step": 0,
+    "score": 142181.2085688014
+  },
+  "physical_time_steps": 0,
+  "physical_Q_rejection": false
+}
