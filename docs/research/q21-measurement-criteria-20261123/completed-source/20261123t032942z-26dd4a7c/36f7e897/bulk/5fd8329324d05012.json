@@ -1,0 +1,195 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T04:02:47.393176+00:00",
+    "melbourne": "2026-11-23T15:02:47.393176+11:00"
+  },
+  "id": "5fd8329324d05012",
+  "q_label": 22,
+  "relative_home_path": "ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/broad/q22-cable-source-family/optimizer/endpoint.npz",
+  "audit_bytes": 87117680,
+  "role": "retained_endpoint_not_automatically_admitted",
+  "operator_policy": "D4 replay only with explicit native D4 geometry/identity; historical cell fields remain separate/deferred",
+  "pilot_diagnostic": false,
+  "audit_source_evidence_sha256": "1967a35025b750e89f52aa6d6ca6c34d525628c9573521e17e62dd01d63705d0",
+  "audit_source_evidence_relative_home_path": "ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/evidence.zip",
+  "status": "native_D4_replayed",
+  "physical_Q_rejected": false,
+  "optimizer_attempts": 0,
+  "physical_time_steps": 0,
+  "source_sha256": "30eb765086bae2a8cf2d138d1765124727a5a2fd8dfbd01ffa3de10ccffb278e",
+  "source_evidence_sha256": "1967a35025b750e89f52aa6d6ca6c34d525628c9573521e17e62dd01d63705d0",
+  "authenticated_declarations": [
+    "broad/q22-cable-source-family/optimizer/after-reset-00200.json",
+    "broad/q22-cable-source-family/optimizer/endpoint.json",
+    "broad/q22-cable-source-family/optimizer/result.json",
+    "field-manifest.json",
+    "record.json"
+  ],
+  "native_operator": "D4-action-projected-RK4-v1",
+  "native_iteration": 200,
+  "alpha": null,
+  "memory_present": {
+    "old_g": false,
+    "old_z": false,
+    "direction": false
+  },
+  "shape": [
+    161,
+    161,
+    161
+  ],
+  "lengths": [
+    23.04,
+    23.04,
+    23.04
+  ],
+  "spacing": [
+    0.144,
+    0.144,
+    0.144
+  ],
+  "geometry_origin": "native NPZ h",
+  "array_sha256": "b72a2cc3afc60f573df7a20f5da0c66b9139806d50fd68b8d15663845eff6d8d",
+  "metrics": {
+    "energy": 12.483662277782269,
+    "relative_force_l2": 0.0016192599968131163,
+    "acceleration_max": 0.0765043238365327,
+    "acceleration_rms": 0.00042354768297312264,
+    "minimum_corner_cone": 0.9259148689983874,
+    "hopf_integral": -21.95959915541684,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.4736232907050447,
+    "mean_topological_b": [
+      8.476290970509059e-10,
+      8.349305044407458e-07,
+      -2.5999156574843944e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.0010360829359697306,
+    "guard_fraction": 0.0022141255592885525
+  },
+  "gates": {
+    "representation": true,
+    "strict_stationary": false,
+    "boundary_admitted": false,
+    "all_readiness_gates": false
+  },
+  "classes": [
+    "boundary_limited",
+    "core_or_optimizer_unresolved"
+  ],
+  "localized": {
+    "recorded_at": {
+      "utc": "2026-11-23T04:03:58.522560+00:00",
+      "melbourne": "2026-11-23T15:03:58.522560+11:00"
+    },
+    "energy": 12.483662277782269,
+    "source_array_sha256": "b72a2cc3afc60f573df7a20f5da0c66b9139806d50fd68b8d15663845eff6d8d",
+    "regions": {
+      "force": {
+        "maximum": 0.16075933366260933,
+        "quantiles": {
+          "0.5": 5.0262815589988906e-06,
+          "0.9": 0.00021527765495965288,
+          "0.95": 0.0006705769990147625,
+          "0.99": 0.006520818070886159,
+          "0.999": 0.02591421060809374
+        },
+        "peak_index": [
+          89,
+          67,
+          80
+        ],
+        "peak_position": [
+          1.2959999999999994,
+          -1.8719999999999999,
+          0.0
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 1.488035159959318e-05,
+            "voxel_count": 2488122
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 0.0,
+            "voxel_count": 0
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9981517801769761,
+            "voxel_count": 291284
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.0018333394714240626,
+            "voxel_count": 1393875
+          }
+        },
+        "spectrum": {
+          "status": "deferred_nonpilot_spectrum",
+          "reason": "Full DST is reserved for the registered stratified diagnostic subset"
+        }
+      },
+      "acceleration": {
+        "maximum": 0.0765043238365327,
+        "quantiles": {
+          "0.5": 5.023337053440727e-06,
+          "0.9": 0.00018752245198034822,
+          "0.95": 0.0004590919008304691,
+          "0.99": 0.0024803053591526767,
+          "0.999": 0.009173108339628179
+        },
+        "peak_index": [
+          87,
+          94,
+          79
+        ],
+        "peak_position": [
+          1.0079999999999991,
+          2.016,
+          -0.14400000000000013
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 0.00010447356190814439,
+            "voxel_count": 2488122
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 0.0,
+            "voxel_count": 0
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9907109436491456,
+            "voxel_count": 291284
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.009184582788946061,
+            "voxel_count": 1393875
+          }
+        },
+        "spectrum": {
+          "status": "deferred_nonpilot_spectrum",
+          "reason": "Full DST is reserved for the registered stratified diagnostic subset"
+        }
+      }
+    },
+    "wall_seconds": 26.568285323912278,
+    "hessian_directions": 0,
+    "source_modified": false,
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0,
+    "scope": "Same disjoint core/guard/former-layer definitions as prior audit; no full Hessian or stability claim"
+  },
+  "source_modified": false,
+  "timing": {
+    "source_field_hash_seconds": 0.23939337907359004,
+    "field_load_seconds": 0.36857748101465404,
+    "metrics_seconds": 43.05989768309519,
+    "localization_seconds": 26.568285323912278
+  },
+  "wall_seconds": 71.49975117994472
+}

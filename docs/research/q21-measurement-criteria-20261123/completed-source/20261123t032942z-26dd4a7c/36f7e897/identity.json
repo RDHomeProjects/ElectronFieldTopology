@@ -1,0 +1,105 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T03:29:42.959570+00:00",
+    "melbourne": "2026-11-23T14:29:42.959570+11:00"
+  },
+  "run_id": "20261123t032942z-26dd4a7c",
+  "package_sha256": "ef89d597ade3f9a289759bb7da650c74f7f4296b0f6bc5a9863f688c5d37b806",
+  "plan_sha256": "1511ddb6e836bc72ec329b78ad0ac1a21c61ded32a027f1f756437ed22c493ab",
+  "source_evidence_sha256": "c0fd32690d23b80fad77e33d1bc27048983ec1cb3335ac36c91004d75c938962",
+  "source_identity": "013d37612b81c80328b9a7fe24c1d0a1d8dfda3315790bad9b89a1081a5303c2",
+  "requested_backend": "auto",
+  "backend": {
+    "requested": "auto",
+    "selected": "cuda",
+    "device": {
+      "execution_backend": "cuda-cupy-float64",
+      "device_id": 0,
+      "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+      "compute_capability": "75",
+      "cupy": "14.2.0",
+      "cuda_runtime": 12090,
+      "cuda_driver": 13000,
+      "precision": "float64"
+    },
+    "cpu": {
+      "recorded_at": {
+        "utc": "2026-11-23T03:29:19.681095+00:00",
+        "melbourne": "2026-11-23T14:29:19.681095+11:00"
+      },
+      "kind": "cpu",
+      "device": null,
+      "admission": {
+        "nodes": 129,
+        "backend": "cpu",
+        "estimated_host_gib": 1.6995559558272362,
+        "host_available_gib": 11.17251205444336,
+        "passed": true,
+        "scope": "Conservative admission estimate; actual component timing and memory telemetry remain required"
+      },
+      "audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "post_step_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "qualification_only_steps": 0,
+      "charged_campaign_attempts": 0,
+      "seconds": 3.8212819448672235
+    },
+    "cuda": {
+      "recorded_at": {
+        "utc": "2026-11-23T03:29:24.565242+00:00",
+        "melbourne": "2026-11-23T14:29:24.565242+11:00"
+      },
+      "kind": "cuda",
+      "device": {
+        "execution_backend": "cuda-cupy-float64",
+        "device_id": 0,
+        "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+        "compute_capability": "75",
+        "cupy": "14.2.0",
+        "cuda_runtime": 12090,
+        "cuda_driver": 13000,
+        "precision": "float64"
+      },
+      "admission": {
+        "nodes": 129,
+        "backend": "cuda",
+        "estimated_host_gib": 1.6995559558272362,
+        "host_available_gib": 11.108421325683594,
+        "passed": true,
+        "scope": "Conservative admission estimate; actual component timing and memory telemetry remain required",
+        "estimated_gpu_gib": 2.6991859190165997,
+        "free_gpu_gib": 7.320068359375
+      },
+      "audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "post_step_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "qualification_only_steps": 0,
+      "charged_campaign_attempts": 0,
+      "seconds": 0.11960811307653785
+    },
+    "automatic_cpu_reason": null,
+    "source_backend": "cuda",
+    "backend_transfer": false,
+    "qualification_optimizer_steps": 0,
+    "scope": "Read-only energy-gradient qualification changes no optimizer state; independent CPU metrics/audits remain active. One backend is pinned across resolution branches."
+  },
+  "maximum_optimizer_attempts": 720
+}

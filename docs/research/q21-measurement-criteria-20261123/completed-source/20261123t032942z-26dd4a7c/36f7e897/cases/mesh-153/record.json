@@ -1,0 +1,4411 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T09:04:45.579644+00:00",
+    "melbourne": "2026-11-23T20:04:45.579644+11:00"
+  },
+  "case": {
+    "id": "mesh-153",
+    "nodes": 153,
+    "start": "restart",
+    "shift": 0.25,
+    "max_attempts": 120
+  },
+  "shape": [
+    153,
+    153,
+    153
+  ],
+  "lengths": [
+    30.72,
+    30.72,
+    30.72
+  ],
+  "spacing": [
+    0.20210526315789473,
+    0.20210526315789473,
+    0.20210526315789473
+  ],
+  "reason": "matched_horizon_reached",
+  "status": "preparation_unresolved",
+  "requested_horizon": 80,
+  "charged_attempts": 80,
+  "accepted_steps": 80,
+  "history": [
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:04:58.713652+00:00",
+        "melbourne": "2026-11-23T19:04:58.713652+11:00"
+      },
+      "accepted_step": 0,
+      "iteration": 545,
+      "metrics": {
+        "energy": 12.363038455821918,
+        "relative_force_l2": 0.18601704142051956,
+        "acceleration_max": 9.243418090279647,
+        "acceleration_rms": 0.022450529239564584,
+        "minimum_corner_cone": 0.8514712499954477,
+        "hopf_integral": -20.854884378755752,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6197958279930087,
+        "mean_topological_b": [
+          6.907323188164194e-08,
+          -2.1020944346435994e-07,
+          -3.29168715384874e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024024769993949505,
+        "guard_fraction": 0.0004498831955914983
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "alpha": 0.07804371375790048
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:05:42.557855+00:00",
+        "melbourne": "2026-11-23T19:05:42.557855+11:00"
+      },
+      "accepted_step": 1,
+      "iteration": 546,
+      "charged_attempt": 1,
+      "alpha": 0.12486994201264077,
+      "metrics": {
+        "energy": 12.360662851763202,
+        "relative_force_l2": 0.12065711313576925,
+        "acceleration_max": 5.578770437805237,
+        "acceleration_rms": 0.015615154743742119,
+        "minimum_corner_cone": 0.8532008909413532,
+        "hopf_integral": -20.85790572337071,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6147780261038124,
+        "mean_topological_b": [
+          -4.4276190149306167e-08,
+          -2.0009733447525657e-07,
+          -3.2008719715274204e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024027577744298377,
+        "guard_fraction": 0.0004497256433131254
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.6189491031691432,
+        "backend_audit_seconds": 6.679302025120705,
+        "metrics_seconds": 35.63756768684834,
+        "checkpoint_seconds": 3.344165538903326
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.3606628517632,
+        "objective_calls": 2,
+        "accepted_step_max": 0.01795450862243375
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:06:28.460730+00:00",
+        "melbourne": "2026-11-23T19:06:28.460730+11:00"
+      },
+      "accepted_step": 2,
+      "iteration": 547,
+      "charged_attempt": 2,
+      "alpha": 0.19979190722022525,
+      "metrics": {
+        "energy": 12.35938731510639,
+        "relative_force_l2": 0.07256470377922682,
+        "acceleration_max": 2.392644271778049,
+        "acceleration_rms": 0.009765335975063903,
+        "minimum_corner_cone": 0.851772546381333,
+        "hopf_integral": -20.858583058984053,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.619094760285392,
+        "mean_topological_b": [
+          -1.3532813454100004e-08,
+          -1.907442716483375e-07,
+          -3.178589226568468e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024038574259320847,
+        "guard_fraction": 0.0004495252940600949
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5797087261453271,
+        "backend_audit_seconds": 6.745433716103435,
+        "metrics_seconds": 35.2168007530272,
+        "checkpoint_seconds": 3.42188111692667
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35938731510639,
+        "objective_calls": 2,
+        "accepted_step_max": 0.01926695998735628
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:07:14.754551+00:00",
+        "melbourne": "2026-11-23T19:07:14.754551+11:00"
+      },
+      "accepted_step": 3,
+      "iteration": 548,
+      "charged_attempt": 3,
+      "alpha": 0.1598335257761802,
+      "metrics": {
+        "energy": 12.359386888305128,
+        "relative_force_l2": 0.04918519171353595,
+        "acceleration_max": 2.01503806825842,
+        "acceleration_rms": 0.006219968533016894,
+        "minimum_corner_cone": 0.8523192595197051,
+        "hopf_integral": -20.8595141345914,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6057953839491313,
+        "mean_topological_b": [
+          -8.388164360971565e-08,
+          -1.971367712777813e-07,
+          -3.178896221888603e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002406833776677033,
+        "guard_fraction": 0.0004494259203836067
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7841737451963127,
+        "backend_audit_seconds": 6.653500651009381,
+        "metrics_seconds": 35.393132710130885,
+        "checkpoint_seconds": 3.446093627018854
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.359386888305126,
+        "objective_calls": 3,
+        "accepted_step_max": 0.03632537276287807
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:08:01.733928+00:00",
+        "melbourne": "2026-11-23T19:08:01.733928+11:00"
+      },
+      "accepted_step": 4,
+      "iteration": 549,
+      "charged_attempt": 4,
+      "alpha": 0.06393341031047209,
+      "metrics": {
+        "energy": 12.358459903886352,
+        "relative_force_l2": 0.040601199553295095,
+        "acceleration_max": 2.2897096176853275,
+        "acceleration_rms": 0.005026057868242415,
+        "minimum_corner_cone": 0.852020973562025,
+        "hopf_integral": -20.859633699150724,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6112627171848959,
+        "mean_topological_b": [
+          -6.776057907359503e-08,
+          -1.8987224583554298e-07,
+          -3.164823735427524e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024094718848625913,
+        "guard_fraction": 0.0004494819503517702
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9758786810562015,
+        "backend_audit_seconds": 6.778754606842995,
+        "metrics_seconds": 35.727666816907,
+        "checkpoint_seconds": 1.3581240740604699
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35845990388635,
+        "objective_calls": 4,
+        "accepted_step_max": 0.02984988680432922
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:08:45.599303+00:00",
+        "melbourne": "2026-11-23T19:08:45.599303+11:00"
+      },
+      "accepted_step": 5,
+      "iteration": 550,
+      "charged_attempt": 5,
+      "alpha": 0.10229345649675535,
+      "metrics": {
+        "energy": 12.358318117253472,
+        "relative_force_l2": 0.03634423907759728,
+        "acceleration_max": 2.3879172136583313,
+        "acceleration_rms": 0.00450347061473188,
+        "minimum_corner_cone": 0.8520179229523,
+        "hopf_integral": -20.859511817497783,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6118550124459314,
+        "mean_topological_b": [
+          -2.3656299877122502e-08,
+          -1.8790107141390567e-07,
+          -3.176664898329066e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024131072179851089,
+        "guard_fraction": 0.00044962533613016796
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5798589950427413,
+        "backend_audit_seconds": 6.700169488089159,
+        "metrics_seconds": 35.221832690062,
+        "checkpoint_seconds": 1.3558419980108738
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35831811725347,
+        "objective_calls": 2,
+        "accepted_step_max": 0.009183332564853843
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:09:29.777109+00:00",
+        "melbourne": "2026-11-23T19:09:29.777109+11:00"
+      },
+      "accepted_step": 6,
+      "iteration": 551,
+      "charged_attempt": 6,
+      "alpha": 0.08183476519740429,
+      "metrics": {
+        "energy": 12.35831555071535,
+        "relative_force_l2": 0.029618784255170574,
+        "acceleration_max": 1.8119144859270115,
+        "acceleration_rms": 0.0037202798358717563,
+        "minimum_corner_cone": 0.852442109373274,
+        "hopf_integral": -20.859556491711697,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.60836688273599,
+        "mean_topological_b": [
+          -5.2231504988521564e-08,
+          -1.9631917791737324e-07,
+          -3.184536585436463e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002414366708735501,
+        "guard_fraction": 0.0004497247507124411
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7732361331582069,
+        "backend_audit_seconds": 6.691624664934352,
+        "metrics_seconds": 35.35107356100343,
+        "checkpoint_seconds": 3.462590656010434
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.358315550715352,
+        "objective_calls": 3,
+        "accepted_step_max": 0.014526462844124286
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:10:16.376448+00:00",
+        "melbourne": "2026-11-23T19:10:16.376448+11:00"
+      },
+      "accepted_step": 7,
+      "iteration": 552,
+      "charged_attempt": 7,
+      "alpha": 0.13093562431584688,
+      "metrics": {
+        "energy": 12.358092002871205,
+        "relative_force_l2": 0.012343326374632202,
+        "acceleration_max": 0.42863853191448215,
+        "acceleration_rms": 0.0015722547423423687,
+        "minimum_corner_cone": 0.8530175381437606,
+        "hopf_integral": -20.859529667700464,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6103988573330101,
+        "mean_topological_b": [
+          -4.855170246872587e-08,
+          -2.0083974068217905e-07,
+          -3.1815661540974886e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024183585753251294,
+        "guard_fraction": 0.00045003229367334216
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5995613338891417,
+        "backend_audit_seconds": 6.689305250998586,
+        "metrics_seconds": 35.80235938401893,
+        "checkpoint_seconds": 3.413928760914132
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.358092002871205,
+        "objective_calls": 2,
+        "accepted_step_max": 0.011569964872518336
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:11:03.677675+00:00",
+        "melbourne": "2026-11-23T19:11:03.677675+11:00"
+      },
+      "accepted_step": 8,
+      "iteration": 553,
+      "charged_attempt": 8,
+      "alpha": 0.1047484994526775,
+      "metrics": {
+        "energy": 12.358064586720086,
+        "relative_force_l2": 0.010823649490768094,
+        "acceleration_max": 0.3140419345287785,
+        "acceleration_rms": 0.00137480134617685,
+        "minimum_corner_cone": 0.8530205480246419,
+        "hopf_integral": -20.85966815881205,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6105473279838864,
+        "mean_topological_b": [
+          5.4382172846570746e-09,
+          -1.9377571530127075e-07,
+          -3.180370253898821e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002420371642491156,
+        "guard_fraction": 0.00045019862635126877
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7720512708183378,
+        "backend_audit_seconds": 6.805621062172577,
+        "metrics_seconds": 36.26276085502468,
+        "checkpoint_seconds": 3.8789854098577052
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.358064586720088,
+        "objective_calls": 3,
+        "accepted_step_max": 0.008809937335680392
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:11:51.151466+00:00",
+        "melbourne": "2026-11-23T19:11:51.151466+11:00"
+      },
+      "accepted_step": 9,
+      "iteration": 554,
+      "charged_attempt": 9,
+      "alpha": 0.167597599124284,
+      "metrics": {
+        "energy": 12.358007628836901,
+        "relative_force_l2": 0.010358116376120202,
+        "acceleration_max": 0.44274741809529544,
+        "acceleration_rms": 0.001263119503246849,
+        "minimum_corner_cone": 0.8531443109806035,
+        "hopf_integral": -20.860040087591884,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6095443382937806,
+        "mean_topological_b": [
+          -4.630420185323774e-09,
+          -1.962350344182437e-07,
+          -3.1728529008911504e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024256198791939313,
+        "guard_fraction": 0.0004506424749617883
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5769820241257548,
+        "backend_audit_seconds": 7.328449327033013,
+        "metrics_seconds": 35.632618146017194,
+        "checkpoint_seconds": 1.3601101348176599
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.358007628836903,
+        "objective_calls": 2,
+        "accepted_step_max": 0.004663373015839301
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:12:35.957685+00:00",
+        "melbourne": "2026-11-23T19:12:35.957685+11:00"
+      },
+      "accepted_step": 10,
+      "iteration": 555,
+      "charged_attempt": 10,
+      "alpha": 0.06703903964971361,
+      "metrics": {
+        "energy": 12.357975284232083,
+        "relative_force_l2": 0.007446632717324971,
+        "acceleration_max": 0.37771049446088856,
+        "acceleration_rms": 0.000995033343061423,
+        "minimum_corner_cone": 0.8533991635212528,
+        "hopf_integral": -20.86002349503166,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6094377964693388,
+        "mean_topological_b": [
+          -3.6060546877089874e-08,
+          -2.0025339554579194e-07,
+          -3.1731178078961935e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024263440901224205,
+        "guard_fraction": 0.0004507126684733221
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9755567079409957,
+        "backend_audit_seconds": 6.7042859280481935,
+        "metrics_seconds": 35.76052831904963,
+        "checkpoint_seconds": 1.3811911749653518
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357975284232086,
+        "objective_calls": 4,
+        "accepted_step_max": 0.004192047209307571
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:13:20.043105+00:00",
+        "melbourne": "2026-11-23T19:13:20.043105+11:00"
+      },
+      "accepted_step": 11,
+      "iteration": 556,
+      "charged_attempt": 11,
+      "alpha": 0.10726246343954178,
+      "metrics": {
+        "energy": 12.357959312795355,
+        "relative_force_l2": 0.005880484929299539,
+        "acceleration_max": 0.22286107897413177,
+        "acceleration_rms": 0.0007908154621159312,
+        "minimum_corner_cone": 0.8533870876175625,
+        "hopf_integral": -20.86004057206051,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6095944573045958,
+        "mean_topological_b": [
+          -3.185884315764562e-08,
+          -2.0141907646720211e-07,
+          -3.173479521360717e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024276598368520568,
+        "guard_fraction": 0.00045084292246123383
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.565475475974381,
+        "backend_audit_seconds": 6.68904076796025,
+        "metrics_seconds": 35.44264547294006,
+        "checkpoint_seconds": 3.445752833969891
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357959312795357,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0022029705047316747
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:14:05.899315+00:00",
+        "melbourne": "2026-11-23T19:14:05.899315+11:00"
+      },
+      "accepted_step": 12,
+      "iteration": 557,
+      "charged_attempt": 12,
+      "alpha": 0.17161994150326687,
+      "metrics": {
+        "energy": 12.357942051992461,
+        "relative_force_l2": 0.00536412940249929,
+        "acceleration_max": 0.13958491600183978,
+        "acceleration_rms": 0.0007426741029386591,
+        "minimum_corner_cone": 0.8533145214806303,
+        "hopf_integral": -20.86020844904392,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6097602687127358,
+        "mean_topological_b": [
+          -1.3394765487595591e-08,
+          -1.986611537926838e-07,
+          -3.170230631952679e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024297737957299298,
+        "guard_fraction": 0.00045105688604311114
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5656215669587255,
+        "backend_audit_seconds": 6.694353183032945,
+        "metrics_seconds": 35.09767460706644,
+        "checkpoint_seconds": 3.4576317050959915
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35794205199246,
+        "objective_calls": 2,
+        "accepted_step_max": 0.004101079666539729
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:14:52.036868+00:00",
+        "melbourne": "2026-11-23T19:14:52.036868+11:00"
+      },
+      "accepted_step": 13,
+      "iteration": 558,
+      "charged_attempt": 13,
+      "alpha": 0.1372959532026135,
+      "metrics": {
+        "energy": 12.357913877350146,
+        "relative_force_l2": 0.005503393679725913,
+        "acceleration_max": 0.1469178791810028,
+        "acceleration_rms": 0.0007412840489458644,
+        "minimum_corner_cone": 0.8535860529843636,
+        "hopf_integral": -20.860409884296466,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6082881992050827,
+        "mean_topological_b": [
+          -4.188519028342501e-08,
+          -2.040340233353108e-07,
+          -3.1678797012373136e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024324477169890255,
+        "guard_fraction": 0.0004513347633235007
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.76826938893646,
+        "backend_audit_seconds": 6.723264815052971,
+        "metrics_seconds": 35.14064881205559,
+        "checkpoint_seconds": 1.3476015301421285
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357913877350146,
+        "objective_calls": 3,
+        "accepted_step_max": 0.005053501033664722
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:15:36.023556+00:00",
+        "melbourne": "2026-11-23T19:15:36.023556+11:00"
+      },
+      "accepted_step": 14,
+      "iteration": 559,
+      "charged_attempt": 14,
+      "alpha": 0.21967352512418162,
+      "metrics": {
+        "energy": 12.357892776015754,
+        "relative_force_l2": 0.008585959668898724,
+        "acceleration_max": 0.28954636266573625,
+        "acceleration_rms": 0.0010283497139257464,
+        "minimum_corner_cone": 0.8540040977285468,
+        "hopf_integral": -20.8606756121368,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6091487061641402,
+        "mean_topological_b": [
+          -4.635383235790457e-08,
+          -2.047199220068325e-07,
+          -3.161834073788168e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002437982412108337,
+        "guard_fraction": 0.0004519216097221464
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5832959699910134,
+        "backend_audit_seconds": 6.654442195082083,
+        "metrics_seconds": 35.39331595506519,
+        "checkpoint_seconds": 1.3516747730318457
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357892776015754,
+        "objective_calls": 2,
+        "accepted_step_max": 0.008419721162052644
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:16:20.231004+00:00",
+        "melbourne": "2026-11-23T19:16:20.231004+11:00"
+      },
+      "accepted_step": 15,
+      "iteration": 560,
+      "charged_attempt": 15,
+      "alpha": 0.08786941004967265,
+      "metrics": {
+        "energy": 12.35786288713862,
+        "relative_force_l2": 0.00823471464484715,
+        "acceleration_max": 0.28982833386413837,
+        "acceleration_rms": 0.000966390359699949,
+        "minimum_corner_cone": 0.8536792461881633,
+        "hopf_integral": -20.860860912869427,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6074129517807344,
+        "mean_topological_b": [
+          -2.7443130182313265e-08,
+          -2.07990255073997e-07,
+          -3.1634793500295794e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024404605893249074,
+        "guard_fraction": 0.000452200061028225
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9674664649646729,
+        "backend_audit_seconds": 6.659300221130252,
+        "metrics_seconds": 35.222955158911645,
+        "checkpoint_seconds": 1.3801138000562787
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35786288713862,
+        "objective_calls": 4,
+        "accepted_step_max": 0.007835975976222858
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:17:04.376464+00:00",
+        "melbourne": "2026-11-23T19:17:04.376464+11:00"
+      },
+      "accepted_step": 16,
+      "iteration": 561,
+      "charged_attempt": 16,
+      "alpha": 0.14059105607947625,
+      "metrics": {
+        "energy": 12.357792244652126,
+        "relative_force_l2": 0.005989655802972392,
+        "acceleration_max": 0.16335091804204865,
+        "acceleration_rms": 0.0007228277291605868,
+        "minimum_corner_cone": 0.8536871992068675,
+        "hopf_integral": -20.86118149465445,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6077256862380009,
+        "mean_topological_b": [
+          -1.8034467014750448e-08,
+          -2.0998906677999827e-07,
+          -3.1558296681028376e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002444665523015736,
+        "guard_fraction": 0.00045269227495606566
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5800754681695253,
+        "backend_audit_seconds": 6.647706815041602,
+        "metrics_seconds": 35.52975490689278,
+        "checkpoint_seconds": 1.3577538628596812
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357792244652126,
+        "objective_calls": 2,
+        "accepted_step_max": 0.006321900152347059
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:17:48.568294+00:00",
+        "melbourne": "2026-11-23T19:17:48.568294+11:00"
+      },
+      "accepted_step": 17,
+      "iteration": 562,
+      "charged_attempt": 17,
+      "alpha": 0.0562364224317905,
+      "metrics": {
+        "energy": 12.357774189176771,
+        "relative_force_l2": 0.004149764348893565,
+        "acceleration_max": 0.13133667173313465,
+        "acceleration_rms": 0.000590570278023383,
+        "minimum_corner_cone": 0.8542008026333026,
+        "hopf_integral": -20.86120666719257,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6074643824152969,
+        "mean_topological_b": [
+          -3.7539707420063464e-08,
+          -2.1000896791855127e-07,
+          -3.155310802091432e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024448460626872706,
+        "guard_fraction": 0.00045272768458421857
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9632746300194412,
+        "backend_audit_seconds": 6.647913755849004,
+        "metrics_seconds": 35.21459967806004,
+        "checkpoint_seconds": 3.4226018690969795
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357774189176768,
+        "objective_calls": 4,
+        "accepted_step_max": 0.003609029303531811
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:18:34.765084+00:00",
+        "melbourne": "2026-11-23T19:18:34.765084+11:00"
+      },
+      "accepted_step": 18,
+      "iteration": 563,
+      "charged_attempt": 18,
+      "alpha": 0.08997827589086481,
+      "metrics": {
+        "energy": 12.357767372735193,
+        "relative_force_l2": 0.003992328493885834,
+        "acceleration_max": 0.12656747427418588,
+        "acceleration_rms": 0.0005597774886313329,
+        "minimum_corner_cone": 0.854329610975852,
+        "hopf_integral": -20.86123867951102,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6071943388661779,
+        "mean_topological_b": [
+          -4.3490695714003115e-08,
+          -2.111418317658337e-07,
+          -3.154934510295505e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024449300987770193,
+        "guard_fraction": 0.0004527672300984635
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5856191620696336,
+        "backend_audit_seconds": 6.65244966885075,
+        "metrics_seconds": 35.48803071002476,
+        "checkpoint_seconds": 3.4940810969565064
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357767372735195,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0014840587782198635
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:19:20.966520+00:00",
+        "melbourne": "2026-11-23T19:19:20.966520+11:00"
+      },
+      "accepted_step": 19,
+      "iteration": 564,
+      "charged_attempt": 19,
+      "alpha": 0.1439652414253837,
+      "metrics": {
+        "energy": 12.35775495664805,
+        "relative_force_l2": 0.003802660860861681,
+        "acceleration_max": 0.1172349295048227,
+        "acceleration_rms": 0.0005372957995000676,
+        "minimum_corner_cone": 0.8539082974201936,
+        "hopf_integral": -20.861308234217734,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6075300651002936,
+        "mean_topological_b": [
+          -2.7711587997868582e-08,
+          -2.110294474298897e-07,
+          -3.1532932790939205e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024449976961253496,
+        "guard_fraction": 0.00045283548984524695
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.566658825147897,
+        "backend_audit_seconds": 6.6887600619811565,
+        "metrics_seconds": 35.35933851916343,
+        "checkpoint_seconds": 3.4825972891412675
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357754956648048,
+        "objective_calls": 2,
+        "accepted_step_max": 0.003462293397581127
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:20:06.625796+00:00",
+        "melbourne": "2026-11-23T19:20:06.625796+11:00"
+      },
+      "accepted_step": 20,
+      "iteration": 565,
+      "charged_attempt": 20,
+      "alpha": 0.23034438628061393,
+      "metrics": {
+        "energy": 12.357748035344182,
+        "relative_force_l2": 0.006433712389910186,
+        "acceleration_max": 0.1319899854274582,
+        "acceleration_rms": 0.0007254909084763961,
+        "minimum_corner_cone": 0.8544562633311114,
+        "hopf_integral": -20.861501370670375,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6068991757872377,
+        "mean_topological_b": [
+          -4.3915321282166904e-08,
+          -2.1095590365561572e-07,
+          -3.1497642703207827e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024451708059057065,
+        "guard_fraction": 0.00045300311977748654
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5911569448653609,
+        "backend_audit_seconds": 6.651494656922296,
+        "metrics_seconds": 34.88640600210056,
+        "checkpoint_seconds": 1.3533812139648944
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357748035344185,
+        "objective_calls": 2,
+        "accepted_step_max": 0.006055623467430489
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:20:50.733447+00:00",
+        "melbourne": "2026-11-23T19:20:50.733447+11:00"
+      },
+      "accepted_step": 21,
+      "iteration": 566,
+      "charged_attempt": 21,
+      "alpha": 0.09213775451224558,
+      "metrics": {
+        "energy": 12.357726988601337,
+        "relative_force_l2": 0.006147402089712495,
+        "acceleration_max": 0.11860181096776744,
+        "acceleration_rms": 0.0007130478001506675,
+        "minimum_corner_cone": 0.8541605770328267,
+        "hopf_integral": -20.861573947049326,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6068542789487841,
+        "mean_topological_b": [
+          -3.268121000592941e-08,
+          -2.1500251198680427e-07,
+          -3.147133173249178e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024453517132475266,
+        "guard_fraction": 0.0004531002725454499
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9912552328314632,
+        "backend_audit_seconds": 6.655339567922056,
+        "metrics_seconds": 35.09846698702313,
+        "checkpoint_seconds": 1.3565113069489598
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357726988601335,
+        "objective_calls": 4,
+        "accepted_step_max": 0.006505507915247364
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:21:34.546721+00:00",
+        "melbourne": "2026-11-23T19:21:34.546721+11:00"
+      },
+      "accepted_step": 22,
+      "iteration": 567,
+      "charged_attempt": 22,
+      "alpha": 0.14742040721959293,
+      "metrics": {
+        "energy": 12.357675503726314,
+        "relative_force_l2": 0.004549722019829149,
+        "acceleration_max": 0.11281239590941729,
+        "acceleration_rms": 0.0005641552138165919,
+        "minimum_corner_cone": 0.8542362819738079,
+        "hopf_integral": -20.861734004398638,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6066358959992026,
+        "mean_topological_b": [
+          -3.4714598446595165e-08,
+          -2.153266836103027e-07,
+          -3.144973168859672e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002445871084732674,
+        "guard_fraction": 0.0004533087167358312
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5640869198832661,
+        "backend_audit_seconds": 6.653673608088866,
+        "metrics_seconds": 35.2305660629645,
+        "checkpoint_seconds": 3.4379563338588923
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357675503726314,
+        "objective_calls": 2,
+        "accepted_step_max": 0.005024235188182059
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:22:20.709836+00:00",
+        "melbourne": "2026-11-23T19:22:20.709836+11:00"
+      },
+      "accepted_step": 23,
+      "iteration": 568,
+      "charged_attempt": 23,
+      "alpha": 0.058968162887837176,
+      "metrics": {
+        "energy": 12.357667021952642,
+        "relative_force_l2": 0.0034177745821765524,
+        "acceleration_max": 0.10352649650617572,
+        "acceleration_rms": 0.0005014609933176041,
+        "minimum_corner_cone": 0.854335256402687,
+        "hopf_integral": -20.861761448526458,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6067701555906605,
+        "mean_topological_b": [
+          -3.934063347442924e-08,
+          -2.1444598322108646e-07,
+          -3.1439290478916143e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002445998031591668,
+        "guard_fraction": 0.00045333139579878173
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9776330320164561,
+        "backend_audit_seconds": 6.692500175908208,
+        "metrics_seconds": 35.00519463210367,
+        "checkpoint_seconds": 3.4541868050582707
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357667021952645,
+        "objective_calls": 4,
+        "accepted_step_max": 0.0024185146649533416
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:23:06.310248+00:00",
+        "melbourne": "2026-11-23T19:23:06.310248+11:00"
+      },
+      "accepted_step": 24,
+      "iteration": 569,
+      "charged_attempt": 24,
+      "alpha": 0.0943490606205395,
+      "metrics": {
+        "energy": 12.357661830115877,
+        "relative_force_l2": 0.0035170226202416222,
+        "acceleration_max": 0.07905248844189941,
+        "acceleration_rms": 0.000511051536162972,
+        "minimum_corner_cone": 0.8543854495427629,
+        "hopf_integral": -20.86181204380413,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6065396912350345,
+        "mean_topological_b": [
+          -3.989133884995545e-08,
+          -2.1474384438901e-07,
+          -3.1429002204273446e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002446316080543469,
+        "guard_fraction": 0.00045338892228937984
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5879643829539418,
+        "backend_audit_seconds": 6.651295240968466,
+        "metrics_seconds": 34.85888860700652,
+        "checkpoint_seconds": 3.4595512500964105
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357661830115873,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0015198648615439888
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:23:52.526370+00:00",
+        "melbourne": "2026-11-23T19:23:52.526370+11:00"
+      },
+      "accepted_step": 25,
+      "iteration": 570,
+      "charged_attempt": 25,
+      "alpha": 0.1509584969928632,
+      "metrics": {
+        "energy": 12.35765711140382,
+        "relative_force_l2": 0.004037552644466214,
+        "acceleration_max": 0.07091144131129758,
+        "acceleration_rms": 0.0005246088981420663,
+        "minimum_corner_cone": 0.8543652664288963,
+        "hopf_integral": -20.861851208158615,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6063016804282523,
+        "mean_topological_b": [
+          -3.386417043442891e-08,
+          -2.1625442259706788e-07,
+          -3.142418259261759e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002446893741318912,
+        "guard_fraction": 0.00045349390519276435
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.6159544549882412,
+        "backend_audit_seconds": 6.651204454014078,
+        "metrics_seconds": 35.440530334133655,
+        "checkpoint_seconds": 3.439473999897018
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357657111403817,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0028871692012946313
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:24:39.005763+00:00",
+        "melbourne": "2026-11-23T19:24:39.005763+11:00"
+      },
+      "accepted_step": 26,
+      "iteration": 571,
+      "charged_attempt": 26,
+      "alpha": 0.12076679759429057,
+      "metrics": {
+        "energy": 12.357647087413724,
+        "relative_force_l2": 0.004505650080846274,
+        "acceleration_max": 0.0963587179563878,
+        "acceleration_rms": 0.000561913938242197,
+        "minimum_corner_cone": 0.8544940509863661,
+        "hopf_integral": -20.86190818662136,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6067200894189827,
+        "mean_topological_b": [
+          -4.1589536302453484e-08,
+          -2.150483466709239e-07,
+          -3.140802427003818e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024476393416592886,
+        "guard_fraction": 0.00045362920061947556
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.8042877670377493,
+        "backend_audit_seconds": 6.695177574874833,
+        "metrics_seconds": 35.4745538320858,
+        "checkpoint_seconds": 1.3533345889300108
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357647087413724,
+        "objective_calls": 3,
+        "accepted_step_max": 0.004165233651873293
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:25:22.927584+00:00",
+        "melbourne": "2026-11-23T19:25:22.927584+11:00"
+      },
+      "accepted_step": 27,
+      "iteration": 572,
+      "charged_attempt": 27,
+      "alpha": 0.19322687615086492,
+      "metrics": {
+        "energy": 12.357624730217585,
+        "relative_force_l2": 0.00525257691453588,
+        "acceleration_max": 0.09661466510127095,
+        "acceleration_rms": 0.0006208192082743779,
+        "minimum_corner_cone": 0.8542870006412933,
+        "hopf_integral": -20.862078915369136,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6059011737521263,
+        "mean_topological_b": [
+          -3.439361324239661e-08,
+          -2.1870113988077556e-07,
+          -3.138222925110531e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002449298415009505,
+        "guard_fraction": 0.00045393237156398384
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5827366199810058,
+        "backend_audit_seconds": 6.709861342795193,
+        "metrics_seconds": 35.26873099501245,
+        "checkpoint_seconds": 1.3917207329068333
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357624730217587,
+        "objective_calls": 2,
+        "accepted_step_max": 0.006373505905935513
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:26:06.281194+00:00",
+        "melbourne": "2026-11-23T19:26:06.281194+11:00"
+      },
+      "accepted_step": 28,
+      "iteration": 573,
+      "charged_attempt": 28,
+      "alpha": 0.07729075046034597,
+      "metrics": {
+        "energy": 12.357595197312605,
+        "relative_force_l2": 0.0035222924232323947,
+        "acceleration_max": 0.09685922293141182,
+        "acceleration_rms": 0.0005151429754381202,
+        "minimum_corner_cone": 0.8546579088674239,
+        "hopf_integral": -20.862159221784687,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.606278663472505,
+        "mean_topological_b": [
+          -3.926443255388415e-08,
+          -2.1744631206021782e-07,
+          -3.1352372921359294e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002450170243860916,
+        "guard_fraction": 0.00045409184624825653
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9704652710352093,
+        "backend_audit_seconds": 6.632251429138705,
+        "metrics_seconds": 34.35125902900472,
+        "checkpoint_seconds": 1.3575176899321377
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357595197312605,
+        "objective_calls": 4,
+        "accepted_step_max": 0.004029060736273133
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:26:50.063329+00:00",
+        "melbourne": "2026-11-23T19:26:50.063329+11:00"
+      },
+      "accepted_step": 29,
+      "iteration": 574,
+      "charged_attempt": 29,
+      "alpha": 0.12366520073655357,
+      "metrics": {
+        "energy": 12.357579597076484,
+        "relative_force_l2": 0.003371946407307277,
+        "acceleration_max": 0.09008584268122763,
+        "acceleration_rms": 0.00047327282901533024,
+        "minimum_corner_cone": 0.8547945157953041,
+        "hopf_integral": -20.86224943201642,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6058074265276537,
+        "mean_topological_b": [
+          -3.988443301173889e-08,
+          -2.184506951838462e-07,
+          -3.1338861994450886e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024511750604900374,
+        "guard_fraction": 0.00045427800037363403
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5668456249404699,
+        "backend_audit_seconds": 6.651839492144063,
+        "metrics_seconds": 35.19823225494474,
+        "checkpoint_seconds": 1.3851273988839239
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357579597076484,
+        "objective_calls": 2,
+        "accepted_step_max": 0.00233157667324434
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:27:33.444104+00:00",
+        "melbourne": "2026-11-23T19:27:33.444104+11:00"
+      },
+      "accepted_step": 30,
+      "iteration": 575,
+      "charged_attempt": 30,
+      "alpha": 0.09893216058924287,
+      "metrics": {
+        "energy": 12.357568881237167,
+        "relative_force_l2": 0.003332753350555037,
+        "acceleration_max": 0.07698290470154141,
+        "acceleration_rms": 0.0004724384570723145,
+        "minimum_corner_cone": 0.8545675689441582,
+        "hopf_integral": -20.862308330374383,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6058930814769272,
+        "mean_topological_b": [
+          -3.482782459591765e-08,
+          -2.196410834129977e-07,
+          -3.132062819553279e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002451964862087886,
+        "guard_fraction": 0.00045442459474183427
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7643665049690753,
+        "backend_audit_seconds": 6.635166322812438,
+        "metrics_seconds": 34.58658682787791,
+        "checkpoint_seconds": 1.3468366391025484
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357568881237167,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0027352898306094737
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:28:16.963341+00:00",
+        "melbourne": "2026-11-23T19:28:16.963341+11:00"
+      },
+      "accepted_step": 31,
+      "iteration": 576,
+      "charged_attempt": 31,
+      "alpha": 0.1582914569427886,
+      "metrics": {
+        "energy": 12.357544100965372,
+        "relative_force_l2": 0.00322364401458924,
+        "acceleration_max": 0.07011523565783176,
+        "acceleration_rms": 0.0004597981907163659,
+        "minimum_corner_cone": 0.8546668260646301,
+        "hopf_integral": -20.862446965420645,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6059200757543265,
+        "mean_topological_b": [
+          -3.758444990510684e-08,
+          -2.196013248590552e-07,
+          -3.129111469214913e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002453657918044253,
+        "guard_fraction": 0.00045474032907625277
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.6077591029461473,
+        "backend_audit_seconds": 6.645849648863077,
+        "metrics_seconds": 34.90954886004329,
+        "checkpoint_seconds": 3.448407168034464
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35754410096537,
+        "objective_calls": 2,
+        "accepted_step_max": 0.003928628362918261
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:29:03.300702+00:00",
+        "melbourne": "2026-11-23T19:29:03.300702+11:00"
+      },
+      "accepted_step": 32,
+      "iteration": 577,
+      "charged_attempt": 32,
+      "alpha": 0.25326633110846175,
+      "metrics": {
+        "energy": 12.357516872038874,
+        "relative_force_l2": 0.005487951626317826,
+        "acceleration_max": 0.09732977047833005,
+        "acceleration_rms": 0.0006188374246372435,
+        "minimum_corner_cone": 0.8552835745810216,
+        "hopf_integral": -20.86273095809092,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6047199834682225,
+        "mean_topological_b": [
+          -4.042549295294518e-08,
+          -2.2352283848734975e-07,
+          -3.123268478478275e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024569091338344983,
+        "guard_fraction": 0.0004553491725070543
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5761645131278783,
+        "backend_audit_seconds": 6.7531548528932035,
+        "metrics_seconds": 35.504372213967144,
+        "checkpoint_seconds": 1.3532365609426051
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357516872038874,
+        "objective_calls": 2,
+        "accepted_step_max": 0.007541298896073996
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:29:47.265430+00:00",
+        "melbourne": "2026-11-23T19:29:47.265430+11:00"
+      },
+      "accepted_step": 33,
+      "iteration": 578,
+      "charged_attempt": 33,
+      "alpha": 0.10130653244338471,
+      "metrics": {
+        "energy": 12.357493271442912,
+        "relative_force_l2": 0.004908394345833456,
+        "acceleration_max": 0.1014133268504608,
+        "acceleration_rms": 0.0006123379937219963,
+        "minimum_corner_cone": 0.8549486423121279,
+        "hopf_integral": -20.862837047872336,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6056511555784075,
+        "mean_topological_b": [
+          -3.885957323309031e-08,
+          -2.2217960190340887e-07,
+          -3.118772396864511e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024584790114867244,
+        "guard_fraction": 0.0004556421761025445
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9637014139443636,
+        "backend_audit_seconds": 6.673666489077732,
+        "metrics_seconds": 34.966335707111284,
+        "checkpoint_seconds": 1.3507151298690587
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357493271442912,
+        "objective_calls": 4,
+        "accepted_step_max": 0.007388239702418268
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:30:31.344450+00:00",
+        "melbourne": "2026-11-23T19:30:31.344450+11:00"
+      },
+      "accepted_step": 34,
+      "iteration": 579,
+      "charged_attempt": 34,
+      "alpha": 0.16209045190941554,
+      "metrics": {
+        "energy": 12.357473670943584,
+        "relative_force_l2": 0.006660164082553806,
+        "acceleration_max": 0.06692343646027525,
+        "acceleration_rms": 0.000706513896627025,
+        "minimum_corner_cone": 0.854548014688395,
+        "hopf_integral": -20.86305332976034,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6048002965720839,
+        "mean_topological_b": [
+          -2.8600961367217784e-08,
+          -2.2515966051846545e-07,
+          -3.116735726402386e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024614277003225267,
+        "guard_fraction": 0.00045619574393900806
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5651163840666413,
+        "backend_audit_seconds": 6.633824934018776,
+        "metrics_seconds": 35.52024728897959,
+        "checkpoint_seconds": 3.5415202658623457
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357473670943588,
+        "objective_calls": 2,
+        "accepted_step_max": 0.007463170468277712
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:31:17.689918+00:00",
+        "melbourne": "2026-11-23T19:31:17.689918+11:00"
+      },
+      "accepted_step": 35,
+      "iteration": 580,
+      "charged_attempt": 35,
+      "alpha": 0.12967236152753245,
+      "metrics": {
+        "energy": 12.357445141699921,
+        "relative_force_l2": 0.0067454189151137664,
+        "acceleration_max": 0.07368894313453608,
+        "acceleration_rms": 0.0007626905112097097,
+        "minimum_corner_cone": 0.8556482225441914,
+        "hopf_integral": -20.863247993536813,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6050940771304526,
+        "mean_topological_b": [
+          -3.606247642539531e-08,
+          -2.2713266565316487e-07,
+          -3.1092653332814396e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002464134667876544,
+        "guard_fraction": 0.0004567018446263464
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7880990160629153,
+        "backend_audit_seconds": 6.71311378502287,
+        "metrics_seconds": 35.25056388694793,
+        "checkpoint_seconds": 1.3524774280376732
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357445141699921,
+        "objective_calls": 3,
+        "accepted_step_max": 0.010302009775548633
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:32:01.628450+00:00",
+        "melbourne": "2026-11-23T19:32:01.628450+11:00"
+      },
+      "accepted_step": 36,
+      "iteration": 581,
+      "charged_attempt": 36,
+      "alpha": 0.10373788922202597,
+      "metrics": {
+        "energy": 12.357398270773686,
+        "relative_force_l2": 0.00484038929562744,
+        "acceleration_max": 0.06088929289455183,
+        "acceleration_rms": 0.0005395209861472273,
+        "minimum_corner_cone": 0.85586955786675,
+        "hopf_integral": -20.863466231864948,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6037134011283175,
+        "mean_topological_b": [
+          -4.796369197162937e-08,
+          -2.2897462236482977e-07,
+          -3.106721593773508e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002466578790360528,
+        "guard_fraction": 0.0004571606313823159
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7634273329749703,
+        "backend_audit_seconds": 6.760513646993786,
+        "metrics_seconds": 35.052265405189246,
+        "checkpoint_seconds": 3.453595580998808
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357398270773682,
+        "objective_calls": 3,
+        "accepted_step_max": 0.006198907796684109
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:32:47.533178+00:00",
+        "melbourne": "2026-11-23T19:32:47.533178+11:00"
+      },
+      "accepted_step": 37,
+      "iteration": 582,
+      "charged_attempt": 37,
+      "alpha": 0.08299031137762078,
+      "metrics": {
+        "energy": 12.357375129346083,
+        "relative_force_l2": 0.0034594629313614788,
+        "acceleration_max": 0.06354556235951382,
+        "acceleration_rms": 0.00044976414797730224,
+        "minimum_corner_cone": 0.855163138892689,
+        "hopf_integral": -20.863542612241453,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6043149967416269,
+        "mean_topological_b": [
+          -3.3271955362047535e-08,
+          -2.2929448459778402e-07,
+          -3.1038486918389536e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024678012849760307,
+        "guard_fraction": 0.0004573882235093558
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7833010298199952,
+        "backend_audit_seconds": 6.6662242349702865,
+        "metrics_seconds": 34.95373808592558,
+        "checkpoint_seconds": 1.3609061990864575
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357375129346083,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0049528417286455965
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:33:31.223150+00:00",
+        "melbourne": "2026-11-23T19:33:31.223150+11:00"
+      },
+      "accepted_step": 38,
+      "iteration": 583,
+      "charged_attempt": 38,
+      "alpha": 0.13278449820419325,
+      "metrics": {
+        "energy": 12.357364046285323,
+        "relative_force_l2": 0.004568319312799413,
+        "acceleration_max": 0.06928600318570993,
+        "acceleration_rms": 0.0005267480240517848,
+        "minimum_corner_cone": 0.8550468045918173,
+        "hopf_integral": -20.863646466669508,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6046556540973416,
+        "mean_topological_b": [
+          -2.0614442870061682e-08,
+          -2.296215074801134e-07,
+          -3.10118962966281e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024696276678476864,
+        "guard_fraction": 0.0004577276789537734
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5808387449942529,
+        "backend_audit_seconds": 6.667677989928052,
+        "metrics_seconds": 35.07195171597414,
+        "checkpoint_seconds": 1.3536589560098946
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357364046285323,
+        "objective_calls": 2,
+        "accepted_step_max": 0.003449666067655144
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:34:15.221890+00:00",
+        "melbourne": "2026-11-23T19:34:15.221890+11:00"
+      },
+      "accepted_step": 39,
+      "iteration": 584,
+      "charged_attempt": 39,
+      "alpha": 0.1062275985633546,
+      "metrics": {
+        "energy": 12.357348314398706,
+        "relative_force_l2": 0.004515914529906748,
+        "acceleration_max": 0.06544719579610442,
+        "acceleration_rms": 0.000515298492793305,
+        "minimum_corner_cone": 0.855936549090865,
+        "hopf_integral": -20.86378119439227,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6034990541720517,
+        "mean_topological_b": [
+          -4.0588095434127957e-08,
+          -2.3161719350438196e-07,
+          -3.099888024305552e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024713630674946064,
+        "guard_fraction": 0.0004580505673504627
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7675498249009252,
+        "backend_audit_seconds": 6.668767158873379,
+        "metrics_seconds": 35.1997169801034,
+        "checkpoint_seconds": 1.359252448193729
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357348314398704,
+        "objective_calls": 3,
+        "accepted_step_max": 0.005469252937939658
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:34:58.850275+00:00",
+        "melbourne": "2026-11-23T19:34:58.850275+11:00"
+      },
+      "accepted_step": 40,
+      "iteration": 585,
+      "charged_attempt": 40,
+      "alpha": 0.16996415770136739,
+      "metrics": {
+        "energy": 12.357333533720995,
+        "relative_force_l2": 0.006135555307548694,
+        "acceleration_max": 0.056549883588496934,
+        "acceleration_rms": 0.0006742584381173271,
+        "minimum_corner_cone": 0.8561531803281798,
+        "hopf_integral": -20.864012404128516,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6036986877751397,
+        "mean_topological_b": [
+          -5.204096487327038e-08,
+          -2.350939214950177e-07,
+          -3.0915494755225813e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002474554406322331,
+        "guard_fraction": 0.0004586402972186113
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.6010945250745863,
+        "backend_audit_seconds": 6.741442549973726,
+        "metrics_seconds": 34.91817665589042,
+        "checkpoint_seconds": 1.3501113969832659
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357333533720995,
+        "objective_calls": 2,
+        "accepted_step_max": 0.008457615008048674
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:35:42.805579+00:00",
+        "melbourne": "2026-11-23T19:35:42.805579+11:00"
+      },
+      "accepted_step": 41,
+      "iteration": 586,
+      "charged_attempt": 41,
+      "alpha": 0.13597132616109392,
+      "metrics": {
+        "energy": 12.357327674513648,
+        "relative_force_l2": 0.0075733420697112145,
+        "acceleration_max": 0.06130199308771542,
+        "acceleration_rms": 0.0007976686235552465,
+        "minimum_corner_cone": 0.855464168540869,
+        "hopf_integral": -20.864210327440016,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6027569054962347,
+        "mean_topological_b": [
+          -1.6812322868005396e-08,
+          -2.3347204951570808e-07,
+          -3.09099831375689e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024774368752464066,
+        "guard_fraction": 0.0004591736928048204
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7632471690885723,
+        "backend_audit_seconds": 6.668143755057827,
+        "metrics_seconds": 35.164644193137065,
+        "checkpoint_seconds": 1.354133971966803
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35732767451365,
+        "objective_calls": 3,
+        "accepted_step_max": 0.008719910827345006
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:36:25.729834+00:00",
+        "melbourne": "2026-11-23T19:36:25.729834+11:00"
+      },
+      "accepted_step": 42,
+      "iteration": 587,
+      "charged_attempt": 42,
+      "alpha": 0.10877706092887514,
+      "metrics": {
+        "energy": 12.35728399914135,
+        "relative_force_l2": 0.00579398490149691,
+        "acceleration_max": 0.06407732817433065,
+        "acceleration_rms": 0.0006736772794127871,
+        "minimum_corner_cone": 0.8556025743838656,
+        "hopf_integral": -20.86433713279279,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6041592676277765,
+        "mean_topological_b": [
+          -1.3552164534800291e-08,
+          -2.35514047322976e-07,
+          -3.0839144235162273e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024800023349046656,
+        "guard_fraction": 0.00045964395037114065
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7641241201199591,
+        "backend_audit_seconds": 6.686577907996252,
+        "metrics_seconds": 34.10698076384142,
+        "checkpoint_seconds": 1.3507147398777306
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35728399914135,
+        "objective_calls": 3,
+        "accepted_step_max": 0.008017318209795
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:37:09.282087+00:00",
+        "melbourne": "2026-11-23T19:37:09.282087+11:00"
+      },
+      "accepted_step": 43,
+      "iteration": 588,
+      "charged_attempt": 43,
+      "alpha": 0.08702164874310012,
+      "metrics": {
+        "energy": 12.35724739093403,
+        "relative_force_l2": 0.0040061781119948405,
+        "acceleration_max": 0.05210808398208029,
+        "acceleration_rms": 0.00044475433155292916,
+        "minimum_corner_cone": 0.8563402081976719,
+        "hopf_integral": -20.864496664336144,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6031202620303879,
+        "mean_topological_b": [
+          -3.954688449049196e-08,
+          -2.395274796293208e-07,
+          -3.08152264308813e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002482263215695233,
+        "guard_fraction": 0.000460060097234411
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7825332661159337,
+        "backend_audit_seconds": 6.6542922160588205,
+        "metrics_seconds": 34.7545319639612,
+        "checkpoint_seconds": 3.4506901670247316
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357247390934031,
+        "objective_calls": 3,
+        "accepted_step_max": 0.005647314329811
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:37:55.400489+00:00",
+        "melbourne": "2026-11-23T19:37:55.400489+11:00"
+      },
+      "accepted_step": 44,
+      "iteration": 589,
+      "charged_attempt": 44,
+      "alpha": 0.06961731899448009,
+      "metrics": {
+        "energy": 12.357236502834514,
+        "relative_force_l2": 0.0025356161235233223,
+        "acceleration_max": 0.048724915596917724,
+        "acceleration_rms": 0.00034002221634645414,
+        "minimum_corner_cone": 0.85610797593103,
+        "hopf_integral": -20.864548653112585,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6026138204391293,
+        "mean_topological_b": [
+          -3.137899458415703e-08,
+          -2.3841419511120926e-07,
+          -3.0813695489265305e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024827753014730814,
+        "guard_fraction": 0.00046015423634179336
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7639736770652235,
+        "backend_audit_seconds": 6.65604946995154,
+        "metrics_seconds": 35.198310332139954,
+        "checkpoint_seconds": 3.4502050580922514
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357236502834516,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0027258879413049153
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:38:41.308628+00:00",
+        "melbourne": "2026-11-23T19:38:41.308628+11:00"
+      },
+      "accepted_step": 45,
+      "iteration": 590,
+      "charged_attempt": 45,
+      "alpha": 0.05569385519558408,
+      "metrics": {
+        "energy": 12.357233725252518,
+        "relative_force_l2": 0.0027666246610540683,
+        "acceleration_max": 0.04938619736364199,
+        "acceleration_rms": 0.0003469020659174035,
+        "minimum_corner_cone": 0.8559159143747552,
+        "hopf_integral": -20.864580853880504,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.602807018140206,
+        "mean_topological_b": [
+          -2.3072259663158475e-08,
+          -2.378331075023791e-07,
+          -3.080127685262741e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024832013485976366,
+        "guard_fraction": 0.00046023167698253217
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.774832759052515,
+        "backend_audit_seconds": 6.6809430320281535,
+        "metrics_seconds": 34.9521012539044,
+        "checkpoint_seconds": 1.3487273480277508
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357233725252517,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0015733153877049123
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:39:25.109916+00:00",
+        "melbourne": "2026-11-23T19:39:25.109916+11:00"
+      },
+      "accepted_step": 46,
+      "iteration": 591,
+      "charged_attempt": 46,
+      "alpha": 0.08911016831293453,
+      "metrics": {
+        "energy": 12.35722982798153,
+        "relative_force_l2": 0.002468472225272662,
+        "acceleration_max": 0.04976882518047425,
+        "acceleration_rms": 0.00035383199128836366,
+        "minimum_corner_cone": 0.8560968182651585,
+        "hopf_integral": -20.864599876196035,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6029820488842188,
+        "mean_topological_b": [
+          -2.6115604247599642e-08,
+          -2.390794057421504e-07,
+          -3.078772825504833e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024836328881668057,
+        "guard_fraction": 0.00046030964621354134
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.6148809969890863,
+        "backend_audit_seconds": 6.702941318973899,
+        "metrics_seconds": 35.12549212295562,
+        "checkpoint_seconds": 1.3410784308798611
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35722982798153,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0020025930323668384
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:40:08.801947+00:00",
+        "melbourne": "2026-11-23T19:40:08.801947+11:00"
+      },
+      "accepted_step": 47,
+      "iteration": 592,
+      "charged_attempt": 47,
+      "alpha": 0.14257626930069525,
+      "metrics": {
+        "energy": 12.357229089122809,
+        "relative_force_l2": 0.003859277562691087,
+        "acceleration_max": 0.050045816470039965,
+        "acceleration_rms": 0.0004172960967952259,
+        "minimum_corner_cone": 0.8565154563891433,
+        "hopf_integral": -20.864659067517913,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.602675697035121,
+        "mean_topological_b": [
+          -3.866264011089028e-08,
+          -2.4078399944318486e-07,
+          -3.078629278489138e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002484631894138167,
+        "guard_fraction": 0.00046049155709692083
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.607037671841681,
+        "backend_audit_seconds": 6.649385200114921,
+        "metrics_seconds": 35.08405015501194,
+        "checkpoint_seconds": 1.35282975086011
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357229089122809,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0030814083788414334
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:40:52.899176+00:00",
+        "melbourne": "2026-11-23T19:40:52.899176+11:00"
+      },
+      "accepted_step": 48,
+      "iteration": 593,
+      "charged_attempt": 48,
+      "alpha": 0.1140610154405562,
+      "metrics": {
+        "energy": 12.357214098489363,
+        "relative_force_l2": 0.002368863238566878,
+        "acceleration_max": 0.05160381897196998,
+        "acceleration_rms": 0.0003297078960442288,
+        "minimum_corner_cone": 0.8560536617752397,
+        "hopf_integral": -20.864720570776996,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6028785255195108,
+        "mean_topological_b": [
+          -2.5809294953445965e-08,
+          -2.3973510942892207e-07,
+          -3.076212223701057e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002485671353443176,
+        "guard_fraction": 0.0004606802418780556
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7710154589731246,
+        "backend_audit_seconds": 6.649148883996531,
+        "metrics_seconds": 35.30813034204766,
+        "checkpoint_seconds": 1.3770089740864933
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357214098489367,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0039633284277987395
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:41:36.951234+00:00",
+        "melbourne": "2026-11-23T19:41:36.951234+11:00"
+      },
+      "accepted_step": 49,
+      "iteration": 594,
+      "charged_attempt": 49,
+      "alpha": 0.18249762470488995,
+      "metrics": {
+        "energy": 12.357207657298028,
+        "relative_force_l2": 0.003202506316501511,
+        "acceleration_max": 0.04681925080842493,
+        "acceleration_rms": 0.00037224812653420606,
+        "minimum_corner_cone": 0.8559971080372641,
+        "hopf_integral": -20.864827223785092,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6023647025285951,
+        "mean_topological_b": [
+          -1.3803132514709484e-08,
+          -2.4103889887243024e-07,
+          -3.074424472760007e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024871774958860416,
+        "guard_fraction": 0.0004609556375655986
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5636853869073093,
+        "backend_audit_seconds": 6.658646861091256,
+        "metrics_seconds": 35.4425489010755,
+        "checkpoint_seconds": 3.414495707023889
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357207657298028,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0029288393491685985
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:42:22.994999+00:00",
+        "melbourne": "2026-11-23T19:42:22.994999+11:00"
+      },
+      "accepted_step": 50,
+      "iteration": 595,
+      "charged_attempt": 50,
+      "alpha": 0.14599809976391195,
+      "metrics": {
+        "energy": 12.357206461156716,
+        "relative_force_l2": 0.004473496722656268,
+        "acceleration_max": 0.05396138930514209,
+        "acceleration_rms": 0.0004979940909797983,
+        "minimum_corner_cone": 0.8567109845902294,
+        "hopf_integral": -20.864904842896816,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6031751868999968,
+        "mean_topological_b": [
+          -3.550334880711335e-08,
+          -2.4208836857010995e-07,
+          -3.071159157216147e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024886662715892265,
+        "guard_fraction": 0.00046122755197070073
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7644088279921561,
+        "backend_audit_seconds": 6.653678037924692,
+        "metrics_seconds": 35.15988601814024,
+        "checkpoint_seconds": 1.3706159230787307
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357206461156716,
+        "objective_calls": 3,
+        "accepted_step_max": 0.005589460052847732
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:43:06.822419+00:00",
+        "melbourne": "2026-11-23T19:43:06.822419+11:00"
+      },
+      "accepted_step": 51,
+      "iteration": 596,
+      "charged_attempt": 51,
+      "alpha": 0.11679847981112956,
+      "metrics": {
+        "energy": 12.357191651128835,
+        "relative_force_l2": 0.0036951694624565838,
+        "acceleration_max": 0.04458803783144749,
+        "acceleration_rms": 0.00041846526064060353,
+        "minimum_corner_cone": 0.856308595546813,
+        "hopf_integral": -20.864992004812983,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6018865901561008,
+        "mean_topological_b": [
+          -2.6251869839737764e-08,
+          -2.4483219114862205e-07,
+          -3.071147923266406e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002490086405996201,
+        "guard_fraction": 0.000461489260120355
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7642207099124789,
+        "backend_audit_seconds": 6.655005978187546,
+        "metrics_seconds": 35.027607307070866,
+        "checkpoint_seconds": 3.4186035010498017
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357191651128833,
+        "objective_calls": 3,
+        "accepted_step_max": 0.00523763494431167
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:43:52.831760+00:00",
+        "melbourne": "2026-11-23T19:43:52.831760+11:00"
+      },
+      "accepted_step": 52,
+      "iteration": 597,
+      "charged_attempt": 52,
+      "alpha": 0.09343878384890365,
+      "metrics": {
+        "energy": 12.35717542429667,
+        "relative_force_l2": 0.0026568674117446772,
+        "acceleration_max": 0.04547106191136232,
+        "acceleration_rms": 0.00032551355563089214,
+        "minimum_corner_cone": 0.8561104475583197,
+        "hopf_integral": -20.865063918190202,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6024597060245045,
+        "mean_topological_b": [
+          -1.2325454772992391e-08,
+          -2.437105866204793e-07,
+          -3.068205275858091e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024913960711482115,
+        "guard_fraction": 0.00046172991331759513
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7892136580776423,
+        "backend_audit_seconds": 6.644923888146877,
+        "metrics_seconds": 35.10508423298597,
+        "checkpoint_seconds": 1.3694420258980244
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357175424296672,
+        "objective_calls": 3,
+        "accepted_step_max": 0.003762865542541203
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:44:36.469328+00:00",
+        "melbourne": "2026-11-23T19:44:36.469328+11:00"
+      },
+      "accepted_step": 53,
+      "iteration": 598,
+      "charged_attempt": 53,
+      "alpha": 0.07475102707912293,
+      "metrics": {
+        "energy": 12.357169391797099,
+        "relative_force_l2": 0.0018391019468374824,
+        "acceleration_max": 0.04497770453091999,
+        "acceleration_rms": 0.0002715258059217048,
+        "minimum_corner_cone": 0.8564908659593241,
+        "hopf_integral": -20.865101311335845,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6023064318427628,
+        "mean_topological_b": [
+          -2.100786988851019e-08,
+          -2.440120587706863e-07,
+          -3.067386444947532e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024918709183927224,
+        "guard_fraction": 0.0004618179833076589
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7677655760198832,
+        "backend_audit_seconds": 6.649772798176855,
+        "metrics_seconds": 34.83738287887536,
+        "checkpoint_seconds": 1.3538585468195379
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.3571693917971,
+        "objective_calls": 3,
+        "accepted_step_max": 0.002203019663952316
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:45:20.167124+00:00",
+        "melbourne": "2026-11-23T19:45:20.167124+11:00"
+      },
+      "accepted_step": 54,
+      "iteration": 599,
+      "charged_attempt": 54,
+      "alpha": 0.11960164332659669,
+      "metrics": {
+        "energy": 12.357167355211196,
+        "relative_force_l2": 0.0024216456758435105,
+        "acceleration_max": 0.041956783838219235,
+        "acceleration_rms": 0.0003013531716309306,
+        "minimum_corner_cone": 0.8566084102120354,
+        "hopf_integral": -20.8651458141593,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.602031415008695,
+        "mean_topological_b": [
+          -2.5735459225553554e-08,
+          -2.45939837027939e-07,
+          -3.06664557349399e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002492473154745564,
+        "guard_fraction": 0.0004619302387144763
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5711041111499071,
+        "backend_audit_seconds": 6.651553175179288,
+        "metrics_seconds": 35.10977778211236,
+        "checkpoint_seconds": 3.497742549981922
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357167355211196,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0022387694252299453
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:46:06.178061+00:00",
+        "melbourne": "2026-11-23T19:46:06.178061+11:00"
+      },
+      "accepted_step": 55,
+      "iteration": 600,
+      "charged_attempt": 55,
+      "alpha": 1.0,
+      "metrics": {
+        "energy": 12.357160959611976,
+        "relative_force_l2": 0.002869167078338433,
+        "acceleration_max": 0.04534550966650843,
+        "acceleration_rms": 0.00036130414179341166,
+        "minimum_corner_cone": 0.8562987598870133,
+        "hopf_integral": -20.865214143658918,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6023653497186856,
+        "mean_topological_b": [
+          -1.2854372906937149e-08,
+          -2.4507793103219507e-07,
+          -3.0640858299098696e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024937801708673515,
+        "guard_fraction": 0.00046217303135032237
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5640209759585559,
+        "backend_audit_seconds": 6.712701145093888,
+        "metrics_seconds": 35.1750722960569,
+        "checkpoint_seconds": 0.38876778492704034
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": true,
+      "step": {
+        "energy": 12.357160959611974,
+        "objective_calls": 2,
+        "accepted_step_max": 0.003807536018429024
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:46:50.825056+00:00",
+        "melbourne": "2026-11-23T19:46:50.825056+11:00"
+      },
+      "accepted_step": 56,
+      "iteration": 601,
+      "charged_attempt": 56,
+      "alpha": 0.05,
+      "metrics": {
+        "energy": 12.357155645616901,
+        "relative_force_l2": 0.0016997042605132664,
+        "acceleration_max": 0.04290441477341647,
+        "acceleration_rms": 0.00025405698686454837,
+        "minimum_corner_cone": 0.8564937046679679,
+        "hopf_integral": -20.86522667876168,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6019207868541895,
+        "mean_topological_b": [
+          -1.7841816014777694e-08,
+          -2.460437937240201e-07,
+          -3.064861494039274e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002493873075052213,
+        "guard_fraction": 0.0004621907624494782
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 1.575501832878217,
+        "backend_audit_seconds": 6.687979754060507,
+        "metrics_seconds": 35.98518605786376,
+        "checkpoint_seconds": 1.3896710381377488
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357155645616901,
+        "objective_calls": 7,
+        "accepted_step_max": 0.0018762937169307693
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:47:35.424320+00:00",
+        "melbourne": "2026-11-23T19:47:35.424320+11:00"
+      },
+      "accepted_step": 57,
+      "iteration": 602,
+      "charged_attempt": 57,
+      "alpha": 0.08000000000000002,
+      "metrics": {
+        "energy": 12.357155121832808,
+        "relative_force_l2": 0.0019944469848887053,
+        "acceleration_max": 0.04235282159158955,
+        "acceleration_rms": 0.00026957617286443777,
+        "minimum_corner_cone": 0.8566445759404197,
+        "hopf_integral": -20.865239332776024,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6020077976937113,
+        "mean_topological_b": [
+          -2.144411222650119e-08,
+          -2.466525538478688e-07,
+          -3.064538092970176e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024940805087811857,
+        "guard_fraction": 0.00046222920986498486
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5761223379522562,
+        "backend_audit_seconds": 6.658055723877624,
+        "metrics_seconds": 35.96483023511246,
+        "checkpoint_seconds": 1.318931763060391
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 5.329070518200751e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357155121832813,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0008024656668722076
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:48:19.077633+00:00",
+        "melbourne": "2026-11-23T19:48:19.077633+11:00"
+      },
+      "accepted_step": 58,
+      "iteration": 603,
+      "charged_attempt": 58,
+      "alpha": 0.06400000000000002,
+      "metrics": {
+        "energy": 12.357152744082944,
+        "relative_force_l2": 0.0016961899643133489,
+        "acceleration_max": 0.043287011401033464,
+        "acceleration_rms": 0.00026312178362334287,
+        "minimum_corner_cone": 0.8565706177379209,
+        "hopf_integral": -20.86524948085177,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6021886980803927,
+        "mean_topological_b": [
+          -1.9108926078789773e-08,
+          -2.4640363776982785e-07,
+          -3.06370728488953e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024943070833644844,
+        "guard_fraction": 0.0004622708950619968
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7776546119712293,
+        "backend_audit_seconds": 6.653020608006045,
+        "metrics_seconds": 34.892483324045315,
+        "checkpoint_seconds": 1.3547532830853015
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357152744082946,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0010405069962057822
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:49:02.709632+00:00",
+        "melbourne": "2026-11-23T19:49:02.709632+11:00"
+      },
+      "accepted_step": 59,
+      "iteration": 604,
+      "charged_attempt": 59,
+      "alpha": 0.10240000000000003,
+      "metrics": {
+        "energy": 12.35715026990477,
+        "relative_force_l2": 0.0018004441229659408,
+        "acceleration_max": 0.043323182528882856,
+        "acceleration_rms": 0.0002610607169031101,
+        "minimum_corner_cone": 0.8564096447892835,
+        "hopf_integral": -20.865275134737082,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6020008342996712,
+        "mean_topological_b": [
+          -1.4087712166371387e-08,
+          -2.462668974092904e-07,
+          -3.063347939264722e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024947212347272996,
+        "guard_fraction": 0.0004623476438060693
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5662618230562657,
+        "backend_audit_seconds": 6.690319493878633,
+        "metrics_seconds": 35.00664328318089,
+        "checkpoint_seconds": 1.3789729811251163
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357150269904768,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0012837030131957327
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:49:45.770390+00:00",
+        "melbourne": "2026-11-23T19:49:45.770390+11:00"
+      },
+      "accepted_step": 60,
+      "iteration": 605,
+      "charged_attempt": 60,
+      "alpha": 0.16384000000000007,
+      "metrics": {
+        "energy": 12.357145753403529,
+        "relative_force_l2": 0.0019733857388035004,
+        "acceleration_max": 0.04138663374586181,
+        "acceleration_rms": 0.0002699957776699182,
+        "minimum_corner_cone": 0.8565729150730604,
+        "hopf_integral": -20.865330602547292,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6017473686805657,
+        "mean_topological_b": [
+          -1.5703179414052283e-08,
+          -2.4765359991361175e-07,
+          -3.0626486005779154e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00024955813145375005,
+        "guard_fraction": 0.0004625070644735324
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5836365751456469,
+        "backend_audit_seconds": 6.659484490985051,
+        "metrics_seconds": 34.426282848929986,
+        "checkpoint_seconds": 3.4272139561362565
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357145753403525,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0018395675868349778
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:50:31.690867+00:00",
+        "melbourne": "2026-11-23T19:50:31.690867+11:00"
+      },
+      "accepted_step": 61,
+      "iteration": 606,
+      "charged_attempt": 61,
+      "alpha": 0.13107200000000005,
+      "metrics": {
+        "energy": 12.357144903173321,
+        "relative_force_l2": 0.002980075526843719,
+        "acceleration_max": 0.0431804641356992,
+        "acceleration_rms": 0.00038118371221218566,
+        "minimum_corner_cone": 0.8567004974330326,
+        "hopf_integral": -20.86537810867256,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6024118789356848,
+        "mean_topological_b": [
+          -1.7602528223162914e-08,
+          -2.479792895693935e-07,
+          -3.0599767406165134e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002496497618117598,
+        "guard_fraction": 0.0004626757931876292
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7683763168752193,
+        "backend_audit_seconds": 6.665361647028476,
+        "metrics_seconds": 35.008451260160655,
+        "checkpoint_seconds": 1.3763156251516193
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357144903173321,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0026377675298737344
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:51:15.536298+00:00",
+        "melbourne": "2026-11-23T19:51:15.536298+11:00"
+      },
+      "accepted_step": 62,
+      "iteration": 607,
+      "charged_attempt": 62,
+      "alpha": 0.10485760000000005,
+      "metrics": {
+        "energy": 12.357136441450795,
+        "relative_force_l2": 0.0024388170081558283,
+        "acceleration_max": 0.03990363043055492,
+        "acceleration_rms": 0.0003066210070244098,
+        "minimum_corner_cone": 0.8566338156346448,
+        "hopf_integral": -20.865444162051322,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6015281212167531,
+        "mean_topological_b": [
+          -1.4994180390304143e-08,
+          -2.4908985497119624e-07,
+          -3.0602555089390925e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002497417477075691,
+        "guard_fraction": 0.00046284655216719775
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7924272590316832,
+        "backend_audit_seconds": 6.658020575996488,
+        "metrics_seconds": 35.0068268480245,
+        "checkpoint_seconds": 3.421154160052538
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357136441450795,
+        "objective_calls": 3,
+        "accepted_step_max": 0.003115157765265511
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:52:00.919805+00:00",
+        "melbourne": "2026-11-23T19:52:00.919805+11:00"
+      },
+      "accepted_step": 63,
+      "iteration": 608,
+      "charged_attempt": 63,
+      "alpha": 0.1677721600000001,
+      "metrics": {
+        "energy": 12.357123163803399,
+        "relative_force_l2": 0.0019054823144850075,
+        "acceleration_max": 0.04032113138054133,
+        "acceleration_rms": 0.0002598323990899323,
+        "minimum_corner_cone": 0.8565268425759226,
+        "hopf_integral": -20.86554338644092,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6017377189731924,
+        "mean_topological_b": [
+          -6.1534768658373484e-09,
+          -2.5004934220514623e-07,
+          -3.056951352838145e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002499172291254806,
+        "guard_fraction": 0.00046317001141681183
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5760922499466687,
+        "backend_audit_seconds": 6.735037775011733,
+        "metrics_seconds": 34.59969237493351,
+        "checkpoint_seconds": 1.3585690991021693
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.3571231638034,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0031260058049825206
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:52:44.813273+00:00",
+        "melbourne": "2026-11-23T19:52:44.813273+11:00"
+      },
+      "accepted_step": 64,
+      "iteration": 609,
+      "charged_attempt": 64,
+      "alpha": 0.13421772800000006,
+      "metrics": {
+        "energy": 12.357118854778985,
+        "relative_force_l2": 0.0021271577513360448,
+        "acceleration_max": 0.03971805323695648,
+        "acceleration_rms": 0.00026570785837850446,
+        "minimum_corner_cone": 0.8569862586626115,
+        "hopf_integral": -20.865601389120748,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6018532328634457,
+        "mean_topological_b": [
+          -1.7837685211889755e-08,
+          -2.5110965078687156e-07,
+          -3.05595101185878e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025000430086313113,
+        "guard_fraction": 0.000463330728242349
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7872190999332815,
+        "backend_audit_seconds": 6.665173765039071,
+        "metrics_seconds": 35.07126396195963,
+        "checkpoint_seconds": 3.4627689241897315
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357118854778987,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0027548460191603448
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:53:30.549491+00:00",
+        "melbourne": "2026-11-23T19:53:30.549491+11:00"
+      },
+      "accepted_step": 65,
+      "iteration": 610,
+      "charged_attempt": 65,
+      "alpha": 0.21474836480000012,
+      "metrics": {
+        "energy": 12.357111268493028,
+        "relative_force_l2": 0.0025415576336198743,
+        "acceleration_max": 0.03654757501615604,
+        "acceleration_rms": 0.0003109784766457613,
+        "minimum_corner_cone": 0.8566511088395502,
+        "hopf_integral": -20.86570247333337,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6016171389056374,
+        "mean_topological_b": [
+          -7.735170193944107e-09,
+          -2.538136409038657e-07,
+          -3.052961357216327e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002501787012979083,
+        "guard_fraction": 0.0004636516758703173
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5736473889555782,
+        "backend_audit_seconds": 6.676476998021826,
+        "metrics_seconds": 34.97080842591822,
+        "checkpoint_seconds": 3.4634525389410555
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357111268493027,
+        "objective_calls": 2,
+        "accepted_step_max": 0.003697226324556638
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:54:16.430227+00:00",
+        "melbourne": "2026-11-23T19:54:16.430227+11:00"
+      },
+      "accepted_step": 66,
+      "iteration": 611,
+      "charged_attempt": 66,
+      "alpha": 0.08589934592000005,
+      "metrics": {
+        "energy": 12.357104452101957,
+        "relative_force_l2": 0.0021072410926887206,
+        "acceleration_max": 0.03865735169611486,
+        "acceleration_rms": 0.00026190485533178845,
+        "minimum_corner_cone": 0.856908009449788,
+        "hopf_integral": -20.865756991991272,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6015523851025764,
+        "mean_topological_b": [
+          -7.464395221225165e-09,
+          -2.52162332132461e-07,
+          -3.052506616650259e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002502623085881564,
+        "guard_fraction": 0.0004638059254893739
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.984916249057278,
+        "backend_audit_seconds": 6.685204072855413,
+        "metrics_seconds": 34.69249150203541,
+        "checkpoint_seconds": 1.3441222570836544
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357104452101959,
+        "objective_calls": 4,
+        "accepted_step_max": 0.0026968546600523603
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:55:00.230284+00:00",
+        "melbourne": "2026-11-23T19:55:00.230284+11:00"
+      },
+      "accepted_step": 67,
+      "iteration": 612,
+      "charged_attempt": 67,
+      "alpha": 0.13743895347200008,
+      "metrics": {
+        "energy": 12.357096519815567,
+        "relative_force_l2": 0.0022302528408108826,
+        "acceleration_max": 0.03848740518297164,
+        "acceleration_rms": 0.00026964328653215853,
+        "minimum_corner_cone": 0.8570394415704613,
+        "hopf_integral": -20.86584785504735,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6016439319990382,
+        "mean_topological_b": [
+          -6.598704683610586e-09,
+          -2.533909048651192e-07,
+          -3.050195969161955e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025041744969291296,
+        "guard_fraction": 0.00046409140340235614
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5640111609827727,
+        "backend_audit_seconds": 6.740519528044388,
+        "metrics_seconds": 35.137808348983526,
+        "checkpoint_seconds": 1.3515371549874544
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357096519815565,
+        "objective_calls": 2,
+        "accepted_step_max": 0.002219686871527704
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:55:43.608285+00:00",
+        "melbourne": "2026-11-23T19:55:43.608285+11:00"
+      },
+      "accepted_step": 68,
+      "iteration": 613,
+      "charged_attempt": 68,
+      "alpha": 0.054975581388800036,
+      "metrics": {
+        "energy": 12.357092500482032,
+        "relative_force_l2": 0.0014774513502799143,
+        "acceleration_max": 0.035530648321842,
+        "acceleration_rms": 0.00022110465759652982,
+        "minimum_corner_cone": 0.8568492707498134,
+        "hopf_integral": -20.865860084206176,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.601490600242306,
+        "mean_topological_b": [
+          -5.3879029366478595e-09,
+          -2.5532736774878097e-07,
+          -3.0495993788551328e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025043893662692615,
+        "guard_fraction": 0.0004641308712094707
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9821465578861535,
+        "backend_audit_seconds": 6.647789332084358,
+        "metrics_seconds": 34.384983646916226,
+        "checkpoint_seconds": 3.4835202789399773
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357092500482034,
+        "objective_calls": 4,
+        "accepted_step_max": 0.001756112029723352
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:56:29.214241+00:00",
+        "melbourne": "2026-11-23T19:56:29.214241+11:00"
+      },
+      "accepted_step": 69,
+      "iteration": 614,
+      "charged_attempt": 69,
+      "alpha": 0.08796093022208007,
+      "metrics": {
+        "energy": 12.357092117149934,
+        "relative_force_l2": 0.0018861400969367621,
+        "acceleration_max": 0.03456908929585689,
+        "acceleration_rms": 0.0002472964509629184,
+        "minimum_corner_cone": 0.8568271936836085,
+        "hopf_integral": -20.86588167966852,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6013936102036391,
+        "mean_topological_b": [
+          -6.078364136237842e-09,
+          -2.5608582788279845e-07,
+          -3.049099666115194e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002504722163789606,
+        "guard_fraction": 0.0004641921934574864
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.6088906319346279,
+        "backend_audit_seconds": 6.652493436122313,
+        "metrics_seconds": 34.810299563920125,
+        "checkpoint_seconds": 3.42835966614075
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357092117149934,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0007924972523595028
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:57:15.006825+00:00",
+        "melbourne": "2026-11-23T19:57:15.006825+11:00"
+      },
+      "accepted_step": 70,
+      "iteration": 615,
+      "charged_attempt": 70,
+      "alpha": 0.07036874417766406,
+      "metrics": {
+        "energy": 12.357088551896721,
+        "relative_force_l2": 0.001429457943617334,
+        "acceleration_max": 0.03606148226618311,
+        "acceleration_rms": 0.00021178513637052173,
+        "minimum_corner_cone": 0.8570102277342668,
+        "hopf_integral": -20.86590610469581,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6014976535214294,
+        "mean_topological_b": [
+          -6.948590363450564e-09,
+          -2.550143432349984e-07,
+          -3.0487302474729265e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002505094838037501,
+        "guard_fraction": 0.0004642609096001161
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.8047164520248771,
+        "backend_audit_seconds": 6.641238165087998,
+        "metrics_seconds": 34.86006938992068,
+        "checkpoint_seconds": 1.380907066166401
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357088551896721,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0014235545957356766
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:57:58.307803+00:00",
+        "melbourne": "2026-11-23T19:57:58.307803+11:00"
+      },
+      "accepted_step": 71,
+      "iteration": 616,
+      "charged_attempt": 71,
+      "alpha": 0.11258999068426251,
+      "metrics": {
+        "energy": 12.35708592662773,
+        "relative_force_l2": 0.001554302081875726,
+        "acceleration_max": 0.03660313713960104,
+        "acceleration_rms": 0.00022127308192328973,
+        "minimum_corner_cone": 0.8570231189736799,
+        "hopf_integral": -20.865937916353108,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6015493596498628,
+        "mean_topological_b": [
+          -3.6586847058156052e-09,
+          -2.552704074048229e-07,
+          -3.04785451438322e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025056593561618333,
+        "guard_fraction": 0.0004643648238344512
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.579108654987067,
+        "backend_audit_seconds": 6.704967287834734,
+        "metrics_seconds": 34.622650523204356,
+        "checkpoint_seconds": 1.3558341939933598
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35708592662773,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0010782572357783528
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:58:42.516928+00:00",
+        "melbourne": "2026-11-23T19:58:42.516928+11:00"
+      },
+      "accepted_step": 72,
+      "iteration": 617,
+      "charged_attempt": 72,
+      "alpha": 0.09007199254741001,
+      "metrics": {
+        "energy": 12.357084225056745,
+        "relative_force_l2": 0.0016422172643190602,
+        "acceleration_max": 0.033794148739164115,
+        "acceleration_rms": 0.00022501152322487093,
+        "minimum_corner_cone": 0.8568873314374662,
+        "hopf_integral": -20.865960919598855,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.601317667383624,
+        "mean_topological_b": [
+          -3.2574857025644563e-09,
+          -2.5710943604690924e-07,
+          -3.047339316123028e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002506040073596845,
+        "guard_fraction": 0.00046443503289411866
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7755261179991066,
+        "backend_audit_seconds": 6.6589703699573874,
+        "metrics_seconds": 35.40669621806592,
+        "checkpoint_seconds": 3.4293338519055396
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357084225056745,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0015363936835479186
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T08:59:28.290323+00:00",
+        "melbourne": "2026-11-23T19:59:28.290323+11:00"
+      },
+      "accepted_step": 73,
+      "iteration": 618,
+      "charged_attempt": 73,
+      "alpha": 0.14411518807585602,
+      "metrics": {
+        "energy": 12.35707891505923,
+        "relative_force_l2": 0.0013195744362313462,
+        "acceleration_max": 0.03369166330237499,
+        "acceleration_rms": 0.0002027799422345975,
+        "minimum_corner_cone": 0.8570222960468696,
+        "hopf_integral": -20.86601187554707,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6013650404287971,
+        "mean_topological_b": [
+          -6.427381352960602e-09,
+          -2.573974087653441e-07,
+          -3.0462055737046713e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025068615285189257,
+        "guard_fraction": 0.00046458650483486273
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5802440131083131,
+        "backend_audit_seconds": 6.648966674925759,
+        "metrics_seconds": 35.054850068176165,
+        "checkpoint_seconds": 3.447572482051328
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357078915059228,
+        "objective_calls": 2,
+        "accepted_step_max": 0.001332959966004259
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T09:00:13.838885+00:00",
+        "melbourne": "2026-11-23T20:00:13.838885+11:00"
+      },
+      "accepted_step": 74,
+      "iteration": 619,
+      "charged_attempt": 74,
+      "alpha": 0.11529215046068482,
+      "metrics": {
+        "energy": 12.357078229339407,
+        "relative_force_l2": 0.0014225651998847726,
+        "acceleration_max": 0.0351784915885023,
+        "acceleration_rms": 0.00021318118559237906,
+        "minimum_corner_cone": 0.8570112681913874,
+        "hopf_integral": -20.866020099299323,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6014566931987984,
+        "mean_topological_b": [
+          3.398738718627103e-10,
+          -2.569344223247066e-07,
+          -3.0458206680704352e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002507046627410797,
+        "guard_fraction": 0.0004646205195307097
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.776850052876398,
+        "backend_audit_seconds": 6.643760117003694,
+        "metrics_seconds": 34.62889452883974,
+        "checkpoint_seconds": 1.348830183967948
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357078229339407,
+        "objective_calls": 3,
+        "accepted_step_max": 0.000902537747200567
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T09:00:57.426831+00:00",
+        "melbourne": "2026-11-23T20:00:57.426831+11:00"
+      },
+      "accepted_step": 75,
+      "iteration": 620,
+      "charged_attempt": 75,
+      "alpha": 0.18446744073709573,
+      "metrics": {
+        "energy": 12.357075712114117,
+        "relative_force_l2": 0.0015290936099478464,
+        "acceleration_max": 0.0335058457268991,
+        "acceleration_rms": 0.00021178383174999727,
+        "minimum_corner_cone": 0.857008668020073,
+        "hopf_integral": -20.866057486219198,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6011383012840578,
+        "mean_topological_b": [
+          -3.5679720488165967e-10,
+          -2.580848793998567e-07,
+          -3.0454061140811977e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002507610352822497,
+        "guard_fraction": 0.0004647247531105254
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.581597421085462,
+        "backend_audit_seconds": 6.653106487123296,
+        "metrics_seconds": 34.99270306993276,
+        "checkpoint_seconds": 3.5004984908737242
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357075712114117,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0011585859471392184
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T09:01:43.272744+00:00",
+        "melbourne": "2026-11-23T20:01:43.272744+11:00"
+      },
+      "accepted_step": 76,
+      "iteration": 621,
+      "charged_attempt": 76,
+      "alpha": 0.1475739525896766,
+      "metrics": {
+        "energy": 12.357075003283727,
+        "relative_force_l2": 0.0022413404882374033,
+        "acceleration_max": 0.03467287185804989,
+        "acceleration_rms": 0.0002877997855953076,
+        "minimum_corner_cone": 0.8571168008160004,
+        "hopf_integral": -20.866092941105045,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.601700532219861,
+        "mean_topological_b": [
+          -6.488492388607469e-09,
+          -2.5838477828641957e-07,
+          -3.0435784200409822e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025082705121610413,
+        "guard_fraction": 0.0004648461109093351
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7800523301120847,
+        "backend_audit_seconds": 6.7097813580185175,
+        "metrics_seconds": 34.80073452019133,
+        "checkpoint_seconds": 1.3569152639247477
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 7.105427357601002e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357075003283734,
+        "objective_calls": 3,
+        "accepted_step_max": 0.00201772804718903
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T09:02:27.102530+00:00",
+        "melbourne": "2026-11-23T20:02:27.102530+11:00"
+      },
+      "accepted_step": 77,
+      "iteration": 622,
+      "charged_attempt": 77,
+      "alpha": 0.11805916207174127,
+      "metrics": {
+        "energy": 12.357072007355283,
+        "relative_force_l2": 0.0023097786973665193,
+        "acceleration_max": 0.031297901514266736,
+        "acceleration_rms": 0.00027820049544227546,
+        "minimum_corner_cone": 0.8570934093021499,
+        "hopf_integral": -20.866140752774808,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6009159461066621,
+        "mean_topological_b": [
+          -6.295403497351402e-10,
+          -2.5959975011418196e-07,
+          -3.043932114906226e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025089677042155307,
+        "guard_fraction": 0.0004649753888317971
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.7750699010211974,
+        "backend_audit_seconds": 6.7512490139342844,
+        "metrics_seconds": 34.933918138965964,
+        "checkpoint_seconds": 3.444841907825321
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357072007355287,
+        "objective_calls": 3,
+        "accepted_step_max": 0.0025992732990198237
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T09:03:13.096894+00:00",
+        "melbourne": "2026-11-23T20:03:13.096894+11:00"
+      },
+      "accepted_step": 78,
+      "iteration": 623,
+      "charged_attempt": 78,
+      "alpha": 0.18889465931478605,
+      "metrics": {
+        "energy": 12.35707086667655,
+        "relative_force_l2": 0.0033600885638364357,
+        "acceleration_max": 0.03596596252788474,
+        "acceleration_rms": 0.00039878868330115596,
+        "minimum_corner_cone": 0.8570499882353672,
+        "hopf_integral": -20.866209257249245,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6015919714886835,
+        "mean_topological_b": [
+          8.626660489694959e-09,
+          -2.600846384239347e-07,
+          -3.0403988839588093e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025103398605619655,
+        "guard_fraction": 0.0004652275502929137
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5868003701325506,
+        "backend_audit_seconds": 6.665820154128596,
+        "metrics_seconds": 35.244844877161086,
+        "checkpoint_seconds": 1.3484237550292164
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.35707086667655,
+        "objective_calls": 2,
+        "accepted_step_max": 0.003634900147557539
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T09:03:57.190491+00:00",
+        "melbourne": "2026-11-23T20:03:57.190491+11:00"
+      },
+      "accepted_step": 79,
+      "iteration": 624,
+      "charged_attempt": 79,
+      "alpha": 0.07555786372591443,
+      "metrics": {
+        "energy": 12.357060150819008,
+        "relative_force_l2": 0.001849045260975525,
+        "acceleration_max": 0.03138434052240038,
+        "acceleration_rms": 0.00023513813814626092,
+        "minimum_corner_cone": 0.857190135699302,
+        "hopf_integral": -20.866261138627525,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6009510476032708,
+        "mean_topological_b": [
+          5.464822489313956e-10,
+          -2.6150574132635483e-07,
+          -3.0409403666144486e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.0002510996596747155,
+        "guard_fraction": 0.00046534952853055563
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.9666664788965136,
+        "backend_audit_seconds": 6.650071713840589,
+        "metrics_seconds": 35.115239191101864,
+        "checkpoint_seconds": 1.3495140380691737
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357060150819006,
+        "objective_calls": 4,
+        "accepted_step_max": 0.0030273444049400723
+      }
+    },
+    {
+      "recorded_at": {
+        "utc": "2026-11-23T09:04:40.807061+00:00",
+        "melbourne": "2026-11-23T20:04:40.807061+11:00"
+      },
+      "accepted_step": 80,
+      "iteration": 625,
+      "charged_attempt": 80,
+      "alpha": 0.12089258196146309,
+      "metrics": {
+        "energy": 12.357056673261571,
+        "relative_force_l2": 0.002133677297325232,
+        "acceleration_max": 0.029633824385535343,
+        "acceleration_rms": 0.00025114022368258283,
+        "minimum_corner_cone": 0.8572715264575071,
+        "hopf_integral": -20.866316084277877,
+        "unit_error": 3.3306690738754696e-16,
+        "max_neighbour_angle": 0.6009930832837239,
+        "mean_topological_b": [
+          -5.0050538404307625e-09,
+          -2.629485037586018e-07,
+          -3.0395220201866018e-05
+        ],
+        "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+        "tail_fraction": 0.00025118905528859426,
+        "guard_fraction": 0.000465514378098327
+      },
+      "gates": {
+        "representation": true,
+        "strict_stationary": false,
+        "boundary_admitted": true,
+        "all_readiness_gates": false
+      },
+      "timing": {
+        "optimizer_seconds": 0.5833947740029544,
+        "backend_audit_seconds": 6.753944386029616,
+        "metrics_seconds": 34.917235244996846,
+        "checkpoint_seconds": 3.444912578910589
+      },
+      "backend_audit": {
+        "passed": true,
+        "energy_abs_difference": 1.7763568394002505e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "native_restart_this_update": false,
+      "step": {
+        "energy": 12.357056673261573,
+        "objective_calls": 2,
+        "accepted_step_max": 0.0020251636970827452
+      }
+    }
+  ],
+  "windows": {
+    "30": {
+      "eligible": true,
+      "force": 0.003779922533849304,
+      "acceleration": 0.09648669152882938,
+      "joint": 96.48669152882938,
+      "horizon": 30,
+      "width": 10
+    },
+    "60": {
+      "eligible": true,
+      "force": 0.001983916361846103,
+      "acceleration": 0.043305096964958156,
+      "joint": 43.30509696495815,
+      "horizon": 60,
+      "width": 10
+    },
+    "80": {
+      "eligible": true,
+      "force": 0.0017456312626472925,
+      "acceleration": 0.033742906020769556,
+      "joint": 33.74290602076955,
+      "horizon": 80,
+      "width": 10
+    },
+    "120": {
+      "eligible": false,
+      "reason": "unmatched accepted-step horizon"
+    }
+  },
+  "final": {
+    "recorded_at": {
+      "utc": "2026-11-23T09:04:40.807061+00:00",
+      "melbourne": "2026-11-23T20:04:40.807061+11:00"
+    },
+    "accepted_step": 80,
+    "iteration": 625,
+    "charged_attempt": 80,
+    "alpha": 0.12089258196146309,
+    "metrics": {
+      "energy": 12.357056673261571,
+      "relative_force_l2": 0.002133677297325232,
+      "acceleration_max": 0.029633824385535343,
+      "acceleration_rms": 0.00025114022368258283,
+      "minimum_corner_cone": 0.8572715264575071,
+      "hopf_integral": -20.866316084277877,
+      "unit_error": 3.3306690738754696e-16,
+      "max_neighbour_angle": 0.6009930832837239,
+      "mean_topological_b": [
+        -5.0050538404307625e-09,
+        -2.629485037586018e-07,
+        -3.0395220201866018e-05
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.00025118905528859426,
+      "guard_fraction": 0.000465514378098327
+    },
+    "gates": {
+      "representation": true,
+      "strict_stationary": false,
+      "boundary_admitted": true,
+      "all_readiness_gates": false
+    },
+    "timing": {
+      "optimizer_seconds": 0.5833947740029544,
+      "backend_audit_seconds": 6.753944386029616,
+      "metrics_seconds": 34.917235244996846,
+      "checkpoint_seconds": 3.444912578910589
+    },
+    "backend_audit": {
+      "passed": true,
+      "energy_abs_difference": 1.7763568394002505e-15,
+      "gradient_max_abs_difference": 0.0,
+      "reference": "independent CPU sf_readmission.static_value_gradient"
+    },
+    "native_restart_this_update": false,
+    "step": {
+      "energy": 12.357056673261573,
+      "objective_calls": 2,
+      "accepted_step_max": 0.0020251636970827452
+    }
+  },
+  "best_retained": {
+    "path": "best-00080.npz",
+    "sha256": "f2e9a77ccaa578ae073bb493fe2a0cde763b217fc521695b6bddf86ce1ba5952",
+    "accepted_step": 80,
+    "score": 29.63382438553534
+  },
+  "endpoint_sha256": "f2e9a77ccaa578ae073bb493fe2a0cde763b217fc521695b6bddf86ce1ba5952",
+  "backend": {
+    "requested": "auto",
+    "selected": "cuda",
+    "device": {
+      "execution_backend": "cuda-cupy-float64",
+      "device_id": 0,
+      "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+      "compute_capability": "75",
+      "cupy": "14.2.0",
+      "cuda_runtime": 12090,
+      "cuda_driver": 13000,
+      "precision": "float64"
+    },
+    "cpu": {
+      "recorded_at": {
+        "utc": "2026-11-23T03:29:19.681095+00:00",
+        "melbourne": "2026-11-23T14:29:19.681095+11:00"
+      },
+      "kind": "cpu",
+      "device": null,
+      "admission": {
+        "nodes": 129,
+        "backend": "cpu",
+        "estimated_host_gib": 1.6995559558272362,
+        "host_available_gib": 11.17251205444336,
+        "passed": true,
+        "scope": "Conservative admission estimate; actual component timing and memory telemetry remain required"
+      },
+      "audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "post_step_audit": {
+        "passed": true,
+        "energy_abs_difference": 0.0,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "qualification_only_steps": 0,
+      "charged_campaign_attempts": 0,
+      "seconds": 3.8212819448672235
+    },
+    "cuda": {
+      "recorded_at": {
+        "utc": "2026-11-23T03:29:24.565242+00:00",
+        "melbourne": "2026-11-23T14:29:24.565242+11:00"
+      },
+      "kind": "cuda",
+      "device": {
+        "execution_backend": "cuda-cupy-float64",
+        "device_id": 0,
+        "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+        "compute_capability": "75",
+        "cupy": "14.2.0",
+        "cuda_runtime": 12090,
+        "cuda_driver": 13000,
+        "precision": "float64"
+      },
+      "admission": {
+        "nodes": 129,
+        "backend": "cuda",
+        "estimated_host_gib": 1.6995559558272362,
+        "host_available_gib": 11.108421325683594,
+        "passed": true,
+        "scope": "Conservative admission estimate; actual component timing and memory telemetry remain required",
+        "estimated_gpu_gib": 2.6991859190165997,
+        "free_gpu_gib": 7.320068359375
+      },
+      "audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "post_step_audit": {
+        "passed": true,
+        "energy_abs_difference": 3.552713678800501e-15,
+        "gradient_max_abs_difference": 0.0,
+        "reference": "independent CPU sf_readmission.static_value_gradient"
+      },
+      "qualification_only_steps": 0,
+      "charged_campaign_attempts": 0,
+      "seconds": 0.11960811307653785
+    },
+    "automatic_cpu_reason": null,
+    "source_backend": "cuda",
+    "backend_transfer": false,
+    "qualification_optimizer_steps": 0,
+    "scope": "Read-only energy-gradient qualification changes no optimizer state; independent CPU metrics/audits remain active. One backend is pinned across resolution branches."
+  },
+  "physical_time_steps": 0,
+  "scope": "Fixed action/box/shift/alpha policy/native restart schedule/gates. Memory consistently reset for every resolution arm; exact control separately labelled."
+}

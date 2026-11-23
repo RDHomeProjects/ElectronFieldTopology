@@ -1,0 +1,247 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T03:57:46.785288+00:00",
+    "melbourne": "2026-11-23T14:57:46.785288+11:00"
+  },
+  "source": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-conditioning-calibration/20261122t102101z-2a8e50ec/cases/scan-baseline/best-00089.npz",
+  "source_sha256": "79542154c306aef615d7dd8f71194f0cfa28596ce73907f765419a349d84484c",
+  "native_iteration": 514,
+  "metrics": {
+    "energy": 12.33062559456828,
+    "relative_force_l2": 0.0005664066309278951,
+    "acceleration_max": 0.009532561945350971,
+    "acceleration_rms": 7.712901245834317e-05,
+    "minimum_corner_cone": 0.7970520970400885,
+    "hopf_integral": -20.719606219866904,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.732255872491771,
+    "mean_topological_b": [
+      1.2894507671967718e-07,
+      -3.468624688073898e-07,
+      -6.310323133192498e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.00026353925315990013,
+    "guard_fraction": 0.0004702122190338149
+  },
+  "gates": {
+    "representation": true,
+    "strict_stationary": false,
+    "boundary_admitted": true,
+    "all_readiness_gates": false
+  },
+  "metrics_seconds": 18.28908585291356,
+  "localized": {
+    "recorded_at": {
+      "utc": "2026-11-23T03:57:58.898006+00:00",
+      "melbourne": "2026-11-23T14:57:58.898006+11:00"
+    },
+    "energy": 12.33062559456828,
+    "source_array_sha256": "14dc8dbbe80db6489c8c9c90bef6d5974b7d8b9e10e8c482ec275a46b4a29d4e",
+    "regions": {
+      "force": {
+        "maximum": 0.026076286840028842,
+        "quantiles": {
+          "0.5": 4.960824832174589e-07,
+          "0.9": 6.936511964985571e-06,
+          "0.95": 2.124681035186791e-05,
+          "0.99": 0.00079669801313989,
+          "0.999": 0.007147879053775332
+        },
+        "peak_index": [
+          56,
+          59,
+          63
+        ],
+        "peak_position": [
+          -1.92,
+          -1.1999999999999993,
+          -0.2400000000000002
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 4.113671249113607e-07,
+            "voxel_count": 1053962
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 5.681473877739299e-07,
+            "voxel_count": 151535
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9963179532346711,
+            "voxel_count": 59282
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.003681067250816266,
+            "voxel_count": 881910
+          }
+        },
+        "spectrum": {
+          "dirichlet_laplacian_eigenvalue_weighted_mean": 29.222357016709026,
+          "eigenvalue_weighted_quantiles": {
+            "0.1": 0.3773546603413711,
+            "0.5": 15.19848079227222,
+            "0.9": 83.15809094122163
+          },
+          "normalized_frequency_bin_edges": [
+            0.0,
+            0.05,
+            0.1,
+            0.15000000000000002,
+            0.2,
+            0.25,
+            0.30000000000000004,
+            0.35000000000000003,
+            0.4,
+            0.45,
+            0.5,
+            0.55,
+            0.6000000000000001,
+            0.65,
+            0.7000000000000001,
+            0.75,
+            0.8,
+            0.8500000000000001,
+            0.9,
+            0.9500000000000001,
+            1.0
+          ],
+          "power_fractions": [
+            0.12373400510007942,
+            0.13955201891555577,
+            0.0805103456032632,
+            0.06021733718172745,
+            0.06830866370004776,
+            0.06869623160551012,
+            0.05556122209076908,
+            0.08100570765636451,
+            0.08352836935456037,
+            0.05775066268099986,
+            0.03595599206808603,
+            0.027841626102969013,
+            0.02711993577948082,
+            0.024254501238588303,
+            0.021994952354886146,
+            0.018165111541453765,
+            0.012147037637994565,
+            0.008503747764783994,
+            0.003975802119552318,
+            0.0011767295033337523
+          ],
+          "low_frequency_power_fraction": 0.541018602106183,
+          "high_frequency_power_fraction": 0.06596338092200464,
+          "scope": "Orthonormal DST-I on free interior nodes. Frequency is normalized by the discrete Laplacian maximum; this is a conditioning diagnostic, not a physical dispersion relation."
+        }
+      },
+      "acceleration": {
+        "maximum": 0.009532561945350971,
+        "quantiles": {
+          "0.5": 4.959491705725884e-07,
+          "0.9": 6.8644946187104555e-06,
+          "0.95": 2.0179838526479302e-05,
+          "0.99": 0.0003615422915105138,
+          "0.999": 0.002001839539924271
+        },
+        "peak_index": [
+          53,
+          64,
+          67
+        ],
+        "peak_position": [
+          -2.6400000000000006,
+          0.0,
+          0.7199999999999989
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 4.372508062365356e-06,
+            "voxel_count": 1053962
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 6.030986009287562e-06,
+            "voxel_count": 151535
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9832817393082435,
+            "voxel_count": 59282
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.016707857197684854,
+            "voxel_count": 881910
+          }
+        },
+        "spectrum": {
+          "dirichlet_laplacian_eigenvalue_weighted_mean": 36.959910502456665,
+          "eigenvalue_weighted_quantiles": {
+            "0.1": 0.5497362777374846,
+            "0.5": 17.983449905843095,
+            "0.9": 107.19909019190929
+          },
+          "normalized_frequency_bin_edges": [
+            0.0,
+            0.05,
+            0.1,
+            0.15000000000000002,
+            0.2,
+            0.25,
+            0.30000000000000004,
+            0.35000000000000003,
+            0.4,
+            0.45,
+            0.5,
+            0.55,
+            0.6000000000000001,
+            0.65,
+            0.7000000000000001,
+            0.75,
+            0.8,
+            0.8500000000000001,
+            0.9,
+            0.9500000000000001,
+            1.0
+          ],
+          "power_fractions": [
+            0.08866317966436829,
+            0.10401579429442448,
+            0.09576424575285386,
+            0.07881214523426043,
+            0.07844538951285494,
+            0.06095152354653139,
+            0.0415096910693051,
+            0.057562933804318595,
+            0.07641846023427858,
+            0.06251929356083237,
+            0.040932902698719305,
+            0.03301369667052699,
+            0.036640208292901356,
+            0.03349845173301474,
+            0.032496949532712906,
+            0.028615593619979146,
+            0.020973331954798505,
+            0.016217600963014788,
+            0.009530130301531086,
+            0.0034184775587771435
+          ],
+          "low_frequency_power_fraction": 0.5066522780052947,
+          "high_frequency_power_fraction": 0.11125208393081368,
+          "scope": "Orthonormal DST-I on free interior nodes. Frequency is normalized by the discrete Laplacian maximum; this is a conditioning diagnostic, not a physical dispersion relation."
+        }
+      }
+    },
+    "wall_seconds": 12.00045322207734,
+    "hessian_directions": 0,
+    "source_modified": false,
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0,
+    "scope": "Same disjoint core/guard/former-layer definitions as prior audit; no full Hessian or stability claim"
+  },
+  "source_modified": false,
+  "optimizer_attempts": 0,
+  "physical_time_steps": 0
+}

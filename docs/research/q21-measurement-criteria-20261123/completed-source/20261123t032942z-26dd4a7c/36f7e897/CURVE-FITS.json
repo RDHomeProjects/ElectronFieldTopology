@@ -1,0 +1,216 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T09:44:09.669672+00:00",
+    "melbourne": "2026-11-23T20:44:09.669672+11:00"
+  },
+  "matched_horizon": 80,
+  "parameter": "spacing at fixed box30.72",
+  "responses": [
+    {
+      "nodes": 129,
+      "spacing": 0.24,
+      "eligible": true,
+      "force": 0.0007736599986018092,
+      "acceleration": 0.014742573570463885,
+      "joint": 14.742573570463884,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 137,
+      "spacing": 0.22588235294117645,
+      "eligible": true,
+      "force": 0.0015938555357072107,
+      "acceleration": 0.01769031728492281,
+      "joint": 17.690317284922813,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 145,
+      "spacing": 0.21333333333333332,
+      "eligible": true,
+      "force": 0.0016217959578894191,
+      "acceleration": 0.03151983415180449,
+      "joint": 31.51983415180449,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 153,
+      "spacing": 0.20210526315789473,
+      "eligible": true,
+      "force": 0.0017456312626472925,
+      "acceleration": 0.033742906020769556,
+      "joint": 33.74290602076955,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 161,
+      "spacing": 0.192,
+      "eligible": true,
+      "force": 0.0013421588167535194,
+      "acceleration": 0.03125151358269046,
+      "joint": 31.25151358269046,
+      "horizon": 80,
+      "width": 10
+    }
+  ],
+  "fits": {
+    "joint": {
+      "status": "no_validated_response_curve",
+      "models": [
+        {
+          "model": "linear",
+          "coefficients_highest_power_first": [
+            -417.82194083765205,
+            115.48083736884196
+          ],
+          "loo_range_nrmse": 0.3010342435086616,
+          "loo_skill_vs_constant": 0.6661235155030887,
+          "eligible": false,
+          "support": [
+            0.192,
+            0.24
+          ]
+        },
+        {
+          "model": "quadratic",
+          "coefficients_highest_power_first": [
+            -8096.4910057574625,
+            3080.987615405682,
+            -260.16292266092256
+          ],
+          "loo_range_nrmse": 0.6480377212429018,
+          "loo_skill_vs_constant": -0.5472290222118537,
+          "eligible": false,
+          "support": [
+            0.192,
+            0.24
+          ]
+        },
+        {
+          "model": "exponential",
+          "coefficients_highest_power_first": [
+            -18.317466197246148,
+            7.127146427862752
+          ],
+          "loo_range_nrmse": 0.4087521611524886,
+          "loo_skill_vs_constant": 0.38443466568384466,
+          "eligible": false,
+          "support": [
+            0.192,
+            0.24
+          ]
+        }
+      ],
+      "points": 5,
+      "supported_optimum": false,
+      "scope": "Finite-horizon response versus actual spacing; no stationary-solution convergence or optimum inferred automatically"
+    },
+    "force": {
+      "status": "validated_model_available",
+      "models": [
+        {
+          "model": "linear",
+          "coefficients_highest_power_first": [
+            -0.011811352853460268,
+            0.003950894806071273
+          ],
+          "loo_range_nrmse": 0.6243112060745617,
+          "loo_skill_vs_constant": -0.9615827050968078,
+          "eligible": false,
+          "support": [
+            0.192,
+            0.24
+          ]
+        },
+        {
+          "model": "quadratic",
+          "coefficients_highest_power_first": [
+            -1.1271121351497186,
+            0.47525776222557686,
+            -0.04834245550108537
+          ],
+          "loo_range_nrmse": 0.20546612487913116,
+          "loo_skill_vs_constant": 0.7875362594003884,
+          "eligible": true,
+          "support": [
+            0.192,
+            0.24
+          ]
+        },
+        {
+          "model": "exponential",
+          "coefficients_highest_power_first": [
+            -10.814132788146138,
+            -4.2774556372098
+          ],
+          "loo_range_nrmse": 0.7329008212476458,
+          "loo_skill_vs_constant": -1.7033033319668798,
+          "eligible": false,
+          "support": [
+            0.192,
+            0.24
+          ]
+        }
+      ],
+      "points": 5,
+      "supported_optimum": false,
+      "scope": "Finite-horizon response versus actual spacing; no stationary-solution convergence or optimum inferred automatically"
+    },
+    "acceleration": {
+      "status": "no_validated_response_curve",
+      "models": [
+        {
+          "model": "linear",
+          "coefficients_highest_power_first": [
+            -0.41782194083765206,
+            0.11548083736884196
+          ],
+          "loo_range_nrmse": 0.30103424350866204,
+          "loo_skill_vs_constant": 0.6661235155030879,
+          "eligible": false,
+          "support": [
+            0.192,
+            0.24
+          ]
+        },
+        {
+          "model": "quadratic",
+          "coefficients_highest_power_first": [
+            -8.096491005757462,
+            3.0809876154056814,
+            -0.2601629226609225
+          ],
+          "loo_range_nrmse": 0.648037721242893,
+          "loo_skill_vs_constant": -0.5472290222118117,
+          "eligible": false,
+          "support": [
+            0.192,
+            0.24
+          ]
+        },
+        {
+          "model": "exponential",
+          "coefficients_highest_power_first": [
+            -18.317466197246198,
+            0.21939114888062705
+          ],
+          "loo_range_nrmse": 0.4087521611524882,
+          "loo_skill_vs_constant": 0.3844346656838462,
+          "eligible": false,
+          "support": [
+            0.192,
+            0.24
+          ]
+        }
+      ],
+      "points": 5,
+      "supported_optimum": false,
+      "scope": "Finite-horizon response versus actual spacing; no stationary-solution convergence or optimum inferred automatically"
+    }
+  },
+  "optimum_established": false
+}

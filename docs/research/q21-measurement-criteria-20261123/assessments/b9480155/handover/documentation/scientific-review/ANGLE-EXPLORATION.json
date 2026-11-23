@@ -1,0 +1,58 @@
+{
+  "reviewed_at": {
+    "utc": "2026-11-23T12:13:46.632958+00:00",
+    "melbourne": "2026-11-23T23:13:46.632958+11:00"
+  },
+  "models": [
+    {
+      "model": "linear",
+      "coefficients_highest_power_first": [
+        196.03060525097035,
+        -5.156602307820839
+      ],
+      "loo_range_nrmse": 0.01688452253256859,
+      "loo_skill_vs_constant": 0.9985438890589993,
+      "loo_rmse": 0.15877455317419492,
+      "eligible": true,
+      "spacing_for_30_degrees": 0.1793424157560051,
+      "nodes_for_30_degrees": 172.29244005386033,
+      "predicted_angle_at_177": 29.059648790530346,
+      "status": "post_hoc_geometric_warning_extrapolation_not_stationarity_prediction",
+      "confidence_interval": false
+    },
+    {
+      "model": "quadratic",
+      "coefficients_highest_power_first": [
+        317.96461705877647,
+        58.625692441041025,
+        9.595643353101128
+      ],
+      "loo_range_nrmse": 0.002226931019540977,
+      "loo_skill_vs_constant": 0.9999746702778105,
+      "loo_rmse": 0.020941070551172048,
+      "eligible": true,
+      "spacing_for_30_degrees": 0.1773858293602502,
+      "nodes_for_30_degrees": 174.18181565457076,
+      "predicted_angle_at_177": 29.51563830087187,
+      "status": "post_hoc_geometric_warning_extrapolation_not_stationarity_prediction",
+      "confidence_interval": false
+    },
+    {
+      "model": "exponential",
+      "coefficients_highest_power_first": [
+        5.284669170400447,
+        2.470399469333497
+      ],
+      "loo_range_nrmse": 0.011397070224053013,
+      "loo_skill_vs_constant": 0.9993365574134032,
+      "loo_rmse": 0.107172988091814,
+      "eligible": true,
+      "spacing_for_30_degrees": 0.17613172789359813,
+      "nodes_for_30_degrees": 175.4149130164559,
+      "predicted_angle_at_177": 29.74956326760535,
+      "status": "post_hoc_geometric_warning_extrapolation_not_stationarity_prediction",
+      "confidence_interval": false
+    }
+  ],
+  "warning": "Exploratory finite-horizon geometry relationship only; no physical or numerical admission is inferred."
+}
