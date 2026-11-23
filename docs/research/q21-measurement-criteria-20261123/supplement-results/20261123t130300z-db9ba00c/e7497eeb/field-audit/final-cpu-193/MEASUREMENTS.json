@@ -1,0 +1,244 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T19:34:52.396971+00:00",
+    "melbourne": "2026-11-24T06:34:52.396971+11:00"
+  },
+  "label": "final-cpu-193",
+  "source_array_sha256": "f7c69e1d92bcbf54f4cd31d46050c5f2e02deb126e28de466fa1be604b7201c5",
+  "shape": [
+    193,
+    193,
+    193,
+    3
+  ],
+  "lengths": [
+    30.72,
+    30.72,
+    30.72
+  ],
+  "spacing": [
+    0.16,
+    0.16,
+    0.16
+  ],
+  "metrics": {
+    "energy": 12.370039848207966,
+    "relative_force_l2": 0.00398533849508348,
+    "acceleration_max": 0.18294052055238672,
+    "acceleration_rms": 0.0005521845526713594,
+    "minimum_corner_cone": 0.9100049807010727,
+    "hopf_integral": -20.948551686569065,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.47290784047076606,
+    "mean_topological_b": [
+      -8.011965301751187e-08,
+      -9.173151358334555e-08,
+      -1.1795825866480224e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.0002720377258680671,
+    "guard_fraction": 0.00048069613336640523
+  },
+  "gates": {
+    "representation": true,
+    "strict_stationary": false,
+    "boundary_admitted": true,
+    "all_readiness_gates": false
+  },
+  "force": {
+    "maximum_vector_magnitude": 0.4874170292022871,
+    "vector_rms": 0.0030860129176654544,
+    "component_rms": 0.0017817103887368126,
+    "quantiles_vector_magnitude": {
+      "0.5": 3.2835185140981174e-06,
+      "0.9": 4.009561312225577e-05,
+      "0.95": 0.0001215168170797554,
+      "0.99": 0.003577903404325459,
+      "0.999": 0.050401762141405494
+    },
+    "peak_index": [
+      96,
+      80,
+      95
+    ],
+    "peak_position": [
+      0.0,
+      -2.5599999999999987,
+      -0.15999999999999837
+    ],
+    "regions": {
+      "outer_guard": {
+        "nodes": 3465182,
+        "node_fraction": 0.48200786278367247,
+        "squared_residual_fraction": 3.266930613083007e-07,
+        "maximum_vector_magnitude": 1.5495256113762407e-05,
+        "vector_rms": 2.540625387510272e-06,
+        "above_threshold_fraction_of_region": {}
+      },
+      "old_held_layers": {
+        "nodes": 611739,
+        "node_fraction": 0.08509307966260388,
+        "squared_residual_fraction": 5.509951619083467e-07,
+        "maximum_vector_magnitude": 2.9937416255393352e-05,
+        "vector_rms": 7.85279954375579e-06,
+        "above_threshold_fraction_of_region": {}
+      },
+      "core_neighborhood": {
+        "nodes": 206497,
+        "node_fraction": 0.028723795067976232,
+        "squared_residual_fraction": 0.9992148229841857,
+        "maximum_vector_magnitude": 0.4874170292022871,
+        "vector_rms": 0.018201461603661415,
+        "above_threshold_fraction_of_region": {}
+      },
+      "remaining_interior": {
+        "nodes": 2905639,
+        "node_fraction": 0.4041752624857474,
+        "squared_residual_fraction": 0.0007842993275908911,
+        "maximum_vector_magnitude": 0.01842112766704746,
+        "vector_rms": 0.00013594204426434572,
+        "above_threshold_fraction_of_region": {}
+      }
+    },
+    "above_threshold_fraction_of_whole_grid": {}
+  },
+  "acceleration": {
+    "maximum_vector_magnitude": 0.18294052055238672,
+    "vector_rms": 0.0009564117003814872,
+    "component_rms": 0.0005521845526713594,
+    "quantiles_vector_magnitude": {
+      "0.5": 3.283320070086426e-06,
+      "0.9": 3.9743577267965995e-05,
+      "0.95": 0.0001162328461291,
+      "0.99": 0.0016921481429830725,
+      "0.999": 0.01434249719848846
+    },
+    "peak_index": [
+      94,
+      80,
+      98
+    ],
+    "peak_position": [
+      -0.3199999999999985,
+      -2.5599999999999987,
+      0.3200000000000003
+    ],
+    "regions": {
+      "outer_guard": {
+        "nodes": 3465182,
+        "node_fraction": 0.48200786278367247,
+        "squared_residual_fraction": 3.400508998402514e-06,
+        "maximum_vector_magnitude": 1.5487123128390102e-05,
+        "vector_rms": 2.540327930857912e-06,
+        "above_threshold_fraction_of_region": {
+          "0.001": 0.0,
+          "0.01": 0.0
+        }
+      },
+      "old_held_layers": {
+        "nodes": 611739,
+        "node_fraction": 0.08509307966260388,
+        "squared_residual_fraction": 5.73069599172045e-06,
+        "maximum_vector_magnitude": 2.988779923039624e-05,
+        "vector_rms": 7.84876714308992e-06,
+        "above_threshold_fraction_of_region": {
+          "0.001": 0.0,
+          "0.01": 0.0
+        }
+      },
+      "core_neighborhood": {
+        "nodes": 206497,
+        "node_fraction": 0.028723795067976232,
+        "squared_residual_fraction": 0.9953847179868954,
+        "maximum_vector_magnitude": 0.18294052055238672,
+        "vector_rms": 0.005630143381797238,
+        "above_threshold_fraction_of_region": {
+          "0.001": 0.5160752940720689,
+          "0.01": 0.07251437066882327
+        }
+      },
+      "remaining_interior": {
+        "nodes": 2905639,
+        "node_fraction": 0.4041752624857474,
+        "squared_residual_fraction": 0.004606150808114612,
+        "maximum_vector_magnitude": 0.009978684074172415,
+        "vector_rms": 0.00010210078764485467,
+        "above_threshold_fraction_of_region": {
+          "0.001": 0.0023006987447511547,
+          "0.01": 0.0
+        }
+      }
+    },
+    "above_threshold_fraction_of_whole_grid": {
+      "0.001": 0.015753526505632102,
+      "0.01": 0.002082887922574546
+    }
+  },
+  "energy_components": {
+    "nodal_sigma_e2": 6.121129171519389,
+    "D4_skyrme_e4": 6.248910676688577,
+    "sum": 12.370039848207966,
+    "continuum_inspired_virial_proxy": -0.01032991863706078,
+    "proxy_is_not_exact_fixed_lattice_scaling_derivative": true,
+    "no_new_gate": true
+  },
+  "native_level_sets": [
+    {
+      "n3_less_than": -0.8,
+      "native_occupied_nodes": 12275,
+      "occupied_volume": 50.278400000000005,
+      "six_neighbour_voxel_components": 1,
+      "not_knot_or_link_identification": true
+    },
+    {
+      "n3_less_than": -0.9,
+      "native_occupied_nodes": 5920,
+      "occupied_volume": 24.248320000000003,
+      "six_neighbour_voxel_components": 2,
+      "not_knot_or_link_identification": true
+    },
+    {
+      "n3_less_than": -0.95,
+      "native_occupied_nodes": 2905,
+      "occupied_volume": 11.898880000000002,
+      "six_neighbour_voxel_components": 2,
+      "not_knot_or_link_identification": true
+    }
+  ],
+  "display_surfaces": [
+    {
+      "level": -0.8,
+      "display_stride": 3,
+      "native_array_changed": false,
+      "display_triangles_before_cap": 8092,
+      "display_triangles_drawn": 5000,
+      "display_mesh_is_not_a_topology_certificate": true
+    },
+    {
+      "level": -0.9,
+      "display_stride": 3,
+      "native_array_changed": false,
+      "display_triangles_before_cap": 5224,
+      "display_triangles_drawn": 5000,
+      "display_mesh_is_not_a_topology_certificate": true
+    },
+    {
+      "level": -0.95,
+      "display_stride": 3,
+      "native_array_changed": false,
+      "display_triangles_before_cap": 2588,
+      "display_triangles_drawn": 2588,
+      "display_mesh_is_not_a_topology_certificate": true
+    }
+  ],
+  "timing_seconds": {
+    "metric_replay": 78.96883922396228,
+    "force_distribution": 13.049760073889047,
+    "acceleration_distribution": 39.03143670898862,
+    "components_and_level_sets": 4.843646180815995,
+    "total": 139.30865869205445
+  },
+  "source_modified": false,
+  "optimizer_attempts": 0,
+  "physical_time_steps": 0
+}
