@@ -65,3 +65,5 @@ See [NOTICE](NOTICE) and [CITATION.cff](CITATION.cff). Please cite the project a
 [Completed Q21 conditioning results and scientific review](docs/research/q21-conditioning-calibration-20261122/assessments/20261122t224236z-e1ab1173/ASSESSMENT.html)
 
 [Retained-field audit and Q21 fixed-box resolution](docs/research/q21-fixedbox-resolution-20261123/README.md)
+
+[Q21 measurement criteria and CPU resolution supplement](docs/research/q21-measurement-criteria-20261123/README.md)

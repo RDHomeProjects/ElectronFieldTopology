@@ -1,0 +1,176 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T03:29:42.953344+00:00",
+    "melbourne": "2026-11-23T14:29:42.953344+11:00"
+  },
+  "source_run": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-conditioning-calibration/20261122t102101z-2a8e50ec",
+  "evidence_sha256": "c0fd32690d23b80fad77e33d1bc27048983ec1cb3335ac36c91004d75c938962",
+  "endpoint": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-conditioning-calibration/20261122t102101z-2a8e50ec/cases/scan-baseline/endpoint.npz",
+  "best": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-conditioning-calibration/20261122t102101z-2a8e50ec/cases/scan-baseline/best-00089.npz",
+  "contrast": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-conditioning-calibration/20261122t102101z-2a8e50ec/cases/optimal-validation/endpoint.npz",
+  "q2": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/sources/q2-reference.npz",
+  "endpoint_sha256": "013d37612b81c80328b9a7fe24c1d0a1d8dfda3315790bad9b89a1081a5303c2",
+  "best_sha256": "79542154c306aef615d7dd8f71194f0cfa28596ce73907f765419a349d84484c",
+  "contrast_sha256": "786f88f64eb8e73ae3098f7f81415453e7cc14e6b598d1172c7389b82468200c",
+  "matching_compact_payloads": 182,
+  "registered_plan_merge": {
+    "baseRefName": "main",
+    "headRefName": "analysis/q21-resolution-plan-20261123-ef89d597",
+    "headRefOid": "4b8b85f16e06cfcf42fd507a6fe53634cb105dc1",
+    "mergeCommit": {
+      "oid": "7a7421385dd82c4101835175f9e3b73bf89a99c3"
+    },
+    "number": 95,
+    "state": "MERGED",
+    "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/95"
+  },
+  "merge_check": {
+    "recorded_at": {
+      "utc": "2026-11-23T03:28:43.075903+00:00",
+      "melbourne": "2026-11-23T14:28:43.075903+11:00"
+    },
+    "required_merge": "c99cee180e397e2ec1382b2971a0266f8d33b02f",
+    "published_exact_evidence_paths": [
+      "docs/research/q21-conditioning-calibration-20261122/results/20261122t102101z-2a8e50ec/c0fd3269/evidence.zip"
+    ],
+    "main": "7a7421385dd82c4101835175f9e3b73bf89a99c3"
+  },
+  "probe": {
+    "recorded_at": {
+      "utc": "2026-11-23T03:29:42.613186+00:00",
+      "melbourne": "2026-11-23T14:29:42.613186+11:00"
+    },
+    "status": "preflight_pass",
+    "backend": {
+      "requested": "auto",
+      "selected": "cuda",
+      "device": {
+        "execution_backend": "cuda-cupy-float64",
+        "device_id": 0,
+        "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+        "compute_capability": "75",
+        "cupy": "14.2.0",
+        "cuda_runtime": 12090,
+        "cuda_driver": 13000,
+        "precision": "float64"
+      },
+      "cpu": {
+        "recorded_at": {
+          "utc": "2026-11-23T03:29:19.681095+00:00",
+          "melbourne": "2026-11-23T14:29:19.681095+11:00"
+        },
+        "kind": "cpu",
+        "device": null,
+        "admission": {
+          "nodes": 129,
+          "backend": "cpu",
+          "estimated_host_gib": 1.6995559558272362,
+          "host_available_gib": 11.17251205444336,
+          "passed": true,
+          "scope": "Conservative admission estimate; actual component timing and memory telemetry remain required"
+        },
+        "audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "post_step_audit": {
+          "passed": true,
+          "energy_abs_difference": 0.0,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "qualification_only_steps": 0,
+        "charged_campaign_attempts": 0,
+        "seconds": 3.8212819448672235
+      },
+      "cuda": {
+        "recorded_at": {
+          "utc": "2026-11-23T03:29:24.565242+00:00",
+          "melbourne": "2026-11-23T14:29:24.565242+11:00"
+        },
+        "kind": "cuda",
+        "device": {
+          "execution_backend": "cuda-cupy-float64",
+          "device_id": 0,
+          "device_name": "NVIDIA GeForce RTX 2080 Super with Max-Q Design",
+          "compute_capability": "75",
+          "cupy": "14.2.0",
+          "cuda_runtime": 12090,
+          "cuda_driver": 13000,
+          "precision": "float64"
+        },
+        "admission": {
+          "nodes": 129,
+          "backend": "cuda",
+          "estimated_host_gib": 1.6995559558272362,
+          "host_available_gib": 11.108421325683594,
+          "passed": true,
+          "scope": "Conservative admission estimate; actual component timing and memory telemetry remain required",
+          "estimated_gpu_gib": 2.6991859190165997,
+          "free_gpu_gib": 7.320068359375
+        },
+        "audit": {
+          "passed": true,
+          "energy_abs_difference": 3.552713678800501e-15,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "post_step_audit": {
+          "passed": true,
+          "energy_abs_difference": 3.552713678800501e-15,
+          "gradient_max_abs_difference": 0.0,
+          "reference": "independent CPU sf_readmission.static_value_gradient"
+        },
+        "qualification_only_steps": 0,
+        "charged_campaign_attempts": 0,
+        "seconds": 0.11960811307653785
+      },
+      "automatic_cpu_reason": null,
+      "source_backend": "cuda",
+      "backend_transfer": false,
+      "qualification_optimizer_steps": 0,
+      "scope": "Read-only energy-gradient qualification changes no optimizer state; independent CPU metrics/audits remain active. One backend is pinned across resolution branches."
+    },
+    "q21_metrics": {
+      "energy": 12.330612369970662,
+      "relative_force_l2": 0.0005080358743111837,
+      "acceleration_max": 0.011130909127140686,
+      "acceleration_rms": 7.171222146106029e-05,
+      "minimum_corner_cone": 0.7969850339693431,
+      "hopf_integral": -20.719686253901678,
+      "unit_error": 3.3306690738754696e-16,
+      "max_neighbour_angle": 0.7322032941202992,
+      "mean_topological_b": [
+        1.5523065402699487e-07,
+        -4.1345192956542736e-07,
+        -6.308592959988684e-05
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0002636171225295157,
+      "guard_fraction": 0.0004703509342736766
+    },
+    "q2_metrics": {
+      "energy": 1.99948549715528,
+      "relative_force_l2": 1.1542460483787707e-05,
+      "acceleration_max": 6.636497024101145e-05,
+      "acceleration_rms": 8.366182125980412e-07,
+      "minimum_corner_cone": 0.9338021913610102,
+      "hopf_integral": -1.9961557335587894,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3972169307717207,
+      "mean_topological_b": [
+        -1.1953179288986849e-18,
+        2.0126580464510174e-17,
+        -6.18706716583301e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0003015441669190186,
+      "guard_fraction": 0.0006463789224437667
+    },
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0
+  },
+  "package_sha256": "ef89d597ade3f9a289759bb7da650c74f7f4296b0f6bc5a9863f688c5d37b806"
+}

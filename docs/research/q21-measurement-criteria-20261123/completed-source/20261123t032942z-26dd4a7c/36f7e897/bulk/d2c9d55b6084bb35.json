@@ -1,0 +1,298 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T04:23:56.404106+00:00",
+    "melbourne": "2026-11-23T15:23:56.404106+11:00"
+  },
+  "id": "d2c9d55b6084bb35",
+  "q_label": 10,
+  "relative_home_path": "ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/jobs/q10-continuation-2/latest.npz",
+  "audit_bytes": 252401361,
+  "role": "retained_endpoint_not_automatically_admitted",
+  "operator_policy": "D4 replay only with explicit native D4 geometry/identity; historical cell fields remain separate/deferred",
+  "pilot_diagnostic": true,
+  "audit_source_evidence_sha256": "9f3f41872b55fa161d58fff0972e2e87895c95557f021b2942392afdff1dc25f",
+  "audit_source_evidence_relative_home_path": "ElectronFieldTopology-campaign2/artifacts/targeted-q-campaign2/20261115t141810z-c391d86a/evidence.zip",
+  "status": "native_D4_replayed",
+  "physical_Q_rejected": false,
+  "optimizer_attempts": 0,
+  "physical_time_steps": 0,
+  "source_sha256": "dfb98e0b6ac47be63b7fbe9baaff3298d9cd476ca5a5c0b7521d8778946434fe",
+  "source_evidence_sha256": "9f3f41872b55fa161d58fff0972e2e87895c95557f021b2942392afdff1dc25f",
+  "authenticated_declarations": [
+    "diagnostics.json",
+    "field-manifest.json",
+    "jobs/q10-continuation-2/latest.seal.json",
+    "jobs/q10-continuation-2/summary.json",
+    "record.json"
+  ],
+  "native_operator": "D4-action-projected-RK4-v1",
+  "native_iteration": 450,
+  "alpha": 0.11692013098647253,
+  "memory_present": {
+    "old_g": true,
+    "old_z": true,
+    "direction": true
+  },
+  "shape": [
+    145,
+    145,
+    145
+  ],
+  "lengths": [
+    23.04,
+    23.04,
+    23.04
+  ],
+  "spacing": [
+    0.16,
+    0.16,
+    0.16
+  ],
+  "geometry_origin": "jobs/q10-continuation-2/summary.json",
+  "array_sha256": "cc5f383a09e6446b6915e7b38c69054376eb38130f9c1d69a230fff97420ae69",
+  "metrics": {
+    "energy": 7.172537048370263,
+    "relative_force_l2": 0.001113025454188321,
+    "acceleration_max": 0.01184850053090468,
+    "acceleration_rms": 0.0001235624449475099,
+    "minimum_corner_cone": 0.9216891986740754,
+    "hopf_integral": -9.980381748387371,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.4955947056700382,
+    "mean_topological_b": [
+      1.8016737477868954e-08,
+      1.550132096889854e-07,
+      -1.4420595687855194e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.0003844358755305608,
+    "guard_fraction": 0.0007931370057774338
+  },
+  "gates": {
+    "representation": true,
+    "strict_stationary": false,
+    "boundary_admitted": true,
+    "all_readiness_gates": false
+  },
+  "classes": [
+    "core_or_optimizer_unresolved"
+  ],
+  "localized": {
+    "recorded_at": {
+      "utc": "2026-11-23T04:24:42.330239+00:00",
+      "melbourne": "2026-11-23T15:24:42.330239+11:00"
+    },
+    "energy": 7.172537048370263,
+    "source_array_sha256": "cc5f383a09e6446b6915e7b38c69054376eb38130f9c1d69a230fff97420ae69",
+    "regions": {
+      "force": {
+        "maximum": 0.05564539228309834,
+        "quantiles": {
+          "0.5": 3.6140093195436005e-07,
+          "0.9": 8.667657191770295e-06,
+          "0.95": 5.296296799738975e-05,
+          "0.99": 0.0015073188412201362,
+          "0.999": 0.014065760678685887
+        },
+        "peak_index": [
+          65,
+          72,
+          72
+        ],
+        "peak_position": [
+          -1.1199999999999992,
+          0.0,
+          0.0
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 2.0288199179129744e-07,
+            "voxel_count": 1823582
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 0.0,
+            "voxel_count": 0
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9992403631675991,
+            "voxel_count": 110995
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.0007594339504092954,
+            "voxel_count": 1114048
+          }
+        },
+        "spectrum": {
+          "dirichlet_laplacian_eigenvalue_weighted_mean": 24.307468388964665,
+          "eigenvalue_weighted_quantiles": {
+            "0.1": 0.5157455156221307,
+            "0.5": 10.312318464567989,
+            "0.9": 56.33050450292851
+          },
+          "normalized_frequency_bin_edges": [
+            0.0,
+            0.05,
+            0.1,
+            0.15000000000000002,
+            0.2,
+            0.25,
+            0.30000000000000004,
+            0.35000000000000003,
+            0.4,
+            0.45,
+            0.5,
+            0.55,
+            0.6000000000000001,
+            0.65,
+            0.7000000000000001,
+            0.75,
+            0.8,
+            0.8500000000000001,
+            0.9,
+            0.9500000000000001,
+            1.0
+          ],
+          "power_fractions": [
+            0.2526099945915759,
+            0.16278879520879735,
+            0.08822377921843555,
+            0.12245038722854577,
+            0.10525888476305371,
+            0.11074086286058038,
+            0.06109020733623399,
+            0.03357696262795778,
+            0.01496226096198727,
+            0.010558746902606875,
+            0.008879531135091647,
+            0.007611391024702197,
+            0.006512957114677793,
+            0.004910701910255248,
+            0.003986203476526581,
+            0.002720790896216001,
+            0.0015849046173972224,
+            0.000894798413268989,
+            0.0004915685354420444,
+            0.00014627117665112955
+          ],
+          "low_frequency_power_fraction": 0.8420727038709866,
+          "high_frequency_power_fraction": 0.00982453711550204,
+          "scope": "Orthonormal DST-I on free interior nodes. Frequency is normalized by the discrete Laplacian maximum; this is a conditioning diagnostic, not a physical dispersion relation."
+        }
+      },
+      "acceleration": {
+        "maximum": 0.01184850053090468,
+        "quantiles": {
+          "0.5": 3.6131848276424655e-07,
+          "0.9": 8.525861675947685e-06,
+          "0.95": 4.62862751193358e-05,
+          "0.99": 0.000552228680709059,
+          "0.999": 0.0033315266110299064
+        },
+        "peak_index": [
+          56,
+          71,
+          71
+        ],
+        "peak_position": [
+          -2.5599999999999987,
+          -0.16000000000000014,
+          -0.16000000000000014
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 3.7557432049436984e-06,
+            "voxel_count": 1823582
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 0.0,
+            "voxel_count": 0
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9919776775571965,
+            "voxel_count": 110995
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.00801856669959875,
+            "voxel_count": 1114048
+          }
+        },
+        "spectrum": {
+          "dirichlet_laplacian_eigenvalue_weighted_mean": 44.24437849261832,
+          "eigenvalue_weighted_quantiles": {
+            "0.1": 0.5157455156221307,
+            "0.5": 14.818774269314538,
+            "0.9": 140.50052633403865
+          },
+          "normalized_frequency_bin_edges": [
+            0.0,
+            0.05,
+            0.1,
+            0.15000000000000002,
+            0.2,
+            0.25,
+            0.30000000000000004,
+            0.35000000000000003,
+            0.4,
+            0.45,
+            0.5,
+            0.55,
+            0.6000000000000001,
+            0.65,
+            0.7000000000000001,
+            0.75,
+            0.8,
+            0.8500000000000001,
+            0.9,
+            0.9500000000000001,
+            1.0
+          ],
+          "power_fractions": [
+            0.22413585510488065,
+            0.15037134767522167,
+            0.08332792490544336,
+            0.08019615929475594,
+            0.07725232120479568,
+            0.10565325599928085,
+            0.07166713576772163,
+            0.04110653716780821,
+            0.02257565240126533,
+            0.022770176147743917,
+            0.022056472624577994,
+            0.020178370461975324,
+            0.0193036703711011,
+            0.016275886882841577,
+            0.014559070239881192,
+            0.011277602992214163,
+            0.007901413762573186,
+            0.004696482467228838,
+            0.0031798138222672964,
+            0.0015148507064284469
+          ],
+          "low_frequency_power_fraction": 0.7209368641843794,
+          "high_frequency_power_fraction": 0.043129233990589086,
+          "scope": "Orthonormal DST-I on free interior nodes. Frequency is normalized by the discrete Laplacian maximum; this is a conditioning diagnostic, not a physical dispersion relation."
+        }
+      }
+    },
+    "wall_seconds": 17.13836862309836,
+    "hessian_directions": 0,
+    "source_modified": false,
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0,
+    "scope": "Same disjoint core/guard/former-layer definitions as prior audit; no full Hessian or stability claim"
+  },
+  "source_modified": false,
+  "timing": {
+    "source_field_hash_seconds": 0.5957127569708973,
+    "field_load_seconds": 1.0212576109915972,
+    "metrics_seconds": 25.833238808903843,
+    "localization_seconds": 17.13836862309836
+  },
+  "wall_seconds": 46.56856695795432
+}

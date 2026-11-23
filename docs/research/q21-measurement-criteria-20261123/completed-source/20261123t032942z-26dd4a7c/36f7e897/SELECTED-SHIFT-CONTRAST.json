@@ -1,0 +1,247 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T03:58:17.927861+00:00",
+    "melbourne": "2026-11-23T14:58:17.927861+11:00"
+  },
+  "source": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-conditioning-calibration/20261122t102101z-2a8e50ec/cases/optimal-validation/endpoint.npz",
+  "source_sha256": "786f88f64eb8e73ae3098f7f81415453e7cc14e6b598d1172c7389b82468200c",
+  "native_iteration": 545,
+  "metrics": {
+    "energy": 12.330612771813275,
+    "relative_force_l2": 0.0005759890276075359,
+    "acceleration_max": 0.011644143160389328,
+    "acceleration_rms": 7.522443771853653e-05,
+    "minimum_corner_cone": 0.797010614373659,
+    "hopf_integral": -20.71970801788426,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.7320173640672369,
+    "mean_topological_b": [
+      1.602133391921336e-07,
+      -4.202103681495477e-07,
+      -6.308370208319726e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.00026363705491737544,
+    "guard_fraction": 0.00047038613215737775
+  },
+  "gates": {
+    "representation": true,
+    "strict_stationary": false,
+    "boundary_admitted": true,
+    "all_readiness_gates": false
+  },
+  "metrics_seconds": 18.38520643603988,
+  "localized": {
+    "recorded_at": {
+      "utc": "2026-11-23T03:58:29.742083+00:00",
+      "melbourne": "2026-11-23T14:58:29.742083+11:00"
+    },
+    "energy": 12.330612771813275,
+    "source_array_sha256": "89da3e81b073637e884eeaab24ca57f11a1b8e6dbd28cb02b73a429192146035",
+    "regions": {
+      "force": {
+        "maximum": 0.030416320267848098,
+        "quantiles": {
+          "0.5": 2.5805131640952404e-07,
+          "0.9": 4.205551582827539e-06,
+          "0.95": 1.5564189265538804e-05,
+          "0.99": 0.0007849262331405972,
+          "0.999": 0.007470630469444124
+        },
+        "peak_index": [
+          58,
+          73,
+          64
+        ],
+        "peak_position": [
+          -1.4399999999999995,
+          2.16,
+          0.0
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 1.1201701785292652e-07,
+            "voxel_count": 1053962
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 1.4812685013757562e-07,
+            "voxel_count": 151535
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9966403732898157,
+            "voxel_count": 59288
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.00335936656631643,
+            "voxel_count": 881904
+          }
+        },
+        "spectrum": {
+          "dirichlet_laplacian_eigenvalue_weighted_mean": 29.996053845667948,
+          "eigenvalue_weighted_quantiles": {
+            "0.1": 0.3773546603413711,
+            "0.5": 15.89343832855519,
+            "0.9": 86.53763303240481
+          },
+          "normalized_frequency_bin_edges": [
+            0.0,
+            0.05,
+            0.1,
+            0.15000000000000002,
+            0.2,
+            0.25,
+            0.30000000000000004,
+            0.35000000000000003,
+            0.4,
+            0.45,
+            0.5,
+            0.55,
+            0.6000000000000001,
+            0.65,
+            0.7000000000000001,
+            0.75,
+            0.8,
+            0.8500000000000001,
+            0.9,
+            0.9500000000000001,
+            1.0
+          ],
+          "power_fractions": [
+            0.12717495943481844,
+            0.13112042005490393,
+            0.06117673189301478,
+            0.060701214812589846,
+            0.07676401015219458,
+            0.08624614911970087,
+            0.08493183040999858,
+            0.06114129320166613,
+            0.05804191521775888,
+            0.05270793062185227,
+            0.040404593910095425,
+            0.03270193273553145,
+            0.030064853077449792,
+            0.026204251929490666,
+            0.02394545776306744,
+            0.019414931426064257,
+            0.012969945962203243,
+            0.009048833990806021,
+            0.00404548291951258,
+            0.0011932613672755766
+          ],
+          "low_frequency_power_fraction": 0.5431834854672216,
+          "high_frequency_power_fraction": 0.07061791342892779,
+          "scope": "Orthonormal DST-I on free interior nodes. Frequency is normalized by the discrete Laplacian maximum; this is a conditioning diagnostic, not a physical dispersion relation."
+        }
+      },
+      "acceleration": {
+        "maximum": 0.011644143160389328,
+        "quantiles": {
+          "0.5": 2.5800473016896625e-07,
+          "0.9": 4.164953344190727e-06,
+          "0.95": 1.484040474942597e-05,
+          "0.99": 0.00035418026680453837,
+          "0.999": 0.001930292984575522
+        },
+        "peak_index": [
+          69,
+          67,
+          62
+        ],
+        "peak_position": [
+          1.1999999999999993,
+          0.7199999999999989,
+          -0.4800000000000004
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 1.2944317330939375e-06,
+            "voxel_count": 1053962
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 1.7095533365042326e-06,
+            "voxel_count": 151535
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9837611146318268,
+            "voxel_count": 59288
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.016235881383103643,
+            "voxel_count": 881904
+          }
+        },
+        "spectrum": {
+          "dirichlet_laplacian_eigenvalue_weighted_mean": 40.086741699691196,
+          "eigenvalue_weighted_quantiles": {
+            "0.1": 0.7216893272719321,
+            "0.5": 20.127817160324618,
+            "0.9": 113.57241582961855
+          },
+          "normalized_frequency_bin_edges": [
+            0.0,
+            0.05,
+            0.1,
+            0.15000000000000002,
+            0.2,
+            0.25,
+            0.30000000000000004,
+            0.35000000000000003,
+            0.4,
+            0.45,
+            0.5,
+            0.55,
+            0.6000000000000001,
+            0.65,
+            0.7000000000000001,
+            0.75,
+            0.8,
+            0.8500000000000001,
+            0.9,
+            0.9500000000000001,
+            1.0
+          ],
+          "power_fractions": [
+            0.0752181461935742,
+            0.08242630416561278,
+            0.08372081352085307,
+            0.08812906709688546,
+            0.0892834116974197,
+            0.06927721667344311,
+            0.05119555470664817,
+            0.05084748934853316,
+            0.06271039679146888,
+            0.059743056813076005,
+            0.04422595899759526,
+            0.03695184985111515,
+            0.039984730854542565,
+            0.03778286118545407,
+            0.03708987493949259,
+            0.032763656315356146,
+            0.024388046358956045,
+            0.019035981734557516,
+            0.011218523286859851,
+            0.0040070594685528566
+          ],
+          "low_frequency_power_fraction": 0.4880549593477886,
+          "high_frequency_power_fraction": 0.1285031421037764,
+          "scope": "Orthonormal DST-I on free interior nodes. Frequency is normalized by the discrete Laplacian maximum; this is a conditioning diagnostic, not a physical dispersion relation."
+        }
+      }
+    },
+    "wall_seconds": 11.701627155998722,
+    "hessian_directions": 0,
+    "source_modified": false,
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0,
+    "scope": "Same disjoint core/guard/former-layer definitions as prior audit; no full Hessian or stability claim"
+  },
+  "source_modified": false,
+  "optimizer_attempts": 0,
+  "physical_time_steps": 0
+}

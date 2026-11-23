@@ -1,0 +1,195 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T04:32:44.416259+00:00",
+    "melbourne": "2026-11-23T15:32:44.416259+11:00"
+  },
+  "id": "87b356f012f38b28",
+  "q_label": 10,
+  "relative_home_path": "ElectronFieldTopology-rapid-q-screen/artifacts/rapid-q-screen/20261114t094318z-7800d5c4/branches/q10-trefoil32-2-2/145/latest.npz",
+  "audit_bytes": 256041409,
+  "role": "retained_endpoint_not_automatically_admitted",
+  "operator_policy": "D4 replay only with explicit native D4 geometry/identity; historical cell fields remain separate/deferred",
+  "pilot_diagnostic": false,
+  "audit_source_evidence_sha256": "ed884f71077cc200a1414e535b306f35141a932a4f545c8230c808f3ca95c70c",
+  "audit_source_evidence_relative_home_path": "ElectronFieldTopology-rapid-q-screen/artifacts/rapid-q-screen/20261114t094318z-7800d5c4/evidence.zip",
+  "status": "native_D4_replayed",
+  "physical_Q_rejected": false,
+  "optimizer_attempts": 0,
+  "physical_time_steps": 0,
+  "source_sha256": "f3c2bbe7da2a00a03a3b0d50810dfd783640b99fbaa624565447794b42c0d7a2",
+  "source_evidence_sha256": "ed884f71077cc200a1414e535b306f35141a932a4f545c8230c808f3ca95c70c",
+  "authenticated_declarations": [
+    "branches/q10-trefoil32-2-2/145/latest.seal.json",
+    "branches/q10-trefoil32-2-2/145/result-0050.json",
+    "broad/q10-trefoil32-2-2.json",
+    "field-manifest.json",
+    "record.json"
+  ],
+  "native_operator": "D4-action-projected-RK4-v1",
+  "native_iteration": 50,
+  "alpha": 0.23999058046855617,
+  "memory_present": {
+    "old_g": true,
+    "old_z": true,
+    "direction": true
+  },
+  "shape": [
+    145,
+    145,
+    145
+  ],
+  "lengths": [
+    23.04,
+    23.04,
+    23.04
+  ],
+  "spacing": [
+    0.16,
+    0.16,
+    0.16
+  ],
+  "geometry_origin": "branches/q10-trefoil32-2-2/145/result-0050.json",
+  "array_sha256": "74babd3deccb71085ae018f6b070cd5b3c4db3649060e2334c167bcecdc3c8bb",
+  "metrics": {
+    "energy": 7.222116137158979,
+    "relative_force_l2": 0.14575955076727481,
+    "acceleration_max": 3.04819465117004,
+    "acceleration_rms": 0.017848371778994263,
+    "minimum_corner_cone": 0.9487915649024139,
+    "hopf_integral": -9.987564980008017,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.41121405461099986,
+    "mean_topological_b": [
+      5.3160168410946155e-09,
+      8.506256204248869e-08,
+      -8.973713927388106e-06
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.0006364646415848367,
+    "guard_fraction": 0.0013562096388190158
+  },
+  "gates": {
+    "representation": true,
+    "strict_stationary": false,
+    "boundary_admitted": false,
+    "all_readiness_gates": false
+  },
+  "classes": [
+    "boundary_limited",
+    "core_or_optimizer_unresolved"
+  ],
+  "localized": {
+    "recorded_at": {
+      "utc": "2026-11-23T04:33:29.379624+00:00",
+      "melbourne": "2026-11-23T15:33:29.379624+11:00"
+    },
+    "energy": 7.222116137158979,
+    "source_array_sha256": "74babd3deccb71085ae018f6b070cd5b3c4db3649060e2334c167bcecdc3c8bb",
+    "regions": {
+      "force": {
+        "maximum": 5.963844731697036,
+        "quantiles": {
+          "0.5": 0.00013157837047732184,
+          "0.9": 0.0032526764424048063,
+          "0.95": 0.017116276476313533,
+          "0.99": 0.2383630137472959,
+          "0.999": 1.7701495430131553
+        },
+        "peak_index": [
+          82,
+          89,
+          71
+        ],
+        "peak_position": [
+          1.6000000000000014,
+          2.7200000000000006,
+          -0.16000000000000014
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 2.447857065224869e-06,
+            "voxel_count": 1823582
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 0.0,
+            "voxel_count": 0
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9988936860288421,
+            "voxel_count": 134796
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.0011038661140925028,
+            "voxel_count": 1090247
+          }
+        },
+        "spectrum": {
+          "status": "deferred_nonpilot_spectrum",
+          "reason": "Full DST is reserved for the registered stratified diagnostic subset"
+        }
+      },
+      "acceleration": {
+        "maximum": 3.04819465117004,
+        "quantiles": {
+          "0.5": 0.0001315591350910752,
+          "0.9": 0.0031262441171779148,
+          "0.95": 0.013375814253523842,
+          "0.99": 0.0807196224146326,
+          "0.999": 0.4606485007691476
+        },
+        "peak_index": [
+          82,
+          56,
+          72
+        ],
+        "peak_position": [
+          1.6000000000000014,
+          -2.5599999999999987,
+          0.0
+        ],
+        "peak_regions": [
+          "core_neighborhood"
+        ],
+        "regions": {
+          "outer_guard": {
+            "squared_residual_fraction": 3.2296445268129514e-05,
+            "voxel_count": 1823582
+          },
+          "old_held_layers": {
+            "squared_residual_fraction": 0.0,
+            "voxel_count": 0
+          },
+          "core_neighborhood": {
+            "squared_residual_fraction": 0.9904017624026207,
+            "voxel_count": 134796
+          },
+          "remaining_interior": {
+            "squared_residual_fraction": 0.009565941152111077,
+            "voxel_count": 1090247
+          }
+        },
+        "spectrum": {
+          "status": "deferred_nonpilot_spectrum",
+          "reason": "Full DST is reserved for the registered stratified diagnostic subset"
+        }
+      }
+    },
+    "wall_seconds": 15.711190949892625,
+    "hessian_directions": 0,
+    "source_modified": false,
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0,
+    "scope": "Same disjoint core/guard/former-layer definitions as prior audit; no full Hessian or stability claim"
+  },
+  "source_modified": false,
+  "timing": {
+    "source_field_hash_seconds": 0.6868568300269544,
+    "field_load_seconds": 1.0157444439828396,
+    "metrics_seconds": 26.265076325042173,
+    "localization_seconds": 15.711190949892625
+  },
+  "wall_seconds": 45.622019990114495
+}
