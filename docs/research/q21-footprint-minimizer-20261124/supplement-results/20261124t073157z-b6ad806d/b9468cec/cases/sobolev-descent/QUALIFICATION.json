@@ -1,0 +1,91 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-24T08:27:58.336490+00:00",
+    "melbourne": "2026-11-24T19:27:58.336490+11:00"
+  },
+  "directional": {
+    "recorded_at": {
+      "utc": "2026-11-24T08:27:48.221320+00:00",
+      "melbourne": "2026-11-24T19:27:48.221320+11:00"
+    },
+    "passed": true,
+    "energy": 12.366904987552976,
+    "rows": [
+      {
+        "direction": "negative_projected_gradient",
+        "differences": [
+          {
+            "epsilon": 0.001,
+            "predicted": -0.008018116047719372,
+            "centered_difference": -0.00801829411400945,
+            "absolute_error": 1.7806629007757757e-07,
+            "tolerance": 1.6136232095438743e-05,
+            "passed": true
+          },
+          {
+            "epsilon": 0.0003,
+            "predicted": -0.008018116047719372,
+            "centered_difference": -0.00801813207533068,
+            "absolute_error": 1.6027611307589673e-08,
+            "tolerance": 1.6136232095438743e-05,
+            "passed": true
+          },
+          {
+            "epsilon": 0.0001,
+            "predicted": -0.008018116047719372,
+            "centered_difference": -0.008018117840791206,
+            "absolute_error": 1.793071833372517e-09,
+            "tolerance": 1.6136232095438743e-05,
+            "passed": true
+          }
+        ],
+        "passed": true
+      },
+      {
+        "direction": "deterministic_smooth_tangent",
+        "differences": [
+          {
+            "epsilon": 0.001,
+            "predicted": 6.628823985577463e-05,
+            "centered_difference": 6.627556281557645e-05,
+            "absolute_error": 1.2677040198182457e-08,
+            "tolerance": 2.3257647971154925e-07,
+            "passed": true
+          },
+          {
+            "epsilon": 0.0003,
+            "predicted": 6.628823985577463e-05,
+            "centered_difference": 6.628709729265363e-05,
+            "absolute_error": 1.1425631210056466e-09,
+            "tolerance": 2.3257647971154925e-07,
+            "passed": true
+          },
+          {
+            "epsilon": 0.0001,
+            "predicted": 6.628823985577463e-05,
+            "centered_difference": 6.628810389486262e-05,
+            "absolute_error": 1.359609120166888e-10,
+            "tolerance": 2.3257647971154925e-07,
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "energy_gradient_calls": 13,
+    "optimizer_attempts": 0,
+    "physical_time_steps": 0,
+    "scope": "Centered constrained retractions on the exact Q21 endpoint; no accepted optimization updates"
+  },
+  "backend_audit": {
+    "passed": true,
+    "energy_abs_difference": 3.552713678800501e-15,
+    "gradient_max_abs_difference": 0.0,
+    "reference": "independent CPU sf_readmission.static_value_gradient",
+    "independent_implementation": true
+  },
+  "qualification_static_gradient_calls": 15,
+  "source_memory_retained": false,
+  "backend_transfer": true,
+  "exact_control_scope": "Same inherited algorithm, memory, alpha, restart schedule, action and geometry; CPU preserves source arithmetic backend. CUDA is a separately audited arithmetic transfer."
+}

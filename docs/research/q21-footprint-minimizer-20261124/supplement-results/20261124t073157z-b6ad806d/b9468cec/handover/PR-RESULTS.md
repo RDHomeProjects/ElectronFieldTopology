@@ -1,0 +1,3 @@
+Record the completed Q21 footprint and fixed-grid minimizer experiment, including measured capture curves, native slices, per-update response measurements, fit validation, conditional allocation decisions, stopping reasons, resource telemetry and full-field retention hashes.
+
+These are numerical assessment results. Publication does not certify continuum convergence, perturbative or physical-time stability, or admission of an unresolved candidate. The original source fields and gates remain unchanged. Coupled-grid evolution and progressive zoom remain explicitly deferred pending operator qualification and scientific review.

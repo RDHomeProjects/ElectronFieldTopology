@@ -1,0 +1,77 @@
+{
+  "run_id": "20261123t130300z-db9ba00c",
+  "relative_run": "artifacts/q21-criteria-audit-cpu-resolution/20261123t130300z-db9ba00c",
+  "evidence_sha256": "e7497eeb4c0f533ff4c999fee37480876436ccfabadc96c74167d41a9261af12",
+  "fields": [
+    {
+      "path": "cases/cpu-177/best-00079.npz",
+      "sha256": "10d028b959b098744ef63a6ab4b36823b804b7831478fd076fe45fb63658887f",
+      "bytes": 532344902
+    },
+    {
+      "path": "cases/cpu-177/endpoint.npz",
+      "sha256": "c26510c2ec56b1774d1b4675c4c7fcf79783c0fc81cb359dee882556347a3282",
+      "bytes": 532344902
+    },
+    {
+      "path": "cases/cpu-177/restart-0.npz",
+      "sha256": "c26510c2ec56b1774d1b4675c4c7fcf79783c0fc81cb359dee882556347a3282",
+      "bytes": 532344902
+    },
+    {
+      "path": "cases/cpu-177/restart-1.npz",
+      "sha256": "10d028b959b098744ef63a6ab4b36823b804b7831478fd076fe45fb63658887f",
+      "bytes": 532344902
+    },
+    {
+      "path": "cases/cpu-193/best-00080.npz",
+      "sha256": "2bb6c7240f73dd665165a4d4ad04b546a7ddbe55671c16657c102bb87f268bd5",
+      "bytes": 690152006
+    },
+    {
+      "path": "cases/cpu-193/endpoint.npz",
+      "sha256": "2bb6c7240f73dd665165a4d4ad04b546a7ddbe55671c16657c102bb87f268bd5",
+      "bytes": 690152006
+    },
+    {
+      "path": "cases/cpu-193/restart-0.npz",
+      "sha256": "2bb6c7240f73dd665165a4d4ad04b546a7ddbe55671c16657c102bb87f268bd5",
+      "bytes": 690152006
+    },
+    {
+      "path": "cases/cpu-193/restart-1.npz",
+      "sha256": "a7cf4141966921c01ba7c76cd9cf9741f87cec3d7b3b324c1246d07988a4c723",
+      "bytes": 690152006
+    }
+  ],
+  "q2": {
+    "id": "q2-control",
+    "q": 2,
+    "nodes": 127,
+    "length": 20.16,
+    "kind": "control",
+    "original_relative_path": "sources/q2-reference.npz",
+    "key": "field",
+    "expected": {
+      "energy": 1.99948549715528,
+      "relative_force_l2": 1.1542460483787707e-05,
+      "acceleration_max": 6.636497024101145e-05,
+      "acceleration_rms": 8.366182125980412e-07,
+      "minimum_corner_cone": 0.9338021913610102,
+      "hopf_integral": -1.9961557335587894,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3972169307717207,
+      "mean_topological_b": [
+        -1.1953179288986849e-18,
+        2.0126580464510174e-17,
+        -6.18706716583301e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0003015441669190186,
+      "guard_fraction": 0.0006463789224437667
+    },
+    "sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930"
+  },
+  "q2_relative": "artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/sources/q2-reference.npz",
+  "scope": "Only exact cpu-177 and cpu-193 endpoint selection; best snapshots are retained but never substituted."
+}
