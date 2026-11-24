@@ -69,3 +69,5 @@ See [NOTICE](NOTICE) and [CITATION.cff](CITATION.cff). Please cite the project a
 [Q21 measurement criteria and CPU resolution supplement](docs/research/q21-measurement-criteria-20261123/README.md)
 
 [Q21 footprint and minimizer assessment](docs/research/q21-footprint-minimizer-20261124/README.md)
+
+[Project pause inventory and restart documentation](docs/research/project-pause-20261124/README.md)

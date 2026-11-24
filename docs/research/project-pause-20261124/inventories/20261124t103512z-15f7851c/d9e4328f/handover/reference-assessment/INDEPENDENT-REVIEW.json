@@ -1,0 +1,140 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-24T10:04:17.028589+00:00",
+    "melbourne": "2026-11-24T21:04:17.028589+11:00"
+  },
+  "archive_sha256": "b9468cec089b41197eab3b4279a8d9c855cd6ddceaa9bef464abeb9844cac642",
+  "run_id": "20261124t073157z-b6ad806d",
+  "status": "complete_pending_review",
+  "verified_outer_payloads": 99,
+  "verified_package_payloads": 50,
+  "verified_prior_payloads": 150,
+  "checked_model_component_scores": 36,
+  "accepted_measurements": 92,
+  "charged_attempts": 90,
+  "maximum_attempts": 240,
+  "unused_ceiling": 150,
+  "source_run_id": "20261123t130300z-db9ba00c",
+  "backend": "cuda",
+  "summaries": [
+    {
+      "case": "exact-cg",
+      "attempts": 40,
+      "native_iteration": 665,
+      "initial_force": 0.004066302665077937,
+      "final_force": 0.0019040590700639122,
+      "initial_acceleration": 0.054493750698967704,
+      "final_acceleration": 0.024998936568856496,
+      "force_improvement_pct": 53.1746840584131,
+      "acceleration_improvement_pct": 54.12513132569152,
+      "at40_force": 0.0019040590700639122,
+      "at40_acceleration": 0.024998936568856496,
+      "best_update": 38,
+      "best_force": 0.0013626135844996851,
+      "best_acceleration": 0.021122089331054146,
+      "best_joint_score": 21.122089331054145,
+      "final_force_gate_multiple": 19.04059070063912,
+      "final_acceleration_gate_multiple": 24.998936568856497,
+      "optimizer_calls": 107,
+      "optimizer_seconds": 44.78616310306825,
+      "diagnostic_seconds": 2387.414927921258,
+      "final10_relative_energy_change_median": 1.682402107958043e-07,
+      "initial_energy": 12.366904987552976,
+      "final_energy": 12.366711589287789,
+      "reason": "recent_joint_progress_not_measured"
+    },
+    {
+      "case": "sobolev-descent",
+      "attempts": 50,
+      "native_iteration": 675,
+      "initial_force": 0.004066302665077937,
+      "final_force": 0.001600505758140411,
+      "initial_acceleration": 0.054493750698967704,
+      "final_acceleration": 0.04593052320397739,
+      "force_improvement_pct": 60.63977795145914,
+      "acceleration_improvement_pct": 15.714145906922372,
+      "at40_force": 0.0014629480633541712,
+      "at40_acceleration": 0.046750722826883626,
+      "best_update": 49,
+      "best_force": 0.0018281141053273975,
+      "best_acceleration": 0.045259007105219705,
+      "best_joint_score": 45.2590071052197,
+      "final_force_gate_multiple": 16.00505758140411,
+      "final_acceleration_gate_multiple": 45.93052320397739,
+      "optimizer_calls": 135,
+      "optimizer_seconds": 54.943615739932284,
+      "diagnostic_seconds": 3088.5965372659266,
+      "final10_relative_energy_change_median": 5.742744455373174e-08,
+      "initial_energy": 12.366904987552976,
+      "final_energy": 12.366850303816955,
+      "reason": "recent_joint_progress_not_measured"
+    }
+  ],
+  "decisions": [
+    {
+      "case": "exact-cg",
+      "attempt": 40,
+      "continue": false,
+      "force_progress": -0.049190627261514575,
+      "acceleration_progress": 0.059919998711865374,
+      "fit_qualified": false,
+      "next_attempts": 0
+    },
+    {
+      "case": "sobolev-descent",
+      "attempt": 40,
+      "continue": true,
+      "force_progress": 0.07237763766078364,
+      "acceleration_progress": 0.023082680719246795,
+      "fit_qualified": true,
+      "next_attempts": 5
+    },
+    {
+      "case": "sobolev-descent",
+      "attempt": 45,
+      "continue": true,
+      "force_progress": 0.03707246257413388,
+      "acceleration_progress": 0.020790856521271328,
+      "fit_qualified": true,
+      "next_attempts": 5
+    },
+    {
+      "case": "sobolev-descent",
+      "attempt": 50,
+      "continue": false,
+      "force_progress": -0.09402773634414241,
+      "acceleration_progress": 0.017544105701710833,
+      "fit_qualified": false,
+      "next_attempts": 0
+    }
+  ],
+  "cg_window_medians_posthoc": {
+    "relative_force_l2": {
+      "updates21to30": 0.0024659906244677058,
+      "updates31to40": 0.002082830941013315,
+      "improvement": 0.1553775913227965
+    },
+    "acceleration_max": {
+      "updates21to30": 0.03395350589732947,
+      "updates31to40": 0.024775856400660046,
+      "improvement": 0.27030049634406883
+    }
+  },
+  "footprint_proposals": {
+    "q21-177": null,
+    "q21-193": null,
+    "q2-control": null
+  },
+  "runtime": {
+    "wall_seconds": 6548.2629,
+    "optimizer_seconds": 99.72977884300053,
+    "diagnostics_seconds": 5476.0114651871845,
+    "mapping_seconds": 316.2685547869187,
+    "other_seconds": 656.253101182896
+  },
+  "field_files_declared": 8,
+  "full_field_arrays_replayed_here": false,
+  "publication_merge_confirmed_by_this_archive": false,
+  "physical_time_steps": 0,
+  "checks_passed": true
+}
