@@ -1,0 +1,236 @@
+rd@zbook:~/Downloads$ (
+  set -euo pipefail
+  bash "$package/RUN.sh" collect
+  bash "$package/RUN.sh" record-results
+  bash "$package/RUN.sh" publish
+  bash "$package/RUN.sh" merge
+  bash "$package/RUN.sh" status
+)
+{"recorded_at": {"utc": "2026-11-23T21:26:00.968471+00:00", "melbourne": "2026-11-24T08:26:00.968471+11:00"}, "message": "Supplementary evidence collected", "file": "/home/rd/Downloads/ElectronFieldTopology-Q21-criteria-CPU-20261123t130300z-db9ba00c-evidence.zip", "sha256": "e7497eeb4c0f533ff4c999fee37480876436ccfabadc96c74167d41a9261af12", "status": "complete_pending_review"}
+{"recorded_at": {"utc": "2026-11-23T21:26:01.200280+00:00", "melbourne": "2026-11-24T08:26:01.200280+11:00"}, "message": "Local publication command", "argv": ["git", "remote", "get-url", "origin"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:01.202611+00:00", "melbourne": "2026-11-24T08:26:01.202611+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:01.221574+00:00", "melbourne": "2026-11-24T08:26:01.221574+11:00"}, "message": "Local publication command", "argv": ["git", "fetch", "origin", "refs/heads/main:refs/remotes/origin/main"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:01.900240+00:00", "melbourne": "2026-11-24T08:26:01.900240+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "origin/main"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:01.901606+00:00", "melbourne": "2026-11-24T08:26:01.901606+11:00"}, "message": "Local publication command", "argv": ["git", "switch", "-c", "analysis/q21-criteria-results-20261123-e7497eeb", "188a6d76ed4ceea91b07d86032d8de095cd4ed73"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+Switched to a new branch 'analysis/q21-criteria-results-20261123-e7497eeb'
+{"recorded_at": {"utc": "2026-11-23T21:26:14.169911+00:00", "melbourne": "2026-11-24T08:26:14.169911+11:00"}, "message": "Local publication command", "argv": ["git", "add", "-f", "explicit scoped paths"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:14.812874+00:00", "melbourne": "2026-11-24T08:26:14.812874+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--name-only"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:14.815479+00:00", "melbourne": "2026-11-24T08:26:14.815479+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:14.925072+00:00", "melbourne": "2026-11-24T08:26:14.925072+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/project_records.py", "check", "--compare-ref", "188a6d76ed4ceea91b07d86032d8de095cd4ed73"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"migration": false, "protected_files": 964, "stages": 15, "studies": 45}
+{"recorded_at": {"utc": "2026-11-23T21:26:16.132402+00:00", "melbourne": "2026-11-24T08:26:16.132402+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/check_docs.py"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+Documentation checks passed: 486 Markdown files; local targets and fences.
+{"recorded_at": {"utc": "2026-11-23T21:26:16.498469+00:00", "melbourne": "2026-11-24T08:26:16.498469+11:00"}, "message": "Workstation publication status", "kind": "supplement-results", "phase": "applied", "pr": null}
+{"recorded_at": {"utc": "2026-11-23T21:26:16.592822+00:00", "melbourne": "2026-11-24T08:26:16.592822+11:00"}, "message": "Local publication command", "argv": ["git", "branch", "--show-current"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:16.594626+00:00", "melbourne": "2026-11-24T08:26:16.594626+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:16.595920+00:00", "melbourne": "2026-11-24T08:26:16.595920+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--name-only"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:16.598530+00:00", "melbourne": "2026-11-24T08:26:16.598530+11:00"}, "message": "Local publication command", "argv": ["git", "diff", "--cached", "--check"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:16.705095+00:00", "melbourne": "2026-11-24T08:26:16.705095+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/project_records.py", "check", "--compare-ref", "188a6d76ed4ceea91b07d86032d8de095cd4ed73"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"migration": false, "protected_files": 964, "stages": 15, "studies": 45}
+{"recorded_at": {"utc": "2026-11-23T21:26:17.922695+00:00", "melbourne": "2026-11-24T08:26:17.922695+11:00"}, "message": "Local publication command", "argv": ["/usr/bin/python3", "scripts/check_docs.py"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+Documentation checks passed: 486 Markdown files; local targets and fences.
+{"recorded_at": {"utc": "2026-11-23T21:26:18.250911+00:00", "melbourne": "2026-11-24T08:26:18.250911+11:00"}, "message": "Local publication command", "argv": ["git", "commit", "-m", "Record Q21 measurement criteria supplement-results"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+[analysis/q21-criteria-results-20261123-e7497eeb c2ec6f1] Record Q21 measurement criteria supplement-results
+ 153 files changed, 2 insertions(+)
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/ASSESSMENT.md
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/AUTHOR-METRICS.csv
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/AUTHOR-METRICS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/ENERGY-CHANGE-PER-UPDATE.csv
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/FIELD-AUDIT-SUMMARY.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/FIELD-MANIFEST.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/LAUNCH-CONFIG.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/PREFLIGHT.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/SHA256SUMS
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/SPATIAL-COMPARISON.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/TELEMETRY-FROZEN.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/UPDATED-RESPONSE-CURVES.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/CASE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/INITIALIZATION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/RESOURCE-ADMISSION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/attempt-ledger.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/best-00079.seal.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/control.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/endpoint.seal.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/record.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/restart-0.seal.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-177/restart-1.seal.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/CASE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/INITIALIZATION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/RESOURCE-ADMISSION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/attempt-ledger.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/best-00080.seal.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/control.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/endpoint.seal.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/record.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/restart-0.seal.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cases/cpu-193/restart-1.seal.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cpu-177-ADMISSION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/cpu-193-ADMISSION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/evidence.zip
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/final-cpu-177/DIRECTIONAL-DERIVATIVE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/final-cpu-177/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/final-cpu-177/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/final-cpu-177/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/final-cpu-193/DIRECTIONAL-DERIVATIVE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/final-cpu-193/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/final-cpu-193/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/final-cpu-193/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/initial-cpu-177/DIRECTIONAL-DERIVATIVE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/initial-cpu-177/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/initial-cpu-177/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/initial-cpu-177/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/initial-cpu-193/DIRECTIONAL-DERIVATIVE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/initial-cpu-193/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/initial-cpu-193/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/initial-cpu-193/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/q2-reference/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/q2-reference/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/q2-reference/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-137/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-137/RECONSTRUCTION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-137/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-137/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-145/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-145/RECONSTRUCTION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-145/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-145/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-153/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-153/RECONSTRUCTION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-153/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-153/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-161/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-161/RECONSTRUCTION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-161/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/reconstructed-initial-161/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-exact-control/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-exact-control/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-exact-control/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-129/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-129/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-129/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-137/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-137/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-137/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-145/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-145/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-145/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-153/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-153/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-153/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-161/MEASUREMENTS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-161/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/field-audit/retained-mesh-161/author-surfaces.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/HOST-VALIDATION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/INHERITED-CODE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/PLAN.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/PR-BODY.md
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/PR-RESULTS.md
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/PRIMARY-SOURCES.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/PROTOCOL.md
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/README.md
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/RUN.sh
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/criteria.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/criteria_common.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/data/completed-evidence.zip
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/SF-J2015-static.md.txt
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/SF-tail-domain-screening.md.txt
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/author-comparison/ASSESSMENT.md
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/author-comparison/AUTHOR-METRICS.csv
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/author-comparison/AUTHOR-METRICS.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/author-comparison/ENERGY-CHANGE-PER-UPDATE.csv
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/author-comparison/REPORT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/ANGLE-EXPLORATION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/ASSESSMENT.html
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/ASSESSMENT.md
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/BULK-SCOPE-REVIEW.csv
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/ENDPOINTS.csv
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/INDEPENDENT-REVIEW.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/MEASUREMENTS.csv
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/PRIMARY-SOURCES.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/README.md
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/REVIEW-VALIDATION.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/data/completed-evidence.zip
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/matched-residuals.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/matched-residuals.svg
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/plot_review.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/registered-response-models.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/registered-response-models.svg
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/resolution-and-initialization.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/resolution-and-initialization.svg
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/review.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/runtime-breakdown.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/documentation/scientific-review/runtime-breakdown.svg
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/field_audit.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/NUMERICAL-SOURCE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/PLAN.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/SOURCE.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/cases.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/checkpoints.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/common.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/diagnostics.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/engine.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/evaluations.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/integrity.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/measurements.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/relationships.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/legacy/resources.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/local_publication.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/test_host.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/worker.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/handover/workstation.py
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/identity.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/record.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/status.json
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/updated-response.png
+ create mode 100644 docs/research/q21-measurement-criteria-20261123/supplement-results/20261123t130300z-db9ba00c/e7497eeb/updated-response.svg
+{"recorded_at": {"utc": "2026-11-23T21:26:18.369928+00:00", "melbourne": "2026-11-24T08:26:18.369928+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:18.375128+00:00", "melbourne": "2026-11-24T08:26:18.375128+11:00"}, "message": "Local publication command", "argv": ["git", "status", "--porcelain"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:18.388170+00:00", "melbourne": "2026-11-24T08:26:18.388170+11:00"}, "message": "Local publication command", "argv": ["git", "rev-parse", "HEAD"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:18.574743+00:00", "melbourne": "2026-11-24T08:26:18.574743+11:00"}, "message": "Local publication command", "argv": ["git", "push", "-u", "origin", "analysis/q21-criteria-results-20261123-e7497eeb"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+Enumerating objects: 190, done.
+Counting objects: 100% (190/190), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (180/180), done.
+Writing objects: 100% (185/185), 19.49 MiB | 2.48 MiB/s, done.
+Total 185 (delta 62), reused 56 (delta 4), pack-reused 0
+remote: Resolving deltas: 100% (62/62), completed with 5 local objects.
+remote: 
+remote: Create a pull request for 'analysis/q21-criteria-results-20261123-e7497eeb' on GitHub by visiting:
+remote:      https://github.com/RDHomeProjects/ElectronFieldTopology/pull/new/analysis/q21-criteria-results-20261123-e7497eeb
+remote: 
+To https://github.com/RDHomeProjects/ElectronFieldTopology.git
+ * [new branch]      analysis/q21-criteria-results-20261123-e7497eeb -> analysis/q21-criteria-results-20261123-e7497eeb
+branch 'analysis/q21-criteria-results-20261123-e7497eeb' set up to track 'origin/analysis/q21-criteria-results-20261123-e7497eeb'.
+{"recorded_at": {"utc": "2026-11-23T21:26:33.077065+00:00", "melbourne": "2026-11-24T08:26:33.077065+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "create", "--repo", "RDHomeProjects/ElectronFieldTopology", "--base", "main", "--head", "analysis/q21-criteria-results-20261123-e7497eeb", "--title", "Record Q21 supplement-results", "--body-file", "/home/rd/Downloads/ElectronFieldTopology-Q21-criteria-and-CPU-resolution-20261123/PR-RESULTS.md"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:36.238870+00:00", "melbourne": "2026-11-24T08:26:36.238870+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:36.865807+00:00", "melbourne": "2026-11-24T08:26:36.865807+11:00"}, "message": "Workstation publication status", "kind": "supplement-results", "phase": "published", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-criteria-results-20261123-e7497eeb", "headRefOid": "c2ec6f137da2444a5dc017b3b51c31d82f5bd157", "mergeCommit": null, "number": 97, "state": "OPEN", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97"}}
+{"recorded_at": {"utc": "2026-11-23T21:26:36.957165+00:00", "melbourne": "2026-11-24T08:26:36.957165+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:37.635726+00:00", "melbourne": "2026-11-24T08:26:37.635726+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "statusCheckRollup"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:26:38.396465+00:00", "melbourne": "2026-11-24T08:26:38.396465+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "checks", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97", "--repo", "RDHomeProjects/ElectronFieldTopology", "--watch", "--interval", "10"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+All checks were successful
+0 cancelled, 0 failing, 2 successful, 0 skipped, and 0 pending checks
+
+   NAME                                         DESCRIPTION  ELAPSED  URL                                                         
+✓  Documentation integrity/docs (push)                       17s      https://github.com/RDHomeProjects/ElectronFieldTopology/a...
+✓  Documentation integrity/docs (pull_request)               15s      https://github.com/RDHomeProjects/ElectronFieldTopology/a...
+{"recorded_at": {"utc": "2026-11-23T21:27:00.880726+00:00", "melbourne": "2026-11-24T08:27:00.880726+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "merge", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97", "--repo", "RDHomeProjects/ElectronFieldTopology", "--squash", "--delete-branch", "--match-head-commit", "c2ec6f137da2444a5dc017b3b51c31d82f5bd157"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+✓ Squashed and merged pull request #97 (Record Q21 supplement-results)
+✓ Deleted remote branch analysis/q21-criteria-results-20261123-e7497eeb
+{"recorded_at": {"utc": "2026-11-23T21:27:06.589430+00:00", "melbourne": "2026-11-24T08:27:06.589430+11:00"}, "message": "Local publication command", "argv": ["gh", "pr", "view", "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97", "--repo", "RDHomeProjects/ElectronFieldTopology", "--json", "number,url,state,headRefOid,mergeCommit,headRefName,baseRefName"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:27:07.368355+00:00", "melbourne": "2026-11-24T08:27:07.368355+11:00"}, "message": "Local publication command", "argv": ["git", "fetch", "origin", "refs/heads/main:refs/remotes/origin/main"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+remote: Enumerating objects: 190, done.
+remote: Counting objects: 100% (190/190), done.
+remote: Compressing objects: 100% (123/123), done.
+remote: Total 185 (delta 62), reused 183 (delta 61), pack-reused 0 (from 0)
+Receiving objects: 100% (185/185), 19.49 MiB | 18.06 MiB/s, done.
+Resolving deltas: 100% (62/62), completed with 5 local objects.
+From https://github.com/RDHomeProjects/ElectronFieldTopology
+   188a6d7..3113d5c  main       -> origin/main
+{"recorded_at": {"utc": "2026-11-23T21:27:09.594930+00:00", "melbourne": "2026-11-24T08:27:09.594930+11:00"}, "message": "Local publication command", "argv": ["git", "merge-base", "--is-ancestor", "3113d5cdfe704472a1efefaa60eed3dbfe4f4eed", "origin/main"], "checkout": "/home/rd/ElectronFieldTopology-Q21-criteria-publication-20261123"}
+{"recorded_at": {"utc": "2026-11-23T21:27:09.789329+00:00", "melbourne": "2026-11-24T08:27:09.789329+11:00"}, "message": "Merged publication payloads verified", "payloads": 152, "pr": {"baseRefName": "main", "headRefName": "analysis/q21-criteria-results-20261123-e7497eeb", "headRefOid": "c2ec6f137da2444a5dc017b3b51c31d82f5bd157", "mergeCommit": {"oid": "3113d5cdfe704472a1efefaa60eed3dbfe4f4eed"}, "number": 97, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97"}}
+{"recorded_at": {"utc": "2026-11-23T21:27:09.789396+00:00", "melbourne": "2026-11-24T08:27:09.789396+11:00"}, "message": "Workstation publication status", "kind": "supplement-results", "phase": "merged", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-criteria-results-20261123-e7497eeb", "headRefOid": "c2ec6f137da2444a5dc017b3b51c31d82f5bd157", "mergeCommit": {"oid": "3113d5cdfe704472a1efefaa60eed3dbfe4f4eed"}, "number": 97, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97"}}
+{"recorded_at": {"utc": "2026-11-23T21:27:09.852565+00:00", "melbourne": "2026-11-24T08:27:09.852565+11:00"}, "message": "Publication status", "kind": "supplement-results", "phase": "merged", "pr": {"baseRefName": "main", "headRefName": "analysis/q21-criteria-results-20261123-e7497eeb", "headRefOid": "c2ec6f137da2444a5dc017b3b51c31d82f5bd157", "mergeCommit": {"oid": "3113d5cdfe704472a1efefaa60eed3dbfe4f4eed"}, "number": 97, "state": "MERGED", "url": "https://github.com/RDHomeProjects/ElectronFieldTopology/pull/97"}}
+{"recorded_at": {"utc": "2026-11-23T21:27:09.857134+00:00", "melbourne": "2026-11-24T08:27:09.857134+11:00"}, "message": "Q21 criteria/CPU supplement status", "output": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-criteria-audit-cpu-resolution/20261123t130300z-db9ba00c", "runner_alive": false, "service_active": false, "status": {"recorded_at": {"utc": "2026-11-23T19:37:46.473676+00:00", "melbourne": "2026-11-24T06:37:46.473676+11:00"}, "status": "complete_pending_review", "phase": {"name": "complete"}, "error": null, "charged_optimizer_attempts": 160, "maximum_optimizer_attempts": 160, "physical_time_steps": 0, "deferrals": []}, "heartbeat": {"recorded_at": {"utc": "2026-11-23T19:37:51.071170+00:00", "melbourne": "2026-11-24T06:37:51.071170+11:00"}, "pid": 1340983, "process_identity": {"pid": 1340983, "start_ticks": "180815343", "boot_id": "6d55658c-0d38-4bf7-b4a9-5f7b418d6fc0"}, "phase": {"name": "complete"}, "charged_optimizer_attempts": 160}, "telemetry": {"recorded_at": {"utc": "2026-11-23T19:37:58.783983+00:00", "melbourne": "2026-11-24T06:37:58.783983+11:00"}, "host": {"total_gib": 15.26858901977539, "available_gib": 12.445110321044922, "swap_free_gib": 2.138458251953125}, "pressure": {"some": {"avg10": 0.79, "avg60": 3.14, "avg300": 9.66, "total": 16158398101.0}, "full": {"avg10": 0.79, "avg60": 3.14, "avg300": 9.65, "total": 16156489812.0}}, "cgroup": {"memory.current": 5171699712, "memory.peak": 7516454912, "memory.swap.current": 16162816, "memory.events": {"low": 0, "high": 33568, "max": 0, "oom": 0, "oom_kill": 0, "oom_group_kill": 0}}}, "report": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-criteria-audit-cpu-resolution/20261123t130300z-db9ba00c/REPORT.html", "evidence": "/home/rd/ElectronFieldTopology-adaptive-q-screen-20261117/artifacts/q21-criteria-audit-cpu-resolution/20261123t130300z-db9ba00c/evidence.zip"}
+rd@zbook:~/Downloads$ 
+

@@ -1,0 +1,3 @@
+Append the completed Q21 author-criteria supplement and explicit 177³/193³ CPU branch evidence, measurements, histories, curves, display images and full-field manifests. Retain the original experiment and its CUDA resource deferrals unchanged.
+
+Author-specific measures are reported separately from the unchanged project admission gates. Untested perturbation-return, continuum convergence and physical-time stability remain explicit limits. Completion records execution and available measurements; it does not assert a stationary solution, reproduction or stability. Exact immutable payload bytes are verified after merge by the workstation handover.

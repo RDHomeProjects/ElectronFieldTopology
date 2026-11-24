@@ -1,0 +1,54 @@
+{
+  "title": "Record Q21 results, assess author-specific numerical criteria, measure retained fields, and run deferred grids explicitly on CPU",
+  "source_run": "20261123t032942z-26dd4a7c",
+  "source_evidence_sha256": "36f7e89797230762ad9dec9385d9132543581835b82e60c7610ef33f3ab219d8",
+  "source_relative_run": "artifacts/q21-fixedbox-resolution-retained-audit/20261123t032942z-26dd4a7c",
+  "source_parent_relative": "artifacts/q21-conditioning-calibration/20261122t102101z-2a8e50ec/cases/scan-baseline/endpoint.npz",
+  "source_parent_sha256": "013d37612b81c80328b9a7fe24c1d0a1d8dfda3315790bad9b89a1081a5303c2",
+  "cpu_grids": [
+    177,
+    193
+  ],
+  "attempts_per_grid": 80,
+  "maximum_new_optimizer_attempts": 160,
+  "source_iteration": 545,
+  "expected_final_iteration_if_80_accepted": 625,
+  "fixed_length": 30.72,
+  "shift": 0.25,
+  "new_branches_memory": "reset conjugacy for both, retain source alpha and native restart phase",
+  "execution_backend": "cpu-float64",
+  "cpu_threads": 4,
+  "physical_time_steps": 0,
+  "no_wall_time_cap": true,
+  "resources": {
+    "memory_high_gib": 7,
+    "memory_max_gib": 8,
+    "swap_max_gib": 1,
+    "minimum_available_gib": 10,
+    "minimum_swap_free_gib": 1,
+    "initial_disk_free_gib": 56,
+    "disk_reserve_gib": 40
+  },
+  "host_reserve_gib": 6,
+  "full_field_measurement_cases": [
+    "exact-control",
+    "mesh-129",
+    "mesh-137",
+    "mesh-145",
+    "mesh-153",
+    "mesh-161"
+  ],
+  "reconstruct_initial_grids": [
+    137,
+    145,
+    153,
+    161
+  ],
+  "early_exit": "Unchanged readiness/representation/boundary/line-search/resource gates; a plateau or comparative ranking does not cut the 80-attempt allocation.",
+  "literature": "Each authors measure and purpose remains separately labelled. No residual gate is replaced by an energy-change rule. No new physical stability or perturbation-return claim.",
+  "supplementary_scope": "Read-only regional/percentile residuals, energy components, surface visualizations and refinement comparisons before and after the two new branches. Missing inputs are explicit deferrals; failed hashes stop.",
+  "recorded_at": {
+    "utc": "2026-11-23T12:58:44.543797+00:00",
+    "melbourne": "2026-11-23T23:58:44.543797+11:00"
+  }
+}
