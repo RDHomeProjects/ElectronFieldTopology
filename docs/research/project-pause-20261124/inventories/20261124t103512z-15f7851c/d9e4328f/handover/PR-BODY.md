@@ -1,0 +1,5 @@
+Record the workstation pause inventory and restart documentation after the latest scientific handover was published. The records include per-file hashes and ZIP/NPZ integrity outcomes, discovery scope and exclusions, duplicate-content accounting, repository refs/worktree state, required checkpoint availability and the declared Q21 continuation point.
+
+The inventory is read-only with respect to scientific source files. It runs no relaxation or physical-time evolution, changes no scientific gates and preserves incomplete or unresolved coverage explicitly. Full-data release assets, Git bundles, a verified fresh-directory restoration and the final pause tag/release remain pending. Merging this metadata does not authorize local data deletion or certify that the full scientific archive is complete.
+
+Host checks cover synthetic discovery, hashing/CRC, cache invalidation, references, restart generation, sealing and offline publication staging. Current repository record/documentation checks and available CI run on the zbook. All publication is executed from the local workstation.
