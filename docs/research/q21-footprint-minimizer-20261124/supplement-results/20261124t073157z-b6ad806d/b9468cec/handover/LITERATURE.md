@@ -1,0 +1,9 @@
+# Primary references and applicability
+
+- J. Hietarinta and P. Salo, *Faddeev-Hopf knots: Dynamics of linked un-knots*, Physics Letters B 451 (1999), 60–67: https://arxiv.org/pdf/hep-th/9811053 . Describes a discrete energy gradient and normalized descent with occasional previous-gradient acceleration. Our alternative retains the project's Sobolev inverse, so it is inspired by descent methodology and is not an exact reproduction.
+- J. Hietarinta and P. Salo, *Ground state in the Faddeev-Skyrme model*, Physical Review D 62 (2000), 081701(R): https://users.aalto.fi/~ala/pdf/081201R.pdf . Relative energy-change levels are distinct from force and acceleration residuals. Perturbation/return and domain/refinement checks are additional evidence; the reported stopping implementation is incompletely specified. No 100,000-step budget is inferred here.
+- P. Sutcliffe, *Knots in the Skyrme-Faddeev model*: https://arxiv.org/pdf/0705.1468 . Published relaxation and energy-accuracy measures motivate comparison and validation, not an automatic change to current gates.
+- P. Jennings, *Cabling in the Skyrme-Faddeev model*: https://arxiv.org/pdf/1412.8597 . Source-specific spacing, initial families and preimage analyses must be distinguished from approximate displays and heterogeneous historical endpoints.
+- AMReX primary documentation, https://amrex-codes.github.io/amrex/docs_html/AmrCore.html and https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html . Documents hierarchical grids, boundary filling and multilevel solvers. The framework does not supply a qualified composite Skyrme-Faddeev action or prove that adaptive refinement will resolve this Q21 branch.
+
+References are provided for methodological context. No numerical threshold is attributed to an author unless it was actually reported. Existing project admission gates remain separately identified.
