@@ -1,0 +1,85 @@
+{
+  "run_id": "20261122t102101z-2a8e50ec",
+  "relative_run": "artifacts/q21-conditioning-calibration/20261122t102101z-2a8e50ec",
+  "endpoint": "cases/scan-baseline/endpoint.npz",
+  "endpoint_sha256": "013d37612b81c80328b9a7fe24c1d0a1d8dfda3315790bad9b89a1081a5303c2",
+  "checkpoint_identity": "95e00d859a09817b1ee4f779b47ab6149c90243f8de92fef24ac53b298452d55",
+  "source_iteration": 545,
+  "source_alpha": 0.07804371375790048,
+  "source_backend": "cuda",
+  "shape": [
+    129,
+    129,
+    129
+  ],
+  "lengths": [
+    30.72,
+    30.72,
+    30.72
+  ],
+  "spacing": [
+    0.24,
+    0.24,
+    0.24
+  ],
+  "expected_metrics": {
+    "energy": 12.330612369970662,
+    "relative_force_l2": 0.0005080358743111837,
+    "acceleration_max": 0.011130909127140686,
+    "acceleration_rms": 7.171222146106029e-05,
+    "minimum_corner_cone": 0.7969850339693431,
+    "hopf_integral": -20.719686253901678,
+    "unit_error": 3.3306690738754696e-16,
+    "max_neighbour_angle": 0.7322032941202992,
+    "mean_topological_b": [
+      1.5523065402699487e-07,
+      -4.1345192956542736e-07,
+      -6.308592959988684e-05
+    ],
+    "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+    "tail_fraction": 0.0002636171225295157,
+    "guard_fraction": 0.0004703509342736766
+  },
+  "q2": {
+    "id": "q2-control",
+    "q": 2,
+    "nodes": 127,
+    "length": 20.16,
+    "kind": "control",
+    "original_relative_path": "sources/q2-reference.npz",
+    "key": "field",
+    "expected": {
+      "energy": 1.99948549715528,
+      "relative_force_l2": 1.1542460483787707e-05,
+      "acceleration_max": 6.636497024101145e-05,
+      "acceleration_rms": 8.366182125980412e-07,
+      "minimum_corner_cone": 0.9338021913610102,
+      "hopf_integral": -1.9961557335587894,
+      "unit_error": 2.220446049250313e-16,
+      "max_neighbour_angle": 0.3972169307717207,
+      "mean_topological_b": [
+        -1.1953179288986849e-18,
+        2.0126580464510174e-17,
+        -6.18706716583301e-06
+      ],
+      "scope": "finite-grid Coulomb-gauge integral, not an exact integer certificate",
+      "tail_fraction": 0.0003015441669190186,
+      "guard_fraction": 0.0006463789224437667
+    },
+    "sha256": "8772bde16a7301ac9d77ff04b8089da0324916a4795c2f99e797c96f24f9b930"
+  },
+  "q2_relative": "artifacts/adaptive-q17-q32-screen/20261117t133953z-d6617788/sources/q2-reference.npz",
+  "evidence_sha256": "c0fd32690d23b80fad77e33d1bc27048983ec1cb3335ac36c91004d75c938962",
+  "best": {
+    "path": "cases/scan-baseline/best-00089.npz",
+    "sha256": "79542154c306aef615d7dd8f71194f0cfa28596ce73907f765419a349d84484c",
+    "native_iteration": 514
+  },
+  "contrast": {
+    "path": "cases/optimal-validation/endpoint.npz",
+    "sha256": "786f88f64eb8e73ae3098f7f81415453e7cc14e6b598d1172c7389b82468200c",
+    "native_iteration": 545
+  },
+  "required_merge": "c99cee180e397e2ec1382b2971a0266f8d33b02f",
+  "required_published_document": "docs/research/q21-conditioning-calibration-20261122"
+}

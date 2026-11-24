@@ -1,0 +1,5 @@
+Record the completed Q21 177³/193³ CPU evidence and detailed scientific assessment, then register a bounded follow-up that maps candidate refinement regions and compares exact Sobolev-CG continuation against projected Sobolev descent at fixed 177³ geometry.
+
+The plan preserves source identities, optimizer state, all admission gates, original figures and unresolved findings. It permits at most 240 new charged optimizer attempts and no physical-time evolution. Coupled-grid evolution and progressive zoom remain explicitly deferred until their discrete operators and interfaces are qualified. Execution supports CPU or qualified CUDA, with explicit auto CPU fallback and resumable resource-limited supervision.
+
+Local validation includes real-kernel descent/directional checks, exact-control equivalence, source/gate binding, adaptive footprint and forecast tests, checkpoint recovery with no refunded attempts, nested-manifest sealing, and CPU fallback routing. Full-field and native CUDA qualifications run on the zbook. Repository documentation/record checks and available PR CI are required by the publication commands.

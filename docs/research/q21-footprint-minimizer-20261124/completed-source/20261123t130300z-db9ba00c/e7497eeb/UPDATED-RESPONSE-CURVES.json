@@ -1,0 +1,242 @@
+{
+  "recorded_at": {
+    "utc": "2026-11-23T19:37:46.529982+00:00",
+    "melbourne": "2026-11-24T06:37:46.529982+11:00"
+  },
+  "points": [
+    {
+      "nodes": 129,
+      "spacing": 0.24,
+      "backend": "cuda",
+      "eligible": true,
+      "force": 0.0007736599986018092,
+      "acceleration": 0.014742573570463885,
+      "joint": 14.742573570463884,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 137,
+      "spacing": 0.22588235294117645,
+      "backend": "cuda",
+      "eligible": true,
+      "force": 0.0015938555357072107,
+      "acceleration": 0.01769031728492281,
+      "joint": 17.690317284922813,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 145,
+      "spacing": 0.21333333333333332,
+      "backend": "cuda",
+      "eligible": true,
+      "force": 0.0016217959578894191,
+      "acceleration": 0.03151983415180449,
+      "joint": 31.51983415180449,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 153,
+      "spacing": 0.20210526315789473,
+      "backend": "cuda",
+      "eligible": true,
+      "force": 0.0017456312626472925,
+      "acceleration": 0.033742906020769556,
+      "joint": 33.74290602076955,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 161,
+      "spacing": 0.192,
+      "backend": "cuda",
+      "eligible": true,
+      "force": 0.0013421588167535194,
+      "acceleration": 0.03125151358269046,
+      "joint": 31.25151358269046,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 177,
+      "spacing": 0.17454545454545453,
+      "backend": "cpu",
+      "eligible": true,
+      "force": 0.0038804450908504354,
+      "acceleration": 0.06089436688055145,
+      "joint": 60.894366880551445,
+      "horizon": 80,
+      "width": 10
+    },
+    {
+      "nodes": 193,
+      "spacing": 0.16,
+      "backend": "cpu",
+      "eligible": true,
+      "force": 0.00313088003394941,
+      "acceleration": 0.18636500917099846,
+      "joint": 186.36500917099846,
+      "horizon": 80,
+      "width": 10
+    }
+  ],
+  "fits": {
+    "joint": {
+      "status": "no_validated_response_curve",
+      "models": [
+        {
+          "model": "linear",
+          "coefficients_highest_power_first": [
+            -1711.5051360167784,
+            397.9681574136828
+          ],
+          "loo_range_nrmse": 0.3378278706984529,
+          "loo_skill_vs_constant": 0.20916250737392306,
+          "eligible": false,
+          "support": [
+            0.16,
+            0.24
+          ]
+        },
+        {
+          "model": "quadratic",
+          "coefficients_highest_power_first": [
+            43256.01457402042,
+            -18989.892685353712,
+            2093.9390385084416
+          ],
+          "loo_range_nrmse": 0.309115113522744,
+          "loo_skill_vs_constant": 0.33787989126344853,
+          "eligible": false,
+          "support": [
+            0.16,
+            0.24
+          ]
+        },
+        {
+          "model": "exponential",
+          "coefficients_highest_power_first": [
+            -28.238544838009272,
+            9.295451191730987
+          ],
+          "loo_range_nrmse": 0.2550890070327448,
+          "loo_skill_vs_constant": 0.5491004672747617,
+          "eligible": false,
+          "support": [
+            0.16,
+            0.24
+          ]
+        }
+      ],
+      "points": 7,
+      "supported_optimum": false,
+      "scope": "Finite-horizon response versus actual spacing; no stationary-solution convergence or optimum inferred automatically"
+    },
+    "force": {
+      "status": "validated_model_available",
+      "models": [
+        {
+          "model": "linear",
+          "coefficients_highest_power_first": [
+            -0.032192447907256665,
+            0.008487298938119012
+          ],
+          "loo_range_nrmse": 0.23942562022645378,
+          "loo_skill_vs_constant": 0.6005222374876897,
+          "eligible": true,
+          "support": [
+            0.16,
+            0.24
+          ]
+        },
+        {
+          "model": "quadratic",
+          "coefficients_highest_power_first": [
+            0.19346872980430083,
+            -0.10947251462529335,
+            0.0160727719730655
+          ],
+          "loo_range_nrmse": 0.3357736630754629,
+          "loo_skill_vs_constant": 0.21432194369779078,
+          "eligible": false,
+          "support": [
+            0.16,
+            0.24
+          ]
+        },
+        {
+          "model": "exponential",
+          "coefficients_highest_power_first": [
+            -16.328139305051636,
+            -3.0463887515984496
+          ],
+          "loo_range_nrmse": 0.2447121889779788,
+          "loo_skill_vs_constant": 0.582686369402502,
+          "eligible": true,
+          "support": [
+            0.16,
+            0.24
+          ]
+        }
+      ],
+      "points": 7,
+      "supported_optimum": false,
+      "scope": "Finite-horizon response versus actual spacing; no stationary-solution convergence or optimum inferred automatically"
+    },
+    "acceleration": {
+      "status": "no_validated_response_curve",
+      "models": [
+        {
+          "model": "linear",
+          "coefficients_highest_power_first": [
+            -1.7115051360167781,
+            0.39796815741368274
+          ],
+          "loo_range_nrmse": 0.33782787069845277,
+          "loo_skill_vs_constant": 0.2091625073739235,
+          "eligible": false,
+          "support": [
+            0.16,
+            0.24
+          ]
+        },
+        {
+          "model": "quadratic",
+          "coefficients_highest_power_first": [
+            43.25601457402041,
+            -18.989892685353716,
+            2.0939390385084424
+          ],
+          "loo_range_nrmse": 0.3091151135227419,
+          "loo_skill_vs_constant": 0.3378798912634574,
+          "eligible": false,
+          "support": [
+            0.16,
+            0.24
+          ]
+        },
+        {
+          "model": "exponential",
+          "coefficients_highest_power_first": [
+            -28.238544838009297,
+            2.3876959127488577
+          ],
+          "loo_range_nrmse": 0.2550890070327444,
+          "loo_skill_vs_constant": 0.5491004672747628,
+          "eligible": false,
+          "support": [
+            0.16,
+            0.24
+          ]
+        }
+      ],
+      "points": 7,
+      "supported_optimum": false,
+      "scope": "Finite-horizon response versus actual spacing; no stationary-solution convergence or optimum inferred automatically"
+    }
+  },
+  "backend_varies_with_spacing": true,
+  "warning": "CPU/CUDA arithmetic is separately qualified; these measurements do not fully isolate backend-dependent optimization paths. No automatic optimum or additional budget is authorized."
+}
