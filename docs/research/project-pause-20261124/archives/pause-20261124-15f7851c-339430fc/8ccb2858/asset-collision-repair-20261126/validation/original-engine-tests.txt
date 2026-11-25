@@ -1,0 +1,44 @@
+test_checkpoint_geometry_iteration_and_conjugacy (test_archive.Checks.test_checkpoint_geometry_iteration_and_conjugacy) ... ok
+test_deletion_is_exact_and_rejects_changed_symlink_outside_and_git (test_archive.Checks.test_deletion_is_exact_and_rejects_changed_symlink_outside_and_git) ... ok
+test_duplicate_checkpoint_roles_keep_strong_expectation (test_archive.Checks.test_duplicate_checkpoint_roles_keep_strong_expectation) ... ok
+test_interrupted_journal_final_line_recovers_but_corrupt_completed_line_blocks (test_archive.Checks.test_interrupted_journal_final_line_recovers_but_corrupt_completed_line_blocks) ... ok
+test_partition_and_reproducible_full_member_verification (test_archive.Checks.test_partition_and_reproducible_full_member_verification) ... ok
+test_reject_duplicate_missing_wrong_hash_and_traversal (test_archive.Checks.test_reject_duplicate_missing_wrong_hash_and_traversal) ... ok
+test_tracked_runtime_and_download_classification (test_archive.Checks.test_tracked_runtime_and_download_classification) ... ok
+test_local_asset_roundtrip_restore_and_guarded_cleanup (test_archive.EndToEnd.test_local_asset_roundtrip_restore_and_guarded_cleanup) ... {"recorded_at": {"utc": "2026-11-25T21:48:52.732749+00:00", "melbourne": "2026-11-26T08:48:52.732749+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "rev-parse", "HEAD"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.734709+00:00", "melbourne": "2026-11-26T08:48:52.734709+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "status", "--porcelain", "--untracked-files=no"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.736733+00:00", "melbourne": "2026-11-26T08:48:52.736733+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "ls-files", "-z"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.738477+00:00", "melbourne": "2026-11-26T08:48:52.738477+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "for-each-ref", "--format=%(refname) %(objectname)"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.742205+00:00", "melbourne": "2026-11-26T08:48:52.742205+11:00"}, "message": "Building archive part", "part": 1, "total": 1, "objects": 5}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.744287+00:00", "melbourne": "2026-11-26T08:48:52.744287+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "bundle", "verify", "/tmp/tmpp0t02dtz/archive/restore-check/code.bundle"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.745902+00:00", "melbourne": "2026-11-26T08:48:52.745902+11:00"}, "message": "Archive part downloaded and verified", "part": 1, "total": 1, "name": "data-0000.tar.gz"}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.745938+00:00", "melbourne": "2026-11-26T08:48:52.745938+11:00"}, "message": "Archive command", "argv": ["git", "clone", "--no-checkout", "/tmp/tmpp0t02dtz/archive/restore-check/code.bundle", "/tmp/tmpp0t02dtz/archive/restore-check/primary-code"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.753759+00:00", "melbourne": "2026-11-26T08:48:52.753759+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/archive/restore-check/primary-code", "checkout", "--detach", "d5c9ec94d255ecb92320bc3d7c650c1451a6db75"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.756296+00:00", "melbourne": "2026-11-26T08:48:52.756296+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/archive/restore-check/primary-code", "rev-parse", "HEAD"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.785633+00:00", "melbourne": "2026-11-26T08:48:52.785633+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/archive/restore-check/primary-code", "checkout", "--detach", "d5c9ec94d255ecb92320bc3d7c650c1451a6db75"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.788341+00:00", "melbourne": "2026-11-26T08:48:52.788341+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/archive/restore-check/primary-code", "rev-parse", "HEAD"], "working_directory": null}
+Cloning into '/tmp/tmpp0t02dtz/restart/code/numerical'...
+HEAD is now at d5c9ec9 fixture
+{"recorded_at": {"utc": "2026-11-25T21:48:52.829632+00:00", "melbourne": "2026-11-26T08:48:52.829632+11:00"}, "message": "Restore part verified", "name": "data-0000.tar.gz", "selected_objects": 2}
+HEAD is now at d5c9ec9 fixture
+Cloning into '/tmp/tmpp0t02dtz/full/code/numerical'...
+HEAD is now at d5c9ec9 fixture
+{"recorded_at": {"utc": "2026-11-25T21:48:52.845643+00:00", "melbourne": "2026-11-26T08:48:52.845643+11:00"}, "message": "Restore part verified", "name": "data-0000.tar.gz", "selected_objects": 5}
+HEAD is now at d5c9ec9 fixture
+{"recorded_at": {"utc": "2026-11-25T21:48:52.850696+00:00", "melbourne": "2026-11-26T08:48:52.850696+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "rev-parse", "HEAD"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.852473+00:00", "melbourne": "2026-11-26T08:48:52.852473+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "status", "--porcelain", "--untracked-files=no"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.854864+00:00", "melbourne": "2026-11-26T08:48:52.854864+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "ls-files", "-z"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.857036+00:00", "melbourne": "2026-11-26T08:48:52.857036+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "for-each-ref", "--format=%(refname) %(objectname)"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.859572+00:00", "melbourne": "2026-11-26T08:48:52.859572+11:00"}, "message": "Verified cleanup progress", "processed": 0, "total": 3}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.859917+00:00", "melbourne": "2026-11-26T08:48:52.859917+11:00"}, "message": "Verified local cleanup finished", "status": "cleanup_complete_with_retained_changes", "inventory_sha256": "d9e4328f19b913ef23f3648c7315b5702246cd2df0618c6cf3dc4441beaf9615", "release_url": "https://example.invalid/offline", "deletion_journal_sha256": "e061b4e46a6de56bf0afc1b2c785240e5599bfd5a94b151a145811bfc678bef2", "results": {"deleted": 2, "retained_changed_or_unsafe": 1}, "bytes_deleted_total": 1033, "retained_changes": [{"path": "/tmp/tmpp0t02dtz/source/changed.txt", "reason": "Deletion target content changed; retained"}], "git_tracked_and_runtime_files_retained": true, "unlisted_downloads_untouched": true, "new_files_since_inventory_untouched": true, "forced_recursive_deletions": 0}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.863142+00:00", "melbourne": "2026-11-26T08:48:52.863142+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "rev-parse", "HEAD"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.864555+00:00", "melbourne": "2026-11-26T08:48:52.864555+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "status", "--porcelain", "--untracked-files=no"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.866436+00:00", "melbourne": "2026-11-26T08:48:52.866436+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "ls-files", "-z"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.868083+00:00", "melbourne": "2026-11-26T08:48:52.868083+11:00"}, "message": "Archive command", "argv": ["git", "-C", "/tmp/tmpp0t02dtz/source", "for-each-ref", "--format=%(refname) %(objectname)"], "working_directory": null}
+{"recorded_at": {"utc": "2026-11-25T21:48:52.869764+00:00", "melbourne": "2026-11-26T08:48:52.869764+11:00"}, "message": "Verified local cleanup finished", "status": "cleanup_complete_with_retained_changes", "inventory_sha256": "d9e4328f19b913ef23f3648c7315b5702246cd2df0618c6cf3dc4441beaf9615", "release_url": "https://example.invalid/offline", "deletion_journal_sha256": "4d3cb814d27c10067d980d5a8364aa1db4895adac69a689746d5f8aec99c89b0", "results": {"deleted": 2, "retained_changed_or_unsafe": 1}, "bytes_deleted_total": 1033, "retained_changes": [{"path": "/tmp/tmpp0t02dtz/source/changed.txt", "reason": "Deletion target content changed; retained"}], "git_tracked_and_runtime_files_retained": true, "unlisted_downloads_untouched": true, "new_files_since_inventory_untouched": true, "forced_recursive_deletions": 0}
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.173s
+
+OK
